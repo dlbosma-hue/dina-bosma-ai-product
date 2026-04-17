@@ -61,16 +61,13 @@ export function Projects() {
             <h3 className="font-serif text-2xl leading-tight">{p.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              {p.tags.map((t) => (
-                <span key={t} className="text-xs text-muted-foreground">
+            <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1">
+              {p.tags.map((t, idx) => (
+                <span key={t} className="inline-flex items-center text-xs text-muted-foreground">
+                  {idx > 0 && <span className="mr-2 text-border">·</span>}
                   {t}
                 </span>
-              )).reduce<React.ReactNode[]>((acc, el, idx) => {
-                if (idx > 0) acc.push(<span key={`d-${idx}`} className="text-xs text-border">·</span>);
-                acc.push(el);
-                return acc;
-              }, [])}
+              ))}
             </div>
 
             <div className="mt-6 flex flex-wrap items-center gap-4 pt-4 text-sm">
