@@ -1,26 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Services } from "@/components/site/Services";
+import { CaseStudies } from "@/components/site/CaseStudies";
+import { Projects } from "@/components/site/Projects";
+import { Writing } from "@/components/site/Writing";
+import { Stack } from "@/components/site/Stack";
+import { Credentials } from "@/components/site/Credentials";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Dina Bosma — AI Consultant & Product Manager, Berlin" },
+      {
+        name: "description",
+        content:
+          "Dina Bosma — AI Consultant and Product Manager based in Berlin. Strategy, implementation, and the bridge between them. Available in English, German, and Dutch.",
+      },
+      { property: "og:title", content: "Dina Bosma — AI Consultant & Product Manager" },
+      {
+        property: "og:description",
+        content:
+          "Strategy, implementation, and the bridge between them. Berlin-based AI consultant and product manager.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <Hero />
+      <div aria-hidden className="mx-auto h-px max-w-5xl bg-border" />
+      <About />
+      <Services />
+      <CaseStudies />
+      <Projects />
+      <Writing />
+      <Stack />
+      <Credentials />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
