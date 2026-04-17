@@ -5,6 +5,7 @@ export function Nav() {
     { href: "#work", label: "Work" },
     { href: "#projects", label: "Projects" },
     { href: "#writing", label: "Writing" },
+    { href: "#recommendations", label: "Recommendations" },
     { href: "#contact", label: "Contact" },
   ];
 
