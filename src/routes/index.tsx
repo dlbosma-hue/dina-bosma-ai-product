@@ -8,6 +8,7 @@ import { Projects } from "@/components/site/Projects";
 import { Writing } from "@/components/site/Writing";
 import { Stack } from "@/components/site/Stack";
 import { Credentials } from "@/components/site/Credentials";
+import { Recommendations } from "@/components/site/Recommendations";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
@@ -44,6 +45,7 @@ function Index() {
       <Writing />
       <Stack />
       <Credentials />
+      <Recommendations />
       <Contact />
       <Footer />
     </main>
