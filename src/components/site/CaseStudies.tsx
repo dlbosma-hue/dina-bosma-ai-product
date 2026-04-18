@@ -84,6 +84,16 @@ export function CaseStudies() {
                 </a>
               </div>
             )}
+            {c.client === "Spottr / Capstone Project" && (
+              <div className="mt-6 overflow-hidden rounded-md border border-border">
+                <iframe
+                  src="/spottr_deck.html"
+                  title="Spottr pitch deck"
+                  className="h-[480px] w-full"
+                  loading="lazy"
+                />
+              </div>
+            )}
           </article>
         ))}
       </div>
