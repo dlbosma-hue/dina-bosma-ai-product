@@ -16,13 +16,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Dina Bosma — AI Consultant & Product Manager, Berlin" },
+      { title: "Dina Bosma-Buczynska, AI Consultant & Product Manager, Berlin" },
       {
         name: "description",
         content:
-          "Dina Bosma — AI Consultant and Product Manager based in Berlin. Strategy, implementation, and the bridge between them. Available in English, German, and Dutch.",
+          "Dina Bosma-Buczynska, AI Consultant and Product Manager based in Berlin. Strategy, implementation, and the bridge between them. Available in English, German, and Dutch.",
       },
-      { property: "og:title", content: "Dina Bosma — AI Consultant & Product Manager" },
+      { property: "og:title", content: "Dina Bosma-Buczynska, AI Consultant & Product Manager" },
       {
         property: "og:description",
         content:

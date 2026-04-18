@@ -9,7 +9,7 @@ export function Hero() {
         Berlin · Available now
       </div>
       <h1 className="font-serif text-5xl leading-[1.02] tracking-tight md:text-7xl lg:text-8xl">
-        Dina Bosma
+        Dina Bosma-Buczynska
       </h1>
       <p className="mt-8 max-w-2xl font-serif text-2xl leading-snug text-foreground/85 md:text-3xl">
         AI Consultant &amp; Product Manager. Strategy, implementation, and the bridge between
