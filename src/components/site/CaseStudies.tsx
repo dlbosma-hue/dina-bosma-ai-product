@@ -1,22 +1,37 @@
 import { Section } from "./Section";
 
-const cases = [
+type Metric = { value: string; label: string };
+
+type Case = {
+  client: string;
+  title: string;
+  body: string;
+  metrics: Metric[];
+  tags: string[];
+  link?: string;
+};
+
+const cases: Case[] = [
   {
     client: "Outfittery",
     title: "AI-Assisted Stylist Platform",
-    body: "Built AI decision systems integrating OpenAI APIs and workflow automation. Humans stayed in control throughout.",
+    body: "Led product for an internal AI system integrating OpenAI APIs and workflow automation into the stylist workflow. Scoped requirements, aligned engineering and ops stakeholders, and shipped iteratively — keeping humans in control throughout.",
     metrics: [
       { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
       { value: "−80%", label: "manual coordination workload" },
     ],
-    tags: ["LangChain", "OpenAI API", "Workflow Automation", "Product Strategy"],
+    tags: ["OpenAI API", "Workflow Automation", "Product Strategy", "Stakeholder Alignment"],
   },
   {
-    client: "Confidential Client",
-    title: "Churn Prediction System",
-    body: "Designed and built a machine learning system to identify at-risk customers before they churn. Reactive retention became proactive strategy.",
-    metrics: [],
-    tags: ["Python", "scikit-learn", "ML Classification", "Business Strategy"],
+    client: "Spottr — Capstone Project",
+    title: "AI Member Retention for Boutique Fitness Studios",
+    body: "End-to-end AI consultant engagement: scoped the business problem, built a logistic regression churn model (92.5% accuracy, 0.977 AUC-ROC), automated weekly coach briefings via n8n, integrated GDPR-compliant wearable data, and delivered a full EU AI Act compliance pack and commercialisation roadmap.",
+    metrics: [
+      { value: "33 days", label: "break-even point" },
+      { value: "1,099%", label: "projected 12-month ROI" },
+    ],
+    tags: ["Python", "scikit-learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
+    link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
   },
 ];
 
@@ -33,9 +48,7 @@ export function CaseStudies() {
               {c.client}
             </div>
             <h3 className="font-serif text-3xl leading-tight">{c.title}</h3>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              {c.body}
-            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{c.body}</p>
 
             {c.metrics.length > 0 && (
               <div className="mt-8 grid grid-cols-2 gap-6 border-t border-border pt-6">
@@ -48,7 +61,7 @@ export function CaseStudies() {
               </div>
             )}
 
-            <div className="mt-8 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-2">
               {c.tags.map((t) => (
                 <span
                   key={t}
@@ -58,6 +71,19 @@ export function CaseStudies() {
                 </span>
               ))}
             </div>
+
+            {c.link && (
+              <div className="mt-6 border-t border-border pt-5">
+                <a
+                  href={c.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-foreground underline-offset-4 hover:underline"
+                >
+                  View project ↗
+                </a>
+              </div>
+            )}
           </article>
         ))}
       </div>

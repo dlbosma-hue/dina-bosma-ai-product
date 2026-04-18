@@ -10,36 +10,39 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Spottr — AI Member Retention System",
+    desc: "Full-stack AI consulting engagement: churn prediction model (92.5% accuracy), automated n8n coach briefings, Plotly dashboard, GDPR compliance pack, EU AI Act documentation, and a commercialisation roadmap. The complete arc from business problem to deployed MVP.",
+    tags: ["Python", "scikit-learn", "LangChain", "n8n", "Plotly Dash", "GDPR"],
+    github:
+      "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
+  },
+  {
     title: "Media Diversity Audit Agent",
-    desc: "AI agent that audits media content for representation across marginalized communities, looking at bylines, sourcing, framing, and portrayal. Built with LangChain.",
-    tags: ["LangChain", "Agents", "Python"],
-    github: "#",
+    desc: "LangGraph ReAct agent that audits media content for representation across marginalised communities — analysing bylines, sourcing, framing, and portrayal. Deployed with FastAPI and monitored via LangSmith.",
+    tags: ["LangGraph", "LangChain", "FastAPI", "LangSmith", "Python"],
+    github:
+      "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/project_3_media_agent",
     medium:
       "https://medium.com/@dinaleonidovnabosma/i-built-an-ai-agent-that-audits-media-diversity-heres-what-actually-went-wrong-4b38790a6e3f",
   },
   {
-    title: "MCP + LangChain Agent",
-    desc: "Multi-server MCP integration connecting a LangGraph agent to live documentation, local resources, and utility tools simultaneously.",
-    tags: ["MCP", "LangGraph", "LangChain"],
-    github: "#",
+    title: "MCP + LangGraph Agent",
+    desc: "Multi-server MCP integration connecting a LangGraph ReAct agent to live documentation, local file resources, and utility tools simultaneously. Demonstrates tool orchestration across heterogeneous sources.",
+    tags: ["MCP", "LangGraph", "LangChain", "Python"],
+    github: "https://github.com/dlbosma-hue/bootcamp_env",
   },
   {
-    title: "Churn Prediction Model",
-    desc: "End-to-end ML pipeline for customer churn classification, covering data prep, feature encoding, training, evaluation (precision, recall, AUC-ROC), and business interpretation.",
-    tags: ["scikit-learn", "Python", "ML"],
-    github: "#",
-  },
-  {
-    title: "Gradio AI App",
-    desc: "Deployed an AI-powered Gradio application with clean separation of UI and logic layers.",
-    tags: ["Gradio", "Python", "OpenAI API"],
-    github: "#",
+    title: "AI Podcast Studio",
+    desc: "End-to-end pipeline from text input to synthesised audio: GPT-4o script generation, ElevenLabs TTS, and a Gradio interface. Clean separation of UI and pipeline logic, deployable as a standalone app.",
+    tags: ["Gradio", "ElevenLabs", "OpenAI API", "Python"],
+    github:
+      "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Podcast%20Project",
   },
   {
     title: "n8n Automation Workflows",
-    desc: "No-code/low-code automation pipelines connecting APIs, triggers, and data flows for real business use cases.",
-    tags: ["n8n", "Automation", "APIs"],
-    github: "#",
+    desc: "Production-grade n8n workflows built across multiple projects: scheduled media research pipelines, survey triggers, weekly email briefings, and Slack/Notion integrations. Designed for real operational use, not demos.",
+    tags: ["n8n", "Automation", "APIs", "Webhooks"],
+    github: "https://github.com/dlbosma-hue/bootcamp_env",
   },
 ];
 
