@@ -9,6 +9,10 @@ export function Nav() {
     { href: "#contact", label: "Contact" },
   ];
 
+  const externalLinks = [
+    { href: "https://github.com/dlbosma-hue", label: "GitHub" },
+  ];
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 md:px-10">
@@ -17,12 +21,19 @@ export function Nav() {
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           {links.map((l) => (
+            <a key={l.href} href={l.href} className="transition-colors hover:text-foreground">
+              {l.label}
+            </a>
+          ))}
+          {externalLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
+              target="_blank"
+              rel="noreferrer"
               className="transition-colors hover:text-foreground"
             >
-              {l.label}
+              {l.label} ↗
             </a>
           ))}
         </nav>

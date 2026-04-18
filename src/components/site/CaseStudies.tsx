@@ -15,7 +15,7 @@ const cases: Case[] = [
   {
     client: "Outfittery",
     title: "AI-Assisted Stylist Platform",
-    body: "Led product for an internal AI system integrating OpenAI APIs and workflow automation into the stylist workflow. Scoped requirements, aligned engineering and ops stakeholders, and shipped iteratively — keeping humans in control throughout.",
+    body: "Led product for an internal AI system integrating OpenAI APIs and workflow automation into the stylist workflow. Scoped requirements, aligned engineering and ops stakeholders, and shipped iteratively, keeping humans in control throughout.",
     metrics: [
       { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
       { value: "−80%", label: "manual coordination workload" },
@@ -23,7 +23,7 @@ const cases: Case[] = [
     tags: ["OpenAI API", "Workflow Automation", "Product Strategy", "Stakeholder Alignment"],
   },
   {
-    client: "Spottr — Capstone Project",
+    client: "Spottr / Capstone Project",
     title: "AI Member Retention for Boutique Fitness Studios",
     body: "End-to-end AI consultant engagement: scoped the business problem, built a logistic regression churn model (92.5% accuracy, 0.977 AUC-ROC), automated weekly coach briefings via n8n, integrated GDPR-compliant wearable data, and delivered a full EU AI Act compliance pack and commercialisation roadmap.",
     metrics: [

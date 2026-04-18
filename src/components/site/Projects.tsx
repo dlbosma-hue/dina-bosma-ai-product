@@ -10,7 +10,7 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Spottr — AI Member Retention System",
+    title: "Spottr: AI Member Retention System",
     desc: "Full-stack AI consulting engagement: churn prediction model (92.5% accuracy), automated n8n coach briefings, Plotly dashboard, GDPR compliance pack, EU AI Act documentation, and a commercialisation roadmap. The complete arc from business problem to deployed MVP.",
     tags: ["Python", "scikit-learn", "LangChain", "n8n", "Plotly Dash", "GDPR"],
     github:
@@ -18,7 +18,7 @@ const projects: Project[] = [
   },
   {
     title: "Media Diversity Audit Agent",
-    desc: "LangGraph ReAct agent that audits media content for representation across marginalised communities — analysing bylines, sourcing, framing, and portrayal. Deployed with FastAPI and monitored via LangSmith.",
+    desc: "LangGraph ReAct agent that audits media content for representation across marginalised communities, analysing bylines, sourcing, framing, and portrayal. Deployed with FastAPI and monitored via LangSmith.",
     tags: ["LangGraph", "LangChain", "FastAPI", "LangSmith", "Python"],
     github:
       "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/project_3_media_agent",

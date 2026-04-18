@@ -31,6 +31,15 @@ export function Contact() {
           LinkedIn
           <span aria-hidden>↗</span>
         </a>
+        <a
+          href="https://github.com/dlbosma-hue"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-foreground px-6 py-3 text-sm transition-colors hover:bg-foreground hover:text-background"
+        >
+          GitHub
+          <span aria-hidden>↗</span>
+        </a>
       </div>
 
     </section>
