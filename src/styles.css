@@ -78,13 +78,13 @@
   --secondary-foreground: oklch(0.22 0.015 60);
   --muted: oklch(0.95 0.012 75);
   --muted-foreground: oklch(0.5 0.02 60);
-  --accent: oklch(0.72 0.075 65);
+  --accent: oklch(0.38 0.11 255);
   --accent-foreground: oklch(0.985 0.005 80);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.9 0.012 70);
   --input: oklch(0.9 0.012 70);
-  --ring: oklch(0.72 0.075 65);
+  --ring: oklch(0.38 0.11 255);
   --font-serif: "Instrument Serif", "Cormorant Garamond", Georgia, serif;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --chart-1: oklch(0.646 0.222 41.116);
@@ -159,6 +159,6 @@
   }
 
   ::selection {
-    background-color: oklch(0.72 0.075 65 / 0.25);
+    background-color: oklch(0.38 0.11 255 / 0.2);
   }
 }
