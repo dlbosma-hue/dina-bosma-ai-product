@@ -15,8 +15,8 @@ export function About() {
           </p>
           <p>
             Multilingual: Dutch (native), English (C2), German (C1), Russian (B1). Former
-            end-user of the tools she builds — a practitioner&apos;s perspective in every
-            engagement.
+            end-user of the tools she builds, bringing a practitioner&apos;s perspective to
+            every engagement.
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">

@@ -11,7 +11,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Media Diversity Audit Agent",
-    desc: "AI agent that audits media content for representation across marginalized communities — bylines, sourcing, framing, portrayal. Built with LangChain.",
+    desc: "AI agent that audits media content for representation across marginalized communities, looking at bylines, sourcing, framing, and portrayal. Built with LangChain.",
     tags: ["LangChain", "Agents", "Python"],
     github: "#",
     medium:
@@ -25,7 +25,7 @@ const projects: Project[] = [
   },
   {
     title: "Churn Prediction Model",
-    desc: "End-to-end ML pipeline for customer churn classification — data prep, feature encoding, training, evaluation (precision, recall, AUC-ROC), and business interpretation.",
+    desc: "End-to-end ML pipeline for customer churn classification, covering data prep, feature encoding, training, evaluation (precision, recall, AUC-ROC), and business interpretation.",
     tags: ["scikit-learn", "Python", "ML"],
     github: "#",
   },

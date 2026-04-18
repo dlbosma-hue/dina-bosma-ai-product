@@ -4,31 +4,31 @@ const recommendations = [
   {
     quote:
       "Dina is a professional, motivated, and capable Product Owner who bridges the gap between business needs and technical execution effortlessly. She quickly grasped complex technical topics and architectural constraints, allowing her to communicate requirements to the developers with clarity and precision.",
-    role: "Engineering Lead — former colleague at Outfittery",
+    role: "Engineering Lead, former colleague at Outfittery",
     date: "December 2025",
   },
   {
     quote:
       "She expertly translates complex technical concepts into clear business value while ensuring development teams understand the strategic vision behind each initiative. Rather than simply focusing on feature delivery, she prioritised usability, operational efficiency, and technical debt reduction.",
-    role: "Software Architect — former colleague at Outfittery",
+    role: "Software Architect, former colleague at Outfittery",
     date: "June 2025",
   },
   {
     quote:
       "Dina brings exceptional dedication, ownership, and domain expertise to everything she does. She has a structured, organized approach that ensures initiatives are well-executed and delivered on time. One of her standout strengths is stakeholder management.",
-    role: "VP Product — former direct manager",
+    role: "VP Product, former direct manager",
     date: "June 2025",
   },
   {
     quote:
       "Her work was instrumental in driving improvements that directly supported the performance of our sales team. Dina consistently demonstrated strong dedication, excellent time management, and clear, proactive communication.",
-    role: "VP Sales & CS — former senior colleague",
+    role: "VP Sales & CS, former senior colleague",
     date: "May 2025",
   },
   {
     quote:
-      "Dina has a pragmatic, results-driven approach, always keeping the customer at the center — without losing sight of the end user's needs or the business goals. She has a real talent for breaking down complex topics into clear, accessible insights for a broad audience.",
-    role: "CCO & former COO — former senior colleague",
+      "Dina has a pragmatic, results-driven approach, always keeping the customer at the center, without losing sight of the end user's needs or the business goals. She has a real talent for breaking down complex topics into clear, accessible insights for a broad audience.",
+    role: "CCO and former COO, former senior colleague",
     date: "April 2025",
   },
   {
