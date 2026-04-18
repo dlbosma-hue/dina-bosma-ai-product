@@ -16,7 +16,7 @@ export function Contact() {
 
       <div className="mt-10 flex flex-wrap gap-4">
         <a
-          href="mailto:hello@example.com"
+          href="mailto:dlbosma@gmail.com"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm text-background transition-opacity hover:opacity-90"
         >
           Email me
@@ -31,9 +31,6 @@ export function Contact() {
         </a>
       </div>
 
-      <p className="mt-6 text-xs text-muted-foreground">
-        Email placeholder — replace with your address.
-      </p>
     </section>
   );
 }
