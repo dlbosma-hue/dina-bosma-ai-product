@@ -100,11 +100,10 @@ export function CaseStudies() {
                   </div>
                   <a
                     href="/spottr_deck.pdf"
-                    target="_blank"
-                    rel="noreferrer"
+                    download="Spottr_Smart_Member_Retention_Final_Exact_Version.pdf"
                     className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-border bg-background px-4 py-2 text-sm text-foreground transition-colors hover:border-foreground/40"
                   >
-                    Open deck ↗
+                    Download deck ↓
                   </a>
                 </div>
               </div>
