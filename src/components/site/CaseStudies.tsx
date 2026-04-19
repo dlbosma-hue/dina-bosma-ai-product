@@ -61,16 +61,18 @@ export function CaseStudies() {
               </div>
             )}
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {c.tags.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
+            {c.tags.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {c.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
 
             {c.link && (
               <div className="mt-6 border-t border-border pt-5">
