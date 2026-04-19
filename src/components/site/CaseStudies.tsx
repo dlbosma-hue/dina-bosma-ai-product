@@ -85,36 +85,28 @@ export function CaseStudies() {
               </div>
             )}
             {c.client === "Spottr / Capstone Project" && (
-              <div className="mt-6 space-y-3">
-                <div className="overflow-hidden rounded-md border border-border">
-                  <object
-                    data="/spottr_deck.pdf"
-                    type="application/pdf"
-                    className="h-[600px] w-full"
-                    aria-label="Spottr pitch deck PDF"
-                  >
-                    <div className="p-6 text-sm text-muted-foreground">
-                      Your browser can't display the PDF inline.{" "}
-                      <a
-                        href="/spottr_deck.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-foreground underline underline-offset-4"
-                      >
-                        Open the deck in a new tab
-                      </a>
-                      .
+              <div className="mt-6 rounded-md border border-border bg-muted/30 p-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.18em] text-accent">
+                      Pitch deck
                     </div>
-                  </object>
+                    <div className="mt-1 font-serif text-lg leading-tight">
+                      Spottr — Smart Member Retention
+                    </div>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      PDF, 8 slides
+                    </p>
+                  </div>
+                  <a
+                    href="/spottr_deck.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-border bg-background px-4 py-2 text-sm text-foreground transition-colors hover:border-foreground/40"
+                  >
+                    Open deck ↗
+                  </a>
                 </div>
-                <a
-                  href="/spottr_deck.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-foreground underline-offset-4 hover:underline"
-                >
-                  Open pitch deck (PDF) ↗
-                </a>
               </div>
             )}
           </article>
