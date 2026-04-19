@@ -3,7 +3,6 @@ import { Section } from "./Section";
 const items = [
   { title: "AI Consulting & Integration", org: "IronHack", year: "2026" },
   { title: "Microsoft Certified: AI-900 Azure AI Fundamentals", org: "Microsoft", year: "" },
-  { title: "Certified Agile Project Manager", org: "IAPM", year: "" },
 ];
 
 export function Credentials() {

@@ -15,12 +15,12 @@ const cases: Case[] = [
   {
     client: "Outfittery",
     title: "AI-Assisted Stylist Platform",
-    body: "Led product for an internal AI system integrating OpenAI APIs and workflow automation into the stylist workflow. Scoped requirements, aligned engineering and ops stakeholders, and shipped iteratively, keeping humans in control throughout.",
+    body: "Led product for an internal AI system integrating workflow automation into the stylist workflow. Scoped requirements, aligned engineering and ops stakeholders, and shipped iteratively, keeping humans in control throughout.",
     metrics: [
       { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
       { value: "−80%", label: "manual coordination workload" },
     ],
-    tags: ["OpenAI API", "Workflow Automation", "Product Strategy", "Stakeholder Alignment"],
+    tags: [],
   },
   {
     client: "Spottr / Capstone Project",
@@ -61,16 +61,18 @@ export function CaseStudies() {
               </div>
             )}
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {c.tags.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
+            {c.tags.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {c.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
 
             {c.link && (
               <div className="mt-6 border-t border-border pt-5">
