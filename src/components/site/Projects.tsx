@@ -53,48 +53,66 @@ export function Projects() {
         A selection of technical projects from bootcamp and independent work.
       </p>
       <div className="grid gap-px overflow-hidden rounded-md border border-border bg-border md:grid-cols-2">
-        {projects.map((p, i) => (
-          <article
-            key={p.title}
-            className="flex flex-col bg-background p-8 transition-colors hover:bg-muted/40 md:p-10"
-          >
-            <div className="mb-4 font-mono text-xs text-muted-foreground">
-              /{String(i + 1).padStart(2, "0")}
-            </div>
-            <h3 className="font-serif text-2xl leading-tight">{p.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+        {projects.map((p, i) => {
+          const primaryHref = p.github ?? p.medium;
+          return (
+            <article
+              key={p.title}
+              className="group relative flex flex-col bg-background p-8 transition-colors hover:bg-muted/40 md:p-10"
+            >
+              <div className="mb-4 font-mono text-xs text-muted-foreground">
+                /{String(i + 1).padStart(2, "0")}
+              </div>
+              <h3 className="font-serif text-2xl leading-tight">
+                {primaryHref ? (
+                  <a
+                    href={primaryHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="after:absolute after:inset-0 after:content-[''] group-hover:underline"
+                  >
+                    {p.title}
+                  </a>
+                ) : (
+                  p.title
+                )}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
 
-            <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1">
-              {p.tags.map((t, idx) => (
-                <span key={t} className="inline-flex items-center text-xs text-muted-foreground">
-                  {idx > 0 && <span className="mr-2 text-border">·</span>}
-                  {t}
-                </span>
-              ))}
-            </div>
+              <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                {p.tags.map((t, idx) => (
+                  <span key={t} className="inline-flex items-center text-xs text-muted-foreground">
+                    {idx > 0 && <span className="mr-2 text-border">·</span>}
+                    {t}
+                  </span>
+                ))}
+              </div>
 
-            <div className="mt-6 flex flex-wrap items-center gap-4 pt-4 text-sm">
-              {p.github && (
-                <a
-                  href={p.github}
-                  className="inline-flex items-center gap-1.5 text-foreground underline-offset-4 hover:underline"
-                >
-                  GitHub <span aria-hidden>↗</span>
-                </a>
-              )}
-              {p.medium && (
-                <a
-                  href={p.medium}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 text-accent underline-offset-4 hover:underline"
-                >
-                  Read post <span aria-hidden>↗</span>
-                </a>
-              )}
-            </div>
-          </article>
-        ))}
+              <div className="relative z-10 mt-6 flex flex-wrap items-center gap-4 pt-4 text-sm">
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-foreground underline-offset-4 hover:underline"
+                  >
+                    GitHub <span aria-hidden>↗</span>
+                  </a>
+                )}
+                {p.medium && (
+                  <a
+                    href={p.medium}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-accent underline-offset-4 hover:underline"
+                  >
+                    Read post <span aria-hidden>↗</span>
+                  </a>
+                )}
+              </div>
+            </article>
+          );
+        })}
         <div className="hidden bg-background md:block" />
       </div>
     </Section>
