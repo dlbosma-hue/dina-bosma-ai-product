@@ -14,20 +14,21 @@ export function About() {
             />
           </div>
           <p>
-            Four years as a Product Manager, most recently at Outfittery building AI-powered
-            internal tools, sales platforms, and the processes around them. I know what it
-            takes to ship, and I know where AI initiatives stall. That means I can help you
-            avoid both.
+            Four years as a Product Manager, (most recently at Outfittery) building
+            AI-powered internal tools, sales platforms, and the processes around them.<br />
+            I know what it takes to ship, and I know where AI initiatives stall. That means
+            I can help you avoid both.
           </p>
           <p>
             In 2026 I completed an intensive AI Consulting and Integration bootcamp: nine
-            weeks of building real systems (agents, RAG pipelines, ML models, n8n workflows)
-            from scratch. My capstone, Spottr, is a full consulting engagement: business
-            case, working MVP, GDPR documentation, and EU AI Act compliance pack.
+            weeks of building real systems (agents, RAG pipelines, ML models, n8n
+            workflows) from scratch.<br />
+            My capstone project; 'Spottr', is a full consulting engagement: business case,
+            working MVP, GDPR documentation, and EU AI Act compliance pack.
           </p>
           <p>
             If you need someone who can bridge strategy and implementation, talk to
-            engineers and stakeholders in the same breath, and actually build the thing,
+            engineers and stakeholders in the same breath, and in fact build the thing,
             that is what I do.
           </p>
           <p>
