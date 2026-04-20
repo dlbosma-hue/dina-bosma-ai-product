@@ -15,18 +15,24 @@ export function About() {
           </div>
           <p>
             Four years as a Product Manager, most recently at Outfittery building AI-powered
-            internal tools, sales platforms, and the processes around them. I know what it takes
-            to ship, and I know where AI initiatives stall.
+            internal tools, sales platforms, and the processes around them. I know what it
+            takes to ship, and I know where AI initiatives stall. That means I can help you
+            avoid both.
           </p>
           <p>
-            In 2026 I completed an intensive AI Consulting &amp; Integration bootcamp at
-            IronHack: nine weeks of building real systems (agents, RAG pipelines, ML models,
-            n8n workflows) from scratch. My capstone, Spottr, is a full consulting engagement:
-            business case, working MVP, GDPR documentation, and EU AI Act compliance pack.
+            In 2026 I completed an intensive AI Consulting and Integration bootcamp: nine
+            weeks of building real systems (agents, RAG pipelines, ML models, n8n workflows)
+            from scratch. My capstone, Spottr, is a full consulting engagement: business
+            case, working MVP, GDPR documentation, and EU AI Act compliance pack.
+          </p>
+          <p>
+            If you need someone who can bridge strategy and implementation, talk to
+            engineers and stakeholders in the same breath, and actually build the thing,
+            that is what I do.
           </p>
           <p>
             Multilingual: Dutch (native), English (C2), German (C1), Russian (B1). Based in
-            Berlin. Former end-user of the tools I now build.
+            Berlin.
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
