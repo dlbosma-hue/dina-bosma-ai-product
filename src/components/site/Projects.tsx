@@ -69,18 +69,17 @@ const projects: Project[] = [
     },
   },
   {
-    title: "AI Podcast Studio",
-    desc: "End-to-end pipeline from text input to synthesised audio: GPT-4o script generation, ElevenLabs TTS, and a Gradio interface. Clean separation of UI and pipeline logic, deployable as a standalone app.",
-    tags: ["Gradio", "ElevenLabs", "OpenAI API", "Python"],
-    github:
-      "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Podcast%20Project",
+    title: "AI Content Creator",
+    desc: "A Gradio-powered content generation tool built around deliberate prompt engineering. Takes a topic and audience brief, then produces structured content across formats. Built to demonstrate how prompt design shapes output quality, not just model capability.",
+    tags: ["Gradio", "OpenAI API", "Prompt Engineering", "Python"],
+    github: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/ai-content-creator",
     details: {
-      what: "A text-to-podcast pipeline with a Gradio UI. Give it a topic or transcript, and it generates a structured script with GPT-4o, then synthesises natural-sounding audio via the ElevenLabs API.",
-      how: "Pipeline logic and UI are kept separate so either can be swapped out. GPT-4o handles scripting with a prompt that formats output for spoken delivery. ElevenLabs handles voice synthesis. Gradio wraps the whole pipeline in a deployable web interface.",
+      what: "A content generation tool with a Gradio interface. Give it a topic, a target audience, and a tone, and it produces structured content — social posts, summaries, outlines — tailored to the brief. The focus is on how prompt architecture drives output quality.",
+      how: "Built with a layered prompting approach: a system prompt sets voice and constraints, a structured user prompt encodes the brief, and chain-of-thought formatting guides the model toward consistent, usable output. Gradio provides the interface, making it usable without touching code. OpenAI API powers generation.",
       outcomes:
-        "Deployable standalone app. Clean architecture that makes it straightforward to swap voice providers or add multi-speaker support.",
+        "Demonstrates that prompt engineering is a design discipline, not a workaround. Small structural changes to the prompt produce measurable differences in output consistency and format compliance.",
       learned:
-        "Prompting for audio output is different from prompting for text: you have to think in rhythm, pause, and spoken register, not just content.",
+        "The interface shapes how people prompt. A well-designed Gradio UI with clear input fields leads to better prompts and better outputs — the UX and the prompt design are inseparable.",
     },
   },
   {

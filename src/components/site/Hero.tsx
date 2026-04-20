@@ -12,8 +12,9 @@ export function Hero() {
         Dina Bosma-Buczynska
       </h1>
       <p className="mt-8 max-w-2xl font-serif text-2xl leading-snug text-foreground/85 md:text-3xl">
-        AI Consultant &amp; Product Manager. Strategy, implementation, and the bridge between
-        them.
+        AI Consultant &amp; Product Manager.
+        <br />
+        Strategy, implementation, and the bridge between them.
       </p>
       <p className="mt-6 max-w-xl text-base text-muted-foreground">
         Berlin-based. Available in English, German, and Dutch.
