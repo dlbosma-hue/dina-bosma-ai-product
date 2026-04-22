@@ -22,7 +22,6 @@ const groups = [
       "RICE / MoSCoW",
       "JIRA",
       "Confluence",
-      "Power BI",
       "Scrum",
       "Stakeholder Workshops",
     ],
