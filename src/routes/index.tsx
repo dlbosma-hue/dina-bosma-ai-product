@@ -3,6 +3,7 @@ import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
+import { WhoIWorkWith } from "@/components/site/WhoIWorkWith";
 import { CaseStudies } from "@/components/site/CaseStudies";
 import { Projects } from "@/components/site/Projects";
 import { Writing } from "@/components/site/Writing";
@@ -40,6 +41,7 @@ function Index() {
       <div aria-hidden className="mx-auto h-px max-w-5xl bg-border" />
       <About />
       <Services />
+      <WhoIWorkWith />
       <CaseStudies />
       <Projects />
       <Writing />
