@@ -9,15 +9,15 @@ export function Hero() {
         Berlin · Available now
       </div>
       <h1 className="font-serif text-5xl leading-[1.02] tracking-tight md:text-7xl lg:text-8xl">
-        Dina Bosma-Buczynska
+        HUMINT
       </h1>
       <p className="mt-6 max-w-2xl font-serif text-2xl leading-snug text-foreground/85 md:text-3xl">
-        AI Consultant &amp; Product Manager.
+        Human intelligence. AI powered.
         <br />
         Strategy, implementation, and the bridge between them.
       </p>
       <p className="mt-4 max-w-xl text-base text-muted-foreground">
-        Berlin-based. Available in English, German, and Dutch.
+        AI consulting by Dina Bosma-Buczynska. Berlin-based. Available in English, German, and Dutch.
       </p>
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <a
