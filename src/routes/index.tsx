@@ -16,17 +16,17 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Dina Bosma-Buczynska, AI Consultant & Product Manager, Berlin" },
+      { title: "HUMINT — Human intelligence. AI powered." },
       {
         name: "description",
         content:
-          "Dina Bosma-Buczynska, AI Consultant and Product Manager based in Berlin. Strategy, implementation, and the bridge between them. Available in English, German, and Dutch.",
+          "HUMINT — AI consulting by Dina Bosma-Buczynska. Human intelligence, AI powered. Strategy, implementation, and the bridge between them. Berlin-based, available in English, German, and Dutch.",
       },
-      { property: "og:title", content: "Dina Bosma-Buczynska, AI Consultant & Product Manager" },
+      { property: "og:title", content: "HUMINT — Human intelligence. AI powered." },
       {
         property: "og:description",
         content:
-          "Strategy, implementation, and the bridge between them. Berlin-based AI consultant and product manager.",
+          "AI consulting by Dina Bosma-Buczynska. Strategy, implementation, and the bridge between them.",
       },
     ],
   }),

@@ -46,7 +46,7 @@ export function Nav() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-5 md:px-10">
         <a href="#top" className="font-serif text-xl tracking-tight">
-          Dina Bosma-Buczynska
+          HUMINT
         </a>
         <nav className="hidden flex-1 items-center justify-center gap-8 text-sm text-muted-foreground md:flex">
           {links.map((l) => {
