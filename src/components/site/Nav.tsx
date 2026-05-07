@@ -4,6 +4,7 @@ export function Nav() {
   const links = [
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
+    { href: "#who", label: "Who I work with" },
     { href: "#work", label: "Work" },
     { href: "#projects", label: "Projects" },
     { href: "#writing", label: "Writing" },
