@@ -14,25 +14,25 @@ export function About() {
             />
           </div>
           <p>
-            Four years as a Product Manager — most recently at Outfittery, building
-            AI-powered internal tools, sales platforms, and the processes around them. I
-            know what it takes to ship, and I know where AI initiatives stall. That means I
-            can help you avoid both.
-          </p>
-          <p>
-            I started as a stylist and became the PM who built the tools that made
-            stylists faster. That inside-out perspective — knowing what it feels like to
-            use the systems you&apos;re building — is what I bring to every project.
-          </p>
-          <p>
             In 2026 I completed an intensive AI Consulting and Integration bootcamp: nine
             weeks building real systems (agents, RAG pipelines, ML models, n8n workflows)
             from scratch. My capstone project, Spottr, is a full consulting engagement:
             business case, working MVP, GDPR documentation, and EU AI Act compliance pack.
           </p>
           <p>
+            Four years as a Product Manager (most recently at Outfittery), building
+            AI-powered internal tools, sales platforms, and the processes around them. I
+            know what it takes to ship, and I know where AI initiatives stall. That means I
+            can help you avoid both.
+          </p>
+          <p>
+            I started as a stylist and became the PM who built the tools that made
+            stylists faster. That inside-out perspective, knowing what it feels like to
+            use the systems you&apos;re building, is what I bring to every project.
+          </p>
+          <p>
             If you need someone who can bridge strategy and implementation, talk to
-            engineers and stakeholders in the same breath, and actually build the thing —
+            engineers and stakeholders in the same breath, and actually build the thing,
             that is what I do.
           </p>
           <p>
