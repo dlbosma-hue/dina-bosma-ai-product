@@ -47,9 +47,8 @@ export function About() {
             className="mb-8 hidden aspect-square w-full max-w-xs rounded-full object-cover md:block"
           />
           <blockquote className="font-serif text-2xl leading-snug text-foreground italic md:text-[1.65rem]">
-            &ldquo;Most AI projects don&apos;t fail on the model. They fail on the handover,
-            the stakeholder, the scope. That&apos;s where product thinking earns its
-            place.&rdquo;
+            &ldquo;Shipping AI is a people problem dressed up as a technical one.
+            That&apos;s where I come in.&rdquo;
           </blockquote>
         </aside>
       </div>
