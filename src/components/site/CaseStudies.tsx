@@ -56,6 +56,11 @@ export function CaseStudies() {
                   <div key={m.label}>
                     <div className="font-serif text-3xl">{m.value}</div>
                     <div className="mt-1 text-xs text-muted-foreground">{m.label}</div>
+                    {c.client === "Spottr / Capstone Project" && m.value === "1,099%" && (
+                      <div className="mt-2 text-[11px] leading-snug text-muted-foreground/70">
+                        Based on a modelled scenario: 200-member studio, €3K implementation cost
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
