@@ -4,7 +4,7 @@ export function Nav() {
   const links = [
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
-    { href: "#who", label: "Who I work with" },
+    { href: "#who", label: "Clients" },
     { href: "#work", label: "Work" },
     { href: "#projects", label: "Projects" },
     { href: "#writing", label: "Writing" },
@@ -49,7 +49,7 @@ export function Nav() {
         <a href="#top" className="font-serif text-xl tracking-tight">
           HUMINT
         </a>
-        <nav className="hidden flex-1 items-center justify-center gap-8 text-sm text-muted-foreground md:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-5 text-sm text-muted-foreground md:flex lg:gap-7">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
             return (
