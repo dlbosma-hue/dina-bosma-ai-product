@@ -6,7 +6,7 @@ export function Hero() {
     >
       <div className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
         <span className="h-px w-8 bg-accent" />
-        Berlin · Available now
+        Berlin · Available for EU and remote engagements
       </div>
       <h1 className="font-serif text-5xl leading-[1.02] tracking-tight md:text-7xl lg:text-8xl">
         HUMINT
@@ -24,7 +24,7 @@ export function Hero() {
           href="#contact"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm text-background transition-opacity hover:opacity-90"
         >
-          Let's talk
+          Book a free intro call
           <span aria-hidden>→</span>
         </a>
         <a
