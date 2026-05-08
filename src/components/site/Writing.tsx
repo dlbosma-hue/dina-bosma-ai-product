@@ -6,12 +6,16 @@ const articles = [
   {
     title:
       "I built an AI agent that audits media diversity. Here's what actually went wrong.",
+    summary:
+      "What I learned when the technical part worked and everything else didn't.",
     url: "https://medium.com/@dinaleonidovnabosma/i-built-an-ai-agent-that-audits-media-diversity-heres-what-actually-went-wrong-4b38790a6e3f",
     eyebrow: "Essay · Medium",
   },
   {
     title:
       "I learned how to build a working AI system in 9 weeks. Here's what the tutorials never mention.",
+    summary:
+      "The gap between following along and actually building something real.",
     url: "https://medium.com/@dinaleonidovnabosma/i-learned-how-to-build-a-working-ai-system-in-9-weeks-here-is-what-the-tutorials-never-mention-7cb59c81b100",
     eyebrow: "Essay · Medium",
   },
@@ -36,6 +40,9 @@ export function Writing() {
               <h3 className="font-serif text-2xl leading-tight md:text-3xl">
                 {a.title}
               </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {a.summary}
+              </p>
             </div>
             <div className="inline-flex items-center gap-1.5 text-sm text-foreground underline-offset-4 group-hover:underline">
               Read on Medium <span aria-hidden>↗</span>
