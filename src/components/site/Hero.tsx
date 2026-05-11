@@ -14,17 +14,20 @@ export function Hero() {
       <p className="mt-6 max-w-2xl font-serif text-2xl leading-snug text-foreground/85 md:text-3xl">
         Human intelligence. AI powered.
         <br />
-        Strategy, implementation, and the bridge between them.
+        I help companies turn AI ideas into working products, workflows, and
+        decisions they can actually use.
       </p>
       <p className="mt-4 max-w-xl text-base text-muted-foreground">
-        AI consulting by Dina Bosma-Buczynska. Berlin-based. Available in English, German, and Dutch.
+        AI consulting and fractional product leadership for teams that need
+        strategy, implementation, and the bridge between them. Based in Berlin.
+        Available for EU and remote engagements in English, German, and Dutch.
       </p>
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <a
           href="#contact"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm text-background transition-opacity hover:opacity-90"
         >
-          Book a free intro call
+          Book an intro call
           <span aria-hidden>→</span>
         </a>
         <a
