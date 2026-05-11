@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
+import { CredibilityStrip } from "@/components/site/CredibilityStrip";
 import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
 import { WhoIWorkWith } from "@/components/site/WhoIWorkWith";
 import { CaseStudies } from "@/components/site/CaseStudies";
 import { Projects } from "@/components/site/Projects";
-import { Stack } from "@/components/site/Stack";
+import { HowIWork } from "@/components/site/HowIWork";
 import { Credentials } from "@/components/site/Credentials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -36,13 +37,13 @@ function Index() {
     <main className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
-      <div aria-hidden className="mx-auto h-px max-w-5xl bg-border" />
+      <CredibilityStrip />
       <About />
       <Services />
       <WhoIWorkWith />
       <CaseStudies />
       <Projects />
-      <Stack />
+      <HowIWork />
       <Credentials />
       <Contact />
       <Footer />
