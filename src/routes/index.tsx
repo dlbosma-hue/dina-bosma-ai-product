@@ -5,6 +5,7 @@ import { CredibilityStrip } from "@/components/site/CredibilityStrip";
 import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
 import { WhoIWorkWith } from "@/components/site/WhoIWorkWith";
+import { Testimonials } from "@/components/site/Testimonials";
 import { CaseStudies } from "@/components/site/CaseStudies";
 import { Projects } from "@/components/site/Projects";
 import { HowIWork } from "@/components/site/HowIWork";
@@ -41,6 +42,7 @@ function Index() {
       <About />
       <Services />
       <WhoIWorkWith />
+      <Testimonials />
       <CaseStudies />
       <Projects />
       <HowIWork />
