@@ -14,9 +14,14 @@ export function About() {
             />
           </div>
           <p>
-            I am an AI consultant and product leader with four years of
-            experience building internal tools, sales platforms, and operational
-            processes, most recently at Outfittery.
+            Before I was a PM, I was a stylist. Later, I became the PM building
+            tools for stylists. That perspective shaped everything: I care about
+            the people using the system, not just the system itself.
+          </p>
+          <p>
+            I now work as an AI consultant and product leader with four years
+            of experience shipping internal tools, sales platforms, and
+            operational processes, most recently at Outfittery.
           </p>
           <p>
             In 2026, I completed an intensive AI Consulting and Integration
@@ -27,11 +32,6 @@ export function About() {
             My capstone project, Spottr, was designed as a full consulting
             engagement: business case, working MVP, GDPR documentation, and an
             EU AI Act compliance pack.
-          </p>
-          <p>
-            Before product, I worked as a stylist. Later, I became the PM
-            building tools for stylists. That perspective shaped how I work: I
-            care about the people using the system, not just the system itself.
           </p>
           <p>
             I work best with companies that need someone who can move between
