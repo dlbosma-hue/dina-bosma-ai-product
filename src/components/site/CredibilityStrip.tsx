@@ -1,23 +1,20 @@
 const items = [
-  "Built real AI systems hands-on in 2026",
-  "Experienced across product, automation, and implementation",
+  "Hands-on AI systems",
+  "Product and implementation",
   "GDPR and EU AI Act aware",
 ];
 
 export function CredibilityStrip() {
   return (
-    <section
-      aria-label="Credibility"
-      className="border-y border-border bg-muted/20"
-    >
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-px bg-border sm:grid-cols-3">
-        {items.map((item) => (
-          <div
-            key={item}
-            className="bg-background px-6 py-6 text-sm leading-snug text-foreground/85 md:px-8"
-          >
+    <section aria-label="Credibility" className="border-y border-border">
+      <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-6 text-xs uppercase tracking-[0.22em] text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
+        {items.map((item, i) => (
+          <span key={item} className="flex items-center gap-6">
             {item}
-          </div>
+            {i < items.length - 1 && (
+              <span aria-hidden className="hidden h-px w-8 bg-border md:inline-block" />
+            )}
+          </span>
         ))}
       </div>
     </section>
