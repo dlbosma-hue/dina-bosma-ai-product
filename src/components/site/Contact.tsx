@@ -15,7 +15,11 @@ export function Contact() {
         work across Europe.
       </p>
 
-      <div className="mt-12 flex flex-wrap items-center gap-8">
+      <div className="mt-12">
+        <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+          Currently available for Q3 engagements.
+        </div>
+        <div className="flex flex-wrap items-center gap-8">
         <a
           href="mailto:dlbosma@gmail.com"
           className="inline-flex items-center gap-2 border-b border-foreground pb-1 text-sm tracking-wide text-foreground transition-opacity hover:opacity-70"
@@ -41,6 +45,7 @@ export function Contact() {
           GitHub
           <span aria-hidden>↗</span>
         </a>
+        </div>
       </div>
 
     </section>
