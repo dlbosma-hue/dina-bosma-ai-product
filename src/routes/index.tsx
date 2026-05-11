@@ -6,10 +6,8 @@ import { Services } from "@/components/site/Services";
 import { WhoIWorkWith } from "@/components/site/WhoIWorkWith";
 import { CaseStudies } from "@/components/site/CaseStudies";
 import { Projects } from "@/components/site/Projects";
-import { Writing } from "@/components/site/Writing";
 import { Stack } from "@/components/site/Stack";
 import { Credentials } from "@/components/site/Credentials";
-import { Recommendations } from "@/components/site/Recommendations";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
@@ -44,10 +42,8 @@ function Index() {
       <WhoIWorkWith />
       <CaseStudies />
       <Projects />
-      <Writing />
       <Stack />
       <Credentials />
-      <Recommendations />
       <Contact />
       <Footer />
     </main>

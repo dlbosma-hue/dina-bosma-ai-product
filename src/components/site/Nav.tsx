@@ -7,8 +7,6 @@ export function Nav() {
     { href: "#who", label: "Clients" },
     { href: "#work", label: "Work" },
     { href: "#projects", label: "Projects" },
-    { href: "#writing", label: "Writing" },
-    { href: "#recommendations", label: "Recommendations" },
     { href: "#contact", label: "Contact" },
   ];
 
