@@ -2,28 +2,24 @@ import { Section } from "./Section";
 
 const services = [
   {
-    title: "AI Workflow Integration",
-    desc: "LangChain, n8n, RAG pipelines, agents.",
+    title: "AI workflow integration",
+    desc: "Agents, RAG pipelines, and n8n automations wired into the way your team actually works.",
   },
   {
-    title: "AI Product Strategy & Roadmapping",
+    title: "AI product strategy and roadmapping",
     desc: "Outcomes over output. Roadmaps that survive contact with reality.",
   },
   {
-    title: "Build-or-Buy Analysis & Vendor Selection",
-    desc: "Honest trade-offs. No vendor allegiance.",
+    title: "Build or buy analysis",
+    desc: "Honest trade-offs and vendor selection. No allegiance, no resale fees.",
   },
   {
-    title: "EU AI Act & GDPR Compliance",
-    desc: "Practical guidance, not legalese.",
+    title: "Practical AI compliance support",
+    desc: "GDPR and EU AI Act guidance that engineers and stakeholders can use, not legalese.",
   },
   {
-    title: "Stakeholder Workshop Facilitation",
-    desc: "Aligning humans before aligning models.",
-  },
-  {
-    title: "Technical PM, Embedded",
-    desc: "Hands-on, in your product team, on a fractional basis.",
+    title: "Fractional product leadership",
+    desc: "Embedded in your product team on a fractional basis. Strategy, delivery, and stakeholder alignment.",
   },
 ];
 

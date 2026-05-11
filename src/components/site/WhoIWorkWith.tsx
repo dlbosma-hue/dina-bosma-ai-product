@@ -1,19 +1,17 @@
 import { Section } from "./Section";
 
 const companyTypes = [
-  "Startups and scale-ups building their first AI layer",
-  "Retail and e-commerce teams with manual ops bottlenecks",
-  "Founders who need someone to bridge strategy and engineering",
-  "Product teams shipping AI features without internal expertise",
-  "Mid-size companies sitting on data they're not using yet",
+  "Startups and scale-ups building their first meaningful AI layer",
+  "Product teams shipping AI features without deep internal AI expertise",
+  "Retail, e-commerce, and service businesses with operational bottlenecks and unused data",
+  "Founders who need someone who can talk to engineers and business stakeholders equally well",
 ];
 
 const signals = [
-  "Your team is drowning in repetitive manual work",
-  "You've tried AI tools but nothing has stuck",
-  "You have a use case but no one to build it",
-  "Your AI project stalled between planning and production",
-  "You need someone who speaks both stakeholder and engineer",
+  "Your team has identified an AI opportunity but has not turned it into a real build yet",
+  "You have tested tools, but nothing has stuck operationally",
+  "Your project is stalled between idea, implementation, and adoption",
+  "You need hands-on help, not just a slide deck",
 ];
 
 export function WhoIWorkWith() {
@@ -21,8 +19,8 @@ export function WhoIWorkWith() {
     <Section id="who" eyebrow="Who I work with" title="Who I work with.">
       <div className="grid gap-8 md:grid-cols-2 md:gap-10">
         {[
-          { title: "Company types.", items: companyTypes },
-          { title: "You might need me if.", items: signals },
+          { title: "Who I work with.", items: companyTypes },
+          { title: "You will probably benefit from working with me if.", items: signals },
         ].map((col) => (
           <div
             key={col.title}
