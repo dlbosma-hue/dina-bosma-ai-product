@@ -15,27 +15,25 @@ const signals = [
 ];
 
 export function WhoIWorkWith() {
+  const columns = [
+    { title: "Who I work with", items: companyTypes },
+    { title: "When it tends to fit", items: signals },
+  ];
   return (
-    <Section id="who" eyebrow="Who I work with" title="Who I work with.">
-      <div className="grid gap-8 md:grid-cols-2 md:gap-10">
-        {[
-          { title: "Who I work with.", items: companyTypes },
-          { title: "You will probably benefit from working with me if.", items: signals },
-        ].map((col) => (
-          <div
-            key={col.title}
-            className="rounded-lg border border-border bg-card/40 p-6 md:p-8"
-          >
-            <h3 className="mb-6 font-serif text-2xl leading-tight">{col.title}</h3>
-            <ul className="divide-y divide-border/70">
-              {col.items.map((item, i) => (
-                <li key={item} className="flex items-start gap-4 py-3 first:pt-0 last:pb-0">
-                  <span className="mt-1 shrink-0 font-mono text-xs tabular-nums text-muted-foreground">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-[15px] leading-relaxed text-foreground/85">
-                    {item}
-                  </span>
+    <Section id="who" eyebrow="Engagements" title="Who I work with.">
+      <div className="grid gap-14 md:grid-cols-2 md:gap-20">
+        {columns.map((col) => (
+          <div key={col.title}>
+            <h3 className="mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+              {col.title}
+            </h3>
+            <ul className="space-y-5">
+              {col.items.map((item) => (
+                <li
+                  key={item}
+                  className="font-serif text-xl leading-snug text-foreground/90"
+                >
+                  {item}
                 </li>
               ))}
             </ul>
