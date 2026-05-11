@@ -6,6 +6,8 @@ type Case = {
   client: string;
   title: string;
   body: string;
+  role?: string;
+  deliverables?: string[];
   metrics: Metric[];
   tags: string[];
   link?: string;
@@ -15,7 +17,13 @@ const cases: Case[] = [
   {
     client: "Outfittery",
     title: "AI-Assisted Stylist Platform",
-    body: "Led product for an internal AI system integrating workflow automation into the stylist workflow. Scoped requirements, aligned engineering and ops stakeholders, and shipped iteratively, keeping humans in control throughout.",
+    role: "Product Manager, internal tools",
+    body: "Led product for an internal AI-assisted platform used by the stylist team. Defined the problem with operations, scoped the build with engineering, and shipped iteratively into live workflows. Focused on measurable operational gains while keeping stylists in control of the customer-facing decisions.",
+    deliverables: [
+      "Productised an internal AI-assisted styling tool used daily by the team",
+      "Aligned engineering, operations, and commercial stakeholders around one roadmap",
+      "Shipped incremental releases into production without disrupting live operations",
+    ],
     metrics: [
       { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
       { value: "−80%", label: "manual coordination workload" },
@@ -25,7 +33,14 @@ const cases: Case[] = [
   {
     client: "Spottr / Capstone Project",
     title: "AI Member Retention for Boutique Fitness Studios",
-    body: "End-to-end AI consultant engagement: scoped the business problem, built a logistic regression churn model (92.5% accuracy, 0.977 AUC-ROC), automated weekly coach briefings via n8n, integrated GDPR-compliant wearable data, and delivered a full EU AI Act compliance pack and commercialisation roadmap.",
+    role: "End-to-end AI consultant engagement",
+    body: "Structured as a real consulting engagement, from business case to working product to compliance. Identified churn as the core commercial problem for boutique studios, built and validated a working MVP, and packaged the result with the documentation a buyer would actually need before adopting AI.",
+    deliverables: [
+      "Business case and commercialisation roadmap",
+      "Working MVP: churn model (92.5% accuracy, 0.977 AUC-ROC) plus n8n-automated weekly coach briefings",
+      "GDPR documentation covering wearable and member data",
+      "EU AI Act compliance pack ready for stakeholder review",
+    ],
     metrics: [
       { value: "33 days", label: "break-even point" },
       { value: "1,099%", label: "projected 12-month ROI" },
@@ -48,7 +63,24 @@ export function CaseStudies() {
               {c.client}
             </div>
             <h3 className="font-serif text-3xl leading-tight">{c.title}</h3>
+            {c.role && (
+              <div className="mt-2 text-sm text-muted-foreground">{c.role}</div>
+            )}
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{c.body}</p>
+
+            {c.deliverables && c.deliverables.length > 0 && (
+              <ul className="mt-6 space-y-2 border-t border-border pt-5">
+                {c.deliverables.map((d) => (
+                  <li
+                    key={d}
+                    className="flex gap-3 text-sm leading-relaxed text-foreground/85"
+                  >
+                    <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
 
             {c.metrics.length > 0 && (
               <div className="mt-8 grid grid-cols-2 gap-6 border-t border-border pt-6">
