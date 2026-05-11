@@ -1,5 +1,4 @@
 const items = [
-  "Worked at Outfittery",
   "Built real AI systems hands-on in 2026",
   "Experienced across product, automation, and implementation",
   "GDPR and EU AI Act aware",
@@ -11,7 +10,7 @@ export function CredibilityStrip() {
       aria-label="Credibility"
       className="border-y border-border bg-muted/20"
     >
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-px bg-border sm:grid-cols-3">
         {items.map((item) => (
           <div
             key={item}
