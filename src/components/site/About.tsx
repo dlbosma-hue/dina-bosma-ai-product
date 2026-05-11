@@ -14,30 +14,33 @@ export function About() {
             />
           </div>
           <p>
-            In 2026 I completed an intensive AI Consulting and Integration bootcamp: nine
-            weeks building real systems (agents, RAG pipelines, ML models, n8n workflows)
-            from scratch. My capstone project, Spottr, is a full consulting engagement:
-            business case, working MVP, GDPR documentation, and EU AI Act compliance pack.
+            I am an AI consultant and product leader with four years of
+            experience building internal tools, sales platforms, and operational
+            processes, most recently at Outfittery.
           </p>
           <p>
-            Four years as a Product Manager (most recently at Outfittery), building
-            AI-powered internal tools, sales platforms, and the processes around them. I
-            know what it takes to ship, and I know where AI initiatives stall. That means I
-            can help you avoid both.
+            In 2026, I completed an intensive AI Consulting and Integration
+            bootcamp where I built working systems from scratch, including
+            agents, RAG pipelines, ML models, and n8n workflows.
           </p>
           <p>
-            I started as a stylist and became the PM who built the tools that made
-            stylists faster. That inside-out perspective, knowing what it feels like to
-            use the systems you&apos;re building, is what I bring to every project.
+            My capstone project, Spottr, was designed as a full consulting
+            engagement: business case, working MVP, GDPR documentation, and an
+            EU AI Act compliance pack.
           </p>
           <p>
-            If you need someone who can bridge strategy and implementation, talk to
-            engineers and stakeholders in the same breath, and actually build the thing,
-            that is what I do.
+            Before product, I worked as a stylist. Later, I became the PM
+            building tools for stylists. That perspective shaped how I work: I
+            care about the people using the system, not just the system itself.
           </p>
           <p>
-            Multilingual: Dutch (native), English (C2), German (C1), Russian (B1). Based in
-            Berlin.
+            I work best with companies that need someone who can move between
+            strategy, stakeholders, product decisions, and implementation
+            without getting stuck in theory.
+          </p>
+          <p className="text-base text-muted-foreground">
+            Based in Berlin. Working in Dutch (native), English (C2), German
+            (C1), and Russian (B1).
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
