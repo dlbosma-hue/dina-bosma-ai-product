@@ -4,14 +4,11 @@ export function Nav() {
   const links = [
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
-    { href: "#who", label: "Clients" },
     { href: "#work", label: "Work" },
-    { href: "#projects", label: "Projects" },
-    { href: "#how", label: "How" },
     { href: "#contact", label: "Contact" },
   ];
 
-  const externalLinks = [{ href: "https://github.com/dlbosma-hue", label: "GitHub" }];
+  const externalLinks: { href: string; label: string }[] = [];
 
   const [activeId, setActiveId] = useState<string>("");
 
