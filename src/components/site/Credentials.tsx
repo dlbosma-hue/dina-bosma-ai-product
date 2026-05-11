@@ -18,7 +18,7 @@ const items = [
 
 const experience = [
   {
-    title: "Product Manager, internal tools",
+    title: "Product Manager, internal tools and platform",
     org: "Outfittery",
     year: "4 yrs",
     detail:
