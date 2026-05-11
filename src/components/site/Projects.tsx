@@ -102,37 +102,35 @@ export function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <Section id="projects" eyebrow="Projects & Labs" title="Built, not just studied.">
-      <p className="-mt-6 mb-12 max-w-2xl text-lg text-muted-foreground md:mb-16">
-        A selection of technical projects from bootcamp and independent work.
+    <Section id="projects" eyebrow="Also" title="Projects and labs.">
+      <p className="-mt-4 mb-10 max-w-2xl text-base text-muted-foreground">
+        Independent technical work outside of client engagements. Available on
+        request.
       </p>
-      <div className="grid gap-px overflow-hidden rounded-md border border-border bg-border md:grid-cols-2">
-        {projects.map((p, i) => (
-          <article
-            key={p.title}
-            onClick={() => setSelected(p)}
-            className="flex cursor-pointer flex-col bg-background p-8 transition-colors hover:bg-muted/40 md:p-10"
-          >
-            <div className="mb-4 font-mono text-xs text-muted-foreground">
-              /{String(i + 1).padStart(2, "0")}
-            </div>
-            <h3 className="font-serif text-2xl leading-tight">{p.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
-
-            <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1">
-              {p.tags.map((t, idx) => (
-                <span key={t} className="inline-flex items-center text-xs text-muted-foreground">
-                  {idx > 0 && <span className="mr-2 text-border">·</span>}
-                  {t}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-6 pt-4 text-sm text-accent">Click to read more ↗</div>
-          </article>
+      <ul className="divide-y divide-border border-y border-border">
+        {projects.map((p) => (
+          <li key={p.title}>
+            <button
+              type="button"
+              onClick={() => setSelected(p)}
+              className="group grid w-full gap-2 py-6 text-left transition-colors hover:bg-muted/30 md:grid-cols-12 md:items-baseline md:gap-8 md:py-7"
+            >
+              <h3 className="font-serif text-xl leading-tight md:col-span-5 md:text-2xl">
+                {p.title}
+              </h3>
+              <p className="text-sm leading-relaxed text-muted-foreground md:col-span-6">
+                {p.desc}
+              </p>
+              <span
+                aria-hidden
+                className="text-sm text-muted-foreground transition-colors group-hover:text-foreground md:col-span-1 md:text-right"
+              >
+                ↗
+              </span>
+            </button>
+          </li>
         ))}
-        <div className="hidden bg-background md:block" />
-      </div>
+      </ul>
 
       <Dialog
         open={selected !== null}
