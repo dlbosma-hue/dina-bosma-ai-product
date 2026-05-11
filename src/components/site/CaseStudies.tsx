@@ -129,7 +129,7 @@ export function CaseStudies() {
                       Pitch deck
                     </div>
                     <div className="mt-1 font-serif text-lg leading-tight">
-                      Spottr — Smart Member Retention
+                      Spottr. Smart Member Retention.
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
                       PDF, 8 slides
