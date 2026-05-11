@@ -102,11 +102,7 @@ export function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <Section id="projects" eyebrow="Also" title="Projects and labs.">
-      <p className="-mt-4 mb-10 max-w-2xl text-base text-muted-foreground">
-        Independent technical work outside of client engagements. Available on
-        request.
-      </p>
+    <Section id="projects" eyebrow="Also" title="Selected builds.">
       <ul className="divide-y divide-border border-y border-border">
         {projects.map((p) => (
           <li key={p.title}>
