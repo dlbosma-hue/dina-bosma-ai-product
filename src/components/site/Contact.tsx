@@ -11,7 +11,8 @@ export function Contact() {
         Let&apos;s talk.
       </h2>
       <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-        Available for consulting, fractional PM work, and workshops across Europe.
+        Based in Berlin. Available for consulting, workshops, and fractional PM
+        work across Europe.
       </p>
 
       <div className="mt-10 flex flex-wrap gap-4">
@@ -19,7 +20,7 @@ export function Contact() {
           href="mailto:dlbosma@gmail.com"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm text-background transition-opacity hover:opacity-90"
         >
-          Email me
+          Book an intro call
           <span aria-hidden>→</span>
         </a>
         <a
