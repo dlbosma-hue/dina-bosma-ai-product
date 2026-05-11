@@ -1,4 +1,5 @@
 import { Section } from "./Section";
+import dinaPortrait from "@/assets/dina-portrait.jpg";
 
 export function About() {
   return (
@@ -40,6 +41,11 @@ export function About() {
             &ldquo;Shipping AI is a people problem dressed up as a technical one.
             That&apos;s where I come in.&rdquo;
           </blockquote>
+          <img
+            src={dinaPortrait}
+            alt="Portrait of Dina Bosma-Buczynska"
+            className="mt-8 aspect-square w-full max-w-xs rounded-full object-cover"
+          />
         </aside>
       </div>
     </Section>
