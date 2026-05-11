@@ -21,18 +21,17 @@ const steps = [
 
 export function HowIWork() {
   return (
-    <Section id="how" eyebrow="How I work" title="A clear, four-step engagement.">
-      <ol className="grid gap-px overflow-hidden rounded-md border border-border bg-border md:grid-cols-2">
-        {steps.map((s, i) => (
+    <Section id="how" eyebrow="How I work" title="A clear engagement.">
+      <ol className="divide-y divide-border border-y border-border">
+        {steps.map((s) => (
           <li
             key={s.title}
-            className="bg-background p-8 transition-colors hover:bg-muted/40 md:p-10"
+            className="grid gap-3 py-8 md:grid-cols-12 md:gap-10 md:py-10"
           >
-            <div className="mb-4 font-mono text-xs text-muted-foreground">
-              {String(i + 1).padStart(2, "0")}
-            </div>
-            <h3 className="font-serif text-2xl leading-tight">{s.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            <h3 className="font-serif text-2xl leading-tight md:col-span-5 md:text-3xl">
+              {s.title}
+            </h3>
+            <p className="text-base leading-relaxed text-muted-foreground md:col-span-7">
               {s.desc}
             </p>
           </li>

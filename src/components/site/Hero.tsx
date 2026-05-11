@@ -2,37 +2,34 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto max-w-5xl px-6 pt-12 pb-16 md:px-10 md:pt-20 md:pb-20"
+      className="mx-auto max-w-5xl px-6 pt-20 pb-24 md:px-10 md:pt-32 md:pb-36"
     >
-      <div className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-        <span className="h-px w-8 bg-accent" />
-        Berlin · Available for EU and remote engagements
+      <div className="mb-10 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
+        AI consulting · Berlin
       </div>
-      <h1 className="font-serif text-5xl leading-[1.02] tracking-tight md:text-7xl lg:text-8xl">
+      <h1 className="font-serif text-6xl leading-[0.98] tracking-tight md:text-8xl lg:text-[8.5rem]">
         HUMINT
       </h1>
-      <p className="mt-6 max-w-2xl font-serif text-2xl leading-snug text-foreground/85 md:text-3xl">
-        Human intelligence. AI powered.
-        <br />
-        I help companies turn AI ideas into working products, workflows, and
-        decisions they can actually use.
+      <p className="mt-10 max-w-3xl font-serif text-3xl leading-[1.2] text-foreground md:text-[2.5rem]">
+        Human intelligence. AI powered. I help companies turn AI ideas into
+        working products, workflows, and decisions they can actually use.
       </p>
-      <p className="mt-4 max-w-xl text-base text-muted-foreground">
-        AI consulting and fractional product leadership for teams that need
-        strategy, implementation, and the bridge between them. Based in Berlin.
-        Available for EU and remote engagements in English, German, and Dutch.
+      <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
+        Independent advisory and fractional product leadership for teams that
+        need strategy, implementation, and the bridge between them. Available
+        for EU and remote engagements in English, German, and Dutch.
       </p>
-      <div className="mt-8 flex flex-wrap items-center gap-4">
+      <div className="mt-12 flex flex-wrap items-center gap-8">
         <a
           href="#contact"
-          className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm text-background transition-opacity hover:opacity-90"
+          className="inline-flex items-center gap-2 border-b border-foreground pb-1 text-sm tracking-wide text-foreground transition-opacity hover:opacity-70"
         >
           Book an intro call
           <span aria-hidden>→</span>
         </a>
         <a
           href="#work"
-          className="inline-flex items-center gap-2 px-2 py-3 text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
           See selected work
         </a>

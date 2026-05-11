@@ -26,20 +26,21 @@ const services = [
 export function Services() {
   return (
     <Section id="services" eyebrow="What I do" title="Services.">
-      <div className="grid gap-px overflow-hidden rounded-md border border-border bg-border md:grid-cols-2">
-        {services.map((s, i) => (
-          <div
+      <ul className="divide-y divide-border border-y border-border">
+        {services.map((s) => (
+          <li
             key={s.title}
-            className="group bg-background p-8 transition-colors hover:bg-muted/40 md:p-10"
+            className="grid gap-3 py-8 md:grid-cols-12 md:gap-10 md:py-10"
           >
-            <div className="mb-4 font-mono text-xs text-muted-foreground">
-              {String(i + 1).padStart(2, "0")}
-            </div>
-            <h3 className="font-serif text-2xl leading-tight">{s.title}</h3>
-            <p className="mt-3 text-sm text-muted-foreground">{s.desc}</p>
-          </div>
+            <h3 className="font-serif text-2xl leading-tight md:col-span-5 md:text-3xl">
+              {s.title}
+            </h3>
+            <p className="text-base leading-relaxed text-muted-foreground md:col-span-7">
+              {s.desc}
+            </p>
+          </li>
         ))}
-      </div>
+      </ul>
     </Section>
   );
 }
