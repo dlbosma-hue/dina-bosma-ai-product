@@ -1,18 +1,18 @@
 import { Section } from "./Section";
 
 const companyTypes = [
-  "Startups and scale-ups building their first meaningful AI layer",
-  "Product teams shipping AI features without deep internal AI expertise",
+  "Startups and scale-ups building their first meaningful AI layer.",
+  "Product teams shipping AI features without deep internal AI expertise.",
   "Retail and e-commerce businesses, especially in fashion and lifestyle, with operational bottlenecks and data they are not yet using systematically. This is where the Outfittery experience translates directly.",
   "Small business owners who want to automate repetitive work and use AI practically in their day-to-day operations, without needing a technical team to make it happen.",
-  "Founders who need someone who can talk to engineers and business stakeholders equally well",
+  "Founders who need someone who can talk to engineers and business stakeholders equally well.",
 ];
 
 const signals = [
-  "Your team has identified an AI opportunity but has not turned it into a real build yet",
-  "You have tested tools, but nothing has stuck operationally",
-  "Your project is stalled between idea, implementation, and adoption",
-  "You need hands-on help, not just a slide deck",
+  "Your team has identified an AI opportunity but has not turned it into a real build yet.",
+  "You have tested tools, but nothing has stuck operationally.",
+  "Your project is stalled between idea, implementation, and adoption.",
+  "You need hands-on help, not just a slide deck.",
 ];
 
 export function WhoIWorkWith() {
