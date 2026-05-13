@@ -3,7 +3,8 @@ import { Section } from "./Section";
 const companyTypes = [
   "Startups and scale-ups building their first meaningful AI layer",
   "Product teams shipping AI features without deep internal AI expertise",
-  "Retail, e-commerce, and service businesses with operational bottlenecks and unused data",
+  "Retail and e-commerce businesses, especially in fashion and lifestyle, with operational bottlenecks and data they are not yet using systematically. This is where the Outfittery experience translates directly.",
+  "Small business owners who want to automate repetitive work and use AI practically in their day-to-day operations, without needing a technical team to make it happen.",
   "Founders who need someone who can talk to engineers and business stakeholders equally well",
 ];
 
