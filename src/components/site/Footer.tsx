@@ -9,6 +9,30 @@ export function Footer() {
         </div>
         <div>Dina Bosma-Buczynska · Berlin · EN / DE / NL</div>
         <div className="flex items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/dlbosma-hue"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://medium.com/@dinaleonidovnabosma"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            Blog
+          </a>
           <Link to="/impressum" className="transition-colors hover:text-foreground">
             Impressum
           </Link>
