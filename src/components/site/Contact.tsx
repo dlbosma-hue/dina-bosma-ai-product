@@ -45,6 +45,15 @@ export function Contact() {
           GitHub
           <span aria-hidden>↗</span>
         </a>
+        <a
+          href="https://medium.com/@dinaleonidovnabosma"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+        >
+          Blog
+          <span aria-hidden>↗</span>
+        </a>
         </div>
       </div>
 
