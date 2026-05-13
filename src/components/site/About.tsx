@@ -34,8 +34,8 @@ export function About() {
             do what only humans can do.
           </p>
           <p className="text-base text-muted-foreground">
-            Based in Berlin. Working in Dutch (native), English (C2), German
-            (C1), and Russian (B1).
+            Based in Berlin. Working in Dutch (native), English (C2), and
+            German (C1).
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
