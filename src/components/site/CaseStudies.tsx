@@ -98,6 +98,20 @@ export function CaseStudies() {
               </div>
             )}
 
+            {c.client === "Spottr / Capstone Project" && (
+              <div className="mt-8 border-l-2 border-foreground/40 bg-muted/30 px-6 py-5 md:max-w-2xl">
+                <div className="mb-2 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+                  Compliance &amp; buyer readiness
+                </div>
+                <p className="text-sm leading-relaxed text-foreground/85">
+                  Delivered with full compliance documentation: GDPR data
+                  protection impact assessment, EU AI Act compliance pack ready
+                  for stakeholder review, and a standalone ROI model. Everything
+                  a buyer needs before saying yes.
+                </p>
+              </div>
+            )}
+
             {c.tags.length > 0 && (
               <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
                 {c.tags.map((t, i) => (
