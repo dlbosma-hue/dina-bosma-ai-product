@@ -19,6 +19,14 @@ export function Contact() {
         <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
           Currently available for Q3 engagements.
         </div>
+        <p className="mb-8 max-w-2xl text-base text-muted-foreground">
+          Typical engagements range from a one-day AI potential workshop through
+          to multi-month implementation projects and fractional product
+          leadership. Day rates start at 600 EUR for strategy and workshop work
+          and from 800 EUR for technical implementation. Retainer arrangements
+          are available from month three onwards. Happy to scope something
+          specific on a call.
+        </p>
         <div className="flex flex-wrap items-center gap-8">
         <a
           href="mailto:dlbosma@gmail.com"
