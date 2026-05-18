@@ -51,15 +51,7 @@ function ImpressumPage() {
           </div>
 
           <div>
-            <p>
-              E-Mail:{" "}
-              <a
-                href="mailto:dlbosma@gmail.com"
-                className="text-foreground underline-offset-4 hover:underline"
-              >
-                dlbosma@gmail.com
-              </a>
-            </p>
+            <p>Kontakt über das Kontaktformular auf der Startseite.</p>
             <p>
               LinkedIn:{" "}
               <a
