@@ -1,3 +1,5 @@
+import { ContactForm } from "./ContactForm";
+
 export function Contact() {
   return (
     <section
@@ -27,14 +29,10 @@ export function Contact() {
           are available from month three onwards. Happy to scope something
           specific on a call.
         </p>
+        <div className="mb-12">
+          <ContactForm />
+        </div>
         <div className="flex flex-wrap items-center gap-8">
-        <a
-          href="mailto:dlbosma@gmail.com"
-          className="inline-flex items-center gap-2 border-b border-foreground pb-1 text-sm tracking-wide text-foreground transition-opacity hover:opacity-70"
-        >
-          Book an intro call
-          <span aria-hidden>→</span>
-        </a>
         <a
           href="https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/"
           target="_blank"
