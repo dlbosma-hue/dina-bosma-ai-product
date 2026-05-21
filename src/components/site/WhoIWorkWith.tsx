@@ -14,8 +14,8 @@ export function WhoIWorkWith() {
             internal expertise. A good chunk of my work is in retail and
             e-commerce, especially fashion and lifestyle, where there is
             usually operational data sitting unused and bottlenecks that AI
-            can actually fix. That is where the Outfittery experience
-            translates directly.
+            can actually fix. That is where my background in fashion and
+            lifestyle operations translates directly.
           </p>
           <p>
             I also work with small business owners who want to automate
