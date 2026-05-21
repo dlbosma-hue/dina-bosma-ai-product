@@ -9,19 +9,28 @@ export function WhoIWorkWith() {
             Who I work with
           </h3>
           <p>
-            I work with startups and scale-ups building their first real AI
-            layer, and product teams shipping AI features without deep
-            internal expertise. A good chunk of my work is in retail and
-            e-commerce, especially fashion and lifestyle, where there is
-            usually operational data sitting unused and bottlenecks that AI
-            can actually fix. That is where my background in fashion and
-            lifestyle operations translates directly.
+            I work best with small businesses, founders, and small teams who
+            want to use AI in a way that still feels human.
           </p>
+          <p>That includes:</p>
+          <ul className="space-y-3 pl-5 list-disc marker:text-muted-foreground">
+            <li>
+              Small and growing businesses with repetitive operational work
+              they want to get off their plate
+            </li>
+            <li>
+              Founders and startups building their first AI layer, without a
+              dedicated tech team to make it happen
+            </li>
+            <li>
+              Retail and e-commerce teams, especially in fashion and
+              lifestyle, sitting on data they are not yet using
+            </li>
+          </ul>
           <p>
-            I also work with small business owners who want to automate
-            repetitive work without needing a technical team, and founders
-            who need someone who can talk to engineers and business
-            stakeholders in the same conversation.
+            If you have identified a problem and need someone who can both
+            think it through and actually build something, that is where I
+            come in.
           </p>
         </div>
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
