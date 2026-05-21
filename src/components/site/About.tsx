@@ -7,9 +7,14 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-5">
         <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
-            Before I was a Product Manager, I was an online stylist with a large personal customer portfolio. Later, I became the Product Manager building
-            tools for online stylists. That perspective shaped everything: I care about
-            the people using the system, not just the system itself.
+            Before I managed the tools, I used them. As an online stylist
+            with my own customer portfolio, I knew exactly what the job
+            demanded; then I became the Product Manager building the
+            platform for people doing that same work.
+          </p>
+          <p>
+            That perspective never left me: I build for the humans in the
+            system, not just the system itself.
           </p>
           <p>
             I now work as an AI consultant and product leader with four years
