@@ -39,14 +39,10 @@ export function About() {
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
-          <blockquote className="font-serif text-2xl leading-snug text-foreground italic md:text-[1.65rem]">
-            &ldquo;Shipping AI is a people problem dressed up as a technical one.
-            That&apos;s where I come in.&rdquo;
-          </blockquote>
           <img
             src={dinaPortrait}
             alt="Portrait of Dina Bosma-Buczynska"
-            className="mt-8 aspect-square w-full max-w-xs rounded-full object-cover"
+            className="aspect-square w-full max-w-xs rounded-full object-cover"
           />
         </aside>
       </div>
