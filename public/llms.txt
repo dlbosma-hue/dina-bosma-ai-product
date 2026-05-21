@@ -1,0 +1,11 @@
+# HUMINT
+
+> AI consulting by Dina Bosma-Buczynska. Human intelligence, AI powered. Strategy, implementation, and the bridge between them. Berlin-based, available in English, German, and Dutch.
+
+## Pages
+
+- [Home](/): Overview of services, approach, case studies, and contact.
+
+## Optional
+
+- [Impressum](/impressum): German legal notice.
