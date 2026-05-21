@@ -34,7 +34,7 @@ const cases: Case[] = [
     client: "Spottr / Capstone Project",
     title: "AI Member Retention for Boutique Fitness Studios",
     role: "End-to-end AI consultant engagement",
-    body: "Structured as a real consulting engagement, from business case to working product to compliance. Identified churn as the core commercial problem for boutique studios, built and validated a working MVP, and packaged the result with the documentation a buyer would actually need before adopting AI.",
+    body: "Structured as a real consulting engagement, from business case to working product to compliance. Identified churn as the core commercial problem for boutique studios, built and validated a working MVP, and packaged the result with the documentation a buyer truly needs before adopting AI.",
     deliverables: [
       "Business case and commercialisation roadmap",
       "Working MVP: churn model (92.5% accuracy, 0.977 AUC-ROC) plus n8n-automated weekly coach briefings",

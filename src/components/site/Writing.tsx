@@ -15,7 +15,7 @@ const articles = [
     title:
       "I learned how to build a working AI system in 9 weeks. Here's what the tutorials never mention.",
     summary:
-      "The gap between following along and actually building something real.",
+      "The gap between following along and building something real.",
     url: "https://medium.com/@dinaleonidovnabosma/i-learned-how-to-build-a-working-ai-system-in-9-weeks-here-is-what-the-tutorials-never-mention-7cb59c81b100",
     eyebrow: "Essay · Medium",
   },

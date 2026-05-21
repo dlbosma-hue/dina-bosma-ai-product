@@ -29,7 +29,7 @@ export function WhoIWorkWith() {
           </ul>
           <p>
             If you have identified a problem and need someone who can both
-            think it through and actually build something, that is where I
+            think it through and build something real, that is where I
             come in.
           </p>
         </div>
