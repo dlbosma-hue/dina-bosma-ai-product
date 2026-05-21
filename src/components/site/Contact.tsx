@@ -22,12 +22,12 @@ export function Contact() {
           Currently available for Q3 engagements.
         </div>
         <p className="mb-8 max-w-2xl text-base text-muted-foreground">
-          Typical engagements range from a one-day AI potential workshop through
-          to multi-month implementation projects and fractional product
-          leadership. Day rates start at 600 EUR for strategy and workshop work
-          and from 800 EUR for technical implementation. Retainer arrangements
-          are available from month three onwards. Happy to scope something
-          specific on a call.
+          Typical engagements start with a one-day AI potential workshop. From
+          there, projects are scoped to what makes sense for your size and
+          budget. Day rates start at 600 EUR for strategy and workshops and
+          from 800 EUR for technical work. Retainer arrangements are available
+          once we have worked together. Happy to talk through what would fit
+          on a call.
         </p>
         <div className="mb-12">
           <ContactForm />
