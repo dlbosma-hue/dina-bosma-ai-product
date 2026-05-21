@@ -7,7 +7,7 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-5">
         <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
-            Before I was a Product Manager, I was a stylist. Later, I became the Product Manager building
+            Before I was a Product Manager, I was an online stylist with a large personal customer portfolio. Later, I became the Product Manager building
             tools for stylists. That perspective shaped everything: I care about
             the people using the system, not just the system itself.
           </p>
