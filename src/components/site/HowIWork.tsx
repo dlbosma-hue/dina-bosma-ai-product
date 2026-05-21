@@ -15,7 +15,7 @@ const steps = [
   },
   {
     title: "Make it usable in the real world",
-    desc: "Adoption, handover, compliance, and the human side. The part most AI projects underestimate.",
+    desc: "Adoption, handover, compliance, and the human side. The part most AI projects underestimate. Because adoption is the point. A system your team doesn't use is just expensive infrastructure.",
   },
 ];
 
