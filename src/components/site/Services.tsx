@@ -3,11 +3,11 @@ import { Section } from "./Section";
 const services = [
   {
     title: "AI workflow integration",
-    desc: "You have repetitive work eating up your team's time. I connect agents, automations, and pipelines to how your team actually works, not how a demo assumes they do.",
+    desc: "You have repetitive work eating up your team's time. I connect agents, automations, and pipelines to how your team really works, not how a demo assumes they do.",
   },
   {
     title: "AI product strategy and roadmapping",
-    desc: "You know AI should be part of your product but you are not sure where to start or what to build first. I help you cut through the noise and decide what actually moves the needle.",
+    desc: "You know AI should be part of your product but you are not sure where to start or what to build first. I help you cut through the noise and decide what moves the needle.",
   },
   {
     title: "Build or buy analysis",
@@ -15,7 +15,7 @@ const services = [
   },
   {
     title: "Practical AI compliance support",
-    desc: "GDPR and the EU AI Act feel overwhelming. I translate them into clear steps your team can actually follow, without the legalese.",
+    desc: "GDPR and the EU AI Act feel overwhelming. I translate them into clear steps your team can follow, without the legalese.",
   },
   {
     title: "Fractional product leadership",

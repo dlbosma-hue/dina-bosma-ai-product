@@ -9,7 +9,7 @@ export function Belief() {
       <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         I build AI systems that reduce the repetitive, low-value work that
         slows teams down, so people can focus on judgment, relationships, and
-        the work that actually moves the business. Not automation for its own
+        the work that moves the business. Not automation for its own
         sake. Systems that make your team more capable than they were before.
       </p>
     </Section>

@@ -49,7 +49,7 @@ const projects: Project[] = [
       what: "An AI agent that audits news articles for representation gaps across gender, race, disability, and other marginalised groups. It analyses bylines, source diversity, framing language, and subject portrayal, then generates a structured report.",
       how: "Built with LangGraph ReAct loop, giving the agent access to RSS feeds, NewsAPI, Wikipedia, and a Pinecone RAG store. Deployed as a FastAPI service on Railway. Four n8n workflows run Monday mornings, pulling from NPR, NYT, The Guardian, and Al Jazeera and posting results to Notion and Slack.",
       outcomes:
-        "Live production deployment on Railway. Monitored end-to-end via LangSmith. Written up in a Medium post covering what actually went wrong during the build.",
+        "Live production deployment on Railway. Monitored end-to-end via LangSmith. Written up in a Medium post covering what went wrong during the build.",
       learned:
         "Agents fail in interesting ways when tools return unexpected formats. LangSmith traces made debugging tractable in a way that print statements never could.",
     },

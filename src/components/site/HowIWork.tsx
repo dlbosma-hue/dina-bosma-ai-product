@@ -3,7 +3,7 @@ import { Section } from "./Section";
 const steps = [
   {
     title: "Clarify the business problem",
-    desc: "Cut through the noise. Define what success actually looks like before touching a model or a tool.",
+    desc: "Cut through the noise. Define what success really looks like before touching a model or a tool.",
   },
   {
     title: "Shape the right solution",
