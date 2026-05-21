@@ -5,19 +5,19 @@ const quotes = [
     quote:
       "Dina is a professional, motivated, and capable Product Owner who bridges the gap between business needs and technical execution effortlessly.",
     name: "Biniam Asnake Kefale",
-    role: "Engineering Lead, Outfittery",
+    role: "Engineering Lead",
   },
   {
     quote:
       "Her ability to take initiative and drive projects forward with focus and reliability has made a real impact on our team.",
     name: "Diana Pulnar",
-    role: "VP Product, Outfittery",
+    role: "VP Product",
   },
   {
     quote:
       "Dina brings a rare combination of dedication, professionalism, warmth, and humor, making her not only effective but also a joy to collaborate with.",
     name: "Malin Finne",
-    role: "CCO & Former COO, Outfittery",
+    role: "CCO & Former COO",
   },
 ];
 
