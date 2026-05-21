@@ -13,7 +13,7 @@ export function Contact() {
         Let&apos;s talk.
       </h2>
       <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-        Based in Berlin. Available for consulting, workshops, and fractional PM
+        Based in Berlin. Available for consulting, workshops, and fractional Product Management
         work across Europe.
       </p>
 

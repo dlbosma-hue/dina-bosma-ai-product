@@ -16,7 +16,7 @@ const groups = [
     ],
   },
   {
-    label: "PM & Delivery",
+    label: "Product Management & Delivery",
     items: [
       "OKRs",
       "RICE / MoSCoW",
