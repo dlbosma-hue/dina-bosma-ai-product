@@ -22,7 +22,7 @@ const experience = [
     org: "Outfittery",
     year: "4 yrs",
     detail:
-      "Shipped internal AI-assisted and operational tools used daily by stylists and operations teams.",
+      "Shipped internal AI-assisted and operational tools used daily by online stylists and operations teams.",
   },
 ];
 

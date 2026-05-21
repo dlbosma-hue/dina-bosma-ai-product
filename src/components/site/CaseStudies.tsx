@@ -18,7 +18,7 @@ const cases: Case[] = [
     client: "Outfittery",
     title: "AI-Assisted Stylist Platform",
     role: "Product Manager, internal tools",
-    body: "Led product for an internal AI-assisted platform used by the stylist team. Defined the problem with operations, scoped the build with engineering, and shipped iteratively into live workflows. Focused on measurable operational gains while keeping stylists in control of the customer-facing decisions.",
+    body: "Led product for an internal AI-assisted platform used by the online stylist team. Defined the problem with operations, scoped the build with engineering, and shipped iteratively into live workflows. Focused on measurable operational gains while keeping online stylists in control of the customer-facing decisions.",
     deliverables: [
       "Productised an internal AI-assisted styling tool used daily by the team",
       "Aligned engineering, operations, and commercial stakeholders around one roadmap",
