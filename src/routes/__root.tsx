@@ -47,6 +47,28 @@ export const Route = createRootRoute({
         href: appCss,
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Dina Bosma-Buczynska",
+          jobTitle: "AI Consultant & Product Leader",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Berlin",
+            addressCountry: "DE",
+          },
+          url: "https://humint.site",
+          sameAs: [
+            "https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/",
+            "https://github.com/dlbosma-hue",
+            "https://medium.com/@dinaleonidovnabosma",
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
