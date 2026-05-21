@@ -16,6 +16,7 @@ export const Route = createFileRoute("/impressum")({
           "Impressum und Anbieterkennzeichnung für die Website von Dina Bosma-Buczynska.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://humint.site/impressum" }],
   }),
   component: ImpressumPage,
 });
