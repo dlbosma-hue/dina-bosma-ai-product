@@ -3,13 +3,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
-      { title: "Impressum — Dina Bosma-Buczynska" },
+      { title: "Impressum, Dina Bosma-Buczynska" },
       {
         name: "description",
         content:
           "Impressum und Anbieterkennzeichnung für die Website von Dina Bosma-Buczynska, freiberufliche KI-Beraterin und Product Managerin in Berlin.",
       },
-      { property: "og:title", content: "Impressum — Dina Bosma-Buczynska" },
+      { property: "og:title", content: "Impressum, Dina Bosma-Buczynska" },
       {
         property: "og:description",
         content:

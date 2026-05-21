@@ -18,13 +18,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "HUMINT — Human intelligence. AI powered." },
+      { title: "HUMINT, Human intelligence. AI powered." },
       {
         name: "description",
         content:
-          "HUMINT — AI consulting by Dina Bosma-Buczynska. Human intelligence, AI powered. Strategy, implementation, and the bridge between them. Berlin-based, available in English, German, and Dutch.",
+          "HUMINT, AI consulting by Dina Bosma-Buczynska. Human intelligence, AI powered. Strategy, implementation, and the bridge between them. Berlin-based, available in English, German, and Dutch.",
       },
-      { property: "og:title", content: "HUMINT — Human intelligence. AI powered." },
+      { property: "og:title", content: "HUMINT, Human intelligence. AI powered." },
       {
         property: "og:description",
         content:
