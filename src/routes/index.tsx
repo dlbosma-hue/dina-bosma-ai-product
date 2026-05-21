@@ -19,18 +19,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "HUMINT, Human intelligence. AI powered." },
-      {
-        name: "description",
-        content:
-          "HUMINT, AI consulting by Dina Bosma-Buczynska. Human intelligence, AI powered. Strategy, implementation, and the bridge between them. Berlin-based, available in English, German, and Dutch.",
-      },
-      { property: "og:title", content: "HUMINT, Human intelligence. AI powered." },
-      {
-        property: "og:description",
-        content:
-          "AI consulting by Dina Bosma-Buczynska. Strategy, implementation, and the bridge between them.",
-      },
+      { property: "og:url", content: "https://humint.site/" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://humint.site/" },
     ],
   }),
 });
