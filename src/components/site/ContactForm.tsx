@@ -51,7 +51,7 @@ export function ContactForm() {
           type="text"
           required
           maxLength={100}
-          className="w-full border-0 border-b border-foreground/30 bg-transparent px-0 py-2 text-base text-foreground placeholder:text-muted-foreground/60 focus:border-foreground focus:outline-none focus:ring-0"
+          className="w-full border-0 border-b border-foreground/30 bg-transparent px-0 py-2 text-base text-foreground placeholder:text-muted-foreground focus:border-foreground focus:outline-none focus:ring-0"
         />
       </div>
       <div className="space-y-2">
@@ -67,7 +67,7 @@ export function ContactForm() {
           type="email"
           required
           maxLength={255}
-          className="w-full border-0 border-b border-foreground/30 bg-transparent px-0 py-2 text-base text-foreground placeholder:text-muted-foreground/60 focus:border-foreground focus:outline-none focus:ring-0"
+          className="w-full border-0 border-b border-foreground/30 bg-transparent px-0 py-2 text-base text-foreground placeholder:text-muted-foreground focus:border-foreground focus:outline-none focus:ring-0"
         />
       </div>
       <div className="space-y-2">
@@ -83,7 +83,7 @@ export function ContactForm() {
           required
           rows={5}
           maxLength={2000}
-          className="w-full resize-none border-0 border-b border-foreground/30 bg-transparent px-0 py-2 text-base text-foreground placeholder:text-muted-foreground/60 focus:border-foreground focus:outline-none focus:ring-0"
+          className="w-full resize-none border-0 border-b border-foreground/30 bg-transparent px-0 py-2 text-base text-foreground placeholder:text-muted-foreground focus:border-foreground focus:outline-none focus:ring-0"
         />
       </div>
 
