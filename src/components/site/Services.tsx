@@ -3,23 +3,23 @@ import { Section } from "./Section";
 const services = [
   {
     title: "AI workflow integration",
-    desc: "Agents, RAG pipelines, and n8n automations wired into the way your team actually works.",
+    desc: "You have repetitive work eating up your team's time. I connect agents, automations, and pipelines to how your team actually works, not how a demo assumes they do.",
   },
   {
     title: "AI product strategy and roadmapping",
-    desc: "Outcomes over output. Roadmaps that survive contact with reality.",
+    desc: "You know AI should be part of your product but you are not sure where to start or what to build first. I help you cut through the noise and decide what actually moves the needle.",
   },
   {
     title: "Build or buy analysis",
-    desc: "Honest trade-offs and vendor selection. No allegiance, no resale fees.",
+    desc: "There are a hundred tools promising to solve your problem. I give you an honest comparison with no vendor allegiance and no resale fees.",
   },
   {
     title: "Practical AI compliance support",
-    desc: "GDPR and EU AI Act guidance that engineers and stakeholders can use, not legalese.",
+    desc: "GDPR and the EU AI Act feel overwhelming. I translate them into clear steps your team can actually follow, without the legalese.",
   },
   {
     title: "Fractional product leadership",
-    desc: "Embedded in your product team on a fractional basis. Strategy, delivery, and stakeholder alignment.",
+    desc: "You need someone who can work alongside your team, not just hand over a slide deck. I embed part-time and help you ship.",
   },
 ];
 
