@@ -74,12 +74,12 @@ const projects: Project[] = [
     tags: ["Gradio", "OpenAI API", "Prompt Engineering", "Python"],
     github: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/ai-content-creator",
     details: {
-      what: "A content generation tool with a Gradio interface. Give it a topic, a target audience, and a tone, and it produces structured content — social posts, summaries, outlines — tailored to the brief. The focus is on how prompt architecture drives output quality.",
+      what: "A content generation tool with a Gradio interface. Give it a topic, a target audience, and a tone, and it produces structured content, social posts, summaries, outlines, tailored to the brief. The focus is on how prompt architecture drives output quality.",
       how: "Built with a layered prompting approach: a system prompt sets voice and constraints, a structured user prompt encodes the brief, and chain-of-thought formatting guides the model toward consistent, usable output. Gradio provides the interface, making it usable without touching code. OpenAI API powers generation.",
       outcomes:
         "Demonstrates that prompt engineering is a design discipline, not a workaround. Small structural changes to the prompt produce measurable differences in output consistency and format compliance.",
       learned:
-        "The interface shapes how people prompt. A well-designed Gradio UI with clear input fields leads to better prompts and better outputs — the UX and the prompt design are inseparable.",
+        "The interface shapes how people prompt. A well-designed Gradio UI with clear input fields leads to better prompts and better outputs, the UX and the prompt design are inseparable.",
     },
   },
   {

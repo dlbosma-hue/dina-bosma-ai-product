@@ -98,7 +98,7 @@ export function ContactForm() {
         </button>
         {status === "success" && (
           <span className="text-sm text-muted-foreground">
-            Thanks — I&apos;ll be in touch shortly.
+            Thanks, I&apos;ll be in touch shortly.
           </span>
         )}
         {status === "error" && error && (
