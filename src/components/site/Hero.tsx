@@ -15,8 +15,9 @@ export function Hero() {
       </p>
       <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
         Independent advisory and fractional product leadership for teams that
-        need strategy, implementation, and the bridge between them. Available
-        for EU and remote engagements in English, German, and Dutch.
+        need strategy, implementation, and the bridge between them.
+        <br />
+        Available for EU and remote engagements in English, German, and Dutch.
       </p>
       <div className="mt-12 flex flex-wrap items-center gap-8">
         <a
