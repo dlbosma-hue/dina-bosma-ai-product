@@ -29,9 +29,14 @@ export function About() {
           <p>
             I work best with founders and small teams who need someone who can
             move between strategy, product decisions, and hands-on
-            implementation. No slide decks that go nowhere. No AI for the sake
-            of it. Just systems that reduce manual work and free people up to
-            do what only humans can do.
+            implementation.
+            <br />
+            No slide decks that go nowhere.
+            <br />
+            No AI for the sake of it.
+            <br />
+            Just systems that reduce manual work and free people up to do what
+            only humans can do.
           </p>
           <p className="text-base text-muted-foreground">
             Based in Berlin. Working in Dutch (native), English (C2), and
