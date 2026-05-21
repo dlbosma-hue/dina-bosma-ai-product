@@ -11,8 +11,7 @@ export function Hero() {
         HUMINT
       </h1>
       <p className="mt-10 max-w-3xl font-serif text-3xl leading-[1.2] text-foreground md:text-[2.5rem]">
-        Most AI projects stall between idea and adoption. I work in that gap:
-        strategy, build, and the human side.
+        AI should make your people faster, not fewer.
       </p>
       <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
         Independent advisory and fractional product leadership for teams that
