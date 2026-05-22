@@ -4,7 +4,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-24 md:px-10 md:py-36"
+      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-12 md:px-10 md:py-16"
     >
       <div className="mb-6 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
         Contact
