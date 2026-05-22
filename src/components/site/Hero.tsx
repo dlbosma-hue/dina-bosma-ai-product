@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto max-w-5xl px-6 pt-20 pb-24 md:px-10 md:pt-32 md:pb-36"
+      className="mx-auto max-w-5xl px-6 pt-16 pb-14 md:px-10 md:pt-24 md:pb-20"
     >
       <div className="mb-10 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
         AI consulting · Berlin
