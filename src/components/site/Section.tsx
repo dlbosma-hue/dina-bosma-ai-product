@@ -12,7 +12,7 @@ export function Section({ id, eyebrow, title, children, className = "" }: Sectio
   return (
     <section
       id={id}
-      className={`mx-auto max-w-5xl scroll-mt-24 px-6 py-20 md:px-10 md:py-28 ${className}`}
+      className={`mx-auto max-w-5xl scroll-mt-24 px-6 py-12 md:px-10 md:py-16 ${className}`}
     >
       {(eyebrow || title) && (
         <div className="mb-12 md:mb-16">
