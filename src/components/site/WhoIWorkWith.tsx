@@ -12,25 +12,16 @@ export function WhoIWorkWith() {
             I work best with small businesses, founders, and small teams who
             want to use AI in a way that still feels human.
           </p>
-          <p>That includes:</p>
-          <ul className="space-y-3 pl-5 list-disc marker:text-muted-foreground">
-            <li>
-              Small and growing businesses with repetitive operational work
-              they want to get off their plate.
-            </li>
-            <li>
-              Founders and startups building their first AI layer, without a
-              dedicated tech team to make it happen.
-            </li>
-            <li>
-              Retail and e-commerce teams, especially in fashion and
-              lifestyle, sitting on data they are not yet using.
-            </li>
-          </ul>
           <p>
-            If you have identified a problem and need someone who can both
-            think it through and build something real, that is where I
-            come in.
+            That includes small and growing businesses with repetitive
+            operational work they want off their plate, founders and startups
+            building their first AI layer without a dedicated tech team, and
+            retail and e-commerce teams in fashion and lifestyle who are
+            sitting on data they are not yet using.
+          </p>
+          <p>
+            If you have identified the problem and need someone who can both
+            think it through and build something real, that is where I come in.
           </p>
         </div>
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
@@ -45,8 +36,6 @@ export function WhoIWorkWith() {
           </p>
           <p>
             At that point you need hands-on help, not another slide deck.
-            <br />
-            That is the moment I tend to come in.
           </p>
         </div>
       </div>
