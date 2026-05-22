@@ -45,8 +45,6 @@ export function WhoIWorkWith() {
           </p>
           <p>
             At that point you need hands-on help, not another slide deck.
-            <br />
-            That is the moment I tend to come in.
           </p>
         </div>
       </div>
