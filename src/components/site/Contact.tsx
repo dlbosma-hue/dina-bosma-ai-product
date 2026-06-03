@@ -6,7 +6,8 @@ export function Contact() {
       id="contact"
       className="mx-auto max-w-5xl scroll-mt-24 px-6 py-12 md:px-10 md:py-16"
     >
-      <div className="mb-6 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
+      <div className="mb-8 flex items-center gap-4 text-[11px] uppercase tracking-[0.32em] text-accent">
+        <span aria-hidden className="h-px w-10 bg-accent/70" />
         Contact
       </div>
       <h2 className="max-w-3xl font-serif text-5xl leading-[1.02] md:text-7xl">
