@@ -23,23 +23,22 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Spottr: AI Member Retention System",
-    desc: "Full-stack AI consulting engagement: churn prediction model (92.5% accuracy), automated n8n coach briefings, Plotly dashboard, GDPR compliance pack, EU AI Act documentation, and a commercialisation roadmap. The complete arc from business problem to deployed MVP.",
-    tags: ["Python", "scikit-learn", "LangChain", "n8n", "Plotly Dash", "GDPR"],
-    github:
-      "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
+    title: "n8n Automation Workflows",
+    desc: "Production workflows built across multiple projects: scheduled research pipelines, survey triggers, weekly email briefings, and Slack and Notion integrations. Built for real operational use, not demos.",
+    tags: ["n8n", "Automation", "APIs", "Webhooks"],
+    github: "https://github.com/dlbosma-hue/bootcamp_env",
     details: {
-      what: "A full AI consulting engagement for a fictional boutique fitness studio. Delivered every artefact a real client would receive: business case, working MVP, compliance documentation, and a go-to-market roadmap.",
-      how: "Built a logistic regression churn model in scikit-learn (92.5% accuracy, 0.977 AUC-ROC) on synthetic wearable and attendance data. Automated weekly coach briefings via n8n workflows. Built a Plotly Dash dashboard for studio managers. Wrote a full GDPR Article 9 compliance pack for health/wearable data and an EU AI Act risk assessment.",
+      what: "A collection of production n8n workflows built across the bootcamp. Not demo workflows: these run on schedules, handle errors, and integrate with real tools.",
+      how: "Workflows include: four Monday-morning media audit triggers (NPR, NYT, Guardian, Al Jazeera) posting to Notion and Slack; weekly Spottr coach briefing emails with churn risk summaries; survey response triggers; and webhook-based integrations for cross-system data flow.",
       outcomes:
-        "Projected 33-day break-even and 1,099% 12-month ROI based on retention uplift modelling. Full EU AI Act and GDPR documentation ready for a real deployment.",
+        "Operational workflows running in real deployments. The Spottr briefings and media audit pipelines are live.",
       learned:
-        "Running an end-to-end engagement solo sharpens every skill: you can't hand off the parts you find hard. Scoping the business problem before touching any code was the single biggest driver of quality.",
+        "Automation breaks at boundaries: API rate limits, malformed responses, empty result sets. Good workflow design handles the unhappy path, not just the happy one.",
     },
   },
   {
-    title: "Media Diversity Audit Agent",
-    desc: "LangGraph ReAct agent that audits media content for representation across marginalised communities, analysing bylines, sourcing, framing, and portrayal. Deployed with FastAPI and monitored via LangSmith.",
+    title: "LangGraph Agent",
+    desc: "A ReAct agent connected to multiple live data sources simultaneously, handling tool selection and sequencing in real time. Built to show what orchestration looks like when it has to work in practice, not just in a notebook.",
     tags: ["LangGraph", "LangChain", "FastAPI", "LangSmith", "Python"],
     github:
       "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/project_3_media_agent",
@@ -55,22 +54,8 @@ const projects: Project[] = [
     },
   },
   {
-    title: "MCP + LangGraph Agent",
-    desc: "Multi-server MCP integration connecting a LangGraph ReAct agent to live documentation, local file resources, and utility tools simultaneously. Demonstrates tool orchestration across heterogeneous sources.",
-    tags: ["MCP", "LangGraph", "LangChain", "Python"],
-    github: "https://github.com/dlbosma-hue/bootcamp_env",
-    details: {
-      what: "A LangGraph ReAct agent connected to multiple MCP servers simultaneously: one serving live documentation, one serving local file resources, and one providing utility tools. The agent routes queries to the right source without manual routing logic.",
-      how: "Implemented multi-server MCP using the Model Context Protocol spec. Each server exposes a different resource type. LangGraph manages the ReAct loop and tool selection. The agent can answer questions that require combining context from several sources in a single response.",
-      outcomes:
-        "Working demonstration of heterogeneous tool orchestration. Shows how to connect agents to real, dynamic data sources rather than static tool definitions.",
-      learned:
-        "MCP shifts the complexity from tool implementation to schema design. Getting the server descriptions right matters more than the implementation details.",
-    },
-  },
-  {
     title: "AI Content Creator",
-    desc: "A Gradio-powered content generation tool built around deliberate prompt engineering. Takes a topic and audience brief, then produces structured content across formats. Built to demonstrate how prompt design shapes output quality, not just model capability.",
+    desc: "A structured content generation tool built around deliberate prompt design. Give it a topic and an audience, and it produces formatted content across multiple formats. Useful for small teams without a dedicated content function.",
     tags: ["Gradio", "OpenAI API", "Prompt Engineering", "Python"],
     github: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/ai-content-creator",
     details: {
@@ -80,20 +65,6 @@ const projects: Project[] = [
         "Demonstrates that prompt engineering is a design discipline, not a workaround. Small structural changes to the prompt produce measurable differences in output consistency and format compliance.",
       learned:
         "The interface shapes how people prompt. A well-designed Gradio UI with clear input fields leads to better prompts and better outputs, the UX and the prompt design are inseparable.",
-    },
-  },
-  {
-    title: "n8n Automation Workflows",
-    desc: "Production-grade n8n workflows built across multiple projects: scheduled media research pipelines, survey triggers, weekly email briefings, and Slack/Notion integrations. Designed for real operational use, not demos.",
-    tags: ["n8n", "Automation", "APIs", "Webhooks"],
-    github: "https://github.com/dlbosma-hue/bootcamp_env",
-    details: {
-      what: "A collection of production n8n workflows built across the bootcamp. Not demo workflows: these run on schedules, handle errors, and integrate with real tools.",
-      how: "Workflows include: four Monday-morning media audit triggers (NPR, NYT, Guardian, Al Jazeera) posting to Notion and Slack; weekly Spottr coach briefing emails with churn risk summaries; survey response triggers; and webhook-based integrations for cross-system data flow.",
-      outcomes:
-        "Operational workflows running in real deployments. The Spottr briefings and media audit pipelines are live.",
-      learned:
-        "Automation breaks at boundaries: API rate limits, malformed responses, empty result sets. Good workflow design handles the unhappy path, not just the happy one.",
     },
   },
 ];
