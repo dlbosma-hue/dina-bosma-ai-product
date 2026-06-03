@@ -7,14 +7,9 @@ export function Belief() {
         <div className="h-px w-12 bg-foreground/30" />
         <blockquote className="mt-10 text-center font-serif tracking-tight text-foreground">
           <p className="text-4xl leading-[1.05] md:text-6xl">
-            AI should make your{" "}
-            <span className="italic font-normal opacity-80">people</span>
-            <span className="mt-2 block text-5xl font-bold md:text-7xl">
-              faster,
-            </span>
-            <span className="mt-2 block text-4xl md:text-6xl">
-              not <span className="italic font-normal">fewer.</span>
-            </span>
+            AI should make your people
+            <span className="mt-2 block">faster,</span>
+            <span className="mt-2 block">not fewer.</span>
           </p>
         </blockquote>
         <div className="mt-10 h-px w-12 bg-foreground/30" />

@@ -11,7 +11,7 @@ export function Hero() {
         HUMINT
       </h1>
       <p className="mt-10 max-w-3xl font-serif text-3xl leading-[1.2] text-foreground md:text-[2.5rem]">
-        Strategy, build, and the human side.
+        Strategy, build, <span className="italic">&amp; the human side.</span>
       </p>
       <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
         Independent advisory and fractional product leadership for teams that
