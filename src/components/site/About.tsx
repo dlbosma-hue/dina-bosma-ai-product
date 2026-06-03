@@ -1,5 +1,5 @@
 import { Section } from "./Section";
-import dinaPortrait from "@/assets/dina-portrait.png.asset.json";
+import dinaPortrait from "@/assets/dina-portrait.jpg";
 
 export function About() {
   return (
@@ -8,14 +8,37 @@ export function About() {
         <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
             Before I managed the tools, I used them. As an online stylist
-            with my own customer portfolio, I knew what the job actually
-            demanded. Then I became the Product Manager building the platform
-            for people doing that same work.
+            with my own customer portfolio, I knew exactly what the job
+            demanded; then I became the Product Manager building the
+            platform for people doing that same work.
           </p>
           <p>
-            I now work as an AI consultant and product leader, helping small
-            businesses and founders build systems that reduce manual work
-            without sidelining their people. No AI for the sake of it.
+            That perspective never left me: I build for the humans in the
+            system, not just the system itself.
+          </p>
+          <p>
+            I now work as an AI consultant and product leader with four years
+            of experience shipping internal tools, sales platforms, and
+            operational processes, most recently at Outfittery.
+          </p>
+          <p>
+            In 2026, I completed an intensive AI Consulting and Integration
+            bootcamp where I built working systems from scratch, including
+            agents, RAG pipelines, ML models, and n8n workflows.
+          </p>
+          <p>
+            My capstone project, Spottr, was designed as a full consulting
+            engagement: business case, working MVP, GDPR documentation, and an
+            EU AI Act compliance pack.
+          </p>
+          <p>
+            I work best with founders and small teams who need someone who can
+            move between strategy, product decisions, and hands-on
+            implementation.
+            <br />
+            No slide decks that go nowhere.
+            <br />
+            No AI for the sake of it.
             <br />
             Just systems that reduce manual work and free people up to do what
             only humans can do.
@@ -25,14 +48,12 @@ export function About() {
             German (C1).
           </p>
         </div>
-        <aside className="md:col-span-2">
-          <figure className="relative w-full max-w-sm border border-border bg-muted">
-            <img
-              src={dinaPortrait.url}
-              alt="Portrait of Dina Bosma-Buczynska"
-              className="block aspect-[4/5] w-full object-cover"
-            />
-          </figure>
+        <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
+          <img
+            src={dinaPortrait}
+            alt="Portrait of Dina Bosma-Buczynska"
+            className="aspect-square w-full max-w-xs rounded-full object-cover"
+          />
         </aside>
       </div>
     </Section>

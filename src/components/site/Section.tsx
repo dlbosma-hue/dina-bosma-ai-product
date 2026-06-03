@@ -17,15 +17,12 @@ export function Section({ id, eyebrow, title, children, className = "" }: Sectio
       {(eyebrow || title) && (
         <div className="mb-12 md:mb-16">
           {eyebrow && (
-            <div className="mb-8 flex items-center gap-4 text-[11px] uppercase tracking-[0.32em] text-accent">
-              <span aria-hidden className="h-px w-10 bg-accent/70" />
+            <div className="mb-6 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
               {eyebrow}
             </div>
           )}
           {title && (
-            <h2 className="font-serif text-4xl font-light leading-[1] tracking-[-0.02em] md:text-6xl">
-              {title}
-            </h2>
+            <h2 className="font-serif text-4xl leading-[1.02] md:text-6xl">{title}</h2>
           )}
         </div>
       )}

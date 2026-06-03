@@ -4,8 +4,7 @@ export function Hero() {
       id="top"
       className="mx-auto max-w-5xl px-6 pt-16 pb-14 md:px-10 md:pt-24 md:pb-20"
     >
-      <div className="mb-10 flex items-center gap-4 text-[11px] uppercase tracking-[0.32em] text-accent">
-        <span aria-hidden className="h-px w-10 bg-accent/70" />
+      <div className="mb-10 text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
         AI consulting · Berlin
       </div>
       <h1 className="font-serif text-6xl leading-[0.98] tracking-tight md:text-8xl lg:text-[8.5rem]">

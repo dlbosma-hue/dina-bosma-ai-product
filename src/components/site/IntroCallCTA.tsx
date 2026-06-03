@@ -7,7 +7,7 @@ export function IntroCallCTA() {
         </p>
         <a
           href="#contact"
-          className="inline-flex shrink-0 items-center gap-2 self-start border border-accent px-6 py-3 text-sm uppercase tracking-[0.18em] text-accent transition-colors hover:bg-accent hover:text-accent-foreground md:self-auto"
+          className="inline-flex shrink-0 items-center gap-2 self-start rounded-full border border-foreground px-6 py-3 text-sm uppercase tracking-[0.18em] text-foreground transition-colors hover:bg-foreground hover:text-background md:self-auto"
         >
           Book a free 30-minute call
           <span aria-hidden>→</span>
