@@ -77,7 +77,7 @@ export function Nav() {
         </nav>
         <a
           href="#contact"
-          className="hidden shrink-0 rounded-full border border-foreground px-4 py-1.5 text-sm transition-colors hover:bg-foreground hover:text-background md:inline-block"
+          className="hidden shrink-0 border border-accent px-5 py-1.5 text-sm tracking-wide text-accent transition-colors hover:bg-accent hover:text-accent-foreground md:inline-block"
         >
           Let's talk
         </a>
