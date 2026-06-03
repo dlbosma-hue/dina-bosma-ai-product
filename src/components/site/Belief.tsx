@@ -1,17 +1,15 @@
-import { Section } from "./Section";
-
 export function Belief() {
   return (
-    <Section id="belief" eyebrow="What I believe">
-      <blockquote className="font-serif text-4xl leading-[1.05] tracking-tight text-foreground md:text-6xl">
-        "AI should make your people faster, not fewer."
-      </blockquote>
-      <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        I build AI systems that reduce the repetitive, low-value work that
-        slows teams down, so people can focus on judgment, relationships, and
-        the work that moves the business. Not automation for its own
-        sake. Systems that make your team more capable than they were before.
-      </p>
-    </Section>
+    <section
+      id="belief"
+      className="mx-auto max-w-6xl scroll-mt-24 px-6 py-20 md:px-10 md:py-28"
+    >
+      <div className="border-t border-border pt-16 md:pt-24">
+        <blockquote className="mx-auto max-w-5xl text-center font-serif text-5xl leading-[1.02] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+          &ldquo;AI should make your people faster, not fewer.&rdquo;
+        </blockquote>
+      </div>
+      <div className="mt-16 border-b border-border md:mt-24" />
+    </section>
   );
 }
