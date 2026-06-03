@@ -18,11 +18,10 @@ const cases: Case[] = [
     client: "Outfittery",
     title: "AI-Assisted Stylist Platform",
     role: "Product Manager, internal tools",
-    body: "Led product for an internal AI-assisted platform used by the online stylist team. Defined the problem with operations, scoped the build with engineering, and shipped iteratively into live workflows. Focused on measurable operational gains while keeping online stylists in control of the customer-facing decisions.",
+    body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid-shift.",
     deliverables: [
-      "Productised an internal AI-assisted styling tool used daily by the team",
-      "Aligned engineering, operations, and commercial stakeholders around one roadmap",
-      "Shipped incremental releases into production without disrupting live operations",
+      "Reduced manual coordination workload by 80% through automated customer-stylist assignment",
+      "Increased throughput from 29 to 34 orders per day through AI-assisted decision support, keeping stylists in control of every customer-facing call",
     ],
     metrics: [
       { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
@@ -34,12 +33,11 @@ const cases: Case[] = [
     client: "Spottr / Capstone Project",
     title: "AI Member Retention for Boutique Fitness Studios",
     role: "End-to-end AI consultant engagement",
-    body: "Structured as a real consulting engagement, from business case to working product to compliance. Identified churn as the core commercial problem for boutique studios, built and validated a working MVP, and packaged the result with the documentation a buyer truly needs before adopting AI.",
+    body: "Structured as a real consulting engagement from day one. Identified churn as the core commercial problem for boutique fitness studios, built and validated a working MVP, and packaged the result with the documentation a buyer needs before saying yes to any AI system.",
     deliverables: [
-      "Business case and commercialisation roadmap",
-      "Working MVP: churn model (92.5% accuracy, 0.977 AUC-ROC) plus n8n-automated weekly coach briefings",
-      "GDPR documentation covering wearable and member data",
-      "EU AI Act compliance pack ready for stakeholder review",
+      "Working churn prediction model at 92.5% accuracy with automated weekly coach briefings via n8n",
+      "GDPR data protection impact assessment covering wearable and member data",
+      "EU AI Act compliance pack and standalone ROI model included as standard",
     ],
     metrics: [
       { value: "33 days", label: "break-even point" },
