@@ -2,20 +2,20 @@ import { Section } from "./Section";
 
 const steps = [
   {
-    title: "Clarify the business problem",
-    desc: "Cut through the noise. Define what success really looks like before touching a model or a tool.",
+    title: "Find the coordination tax",
+    desc: "Before anything gets built, I look at how work actually moves. Where are people doing what a process should be doing? Where is information getting lost between handoffs? Most operational drag hides in the gaps between tools and between people, not in the tools themselves.",
   },
   {
-    title: "Shape the right solution",
-    desc: "Decide what to build, what to buy, and what to leave alone. Honest trade-offs, no vendor allegiance.",
+    title: "Decide what is worth fixing",
+    desc: "Not every inefficiency is worth automating. I help you separate the high-cost, high-frequency problems from the ones that feel annoying but do not move the needle. Honest trade-offs, no vendor allegiance, no solution looking for a problem.",
   },
   {
-    title: "Build the first valuable version",
-    desc: "Ship a working slice, not a slide deck. Agents, RAG, automations, or product features, scoped to deliver value early.",
+    title: "Build something that works in practice",
+    desc: "A working slice, not a slide deck. Agents, automations, pipelines, or product features, scoped to deliver value early and designed around how your team actually works, not how a demo assumes they do.",
   },
   {
-    title: "Make it usable in the real world",
-    desc: "Adoption, handover, compliance, and the human side. The part most AI projects underestimate. Because adoption is the point. A system your team doesn't use is just expensive infrastructure.",
+    title: "Hand it over so it sticks",
+    desc: "Most AI projects fail at adoption, not at build. I make sure the system is usable without me: documented, compliant where it needs to be, and understood by the people who will run it. Because a system your team does not use is just expensive infrastructure.",
   },
 ];
 
