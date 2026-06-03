@@ -23,7 +23,7 @@ export function About() {
           <img
             src={dinaPortrait.url}
             alt="Portrait of Dina Bosma-Buczynska"
-            className="w-40 md:w-48 h-auto"
+            className="aspect-square w-full max-w-xs rounded-full object-cover"
           />
         </aside>
       </div>
