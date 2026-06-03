@@ -21,7 +21,7 @@ export function About() {
             No AI for the sake of it.<br />
             Just systems that reduce manual work and free people up to do what only humans can do.
           </p>
-          <p>
+          <p className="text-base">
             Based in Berlin. Working in Dutch (native), English (C2), and German (C1).
           </p>
         </div>
