@@ -2,7 +2,7 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Inter+Tight:wght@300;400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -65,28 +65,28 @@
 
 :root {
   --radius: 0.375rem;
-  /* Warm paper background, deep navy ink, navy accent */
-  --background: oklch(0.995 0.003 80);
-  --foreground: oklch(0.30 0.12 260);
-  --card: oklch(0.995 0.003 80);
-  --card-foreground: oklch(0.30 0.12 260);
-  --popover: oklch(0.995 0.003 80);
-  --popover-foreground: oklch(0.30 0.12 260);
-  --primary: oklch(0.34 0.14 260);
-  --primary-foreground: oklch(0.995 0.003 80);
-  --secondary: oklch(0.96 0.015 250);
-  --secondary-foreground: oklch(0.30 0.12 260);
-  --muted: oklch(0.96 0.015 250);
-  --muted-foreground: oklch(0.40 0.10 260);
-  --accent: oklch(0.42 0.15 260);
-  --accent-foreground: oklch(0.985 0.005 80);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.88 0.02 250);
-  --input: oklch(0.88 0.02 250);
-  --ring: oklch(0.42 0.14 255);
-  --font-serif: "Instrument Serif", "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  /* Dark editorial — deep charcoal paper, warm cream ink, desaturated red accent */
+  --background: oklch(0.18 0.008 40);
+  --foreground: oklch(0.94 0.012 80);
+  --card: oklch(0.18 0.008 40);
+  --card-foreground: oklch(0.94 0.012 80);
+  --popover: oklch(0.18 0.008 40);
+  --popover-foreground: oklch(0.94 0.012 80);
+  --primary: oklch(0.94 0.012 80);
+  --primary-foreground: oklch(0.18 0.008 40);
+  --secondary: oklch(0.24 0.008 40);
+  --secondary-foreground: oklch(0.94 0.012 80);
+  --muted: oklch(0.24 0.008 40);
+  --muted-foreground: oklch(0.72 0.012 80);
+  --accent: oklch(0.58 0.16 28);
+  --accent-foreground: oklch(0.96 0.012 80);
+  --destructive: oklch(0.62 0.20 27);
+  --destructive-foreground: oklch(0.96 0.012 80);
+  --border: oklch(0.32 0.008 40);
+  --input: oklch(0.32 0.008 40);
+  --ring: oklch(0.58 0.16 28);
+  --font-serif: "Playfair Display", "Libre Baskerville", Georgia, serif;
+  --font-sans: "Inter Tight", "Inter", system-ui, -apple-system, sans-serif;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -150,15 +150,21 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "ss01", "cv11";
+    letter-spacing: -0.005em;
   }
 
   .font-serif {
     font-family: var(--font-serif);
     font-weight: 400;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
+  }
+
+  a:hover {
+    color: var(--color-accent);
   }
 
   ::selection {
-    background-color: oklch(0.38 0.11 255 / 0.2);
+    background-color: oklch(0.58 0.16 28 / 0.35);
+    color: var(--color-foreground);
   }
 }
