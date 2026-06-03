@@ -134,7 +134,7 @@ export function CaseStudies() {
               </div>
             )}
             {c.client === "Spottr / Capstone Project" && (
-              <div className="mt-10 border-t border-border pt-6">
+              <div className="mt-6">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
