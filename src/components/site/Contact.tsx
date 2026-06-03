@@ -13,21 +13,15 @@ export function Contact() {
         Let&apos;s talk.
       </h2>
       <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-        Based in Berlin. Available for consulting, workshops, and fractional Product Management
-        work across Europe.
+        Based in Berlin. Available for consulting, workshops, and fractional product leadership across Europe.
       </p>
 
       <div className="mt-12">
-        <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+        <p className="mb-4 max-w-2xl text-base text-muted-foreground">
           Currently available for Q3 engagements.
-        </div>
+        </p>
         <p className="mb-8 max-w-2xl text-base text-muted-foreground">
-          Typical engagements start with a one-day AI potential workshop. From
-          there, projects are scoped to what makes sense for your size and
-          budget. Day rates start at 600 EUR for strategy and workshops and
-          from 800 EUR for technical work. Retainer arrangements are available
-          once we have worked together. Happy to talk through what would fit
-          on a call.
+          Most projects start with a scoping conversation or a one-day workshop. From there, engagements are shaped around what actually makes sense for your team and situation. Happy to talk through what that could look like.
         </p>
         <div className="mb-12">
           <ContactForm />
