@@ -25,11 +25,11 @@ export function About() {
             Based in Berlin. Working in Dutch (native), English (C2), and German (C1).
           </p>
         </div>
-        <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
+        <aside className="md:col-span-2 md:border-l md:border-border md:pl-10 flex flex-col justify-center">
           <img
             src={dinaPortrait.url}
             alt="Portrait of Dina Bosma-Buczynska"
-            className="aspect-square w-full max-w-[220px] rounded-full object-cover"
+            className="aspect-square w-full max-w-[220px] rounded-full object-cover mx-auto"
           />
         </aside>
       </div>
