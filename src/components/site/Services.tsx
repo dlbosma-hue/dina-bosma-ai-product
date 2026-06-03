@@ -2,6 +2,10 @@ import { Section } from "./Section";
 
 const services = [
   {
+    title: "Workflow audit",
+    desc: "Most teams know something is slowing them down. They do not always know what. I map how work actually moves through your team, find where coordination overhead is hiding, and put a number on what it is costing you. The output is a clear picture of where automation or process change would have the most impact, before you spend anything on building.",
+  },
+  {
     title: "AI workflow integration",
     desc: "You have repetitive work eating up your team's time. I connect agents, automations, and pipelines to how your team really works, not how a demo assumes they do.",
   },
