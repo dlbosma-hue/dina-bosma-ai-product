@@ -3,7 +3,7 @@ import { Section } from "./Section";
 export function Belief() {
   return (
     <Section id="belief" eyebrow="What I believe">
-      <div className="flex flex-col items-center py-16 md:py-24">
+      <div className="flex flex-col items-center py-10 md:py-16">
         <div className="h-px w-12 bg-foreground/30" />
         <blockquote className="mt-10 text-center font-serif tracking-tight text-foreground">
           <p className="text-4xl leading-[1.05] md:text-6xl">
