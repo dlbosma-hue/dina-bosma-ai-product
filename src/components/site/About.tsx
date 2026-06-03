@@ -15,8 +15,14 @@ export function About() {
           <p>
             I now work as an AI consultant and product leader, helping small
             businesses and founders build systems that reduce manual work
-            without sidelining their people. Based in Berlin. Working in
-            Dutch (native), English (C2), and German (C1).
+            without sidelining their people.
+          </p>
+          <p>
+            No AI for the sake of it.<br />
+            Just systems that reduce manual work and free people up to do what only humans can do.
+          </p>
+          <p>
+            Based in Berlin. Working in Dutch (native), English (C2), and German (C1).
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10">
