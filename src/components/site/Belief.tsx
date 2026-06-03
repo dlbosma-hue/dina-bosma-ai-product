@@ -8,8 +8,52 @@ export function Belief() {
         <blockquote className="mt-10 text-center font-serif tracking-tight text-foreground">
           <p className="text-4xl leading-[1.05] md:text-6xl">
             AI should make your people
-            <span className="mt-2 block">faster,</span>
-            <span className="mt-2 block">not fewer.</span>
+            <span className="mt-2 block">
+              <span className="relative inline-block">
+                faster,
+                <svg
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -bottom-2 left-0 h-3 w-full text-[#FFD54F]"
+                  viewBox="0 0 200 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 8.5C40 3.5 120 1.5 198 10.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </span>
+            </span>
+            <span className="mt-4 block">
+              not{" "}
+              <span className="relative inline-block px-1">
+                fewer.
+                <svg
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -left-2 -right-2 top-1/2 h-4 -translate-y-1/2 text-[#F06292]"
+                  viewBox="0 0 160 16"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 13.5C30 9.5 90 2.5 158 5.5"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M5 8.5C45 6.5 110 4.5 155 10.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    opacity="0.6"
+                  />
+                </svg>
+              </span>
+            </span>
           </p>
         </blockquote>
         <div className="mt-10 h-px w-12 bg-foreground/30" />
