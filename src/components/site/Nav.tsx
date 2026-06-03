@@ -40,28 +40,15 @@ export function Nav() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b-2 border-foreground bg-background/95 backdrop-blur-sm">
-      <div className="mx-auto max-w-6xl px-6 pt-6 pb-3 md:px-10 md:pt-8">
-        <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
-          <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            Vol. I · Berlin
-          </div>
-          <a
-            href="#contact"
-            className="hidden text-[10px] uppercase tracking-[0.3em] text-muted-foreground transition-colors hover:text-foreground md:inline"
-          >
-            Let&rsquo;s talk →
-          </a>
-        </div>
-        <a href="#top" className="block py-3 text-center">
-          <span className="font-serif text-5xl leading-none tracking-tight md:text-7xl">
-            HUMINT
-          </span>
-          <span className="mt-2 block text-[10px] uppercase tracking-[0.32em] text-muted-foreground">
-            Human intelligence · AI powered
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-5 md:px-10">
+        <a href="#top" className="flex flex-col leading-tight">
+          <span className="font-serif text-xl tracking-tight">HUMINT</span>
+          <span className="text-[11px] font-light text-muted-foreground tracking-wide">
+            Human intelligence. AI powered.
           </span>
         </a>
-        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-border pt-3 text-[11px] uppercase tracking-[0.28em] text-muted-foreground md:gap-x-10">
+        <nav className="hidden flex-1 items-center justify-center gap-5 text-sm text-muted-foreground md:flex lg:gap-7">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
             return (
@@ -69,7 +56,7 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 className={`transition-colors hover:text-foreground ${
-                  isActive ? "text-foreground" : ""
+                  isActive ? "text-foreground font-medium" : ""
                 }`}
               >
                 {l.label}
@@ -88,6 +75,12 @@ export function Nav() {
             </a>
           ))}
         </nav>
+        <a
+          href="#contact"
+          className="hidden shrink-0 rounded-full border border-foreground px-4 py-1.5 text-sm transition-colors hover:bg-foreground hover:text-background md:inline-block"
+        >
+          Let's talk
+        </a>
       </div>
     </header>
   );
