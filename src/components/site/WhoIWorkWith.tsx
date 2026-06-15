@@ -5,9 +5,6 @@ export function WhoIWorkWith() {
     <Section id="who" eyebrow="Engagements" title="Who I work with.">
       <div className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
-          <h3 className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Who I work with
-          </h3>
           <p>
             I work best with small businesses, founders, and small teams who
             want to use AI in a way that still feels human.
