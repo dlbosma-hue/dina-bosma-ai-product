@@ -30,6 +30,22 @@ const cases: Case[] = [
     tags: [],
   },
   {
+    client: "Outfittery",
+    title: "AI Styling and Feedback Systems",
+    role: "Product of Manager, AI initiatives",
+    body: "Beyond stylist coordination tools, I led product for a set of AI systems that automated outfit curation and unified scattered customer feedback. For outfit automation, I owned eligibility logic, quality thresholds, and a structured AB testing program comparing AI against human stylists across menswear and womenswear, iterating through funnel based and style based schemas, dynamic category fulfillment, and personalization scoring. For customer feedback, I scoped a system that consolidated input from four disconnected internal tools into one view, then added an AI layer that summarized that feedback into actionable prompts for stylists at the point of decision.",
+    deliverables: [
+      "Targeted 80%+ preview acceptance rate for AI generated outfit previews, with thresholds and quality checks defined and refined across test cycles",
+      "Drove toward a 95% reduction in manual styling time as the program goal, while keeping human stylists in the loop for exceptions",
+      "Unified four fragmented feedback sources into a single stylist facing view, closing a gap where customer input was getting lost before it reached decision makers",
+    ],
+    metrics: [
+      { value: "80%+", label: "target preview acceptance rate" },
+      { value: "95%", label: "target reduction in manual styling time" },
+    ],
+    tags: [],
+  },
+  {
     client: "Spottr / Capstone Project",
     title: "AI Member Retention for Boutique Fitness Studios",
     role: "End-to-end AI consultant engagement",
