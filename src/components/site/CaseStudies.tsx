@@ -16,32 +16,18 @@ type Case = {
 const cases: Case[] = [
   {
     client: "Outfittery",
-    title: "AI-Assisted Stylist Platform",
-    role: "Product Manager, internal tools",
-    body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid-shift.",
+    title: "AI Powered Stylist Platform and Automation",
+    role: "Product Manager, AI and platform initiatives",
+    body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid-shift. From there I led product for a wider set of AI systems: automated outfit curation with a structured AB testing program against human stylists, and a feedback system that unified four disconnected internal tools into one stylist facing view with AI generated summaries.",
     deliverables: [
       "Reduced manual coordination workload by 80% through automated customer-stylist assignment",
       "Increased throughput from 29 to 34 orders per day through AI-assisted decision support, keeping stylists in control of every customer-facing call",
+      "Targeted 80%+ preview acceptance rate for AI generated outfit previews across a structured menswear and womenswear testing program",
+      "Unified four fragmented feedback sources into a single stylist facing view, closing a gap where customer input was getting lost before reaching decision makers",
     ],
     metrics: [
       { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
       { value: "−80%", label: "manual coordination workload" },
-    ],
-    tags: [],
-  },
-  {
-    client: "Outfittery",
-    title: "AI Styling and Feedback Systems",
-    role: "Product Manager, AI initiatives",
-    body: "Beyond stylist coordination tools, I led product for a set of AI systems that automated outfit curation and unified scattered customer feedback. For outfit automation, I owned eligibility logic, quality thresholds, and a structured AB testing program comparing AI against human stylists across menswear and womenswear, iterating through funnel based and style based schemas, dynamic category fulfillment, and personalization scoring. For customer feedback, I scoped a system that consolidated input from four disconnected internal tools into one view, then added an AI layer that summarized that feedback into actionable prompts for stylists at the point of decision.",
-    deliverables: [
-      "Targeted 80%+ preview acceptance rate for AI generated outfit previews, with thresholds and quality checks defined and refined across test cycles",
-      "Drove toward a 95% reduction in manual styling time as the program goal, while keeping human stylists in the loop for exceptions",
-      "Unified four fragmented feedback sources into a single stylist facing view, closing a gap where customer input was getting lost before it reached decision makers",
-    ],
-    metrics: [
-      { value: "80%+", label: "target preview acceptance rate" },
-      { value: "95%", label: "target reduction in manual styling time" },
     ],
     tags: [],
   },
