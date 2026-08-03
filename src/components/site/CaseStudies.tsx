@@ -42,9 +42,9 @@ export function CaseStudies() {
                   <div key={m.label}>
                     <div className="font-serif text-4xl md:text-5xl">{m.value}</div>
                     <div className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">{m.label}</div>
-                    {c.client === "Spottr / Capstone Project" && m.value === "1,099%" && (
+                    {c.client === spottr && m.value.includes("099") && (
                       <div className="mt-2 text-[11px] leading-snug text-muted-foreground/70">
-                        Based on a modelled scenario: studio with 200 members, €3K implementation cost
+                        {t.cases.roiNote}
                       </div>
                     )}
                   </div>
@@ -52,26 +52,23 @@ export function CaseStudies() {
               </div>
             )}
 
-            {c.client === "Spottr / Capstone Project" && (
+            {c.client === spottr && (
               <div className="mt-8 border-l-2 border-foreground/40 bg-muted/30 px-6 py-5 md:max-w-2xl">
                 <div className="mb-2 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
-                  Compliance &amp; buyer readiness
+                  {t.cases.complianceLabel}
                 </div>
                 <p className="text-sm leading-relaxed text-foreground/85">
-                  Delivered with full compliance documentation: GDPR data
-                  protection impact assessment, EU AI Act compliance pack ready
-                  for stakeholder review, and a standalone ROI model. Everything
-                  a buyer needs before saying yes.
+                  {t.cases.complianceBody}
                 </p>
               </div>
             )}
 
             {c.tags.length > 0 && (
               <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
-                {c.tags.map((t, i) => (
-                  <span key={t} className="inline-flex items-center">
+                {c.tags.map((tag, i) => (
+                  <span key={tag} className="inline-flex items-center">
                     {i > 0 && <span className="mr-2 text-border">·</span>}
-                    {t}
+                    {tag}
                   </span>
                 ))}
               </div>
@@ -85,22 +82,22 @@ export function CaseStudies() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 border-b border-foreground/60 pb-0.5 text-sm text-foreground transition-opacity hover:opacity-70"
                 >
-                  View project ↗
+                  {t.cases.viewProject}
                 </a>
               </div>
             )}
-            {c.client === "Spottr / Capstone Project" && (
+            {c.client === spottr && (
               <div className="mt-6">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
-                      Pitch deck
+                      {t.cases.deckLabel}
                     </div>
                     <div className="mt-1 font-serif text-lg leading-tight">
-                      Spottr. Smart Member Retention.
+                      {t.cases.deckName}
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      PDF, 8 slides
+                      {t.cases.deckMeta}
                     </p>
                   </div>
                   <a
@@ -108,7 +105,7 @@ export function CaseStudies() {
                     download="Spottr_Smart_Member_Retention_Final_Exact_Version.pdf"
                     className="inline-flex shrink-0 items-center gap-2 border-b border-foreground/60 pb-0.5 text-sm text-foreground transition-opacity hover:opacity-70"
                   >
-                    Download deck ↓
+                    {t.cases.deckDownload}
                   </a>
                 </div>
               </div>
