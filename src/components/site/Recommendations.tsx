@@ -4,13 +4,13 @@ const recommendations = [
   {
     quote:
       "Dina is a professional, motivated, and capable Product Owner who bridges the gap between business needs and technical execution effortlessly. She quickly grasped complex technical topics and architectural constraints, allowing her to communicate requirements to the developers with clarity and precision.",
-    role: "Engineering Lead, former colleague at Outfittery",
+    role: "Engineering Lead, former colleague",
     date: "December 2025",
   },
   {
     quote:
       "She expertly translates complex technical concepts into clear business value while ensuring development teams understand the strategic vision behind each initiative. Rather than simply focusing on feature delivery, she prioritised usability, operational efficiency, and technical debt reduction.",
-    role: "Software Architect, former colleague at Outfittery",
+    role: "Software Architect, former colleague",
     date: "June 2025",
   },
   {
