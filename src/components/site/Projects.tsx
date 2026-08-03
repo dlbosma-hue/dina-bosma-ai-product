@@ -29,7 +29,7 @@ const projects: Project[] = [
     github: "https://github.com/dlbosma-hue/bootcamp_env",
     details: {
       what: "A collection of production n8n workflows built across the bootcamp. Not demo workflows: these run on schedules, handle errors, and integrate with real tools.",
-      how: "Workflows include: four Monday-morning media audit triggers (NPR, NYT, Guardian, Al Jazeera) posting to Notion and Slack; weekly Spottr coach briefing emails with churn risk summaries; survey response triggers; and webhook-based integrations for cross-system data flow.",
+      how: "Workflows include: four Monday morning media audit triggers (NPR, NYT, Guardian, Al Jazeera) posting to Notion and Slack; weekly Spottr coach briefing emails with churn risk summaries; survey response triggers; and webhook based integrations for cross-system data flow.",
       outcomes:
         "Operational workflows running in real deployments. The Spottr briefings and media audit pipelines are live.",
       learned:
@@ -48,7 +48,7 @@ const projects: Project[] = [
       what: "An AI agent that audits news articles for representation gaps across gender, race, disability, and other marginalised groups. It analyses bylines, source diversity, framing language, and subject portrayal, then generates a structured report.",
       how: "Built with LangGraph ReAct loop, giving the agent access to RSS feeds, NewsAPI, Wikipedia, and a Pinecone RAG store. Deployed as a FastAPI service on Railway. Four n8n workflows run Monday mornings, pulling from NPR, NYT, The Guardian, and Al Jazeera and posting results to Notion and Slack.",
       outcomes:
-        "Live production deployment on Railway. Monitored end-to-end via LangSmith. Written up in a Medium post covering what went wrong during the build.",
+        "Live production deployment on Railway. Monitored end to end via LangSmith. Written up in a Medium post covering what went wrong during the build.",
       learned:
         "Agents fail in interesting ways when tools return unexpected formats. LangSmith traces made debugging tractable in a way that print statements never could.",
     },
@@ -60,11 +60,11 @@ const projects: Project[] = [
     github: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/ai-content-creator",
     details: {
       what: "A content generation tool with a Gradio interface. Give it a topic, a target audience, and a tone, and it produces structured content, social posts, summaries, outlines, tailored to the brief. The focus is on how prompt architecture drives output quality.",
-      how: "Built with a layered prompting approach: a system prompt sets voice and constraints, a structured user prompt encodes the brief, and chain-of-thought formatting guides the model toward consistent, usable output. Gradio provides the interface, making it usable without touching code. OpenAI API powers generation.",
+      how: "Built with a layered prompting approach: a system prompt sets voice and constraints, a structured user prompt encodes the brief, and chain of thought formatting guides the model toward consistent, usable output. Gradio provides the interface, making it usable without touching code. OpenAI API powers generation.",
       outcomes:
         "Demonstrates that prompt engineering is a design discipline, not a workaround. Small structural changes to the prompt produce measurable differences in output consistency and format compliance.",
       learned:
-        "The interface shapes how people prompt. A well-designed Gradio UI with clear input fields leads to better prompts and better outputs, the UX and the prompt design are inseparable.",
+        "The interface shapes how people prompt. A well designed Gradio UI with clear input fields leads to better prompts and better outputs, the UX and the prompt design are inseparable.",
     },
   },
 ];

@@ -33,7 +33,7 @@ export function About() {
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10 flex flex-col justify-center">
           <img
             src={dinaPortrait.url}
-            alt="Portrait of Dina Bosma-Buczynska"
+            alt="Portrait of Dina Bosma Buczynska"
             className="aspect-[4/5] w-full max-w-[220px] rounded-none object-cover mx-auto"
           />
         </aside>

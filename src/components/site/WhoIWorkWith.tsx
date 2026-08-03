@@ -20,7 +20,7 @@ export function WhoIWorkWith() {
               dedicated tech team to make it happen.
             </li>
             <li>
-              Retail and e-commerce teams, especially in fashion and
+              Retail and e commerce teams, especially in fashion and
               lifestyle, sitting on data they are not yet using.
             </li>
           </ul>
@@ -41,7 +41,7 @@ export function WhoIWorkWith() {
             somewhere between idea, implementation, and adoption.
           </p>
           <p>
-            At that point you need hands-on help, not another slide deck.
+            At that point you need hands on help, not another slide deck.
           </p>
         </div>
       </div>

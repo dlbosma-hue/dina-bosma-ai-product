@@ -12,7 +12,7 @@ const groups = [
       "MCP",
       "n8n",
       "Gradio",
-      "scikit-learn",
+      "scikit learn",
     ],
   },
   {

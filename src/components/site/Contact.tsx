@@ -21,7 +21,7 @@ export function Contact() {
           Currently available for Q3 engagements.
         </p>
         <p className="mb-8 max-w-2xl text-base text-muted-foreground">
-          Most projects start with a scoping conversation or a one-day workshop. From there, engagements are shaped around what actually makes sense for your team and situation. Happy to talk through what that could look like.
+          Most projects start with a scoping conversation or a one day workshop. From there, engagements are shaped around what actually makes sense for your team and situation. Happy to talk through what that could look like.
         </p>
         <div className="mb-12">
           <ContactForm />

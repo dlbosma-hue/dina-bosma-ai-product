@@ -15,7 +15,7 @@ const recommendations = [
   },
   {
     quote:
-      "Dina brings exceptional dedication, ownership, and domain expertise to everything she does. She has a structured, organized approach that ensures initiatives are well-executed and delivered on time. One of her standout strengths is stakeholder management.",
+      "Dina brings exceptional dedication, ownership, and domain expertise to everything she does. She has a structured, organized approach that ensures initiatives are executed well and delivered on time. One of her standout strengths is stakeholder management.",
     role: "VP Product, former direct manager",
     date: "June 2025",
   },
@@ -27,13 +27,13 @@ const recommendations = [
   },
   {
     quote:
-      "Dina has a pragmatic, results-driven approach, always keeping the customer at the center, without losing sight of the end user's needs or the business goals. She has a real talent for breaking down complex topics into clear, accessible insights for a broad audience.",
+      "Dina has a pragmatic, results driven approach, always keeping the customer at the center, without losing sight of the end user's needs or the business goals. She has a real talent for breaking down complex topics into clear, accessible insights for a broad audience.",
     role: "CCO and former COO, former senior colleague",
     date: "April 2025",
   },
   {
     quote:
-      "Dina excels at balancing long-term vision with short-term execution, ensuring that projects stay aligned with company goals while adapting to market dynamics. Forceful when needed but still always going above and beyond to ensure stakeholders are heard.",
+      "Dina excels at balancing long term vision with short term execution, ensuring that projects stay aligned with company goals while adapting to market dynamics. Forceful when needed but still always going above and beyond to ensure stakeholders are heard.",
     role: "Former direct manager",
     date: "January 2025",
   },

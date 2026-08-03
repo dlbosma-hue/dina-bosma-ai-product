@@ -6,10 +6,10 @@ const items = [
     org: "IronHack",
     year: "2026",
     detail:
-      "Intensive programme covering agents, RAG, ML, automation, GDPR and EU AI Act, delivered through a full client-style capstone.",
+      "Intensive programme covering agents, RAG, ML, automation, GDPR and EU AI Act, delivered through a full client style capstone.",
   },
   {
-    title: "Microsoft Certified: AI-900 Azure AI Fundamentals",
+    title: "Microsoft Certified: AI 900 Azure AI Fundamentals",
     org: "Microsoft",
     year: "",
     detail: "Foundational certification in AI workloads, responsible AI, and Azure AI services.",
@@ -22,7 +22,7 @@ const experience = [
     org: "Outfittery",
     year: "4 yrs",
     detail:
-      "Shipped internal AI-assisted and operational tools used daily by online stylists and operations teams.",
+      "Shipped internal AI assisted and operational tools used daily by online stylists and operations teams.",
   },
 ];
 

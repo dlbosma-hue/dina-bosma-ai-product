@@ -18,10 +18,10 @@ const cases: Case[] = [
     client: "Outfittery",
     title: "AI Powered Stylist Platform and Automation",
     role: "Product Manager, AI and platform initiatives",
-    body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid-shift. From there I led product for a wider set of AI systems: automated outfit curation with a structured AB testing program against human stylists, and a feedback system that unified four disconnected internal tools into one stylist facing view with AI generated summaries.",
+    body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid shift. From there I led product for a wider set of AI systems: automated outfit curation with a structured AB testing program against human stylists, and a feedback system that unified four disconnected internal tools into one stylist facing view with AI generated summaries.",
     deliverables: [
-      "Reduced manual coordination workload by 80% through automated customer-stylist assignment",
-      "Increased throughput from 29 to 34 orders per day through AI-assisted decision support, keeping stylists in control of every customer-facing call",
+      "Reduced manual coordination workload by 80% through automated assignment of customers to stylists",
+      "Increased throughput from 29 to 34 orders per day through AI assisted decision support, keeping stylists in control of every customer facing call",
       "Targeted 80%+ preview acceptance rate for AI generated outfit previews across a structured menswear and womenswear testing program",
       "Unified four fragmented feedback sources into a single stylist facing view, closing a gap where customer input was getting lost before reaching decision makers",
     ],
@@ -34,7 +34,7 @@ const cases: Case[] = [
   {
     client: "Spottr / Capstone Project",
     title: "AI Member Retention for Boutique Fitness Studios",
-    role: "End-to-end AI consultant engagement",
+    role: "End to end AI consultant engagement",
     body: "Structured as a real consulting engagement from day one. Identified churn as the core commercial problem for boutique fitness studios, built and validated a working MVP, and packaged the result with the documentation a buyer needs before saying yes to any AI system.",
     deliverables: [
       "Working churn prediction model at 92.5% accuracy with automated weekly coach briefings via n8n",
@@ -42,10 +42,10 @@ const cases: Case[] = [
       "EU AI Act compliance pack and standalone ROI model included as standard",
     ],
     metrics: [
-      { value: "33 days", label: "break-even point" },
-      { value: "1,099%", label: "projected 12-month ROI" },
+      { value: "33 days", label: "break even point" },
+      { value: "1,099%", label: "projected ROI over 12 months" },
     ],
-    tags: ["Python", "scikit-learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
+    tags: ["Python", "scikit learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
     link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
   },
 ];
@@ -90,7 +90,7 @@ export function CaseStudies() {
                     <div className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">{m.label}</div>
                     {c.client === "Spottr / Capstone Project" && m.value === "1,099%" && (
                       <div className="mt-2 text-[11px] leading-snug text-muted-foreground/70">
-                        Based on a modelled scenario: 200-member studio, €3K implementation cost
+                        Based on a modelled scenario: studio with 200 members, €3K implementation cost
                       </div>
                     )}
                   </div>

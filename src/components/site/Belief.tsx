@@ -21,7 +21,7 @@ export function Belief() {
         </blockquote>
       </div>
       <p className="mx-auto mt-6 md:mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        I build AI systems that reduce the repetitive, low-value work that
+        I build AI systems that reduce the repetitive, low value work that
         slows teams down, so people can focus on judgment, relationships, and
         the work that moves the business. Not automation for its own
         sake. Systems that make your team more capable than they were before.
