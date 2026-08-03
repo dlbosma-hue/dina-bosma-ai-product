@@ -19,7 +19,6 @@ export function Belief() {
             <span className="mt-4 block">not fewer.</span>
           </p>
         </blockquote>
-        <div className="mt-8 md:mt-10 h-[3px] w-16 bg-accent" />
       </div>
       <p className="mx-auto mt-6 md:mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         I build AI systems that reduce the repetitive, low-value work that
