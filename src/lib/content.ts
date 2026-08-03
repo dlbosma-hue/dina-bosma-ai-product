@@ -129,7 +129,8 @@ const en = {
     roiNote:
       "Based on a modelled scenario: studio with 200 members, €3K implementation cost",
     viewProject: "View project ↗",
-    deckTitle: "Pitch deck Spottr. Smart Member Retention.",
+    deckLabel: "Pitch deck",
+    deckName: "Spottr. Smart Member Retention.",
     deckMeta: "PDF, 8 slides",
     deckDownload: "Download deck ↓",
     items: [
@@ -437,7 +438,8 @@ const de: typeof en = {
     roiNote:
       "Basierend auf einem Modellszenario: Studio mit 200 Mitgliedern, 3.000 € Implementierungskosten",
     viewProject: "Projekt ansehen ↗",
-    deckTitle: "Pitch Deck Spottr. Smart Member Retention.",
+    deckLabel: "Pitch Deck",
+    deckName: "Spottr. Smart Member Retention.",
     deckMeta: "PDF, 8 Folien",
     deckDownload: "Deck herunterladen ↓",
     items: [
