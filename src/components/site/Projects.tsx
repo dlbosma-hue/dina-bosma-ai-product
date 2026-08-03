@@ -29,7 +29,7 @@ const projects: Project[] = [
     github: "https://github.com/dlbosma-hue/bootcamp_env",
     details: {
       what: "A collection of production n8n workflows built across the bootcamp. Not demo workflows: these run on schedules, handle errors, and integrate with real tools.",
-      how: "Workflows include: four Monday morning media audit triggers (NPR, NYT, Guardian, Al Jazeera) posting to Notion and Slack; weekly Spottr coach briefing emails with churn risk summaries; survey response triggers; and webhook based integrations for cross-system data flow.",
+      how: "Workflows include: four Monday morning media audit triggers (NPR, NYT, Guardian, Al Jazeera) posting to Notion and Slack; weekly Spottr coach briefing emails with churn risk summaries; survey response triggers; and webhook based integrations for data flow across systems.",
       outcomes:
         "Operational workflows running in real deployments. The Spottr briefings and media audit pipelines are live.",
       learned:
