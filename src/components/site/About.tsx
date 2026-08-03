@@ -34,7 +34,7 @@ export function About() {
           <img
             src={dinaPortrait.url}
             alt="Portrait of Dina Bosma-Buczynska"
-            className="aspect-square w-full max-w-[220px] rounded-full object-cover mx-auto"
+            className="aspect-[4/5] w-full max-w-[220px] rounded-none object-cover mx-auto"
           />
         </aside>
       </div>
