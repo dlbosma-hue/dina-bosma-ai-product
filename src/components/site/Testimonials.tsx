@@ -1,29 +1,15 @@
 import { Section } from "./Section";
-
-const quotes = [
-  {
-    quote:
-      "Dina is a professional, motivated, and capable Product Owner who bridges the gap between business needs and technical execution effortlessly.",
-    name: "Biniam Asnake Kefale",
-    role: "Engineering Lead",
-  },
-  {
-    quote:
-      "Her ability to take initiative and drive projects forward with focus and reliability has made a real impact on our team.",
-    name: "Diana Pulnar",
-    role: "VP Product",
-  },
-  {
-    quote:
-      "Dina brings a rare combination of dedication, professionalism, warmth, and humor, making her not only effective but also a joy to collaborate with.",
-    name: "Malin Finne",
-    role: "CCO & Former COO",
-  },
-];
+import { useLanguage } from "@/lib/i18n";
 
 export function Testimonials() {
+  const { t } = useLanguage();
+  const quotes = t.testimonials.quotes;
   return (
-    <Section id="testimonials" eyebrow="What colleagues say" title="In their words.">
+    <Section
+      id="testimonials"
+      eyebrow={t.testimonials.eyebrow}
+      title={t.testimonials.title}
+    >
       <div className="grid gap-px bg-border md:grid-cols-3">
         {quotes.map((q) => (
           <figure
