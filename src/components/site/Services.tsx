@@ -1,35 +1,11 @@
 import { Section } from "./Section";
-
-const services = [
-  {
-    title: "Workflow audit",
-    desc: "Most teams know something is slowing them down. They do not always know what. I map how work actually moves through your team, find where coordination overhead is hiding, and put a number on what it is costing you. The output is a clear picture of where automation or process change would have the most impact, before you spend anything on building.",
-  },
-  {
-    title: "AI workflow integration",
-    desc: "You have repetitive work eating up your team's time. I connect agents, automations, and pipelines to how your team really works, not how a demo assumes they do.",
-  },
-  {
-    title: "AI product strategy and roadmapping",
-    desc: "You know AI should be part of your product but you are not sure where to start or what to build first. I help you cut through the noise and decide what moves the needle.",
-  },
-  {
-    title: "Build or buy analysis",
-    desc: "There are a hundred tools promising to solve your problem. I give you an honest comparison with no vendor allegiance and no resale fees.",
-  },
-  {
-    title: "Practical AI compliance support",
-    desc: "GDPR and the EU AI Act feel overwhelming. I translate them into clear steps your team can follow, without the legalese.",
-  },
-  {
-    title: "Fractional product leadership",
-    desc: "You need someone who can work alongside your team, not just hand over a slide deck. I embed part time and help you ship.",
-  },
-];
+import { useLanguage } from "@/lib/i18n";
 
 export function Services() {
+  const { t } = useLanguage();
+  const services = t.services.items;
   return (
-    <Section id="services" eyebrow="What I do" title="Services.">
+    <Section id="services" eyebrow={t.services.eyebrow} title={t.services.title}>
       <ul className="divide-y divide-border border-y border-border">
         {services.map((s) => (
           <li
