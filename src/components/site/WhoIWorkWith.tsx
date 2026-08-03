@@ -6,7 +6,7 @@ export function WhoIWorkWith() {
       <div className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
-            I work best with small businesses, founders, and small teams who
+            I work best with founders, small teams, and SMEs across Europe who
             want to use AI in a way that still feels human.
           </p>
           <p>That includes:</p>
