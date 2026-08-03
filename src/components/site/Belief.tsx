@@ -4,8 +4,7 @@ export function Belief() {
   return (
     <Section id="belief" eyebrow="What I believe">
       <div className="flex flex-col items-center py-6 md:py-10">
-        <div className="h-10 w-[3px] bg-accent" />
-        <blockquote className="mt-6 md:mt-8 text-center font-serif tracking-tight text-foreground">
+        <blockquote className="text-center font-serif tracking-tight text-foreground">
           <p className="text-4xl leading-[1.05] md:text-6xl">
             AI should make your people
             <span className="mt-2 block">
