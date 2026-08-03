@@ -7,7 +7,7 @@ const steps = [
   },
   {
     title: "Decide what is worth fixing",
-    desc: "Not every inefficiency is worth automating. I help you separate the high-cost, high-frequency problems from the ones that feel annoying but do not move the needle. Honest trade-offs, no vendor allegiance, no solution looking for a problem.",
+    desc: "Not every inefficiency is worth automating. I help you separate the high cost, high frequency problems from the ones that feel annoying but do not move the needle. Honest trade offs, no vendor allegiance, no solution looking for a problem.",
   },
   {
     title: "Build something that works in practice",

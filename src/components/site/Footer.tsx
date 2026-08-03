@@ -7,7 +7,7 @@ export function Footer() {
         <div className="font-serif text-base text-foreground">
           HUMINT - Human intelligence. AI powered.
         </div>
-        <div>Dina Bosma-Buczynska · Berlin · EN / DE / NL</div>
+        <div>Dina Bosma Buczynska · Berlin · EN / DE / NL</div>
         <div className="flex items-center gap-4">
           <a
             href="https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/"

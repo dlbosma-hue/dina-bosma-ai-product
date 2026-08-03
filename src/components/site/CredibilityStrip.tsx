@@ -1,5 +1,5 @@
 const items = [
-  "Hands-on AI systems",
+  "Hands on AI systems",
   "Product and implementation",
   "GDPR and EU AI Act aware",
 ];

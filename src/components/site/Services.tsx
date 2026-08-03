@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "Fractional product leadership",
-    desc: "You need someone who can work alongside your team, not just hand over a slide deck. I embed part-time and help you ship.",
+    desc: "You need someone who can work alongside your team, not just hand over a slide deck. I embed part time and help you ship.",
   },
 ];
 
