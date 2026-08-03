@@ -1,6 +1,8 @@
 import { useState, type FormEvent } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 export function ContactForm() {
+  const { t } = useLanguage();
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -27,12 +29,12 @@ export function ContactForm() {
         setStatus("error");
         setError(
           payload?.errors?.[0]?.message ??
-            "Something went wrong. Please try again.",
+            t.form.genericError,
         );
       }
     } catch {
       setStatus("error");
-      setError("Network error. Please try again.");
+      setError(t.form.networkError);
     }
   }
 
@@ -43,7 +45,7 @@ export function ContactForm() {
           htmlFor="contact-name"
           className="block text-[11px] uppercase tracking-[0.24em] text-muted-foreground"
         >
-          Name
+          {t.form.name}
         </label>
         <input
           id="contact-name"
@@ -59,7 +61,7 @@ export function ContactForm() {
           htmlFor="contact-email"
           className="block text-[11px] uppercase tracking-[0.24em] text-muted-foreground"
         >
-          Email
+          {t.form.email}
         </label>
         <input
           id="contact-email"
@@ -75,7 +77,7 @@ export function ContactForm() {
           htmlFor="contact-message"
           className="block text-[11px] uppercase tracking-[0.24em] text-muted-foreground"
         >
-          Message
+          {t.form.message}
         </label>
         <textarea
           id="contact-message"
@@ -93,12 +95,12 @@ export function ContactForm() {
           disabled={status === "submitting"}
           className="inline-flex items-center gap-2 border-b border-foreground pb-1 text-sm tracking-wide text-foreground transition-opacity hover:opacity-70 disabled:opacity-50"
         >
-          {status === "submitting" ? "Sending…" : "Send"}
+          {status === "submitting" ? t.form.sending : t.form.send}
           <span aria-hidden>→</span>
         </button>
         {status === "success" && (
           <span className="text-sm text-muted-foreground">
-            Thanks, I&apos;ll be in touch shortly.
+            {t.form.success}
           </span>
         )}
         {status === "error" && error && (

@@ -1,48 +1,27 @@
 import { Section } from "./Section";
+import { useLanguage } from "@/lib/i18n";
 
 export function WhoIWorkWith() {
+  const { t } = useLanguage();
   return (
-    <Section id="who" eyebrow="Engagements" title="Who I work with.">
+    <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
       <div className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
-          <p>
-            I work best with founders, small teams, and SMEs across Europe who
-            want to use AI in a way that still feels human.
-          </p>
-          <p>That includes:</p>
+          <p>{t.who.intro}</p>
+          <p>{t.who.listIntro}</p>
           <ul className="space-y-3 pl-5 list-disc marker:text-muted-foreground">
-            <li>
-              Small and growing businesses with repetitive operational work
-              they want to get off their plate.
-            </li>
-            <li>
-              Founders and startups building their first AI layer, without a
-              dedicated tech team to make it happen.
-            </li>
-            <li>
-              Retail and e commerce teams, especially in fashion and
-              lifestyle, sitting on data they are not yet using.
-            </li>
+            {t.who.bullets.map((b) => (
+              <li key={b}>{b}</li>
+            ))}
           </ul>
-          <p>
-            If you have identified a problem and need someone who can both
-            think it through and build something real, that is where I
-            come in.
-          </p>
+          <p>{t.who.closing}</p>
         </div>
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
           <h3 className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            When it tends to fit
+            {t.who.fitHeading}
           </h3>
-          <p>
-            Usually your team has spotted an AI opportunity but has not
-            turned it into a real build yet. You have tested a few tools,
-            but nothing has stuck operationally, and the project is stalled
-            somewhere between idea, implementation, and adoption.
-          </p>
-          <p>
-            At that point you need hands on help, not another slide deck.
-          </p>
+          <p>{t.who.fit1}</p>
+          <p>{t.who.fit2}</p>
         </div>
       </div>
     </Section>

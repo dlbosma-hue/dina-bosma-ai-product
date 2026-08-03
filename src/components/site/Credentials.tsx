@@ -1,38 +1,20 @@
 import { Section } from "./Section";
-
-const items = [
-  {
-    title: "AI Consulting & Integration",
-    org: "IronHack",
-    year: "2026",
-    detail:
-      "Intensive programme covering agents, RAG, ML, automation, GDPR and EU AI Act, delivered through a full client style capstone.",
-  },
-  {
-    title: "Microsoft Certified: AI 900 Azure AI Fundamentals",
-    org: "Microsoft",
-    year: "",
-    detail: "Foundational certification in AI workloads, responsible AI, and Azure AI services.",
-  },
-];
-
-const experience = [
-  {
-    title: "Product Manager, internal tools and platform",
-    org: "Outfittery",
-    year: "4 yrs",
-    detail:
-      "Shipped internal AI assisted and operational tools used daily by online stylists and operations teams.",
-  },
-];
+import { useLanguage } from "@/lib/i18n";
 
 export function Credentials() {
+  const { t } = useLanguage();
+  const items = t.credentials.certifications;
+  const experience = t.credentials.experience;
   return (
-    <Section id="credentials" eyebrow="Credentials" title="Background and certifications.">
+    <Section
+      id="credentials"
+      eyebrow={t.credentials.eyebrow}
+      title={t.credentials.title}
+    >
       <div className="grid gap-12 md:grid-cols-2 md:gap-16">
         <div>
           <h3 className="mb-5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Experience
+            {t.credentials.experienceHeading}
           </h3>
           <ul className="divide-y divide-border border-y border-border">
             {experience.map((i) => (
@@ -51,7 +33,7 @@ export function Credentials() {
         </div>
         <div>
           <h3 className="mb-5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Certifications
+            {t.credentials.certificationsHeading}
           </h3>
           <ul className="divide-y divide-border border-y border-border">
             {items.map((i) => (
