@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 export function Nav() {
-  const links = [
-    { href: "#about", label: "About" },
-    { href: "#services", label: "Services" },
-    { href: "#work", label: "Work" },
-    { href: "#contact", label: "Contact" },
-  ];
+  const { t, lang, setLang } = useLanguage();
+  const links = t.nav.links;
 
   const externalLinks: { href: string; label: string }[] = [];
 
@@ -45,7 +42,7 @@ export function Nav() {
         <a href="#top" className="flex flex-col leading-tight">
           <span className="font-serif text-xl tracking-tight">HUMINT</span>
           <span className="text-[11px] font-light text-muted-foreground tracking-wide">
-            Human intelligence. AI powered.
+            {t.nav.tagline}
           </span>
         </a>
         <nav className="hidden flex-1 items-center justify-center gap-5 text-sm text-muted-foreground md:flex lg:gap-7">
@@ -75,12 +72,22 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contact"
-          className="hidden shrink-0 rounded-none border border-foreground px-4 py-1.5 text-sm transition-colors hover:bg-foreground hover:text-background md:inline-block"
-        >
-          Let's talk
-        </a>
+        <div className="flex shrink-0 items-center gap-3">
+          <button
+            type="button"
+            onClick={() => setLang(lang === "en" ? "de" : "en")}
+            aria-label={t.langAria}
+            className="rounded-none border border-border px-2.5 py-1 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+          >
+            {t.langLabel}
+          </button>
+          <a
+            href="#contact"
+            className="hidden rounded-none border border-foreground px-4 py-1.5 text-sm transition-colors hover:bg-foreground hover:text-background md:inline-block"
+          >
+            {t.nav.cta}
+          </a>
+        </div>
       </div>
     </header>
   );
