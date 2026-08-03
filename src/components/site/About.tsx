@@ -7,22 +7,27 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-5">
         <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
-            Before I managed the tools, I used them. As an online stylist
-            with my own customer portfolio, I knew what the job actually
-            demanded. Then I became the Product Manager building the
-            platform for people doing that same work.
+            Before I managed the tools, I used them. As an online stylist with my
+            own customer portfolio, I knew what the job actually demanded. Then
+            I became the Product Manager building the platform for people doing
+            that same work.
           </p>
           <p>
             I now work as an AI consultant and product leader, helping small
             businesses and founders build systems that reduce manual work
-            without sidelining their people.
+            without sidelining their people. That includes choosing the right
+            model for the job, not the biggest one, so the systems I build stay
+            efficient on cost and on compute.
           </p>
           <p>
-            No AI for the sake of it.<br />
-            Just systems that reduce manual work and free people up to do what only humans can do.
+            No AI for the sake of it.
+            <br />
+            Just systems that reduce manual work and free people up to do what
+            only humans can do.
           </p>
           <p className="text-base">
-            Based in Berlin. Working in Dutch (native), English (C2), and German (C1).
+            Based in Berlin. Working in Dutch (native), English (C2), and German
+            (C1).
           </p>
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10 flex flex-col justify-center">
