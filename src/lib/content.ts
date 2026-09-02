@@ -84,10 +84,10 @@ const en = {
     eyebrow: "Engagements",
     title: "Who I work with.",
     intro:
-      "I work best with founders, small teams, and SMEs across Europe who want to use AI in a way that still feels human.",
+      "I work best with founders, small teams, and SMEs across Europe who want to use AI in a way that still feels human. I focus especially on the German market, where many small businesses run on repetitive operational work that could be handled more efficiently.",
     listIntro: "That includes:",
     bullets: [
-      "Small and growing businesses with repetitive operational work they want to get off their plate.",
+      "Small and growing service businesses in Germany, such as construction companies, real estate agents, law offices, tax consultancies, and craft businesses, where repetitive operational work eats up time each week.",
       "Founders and startups building their first AI layer, without a dedicated tech team to make it happen.",
       "Retail and e commerce teams, especially in fashion and lifestyle, sitting on data they are not yet using.",
     ],
@@ -394,10 +394,10 @@ const de: typeof en = {
     eyebrow: "Zusammenarbeit",
     title: "Mit wem ich arbeite.",
     intro:
-      "Am besten funktioniert die Zusammenarbeit mit Gründerinnen und Gründern, kleinen Teams und KMU in ganz Europa, die KI so nutzen wollen, dass es menschlich bleibt.",
+      "Am besten funktioniert die Zusammenarbeit mit Gründerinnen und Gründern, kleinen Teams und KMU in ganz Europa, die KI so nutzen wollen, dass es menschlich bleibt. Ich fokussiere mich besonders auf den deutschen Markt, wo viele kleine Unternehmen von repetitiver operativer Arbeit leben, die effizienter ablaufen könnte.",
     listIntro: "Dazu gehören:",
     bullets: [
-      "Kleine und wachsende Unternehmen mit repetitiver operativer Arbeit, die sie loswerden möchten.",
+      "Kleine und wachsende Dienstleistungsunternehmen in Deutschland, zum Beispiel Bauunternehmen, Makler, Kanzleien, Steuerberater und Handwerksbetriebe, bei denen repetitive operative Arbeit jede Woche Zeit frisst.",
       "Gründerinnen, Gründer und Startups, die ihre erste KI Ebene aufbauen, ohne eigenes Tech Team im Rücken.",
       "Teams aus Retail und E Commerce, besonders in Fashion und Lifestyle, die auf Daten sitzen, die sie noch nicht nutzen.",
     ],
