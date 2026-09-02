@@ -394,10 +394,10 @@ const de: typeof en = {
     eyebrow: "Zusammenarbeit",
     title: "Mit wem ich arbeite.",
     intro:
-      "Am besten funktioniert die Zusammenarbeit mit Gründerinnen und Gründern, kleinen Teams und KMU in ganz Europa, die KI so nutzen wollen, dass es menschlich bleibt.",
+      "Am besten funktioniert die Zusammenarbeit mit Gründerinnen und Gründern, kleinen Teams und KMU in ganz Europa, die KI so nutzen wollen, dass es menschlich bleibt. Ich fokussiere mich besonders auf den deutschen Markt, wo viele kleine Unternehmen von repetitiver operativer Arbeit leben, die effizienter ablaufen könnte.",
     listIntro: "Dazu gehören:",
     bullets: [
-      "Kleine und wachsende Unternehmen mit repetitiver operativer Arbeit, die sie loswerden möchten.",
+      "Kleine und wachsende Dienstleistungsunternehmen in Deutschland, zum Beispiel Bauunternehmen, Makler, Kanzleien, Steuerberater und Handwerksbetriebe, bei denen repetitive operative Arbeit jede Woche Zeit frisst.",
       "Gründerinnen, Gründer und Startups, die ihre erste KI Ebene aufbauen, ohne eigenes Tech Team im Rücken.",
       "Teams aus Retail und E Commerce, besonders in Fashion und Lifestyle, die auf Daten sitzen, die sie noch nicht nutzen.",
     ],
