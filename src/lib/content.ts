@@ -342,11 +342,12 @@ const de: typeof en = {
     "KI Systeme in der Praxis",
     "Produkt und Umsetzung",
     "DSGVO und EU AI Act im Blick",
+    "Effiziente, passgenaue Modelle",
   ],
   about: {
     eyebrow: "Über mich",
     p1: "Bevor ich die Tools gemanagt habe, habe ich sie selbst benutzt. Als Online Stylistin mit eigenem Kundenportfolio wusste ich, was der Job wirklich verlangt. Danach war ich die Produktmanagerin, die die Plattform für genau diese Arbeit gebaut hat.",
-    p2: "Heute arbeite ich als KI Beraterin und Product Lead und helfe kleinen Unternehmen und Gründerinnen und Gründern, Systeme zu bauen, die manuelle Arbeit reduzieren, ohne die Menschen dabei außen vor zu lassen. Dazu gehört, das passende Modell für die Aufgabe zu wählen und nicht das größte, damit die Systeme bei Kosten und Rechenleistung effizient bleiben.",
+    p2: "Heute arbeite ich als KI Beraterin und Product Lead und helfe kleinen Unternehmen und Gründerinnen und Gründern, Systeme zu bauen, die manuelle Arbeit reduzieren, ohne die Menschen dabei außen vor zu lassen. Dazu gehört, das passende Modell für die Aufgabe zu wählen und nicht das größte, damit die Systeme bei Kosten, Rechenleistung und Energieverbrauch effizient bleiben.",
     p3a: "Keine KI um der KI willen.",
     p3b: "Nur Systeme, die manuelle Arbeit reduzieren und Menschen den Raum geben für das, was nur Menschen können.",
     p4: "Ansässig in Berlin. Ich arbeite auf Niederländisch (Muttersprache), Englisch (C2) und Deutsch (C1).",
@@ -363,6 +364,7 @@ const de: typeof en = {
     line3: "nicht kleiner.",
     body: "Ich baue KI Systeme, die die repetitive Arbeit mit geringem Wert reduzieren, die Teams ausbremst, damit Menschen sich auf Urteilsvermögen, Beziehungen und die Arbeit konzentrieren können, die das Geschäft voranbringt.",
     body2: "Keine Automatisierung um ihrer selbst willen. Systeme, die Ihr Team leistungsfähiger machen als zuvor.",
+    body3: "Verantwortungsvoll gebaut: fair, transparent und angemessen.",
   },
   services: {
     eyebrow: "Was ich mache",
@@ -370,7 +372,7 @@ const de: typeof en = {
     items: [
       {
         title: "Workflow Analyse",
-        desc: "Die meisten Teams spüren, dass etwas sie ausbremst. Nur nicht immer, was genau. Ich zeichne nach, wie Arbeit wirklich durch Ihr Team läuft, finde die versteckten Koordinationskosten und beziffere, was sie Sie kosten. Das Ergebnis ist ein klares Bild davon, wo Automatisierung oder Prozessänderungen den größten Effekt hätten, bevor Sie Geld in den Aufbau stecken.",
+        desc: "Die meisten Teams spüren, dass etwas sie ausbremst. Nur nicht immer, was genau. Ich zeichne nach, wie Arbeit wirklich durch Ihr Team läuft, finde die versteckten Koordinationskosten und beziffere, was sie Sie kosten. Das Ergebnis ist ein klares Bild davon, wo Automatisierung oder Prozessänderungen den größten Effekt hätten, bevor Sie Geld in den Aufbau stecken. Dazu gehört auch das Erkennen redundanter Schritte, die Zeit und Rechenleistung verschwenden.",
       },
       {
         title: "Integration von KI in Arbeitsabläufe",
@@ -378,15 +380,15 @@ const de: typeof en = {
       },
       {
         title: "KI Produktstrategie und Roadmap",
-        desc: "Sie wissen, dass KI Teil Ihres Produkts sein sollte, aber nicht, wo Sie anfangen oder was zuerst entstehen soll. Ich helfe Ihnen, den Lärm zu filtern und zu entscheiden, was wirklich etwas bewegt.",
+        desc: "Sie wissen, dass KI Teil Ihres Produkts sein sollte, aber nicht, wo Sie anfangen oder was zuerst entstehen soll. Ich helfe Ihnen, den Lärm zu filtern und zu entscheiden, was wirklich etwas bewegt, inklusive dem, was bei Menschen bleiben sollte und was gar nicht automatisiert werden sollte.",
       },
       {
         title: "Make or Buy Analyse",
-        desc: "Hundert Tools versprechen, Ihr Problem zu lösen. Ich liefere einen ehrlichen Vergleich, ohne Anbieterbindung und ohne Provisionen.",
+        desc: "Hundert Tools versprechen, Ihr Problem zu lösen. Ich liefere einen ehrlichen Vergleich, ohne Anbieterbindung und ohne Provisionen. Wo es relevant ist, bewerte ich auch Energieverbrauch, Kosten und den Umgang mit Ihren Daten.",
       },
       {
         title: "Praktische Unterstützung bei KI Compliance",
-        desc: "DSGVO und EU AI Act wirken überwältigend. Ich übersetze sie in klare Schritte, denen Ihr Team folgen kann, ganz ohne Juristendeutsch.",
+        desc: "DSGVO und EU AI Act wirken überwältigend. Ich übersetze sie in klare Schritte, denen Ihr Team folgen kann, ganz ohne Juristendeutsch. Dazu gehören menschliche Aufsicht, Risikoklassifizierung und Dokumentation, die einer Prüfung standhält.",
       },
       {
         title: "Product Leadership auf Zeit",
@@ -555,7 +557,7 @@ const de: typeof en = {
       },
       {
         title: "Entscheiden, was sich zu lösen lohnt",
-        desc: "Nicht jede Ineffizienz lohnt die Automatisierung. Ich helfe Ihnen, die teuren und häufigen Probleme von denen zu trennen, die nur nerven, aber nichts bewegen. Ehrliche Abwägungen, keine Anbieterbindung, keine Lösung auf der Suche nach einem Problem.",
+        desc: "Nicht jede Ineffizienz lohnt die Automatisierung. Ich helfe Ihnen, die teuren und häufigen Probleme von denen zu trennen, die nur nerven, aber nichts bewegen. Ehrliche Abwägungen, keine Anbieterbindung, keine Lösung auf der Suche nach einem Problem. Dort, wo Urteilsvermögen zählt, bleiben Menschen in der Schleife.",
       },
       {
         title: "Etwas bauen, das in der Praxis funktioniert",
@@ -563,7 +565,7 @@ const de: typeof en = {
       },
       {
         title: "So übergeben, dass es bleibt",
-        desc: "Die meisten KI Projekte scheitern an der Akzeptanz, nicht am Bauen. Ich sorge dafür, dass das System ohne mich nutzbar ist: dokumentiert, dort compliant, wo es sein muss, und verstanden von den Menschen, die es betreiben. Denn ein System, das Ihr Team nicht nutzt, ist nur teure Infrastruktur.",
+        desc: "Die meisten KI Projekte scheitern an der Akzeptanz, nicht am Bauen. Ich sorge dafür, dass das System ohne mich nutzbar ist: dokumentiert, compliant, zugänglich und verstanden von den Menschen, die es betreiben. Denn ein System, das Ihr Team nicht nutzt, ist nur teure Infrastruktur.",
       },
     ],
   },
@@ -587,7 +589,7 @@ const de: typeof en = {
         org: "IronHack",
         year: "2026",
         detail:
-          "Intensivprogramm zu Agenten, RAG, Machine Learning, Automatisierung, DSGVO und EU AI Act, abgeschlossen mit einem vollwertigen Abschlussprojekt im Kundenformat.",
+          "Intensivprogramm zu Agenten, RAG, Machine Learning, Automatisierung, DSGVO und EU AI Act, verantwortungsvoller KI und ressourcenschonendem KI Einsatz, abgeschlossen mit einem vollwertigen Abschlussprojekt im Kundenformat.",
       },
       {
         title: "Microsoft Certified: AI 900 Azure AI Fundamentals",
@@ -606,6 +608,8 @@ const de: typeof en = {
     availability: "Aktuell verfügbar für Projekte im dritten Quartal.",
     pricing:
       "Die meisten Projekte starten mit einem Scoping Gespräch oder einem eintägigen Workshop. Danach wird die Zusammenarbeit so zugeschnitten, wie es für Ihr Team und Ihre Situation wirklich sinnvoll ist. Gerne bespreche ich mit Ihnen, wie das aussehen könnte.",
+    values:
+      "Ich arbeite mit europäischen Werten im Blick: Datenschutz, menschliche Aufsicht, angemessene Technologie und Respekt gegenüber den Menschen, die vom System betroffen sind.",
   },
   form: {
     name: "Name",
