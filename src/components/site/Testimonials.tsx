@@ -13,14 +13,13 @@ export function Testimonials() {
       <div className="grid gap-px bg-border md:grid-cols-3">
         {quotes.map((q) => (
           <figure
-            key={q.name}
+            key={q.role}
             className="flex flex-col justify-between gap-6 bg-background p-8 md:p-10"
           >
             <blockquote className="font-serif text-lg leading-snug text-foreground/90 md:text-xl">
               <span aria-hidden className="text-muted-foreground">&ldquo;</span>{q.quote}<span aria-hidden className="text-muted-foreground">&rdquo;</span>
             </blockquote>
             <figcaption className="flex flex-col gap-1 border-t border-border pt-4 text-sm">
-              <span className="text-foreground">{q.name}</span>
               <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
                 {q.role}
               </span>
