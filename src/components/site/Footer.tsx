@@ -35,6 +35,14 @@ export function Footer() {
           >
             Blog
           </a>
+          <a
+            href="https://www.youtube.com/@humint-berlin"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            YouTube
+          </a>
           <Link to="/impressum" className="transition-colors hover:text-foreground">
             {t.footer.impressum}
           </Link>

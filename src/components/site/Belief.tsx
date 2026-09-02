@@ -25,6 +25,9 @@ export function Belief() {
       <p className="mx-auto mt-6 md:mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         {t.belief.body}
       </p>
+      <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+        {t.belief.body2}
+      </p>
     </Section>
   );
 }
