@@ -84,10 +84,10 @@ const en = {
     eyebrow: "Engagements",
     title: "Who I work with.",
     intro:
-      "I work best with founders, small teams, and SMEs across Europe who want to use AI in a way that still feels human.",
+      "I work best with founders, small teams, and SMEs across Europe who want to use AI in a way that still feels human. I focus especially on the German market, where many small businesses run on repetitive operational work that could be handled more efficiently.",
     listIntro: "That includes:",
     bullets: [
-      "Small and growing businesses with repetitive operational work they want to get off their plate.",
+      "Small and growing service businesses in Germany, such as construction companies, real estate agents, law offices, tax consultancies, and craft businesses, where repetitive operational work eats up time each week.",
       "Founders and startups building their first AI layer, without a dedicated tech team to make it happen.",
       "Retail and e commerce teams, especially in fashion and lifestyle, sitting on data they are not yet using.",
     ],
