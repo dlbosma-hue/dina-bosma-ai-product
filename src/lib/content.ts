@@ -47,7 +47,8 @@ const en = {
     line1: "AI should make your people",
     word: "faster,",
     line3: "not fewer.",
-    body: "I build AI systems that reduce the repetitive, low value work that slows teams down, so people can focus on judgment, relationships, and the work that moves the business. Not automation for its own sake. Systems that make your team more capable than they were before.",
+    body: "I build AI systems that reduce the repetitive, low value work that slows teams down, so people can focus on judgment, relationships, and the work that moves the business.",
+    body2: "Not automation for its own sake. Systems that make your team more capable than they were before.",
   },
   services: {
     eyebrow: "What I do",
@@ -356,7 +357,8 @@ const de: typeof en = {
     line1: "KI soll Ihr Team",
     word: "schneller machen,",
     line3: "nicht kleiner.",
-    body: "Ich baue KI Systeme, die die repetitive Arbeit mit geringem Wert reduzieren, die Teams ausbremst, damit Menschen sich auf Urteilsvermögen, Beziehungen und die Arbeit konzentrieren können, die das Geschäft voranbringt. Keine Automatisierung um ihrer selbst willen. Systeme, die Ihr Team leistungsfähiger machen als zuvor.",
+    body: "Ich baue KI Systeme, die die repetitive Arbeit mit geringem Wert reduzieren, die Teams ausbremst, damit Menschen sich auf Urteilsvermögen, Beziehungen und die Arbeit konzentrieren können, die das Geschäft voranbringt.",
+    body2: "Keine Automatisierung um ihrer selbst willen. Systeme, die Ihr Team leistungsfähiger machen als zuvor.",
   },
   services: {
     eyebrow: "Was ich mache",
