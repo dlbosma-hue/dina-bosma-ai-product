@@ -28,35 +28,6 @@ export function Contact() {
         <div className="mb-12">
           <ContactForm />
         </div>
-        <div className="flex flex-wrap items-center gap-8">
-        <a
-          href="https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-        >
-          LinkedIn
-          <span aria-hidden>↗</span>
-        </a>
-        <a
-          href="https://github.com/dlbosma-hue"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-        >
-          GitHub
-          <span aria-hidden>↗</span>
-        </a>
-        <a
-          href="https://medium.com/@dinaleonidovnabosma"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-        >
-          Blog
-          <span aria-hidden>↗</span>
-        </a>
-        </div>
       </div>
 
     </section>
