@@ -25,6 +25,9 @@ export function Contact() {
         <p className="mb-8 max-w-2xl text-base text-muted-foreground">
           {t.contact.pricing}
         </p>
+        <p className="mb-8 max-w-2xl text-base text-muted-foreground">
+          {t.contact.values}
+        </p>
         <div className="mb-12">
           <ContactForm />
         </div>
