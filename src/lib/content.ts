@@ -291,7 +291,7 @@ const en = {
     title: "Let's talk.",
     intro:
       "Based in Berlin. Available for consulting, workshops, and fractional product leadership across Europe.",
-    availability: "Currently available for Q3 engagements.",
+    availability: "Currently available for Q4 and 2027 engagements.",
     pricing:
       "Most projects start with a scoping conversation or a one day workshop. From there, engagements are shaped around what actually makes sense for your team and situation. Happy to talk through what that could look like.",
     values:
@@ -605,7 +605,7 @@ const de: typeof en = {
     title: "Sprechen wir.",
     intro:
       "Ansässig in Berlin. Verfügbar für Beratung, Workshops und Product Leadership auf Zeit in ganz Europa.",
-    availability: "Aktuell verfügbar für Projekte im dritten Quartal.",
+    availability: "Aktuell verfügbar für Projekte im vierten Quartal und 2027.",
     pricing:
       "Die meisten Projekte starten mit einem Scoping Gespräch oder einem eintägigen Workshop. Danach wird die Zusammenarbeit so zugeschnitten, wie es für Ihr Team und Ihre Situation wirklich sinnvoll ist. Gerne bespreche ich mit Ihnen, wie das aussehen könnte.",
     values:
