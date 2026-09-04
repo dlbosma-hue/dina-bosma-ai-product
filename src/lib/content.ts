@@ -49,10 +49,6 @@ const en = {
     p4: "Based in Berlin. Working in Dutch (native), English (C2), and German (C1).",
     portraitAlt: "Portrait of Dina Bosma Buczynska",
   },
-  introCta: {
-    text: "Not sure where to start? That is exactly what the intro call is for.",
-    button: "Book a free 30 minute call",
-  },
   belief: {
     eyebrow: "What I believe",
     line1: "AI should make your people",
@@ -372,10 +368,6 @@ const de: typeof en = {
     p3b: "Nur Systeme, die manuelle Arbeit reduzieren und Menschen den Raum geben für das, was nur Menschen können.",
     p4: "Ansässig in Berlin. Ich arbeite auf Niederländisch (Muttersprache), Englisch (C2) und Deutsch (C1).",
     portraitAlt: "Porträt von Dina Bosma Buczynska",
-  },
-  introCta: {
-    text: "Sie wissen nicht, wo Sie anfangen sollen? Genau dafür ist das Kennenlerngespräch da.",
-    button: "Kostenloses 30 Minuten Gespräch buchen",
   },
   belief: {
     eyebrow: "Woran ich glaube",
