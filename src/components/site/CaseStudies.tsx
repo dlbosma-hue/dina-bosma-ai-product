@@ -1,5 +1,6 @@
 import { Section } from "./Section";
 import { useLanguage } from "@/lib/i18n";
+import spottrDeck from "@/assets/spottr-deck.pdf.asset.json";
 
 export function CaseStudies() {
   const { t } = useLanguage();
@@ -96,13 +97,10 @@ export function CaseStudies() {
                     <div className="mt-1 font-serif text-lg leading-tight">
                       {t.cases.deckName}
                     </div>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      {t.cases.deckMeta}
-                    </p>
                   </div>
                   <a
-                    href="/spottr_deck.pdf"
-                    download="Spottr_Smart_Member_Retention_Final_Exact_Version.pdf"
+                    href={spottrDeck.url}
+                    download
                     className="inline-flex shrink-0 items-center gap-2 border-b border-foreground/60 pb-0.5 text-sm text-foreground transition-opacity hover:opacity-70"
                   >
                     {t.cases.deckDownload}
