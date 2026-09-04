@@ -1,5 +1,7 @@
 import { Section } from "./Section";
 import { useLanguage } from "@/lib/i18n";
+import dachAsset from "@/assets/dach.png.asset.json";
+
 
 export function WhoIWorkWith() {
   const { t } = useLanguage();
