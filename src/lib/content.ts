@@ -17,7 +17,8 @@ const en = {
     links: [
       { href: "#about", label: "About" },
       { href: "#services", label: "Services" },
-      { href: "#work", label: "Work" },
+      { href: "#how", label: "How I work" },
+      { href: "#work", label: "Selected work" },
       { href: "#contact", label: "Contact" },
     ],
     tagline: "Human intelligence. AI powered.",
@@ -335,7 +336,8 @@ const de: typeof en = {
     links: [
       { href: "#about", label: "Über mich" },
       { href: "#services", label: "Leistungen" },
-      { href: "#work", label: "Projekte" },
+      { href: "#how", label: "Wie ich arbeite" },
+      { href: "#work", label: "Ausgewählte Arbeiten" },
       { href: "#contact", label: "Kontakt" },
     ],
     tagline: "Menschliche Intelligenz. KI-gestützt.",
