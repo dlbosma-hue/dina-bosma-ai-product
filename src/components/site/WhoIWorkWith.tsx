@@ -11,7 +11,7 @@ export function WhoIWorkWith() {
         <img
           src={dachAsset.url}
           alt="DACH region collaboration: service businesses, teams, and retail across Europe"
-          className="w-full h-64 object-cover object-right"
+          className="w-full h-64 object-cover object-center scale-[1.35]"
         />
       </div>
       <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
