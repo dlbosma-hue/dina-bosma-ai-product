@@ -37,7 +37,7 @@ export function Projects() {
               onClick={() => setSelected(p)}
               className="group grid w-full gap-2 py-6 text-left transition-colors hover:bg-muted/30 md:grid-cols-12 md:items-baseline md:gap-8 md:py-7"
             >
-              <h3 className="font-serif text-xl leading-tight md:col-span-5 md:text-2xl">
+              <h3 className="font-serif text-[22px] leading-tight md:col-span-5 md:text-[26px]">
                 {p.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground md:col-span-6">
@@ -67,20 +67,20 @@ export function Projects() {
                 <div className="mb-2 font-mono text-xs text-muted-foreground">
                   /{String(projects.indexOf(selected) + 1).padStart(2, "0")}
                 </div>
-                <DialogTitle className="font-serif text-2xl leading-tight">
+                <DialogTitle className="font-serif text-[26px] leading-tight">
                   {selected.title}
                 </DialogTitle>
               </DialogHeader>
 
               <div className="mt-4 space-y-6">
                 <div>
-                  <h4 className="text-xs uppercase tracking-[0.18em] text-accent">{t.projects.labels.what}</h4>
+                  <h4 className="text-sm uppercase tracking-[0.18em] text-accent">{t.projects.labels.what}</h4>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {selected.details.what}
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xs uppercase tracking-[0.18em] text-accent">
+                  <h4 className="text-sm uppercase tracking-[0.18em] text-accent">
                     {t.projects.labels.how}
                   </h4>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -88,13 +88,13 @@ export function Projects() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xs uppercase tracking-[0.18em] text-accent">{t.projects.labels.outcomes}</h4>
+                  <h4 className="text-sm uppercase tracking-[0.18em] text-accent">{t.projects.labels.outcomes}</h4>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {selected.details.outcomes}
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xs uppercase tracking-[0.18em] text-accent">
+                  <h4 className="text-sm uppercase tracking-[0.18em] text-accent">
                     {t.projects.labels.learned}
                   </h4>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

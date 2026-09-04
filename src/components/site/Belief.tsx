@@ -7,7 +7,7 @@ export function Belief() {
     <Section id="belief" eyebrow={t.belief.eyebrow}>
       <div className="flex flex-col items-center py-6 md:py-10">
         <blockquote className="text-center font-serif tracking-tight text-foreground">
-          <p className="text-4xl leading-[1.05] md:text-6xl">
+          <p className="text-[38px] leading-[1.05] md:text-[62px]">
             {t.belief.line1}
             <span className="mt-2 block">
               <span className="relative inline-block">

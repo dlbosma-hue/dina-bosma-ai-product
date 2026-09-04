@@ -29,7 +29,7 @@ export function HowIWork() {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <h3 className="font-serif text-2xl leading-tight md:text-3xl">
+                <h3 className="font-serif text-[26px] leading-tight md:text-[32px]">
                   {s.title}
                 </h3>
               </div>

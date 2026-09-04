@@ -14,10 +14,10 @@ export function CaseStudies() {
             key={c.title}
             className="flex flex-col border-t border-foreground/80 pt-10 md:pt-12"
           >
-            <div className="mb-3 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+            <div className="mb-3 text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
               {c.client}
             </div>
-            <h3 className="font-serif text-4xl leading-tight md:text-5xl">{c.title}</h3>
+            <h3 className="font-serif text-[38px] leading-tight md:text-[50px]">{c.title}</h3>
             {c.role && (
               <div className="mt-3 text-sm italic text-muted-foreground">{c.role}</div>
             )}
@@ -41,8 +41,8 @@ export function CaseStudies() {
               <div className="mt-10 grid grid-cols-2 gap-10 border-t border-border pt-8 md:max-w-2xl">
                 {c.metrics.map((m) => (
                   <div key={m.label}>
-                    <div className="font-serif text-4xl md:text-5xl">{m.value}</div>
-                    <div className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">{m.label}</div>
+                    <div className="font-serif text-[38px] md:text-[50px]">{m.value}</div>
+                    <div className="mt-2 text-sm uppercase tracking-[0.16em] text-muted-foreground">{m.label}</div>
                     {c.client === spottr && m.value.includes("099") && (
                       <div className="mt-2 text-[11px] leading-snug text-muted-foreground/70">
                         {t.cases.roiNote}
@@ -55,7 +55,7 @@ export function CaseStudies() {
 
             {c.client === spottr && (
               <div className="mt-8 border-l-2 border-foreground/40 bg-muted/30 px-6 py-5 md:max-w-2xl">
-                <div className="mb-2 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+                <div className="mb-2 text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
                   {t.cases.complianceLabel}
                 </div>
                 <p className="text-sm leading-relaxed text-foreground/85">
@@ -91,7 +91,7 @@ export function CaseStudies() {
               <div className="mt-6">
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <div className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
+                    <div className="text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
                       {t.cases.deckLabel}
                     </div>
                     <div className="mt-1 font-serif text-lg leading-tight">
