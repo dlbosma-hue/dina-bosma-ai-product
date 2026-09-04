@@ -7,11 +7,11 @@ export function WhoIWorkWith() {
   const { t } = useLanguage();
   return (
     <div className="space-y-5">
-      <div className="mx-auto max-w-3xl px-5 sm:px-8 lg:px-12">
+      <div className="mx-auto max-w-3xl px-5 sm:px-8 lg:px-12 overflow-hidden border-2 border-white">
         <img
           src={dachAsset.url}
           alt="DACH region collaboration: service businesses, teams, and retail across Europe"
-          className="w-full max-h-64 object-contain border-2 border-white"
+          className="w-full h-64 object-cover object-center scale-[1.35]"
         />
       </div>
       <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
