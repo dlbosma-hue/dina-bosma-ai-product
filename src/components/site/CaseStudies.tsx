@@ -8,7 +8,7 @@ export function CaseStudies() {
   const spottr = cases[1]!.client;
   return (
     <Section id="work" eyebrow={t.cases.eyebrow} title={t.cases.title}>
-      <div className="grid gap-16 md:gap-20">
+      <div className="grid gap-12 md:gap-16">
         {cases.map((c) => (
           <article
             key={c.title}
