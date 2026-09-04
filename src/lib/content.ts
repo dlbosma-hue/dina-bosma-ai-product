@@ -148,9 +148,9 @@ const en = {
         role: "Product Manager, AI and platform initiatives",
         body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid shift. From there I led product for a wider set of AI systems: automated outfit curation with a structured AB testing program against human stylists, and a feedback system that unified four disconnected internal tools and platform into one stylist facing view with AI generated summaries.",
         deliverables: [
-          "Reduced manual coordination workload by 80% through automated assignment of customers to stylists",
-          "Increased throughput from 29 to 34 orders per day through AI assisted decision support, keeping stylists in control of every customer facing call",
-          "Unified four fragmented feedback sources into a single stylist facing view, closing a gap where customer input was getting lost before reaching decision makers",
+          "80% less manual coordination work through automated assignment of customers to stylists",
+          "17% to 20% increase per day through AI assisted decision support, with stylists retaining every customer-facing decision",
+          "Four scattered feedback sources consolidated into a single stylist-facing view, closing the gap where customer feedback was lost before reaching decision makers",
         ],
         metrics: [
           { value: "+17%", label: "efficiency (29 → 34 orders/day)" },
