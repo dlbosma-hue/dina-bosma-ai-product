@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 
 export function AnnouncementBar() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const [dismissed, setDismissed] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (dismissed) {
+    if (dismissed || lang === "en") {
       document.documentElement.style.setProperty("--banner-height", "0px");
       return;
     }
@@ -20,9 +20,9 @@ export function AnnouncementBar() {
     const observer = new ResizeObserver(update);
     observer.observe(el);
     return () => observer.disconnect();
-  }, [dismissed]);
+  }, [dismissed, lang]);
 
-  if (dismissed) return null;
+  if (dismissed || lang === "en") return null;
 
   return (
     <div
