@@ -5,7 +5,9 @@ export function Nav() {
   const { t, lang, setLang } = useLanguage();
   const links = t.nav.links;
 
-  const externalLinks: { href: string; label: string }[] = [];
+  const externalLinks: { href: string; label: string }[] = t.nav.gumroad
+    ? [t.nav.gumroad]
+    : [];
 
   const [activeId, setActiveId] = useState<string>("");
 

@@ -36,6 +36,17 @@ export function Hero() {
           {t.hero.ctaSecondary}
         </a>
       </div>
+      <div className="mt-8">
+        <a
+          href={t.nav.gumroad.href}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+        >
+          {t.hero.gumroad}
+          <span aria-hidden>↗</span>
+        </a>
+      </div>
     </section>
   );
 }
