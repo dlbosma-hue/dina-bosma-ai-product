@@ -46,7 +46,7 @@ const en = {
     p2: "I now work as an AI consultant and product leader, helping small businesses and founders build systems that reduce manual work without sidelining their people. That includes choosing the right model for the job, not the biggest one, so the systems I build stay efficient on cost, on compute, and on energy.",
     p3a: "No AI for the sake of it.",
     p3b: "Just systems that reduce manual work and free people up to do what only humans can do.",
-    p4: "Based in Berlin. Working in Dutch (native), English (C2), and German (C1).",
+    p4: "Based in Berlin. Working in Dutch (native), English (C2), and German (C2).",
     portraitAlt: "Portrait of Dina Bosma Buczynska",
   },
   belief: {
@@ -363,7 +363,7 @@ const de: typeof en = {
     p2: "Heute arbeite ich als KI-Beraterin und Product Lead und helfe kleinen Unternehmen und Gründer:innen, Systeme zu bauen, die manuelle Arbeit reduzieren, ohne die Menschen außen vor zu lassen. Dazu gehört, das passende Modell für die Aufgabe zu wählen und nicht das größte, damit die Systeme bei Kosten, Rechenleistung und Energieverbrauch effizient bleiben.",
     p3a: "Keine KI um der KI willen.",
     p3b: "Nur Systeme, die manuelle Arbeit reduzieren und Menschen den Raum geben für das, was nur Menschen können.",
-    p4: "Ansässig in Berlin. Ich arbeite auf Niederländisch (Muttersprache), Englisch (C2) und Deutsch (C1).",
+    p4: "Ansässig in Berlin. Ich arbeite auf Niederländisch (Muttersprache), Englisch (C2) und Deutsch (C2).",
     portraitAlt: "Porträt von Dina Bosma Buczynska",
   },
   belief: {
