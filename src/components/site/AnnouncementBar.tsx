@@ -28,9 +28,9 @@ export function AnnouncementBar() {
             href={t.announcement.secondaryHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center text-xs text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
+            className="inline-flex shrink-0 items-center text-xs text-muted-foreground transition-colors hover:text-foreground"
           >
-            {t.announcement.secondaryCta}
+            <span className="underline underline-offset-4">{t.announcement.secondaryCta}</span>
             <span aria-hidden className="ml-1">↗</span>
           </a>
         </div>
