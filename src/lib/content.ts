@@ -321,8 +321,8 @@ const en = {
 };
 
 const de: typeof en = {
-  langLabel: "EN",
-  langAria: "Switch to English",
+  langLabel: "DE",
+  langAria: "Auf Deutsch wechseln",
   announcement: {
     text: "Kostenloses Live-Webinar: KI ohne Angst, 30. September, 10:30 Uhr",
     cta: "Platz sichern",
