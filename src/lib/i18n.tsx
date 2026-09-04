@@ -28,8 +28,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored === "de" || stored === "en") {
       setLangState(stored);
-    } else if (navigator.language?.toLowerCase().startsWith("en")) {
-      setLangState("en");
     }
   }, []);
 
