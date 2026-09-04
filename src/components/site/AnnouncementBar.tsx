@@ -31,9 +31,9 @@ export function AnnouncementBar() {
       role="banner"
       aria-label={t.announcement.ariaLabel}
     >
-      <div className="mx-auto flex h-full max-w-5xl items-center justify-between gap-4 px-6 py-2.5 md:px-10">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm leading-snug">
-          <span>
+      <div className="mx-auto flex h-full max-w-5xl items-start justify-between gap-4 px-4 py-2.5 md:items-center md:px-10">
+        <div className="flex flex-col items-start gap-y-1.5 text-sm leading-snug md:flex-row md:flex-wrap md:items-center md:gap-x-4 md:gap-y-2">
+          <span className="block">
             <strong className="font-semibold">{t.announcement.lead}</strong>
             {t.announcement.text}
           </span>
@@ -49,10 +49,13 @@ export function AnnouncementBar() {
             href={t.announcement.secondaryHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center text-[16px] text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex shrink-0 flex-col items-start text-[16px] text-muted-foreground transition-colors hover:text-foreground md:inline-flex md:flex-row md:items-center"
           >
-            <span className="underline underline-offset-4">{t.announcement.secondaryCta}</span>
-            <span aria-hidden className="ml-1">↗</span>
+            {t.announcement.secondaryLead && (
+              <span className="block">{t.announcement.secondaryLead}</span>
+            )}
+            <span className="block font-semibold underline underline-offset-4">{t.announcement.secondaryCta}</span>
+            <span aria-hidden className="ml-1 hidden md:inline">↗</span>
           </a>
         </div>
 
