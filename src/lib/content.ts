@@ -19,6 +19,7 @@ const en = {
     ],
     tagline: "Human intelligence. AI powered.",
     cta: "Let's talk",
+    gumroad: { href: "https://humint.gumroad.com/l/ogjbl", label: "Self-paced course" },
   },
   hero: {
     eyebrow: "AI consulting · Berlin",
@@ -30,6 +31,7 @@ const en = {
       "Available for EU and remote engagements in English, German, and Dutch.",
     ctaPrimary: "Book an intro call",
     ctaSecondary: "See selected work",
+    gumroad: "Self-paced course: Set up your first workflow",
   },
   credibility: [
     "Hands on AI systems",
@@ -340,6 +342,7 @@ const de: typeof en = {
     ],
     tagline: "Menschliche Intelligenz. KI gestützt.",
     cta: "Gespräch buchen",
+    gumroad: { href: "https://humint.gumroad.com/l/ogjbl", label: "Selbstlernkurs" },
   },
   hero: {
     eyebrow: "KI Beratung · Berlin",
@@ -351,6 +354,7 @@ const de: typeof en = {
       "Verfügbar für Projekte in der EU und remote, auf Englisch, Deutsch und Niederländisch.",
     ctaPrimary: "Kennenlerngespräch buchen",
     ctaSecondary: "Ausgewählte Projekte ansehen",
+    gumroad: "Selbstlernkurs: Ersten Workflow selbst einrichten",
   },
   credibility: [
     "KI Systeme in der Praxis",
