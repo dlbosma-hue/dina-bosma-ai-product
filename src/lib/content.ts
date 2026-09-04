@@ -4,7 +4,8 @@ const en = {
   langLabel: "DE",
   langAria: "Auf Deutsch wechseln",
   announcement: {
-    text: "Free live webinar: AI without fear, 30 September, 10:30 CEST",
+    lead: "Free live webinar:",
+    text: " AI without fear, 30 September, 10:30 CEST",
     cta: "Save your spot",
     href: "https://humint.kit.com/351adfadd9",
     secondaryCta: "Prefer to start right away? View the compact self-paced course",
@@ -321,7 +322,8 @@ const de: typeof en = {
   langLabel: "EN",
   langAria: "Switch to English",
   announcement: {
-    text: "Kostenloses Live-Webinar: KI ohne Angst, 30. September, 10:30 Uhr",
+    lead: "Kostenloses Live-Webinar:",
+    text: " KI ohne Angst, 30. September, 10:30 Uhr",
     cta: "Platz sichern",
     href: "https://humint.kit.com/351adfadd9",
     secondaryCta: "Lieber sofort starten? Zum kompakten Selbstlernkurs",
