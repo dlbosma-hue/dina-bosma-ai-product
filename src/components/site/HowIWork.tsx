@@ -21,7 +21,7 @@ export function HowIWork() {
               className="grid gap-5 py-6 md:grid-cols-12 md:gap-8 md:py-7"
             >
               <div className="md:col-span-5">
-                <div className="aspect-square w-full max-w-[180px] overflow-hidden bg-background p-4 md:max-w-[200px] md:p-6">
+                <div className="mb-3 aspect-square w-full max-w-[180px] overflow-hidden bg-white p-4 md:mb-4 md:max-w-[200px] md:p-6">
                   <img
                     src={icon.url}
                     alt=""
