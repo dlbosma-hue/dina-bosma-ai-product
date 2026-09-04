@@ -34,6 +34,7 @@ const en = {
       "Available for EU and remote engagements in English, German, and Dutch.",
     ctaPrimary: "Book an intro call",
     gumroad: "Compact self-paced course: Set up your first workflow",
+    secondaryHref: "https://humint.gumroad.com/l/ogjbl",
   },
   credibility: [
     "Hands on AI systems",
