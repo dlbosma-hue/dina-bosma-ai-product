@@ -469,7 +469,6 @@ const de: typeof en = {
         deliverables: [
           "80% weniger manuelle Koordinationsarbeit durch automatisierte Zuordnung von Kundinnen und Kunden zu Stylistinnen",
           "Steigerung von 17% bis 20% pro Tag durch KI-gestützte Entscheidungshilfe, wobei die Stylistinnen jede kundennahe Entscheidung behalten",
-          "Zielwert von über 80% Akzeptanz für KI-generierte Outfit-Vorschläge in einem strukturierten Testprogramm für Herren und Damenmode",
           "Vier verstreute Feedbackquellen in einer einzigen Ansicht gebündelt und damit die Lücke geschlossen, in der Kundenfeedback verloren ging, bevor es Entscheider erreichte",
         ],
         metrics: [
