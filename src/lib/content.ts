@@ -140,7 +140,6 @@ const en = {
     viewProject: "View project ↗",
     deckLabel: "Pitch deck.",
     deckName: "Spottr. Smart Member Retention.",
-    deckMeta: "PDF, 8 slides",
     deckDownload: "Download deck ↓",
     items: [
       {
@@ -460,7 +459,6 @@ const de: typeof en = {
     viewProject: "Projekt ansehen ↗",
     deckLabel: "Pitch-Deck.",
     deckName: "Spottr. Smart Member Retention.",
-    deckMeta: "PDF, 8 Folien",
     deckDownload: "Deck herunterladen ↓",
     items: [
       {
