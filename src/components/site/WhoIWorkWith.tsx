@@ -37,5 +37,6 @@ export function WhoIWorkWith() {
         </div>
       </div>
     </Section>
+    </div>
   );
 }
