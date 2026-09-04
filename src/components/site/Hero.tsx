@@ -43,7 +43,7 @@ export function Hero() {
             <span aria-hidden>→</span>
           </a>
           <a
-            href={t.nav.gumroad.href}
+            href={t.hero.secondaryHref}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-background transition-colors hover:text-background/80"
