@@ -7,7 +7,7 @@ const en = {
     text: "Free live webinar: AI without fear, 30 September, 10:30 CEST",
     cta: "Save your spot",
     href: "https://humint.kit.com/351adfadd9",
-    secondaryCta: "Prefer to start right away? View course",
+    secondaryCta: "Prefer to start right away? View the compact self-paced course",
     secondaryHref: "https://humint.gumroad.com/l/ogjbl",
     ariaLabel: "Announcement",
     closeAria: "Close announcement",
@@ -32,7 +32,7 @@ const en = {
     availability:
       "Available for EU and remote engagements in English, German, and Dutch.",
     ctaPrimary: "Book an intro call",
-    gumroad: "Self-paced course: Set up your first workflow",
+    gumroad: "Compact self-paced course: Set up your first workflow",
   },
   credibility: [
     "Hands on AI systems",
@@ -327,7 +327,7 @@ const de: typeof en = {
     text: "Kostenloses Live-Webinar: KI ohne Angst, 30. September, 10:30 Uhr",
     cta: "Platz sichern",
     href: "https://humint.kit.com/351adfadd9",
-    secondaryCta: "Lieber sofort starten? Zum Kurs",
+    secondaryCta: "Lieber sofort starten? Zum kompakten Selbstlernkurs",
     secondaryHref: "https://humint.gumroad.com/l/ogjbl",
     ariaLabel: "Ankündigung",
     closeAria: "Ankündigung schließen",
@@ -352,7 +352,7 @@ const de: typeof en = {
     availability:
       "Verfügbar für Projekte in der EU und remote, auf Englisch, Deutsch und Niederländisch.",
     ctaPrimary: "Kennenlerngespräch buchen",
-    gumroad: "Selbstlernkurs: Ersten Workflow selbst einrichten",
+    gumroad: "Kompakter Selbstlernkurs: Ersten Workflow selbst einrichten",
   },
   credibility: [
     "KI-Systeme in der Praxis",
