@@ -8,7 +8,8 @@ export function Contact() {
       id="contact"
       className="mx-auto max-w-5xl scroll-mt-24 px-6 py-12 md:px-10 md:py-16"
     >
-      <div className="mb-6 text-[13px] uppercase tracking-[0.28em] text-muted-foreground">
+      <div className="mb-6 flex items-center gap-3 text-[13px] uppercase tracking-[0.28em] text-muted-foreground">
+        <span aria-hidden="true" className="h-3 w-[3px] shrink-0 bg-accent" />
         {t.contact.eyebrow}
       </div>
       <h2 className="max-w-3xl font-serif text-[50px] leading-[1.02] md:text-[74px]">
