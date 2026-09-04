@@ -1,8 +1,8 @@
 export type Lang = "en" | "de";
 
 const en = {
-  langLabel: "EN",
-  langAria: "Switch to English",
+  langLabel: "DE",
+  langAria: "Auf Deutsch wechseln",
   announcement: {
     text: "Free live webinar: AI without fear, 30 September, 10:30 CEST",
     cta: "Save your spot",
@@ -321,8 +321,8 @@ const en = {
 };
 
 const de: typeof en = {
-  langLabel: "DE",
-  langAria: "Auf Deutsch wechseln",
+  langLabel: "EN",
+  langAria: "Switch to English",
   announcement: {
     text: "Kostenloses Live-Webinar: KI ohne Angst, 30. September, 10:30 Uhr",
     cta: "Platz sichern",
