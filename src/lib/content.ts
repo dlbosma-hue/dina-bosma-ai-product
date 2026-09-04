@@ -369,10 +369,6 @@ const de: typeof en = {
     p4: "Ansässig in Berlin. Ich arbeite auf Niederländisch (Muttersprache), Englisch (C2) und Deutsch (C1).",
     portraitAlt: "Porträt von Dina Bosma Buczynska",
   },
-  introCta: {
-    text: "Sie wissen nicht, wo Sie anfangen sollen? Genau dafür ist das Kennenlerngespräch da.",
-    button: "Kostenloses 30 Minuten Gespräch buchen",
-  },
   belief: {
     eyebrow: "Woran ich glaube",
     line1: "KI soll Ihr Team",
