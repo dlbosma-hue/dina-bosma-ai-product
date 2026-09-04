@@ -339,12 +339,12 @@ const de: typeof en = {
       { href: "#work", label: "Projekte" },
       { href: "#contact", label: "Kontakt" },
     ],
-    tagline: "Menschliche Intelligenz. KI gestützt.",
+    tagline: "Menschliche Intelligenz. KI-gestützt.",
     cta: "Gespräch buchen",
     gumroad: { href: "https://humint.gumroad.com/l/ogjbl", label: "Selbstlernkurs" },
   },
   hero: {
-    eyebrow: "KI Beratung · Berlin",
+    eyebrow: "KI-Beratung · Berlin",
     headline: "Strategie, Umsetzung",
     headlineItalic: "& der menschliche Faktor.",
     intro:
@@ -355,26 +355,26 @@ const de: typeof en = {
     gumroad: "Selbstlernkurs: Ersten Workflow selbst einrichten",
   },
   credibility: [
-    "KI Systeme in der Praxis",
+    "KI-Systeme in der Praxis",
     "Produkt und Umsetzung",
     "DSGVO und EU AI Act im Blick",
     "Effiziente, passgenaue Modelle",
   ],
   about: {
     eyebrow: "Über mich",
-    p1: "Bevor ich die Tools gemanagt habe, habe ich sie selbst benutzt. Als Online Stylistin mit eigenem Kundenportfolio wusste ich, was der Job wirklich verlangt. Danach war ich die Produktmanagerin, die die Plattform für genau diese Arbeit gebaut hat.",
-    p2: "Heute arbeite ich als KI Beraterin und Product Lead und helfe kleinen Unternehmen und Gründerinnen und Gründern, Systeme zu bauen, die manuelle Arbeit reduzieren, ohne die Menschen dabei außen vor zu lassen. Dazu gehört, das passende Modell für die Aufgabe zu wählen und nicht das größte, damit die Systeme bei Kosten, Rechenleistung und Energieverbrauch effizient bleiben.",
+    p1: "Bevor ich die Tools gemanagt habe, habe ich sie selbst benutzt. Als Online-Stylistin mit eigenem Kundenportfolio wusste ich, was der Job wirklich verlangt. Danach war ich die Produktmanagerin, die die Plattform für genau diese Arbeit gebaut hat.",
+    p2: "Heute arbeite ich als KI-Beraterin und Product Lead und helfe kleinen Unternehmen und Gründer:innen, Systeme zu bauen, die manuelle Arbeit reduzieren, ohne die Menschen außen vor zu lassen. Dazu gehört, das passende Modell für die Aufgabe zu wählen und nicht das größte, damit die Systeme bei Kosten, Rechenleistung und Energieverbrauch effizient bleiben.",
     p3a: "Keine KI um der KI willen.",
     p3b: "Nur Systeme, die manuelle Arbeit reduzieren und Menschen den Raum geben für das, was nur Menschen können.",
     p4: "Ansässig in Berlin. Ich arbeite auf Niederländisch (Muttersprache), Englisch (C2) und Deutsch (C1).",
     portraitAlt: "Porträt von Dina Bosma Buczynska",
   },
   belief: {
-    eyebrow: "Woran ich glaube",
+    eyebrow: "Meine Überzeugungen",
     line1: "KI soll Ihr Team",
     word: "schneller machen,",
     line3: "nicht kleiner.",
-    body: "Ich baue KI Systeme, die die repetitive Arbeit mit geringem Wert reduzieren, die Teams ausbremst, damit Menschen sich auf Urteilsvermögen, Beziehungen und die Arbeit konzentrieren können, die das Geschäft voranbringt.",
+    body: "Ich baue KI-Systeme, die die repetitive Arbeit mit geringem Wert reduzieren, die Teams ausbremst, damit Menschen sich auf Urteilsvermögen, Beziehungen und die Arbeit konzentrieren können, die das Geschäft voranbringt.",
     body2: "Keine Automatisierung um ihrer selbst willen. Systeme, die Ihr Team leistungsfähiger machen als zuvor.",
     body3: "Verantwortungsvoll gebaut: fair, transparent und angemessen.",
   },
@@ -383,7 +383,7 @@ const de: typeof en = {
     title: "Leistungen.",
     items: [
       {
-        title: "Workflow Analyse",
+        title: "Workflow-Analyse",
         desc: "Die meisten Teams spüren, dass etwas sie ausbremst. Nur nicht immer, was genau. Ich zeichne nach, wie Arbeit wirklich durch Ihr Team läuft, finde die versteckten Koordinationskosten und beziffere, was sie Sie kosten. Das Ergebnis ist ein klares Bild davon, wo Automatisierung oder Prozessänderungen den größten Effekt hätten, bevor Sie Geld in den Aufbau stecken. Dazu gehört auch das Erkennen redundanter Schritte, die Zeit und Rechenleistung verschwenden.",
       },
       {
@@ -391,20 +391,20 @@ const de: typeof en = {
         desc: "Repetitive Arbeit frisst die Zeit Ihres Teams. Ich verbinde Agenten, Automatisierungen und Pipelines mit der Art, wie Ihr Team wirklich arbeitet, und nicht so, wie eine Demo es annimmt.",
       },
       {
-        title: "KI Produktstrategie und Roadmap",
+        title: "KI-Produktstrategie und Roadmap",
         desc: "Sie wissen, dass KI Teil Ihres Produkts sein sollte, aber nicht, wo Sie anfangen oder was zuerst entstehen soll. Ich helfe Ihnen, den Lärm zu filtern und zu entscheiden, was wirklich etwas bewegt, inklusive dem, was bei Menschen bleiben sollte und was gar nicht automatisiert werden sollte.",
       },
       {
-        title: "Make or Buy Analyse",
+        title: "Make-or-Buy-Analyse",
         desc: "Hundert Tools versprechen, Ihr Problem zu lösen. Ich liefere einen ehrlichen Vergleich, ohne Anbieterbindung und ohne Provisionen. Wo es relevant ist, bewerte ich auch Energieverbrauch, Kosten und den Umgang mit Ihren Daten.",
       },
       {
-        title: "Praktische Unterstützung bei KI Compliance",
+        title: "Praktische Unterstützung bei KI-Compliance",
         desc: "DSGVO und EU AI Act wirken überwältigend. Ich übersetze sie in klare Schritte, denen Ihr Team folgen kann, ganz ohne Juristendeutsch. Dazu gehören menschliche Aufsicht, Risikoklassifizierung und Dokumentation, die einer Prüfung standhält.",
       },
       {
         title: "Product Leadership auf Zeit",
-        desc: "Sie brauchen jemanden, der mit Ihrem Team arbeitet und nicht nur eine Präsentation übergibt. Ich arbeite mich in Teilzeit ein und helfe beim Liefern.",
+        desc: "Sie brauchen jemanden, der mit Ihrem Team arbeitet und nicht nur eine Präsentation übergibt. Ich begleite Ihr Team teilzeitbasiert und helfe beim Liefern.",
       },
     ],
   },
@@ -412,22 +412,22 @@ const de: typeof en = {
     eyebrow: "Zusammenarbeit",
     title: "Mit wem ich arbeite.",
     intro:
-      "Am besten funktioniert die Zusammenarbeit mit Gründerinnen und Gründern, kleinen Teams und KMU in ganz Europa, die KI so nutzen wollen, dass es menschlich bleibt. Ich fokussiere mich besonders auf den DACH-Markt, wo viele kleine Unternehmen von repetitiver operativer Arbeit leben, die effizienter ablaufen könnte.",
+      "Am besten funktioniert die Zusammenarbeit mit Gründer:innen, kleinen Teams und KMU in ganz Europa, die KI so nutzen wollen, dass es menschlich bleibt. Ich fokussiere mich besonders auf den DACH-Raum, wo viele kleine Unternehmen von repetitiver operativer Arbeit leben, die effizienter ablaufen könnte.",
     listIntro: "Dazu gehören:",
     bullets: [
       "Kleine und wachsende Dienstleistungsunternehmen im DACH-Raum, zum Beispiel Bauunternehmen, Makler, Kanzleien, Steuerberater und Handwerksbetriebe, bei denen repetitive operative Arbeit jede Woche Zeit frisst.",
-      "Gründerinnen, Gründer und Startups, die ihre erste KI Ebene aufbauen, ohne eigenes Tech Team im Rücken.",
-      "Teams aus Retail und E Commerce, besonders in Fashion und Lifestyle, die auf Daten sitzen, die sie noch nicht nutzen.",
+      "Gründer:innen und Startups, die ihre erste KI-Ebene aufbauen, ohne eigenes Tech-Team im Rücken.",
+      "Teams aus Retail und E-Commerce, besonders in Fashion und Lifestyle, die auf Daten sitzen, die sie noch nicht nutzen.",
     ],
     closing:
       "Wenn Sie ein Problem erkannt haben und jemanden brauchen, der es durchdenkt und auch wirklich etwas baut, dann komme ich ins Spiel.",
     fitHeading: "Wann es meistens passt",
-    fit1: "Meist hat Ihr Team eine KI Chance erkannt, aber noch nichts Echtes daraus gebaut. Ein paar Tools wurden getestet, operativ ist nichts geblieben, und das Projekt steckt irgendwo zwischen Idee, Umsetzung und Akzeptanz fest.",
+    fit1: "Meist hat Ihr Team eine KI-Chance erkannt, aber noch nichts Echtes daraus gebaut. Ein paar Tools wurden getestet, operativ ist nichts geblieben, und das Projekt steckt irgendwo zwischen Idee, Umsetzung und Akzeptanz fest.",
     fit2: "An diesem Punkt brauchen Sie praktische Hilfe, keine weitere Präsentation.",
   },
   testimonials: {
     eyebrow: "Was Kolleginnen und Kollegen sagen",
-    title: "In ihren Worten.",
+    title: "Stimmen aus der Zusammenarbeit",
     quotes: [
       {
         quote:
@@ -451,27 +451,27 @@ const de: typeof en = {
   },
   cases: {
     eyebrow: "Ausgewählte Arbeiten",
-    title: "Fallstudien.",
+    title: "Fallstudien",
     complianceLabel: "Compliance und Kaufbereitschaft",
     complianceBody:
-      "Geliefert mit vollständiger Compliance Dokumentation: DSGVO Datenschutz Folgenabschätzung, EU AI Act Compliance Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
+      "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
     roiNote:
-      "Basierend auf einem Modellszenario: Studio mit 200 Mitgliedern, 3.000 € Implementierungskosten",
+      "Basierend auf einem Szenario: Studio mit 200 Mitgliedern, 3.000 € Implementierungskosten",
     viewProject: "Projekt ansehen ↗",
-    deckLabel: "Pitch Deck",
+    deckLabel: "Pitch-Deck",
     deckName: "Spottr. Smart Member Retention.",
     deckMeta: "PDF, 8 Folien",
     deckDownload: "Deck herunterladen ↓",
     items: [
       {
         client: "Outfittery",
-        title: "KI gestützte Stylist Plattform und Automatisierung",
+        title: "KI-gestützte Stylist Plattform und Automatisierung",
         role: "Produktmanagerin, KI und Plattforminitiativen",
-        body: "Das Online Stylist Team verbrachte einen erheblichen Teil jedes Arbeitstags mit Koordination, die das System hätte übernehmen sollen. Kundinnen und Kunden den Stylistinnen zuordnen, Arbeit verteilen, Status nachhalten. Ich habe das Problem gemeinsam mit dem operativen Team definiert, die Lösung mit der Entwicklung zugeschnitten und iterativ in laufende Abläufe ausgeliefert, ohne das Team mitten in der Schicht zu stören. Danach habe ich das Produkt für eine ganze Reihe von KI Systemen verantwortet: automatisierte Outfit Zusammenstellung mit einem strukturierten AB Testprogramm gegen menschliche Stylistinnen sowie ein Feedback System, das vier getrennte interne Tools und Plattformen in einer einzigen Ansicht mit KI generierten Zusammenfassungen zusammengeführt hat.",
+        body: "Das Online-Stylist-Team verbrachte einen erheblichen Teil jedes Arbeitstags mit Koordination, die das System hätte übernehmen sollen. Kundinnen und Kunden den Stylistinnen zuordnen, Arbeit verteilen, Status nachhalten. Ich habe das Problem gemeinsam mit dem operativen Team definiert, die Lösung mit der Entwicklung zugeschnitten und iterativ in laufende Abläufe ausgeliefert, ohne das Team mitten in der Schicht zu stören. Danach habe ich das Produkt für eine ganze Reihe von KI-Systemen verantwortet: automatisierte Outfit-Zusammenstellung mit einem strukturierten A/B-Testprogramm gegen menschliche Stylistinnen sowie ein Feedback-System, das vier getrennte interne Tools und Plattformen in einer einzigen Ansicht mit KI-generierten Zusammenfassungen zusammengeführt hat.",
         deliverables: [
           "80% weniger manuelle Koordinationsarbeit durch automatisierte Zuordnung von Kundinnen und Kunden zu Stylistinnen",
-          "Steigerung von 29 auf 34 Aufträge pro Tag durch KI gestützte Entscheidungshilfe, wobei die Stylistinnen jede kundennahe Entscheidung behalten",
-          "Zielwert von über 80% Akzeptanz für KI generierte Outfit Vorschläge in einem strukturierten Testprogramm für Herren und Damenmode",
+          "Steigerung von 29 auf 34 Aufträge pro Tag durch KI-gestützte Entscheidungshilfe, wobei die Stylistinnen jede kundennahe Entscheidung behalten",
+          "Zielwert von über 80% Akzeptanz für KI-generierte Outfit-Vorschläge in einem strukturierten Testprogramm für Herren und Damenmode",
           "Vier verstreute Feedbackquellen in einer einzigen Ansicht gebündelt und damit die Lücke geschlossen, in der Kundenfeedback verloren ging, bevor es Entscheider erreichte",
         ],
         metrics: [
@@ -482,19 +482,19 @@ const de: typeof en = {
       },
       {
         client: "Spottr / Abschlussprojekt",
-        title: "KI gestützte Mitgliederbindung für Boutique Fitnessstudios",
-        role: "Durchgängiges KI Beratungsprojekt",
-        body: "Von Tag eins als echtes Beratungsprojekt aufgesetzt. Abwanderung als zentrales kommerzielles Problem von Boutique Fitnessstudios identifiziert, ein funktionierendes MVP gebaut und validiert und das Ergebnis mit genau der Dokumentation verpackt, die ein Käufer braucht, bevor er zu einem KI System Ja sagt.",
+        title: "KI-gestützte Mitgliederbindung für Boutique Fitnessstudios",
+        role: "Durchgängiges KI-Beratungsprojekt",
+        body: "Von Tag eins als echtes Beratungsprojekt aufgesetzt. Abwanderung als zentrales kommerzielles Problem von Boutique Fitnessstudios identifiziert, ein funktionierendes MVP gebaut und validiert und das Ergebnis mit genau der Dokumentation verpackt, die ein Käufer braucht, bevor er zu einem KI-System Ja sagt.",
         deliverables: [
           "Funktionierendes Modell zur Abwanderungsprognose mit 92,5% Genauigkeit und automatisierten wöchentlichen Coach Briefings über n8n",
-          "DSGVO Datenschutz Folgenabschätzung für Wearable und Mitgliederdaten",
-          "EU AI Act Compliance Paket und eigenständiges ROI Modell standardmäßig enthalten",
+          "DSGVO-Datenschutz-Folgenabschätzung für Wearable und Mitgliederdaten",
+          "EU-AI-Act-Compliance-Paket und eigenständiges ROI-Modell standardmäßig enthalten",
         ],
         metrics: [
-          { value: "33 Tage", label: "Break even Punkt" },
+          { value: "33 Tage", label: "Break-even-Punkt" },
           { value: "1.099%", label: "prognostizierter ROI über 12 Monate" },
         ],
-        tags: ["Python", "scikit learn", "LangChain", "n8n", "DSGVO", "EU AI Act"],
+        tags: ["Python", "scikit-learn", "LangChain", "n8n", "DSGVO", "EU AI Act"],
         link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
       },
     ],
@@ -512,15 +512,15 @@ const de: typeof en = {
     },
     items: [
       {
-        title: "n8n Automatisierungs Workflows",
-        desc: "Produktive Workflows aus mehreren Projekten: geplante Recherche Pipelines, Umfrage Trigger, wöchentliche E Mail Briefings sowie Slack und Notion Integrationen. Gebaut für den echten Betrieb, nicht für Demos.",
+        title: "n8n-Automatisierungs-Workflows",
+        desc: "Produktive Workflows aus mehreren Projekten: geplante Recherche Pipelines, Umfrage Trigger, wöchentliche E-Mail-Briefings sowie Slack und Notion Integrationen. Gebaut für den echten Betrieb, nicht für Demos.",
         tags: ["n8n", "Automatisierung", "APIs", "Webhooks"],
         github: "https://github.com/dlbosma-hue/bootcamp_env",
         details: {
           what: "Eine Sammlung produktiver n8n Workflows aus dem Bootcamp. Keine Demo Workflows: Sie laufen nach Zeitplan, behandeln Fehler und binden echte Tools ein.",
-          how: "Dazu gehören: vier Medien Audit Trigger am Montagmorgen (NPR, NYT, Guardian, Al Jazeera), die in Notion und Slack posten; wöchentliche Spottr Coach Briefing E Mails mit Abwanderungsrisiken; Trigger für Umfrageantworten; und Webhook basierte Integrationen für den Datenfluss über Systeme hinweg.",
+          how: "Dazu gehören: vier Medien-Audit Trigger am Montagmorgen (NPR, NYT, Guardian, Al Jazeera), die in Notion und Slack posten; wöchentliche Spottr Coach-Briefing-E-Mails mit Abwanderungsrisiken; Trigger für Umfrageantworten; und Webhook basierte Integrationen für den Datenfluss über Systeme hinweg.",
           outcomes:
-            "Operative Workflows im echten Einsatz. Die Spottr Briefings und die Medien Audit Pipelines laufen live.",
+            "Operative Workflows im echten Einsatz. Die Spottr Briefings und die Medien-Audit Pipelines laufen live.",
           learned:
             "Automatisierung bricht an den Rändern: API Limits, fehlerhafte Antworten, leere Ergebnismengen. Gutes Workflow Design behandelt auch den unglücklichen Pfad, nicht nur den glücklichen.",
         },
@@ -534,7 +534,7 @@ const de: typeof en = {
         medium:
           "https://medium.com/@dinaleonidovnabosma/i-built-an-ai-agent-that-audits-media-diversity-heres-what-actually-went-wrong-4b38790a6e3f",
         details: {
-          what: "Ein KI Agent, der Nachrichtenartikel auf Repräsentationslücken bei Geschlecht, Herkunft, Behinderung und weiteren marginalisierten Gruppen prüft. Er analysiert Autorenzeilen, Quellenvielfalt, Sprache und Darstellung und erzeugt daraus einen strukturierten Bericht.",
+          what: "Ein KI-Agent, der Nachrichtenartikel auf Repräsentationslücken bei Geschlecht, Herkunft, Behinderung und weiteren marginalisierten Gruppen prüft. Er analysiert Autorenzeilen, Quellenvielfalt, Sprache und Darstellung und erzeugt daraus einen strukturierten Bericht.",
           how: "Gebaut mit einer LangGraph ReAct Schleife, die dem Agenten Zugriff auf RSS Feeds, NewsAPI, Wikipedia und einen Pinecone RAG Speicher gibt. Als FastAPI Service auf Railway deployt. Vier n8n Workflows laufen montags früh, ziehen Inhalte von NPR, NYT, The Guardian und Al Jazeera und posten die Ergebnisse in Notion und Slack.",
           outcomes:
             "Produktives Deployment auf Railway. Durchgängig über LangSmith überwacht. Dokumentiert in einem Medium Beitrag darüber, was beim Bauen schiefging.",
@@ -544,7 +544,7 @@ const de: typeof en = {
       },
       {
         title: "AI Content Creator",
-        desc: "Ein strukturiertes Tool zur Inhaltserstellung, gebaut rund um bewusstes Prompt Design. Thema und Zielgruppe rein, formatierte Inhalte in mehreren Formaten raus. Nützlich für kleine Teams ohne eigene Content Funktion.",
+        desc: "Ein strukturiertes Tool zur Inhaltserstellung, gebaut rund um bewusstes Prompt-Design. Thema und Zielgruppe rein, formatierte Inhalte in mehreren Formaten raus. Nützlich für kleine Teams ohne eigene Content Funktion.",
         tags: ["Gradio", "OpenAI API", "Prompt Engineering", "Python"],
         github:
           "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/ai-content-creator",
@@ -554,7 +554,7 @@ const de: typeof en = {
           outcomes:
             "Zeigt, dass Prompt Engineering eine Designdisziplin ist und kein Workaround. Kleine strukturelle Änderungen am Prompt erzeugen messbare Unterschiede in Konsistenz und Formattreue.",
           learned:
-            "Die Oberfläche prägt, wie Menschen prompten. Eine gut gestaltete Gradio Oberfläche mit klaren Feldern führt zu besseren Prompts und besseren Ergebnissen. UX und Prompt Design sind untrennbar.",
+            "Die Oberfläche prägt, wie Menschen prompten. Eine gut gestaltete Gradio Oberfläche mit klaren Feldern führt zu besseren Prompts und besseren Ergebnissen. UX und Prompt-Design sind untrennbar.",
         },
       },
     ],
@@ -577,7 +577,7 @@ const de: typeof en = {
       },
       {
         title: "So übergeben, dass es bleibt",
-        desc: "Die meisten KI Projekte scheitern an der Akzeptanz, nicht am Bauen. Ich sorge dafür, dass das System ohne mich nutzbar ist: dokumentiert, compliant, zugänglich und verstanden von den Menschen, die es betreiben. Denn ein System, das Ihr Team nicht nutzt, ist nur teure Infrastruktur.",
+        desc: "Die meisten KI-Projekte scheitern an der Akzeptanz, nicht am Bauen. Ich sorge dafür, dass das System ohne mich nutzbar ist: dokumentiert, compliant, zugänglich und verstanden von den Menschen, die es betreiben. Denn ein System, das Ihr Team nicht nutzt, ist nur teure Infrastruktur.",
       },
     ],
   },
@@ -592,7 +592,7 @@ const de: typeof en = {
         org: "Outfittery",
         year: "4 Jahre",
         detail:
-          "Interne KI gestützte und operative Tools ausgeliefert, die täglich von Online Stylistinnen und operativen Teams genutzt wurden.",
+          "Interne KI-gestützte und operative Tools ausgeliefert, die täglich von Online-Stylistinnen und operativen Teams genutzt wurden.",
       },
     ],
     certifications: [
@@ -601,14 +601,14 @@ const de: typeof en = {
         org: "IronHack",
         year: "2026",
         detail:
-          "Intensivprogramm zu Agenten, RAG, Machine Learning, Automatisierung, DSGVO und EU AI Act, verantwortungsvoller KI und ressourcenschonendem KI Einsatz, abgeschlossen mit einem vollwertigen Abschlussprojekt im Kundenformat.",
+          "Intensivprogramm zu Agenten, RAG, Machine Learning, Automatisierung, DSGVO und EU AI Act, verantwortungsvoller KI und ressourcenschonendem KI-Einsatz, abgeschlossen mit einem vollwertigen Abschlussprojekt im Kundenformat.",
       },
       {
         title: "Microsoft Certified: AI 900 Azure AI Fundamentals",
         org: "Microsoft",
         year: "",
         detail:
-          "Grundlagenzertifizierung zu KI Workloads, verantwortungsvoller KI und Azure AI Diensten.",
+          "Grundlagenzertifizierung zu KI-Workloads, verantwortungsvoller KI und Azure AI Diensten.",
       },
     ],
   },
@@ -619,13 +619,13 @@ const de: typeof en = {
       "Ansässig in Berlin. Verfügbar für Beratung, Workshops und Product Leadership auf Zeit in ganz Europa.",
     availability: "Aktuell verfügbar für Projekte im vierten Quartal und 2027.",
     pricing:
-      "Die meisten Projekte starten mit einem Scoping Gespräch oder einem eintägigen Workshop. Danach wird die Zusammenarbeit so zugeschnitten, wie es für Ihr Team und Ihre Situation wirklich sinnvoll ist. Gerne bespreche ich mit Ihnen, wie das aussehen könnte.",
+      "Die meisten Projekte starten mit einem Scoping-Gespräch oder einem eintägigen Workshop. Danach wird die Zusammenarbeit so zugeschnitten, wie es für Ihr Team und Ihre Situation wirklich sinnvoll ist. Gerne bespreche ich mit Ihnen, wie das aussehen könnte.",
     values:
       "Ich arbeite mit europäischen Werten im Blick: Datenschutz, menschliche Aufsicht, angemessene Technologie und Respekt gegenüber den Menschen, die vom System betroffen sind.",
   },
   form: {
     name: "Name",
-    email: "E Mail",
+    email: "E-Mail",
     message: "Nachricht",
     send: "Senden",
     sending: "Wird gesendet…",
@@ -634,7 +634,7 @@ const de: typeof en = {
     networkError: "Netzwerkfehler. Bitte versuchen Sie es erneut.",
   },
   footer: {
-    brand: "HUMINT - Menschliche Intelligenz. KI gestützt.",
+    brand: "HUMINT · Menschliche Intelligenz. KI-gestützt.",
     meta: "Dina Bosma Buczynska · Berlin · EN / DE / NL",
     impressum: "Impressum",
   },
