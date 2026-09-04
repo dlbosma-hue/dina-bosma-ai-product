@@ -33,7 +33,7 @@ export function AnnouncementBar() {
     >
       <div className="mx-auto flex h-full max-w-5xl items-start justify-between gap-4 px-4 py-2.5 md:items-center md:px-10">
         <div className="flex flex-col items-start gap-y-1.5 text-sm leading-snug md:flex-row md:flex-wrap md:items-center md:gap-x-4 md:gap-y-2">
-          <span className="block">
+          <span className="block text-[15px]">
             <strong className="font-semibold">{t.announcement.lead}</strong>
             {t.announcement.text}
           </span>
