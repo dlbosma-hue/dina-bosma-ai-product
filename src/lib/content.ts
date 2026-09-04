@@ -23,7 +23,6 @@ const en = {
     ],
     tagline: "Human intelligence. AI powered.",
     cta: "Let's talk",
-    gumroad: { href: "https://humint.gumroad.com/l/ogjbl", label: "Self-paced course" },
   },
   hero: {
     eyebrow: "AI consulting · Berlin",
@@ -341,7 +340,6 @@ const de: typeof en = {
     ],
     tagline: "Menschliche Intelligenz. KI-gestützt.",
     cta: "Gespräch buchen",
-    gumroad: { href: "https://humint.gumroad.com/l/ogjbl", label: "Selbstlernkurs" },
   },
   hero: {
     eyebrow: "KI-Beratung · Berlin",
