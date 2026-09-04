@@ -19,7 +19,7 @@ export function Contact() {
         {t.contact.intro}
       </p>
 
-      <div className="mt-12">
+      <div className="mt-8">
         <p className="mb-4 max-w-2xl text-base text-muted-foreground">
           {t.contact.availability}
         </p>

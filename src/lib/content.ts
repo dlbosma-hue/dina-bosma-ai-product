@@ -608,7 +608,7 @@ const de: typeof en = {
   },
   contact: {
     eyebrow: "Kontakt",
-    title: "Sprechen wir.",
+    title: "Gemeinsam den nächsten Schritt planen.",
     intro:
       "Ansässig in Berlin. Verfügbar für Beratung, Workshops und Product Leadership auf Zeit in ganz Europa.",
     availability: "Aktuell verfügbar für Projekte im vierten Quartal und 2027.",
