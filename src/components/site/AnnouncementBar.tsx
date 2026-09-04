@@ -24,6 +24,15 @@ export function AnnouncementBar() {
           >
             {t.announcement.cta}
           </a>
+          <a
+            href={t.announcement.secondaryHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center text-xs text-muted-foreground underline underline-offset-4 transition-colors hover:text-foreground"
+          >
+            {t.announcement.secondaryCta}
+            <span aria-hidden className="ml-1">↗</span>
+          </a>
         </div>
         <button
           type="button"
