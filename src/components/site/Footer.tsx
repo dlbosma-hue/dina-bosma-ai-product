@@ -28,14 +28,6 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="https://medium.com/@dinaleonidovnabosma"
-            target="_blank"
-            rel="noreferrer"
-            className="transition-colors hover:text-foreground"
-          >
-            Blog
-          </a>
-          <a
             href="https://www.youtube.com/@humint-berlin"
             target="_blank"
             rel="noreferrer"
