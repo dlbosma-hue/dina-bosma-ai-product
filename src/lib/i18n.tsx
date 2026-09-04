@@ -14,22 +14,20 @@ type Ctx = {
 };
 
 const LanguageContext = createContext<Ctx>({
-  lang: "en",
+  lang: "de",
   setLang: () => {},
-  t: content.en,
+  t: content.de,
 });
 
 const STORAGE_KEY = "humint-lang";
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>("de");
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored === "de" || stored === "en") {
       setLangState(stored);
-    } else if (navigator.language?.toLowerCase().startsWith("de")) {
-      setLangState("de");
     }
   }, []);
 
