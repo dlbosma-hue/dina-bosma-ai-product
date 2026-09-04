@@ -29,12 +29,6 @@ export function Hero() {
           {t.hero.ctaPrimary}
           <span aria-hidden>→</span>
         </a>
-        <a
-          href="#work"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-        >
-          {t.hero.ctaSecondary}
-        </a>
       </div>
       <div className="mt-8">
         <a
