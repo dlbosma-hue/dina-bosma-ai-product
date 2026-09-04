@@ -5,7 +5,7 @@ export function Belief() {
   const { t } = useLanguage();
   return (
     <Section id="belief" eyebrow={t.belief.eyebrow}>
-      <div className="flex flex-col items-center py-6 md:py-10">
+      <div className="flex flex-col items-center py-2 md:py-4">
         <blockquote className="text-center font-serif tracking-tight text-foreground">
           <p className="text-[42px] leading-[1.05] md:text-[66px]">
             {t.belief.line1}

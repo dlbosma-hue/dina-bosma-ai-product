@@ -6,7 +6,7 @@ import dachAsset from "@/assets/dach.png.asset.json";
 export function WhoIWorkWith() {
   const { t } = useLanguage();
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-12">
         <img
           src={dachAsset.url}
@@ -16,7 +16,7 @@ export function WhoIWorkWith() {
       </div>
       <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
 
-      <div className="grid gap-14 md:grid-cols-2 md:gap-20">
+      <div className="grid gap-10 md:grid-cols-2 md:gap-14">
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>{t.who.intro}</p>
           <p>{t.who.listIntro}</p>
