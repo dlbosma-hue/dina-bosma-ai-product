@@ -1,10 +1,21 @@
 import { Section } from "./Section";
 import { useLanguage } from "@/lib/i18n";
+import dachAsset from "@/assets/dach.png.asset.json";
+
 
 export function WhoIWorkWith() {
   const { t } = useLanguage();
   return (
-    <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
+    <div className="space-y-10">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-12">
+        <img
+          src={dachAsset.url}
+          alt="DACH region collaboration: service businesses, teams, and retail across Europe"
+          className="w-full border-2 border-white"
+        />
+      </div>
+      <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
+
       <div className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>{t.who.intro}</p>
@@ -26,5 +37,6 @@ export function WhoIWorkWith() {
         </div>
       </div>
     </Section>
+    </div>
   );
 }
