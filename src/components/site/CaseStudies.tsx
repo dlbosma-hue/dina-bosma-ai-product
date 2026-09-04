@@ -74,19 +74,6 @@ export function CaseStudies() {
                 ))}
               </div>
             )}
-
-            {c.link && (
-              <div className="mt-8">
-                <a
-                  href={c.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 border-b border-foreground/60 pb-0.5 text-sm text-foreground transition-opacity hover:opacity-70"
-                >
-                  {t.cases.viewProject}
-                </a>
-              </div>
-            )}
             {c.client === spottr && (
               <div className="mt-6">
                 <div className="flex items-start justify-between gap-4">
