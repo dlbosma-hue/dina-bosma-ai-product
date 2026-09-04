@@ -315,6 +315,28 @@ const en = {
     meta: "Dina Bosma Buczynska · Berlin · EN / DE / NL",
     impressum: "Impressum",
   },
+  impressum: {
+    title: "Legal Notice (Impressum).",
+    metaDescription:
+      "Legal notice and provider identification for the website of Dina Bosma Buczynska, freelance AI consultant and Product Manager in Berlin.",
+    ogTitle: "Legal Notice, Dina Bosma Buczynska",
+    ogDescription:
+      "Legal notice and provider identification for the website of Dina Bosma Buczynska.",
+    backHome: "← Back home",
+    legalLabel: "Legal",
+    name: "Dina Bosma Buczynska",
+    role: "Freelance AI Consultant & Product Manager",
+    location: "Berlin, Germany",
+    contactText: "Contact via the form on the homepage.",
+    linkedInLabel: "LinkedIn:",
+    responsibleHeading: "Responsible for content under § 55 Abs. 2 RStV",
+    responsibleText: "Dina Bosma Buczynska, Berlin",
+    liabilityHeading: "Liability notice",
+    liabilityText:
+      "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content.",
+    footerBrand: "Dina Bosma Buczynska",
+    footerMeta: "Berlin · EN / DE / NL",
+  },
 };
 
 const de: typeof en = {
