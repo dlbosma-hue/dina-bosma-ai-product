@@ -21,12 +21,14 @@ export function HowIWork() {
               className="grid gap-6 py-8 md:grid-cols-12 md:gap-10 md:py-10"
             >
               <div className="md:col-span-5">
-                <img
-                  src={icon.url}
-                  alt=""
-                  loading="lazy"
-                  className="mb-5 aspect-[3/4] w-full max-w-[160px] object-cover"
-                />
+                <div className="mb-5 flex justify-center p-4 md:p-6">
+                  <img
+                    src={icon.url}
+                    alt=""
+                    loading="lazy"
+                    className="aspect-[3/4] w-full max-w-[160px] object-cover"
+                  />
+                </div>
                 <h3 className="font-serif text-2xl leading-tight md:text-3xl">
                   {s.title}
                 </h3>
