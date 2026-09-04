@@ -468,7 +468,7 @@ const de: typeof en = {
         body: "Das Online-Stylist-Team verbrachte einen erheblichen Teil jedes Arbeitstags mit Koordination, die das System hätte übernehmen sollen. Kundinnen und Kunden den Stylistinnen zuordnen, Arbeit verteilen, Status nachhalten. Ich habe das Problem gemeinsam mit dem operativen Team definiert, die Lösung mit der Entwicklung zugeschnitten und iterativ in laufende Abläufe ausgeliefert, ohne das Team mitten in der Schicht zu stören. Danach habe ich das Produkt für eine ganze Reihe von KI-Systemen verantwortet: automatisierte Outfit-Zusammenstellung mit einem strukturierten A/B-Testprogramm gegen menschliche Stylistinnen sowie ein Feedback-System, das vier getrennte interne Tools und Plattformen in einer einzigen Ansicht mit KI-generierten Zusammenfassungen zusammengeführt hat.",
         deliverables: [
           "80% weniger manuelle Koordinationsarbeit durch automatisierte Zuordnung von Kundinnen und Kunden zu Stylistinnen",
-          "Steigerung von 29 auf 34 Aufträge pro Tag durch KI-gestützte Entscheidungshilfe, wobei die Stylistinnen jede kundennahe Entscheidung behalten",
+          "Steigerung von 17% bis 20% pro Tag durch KI-gestützte Entscheidungshilfe, wobei die Stylistinnen jede kundennahe Entscheidung behalten",
           "Zielwert von über 80% Akzeptanz für KI-generierte Outfit-Vorschläge in einem strukturierten Testprogramm für Herren und Damenmode",
           "Vier verstreute Feedbackquellen in einer einzigen Ansicht gebündelt und damit die Lücke geschlossen, in der Kundenfeedback verloren ging, bevor es Entscheider erreichte",
         ],
