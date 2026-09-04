@@ -335,7 +335,7 @@ const de: typeof en = {
       { href: "#about", label: "Über mich" },
       { href: "#services", label: "Leistungen" },
       { href: "#how", label: "Wie ich arbeite" },
-      { href: "#work", label: "Ausgewählte Arbeiten" },
+      { href: "#work", label: "Projekte & Ergebnisse" },
     ],
     tagline: "Menschliche Intelligenz. KI-gestützt.",
     cta: "Gespräch buchen",
@@ -448,8 +448,8 @@ const de: typeof en = {
     ],
   },
   cases: {
-    eyebrow: "Ausgewählte Arbeiten",
-    title: "Fallstudien.",
+    eyebrow: "Projekte & Ergebnisse",
+    title: "Ausgewählte Fallstudien.",
     complianceLabel: "Compliance und Kaufbereitschaft.",
     complianceBody:
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
