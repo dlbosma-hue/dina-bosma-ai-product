@@ -178,4 +178,8 @@
   ::selection {
     background-color: oklch(0.38 0.11 255 / 0.2);
   }
+
+  main {
+    padding-top: var(--banner-height);
+  }
 }
