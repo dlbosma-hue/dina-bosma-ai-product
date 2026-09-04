@@ -5,7 +5,7 @@ export function WhoIWorkWith() {
   const { t } = useLanguage();
   return (
     <Section id="who" eyebrow={t.who.eyebrow} title={t.who.title}>
-      <div className="grid gap-10 md:grid-cols-2 md:gap-14">
+      <div className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>{t.who.intro}</p>
           <p>{t.who.listIntro}</p>

@@ -12,10 +12,10 @@ export function Section({ id, eyebrow, title, children, className = "" }: Sectio
   return (
     <section
       id={id}
-      className={`mx-auto max-w-5xl scroll-mt-24 px-6 py-10 md:px-10 md:py-12 ${className}`}
+      className={`mx-auto max-w-5xl scroll-mt-24 px-6 py-12 md:px-10 md:py-16 ${className}`}
     >
       {(eyebrow || title) && (
-        <div className="mb-8 md:mb-10">
+        <div className="mb-12 md:mb-16">
           {eyebrow && (
             <div className="mb-6 flex items-center gap-3 text-[13px] uppercase tracking-[0.28em] text-muted-foreground">
               <span aria-hidden="true" className="h-3 w-[3px] shrink-0 bg-accent" />
