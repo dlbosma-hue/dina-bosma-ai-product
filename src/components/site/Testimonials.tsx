@@ -14,7 +14,7 @@ export function Testimonials() {
         {quotes.map((q) => (
           <figure
             key={q.role}
-            className="flex flex-col justify-between gap-6 bg-background p-8 md:p-10"
+            className="flex flex-col justify-between gap-6 bg-background p-6 md:p-8"
           >
             <blockquote className="font-serif text-[20px] leading-snug text-foreground/90 md:text-[22px]">
               <span aria-hidden className="text-muted-foreground">&ldquo;</span>{q.quote}<span aria-hidden className="text-muted-foreground">&rdquo;</span>
