@@ -352,6 +352,7 @@ const de: typeof en = {
       "Verfügbar für Projekte in der EU und remote, auf Englisch, Deutsch und Niederländisch.",
     ctaPrimary: "Kennenlerngespräch buchen",
     gumroad: "Kompakter Selbstlernkurs: Ersten Workflow selbst einrichten",
+    secondaryHref: "https://humint.gumroad.com/l/ogjbl",
   },
   credibility: [
     "KI-Systeme in der Praxis",
