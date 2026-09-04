@@ -465,7 +465,7 @@ const de: typeof en = {
     items: [
       {
         client: "Outfittery",
-        title: "KI-gestützte Stylist Plattform und Automatisierung",
+        title: "KI-gestützte Stylist-Plattform und Automatisierung",
         role: "Produktmanagerin, KI und Plattforminitiativen",
         body: "Das Online-Stylist-Team verbrachte einen erheblichen Teil jedes Arbeitstags mit Koordination, die das System hätte übernehmen sollen. Kundinnen und Kunden den Stylistinnen zuordnen, Arbeit verteilen, Status nachhalten. Ich habe das Problem gemeinsam mit dem operativen Team definiert, die Lösung mit der Entwicklung zugeschnitten und iterativ in laufende Abläufe ausgeliefert, ohne das Team mitten in der Schicht zu stören. Danach habe ich das Produkt für eine ganze Reihe von KI-Systemen verantwortet: automatisierte Outfit-Zusammenstellung mit einem strukturierten A/B-Testprogramm gegen menschliche Stylistinnen sowie ein Feedback-System, das vier getrennte interne Tools und Plattformen in einer einzigen Ansicht mit KI-generierten Zusammenfassungen zusammengeführt hat.",
         deliverables: [
@@ -482,11 +482,11 @@ const de: typeof en = {
       },
       {
         client: "Spottr / Abschlussprojekt",
-        title: "KI-gestützte Mitgliederbindung für Boutique Fitnessstudios",
+        title: "KI-gestützte Mitgliederbindung für Boutique-Fitnessstudios",
         role: "Durchgängiges KI-Beratungsprojekt",
-        body: "Von Tag eins als echtes Beratungsprojekt aufgesetzt. Abwanderung als zentrales kommerzielles Problem von Boutique Fitnessstudios identifiziert, ein funktionierendes MVP gebaut und validiert und das Ergebnis mit genau der Dokumentation verpackt, die ein Käufer braucht, bevor er zu einem KI-System Ja sagt.",
+        body: "Von Tag eins als echtes Beratungsprojekt aufgesetzt. Abwanderung als zentrales kommerzielles Problem von Boutique-Fitnessstudios identifiziert, ein funktionierendes MVP gebaut und validiert und das Ergebnis mit genau der Dokumentation verpackt, die ein Käufer braucht, bevor er zu einem KI-System Ja sagt.",
         deliverables: [
-          "Funktionierendes Modell zur Abwanderungsprognose mit 92,5% Genauigkeit und automatisierten wöchentlichen Coach Briefings über n8n",
+          "Funktionierendes Modell zur Abwanderungsprognose mit 92,5% Genauigkeit und automatisierten wöchentlichen Coach-Briefings über n8n",
           "DSGVO-Datenschutz-Folgenabschätzung für Wearable und Mitgliederdaten",
           "EU-AI-Act-Compliance-Paket und eigenständiges ROI-Modell standardmäßig enthalten",
         ],
@@ -513,21 +513,21 @@ const de: typeof en = {
     items: [
       {
         title: "n8n-Automatisierungs-Workflows",
-        desc: "Produktive Workflows aus mehreren Projekten: geplante Recherche Pipelines, Umfrage Trigger, wöchentliche E-Mail-Briefings sowie Slack und Notion Integrationen. Gebaut für den echten Betrieb, nicht für Demos.",
+        desc: "Produktive Workflows aus mehreren Projekten: geplante Recherche-Pipelines, Umfrage-Trigger, wöchentliche E-Mail-Briefings sowie Slack- und Notion-Integrationen. Gebaut für den echten Betrieb, nicht für Demos.",
         tags: ["n8n", "Automatisierung", "APIs", "Webhooks"],
         github: "https://github.com/dlbosma-hue/bootcamp_env",
         details: {
-          what: "Eine Sammlung produktiver n8n Workflows aus dem Bootcamp. Keine Demo Workflows: Sie laufen nach Zeitplan, behandeln Fehler und binden echte Tools ein.",
-          how: "Dazu gehören: vier Medien-Audit Trigger am Montagmorgen (NPR, NYT, Guardian, Al Jazeera), die in Notion und Slack posten; wöchentliche Spottr Coach-Briefing-E-Mails mit Abwanderungsrisiken; Trigger für Umfrageantworten; und Webhook basierte Integrationen für den Datenfluss über Systeme hinweg.",
+          what: "Eine Sammlung produktiver n8n-Workflows aus dem Bootcamp. Keine Demo-Workflows: Sie laufen nach Zeitplan, behandeln Fehler und binden echte Tools ein.",
+          how: "Dazu gehören: vier Medien-Audit Trigger am Montagmorgen (NPR, NYT, Guardian, Al Jazeera), die in Notion und Slack posten; wöchentliche Spottr Coach-Briefing-E-Mails mit Abwanderungsrisiken; Trigger für Umfrageantworten; und Webhook-basierte Integrationen für den Datenfluss über Systeme hinweg.",
           outcomes:
             "Operative Workflows im echten Einsatz. Die Spottr Briefings und die Medien-Audit Pipelines laufen live.",
           learned:
-            "Automatisierung bricht an den Rändern: API Limits, fehlerhafte Antworten, leere Ergebnismengen. Gutes Workflow Design behandelt auch den unglücklichen Pfad, nicht nur den glücklichen.",
+            "Automatisierung bricht an den Rändern: API-Limits, fehlerhafte Antworten, leere Ergebnismengen. Gutes Workflow-Design behandelt auch den unglücklichen Pfad, nicht nur den glücklichen.",
         },
       },
       {
         title: "LangGraph Agent",
-        desc: "Ein ReAct Agent, der gleichzeitig mit mehreren Live Datenquellen verbunden ist und Toolauswahl und Reihenfolge in Echtzeit steuert. Gebaut, um zu zeigen, wie Orchestrierung aussieht, wenn sie in der Praxis funktionieren muss und nicht nur im Notebook.",
+        desc: "Ein ReAct-Agent, der gleichzeitig mit mehreren Live-Datenquellen verbunden ist und Toolauswahl und Reihenfolge in Echtzeit steuert. Gebaut, um zu zeigen, wie Orchestrierung aussieht, wenn sie in der Praxis funktionieren muss und nicht nur im Notebook.",
         tags: ["LangGraph", "LangChain", "FastAPI", "LangSmith", "Python"],
         github:
           "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/project_3_media_agent",
@@ -535,11 +535,11 @@ const de: typeof en = {
           "https://medium.com/@dinaleonidovnabosma/i-built-an-ai-agent-that-audits-media-diversity-heres-what-actually-went-wrong-4b38790a6e3f",
         details: {
           what: "Ein KI-Agent, der Nachrichtenartikel auf Repräsentationslücken bei Geschlecht, Herkunft, Behinderung und weiteren marginalisierten Gruppen prüft. Er analysiert Autorenzeilen, Quellenvielfalt, Sprache und Darstellung und erzeugt daraus einen strukturierten Bericht.",
-          how: "Gebaut mit einer LangGraph ReAct Schleife, die dem Agenten Zugriff auf RSS Feeds, NewsAPI, Wikipedia und einen Pinecone RAG Speicher gibt. Als FastAPI Service auf Railway deployt. Vier n8n Workflows laufen montags früh, ziehen Inhalte von NPR, NYT, The Guardian und Al Jazeera und posten die Ergebnisse in Notion und Slack.",
+          how: "Gebaut mit einer LangGraph ReAct-Schleife, die dem Agenten Zugriff auf RSS-Feeds, NewsAPI, Wikipedia und einen Pinecone-RAG-Speicher gibt. Als FastAPI-Service auf Railway deployt. Vier n8n-Workflows laufen montags früh, ziehen Inhalte von NPR, NYT, The Guardian und Al Jazeera und posten die Ergebnisse in Notion und Slack.",
           outcomes:
-            "Produktives Deployment auf Railway. Durchgängig über LangSmith überwacht. Dokumentiert in einem Medium Beitrag darüber, was beim Bauen schiefging.",
+            "Produktives Deployment auf Railway. Durchgängig über LangSmith überwacht. Dokumentiert in einem Medium-Beitrag darüber, was beim Bauen schiefging.",
           learned:
-            "Agenten scheitern auf interessante Weise, wenn Tools unerwartete Formate zurückgeben. LangSmith Traces haben das Debuggen handhabbar gemacht, wie es Print Statements nie könnten.",
+            "Agenten scheitern auf interessante Weise, wenn Tools unerwartete Formate zurückgeben. LangSmith-Traces haben das Debuggen handhabbar gemacht, wie es Print-Statements nie könnten.",
         },
       },
       {
@@ -549,12 +549,12 @@ const de: typeof en = {
         github:
           "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/ai-content-creator",
         details: {
-          what: "Ein Tool zur Inhaltserstellung mit Gradio Oberfläche. Thema, Zielgruppe und Tonalität rein, strukturierte Inhalte raus: Social Posts, Zusammenfassungen, Gliederungen, passend zum Briefing. Der Fokus liegt darauf, wie Prompt Architektur die Qualität bestimmt.",
-          how: "Gebaut mit einem mehrschichtigen Prompt Ansatz: Ein System Prompt setzt Stimme und Grenzen, ein strukturierter User Prompt kodiert das Briefing, und Chain of Thought Formatierung führt das Modell zu konsistenter, nutzbarer Ausgabe. Gradio liefert die Oberfläche, sodass es ohne Code nutzbar ist. Die OpenAI API übernimmt die Generierung.",
+          what: "Ein Tool zur Inhaltserstellung mit Gradio-Oberfläche. Thema, Zielgruppe und Tonalität rein, strukturierte Inhalte raus: Social Posts, Zusammenfassungen, Gliederungen, passend zum Briefing. Der Fokus liegt darauf, wie Prompt-Architektur die Qualität bestimmt.",
+          how: "Gebaut mit einem mehrschichtigen Prompt-Ansatz: Ein System-Prompt setzt Stimme und Grenzen, ein strukturierter User-Prompt kodiert das Briefing, und Chain-of-Thought-Formatierung führt das Modell zu konsistenter, nutzbarer Ausgabe. Gradio liefert die Oberfläche, sodass es ohne Code nutzbar ist. Die OpenAI API übernimmt die Generierung.",
           outcomes:
             "Zeigt, dass Prompt Engineering eine Designdisziplin ist und kein Workaround. Kleine strukturelle Änderungen am Prompt erzeugen messbare Unterschiede in Konsistenz und Formattreue.",
           learned:
-            "Die Oberfläche prägt, wie Menschen prompten. Eine gut gestaltete Gradio Oberfläche mit klaren Feldern führt zu besseren Prompts und besseren Ergebnissen. UX und Prompt-Design sind untrennbar.",
+            "Die Oberfläche prägt, wie Menschen prompten. Eine gut gestaltete Gradio-Oberfläche mit klaren Feldern führt zu besseren Prompts und besseren Ergebnissen. UX und Prompt-Design sind untrennbar.",
         },
       },
     ],
@@ -608,7 +608,7 @@ const de: typeof en = {
         org: "Microsoft",
         year: "",
         detail:
-          "Grundlagenzertifizierung zu KI-Workloads, verantwortungsvoller KI und Azure AI Diensten.",
+          "Grundlagenzertifizierung zu KI-Workloads, verantwortungsvoller KI und Azure-AI-Diensten.",
       },
     ],
   },
