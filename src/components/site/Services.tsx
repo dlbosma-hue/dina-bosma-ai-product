@@ -10,7 +10,7 @@ export function Services() {
         {services.map((s) => (
           <li
             key={s.title}
-            className="grid gap-3 py-8 md:grid-cols-12 md:gap-10 md:py-10"
+            className="grid gap-3 py-6 md:grid-cols-12 md:gap-8 md:py-7"
           >
             <h3 className="font-serif text-[26px] leading-tight md:col-span-5 md:text-[32px]">
               {s.title}
