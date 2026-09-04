@@ -11,7 +11,7 @@ export function Credentials() {
       eyebrow={t.credentials.eyebrow}
       title={t.credentials.title}
     >
-      <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+      <div className="grid gap-10 md:grid-cols-2 md:gap-12">
         <div>
           <h3 className="mb-5 text-sm uppercase tracking-[0.2em] text-muted-foreground">
             {t.credentials.experienceHeading}

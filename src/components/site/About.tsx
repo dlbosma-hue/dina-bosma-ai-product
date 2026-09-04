@@ -6,7 +6,7 @@ export function About() {
   const { t } = useLanguage();
   return (
     <Section id="about" eyebrow={t.about.eyebrow}>
-      <div className="grid gap-12 md:grid-cols-5">
+      <div className="grid gap-10 md:grid-cols-5">
         <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>{t.about.p1}</p>
           <p>{t.about.p2}</p>

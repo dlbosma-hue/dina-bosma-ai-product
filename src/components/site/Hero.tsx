@@ -18,7 +18,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-foreground/55" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-5xl flex-col justify-center px-6 py-20 md:px-10">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-5xl flex-col justify-center px-6 py-16 md:px-10">
         <div className="mb-8 text-[11px] uppercase tracking-[0.28em] text-background/70">
           {t.hero.eyebrow}
         </div>
