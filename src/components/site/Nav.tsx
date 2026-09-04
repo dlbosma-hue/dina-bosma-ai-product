@@ -39,7 +39,7 @@ export function Nav() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
+    <header className="sticky top-[var(--banner-height,0px)] z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-5 md:px-10">
         <a href="#top" className="flex flex-col leading-tight">
           <span className="font-serif text-xl tracking-tight">HUMINT</span>
