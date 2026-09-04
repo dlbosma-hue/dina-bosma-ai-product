@@ -70,7 +70,7 @@ export function Nav() {
           </button>
           <a
             href="#contact"
-            className="hidden rounded-none border border-foreground px-4 py-1.5 text-sm transition-colors hover:bg-foreground hover:text-background md:inline-block"
+            className="hidden rounded-none border border-foreground px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background md:inline-block"
           >
             {t.nav.cta}
           </a>
