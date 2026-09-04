@@ -43,14 +43,14 @@ export function Nav() {
             {t.nav.tagline}
           </span>
         </a>
-        <nav className="hidden flex-1 items-center justify-center gap-5 text-sm text-muted-foreground md:flex lg:gap-7">
+        <nav className="hidden flex-1 items-center justify-center gap-6 border-l border-border/40 pl-6 text-xs text-muted-foreground md:flex lg:gap-8 lg:pl-10 lg:text-sm">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
             return (
               <a
                 key={l.href}
                 href={l.href}
-                className={`transition-colors hover:text-foreground ${
+                className={`min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem] ${
                   isActive ? "text-foreground font-medium" : ""
                 }`}
               >
