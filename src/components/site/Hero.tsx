@@ -34,7 +34,7 @@ export function Hero() {
         <p className="mt-4 max-w-xl text-base leading-relaxed text-background/80">
           {t.hero.availability}
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-6">
+        <div className="mt-10 flex flex-col items-start gap-4">
           <a
             href="#contact"
             className="inline-flex items-center gap-2 border-b border-background pb-1 text-sm tracking-wide text-background transition-opacity hover:opacity-70"
@@ -46,7 +46,7 @@ export function Hero() {
             href={t.nav.gumroad.href}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-background transition-colors hover:text-background/80"
           >
             {t.hero.gumroad}
             <span aria-hidden>↗</span>
