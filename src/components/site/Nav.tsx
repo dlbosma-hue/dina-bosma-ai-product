@@ -5,10 +5,6 @@ export function Nav() {
   const { t, lang, setLang } = useLanguage();
   const links = t.nav.links;
 
-  const externalLinks: { href: string; label: string }[] = t.nav.gumroad
-    ? [t.nav.gumroad]
-    : [];
-
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -62,17 +58,6 @@ export function Nav() {
               </a>
             );
           })}
-          {externalLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              target="_blank"
-              rel="noreferrer"
-              className="transition-colors hover:text-foreground"
-            >
-              {l.label} ↗
-            </a>
-          ))}
         </nav>
         <div className="flex shrink-0 items-center gap-3">
           <button
