@@ -63,27 +63,27 @@ const en = {
     title: "Services.",
     items: [
       {
-        title: "Workflow audit",
+        title: "Workflow audit.",
         desc: "Most teams know something is slowing them down. They do not always know what. I map how work actually moves through your team, find where coordination overhead is hiding, and put a number on what it is costing you. The output is a clear picture of where automation or process change would have the most impact, before you spend anything on building. That includes spotting redundant steps that waste time and compute.",
       },
       {
-        title: "AI workflow integration",
+        title: "AI workflow integration.",
         desc: "You have repetitive work eating up your team's time. I connect agents, automations, and pipelines to how your team really works, not how a demo assumes they do.",
       },
       {
-        title: "AI product strategy and roadmapping",
+        title: "AI product strategy and roadmapping.",
         desc: "You know AI should be part of your product but you are not sure where to start or what to build first. I help you cut through the noise and decide what moves the needle, including what should stay with humans and what should not be automated at all.",
       },
       {
-        title: "Build or buy analysis",
+        title: "Build or buy analysis.",
         desc: "There are a hundred tools promising to solve your problem. I give you an honest comparison with no vendor allegiance and no resale fees. Where it matters, I also weigh energy use, cost, and how the tool treats your data.",
       },
       {
-        title: "Practical AI compliance support",
+        title: "Practical AI compliance support.",
         desc: "GDPR and the EU AI Act feel overwhelming. I translate them into clear steps your team can follow, without the legalese. That includes human oversight, risk classification, and documentation that holds up under review.",
       },
       {
-        title: "Fractional product leadership",
+        title: "Fractional product leadership.",
         desc: "You need someone who can work alongside your team, not just hand over a slide deck. I embed part time and help you ship.",
       },
     ],
@@ -101,7 +101,7 @@ const en = {
     ],
     closing:
       "If you have identified a problem and need someone who can both think it through and build something real, that is where I come in.",
-    fitHeading: "When it tends to fit",
+    fitHeading: "When it tends to fit.",
     fit1: "Usually your team has spotted an AI opportunity but has not turned it into a real build yet. You have tested a few tools, but nothing has stuck operationally, and the project is stalled somewhere between idea, implementation, and adoption.",
     fit2: "At that point you need hands on help, not another slide deck.",
   },
@@ -132,20 +132,20 @@ const en = {
   cases: {
     eyebrow: "Selected work",
     title: "Case studies.",
-    complianceLabel: "Compliance & buyer readiness",
+    complianceLabel: "Compliance & buyer readiness.",
     complianceBody:
       "Delivered with full compliance documentation: GDPR data protection impact assessment, EU AI Act compliance pack ready for stakeholder review, and a standalone ROI model. Everything a buyer needs before saying yes.",
     roiNote:
       "Based on a modelled scenario: studio with 200 members, €3K implementation cost",
     viewProject: "View project ↗",
-    deckLabel: "Pitch deck",
+    deckLabel: "Pitch deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckMeta: "PDF, 8 slides",
     deckDownload: "Download deck ↓",
     items: [
       {
         client: "Outfittery",
-        title: "AI Powered Stylist Platform and Automation",
+        title: "AI Powered Stylist Platform and Automation.",
         role: "Product Manager, AI and platform initiatives",
         body: "The online stylist team was spending a significant part of every working day on coordination that should have been handled by the system. Matching customers to stylists, routing work, chasing status. I defined the problem with operations, scoped the fix with engineering, and shipped iteratively into live workflows without disrupting the team mid shift. From there I led product for a wider set of AI systems: automated outfit curation with a structured AB testing program against human stylists, and a feedback system that unified four disconnected internal tools and platform into one stylist facing view with AI generated summaries.",
         deliverables: [
@@ -162,7 +162,7 @@ const en = {
       },
       {
         client: "Spottr / Capstone Project",
-        title: "AI Member Retention for Boutique Fitness Studios",
+        title: "AI Member Retention for Boutique Fitness Studios.",
         role: "End to end AI consultant engagement",
         body: "Structured as a real consulting engagement from day one. Identified churn as the core commercial problem for boutique fitness studios, built and validated a working MVP, and packaged the result with the documentation a buyer needs before saying yes to any AI system.",
         deliverables: [
@@ -183,16 +183,16 @@ const en = {
     eyebrow: "Also",
     title: "Selected builds.",
     labels: {
-      what: "What",
-      how: "How it was built",
-      outcomes: "Outcomes",
-      learned: "What I learned",
+      what: "What.",
+      how: "How it was built.",
+      outcomes: "Outcomes.",
+      learned: "What I learned.",
       github: "GitHub ↗",
       medium: "Read post ↗",
     },
     items: [
       {
-        title: "n8n Automation Workflows",
+        title: "n8n Automation Workflows.",
         desc: "Production workflows built across multiple projects: scheduled research pipelines, survey triggers, weekly email briefings, and Slack and Notion integrations. Built for real operational use, not demos.",
         tags: ["n8n", "Automation", "APIs", "Webhooks"],
         github: "https://github.com/dlbosma-hue/bootcamp_env",
@@ -206,7 +206,7 @@ const en = {
         },
       },
       {
-        title: "LangGraph Agent",
+        title: "LangGraph Agent.",
         desc: "A ReAct agent connected to multiple live data sources simultaneously, handling tool selection and sequencing in real time. Built to show what orchestration looks like when it has to work in practice, not just in a notebook.",
         tags: ["LangGraph", "LangChain", "FastAPI", "LangSmith", "Python"],
         github:
@@ -223,7 +223,7 @@ const en = {
         },
       },
       {
-        title: "AI Content Creator",
+        title: "AI Content Creator.",
         desc: "A structured content generation tool built around deliberate prompt design. Give it a topic and an audience, and it produces formatted content across multiple formats. Useful for small teams without a dedicated content function.",
         tags: ["Gradio", "OpenAI API", "Prompt Engineering", "Python"],
         github:
@@ -244,19 +244,19 @@ const en = {
     title: "A clear engagement.",
     steps: [
       {
-        title: "Find the coordination tax",
+        title: "Find the coordination tax.",
         desc: "Before anything gets built, I look at how work actually moves. Where are people doing what a process should be doing? Where is information getting lost between handoffs? Most operational drag hides in the gaps between tools and between people, not in the tools themselves.",
       },
       {
-        title: "Decide what is worth fixing",
+        title: "Decide what is worth fixing.",
         desc: "Not every inefficiency is worth automating. I help you separate the high cost, high frequency problems from the ones that feel annoying but do not move the needle. Honest trade offs, no vendor allegiance, no solution looking for a problem. We keep humans in the loop where judgment matters.",
       },
       {
-        title: "Build something that works in practice",
+        title: "Build something that works in practice.",
         desc: "A working slice, not a slide deck. Agents, automations, pipelines, or product features, scoped to deliver value early and designed around how your team actually works, not how a demo assumes they do.",
       },
       {
-        title: "Hand it over so it sticks",
+        title: "Hand it over so it sticks.",
         desc: "Most AI projects fail at adoption, not at build. I make sure the system is usable without me: documented, compliant, accessible, and understood by the people who will run it. Because a system your team does not use is just expensive infrastructure.",
       },
     ],
@@ -264,11 +264,11 @@ const en = {
   credentials: {
     eyebrow: "Credentials",
     title: "Background and certifications.",
-    experienceHeading: "Experience",
-    certificationsHeading: "Certifications",
+    experienceHeading: "Experience.",
+    certificationsHeading: "Certifications.",
     experience: [
       {
-        title: "Product Manager, internal tools and platform",
+        title: "Product Manager, internal tools and platform.",
         org: "Outfittery",
         year: "4 yrs",
         detail:
@@ -277,14 +277,14 @@ const en = {
     ],
     certifications: [
       {
-        title: "AI Consulting & Integration",
+        title: "AI Consulting & Integration.",
         org: "IronHack",
         year: "2026",
         detail:
           "Intensive programme covering agents, RAG, ML, automation, GDPR and EU AI Act, responsible AI principles, and green AI considerations, delivered through a full client style capstone.",
       },
       {
-        title: "Microsoft Certified: AI 900 Azure AI Fundamentals",
+        title: "Microsoft Certified: AI 900 Azure AI Fundamentals.",
         org: "Microsoft",
         year: "",
         detail:
@@ -383,27 +383,27 @@ const de: typeof en = {
     title: "Leistungen.",
     items: [
       {
-        title: "Workflow-Analyse",
+        title: "Workflow-Analyse.",
         desc: "Die meisten Teams spüren, dass etwas sie ausbremst. Nur nicht immer, was genau. Ich zeichne nach, wie Arbeit wirklich durch Ihr Team läuft, finde die versteckten Koordinationskosten und beziffere, was sie Sie kosten. Das Ergebnis ist ein klares Bild davon, wo Automatisierung oder Prozessänderungen den größten Effekt hätten, bevor Sie Geld in den Aufbau stecken. Dazu gehört auch das Erkennen redundanter Schritte, die Zeit und Rechenleistung verschwenden.",
       },
       {
-        title: "Integration von KI in Arbeitsabläufe",
+        title: "Integration von KI in Arbeitsabläufe.",
         desc: "Repetitive Arbeit frisst die Zeit Ihres Teams. Ich verbinde Agenten, Automatisierungen und Pipelines mit der Art, wie Ihr Team wirklich arbeitet, und nicht so, wie eine Demo es annimmt.",
       },
       {
-        title: "KI-Produktstrategie und Roadmap",
+        title: "KI-Produktstrategie und Roadmap.",
         desc: "Sie wissen, dass KI Teil Ihres Produkts sein sollte, aber nicht, wo Sie anfangen oder was zuerst entstehen soll. Ich helfe Ihnen, den Lärm zu filtern und zu entscheiden, was wirklich etwas bewegt, inklusive dem, was bei Menschen bleiben sollte und was gar nicht automatisiert werden sollte.",
       },
       {
-        title: "Make-or-Buy-Analyse",
+        title: "Make-or-Buy-Analyse.",
         desc: "Hundert Tools versprechen, Ihr Problem zu lösen. Ich liefere einen ehrlichen Vergleich, ohne Anbieterbindung und ohne Provisionen. Wo es relevant ist, bewerte ich auch Energieverbrauch, Kosten und den Umgang mit Ihren Daten.",
       },
       {
-        title: "Praktische Unterstützung bei KI-Compliance",
+        title: "Praktische Unterstützung bei KI-Compliance.",
         desc: "DSGVO und EU AI Act wirken überwältigend. Ich übersetze sie in klare Schritte, denen Ihr Team folgen kann, ganz ohne Juristendeutsch. Dazu gehören menschliche Aufsicht, Risikoklassifizierung und Dokumentation, die einer Prüfung standhält.",
       },
       {
-        title: "Product Leadership auf Zeit",
+        title: "Product Leadership auf Zeit.",
         desc: "Sie brauchen jemanden, der mit Ihrem Team arbeitet und nicht nur eine Präsentation übergibt. Ich begleite Ihr Team teilzeitbasiert und helfe beim Liefern.",
       },
     ],
@@ -421,13 +421,13 @@ const de: typeof en = {
     ],
     closing:
       "Wenn Sie ein Problem erkannt haben und jemanden brauchen, der es durchdenkt und auch wirklich etwas baut, dann komme ich ins Spiel.",
-    fitHeading: "Wann es meistens passt",
+    fitHeading: "Wann es meistens passt.",
     fit1: "Meist hat Ihr Team eine KI-Chance erkannt, aber noch nichts Echtes daraus gebaut. Ein paar Tools wurden getestet, operativ ist nichts geblieben, und das Projekt steckt irgendwo zwischen Idee, Umsetzung und Akzeptanz fest.",
     fit2: "An diesem Punkt brauchen Sie praktische Hilfe, keine weitere Präsentation.",
   },
   testimonials: {
     eyebrow: "Was Kolleginnen und Kollegen sagen",
-    title: "Stimmen aus der Zusammenarbeit",
+    title: "Stimmen aus der Zusammenarbeit.",
     quotes: [
       {
         quote:
@@ -451,21 +451,21 @@ const de: typeof en = {
   },
   cases: {
     eyebrow: "Ausgewählte Arbeiten",
-    title: "Fallstudien",
-    complianceLabel: "Compliance und Kaufbereitschaft",
+    title: "Fallstudien.",
+    complianceLabel: "Compliance und Kaufbereitschaft.",
     complianceBody:
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
     roiNote:
       "Basierend auf einem Szenario: Studio mit 200 Mitgliedern, 3.000 € Implementierungskosten",
     viewProject: "Projekt ansehen ↗",
-    deckLabel: "Pitch-Deck",
+    deckLabel: "Pitch-Deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckMeta: "PDF, 8 Folien",
     deckDownload: "Deck herunterladen ↓",
     items: [
       {
         client: "Outfittery",
-        title: "KI-gestützte Stylist-Plattform und Automatisierung",
+        title: "KI-gestützte Stylist-Plattform und Automatisierung.",
         role: "Produktmanagerin, KI und Plattforminitiativen",
         body: "Das Online-Stylist-Team verbrachte einen erheblichen Teil jedes Arbeitstags mit Koordination, die das System hätte übernehmen sollen. Kundinnen und Kunden den Stylistinnen zuordnen, Arbeit verteilen, Status nachhalten. Ich habe das Problem gemeinsam mit dem operativen Team definiert, die Lösung mit der Entwicklung zugeschnitten und iterativ in laufende Abläufe ausgeliefert, ohne das Team mitten in der Schicht zu stören. Danach habe ich das Produkt für eine ganze Reihe von KI-Systemen verantwortet: automatisierte Outfit-Zusammenstellung mit einem strukturierten A/B-Testprogramm gegen menschliche Stylistinnen sowie ein Feedback-System, das vier getrennte interne Tools und Plattformen in einer einzigen Ansicht mit KI-generierten Zusammenfassungen zusammengeführt hat.",
         deliverables: [
@@ -482,7 +482,7 @@ const de: typeof en = {
       },
       {
         client: "Spottr / Abschlussprojekt",
-        title: "KI-gestützte Mitgliederbindung für Boutique-Fitnessstudios",
+        title: "KI-gestützte Mitgliederbindung für Boutique-Fitnessstudios.",
         role: "Durchgängiges KI-Beratungsprojekt",
         body: "Von Tag eins als echtes Beratungsprojekt aufgesetzt. Abwanderung als zentrales kommerzielles Problem von Boutique-Fitnessstudios identifiziert, ein funktionierendes MVP gebaut und validiert und das Ergebnis mit genau der Dokumentation verpackt, die ein Käufer braucht, bevor er zu einem KI-System Ja sagt.",
         deliverables: [
@@ -503,16 +503,16 @@ const de: typeof en = {
     eyebrow: "Außerdem",
     title: "Ausgewählte Builds.",
     labels: {
-      what: "Was",
-      how: "Wie es gebaut wurde",
-      outcomes: "Ergebnisse",
-      learned: "Was ich gelernt habe",
+      what: "Was.",
+      how: "Wie es gebaut wurde.",
+      outcomes: "Ergebnisse.",
+      learned: "Was ich gelernt habe.",
       github: "GitHub ↗",
       medium: "Beitrag lesen ↗",
     },
     items: [
       {
-        title: "n8n-Automatisierungs-Workflows",
+        title: "n8n-Automatisierungs-Workflows.",
         desc: "Produktive Workflows aus mehreren Projekten: geplante Recherche-Pipelines, Umfrage-Trigger, wöchentliche E-Mail-Briefings sowie Slack- und Notion-Integrationen. Gebaut für den echten Betrieb, nicht für Demos.",
         tags: ["n8n", "Automatisierung", "APIs", "Webhooks"],
         github: "https://github.com/dlbosma-hue/bootcamp_env",
@@ -526,7 +526,7 @@ const de: typeof en = {
         },
       },
       {
-        title: "LangGraph Agent",
+        title: "LangGraph Agent.",
         desc: "Ein ReAct-Agent, der gleichzeitig mit mehreren Live-Datenquellen verbunden ist und Toolauswahl und Reihenfolge in Echtzeit steuert. Gebaut, um zu zeigen, wie Orchestrierung aussieht, wenn sie in der Praxis funktionieren muss und nicht nur im Notebook.",
         tags: ["LangGraph", "LangChain", "FastAPI", "LangSmith", "Python"],
         github:
@@ -543,7 +543,7 @@ const de: typeof en = {
         },
       },
       {
-        title: "AI Content Creator",
+        title: "AI Content Creator.",
         desc: "Ein strukturiertes Tool zur Inhaltserstellung, gebaut rund um bewusstes Prompt-Design. Thema und Zielgruppe rein, formatierte Inhalte in mehreren Formaten raus. Nützlich für kleine Teams ohne eigene Content Funktion.",
         tags: ["Gradio", "OpenAI API", "Prompt Engineering", "Python"],
         github:
@@ -564,19 +564,19 @@ const de: typeof en = {
     title: "Ein klarer Ablauf.",
     steps: [
       {
-        title: "Die Koordinationskosten finden",
+        title: "Die Koordinationskosten finden.",
         desc: "Bevor irgendetwas gebaut wird, schaue ich mir an, wie Arbeit tatsächlich fließt. Wo machen Menschen das, was ein Prozess machen sollte? Wo gehen Informationen zwischen Übergaben verloren? Der meiste operative Ballast versteckt sich in den Lücken zwischen Tools und zwischen Menschen, nicht in den Tools selbst.",
       },
       {
-        title: "Entscheiden, was sich zu lösen lohnt",
+        title: "Entscheiden, was sich zu lösen lohnt.",
         desc: "Nicht jede Ineffizienz lohnt die Automatisierung. Ich helfe Ihnen, die teuren und häufigen Probleme von denen zu trennen, die nur nerven, aber nichts bewegen. Ehrliche Abwägungen, keine Anbieterbindung, keine Lösung auf der Suche nach einem Problem. Dort, wo Urteilsvermögen zählt, bleiben Menschen in der Schleife.",
       },
       {
-        title: "Etwas bauen, das in der Praxis funktioniert",
+        title: "Etwas bauen, das in der Praxis funktioniert.",
         desc: "Ein funktionierender Ausschnitt, keine Präsentation. Agenten, Automatisierungen, Pipelines oder Produktfunktionen, zugeschnitten auf frühen Nutzen und gebaut rund um die Art, wie Ihr Team wirklich arbeitet.",
       },
       {
-        title: "So übergeben, dass es bleibt",
+        title: "So übergeben, dass es bleibt.",
         desc: "Die meisten KI-Projekte scheitern an der Akzeptanz, nicht am Bauen. Ich sorge dafür, dass das System ohne mich nutzbar ist: dokumentiert, compliant, zugänglich und verstanden von den Menschen, die es betreiben. Denn ein System, das Ihr Team nicht nutzt, ist nur teure Infrastruktur.",
       },
     ],
@@ -584,11 +584,11 @@ const de: typeof en = {
   credentials: {
     eyebrow: "Qualifikationen",
     title: "Werdegang und Zertifizierungen.",
-    experienceHeading: "Erfahrung",
-    certificationsHeading: "Zertifizierungen",
+    experienceHeading: "Erfahrung.",
+    certificationsHeading: "Zertifizierungen.",
     experience: [
       {
-        title: "Produktmanagerin, interne Tools und Plattform",
+        title: "Produktmanagerin, interne Tools und Plattform.",
         org: "Outfittery",
         year: "4 Jahre",
         detail:
@@ -597,14 +597,14 @@ const de: typeof en = {
     ],
     certifications: [
       {
-        title: "AI Consulting & Integration",
+        title: "AI Consulting & Integration.",
         org: "IronHack",
         year: "2026",
         detail:
           "Intensivprogramm zu Agenten, RAG, Machine Learning, Automatisierung, DSGVO und EU AI Act, verantwortungsvoller KI und ressourcenschonendem KI-Einsatz, abgeschlossen mit einem vollwertigen Abschlussprojekt im Kundenformat.",
       },
       {
-        title: "Microsoft Certified: AI 900 Azure AI Fundamentals",
+        title: "Microsoft Certified: AI 900 Azure AI Fundamentals.",
         org: "Microsoft",
         year: "",
         detail:
