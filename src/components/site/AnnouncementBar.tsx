@@ -1,19 +1,37 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 
 export function AnnouncementBar() {
   const { t } = useLanguage();
   const [dismissed, setDismissed] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (dismissed) {
+      document.documentElement.style.setProperty("--banner-height", "0px");
+      return;
+    }
+    const el = ref.current;
+    if (!el) return;
+    const update = () => {
+      document.documentElement.style.setProperty("--banner-height", `${el.offsetHeight}px`);
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [dismissed]);
 
   if (dismissed) return null;
 
   return (
     <div
-      className="sticky top-0 z-50 border-b border-border bg-secondary text-secondary-foreground"
+      ref={ref}
+      className="announcement-bar fixed top-0 left-0 right-0 z-50 border-b border-border bg-secondary text-secondary-foreground"
       role="banner"
       aria-label={t.announcement.ariaLabel}
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-2.5 md:px-10">
+      <div className="mx-auto flex h-full max-w-5xl items-center justify-between gap-4 px-6 py-2.5 md:px-10">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm leading-snug">
           <span>
             <strong className="font-semibold">{t.announcement.lead}</strong>
@@ -31,7 +49,7 @@ export function AnnouncementBar() {
             href={t.announcement.secondaryHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center text-[14px] text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex shrink-0 items-center text-[16px] text-muted-foreground transition-colors hover:text-foreground"
           >
             <span className="underline underline-offset-4">{t.announcement.secondaryCta}</span>
             <span aria-hidden className="ml-1">↗</span>
@@ -45,7 +63,7 @@ export function AnnouncementBar() {
           className="ml-2 shrink-0 p-1 text-muted-foreground transition-colors hover:text-foreground"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www-www.w3.org/2000/svg"
             width="14"
             height="14"
             viewBox="0 0 24 24"
