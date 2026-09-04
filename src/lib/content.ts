@@ -170,8 +170,8 @@ const en = {
           "EU AI Act compliance pack and standalone ROI model included as standard",
         ],
         metrics: [
-          { value: "~45 days", label: "break even point" },
-          { value: "~600–700%", label: "projected ROI over 12 months" },
+          { value: "+/− €11,520", label: "revenue saved per year" },
+          { value: "+/− 284%", label: "ROI" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
         link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
@@ -489,8 +489,8 @@ const de: typeof en = {
           "EU-AI-Act-Compliance-Paket und eigenständiges ROI-Modell standardmäßig enthalten",
         ],
         metrics: [
-          { value: "~45 Tage", label: "Break-even-Punkt" },
-          { value: "~600–700%", label: "prognostizierter ROI über 12 Monate" },
+          { value: "+/− 11.520 €", label: "Einsparung pro Jahr" },
+          { value: "+/− 284%", label: "ROI" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "DSGVO", "EU AI Act"],
         link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
