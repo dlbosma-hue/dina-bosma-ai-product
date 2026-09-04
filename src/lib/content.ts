@@ -137,7 +137,7 @@ const en = {
       "Delivered with full compliance documentation: GDPR data protection impact assessment, EU AI Act compliance pack ready for stakeholder review, and a standalone ROI model. Everything a buyer needs before saying yes.",
     roiNote:
       "Based on a modelled scenario: studio with 200 members, €3K implementation cost",
-    viewProject: "View project ↗",
+    viewProject: "View project on GitHub ↗",
     deckLabel: "Pitch deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckDownload: "Download deck ↓",
@@ -456,7 +456,7 @@ const de: typeof en = {
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
     roiNote:
       "Basierend auf einem Szenario: Studio mit 200 Mitgliedern, 3.000 € Implementierungskosten",
-    viewProject: "Projekt ansehen ↗",
+    viewProject: "Projekt ansehen in GitHub ↗",
     deckLabel: "Pitch-Deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckDownload: "Deck herunterladen ↓",
