@@ -38,9 +38,9 @@ function Index() {
       <Services />
       <WhoIWorkWith />
       <Testimonials />
+      <HowIWork />
       <CaseStudies />
       <Projects />
-      <HowIWork />
       <Credentials />
       <Contact />
       <Footer />
