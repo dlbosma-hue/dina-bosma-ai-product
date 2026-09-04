@@ -136,7 +136,7 @@ const en = {
     complianceBody:
       "Delivered with full compliance documentation: GDPR data protection impact assessment, EU AI Act compliance pack ready for stakeholder review, and a standalone ROI model. Everything a buyer needs before saying yes.",
     roiNote:
-      "Based on a modelled scenario: studio with 200 members, €3K implementation cost",
+      "Based on a 15–20% member save rate in a modelled scenario.",
     viewProject: "View project on GitHub ↗",
     deckLabel: "Pitch deck.",
     deckName: "Spottr. Smart Member Retention.",
@@ -170,8 +170,8 @@ const en = {
           "EU AI Act compliance pack and standalone ROI model included as standard",
         ],
         metrics: [
-          { value: "33 days", label: "break even point" },
-          { value: "1,099%", label: "projected ROI over 12 months" },
+          { value: "~45 days", label: "break even point" },
+          { value: "~600–700%", label: "projected ROI over 12 months" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
         link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
@@ -455,7 +455,7 @@ const de: typeof en = {
     complianceBody:
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
     roiNote:
-      "Basierend auf einem Szenario: Studio mit 200 Mitgliedern, 3.000 € Implementierungskosten",
+      "Basierend auf einer Mitglieder-Save-Rate von 15–20% in einem modellierten Szenario.",
     viewProject: "Projekt ansehen in GitHub ↗",
     deckLabel: "Pitch-Deck.",
     deckName: "Spottr. Smart Member Retention.",
@@ -489,8 +489,8 @@ const de: typeof en = {
           "EU-AI-Act-Compliance-Paket und eigenständiges ROI-Modell standardmäßig enthalten",
         ],
         metrics: [
-          { value: "33 Tage", label: "Break-even-Punkt" },
-          { value: "1.099%", label: "prognostizierter ROI über 12 Monate" },
+          { value: "~45 Tage", label: "Break-even-Punkt" },
+          { value: "~600–700%", label: "prognostizierter ROI über 12 Monate" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "DSGVO", "EU AI Act"],
         link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
