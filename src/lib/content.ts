@@ -492,7 +492,6 @@ const de: typeof en = {
           { value: "+/− 284%", label: "ROI" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "DSGVO", "EU AI Act"],
-        link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
       },
     ],
   },
