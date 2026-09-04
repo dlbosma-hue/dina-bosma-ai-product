@@ -17,7 +17,7 @@ export function WhoIWorkWith() {
           <p>{t.who.closing}</p>
         </div>
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
-          <h3 className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          <h3 className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
             {t.who.fitHeading}
           </h3>
           <p>{t.who.fit1}</p>
