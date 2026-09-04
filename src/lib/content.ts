@@ -174,7 +174,7 @@ const en = {
           { value: "33 days", label: "break even point" },
           { value: "1,099%", label: "projected ROI over 12 months" },
         ],
-        tags: ["Python", "scikit learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
+        tags: ["Python", "scikit-learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
         link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
       },
     ],
