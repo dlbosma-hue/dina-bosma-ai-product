@@ -46,17 +46,12 @@ export function Nav() {
         <nav className="hidden flex-1 items-center justify-center gap-6 border-l border-border/40 pl-6 text-xs text-muted-foreground md:flex lg:gap-8 lg:pl-10 lg:text-sm">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
-            const isContact = l.href === "#contact";
             return (
               <a
                 key={l.href}
                 href={l.href}
                 className={`min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem] ${
                   isActive ? "text-foreground font-medium" : ""
-                } ${
-                  isContact
-                    ? "text-[10px] font-medium uppercase tracking-[0.14em]"
-                    : ""
                 }`}
               >
                 {l.label}
