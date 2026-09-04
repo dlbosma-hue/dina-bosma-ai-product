@@ -32,7 +32,6 @@ const en = {
     availability:
       "Available for EU and remote engagements in English, German, and Dutch.",
     ctaPrimary: "Book an intro call",
-    ctaSecondary: "See selected work",
     gumroad: "Self-paced course: Set up your first workflow",
   },
   credibility: [
@@ -357,7 +356,6 @@ const de: typeof en = {
     availability:
       "Verfügbar für Projekte in der EU und remote, auf Englisch, Deutsch und Niederländisch.",
     ctaPrimary: "Kennenlerngespräch buchen",
-    ctaSecondary: "Ausgewählte Projekte ansehen",
     gumroad: "Selbstlernkurs: Ersten Workflow selbst einrichten",
   },
   credibility: [
