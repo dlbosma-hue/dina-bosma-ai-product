@@ -6,7 +6,7 @@ import dachAsset from "@/assets/dach.png.asset.json";
 export function WhoIWorkWith() {
   const { t } = useLanguage();
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-12">
         <img
           src={dachAsset.url}

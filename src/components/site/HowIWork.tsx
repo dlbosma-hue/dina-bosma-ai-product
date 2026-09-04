@@ -18,7 +18,7 @@ export function HowIWork() {
           return (
             <li
               key={s.title}
-              className="grid gap-6 py-8 md:grid-cols-12 md:gap-10 md:py-10"
+              className="grid gap-5 py-6 md:grid-cols-12 md:gap-8 md:py-7"
             >
               <div className="md:col-span-5">
                 <div className="aspect-square w-full max-w-[180px] overflow-hidden bg-background p-4 md:max-w-[200px] md:p-6">
