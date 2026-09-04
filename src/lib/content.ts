@@ -3,6 +3,13 @@ export type Lang = "en" | "de";
 const en = {
   langLabel: "DE",
   langAria: "Auf Deutsch wechseln",
+  announcement: {
+    text: "Free live webinar: AI without fear, 30 September, 10:30 CEST",
+    cta: "Save your spot",
+    href: "https://humint.kit.com/351adfadd9",
+    ariaLabel: "Announcement",
+    closeAria: "Close announcement",
+  },
   nav: {
     links: [
       { href: "#about", label: "About" },
@@ -317,6 +324,13 @@ const en = {
 const de: typeof en = {
   langLabel: "EN",
   langAria: "Switch to English",
+  announcement: {
+    text: "Kostenloses Live-Webinar: KI ohne Angst, 30. September, 10:30 Uhr",
+    cta: "Platz sichern",
+    href: "https://humint.kit.com/351adfadd9",
+    ariaLabel: "Ankündigung",
+    closeAria: "Ankündigung schließen",
+  },
   nav: {
     links: [
       { href: "#about", label: "Über mich" },

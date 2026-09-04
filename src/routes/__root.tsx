@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 import { LanguageProvider } from "@/lib/i18n";
+import { AnnouncementBar } from "@/components/site/AnnouncementBar";
 
 function NotFoundComponent() {
   return (
