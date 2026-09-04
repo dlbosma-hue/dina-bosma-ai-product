@@ -449,7 +449,7 @@ const de: typeof en = {
   },
   cases: {
     eyebrow: "Projekte & Ergebnisse",
-    title: "Ausgewählte Fallstudien."
+    title: "Ausgewählte Fallstudien.",
     complianceLabel: "Compliance und Kaufbereitschaft.",
     complianceBody:
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
