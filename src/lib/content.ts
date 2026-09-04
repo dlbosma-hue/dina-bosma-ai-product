@@ -473,7 +473,7 @@ const de: typeof en = {
           "Vier verstreute Feedbackquellen in einer einzigen Ansicht gebündelt und damit die Lücke geschlossen, in der Kundenfeedback verloren ging, bevor es Entscheider erreichte",
         ],
         metrics: [
-          { value: "+17%", label: "Effizienz (29 → 34 Aufträge/Tag)" },
+          { value: "+17%", label: "Effizienz" },
           { value: "−80%", label: "manuelle Koordinationsarbeit" },
         ],
         tags: [] as string[],
