@@ -654,6 +654,28 @@ const de: typeof en = {
     meta: "Dina Bosma Buczynska · Berlin · EN / DE / NL",
     impressum: "Impressum",
   },
+  impressum: {
+    title: "Impressum.",
+    metaDescription:
+      "Impressum und Anbieterkennzeichnung für die Website von Dina Bosma Buczynska, freiberufliche KI-Beraterin und Product Managerin in Berlin.",
+    ogTitle: "Impressum, Dina Bosma Buczynska",
+    ogDescription:
+      "Impressum und Anbieterkennzeichnung für die Website von Dina Bosma Buczynska.",
+    backHome: "← Zurück zur Startseite",
+    legalLabel: "Rechtliches",
+    name: "Dina Bosma Buczynska",
+    role: "Freiberufliche KI-Beraterin & Product Managerin",
+    location: "Berlin, Deutschland",
+    contactText: "Kontakt über das Kontaktformular auf der Startseite.",
+    linkedInLabel: "LinkedIn:",
+    responsibleHeading: "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV",
+    responsibleText: "Dina Bosma Buczynska, Berlin",
+    liabilityHeading: "Haftungshinweis",
+    liabilityText:
+      "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    footerBrand: "Dina Bosma Buczynska",
+    footerMeta: "Berlin · EN / DE / NL",
+  },
 };
 
 export type Content = typeof en;
