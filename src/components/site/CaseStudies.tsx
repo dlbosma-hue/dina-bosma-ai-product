@@ -8,11 +8,11 @@ export function CaseStudies() {
   const spottr = cases[1]!.client;
   return (
     <Section id="work" eyebrow={t.cases.eyebrow} title={t.cases.title}>
-      <div className="grid gap-16 md:gap-20">
+      <div className="grid gap-10 md:gap-12">
         {cases.map((c) => (
           <article
             key={c.title}
-            className="flex flex-col border-t border-foreground/80 pt-10 md:pt-12"
+            className="flex flex-col border-t border-foreground/80 pt-6 md:pt-8"
           >
             <div className="mb-3 text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
               {c.client}
