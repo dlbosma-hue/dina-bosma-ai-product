@@ -49,10 +49,6 @@ const en = {
     p4: "Based in Berlin. Working in Dutch (native), English (C2), and German (C1).",
     portraitAlt: "Portrait of Dina Bosma Buczynska",
   },
-  introCta: {
-    text: "Not sure where to start? That is exactly what the intro call is for.",
-    button: "Book a free 30 minute call",
-  },
   belief: {
     eyebrow: "What I believe",
     line1: "AI should make your people",
