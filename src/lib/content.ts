@@ -137,7 +137,6 @@ const en = {
       "Delivered with full compliance documentation: GDPR data protection impact assessment, EU AI Act compliance pack ready for stakeholder review, and a standalone ROI model. Everything a buyer needs before saying yes.",
     roiNote:
       "Based on a 15–20% member save rate in a modelled scenario.",
-    viewProject: "View project on GitHub ↗",
     deckLabel: "Pitch deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckDownload: "Download deck ↓",
@@ -174,7 +173,6 @@ const en = {
           { value: "+/− 284%", label: "ROI" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "GDPR", "EU AI Act"],
-        link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
       },
     ],
   },
@@ -456,7 +454,6 @@ const de: typeof en = {
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
     roiNote:
       "Basierend auf einer Mitglieder-Save-Rate von 15–20% in einem modellierten Szenario.",
-    viewProject: "Projekt ansehen in GitHub ↗",
     deckLabel: "Pitch-Deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckDownload: "Deck herunterladen ↓",
@@ -493,7 +490,6 @@ const de: typeof en = {
           { value: "+/− 284%", label: "ROI" },
         ],
         tags: ["Python", "scikit-learn", "LangChain", "n8n", "DSGVO", "EU AI Act"],
-        link: "https://github.com/dlbosma-hue/bootcamp_env/tree/main/Projects/Final_Project_DinaBB",
       },
     ],
   },
