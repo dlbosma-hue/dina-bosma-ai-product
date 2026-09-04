@@ -151,7 +151,6 @@ const en = {
         deliverables: [
           "Reduced manual coordination workload by 80% through automated assignment of customers to stylists",
           "Increased throughput from 29 to 34 orders per day through AI assisted decision support, keeping stylists in control of every customer facing call",
-          "Targeted 80%+ preview acceptance rate for AI generated outfit previews across a structured menswear and womenswear testing program",
           "Unified four fragmented feedback sources into a single stylist facing view, closing a gap where customer input was getting lost before reaching decision makers",
         ],
         metrics: [
