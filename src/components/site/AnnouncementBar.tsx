@@ -9,13 +9,16 @@ export function AnnouncementBar() {
 
   return (
     <div
-      className="border-b border-border bg-secondary text-secondary-foreground"
+      className="sticky top-0 z-50 border-b border-border bg-secondary text-secondary-foreground"
       role="banner"
       aria-label={t.announcement.ariaLabel}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-2.5 md:px-10">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm leading-snug">
-          <span>{t.announcement.text}</span>
+          <span>
+            <strong className="font-semibold">{t.announcement.lead}</strong>
+            {t.announcement.text}
+          </span>
           <a
             href={t.announcement.href}
             target="_blank"
@@ -28,12 +31,13 @@ export function AnnouncementBar() {
             href={t.announcement.secondaryHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center text-xs text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex shrink-0 items-center text-[14px] text-muted-foreground transition-colors hover:text-foreground"
           >
             <span className="underline underline-offset-4">{t.announcement.secondaryCta}</span>
             <span aria-hidden className="ml-1">↗</span>
           </a>
         </div>
+
         <button
           type="button"
           onClick={() => setDismissed(true)}
