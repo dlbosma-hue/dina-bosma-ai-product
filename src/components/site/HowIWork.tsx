@@ -21,12 +21,12 @@ export function HowIWork() {
               className="grid gap-5 py-6 md:grid-cols-12 md:gap-8 md:py-7"
             >
               <div className="md:col-span-5">
-                <div className="mb-3 aspect-square w-full max-w-[180px] overflow-hidden border-[3px] border-white md:mb-4 md:max-w-[200px]">
+                <div className="mb-3 aspect-square w-full max-w-[180px] overflow-hidden border-2 border-white md:mb-4 md:max-w-[200px]">
                   <img
                     src={icon.url}
                     alt=""
                     loading="lazy"
-                    className="block h-full w-full object-cover object-center"
+                    className="block h-full w-full scale-[1.08] object-cover object-center"
                   />
                 </div>
                 <h3 className="font-serif text-[26px] leading-tight md:text-[32px]">
