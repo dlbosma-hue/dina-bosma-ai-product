@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useLanguage } from "@/lib/i18n";
+import { useEffect } from "react";
 
 export const Route = createFileRoute("/impressum")({
   head: () => ({
@@ -22,6 +24,13 @@ export const Route = createFileRoute("/impressum")({
 });
 
 function ImpressumPage() {
+  const { t } = useLanguage();
+  const i = t.impressum;
+
+  useEffect(() => {
+    document.title = i.title.replace(".", "");
+  }, [i.title]);
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
@@ -33,28 +42,28 @@ function ImpressumPage() {
             to="/"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            ← Back home
+            {i.backHome}
           </Link>
         </div>
       </header>
 
       <section className="mx-auto max-w-3xl px-6 py-16 md:px-10 md:py-24">
         <div className="mb-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Legal
+          {i.legalLabel}
         </div>
-        <h1 className="font-serif text-4xl leading-[1.05] md:text-5xl">Impressum</h1>
+        <h1 className="font-serif text-4xl leading-[1.05] md:text-5xl">{i.title}</h1>
 
         <div className="mt-10 space-y-8 text-base leading-relaxed text-muted-foreground">
           <div>
-            <p className="text-foreground">Dina Bosma Buczynska</p>
-            <p>Freiberufliche KI-Beraterin &amp; Product Managerin</p>
-            <p>Berlin, Deutschland</p>
+            <p className="text-foreground">{i.name}</p>
+            <p>{i.role}</p>
+            <p>{i.location}</p>
           </div>
 
           <div>
-            <p>Kontakt über das Kontaktformular auf der Startseite.</p>
+            <p>{i.contactText}</p>
             <p>
-              LinkedIn:{" "}
+              {i.linkedInLabel}{" "}
               <a
                 href="https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/"
                 target="_blank"
@@ -68,20 +77,16 @@ function ImpressumPage() {
 
           <div>
             <h2 className="mb-2 text-sm uppercase tracking-[0.2em] text-foreground">
-              Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV
+              {i.responsibleHeading}
             </h2>
-            <p>Dina Bosma Buczynska, Berlin</p>
+            <p>{i.responsibleText}</p>
           </div>
 
           <div>
             <h2 className="mb-2 text-sm uppercase tracking-[0.2em] text-foreground">
-              Haftungshinweis
+              {i.liabilityHeading}
             </h2>
-            <p>
-              Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung
-              für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten
-              sind ausschließlich deren Betreiber verantwortlich.
-            </p>
+            <p>{i.liabilityText}</p>
           </div>
         </div>
       </section>
@@ -89,9 +94,9 @@ function ImpressumPage() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:px-10">
           <div className="font-serif text-base text-foreground">
-            Dina Bosma Buczynska
+            {i.footerBrand}
           </div>
-          <div>Berlin · EN / DE / NL</div>
+          <div>{i.footerMeta}</div>
           <div>© {new Date().getFullYear()}</div>
         </div>
       </footer>

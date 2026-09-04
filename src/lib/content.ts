@@ -315,6 +315,28 @@ const en = {
     meta: "Dina Bosma Buczynska · Berlin · EN / DE / NL",
     impressum: "Impressum",
   },
+  impressum: {
+    title: "Legal Notice (Impressum).",
+    metaDescription:
+      "Legal notice and provider identification for the website of Dina Bosma Buczynska, freelance AI consultant and Product Manager in Berlin.",
+    ogTitle: "Legal Notice, Dina Bosma Buczynska",
+    ogDescription:
+      "Legal notice and provider identification for the website of Dina Bosma Buczynska.",
+    backHome: "← Back home",
+    legalLabel: "Legal",
+    name: "Dina Bosma Buczynska",
+    role: "Freelance AI Consultant & Product Manager",
+    location: "Berlin, Germany",
+    contactText: "Contact via the form on the homepage.",
+    linkedInLabel: "LinkedIn:",
+    responsibleHeading: "Responsible for content under § 55 Abs. 2 RStV",
+    responsibleText: "Dina Bosma Buczynska, Berlin",
+    liabilityHeading: "Liability notice",
+    liabilityText:
+      "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content.",
+    footerBrand: "Dina Bosma Buczynska",
+    footerMeta: "Berlin · EN / DE / NL",
+  },
 };
 
 const de: typeof en = {
@@ -631,6 +653,28 @@ const de: typeof en = {
     brand: "HUMINT · Menschliche Intelligenz. KI-gestützt.",
     meta: "Dina Bosma Buczynska · Berlin · EN / DE / NL",
     impressum: "Impressum",
+  },
+  impressum: {
+    title: "Impressum.",
+    metaDescription:
+      "Impressum und Anbieterkennzeichnung für die Website von Dina Bosma Buczynska, freiberufliche KI-Beraterin und Product Managerin in Berlin.",
+    ogTitle: "Impressum, Dina Bosma Buczynska",
+    ogDescription:
+      "Impressum und Anbieterkennzeichnung für die Website von Dina Bosma Buczynska.",
+    backHome: "← Zurück zur Startseite",
+    legalLabel: "Rechtliches",
+    name: "Dina Bosma Buczynska",
+    role: "Freiberufliche KI-Beraterin & Product Managerin",
+    location: "Berlin, Deutschland",
+    contactText: "Kontakt über das Kontaktformular auf der Startseite.",
+    linkedInLabel: "LinkedIn:",
+    responsibleHeading: "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV",
+    responsibleText: "Dina Bosma Buczynska, Berlin",
+    liabilityHeading: "Haftungshinweis",
+    liabilityText:
+      "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    footerBrand: "Dina Bosma Buczynska",
+    footerMeta: "Berlin · EN / DE / NL",
   },
 };
 
