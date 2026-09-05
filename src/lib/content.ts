@@ -345,7 +345,7 @@ const de: typeof en = {
   langAria: "Switch to English",
   announcement: {
     lead: "Kostenloses Live-Webinar:",
-    text: " KI ohne Angst. 30. September, 10:30 Uhr",
+    text: " KI ohne Angst. 30.\u00A0September, 10:30 Uhr",
     cta: "Platz sichern",
     href: "https://humint.kit.com/351adfadd9",
     secondaryLead: "Lieber sofort starten?",
