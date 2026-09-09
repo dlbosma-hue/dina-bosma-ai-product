@@ -1,4 +1,3 @@
-import { ContactForm } from "./ContactForm";
 import { useLanguage } from "@/lib/i18n";
 
 export function Contact() {
@@ -29,8 +28,13 @@ export function Contact() {
         <p className="mb-8 max-w-2xl text-base text-muted-foreground">
           {t.contact.values}
         </p>
-        <div className="mb-12">
-          <ContactForm />
+        <div className="mb-12 max-w-3xl overflow-hidden border border-border/60">
+          <iframe
+            src="https://calendly.com/dlbosma/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+            title="Calendly – Gespräch buchen"
+            loading="lazy"
+            className="h-[700px] w-full"
+          />
         </div>
       </div>
 
