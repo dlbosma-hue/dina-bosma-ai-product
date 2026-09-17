@@ -83,7 +83,7 @@ function NoobClub() {
         <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
           <h1 className="sr-only">{t.brand}</h1>
           <img
-            src={lang === "de" ? logoDe : logoEnAsset.url}
+            src={lang === "de" ? logoDeAsset.url : logoEnAsset.url}
             alt={`${t.brand}. ${t.tagline}`}
             className="h-auto w-full max-w-2xl"
           />
