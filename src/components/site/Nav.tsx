@@ -67,6 +67,12 @@ export function Nav() {
           >
             {t.nav.noobClub}
           </Link>
+          <a
+            href="#contact"
+            className="hidden rounded-none border border-foreground px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background md:inline-block"
+          >
+            {t.nav.cta}
+          </a>
           <button
             type="button"
             onClick={() => setLang(lang === "en" ? "de" : "en")}
@@ -75,12 +81,6 @@ export function Nav() {
           >
             {t.langLabel}
           </button>
-          <a
-            href="#contact"
-            className="hidden rounded-none border border-foreground px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background md:inline-block"
-          >
-            {t.nav.cta}
-          </a>
         </div>
       </div>
     </header>

@@ -34,10 +34,10 @@ export function Hero() {
         <p className="mt-4 max-w-xl text-base leading-relaxed text-background/80">
           {t.hero.availability}
         </p>
-        <div className="mt-10 flex flex-col items-start gap-4">
+        <div className="mt-10 flex flex-col items-start gap-8">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 border-b border-background pb-1 text-sm tracking-wide text-background transition-opacity hover:opacity-70"
+            className="inline-flex items-center gap-3 border-b-2 border-background pb-1.5 text-base font-bold tracking-wide text-background transition-opacity hover:opacity-70"
           >
             {t.hero.ctaPrimary}
             <span aria-hidden>→</span>
@@ -46,10 +46,10 @@ export function Hero() {
             href={t.hero.secondaryHref}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-background transition-colors hover:text-background/80"
+            className="inline-flex items-center gap-3 border-b-2 border-background pb-1.5 text-base font-bold tracking-wide text-background transition-opacity hover:opacity-70"
           >
             {t.hero.gumroad}
-            <span aria-hidden>↗</span>
+            <span aria-hidden>→</span>
           </a>
         </div>
       </div>
