@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
-import logoDe from "@/assets/ai-noob-club-logo-de-clean.png";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en.png.asset.json";
 import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
 
