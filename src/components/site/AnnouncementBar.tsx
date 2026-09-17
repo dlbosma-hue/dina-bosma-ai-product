@@ -49,13 +49,12 @@ export function AnnouncementBar() {
             href={t.announcement.secondaryHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-4 inline-flex shrink-0 flex-col items-start gap-1 text-[16px] text-muted-foreground transition-colors hover:text-foreground md:inline-flex md:flex-row md:items-center md:gap-2"
+            className="mt-4 inline-flex shrink-0 flex-col items-start gap-1 text-[16px] text-muted-foreground transition-colors hover:text-foreground md:mt-0 md:ml-6 md:inline-flex md:flex-row md:items-center md:gap-2"
           >
             {t.announcement.secondaryLead && (
               <span className="block">{t.announcement.secondaryLead}</span>
             )}
             <span className="block font-semibold underline underline-offset-4">{t.announcement.secondaryCta}</span>
-            <span aria-hidden className="ml-1 hidden md:inline">↗</span>
           </a>
         </div>
 
