@@ -1,6 +1,19 @@
 export type NoobLang = "en" | "de";
 
-export const noobContent = {
+type NoobStrings = {
+  badge: string; brand: string; tagline: string; heroLead: string; heroFor: string;
+  forItems: string[];
+  waitlistTitle: string; waitlistLead: string; emailLabel: string; emailPlaceholder: string;
+  nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
+  error: string; privacy: string;
+  valuesEyebrow: string; valuesTitle: string; values: { title: string; body: string }[];
+  offerEyebrow: string; offerTitle: string; offers: { title: string; body: string }[];
+  consultingTitle: string; consultingBody: string; consultingCta: string;
+  footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
+  seoTitle: string; seoDesc: string;
+};
+
+export const noobContent: Record<NoobLang, NoobStrings> = {
   en: {
     badge: "A HUMINT initiative",
     brand: "AI Noob Club",
@@ -141,6 +154,6 @@ export const noobContent = {
     seoDesc:
       "Workshops, Onlinekurse und geduldiges Einzelcoaching für praktische KI: für Frauen im Business, Creatorinnen und neugierige Einsteiger. Jetzt auf die Warteliste.",
   },
-} as const;
+};
 
-export type NoobContent = (typeof noobContent)["en"];
+export type NoobContent = NoobStrings;
