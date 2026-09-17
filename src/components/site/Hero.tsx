@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
 import heroWave from "@/assets/hero-wave.png.asset.json";
 
