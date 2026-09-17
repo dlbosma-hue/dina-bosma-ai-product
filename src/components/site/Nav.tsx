@@ -61,18 +61,18 @@ export function Nav() {
           })}
         </nav>
         <div className="flex shrink-0 items-center gap-3">
-          <Link
-            to="/ai-noob-club"
-            className="border border-[oklch(0.72_0.12_20)] px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.12em] text-foreground transition-colors hover:bg-[oklch(0.72_0.12_20)]/10"
-          >
-            {t.nav.noobClub}
-          </Link>
           <a
             href="#contact"
             className="hidden rounded-none border border-foreground px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background md:inline-block"
           >
             {t.nav.cta}
           </a>
+          <Link
+            to="/ai-noob-club"
+            className="border border-[oklch(0.72_0.12_20)] px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.12em] text-foreground transition-colors hover:bg-[oklch(0.72_0.12_20)]/10"
+          >
+            {t.nav.noobClub}
+          </Link>
           <button
             type="button"
             onClick={() => setLang(lang === "en" ? "de" : "en")}
