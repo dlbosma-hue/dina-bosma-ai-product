@@ -118,6 +118,15 @@ function NoobClub() {
         </div>
       </section>
 
+      {/* Brand logo */}
+      <section className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+        <img
+          src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
+          alt={`${t.brand}. ${t.tagline}`}
+          className="h-auto w-full max-w-2xl"
+        />
+      </section>
+
       {/* Offers */}
       <section className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
         <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
