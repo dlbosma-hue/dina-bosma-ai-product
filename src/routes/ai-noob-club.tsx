@@ -27,14 +27,7 @@ export const Route = createFileRoute("/ai-noob-club")({
   }),
 });
 
-const palette = {
-  "--noob-cream": "oklch(0.975 0.018 78)",
-  "--noob-blush": "oklch(0.925 0.035 22)",
-  "--noob-card": "oklch(0.955 0.028 40)",
-  "--noob-accent": "oklch(0.55 0.09 145)",
-  "--noob-accent-fg": "oklch(0.98 0.012 80)",
-  "--noob-terracotta": "oklch(0.62 0.12 40)",
-} as React.CSSProperties;
+
 
 function NoobClub() {
   const { lang, setLang } = useLanguage();
@@ -42,7 +35,6 @@ function NoobClub() {
 
   return (
     <main
-      style={palette}
       className="min-h-screen bg-[oklch(0.975_0.018_78)] text-foreground"
     >
       {/* Header */}
