@@ -54,7 +54,7 @@ function NoobClub() {
           </button>
           <a
             href="#waitlist"
-            className="rounded-full bg-[oklch(0.48_0.075_150)] px-4 py-2 text-xs font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
+            className="rounded-full bg-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
           >
             {t.submit}
           </a>
@@ -88,7 +88,7 @@ function NoobClub() {
                 <li key={item} className="flex gap-3 text-base leading-relaxed text-foreground/85">
                   <span
                     aria-hidden
-                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[oklch(0.48_0.075_150)]"
+                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[oklch(0.34_0.14_260)]"
                   />
                   <span>{item}</span>
                 </li>
