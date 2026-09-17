@@ -73,9 +73,7 @@ function NoobClub() {
           <img
             src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
             alt={`${t.brand}. ${t.tagline}`}
-            className="w-full max-w-2xl"
-            width={1792}
-            height={896}
+            className="h-auto w-full max-w-2xl"
           />
           <h1 className="sr-only">{t.brand}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
