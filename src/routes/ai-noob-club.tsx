@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de.png.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
@@ -68,13 +70,14 @@ function NoobClub() {
           className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[oklch(0.925_0.035_22)] opacity-70 blur-2xl"
         />
         <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-6 md:px-10 md:pb-16">
-          <p className="mb-4 text-xs uppercase tracking-[0.24em] text-foreground/55">
-            {t.badge}
-          </p>
-          <h1 className="font-serif text-5xl leading-[1.02] md:text-7xl">{t.brand}</h1>
-          <p className="mt-4 max-w-2xl font-serif text-2xl italic leading-snug text-[oklch(0.55_0.11_38)] md:text-3xl">
-            {t.tagline}
-          </p>
+          <img
+            src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
+            alt={`${t.brand}. ${t.tagline}`}
+            className="w-full max-w-2xl"
+            width={1792}
+            height={896}
+          />
+          <h1 className="sr-only">{t.brand}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.heroLead}
           </p>
