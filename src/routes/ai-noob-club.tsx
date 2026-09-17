@@ -43,7 +43,7 @@ function NoobClub() {
   return (
     <main
       style={palette}
-      className="min-h-screen bg-[--noob-cream] text-foreground"
+      className="min-h-screen bg-[var(--noob-cream)] text-foreground"
     >
       {/* Header */}
       <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-6 md:px-10">
@@ -62,7 +62,7 @@ function NoobClub() {
           </button>
           <a
             href="#waitlist"
-            className="rounded-full bg-[--noob-accent] px-4 py-2 text-xs font-semibold text-[--noob-accent-fg] transition-opacity hover:opacity-90"
+            className="rounded-full bg-[var(--noob-accent)] px-4 py-2 text-xs font-semibold text-[var(--noob-accent-fg)] transition-opacity hover:opacity-90"
           >
             {t.submit}
           </a>
@@ -73,21 +73,21 @@ function NoobClub() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[--noob-blush] opacity-70 blur-2xl"
+          className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[var(--noob-blush)] opacity-70 blur-2xl"
         />
         <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-6 md:px-10 md:pb-16">
           <p className="mb-4 text-xs uppercase tracking-[0.24em] text-foreground/55">
             {t.badge}
           </p>
           <h1 className="font-serif text-5xl leading-[1.02] md:text-7xl">{t.brand}</h1>
-          <p className="mt-4 max-w-2xl font-serif text-2xl italic leading-snug text-[--noob-terracotta] md:text-3xl">
+          <p className="mt-4 max-w-2xl font-serif text-2xl italic leading-snug text-[var(--noob-terracotta)] md:text-3xl">
             {t.tagline}
           </p>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.heroLead}
           </p>
 
-          <div className="mt-8 rounded-3xl bg-[--noob-card] p-6 md:p-8">
+          <div className="mt-8 rounded-3xl bg-[var(--noob-card)] p-6 md:p-8">
             <h2 className="mb-4 text-xs uppercase tracking-[0.24em] text-foreground/60">
               {t.heroFor}
             </h2>
@@ -96,7 +96,7 @@ function NoobClub() {
                 <li key={item} className="flex gap-3 text-base leading-relaxed text-foreground/85">
                   <span
                     aria-hidden
-                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[--noob-accent]"
+                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--noob-accent)]"
                   />
                   <span>{item}</span>
                 </li>
@@ -107,7 +107,7 @@ function NoobClub() {
       </section>
 
       {/* Waitlist */}
-      <section id="waitlist" className="scroll-mt-24 bg-[--noob-blush]/50">
+      <section id="waitlist" className="scroll-mt-24 bg-[var(--noob-blush)]/50">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.waitlistTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
@@ -127,7 +127,7 @@ function NoobClub() {
         <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.offerTitle}</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {t.offers.map((o) => (
-            <article key={o.title} className="rounded-3xl bg-[--noob-card] p-6">
+            <article key={o.title} className="rounded-3xl bg-[var(--noob-card)] p-6">
               <h3 className="font-serif text-2xl leading-snug">{o.title}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{o.body}</p>
             </article>
@@ -136,7 +136,7 @@ function NoobClub() {
       </section>
 
       {/* Values */}
-      <section className="bg-[--noob-card]/60">
+      <section className="bg-[var(--noob-card)]/60">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
             {t.valuesEyebrow}
@@ -146,9 +146,9 @@ function NoobClub() {
             {t.values.map((v) => (
               <article
                 key={v.title}
-                className="rounded-3xl border border-foreground/10 bg-[--noob-cream] p-6"
+                className="rounded-3xl border border-foreground/10 bg-[var(--noob-cream)] p-6"
               >
-                <h3 className="font-serif text-2xl leading-snug text-[--noob-terracotta]">
+                <h3 className="font-serif text-2xl leading-snug text-[var(--noob-terracotta)]">
                   {v.title}
                 </h3>
                 <p className="mt-3 text-base leading-relaxed text-foreground/80">{v.body}</p>
@@ -167,7 +167,7 @@ function NoobClub() {
           </div>
           <Link
             to="/"
-            className="mt-4 inline-flex shrink-0 items-center gap-2 rounded-full border border-foreground/40 px-5 py-2.5 text-sm transition-colors hover:bg-foreground hover:text-[--noob-cream] md:mt-0"
+            className="mt-4 inline-flex shrink-0 items-center gap-2 rounded-full border border-foreground/40 px-5 py-2.5 text-sm transition-colors hover:bg-foreground hover:text-[var(--noob-cream)] md:mt-0"
           >
             {t.consultingCta}
             <span aria-hidden>→</span>

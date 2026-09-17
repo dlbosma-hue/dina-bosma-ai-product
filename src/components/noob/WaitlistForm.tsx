@@ -28,7 +28,7 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
 
   if (status === "done") {
     return (
-      <div className="rounded-2xl bg-[--noob-card] p-6 text-base text-foreground/85">
+      <div className="rounded-2xl bg-[var(--noob-card)] p-6 text-base text-foreground/85">
         {t.success}
       </div>
     );
@@ -62,7 +62,7 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="rounded-full bg-[--noob-accent] px-7 py-3 text-base font-semibold text-[--noob-accent-fg] transition-opacity hover:opacity-90 disabled:opacity-60"
+          className="rounded-full bg-[var(--noob-accent)] px-7 py-3 text-base font-semibold text-[var(--noob-accent-fg)] transition-opacity hover:opacity-90 disabled:opacity-60"
         >
           {status === "sending" ? t.sending : t.submit}
         </button>
