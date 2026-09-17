@@ -4,6 +4,7 @@ import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en.png.asset.json";
+import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
@@ -41,9 +42,19 @@ function NoobClub() {
     >
       {/* Header */}
       <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-6 md:px-10">
-        <Link to="/" className="flex flex-col leading-tight">
-          <span className="font-serif text-xl tracking-tight">HUMINT</span>
-          <span className="text-[11px] font-light text-foreground/60">{t.badge}</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src={badgeAsset.url}
+            alt=""
+            aria-hidden
+            className="h-12 w-12 shrink-0"
+            width={556}
+            height={556}
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="font-serif text-lg tracking-tight">{t.welcome}</span>
+            <span className="text-[11px] font-light text-foreground/60">{t.badge}</span>
+          </span>
         </Link>
         <div className="flex items-center gap-3">
           <button
@@ -69,12 +80,7 @@ function NoobClub() {
           aria-hidden
           className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[oklch(0.925_0.035_22)] opacity-70 blur-2xl"
         />
-        <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-6 md:px-10 md:pb-16">
-          <img
-            src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
-            alt={`${t.brand}. ${t.tagline}`}
-            className="h-auto w-full max-w-2xl"
-          />
+        <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
           <h1 className="sr-only">{t.brand}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.heroLead}
@@ -110,6 +116,15 @@ function NoobClub() {
             <WaitlistForm t={t} />
           </div>
         </div>
+      </section>
+
+      {/* Brand logo */}
+      <section className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+        <img
+          src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
+          alt={`${t.brand}. ${t.tagline}`}
+          className="h-auto w-full max-w-2xl"
+        />
       </section>
 
       {/* Offers */}
