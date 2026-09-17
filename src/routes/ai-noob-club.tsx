@@ -82,9 +82,15 @@ function NoobClub() {
         />
         <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
           <h1 className="sr-only">{t.brand}</h1>
+          <img
+            src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
+            alt={`${t.brand}. ${t.tagline}`}
+            className="h-auto w-full max-w-2xl"
+          />
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.heroLead}
           </p>
+
 
           <div className="mt-8 rounded-3xl bg-[oklch(0.955_0.028_40)] p-6 md:p-8">
             <h2 className="mb-4 text-xs uppercase tracking-[0.24em] text-foreground/60">
@@ -118,17 +124,9 @@ function NoobClub() {
         </div>
       </section>
 
-      {/* Brand logo */}
-      <section className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-        <img
-          src={(lang === "de" ? logoDeAsset : logoEnAsset).url}
-          alt={`${t.brand}. ${t.tagline}`}
-          className="h-auto w-full max-w-2xl"
-        />
-      </section>
-
       {/* Offers */}
       <section className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+
         <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
           {t.offerEyebrow}
         </p>
