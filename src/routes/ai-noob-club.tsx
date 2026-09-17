@@ -24,7 +24,20 @@ export const Route = createFileRoute("/ai-noob-club")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://humint.site/ai-noob-club" },
+      {
+        property: "og:image",
+        content:
+          "https://humint.site/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg",
+      },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:type", content: "image/jpeg" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content:
+          "https://humint.site/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg",
+      },
     ],
     links: [{ rel: "canonical", href: "https://humint.site/ai-noob-club" }],
   }),
