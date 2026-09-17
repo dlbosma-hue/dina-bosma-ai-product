@@ -35,6 +35,7 @@ const en = {
     ctaPrimary: "Book an intro call",
     gumroad: "Compact self-paced course: Set up your first workflow",
     secondaryHref: "https://humint.gumroad.com/l/ogjbl",
+    noobClub: "New: AI Noob Club. Learn AI without fear",
   },
   credibility: [
     "Hands on AI systems",
@@ -375,6 +376,7 @@ const de: typeof en = {
     ctaPrimary: "Kennenlerngespräch buchen",
     gumroad: "Kompakter Selbstlernkurs: Ersten Workflow selbst einrichten",
     secondaryHref: "https://humint.gumroad.com/l/ogjbl",
+    noobClub: "Neu: AI Noob Club. KI ohne Angst lernen",
   },
   credibility: [
     "KI-Systeme in der Praxis",
