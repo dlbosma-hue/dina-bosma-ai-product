@@ -26,7 +26,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Women creators and solopreneurs who want AI to support their business without losing their voice",
       "Women running small businesses who want practical time savers, not buzzwords",
       "Total beginners who feel behind and want permission to start small",
-      "Adults 45 and up who are curious about AI but cautious",
+      "People who are AI-curious but not AI-confident",
     ],
     waitlistTitle: "Join the waitlist.",
     waitlistLead:
@@ -97,7 +97,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Creatorinnen und Solo-Unternehmerinnen, die KI nutzen wollen, ohne ihre eigene Stimme zu verlieren",
       "Frauen mit kleinem Unternehmen, die echte Zeitersparnis wollen, keine Buzzwords",
       "Absolute Anfängerinnen und Anfänger, die klein starten möchten",
-      "Menschen ab 45, die neugierig auf KI sind, aber vorsichtig",
+      "Menschen, die KI-neugierig sind, aber sich mit KI noch nicht sicher fühlen",
     ],
     waitlistTitle: "Auf die Warteliste.",
     waitlistLead:
