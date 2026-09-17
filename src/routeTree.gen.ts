@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ImpressumRouteImport } from './routes/impressum'
+import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -23,6 +24,11 @@ const ImpressumRoute = ImpressumRouteImport.update({
   path: '/impressum',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AiNoobClubRoute = AiNoobClubRouteImport.update({
+  id: '/ai-noob-club',
+  path: '/ai-noob-club',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ai-noob-club': typeof AiNoobClubRoute
   '/impressum': typeof ImpressumRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ai-noob-club': typeof AiNoobClubRoute
   '/impressum': typeof ImpressumRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ai-noob-club': typeof AiNoobClubRoute
   '/impressum': typeof ImpressumRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/impressum' | '/sitemap.xml'
+  fullPaths: '/' | '/ai-noob-club' | '/impressum' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/impressum' | '/sitemap.xml'
-  id: '__root__' | '/' | '/impressum' | '/sitemap.xml'
+  to: '/' | '/ai-noob-club' | '/impressum' | '/sitemap.xml'
+  id: '__root__' | '/' | '/ai-noob-club' | '/impressum' | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AiNoobClubRoute: typeof AiNoobClubRoute
   ImpressumRoute: typeof ImpressumRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ImpressumRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-noob-club': {
+      id: '/ai-noob-club'
+      path: '/ai-noob-club'
+      fullPath: '/ai-noob-club'
+      preLoaderRoute: typeof AiNoobClubRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AiNoobClubRoute: AiNoobClubRoute,
   ImpressumRoute: ImpressumRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
