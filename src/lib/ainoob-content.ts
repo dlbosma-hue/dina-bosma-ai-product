@@ -1,7 +1,7 @@
 export type NoobLang = "en" | "de";
 
 type NoobStrings = {
-  badge: string; brand: string; tagline: string; heroLead: string; heroFor: string;
+  badge: string; brand: string; tagline: string; welcome: string; heroLead: string; heroFor: string;
   forItems: string[];
   waitlistTitle: string; waitlistLead: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
@@ -18,6 +18,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     badge: "A HUMINT initiative",
     brand: "AI Noob Club",
     tagline: "AI for people who feel behind.",
+    welcome: "Welcome to the AI Noob Club",
     heroLead:
       "Practical AI for women who run or grow their own business, women creators, and curious beginners of any age. Small steps, plain language, no jargon.",
     heroFor: "Made for",
@@ -88,6 +89,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     badge: "Eine HUMINT Initiative",
     brand: "AI Noob Club",
     tagline: "KI für alle, die sich abgehängt fühlen.",
+    welcome: "Willkommen im AI Noob Club",
     heroLead:
       "Praktische KI für Frauen mit eigenem Business, für Creatorinnen und für neugierige Einsteiger jeden Alters. Kleine Schritte, klare Sprache, kein Fachjargon.",
     heroFor: "Für wen",
