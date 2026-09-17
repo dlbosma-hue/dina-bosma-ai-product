@@ -62,7 +62,7 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="rounded-full bg-[oklch(0.48_0.075_150)] px-7 py-3 text-base font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90 disabled:opacity-60"
+          className="rounded-full bg-[oklch(0.34_0.14_260)] px-7 py-3 text-base font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90 disabled:opacity-60"
         >
           {status === "sending" ? t.sending : t.submit}
         </button>
