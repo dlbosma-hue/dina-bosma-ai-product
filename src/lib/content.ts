@@ -23,6 +23,7 @@ const en = {
     ],
     tagline: "Human intelligence. AI powered.",
     cta: "Let's talk",
+    noobClub: "New: AI Noob Club",
   },
   hero: {
     eyebrow: "AI consulting · Berlin",
@@ -364,6 +365,7 @@ const de: typeof en = {
     ],
     tagline: "Menschliche Intelligenz. KI-gestützt.",
     cta: "Gespräch buchen",
+    noobClub: "Neu: AI Noob Club",
   },
   hero: {
     eyebrow: "KI-Beratung · Berlin",

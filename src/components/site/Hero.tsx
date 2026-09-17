@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
 import heroWave from "@/assets/hero-wave.png.asset.json";
 
@@ -52,13 +51,6 @@ export function Hero() {
             {t.hero.gumroad}
             <span aria-hidden>↗</span>
           </a>
-          <Link
-            to="/ai-noob-club"
-            className="inline-flex items-center gap-2 border border-background px-5 py-2.5 text-sm uppercase tracking-[0.18em] text-background transition-colors hover:bg-background hover:text-foreground"
-          >
-            {t.hero.noobClub}
-            <span aria-hidden>→</span>
-          </Link>
         </div>
       </div>
     </section>
