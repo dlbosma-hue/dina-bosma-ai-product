@@ -24,6 +24,11 @@ const en = {
     tagline: "Human intelligence. AI powered.",
     cta: "Let's talk",
     noobClub: "New: AI Noob Club",
+    kiCheck: "KI-Workflow-Check",
+  },
+  kiCheckPage: {
+    title: "KI-Workflow-Check",
+    lead: "In 2 minutes you will know which first AI step is really worth it in your everyday work. Five short questions, one concrete recommendation at the end. No tool selling, no black box.",
   },
   hero: {
     eyebrow: "AI consulting · Berlin",
@@ -366,6 +371,11 @@ const de: typeof en = {
     tagline: "Menschliche Intelligenz. KI-gestützt.",
     cta: "Gespräch buchen",
     noobClub: "Neu: AI Noob Club",
+    kiCheck: "KI-Workflow-Check",
+  },
+  kiCheckPage: {
+    title: "KI-Workflow-Check",
+    lead: "In 2 Minuten wissen Sie, welcher erste KI-Schritt sich in Ihrem Alltag wirklich lohnt. Fünf kurze Fragen, am Ende eine konkrete Empfehlung. Kein Tool-Verkauf, keine Blackbox.",
   },
   hero: {
     eyebrow: "KI-Beratung · Berlin",
