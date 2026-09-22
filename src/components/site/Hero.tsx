@@ -36,7 +36,9 @@ export function Hero() {
         </p>
         <div className="mt-10 flex flex-col items-start gap-8">
           <a
-            href="#contact"
+            href="https://calendly.com/dlbosma/30min"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-3 border-b-2 border-background pb-1.5 text-base font-bold tracking-wide text-background transition-opacity hover:opacity-70"
           >
             {t.hero.ctaPrimary}
