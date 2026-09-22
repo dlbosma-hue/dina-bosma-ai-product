@@ -4,7 +4,7 @@ type NoobStrings = {
   badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string; heroLead: string; heroFor: string;
   forItems: string[];
   shopTitle: string; shopParagraphs: string[]; shopCta: string;
-  waitlistTitle: string; waitlistLead: string; emailLabel: string; emailPlaceholder: string;
+  waitlistTitle: string; waitlistLead: string; meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
   valuesEyebrow: string; valuesTitle: string; values: { title: string; body: string }[];
@@ -42,6 +42,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     waitlistTitle: "Join the waitlist.",
     waitlistLead:
       "The first course is still being built. Leave your email and you will hear first when workshops and courses open, plus a few useful starter tips in the meantime.",
+    meetYourHostAlt: "Meet your host: Dina, founder of the AI Noob Club, with a cup of coffee at her laptop",
     emailLabel: "Email address",
     emailPlaceholder: "you@example.com",
     nameLabel: "First name",
@@ -123,6 +124,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     waitlistTitle: "Auf die Warteliste.",
     waitlistLead:
       "Der erste Kurs entsteht gerade. Mit Ihrer E-Mail erfahren Sie zuerst, wann Workshops und Kurse starten, und bekommen bis dahin ein paar hilfreiche Tipps.",
+    meetYourHostAlt: "Meet your host: Dina, Gründerin des AI Noob Club, mit einer Tasse Kaffee am Laptop",
     emailLabel: "E-Mail-Adresse",
     emailPlaceholder: "name@beispiel.de",
     nameLabel: "Vorname",
