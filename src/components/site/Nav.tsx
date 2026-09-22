@@ -43,7 +43,7 @@ export function Nav() {
           <span className="text-[11px] font-light text-muted-foreground tracking-wide">
             {t.nav.tagline}
           </span>
-        </a>
+        </Link>
         <nav className="hidden flex-1 items-center justify-center gap-6 border-l border-border/40 pl-6 text-xs text-muted-foreground md:flex lg:gap-8 lg:pl-10 lg:text-sm">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
