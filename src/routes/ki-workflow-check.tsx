@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { useLanguage } from "@/lib/i18n";
@@ -31,6 +32,29 @@ export const Route = createFileRoute("/ki-workflow-check")({
 
 function KiWorkflowCheck() {
   const { t } = useLanguage();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const homeSections = new Set([
+      "about",
+      "services",
+      "how-i-work",
+      "case-studies",
+      "projects",
+      "credentials",
+      "contact",
+    ]);
+
+    const redirectToHomeSection = () => {
+      const hash = window.location.hash.slice(1);
+      if (!homeSections.has(hash)) return;
+      void navigate({ to: "/", hash, replace: true });
+    };
+
+    redirectToHomeSection();
+    window.addEventListener("hashchange", redirectToHomeSection);
+    return () => window.removeEventListener("hashchange", redirectToHomeSection);
+  }, [navigate]);
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -55,15 +79,6 @@ function KiWorkflowCheck() {
               className="block min-h-[560px] w-full border-0 md:min-h-[640px]"
             />
           </div>
-          <a
-            href="https://calendly.com/dlbosma/30min"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-8 inline-flex items-center gap-3 border-b-2 border-foreground pb-1.5 text-base font-bold tracking-wide transition-opacity hover:opacity-70"
-          >
-            Kennenlerngespräch buchen
-            <span aria-hidden>→</span>
-          </a>
         </div>
       </section>
       <Footer />
