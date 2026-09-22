@@ -36,8 +36,8 @@ export function Nav() {
   }, []);
 
   return (
-    <header className="relative z-40 border-b border-border/60 bg-background">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-3 md:px-10">
+<header className="sticky top-0 z-40 border-b border-border/60 bg-background">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-2 md:px-10">
         <Link to="/" className="flex flex-col leading-tight">
           <span className="font-serif text-xl tracking-tight">HUMINT</span>
           <span className="text-[11px] font-light text-muted-foreground tracking-wide">

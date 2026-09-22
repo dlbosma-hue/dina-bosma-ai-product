@@ -54,7 +54,8 @@ function NoobClub() {
       className="min-h-screen bg-[oklch(0.975_0.018_78)] text-foreground"
     >
       {/* Header */}
-      <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-6 md:px-10">
+      <header className="sticky top-0 z-40 border-b border-[oklch(0.34_0.14_260)]/10 bg-[oklch(0.975_0.018_78)]/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-2 md:px-10">
         <Link to="/" className="flex items-center gap-3">
           <img
             src={badgeAsset.url}
