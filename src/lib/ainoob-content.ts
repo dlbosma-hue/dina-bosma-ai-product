@@ -3,6 +3,7 @@ export type NoobLang = "en" | "de";
 type NoobStrings = {
   badge: string; brand: string; tagline: string; welcome: string; heroLead: string; heroFor: string;
   forItems: string[];
+  shopTitle: string; shopParagraphs: string[]; shopCta: string;
   waitlistTitle: string; waitlistLead: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
@@ -28,6 +29,15 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Total beginners who feel behind and want permission to start small",
       "People who are AI-curious but not AI-confident",
     ],
+    shopTitle: "Shop.",
+    shopParagraphs: [
+      "AI can feel confusing, technical and overwhelming, especially when every week brings a new tool, trend or complicated explanation. This shop was created to make AI easier to understand and easier to use.",
+      "Here you'll find practical guides, templates, checklists, workshops and digital resources for women, small-business owners, content creators, older beginners and anyone who wants to become more confident with AI.",
+      "We focus on useful skills rather than hype. You can learn how to use AI to create content, organize ideas, work with documents, improve everyday business tasks, explore automation and save time, without needing to be a technical expert.",
+      "The AI Noob Club is about learning step by step, asking better questions, protecting your privacy and keeping human judgment at the center. Whether you are completely new to AI or ready to move beyond basic chatbot conversations, you can start here.",
+      "No complicated language. No pressure to learn everything at once. Just practical AI support in a friendly, noob-friendly way.",
+    ],
+    shopCta: "Visit the shop on Etsy",
     waitlistTitle: "Join the waitlist.",
     waitlistLead:
       "The first course is still being built. Leave your email and you will hear first when workshops and courses open, plus a few useful starter tips in the meantime.",
@@ -99,6 +109,15 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Absolute Anfängerinnen und Anfänger, die klein starten möchten",
       "Menschen, die KI-neugierig sind, aber sich mit KI noch nicht sicher fühlen",
     ],
+    shopTitle: "Shop.",
+    shopParagraphs: [
+      "KI kann verwirrend, technisch und überwältigend wirken, besonders wenn jede Woche ein neues Tool, ein neuer Trend oder eine komplizierte Erklärung dazukommt. Dieser Shop wurde geschaffen, um KI leichter zu verstehen und leichter anzuwenden.",
+      "Hier finden Sie praktische Leitfäden, Vorlagen, Checklisten, Workshops und digitale Ressourcen für Frauen, kleine Unternehmen, Content-Creatorinnen, ältere Einsteiger und alle, die mehr Sicherheit im Umgang mit KI bekommen möchten.",
+      "Wir konzentrieren uns auf nützliche Fähigkeiten statt auf Hype. Sie lernen, wie Sie mit KI Inhalte erstellen, Ideen ordnen, mit Dokumenten arbeiten, alltägliche Geschäftsaufgaben verbessern, Automatisierung erkunden und Zeit sparen, ohne technische Expertin sein zu müssen.",
+      "Beim AI Noob Club geht es darum, Schritt für Schritt zu lernen, bessere Fragen zu stellen, die Privatsphäre zu schützen und das menschliche Urteilsvermögen im Mittelpunkt zu halten. Ob Sie völlig neu bei KI sind oder über einfache Chatbot-Gespräche hinauswachsen möchten: Hier können Sie starten.",
+      "Keine komplizierte Sprache. Kein Druck, alles auf einmal zu lernen. Nur praktische KI-Unterstützung, freundlich und einsteigerfreundlich erklärt.",
+    ],
+    shopCta: "Zum Shop auf Etsy",
     waitlistTitle: "Auf die Warteliste.",
     waitlistLead:
       "Der erste Kurs entsteht gerade. Mit Ihrer E-Mail erfahren Sie zuerst, wann Workshops und Kurse starten, und bekommen bis dahin ein paar hilfreiche Tipps.",
