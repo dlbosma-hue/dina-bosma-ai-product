@@ -55,6 +55,15 @@ function KiWorkflowCheck() {
               className="block min-h-[560px] w-full border-0 md:min-h-[640px]"
             />
           </div>
+          <a
+            href="https://calendly.com/dlbosma/30min"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 inline-flex items-center gap-3 border-b-2 border-foreground pb-1.5 text-base font-bold tracking-wide transition-opacity hover:opacity-70"
+          >
+            Kennenlerngespräch buchen
+            <span aria-hidden>→</span>
+          </a>
         </div>
       </section>
       <Footer />
