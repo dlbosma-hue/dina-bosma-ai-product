@@ -48,15 +48,17 @@ export function Nav() {
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
             return (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to="/"
+                hash={l.href.slice(1)}
+                hashScrollIntoView
                 className={`min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem] ${
                   isActive ? "text-foreground font-medium" : ""
                 }`}
               >
                 {l.label}
-              </a>
+              </Link>
             );
           })}
           {lang === "de" && (
