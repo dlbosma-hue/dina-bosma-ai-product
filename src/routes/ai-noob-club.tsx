@@ -94,6 +94,7 @@ function NoobClub() {
             {t.submit}
           </a>
         </div>
+        </div>
       </header>
 
       {/* Hero */}
