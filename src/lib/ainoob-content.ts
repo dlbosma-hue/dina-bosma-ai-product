@@ -38,7 +38,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "The AI Noob Club is about learning step by step, asking better questions, protecting your privacy and keeping human judgment at the center. Whether you are completely new to AI or ready to move beyond basic chatbot conversations, you can start here.",
       "No complicated language. No pressure to learn everything at once. Just practical AI support in a friendly, noob-friendly way.",
     ],
-    shopCta: "Visit the shop on Etsy",
+    shopCta: "Visit the shop",
     waitlistTitle: "Join the waitlist.",
     waitlistLead:
       "The first course is still being built. Leave your email and you will hear first when workshops and courses open, plus a few useful starter tips in the meantime.",
@@ -119,7 +119,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Beim AI Noob Club geht es darum, Schritt für Schritt zu lernen, bessere Fragen zu stellen, die Privatsphäre zu schützen und das menschliche Urteilsvermögen im Mittelpunkt zu halten. Ob Sie völlig neu bei KI sind oder über einfache Chatbot-Gespräche hinauswachsen möchten: Hier können Sie starten.",
       "Keine komplizierte Sprache. Kein Druck, alles auf einmal zu lernen. Nur praktische KI-Unterstützung, freundlich und einsteigerfreundlich erklärt.",
     ],
-    shopCta: "Zum Shop auf Etsy",
+    shopCta: "Zum Shop",
     waitlistTitle: "Auf die Warteliste.",
     waitlistLead:
       "Der erste Kurs entsteht gerade. Mit Ihrer E-Mail erfahren Sie zuerst, wann Workshops und Kurse starten, und bekommen bis dahin ein paar hilfreiche Tipps.",

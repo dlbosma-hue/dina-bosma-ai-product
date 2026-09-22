@@ -133,9 +133,6 @@ function NoobClub() {
       {/* Shop */}
       <section className="bg-[oklch(0.955_0.028_40)]/60">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
-            Shop
-          </p>
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-foreground/85">
             {t.shopParagraphs.map((p) => (
