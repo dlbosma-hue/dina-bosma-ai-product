@@ -59,6 +59,12 @@ export function Nav() {
               </a>
             );
           })}
+          <Link
+            to="/ki-workflow-check"
+            className="min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem]"
+          >
+            {t.nav.kiCheck}
+          </Link>
         </nav>
         <div className="flex shrink-0 items-center gap-3">
           <a
