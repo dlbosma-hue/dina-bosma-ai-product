@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
 import { Route as IndexRouteImport } from './routes/index'
@@ -17,6 +18,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KiWorkflowCheckRoute = KiWorkflowCheckRouteImport.update({
+  id: '/ki-workflow-check',
+  path: '/ki-workflow-check',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImpressumRoute = ImpressumRouteImport.update({
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
   '/impressum': typeof ImpressumRoute
+  '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
   '/impressum': typeof ImpressumRoute
+  '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,38 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
   '/impressum': typeof ImpressumRoute
+  '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/ai-noob-club' | '/impressum' | '/sitemap.xml'
+  fullPaths:
+    | '/'
+    | '/ai-noob-club'
+    | '/impressum'
+    | '/ki-workflow-check'
+    | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/ai-noob-club' | '/impressum' | '/sitemap.xml'
-  id: '__root__' | '/' | '/ai-noob-club' | '/impressum' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/ai-noob-club'
+    | '/impressum'
+    | '/ki-workflow-check'
+    | '/sitemap.xml'
+  id:
+    | '__root__'
+    | '/'
+    | '/ai-noob-club'
+    | '/impressum'
+    | '/ki-workflow-check'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AiNoobClubRoute: typeof AiNoobClubRoute
   ImpressumRoute: typeof ImpressumRoute
+  KiWorkflowCheckRoute: typeof KiWorkflowCheckRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
@@ -76,6 +102,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ki-workflow-check': {
+      id: '/ki-workflow-check'
+      path: '/ki-workflow-check'
+      fullPath: '/ki-workflow-check'
+      preLoaderRoute: typeof KiWorkflowCheckRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/impressum': {
@@ -106,6 +139,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AiNoobClubRoute: AiNoobClubRoute,
   ImpressumRoute: ImpressumRoute,
+  KiWorkflowCheckRoute: KiWorkflowCheckRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport

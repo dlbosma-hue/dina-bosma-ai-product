@@ -21,7 +21,6 @@ export const Route = createFileRoute("/ki-workflow-check")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://humint.site/ki-workflow-check" },
-      { name: "robots", content: "noindex" },
     ],
     links: [
       { rel: "canonical", href: "https://humint.site/ki-workflow-check" },
