@@ -65,11 +65,14 @@ export async function sendTemplateEmail(
       ? template.subject(templateData)
       : template.subject
 
+  const isDe = templateData['lang'] === 'de'
+  const fromAddress = `${SITE_NAME} <${isDe ? 'halloainoobclub' : 'helloainoobclub'}@${FROM_DOMAIN}>`
+
   try {
     await sendLovableEmail(
       {
         to: recipient,
-        from: `${SITE_NAME} <hello@${FROM_DOMAIN}>`,
+        from: fromAddress,
         sender_domain: SENDER_DOMAIN,
         subject,
         html,
@@ -77,7 +80,7 @@ export async function sendTemplateEmail(
         purpose: 'transactional',
         label: templateName,
         idempotency_key: options.idempotencyKey || crypto.randomUUID(),
-        reply_to: options.replyTo ?? 'helloainoobclub@humint.site',
+        reply_to: options.replyTo ?? fromAddress.match(/<(.+)>/)?.[1] ?? fromAddress,
       },
       { apiKey, sendUrl: process.env['LOVABLE_SEND_URL'] }
     )
