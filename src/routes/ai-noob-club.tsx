@@ -5,8 +5,8 @@ import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en.png.asset.json";
 import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
-import meetYourHostAsset from "@/assets/meet-your-host.jpg.asset.json";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
+import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
@@ -164,7 +164,7 @@ function NoobClub() {
           </p>
           <div className="mt-8 grid items-center gap-8 md:grid-cols-[minmax(0,22rem)_1fr]">
             <img
-              src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostAsset.url}
+              src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
               alt={t.meetYourHostAlt}
               className="w-full max-w-[22rem] rounded-2xl"
               width={1168}
