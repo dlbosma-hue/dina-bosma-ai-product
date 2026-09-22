@@ -26,7 +26,9 @@ const copy = {
     body2:
       'In the meantime we will send a few useful starter tips now and then. No spam, no pressure to learn everything at once.',
     shop: 'Want something practical right away? Have a look at the shop:',
-    signoff: 'Talk soon,',
+    signoff: 'Talk soon.',
+    nameLine: 'Best, Dina',
+    brandLine: 'AI Noob Club | HUMINT',
   },
   de: {
     preview: 'Sie stehen auf der Warteliste des AI Noob Club.',
@@ -36,7 +38,9 @@ const copy = {
     body2:
       'Bis dahin schicken wir Ihnen gelegentlich ein paar hilfreiche Einsteiger-Tipps. Kein Spam, kein Druck, alles auf einmal zu lernen.',
     shop: 'Sie möchten sofort etwas Praktisches? Schauen Sie im Shop vorbei:',
-    signoff: 'Bis bald,',
+    signoff: 'Bis bald.',
+    nameLine: 'LG, Dina',
+    brandLine: 'AI Noob Club | HUMINT',
   },
 } as const
 
@@ -62,7 +66,9 @@ const Email = ({ name, lang }: Props) => {
           <Text style={text}>
             {t.signoff}
             <br />
-            Dina, HUMINT
+            {t.nameLine}
+            <br />
+            {t.brandLine}
           </Text>
         </Container>
       </Body>
