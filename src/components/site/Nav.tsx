@@ -38,25 +38,27 @@ export function Nav() {
   return (
     <header className="sticky top-[var(--banner-height,0px)] z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-5 md:px-10">
-        <a href="#top" className="flex flex-col leading-tight">
+        <Link to="/" className="flex flex-col leading-tight">
           <span className="font-serif text-xl tracking-tight">HUMINT</span>
           <span className="text-[11px] font-light text-muted-foreground tracking-wide">
             {t.nav.tagline}
           </span>
-        </a>
+        </Link>
         <nav className="hidden flex-1 items-center justify-center gap-6 border-l border-border/40 pl-6 text-xs text-muted-foreground md:flex lg:gap-8 lg:pl-10 lg:text-sm">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
             return (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to="/"
+                hash={l.href.slice(1)}
+                hashScrollIntoView
                 className={`min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem] ${
                   isActive ? "text-foreground font-medium" : ""
                 }`}
               >
                 {l.label}
-              </a>
+              </Link>
             );
           })}
           {lang === "de" && (
