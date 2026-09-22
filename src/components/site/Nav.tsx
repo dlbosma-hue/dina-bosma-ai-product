@@ -70,7 +70,9 @@ export function Nav() {
         </nav>
         <div className="flex shrink-0 items-center gap-3">
           <a
-            href="#contact"
+            href="https://calendly.com/dlbosma/30min"
+            target="_blank"
+            rel="noreferrer"
             className="hidden rounded-none border border-foreground px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background md:inline-block"
           >
             {t.nav.cta}
