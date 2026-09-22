@@ -20,6 +20,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     brand: "AI Noob Club",
     tagline: "AI for people who feel behind.",
     welcome: "Welcome to the AI Noob Club",
+    heroShopCta: "Shop",
     heroLead:
       "Practical AI for women who run or grow their own business, women creators, and curious beginners of any age. Small steps, plain language, no jargon.",
     heroFor: "Made for",
@@ -100,6 +101,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     brand: "AI Noob Club",
     tagline: "KI für alle, die sich abgehängt fühlen.",
     welcome: "Willkommen im AI Noob Club",
+    heroShopCta: "Shop",
     heroLead:
       "Praktische KI für Frauen mit eigenem Business, für Creatorinnen und für neugierige Einsteiger jeden Alters. Kleine Schritte, klare Sprache, kein Fachjargon.",
     heroFor: "Für wen",
