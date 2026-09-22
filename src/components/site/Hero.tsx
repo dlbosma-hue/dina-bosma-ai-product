@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[calc(100vh-5rem)] w-full overflow-hidden"
+      className="relative w-full overflow-hidden"
     >
       {/* Full-width background image */}
       <img
