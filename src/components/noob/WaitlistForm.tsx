@@ -1,15 +1,19 @@
 import { useState } from "react";
 import type { NoobContent } from "@/lib/ainoob-content";
+import { useLanguage } from "@/lib/i18n";
 
 type Status = "idle" | "sending" | "done" | "error";
 
 export function WaitlistForm({ t }: { t: NoobContent }) {
   const [status, setStatus] = useState<Status>("idle");
+  const { lang } = useLanguage();
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
+    const name = String(data.get("name") ?? "");
+    const email = String(data.get("email") ?? "");
     data.append("_subject", "AI Noob Club waitlist");
     setStatus("sending");
     try {
@@ -19,6 +23,16 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
         headers: { Accept: "application/json" },
       });
       if (!res.ok) throw new Error("bad response");
+      // Confirmation email to the person signing up (best effort).
+      try {
+        await fetch("/api/public/waitlist", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, lang }),
+        });
+      } catch {
+        // ignore: the signup itself already succeeded
+      }
       form.reset();
       setStatus("done");
     } catch {

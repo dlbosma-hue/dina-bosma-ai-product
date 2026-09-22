@@ -14,6 +14,8 @@ import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiPublicWaitlistRouteImport } from './routes/api/public/waitlist'
+import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -40,6 +42,17 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicWaitlistRoute = ApiPublicWaitlistRouteImport.update({
+  id: '/api/public/waitlist',
+  path: '/api/public/waitlist',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailTransactionalPreviewRoute =
+  LovableEmailTransactionalPreviewRouteImport.update({
+    id: '/lovable/email/transactional/preview',
+    path: '/lovable/email/transactional/preview',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +60,8 @@ export interface FileRoutesByFullPath {
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/api/public/waitlist': typeof ApiPublicWaitlistRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +69,8 @@ export interface FileRoutesByTo {
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/api/public/waitlist': typeof ApiPublicWaitlistRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,6 +79,8 @@ export interface FileRoutesById {
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/api/public/waitlist': typeof ApiPublicWaitlistRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -71,6 +90,8 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/api/public/waitlist'
+    | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -78,6 +99,8 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/api/public/waitlist'
+    | '/lovable/email/transactional/preview'
   id:
     | '__root__'
     | '/'
@@ -85,6 +108,8 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/api/public/waitlist'
+    | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -93,6 +118,8 @@ export interface RootRouteChildren {
   ImpressumRoute: typeof ImpressumRoute
   KiWorkflowCheckRoute: typeof KiWorkflowCheckRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  ApiPublicWaitlistRoute: typeof ApiPublicWaitlistRoute
+  LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -132,6 +159,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/waitlist': {
+      id: '/api/public/waitlist'
+      path: '/api/public/waitlist'
+      fullPath: '/api/public/waitlist'
+      preLoaderRoute: typeof ApiPublicWaitlistRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/transactional/preview': {
+      id: '/lovable/email/transactional/preview'
+      path: '/lovable/email/transactional/preview'
+      fullPath: '/lovable/email/transactional/preview'
+      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -141,6 +182,8 @@ const rootRouteChildren: RootRouteChildren = {
   ImpressumRoute: ImpressumRoute,
   KiWorkflowCheckRoute: KiWorkflowCheckRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  ApiPublicWaitlistRoute: ApiPublicWaitlistRoute,
+  LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
