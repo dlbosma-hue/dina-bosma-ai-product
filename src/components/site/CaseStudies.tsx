@@ -76,23 +76,19 @@ export function CaseStudies() {
             )}
             {c.client === spottr && (
               <div className="mt-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <div className="text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
-                      {t.cases.deckLabel}
-                    </div>
-                    <div className="mt-1 font-serif text-lg leading-tight">
-                      {t.cases.deckName}
-                    </div>
-                  </div>
-                  <a
-                    href={spottrDeck.url}
-                    download
-                    className="inline-flex shrink-0 items-center gap-2 border-b border-foreground/60 pb-0.5 text-sm text-foreground transition-opacity hover:opacity-70"
-                  >
-                    {t.cases.deckDownload}
-                  </a>
+                <div className="text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
+                  {t.cases.deckLabel}
                 </div>
+                <div className="mt-1 font-serif text-lg leading-tight">
+                  {t.cases.deckName}
+                </div>
+                <a
+                  href={spottrDeck.url}
+                  download
+                  className="mt-2 inline-flex items-center gap-2 border-b border-foreground/60 pb-0.5 text-sm font-bold text-foreground transition-opacity hover:opacity-70"
+                >
+                  {t.cases.deckDownload}
+                </a>
               </div>
             )}
           </article>
