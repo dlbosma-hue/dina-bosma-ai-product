@@ -167,8 +167,8 @@ function NoobClub() {
               src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostAsset.url}
               alt={t.meetYourHostAlt}
               className="w-full max-w-[22rem] rounded-2xl"
-              width={1160}
-              height={1408}
+              width={1168}
+              height={1347}
             />
             <WaitlistForm t={t} />
           </div>
