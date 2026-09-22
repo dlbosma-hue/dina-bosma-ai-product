@@ -103,6 +103,16 @@ function NoobClub() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.heroLead}
           </p>
+          <a
+            href="https://www.etsy.com/shop/TheAINoobClub"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-[oklch(0.34_0.14_260)] px-5 py-2.5 text-sm font-semibold text-[oklch(0.34_0.14_260)] transition-colors hover:bg-[oklch(0.34_0.14_260)] hover:text-[oklch(0.98_0.012_80)]"
+          >
+            {t.heroShopCta}
+            <span aria-hidden>→</span>
+          </a>
+
 
 
           <div className="mt-8 rounded-3xl bg-[oklch(0.955_0.028_40)] p-6 md:p-8">

@@ -1,7 +1,7 @@
 export type NoobLang = "en" | "de";
 
 type NoobStrings = {
-  badge: string; brand: string; tagline: string; welcome: string; heroLead: string; heroFor: string;
+  badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string; heroLead: string; heroFor: string;
   forItems: string[];
   shopTitle: string; shopParagraphs: string[]; shopCta: string;
   waitlistTitle: string; waitlistLead: string; emailLabel: string; emailPlaceholder: string;
