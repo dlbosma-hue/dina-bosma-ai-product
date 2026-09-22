@@ -124,6 +124,30 @@ function NoobClub() {
         </div>
       </section>
 
+      {/* Shop */}
+      <section className="bg-[oklch(0.955_0.028_40)]/60">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
+            Shop
+          </p>
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
+          <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-foreground/85">
+            {t.shopParagraphs.map((p) => (
+              <p key={p.slice(0, 24)}>{p}</p>
+            ))}
+          </div>
+          <a
+            href="https://www.etsy.com/shop/TheAINoobClub"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-[oklch(0.34_0.14_260)] px-6 py-3 text-sm font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
+          >
+            {t.shopCta}
+            <span aria-hidden>→</span>
+          </a>
+        </div>
+      </section>
+
       {/* Waitlist */}
       <section id="waitlist" className="scroll-mt-24 bg-[oklch(0.925_0.035_22)]/50">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
