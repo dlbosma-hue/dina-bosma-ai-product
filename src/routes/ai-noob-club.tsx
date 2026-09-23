@@ -82,14 +82,6 @@ function NoobClub() {
             {t.langLabel}
           </button>
           <a
-            href="https://www.etsy.com/shop/TheAINoobClub"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full border border-foreground/25 px-3 py-1 text-xs uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:border-foreground/60 hover:text-foreground"
-          >
-            {t.heroShopCta}
-          </a>
-          <a
             href="#waitlist"
             className="rounded-full bg-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
           >
