@@ -1,5 +1,7 @@
 import type { ComponentType } from 'react'
 import { template as waitlistConfirmation } from './waitlist-confirmation'
+import { template as signupConfirmation } from './signup-confirmation'
+import { template as signupNotification } from './signup-notification'
 
 export interface TemplateEntry {
   component: ComponentType<any>
@@ -16,4 +18,6 @@ export interface TemplateEntry {
  */
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'waitlist-confirmation': waitlistConfirmation,
+  'signup-confirmation': signupConfirmation,
+  'signup-notification': signupNotification,
 }
