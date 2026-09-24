@@ -12,9 +12,11 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
 import { Route as ImpressumRouteImport } from './routes/impressum'
+import { Route as AiNoobClubAnmeldungRouteImport } from './routes/ai-noob-club-anmeldung'
 import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiPublicWaitlistRouteImport } from './routes/api/public/waitlist'
+import { Route as ApiPublicSignupRouteImport } from './routes/api/public/signup'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -32,6 +34,11 @@ const ImpressumRoute = ImpressumRouteImport.update({
   path: '/impressum',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AiNoobClubAnmeldungRoute = AiNoobClubAnmeldungRouteImport.update({
+  id: '/ai-noob-club-anmeldung',
+  path: '/ai-noob-club-anmeldung',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AiNoobClubRoute = AiNoobClubRouteImport.update({
   id: '/ai-noob-club',
   path: '/ai-noob-club',
@@ -47,6 +54,11 @@ const ApiPublicWaitlistRoute = ApiPublicWaitlistRouteImport.update({
   path: '/api/public/waitlist',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicSignupRoute = ApiPublicSignupRouteImport.update({
+  id: '/api/public/signup',
+  path: '/api/public/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LovableEmailTransactionalPreviewRoute =
   LovableEmailTransactionalPreviewRouteImport.update({
     id: '/lovable/email/transactional/preview',
@@ -57,18 +69,22 @@ const LovableEmailTransactionalPreviewRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
+  '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
+  '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
@@ -76,9 +92,11 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
+  '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
@@ -87,27 +105,33 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/ai-noob-club'
+    | '/ai-noob-club-anmeldung'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/ai-noob-club'
+    | '/ai-noob-club-anmeldung'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
   id:
     | '__root__'
     | '/'
     | '/ai-noob-club'
+    | '/ai-noob-club-anmeldung'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
@@ -115,9 +139,11 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AiNoobClubRoute: typeof AiNoobClubRoute
+  AiNoobClubAnmeldungRoute: typeof AiNoobClubAnmeldungRoute
   ImpressumRoute: typeof ImpressumRoute
   KiWorkflowCheckRoute: typeof KiWorkflowCheckRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  ApiPublicSignupRoute: typeof ApiPublicSignupRoute
   ApiPublicWaitlistRoute: typeof ApiPublicWaitlistRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
@@ -145,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ImpressumRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-noob-club-anmeldung': {
+      id: '/ai-noob-club-anmeldung'
+      path: '/ai-noob-club-anmeldung'
+      fullPath: '/ai-noob-club-anmeldung'
+      preLoaderRoute: typeof AiNoobClubAnmeldungRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ai-noob-club': {
       id: '/ai-noob-club'
       path: '/ai-noob-club'
@@ -166,6 +199,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicWaitlistRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/signup': {
+      id: '/api/public/signup'
+      path: '/api/public/signup'
+      fullPath: '/api/public/signup'
+      preLoaderRoute: typeof ApiPublicSignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/lovable/email/transactional/preview': {
       id: '/lovable/email/transactional/preview'
       path: '/lovable/email/transactional/preview'
@@ -179,9 +219,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AiNoobClubRoute: AiNoobClubRoute,
+  AiNoobClubAnmeldungRoute: AiNoobClubAnmeldungRoute,
   ImpressumRoute: ImpressumRoute,
   KiWorkflowCheckRoute: KiWorkflowCheckRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  ApiPublicSignupRoute: ApiPublicSignupRoute,
   ApiPublicWaitlistRoute: ApiPublicWaitlistRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
