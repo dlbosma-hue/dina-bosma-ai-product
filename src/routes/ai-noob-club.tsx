@@ -81,7 +81,13 @@ function NoobClub() {
           >
             {t.langLabel}
           </button>
-          <a
+          <Link
+            to="/ai-noob-club-anmeldung"
+            className="rounded-full border border-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.34_0.14_260)] transition-colors hover:bg-[oklch(0.34_0.14_260)]/10"
+          >
+            {lang === "de" ? "Anmelden" : "Sign up"}
+          </Link>
+          <
             href="#waitlist"
             className="rounded-full bg-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
           >
