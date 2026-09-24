@@ -87,7 +87,7 @@ function NoobClub() {
           >
             {lang === "de" ? "Anmelden" : "Sign up"}
           </Link>
-          <
+          <a
             href="#waitlist"
             className="rounded-full bg-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
           >
