@@ -21,7 +21,7 @@ export function About() {
           <img
             src={dinaPortrait}
             alt={t.about.portraitAlt}
-            className="aspect-square w-full max-w-[200px] rounded-full object-cover mx-auto"
+            className="aspect-square w-full max-w-[240px] rounded-full object-cover mx-auto"
           />
         </aside>
       </div>
