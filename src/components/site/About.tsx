@@ -19,7 +19,7 @@ export function About() {
         </div>
         <aside className="md:col-span-2 md:border-l md:border-border md:pl-10 flex flex-col justify-center">
           <img
-            src={dinaPortrait.url}
+            src={dinaPortrait}
             alt={t.about.portraitAlt}
             className="aspect-square w-full max-w-[200px] rounded-full object-cover mx-auto"
           />
