@@ -197,7 +197,7 @@ const en = {
     },
     items: [
       {
-        title: "Content Dashboard for Elisabeth Futterlieb.",
+        title: "Content Dashboard for Artist Elisabeth Futterlieb.",
         desc: "Two AI writing agents draft Instagram posts and newsletters in Elisabeth's voice. She reviews, edits and approves every piece before anything goes out.",
         tags: ["Claude API", "OpenAI Whisper", "Brevo", "FastAPI", "Next.js"],
         details: {
@@ -555,7 +555,7 @@ const de: typeof en = {
     },
     items: [
       {
-        title: "Content Dashboard für Elisabeth Futterlieb.",
+        title: "Content-Dashboard für die Künstlerin Elisabeth Futterlieb.",
         desc: "Zwei KI-Schreibagenten entwerfen Instagram-Posts und Newsletter in Elisabeths eigener Stimme. Sie prüft, bearbeitet und genehmigt jeden Inhalt, bevor etwas veröffentlicht wird.",
         tags: ["Claude API", "OpenAI Whisper", "Brevo", "FastAPI", "Next.js"],
         details: {
