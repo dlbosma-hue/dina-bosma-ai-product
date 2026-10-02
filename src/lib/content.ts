@@ -197,6 +197,17 @@ const en = {
     },
     items: [
       {
+        title: "Content Dashboard for Elisabeth Futterlieb.",
+        desc: "Two AI writing agents draft Instagram posts and newsletters in Elisabeth's voice. She reviews, edits and approves every piece before anything goes out.",
+        tags: ["Claude API", "OpenAI Whisper", "Brevo", "FastAPI", "Next.js"],
+        details: {
+          what: "A private, login-protected content dashboard for Elisabeth Futterlieb, a dentist and artist. It keeps Instagram and newsletter drafts, photos, voice notes, publishing status, the content calendar and a searchable archive in one place.",
+          how: "Two Claude agents share one voice guide with clear tone rules and Elisabeth's core themes. Scheduled drafts are created for Instagram on Monday, Wednesday and Friday and for the newsletter on Thursday. Browser voice notes are transcribed with OpenAI Whisper, while every calendar slot can be moved, swapped, regenerated or skipped.",
+          outcomes: "Elisabeth gets a steady content plan without giving up control. Instagram posts are copied out by her. Approved newsletters move to Brevo as draft campaigns for one final review before she sends them herself. The dashboard never publishes or sends automatically.",
+          learned: "Useful content automation needs clear boundaries. A strong voice guide, an editable queue and a deliberate human approval step matter more than generating more text.",
+        },
+      },
+      {
         title: "n8n Automation Workflows.",
         desc: "Production workflows built across multiple projects: scheduled research pipelines, survey triggers, weekly email briefings, and Slack and Notion integrations. Built for real operational use, not demos.",
         tags: ["n8n", "Automation", "APIs", "Webhooks"],
@@ -543,6 +554,17 @@ const de: typeof en = {
       medium: "Beitrag lesen ↗",
     },
     items: [
+      {
+        title: "Content Dashboard für Elisabeth Futterlieb.",
+        desc: "Zwei KI-Schreibagenten entwerfen Instagram-Posts und Newsletter in Elisabeths eigener Stimme. Sie prüft, bearbeitet und genehmigt jeden Inhalt, bevor etwas veröffentlicht wird.",
+        tags: ["Claude API", "OpenAI Whisper", "Brevo", "FastAPI", "Next.js"],
+        details: {
+          what: "Ein privates, passwortgeschütztes Content-Dashboard für Elisabeth Futterlieb, Zahnärztin und Künstlerin. Instagram- und Newsletter-Entwürfe, Fotos, Sprachnotizen, Veröffentlichungsstatus, Content-Kalender und ein durchsuchbares Archiv liegen an einem Ort.",
+          how: "Zwei Claude-Agenten nutzen denselben Voice Guide mit klaren Tonalitätsregeln und Elisabeths Kernthemen. Instagram-Entwürfe entstehen montags, mittwochs und freitags, der Newsletter donnerstags. Sprachnotizen im Browser werden mit OpenAI Whisper transkribiert. Jeder Kalendereintrag lässt sich verschieben, tauschen, neu erstellen oder auslassen.",
+          outcomes: "Elisabeth erhält einen verlässlichen Content-Plan und behält die volle Kontrolle. Instagram-Posts übernimmt sie selbst. Freigegebene Newsletter gehen als Entwurf zu Brevo, wo sie sie ein letztes Mal prüft und selbst versendet. Das Dashboard veröffentlicht und versendet nie automatisch.",
+          learned: "Nützliche Content-Automatisierung braucht klare Grenzen. Ein starker Voice Guide, eine bearbeitbare Warteschlange und eine bewusste menschliche Freigabe sind wichtiger als mehr generierter Text.",
+        },
+      },
       {
         title: "n8n-Automatisierungs-Workflows.",
         desc: "Produktive Workflows aus mehreren Projekten: geplante Recherche-Pipelines, Umfrage-Trigger, wöchentliche E-Mail-Briefings sowie Slack- und Notion-Integrationen. Gebaut für den echten Betrieb, nicht für Demos.",
