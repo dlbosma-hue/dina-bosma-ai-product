@@ -1,5 +1,5 @@
 import { Section } from "./Section";
-import dinaPortrait from "@/assets/dina-portrait.jpg.asset.json";
+import dinaPortrait from "@/assets/dina-portrait-square.jpg";
 import { useLanguage } from "@/lib/i18n";
 
 export function About() {
