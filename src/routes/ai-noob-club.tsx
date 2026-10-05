@@ -7,6 +7,7 @@ import logoEnAsset from "@/assets/ai-noob-club-logo-en.png.asset.json";
 import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
+import etsyProductAsset from "@/assets/etsy-99-prompts.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
@@ -150,6 +151,44 @@ function NoobClub() {
             {t.shopCta}
             <span aria-hidden>→</span>
           </a>
+
+          {/* Featured product */}
+          <article className="mt-10 grid items-center gap-8 rounded-3xl bg-[oklch(0.975_0.018_78)] p-6 md:grid-cols-[minmax(0,20rem)_1fr] md:p-8">
+            <img
+              src={etsyProductAsset.url}
+              alt={t.productAlt}
+              className="w-full max-w-xs rounded-2xl"
+              width={1264}
+              height={1264}
+            />
+            <div>
+              <p className="mb-2 text-xs uppercase tracking-[0.24em] text-foreground/55">
+                {t.productEyebrow}
+              </p>
+              <h3 className="font-serif text-3xl leading-snug">{t.productTitle}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{t.productBody}</p>
+              <ul className="mt-4 space-y-2">
+                {t.productBullets.map((b) => (
+                  <li key={b} className="flex gap-3 text-base text-foreground/85">
+                    <span
+                      aria-hidden
+                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[oklch(0.55_0.11_38)]"
+                    />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[oklch(0.34_0.14_260)] px-6 py-3 text-sm font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
+              >
+                {t.productCta}
+                <span aria-hidden>→</span>
+              </a>
+            </div>
+          </article>
         </div>
       </section>
 
