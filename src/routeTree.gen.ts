@@ -9,34 +9,19 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
-import { Route as ImpressumRouteImport } from './routes/impressum'
-import { Route as AiNoobClubAnmeldungRouteImport } from './routes/ai-noob-club-anmeldung'
-import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApiPublicWaitlistRouteImport } from './routes/api/public/waitlist'
+import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
+import { Route as AiNoobClubAnmeldungRouteImport } from './routes/ai-noob-club-anmeldung'
+import { Route as ImpressumRouteImport } from './routes/impressum'
+import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ApiPublicSignupRouteImport } from './routes/api/public/signup'
+import { Route as ApiPublicWaitlistRouteImport } from './routes/api/public/waitlist'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KiWorkflowCheckRoute = KiWorkflowCheckRouteImport.update({
-  id: '/ki-workflow-check',
-  path: '/ki-workflow-check',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ImpressumRoute = ImpressumRouteImport.update({
-  id: '/impressum',
-  path: '/impressum',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AiNoobClubAnmeldungRoute = AiNoobClubAnmeldungRouteImport.update({
-  id: '/ai-noob-club-anmeldung',
-  path: '/ai-noob-club-anmeldung',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AiNoobClubRoute = AiNoobClubRouteImport.update({
@@ -44,19 +29,34 @@ const AiNoobClubRoute = AiNoobClubRouteImport.update({
   path: '/ai-noob-club',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AiNoobClubAnmeldungRoute = AiNoobClubAnmeldungRouteImport.update({
+  id: '/ai-noob-club-anmeldung',
+  path: '/ai-noob-club-anmeldung',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicWaitlistRoute = ApiPublicWaitlistRouteImport.update({
-  id: '/api/public/waitlist',
-  path: '/api/public/waitlist',
+const ImpressumRoute = ImpressumRouteImport.update({
+  id: '/impressum',
+  path: '/impressum',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KiWorkflowCheckRoute = KiWorkflowCheckRouteImport.update({
+  id: '/ki-workflow-check',
+  path: '/ki-workflow-check',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicSignupRoute = ApiPublicSignupRouteImport.update({
   id: '/api/public/signup',
   path: '/api/public/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicWaitlistRoute = ApiPublicWaitlistRouteImport.update({
+  id: '/api/public/waitlist',
+  path: '/api/public/waitlist',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LovableEmailTransactionalPreviewRoute =
@@ -150,32 +150,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ki-workflow-check': {
-      id: '/ki-workflow-check'
-      path: '/ki-workflow-check'
-      fullPath: '/ki-workflow-check'
-      preLoaderRoute: typeof KiWorkflowCheckRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/impressum': {
-      id: '/impressum'
-      path: '/impressum'
-      fullPath: '/impressum'
-      preLoaderRoute: typeof ImpressumRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ai-noob-club-anmeldung': {
-      id: '/ai-noob-club-anmeldung'
-      path: '/ai-noob-club-anmeldung'
-      fullPath: '/ai-noob-club-anmeldung'
-      preLoaderRoute: typeof AiNoobClubAnmeldungRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ai-noob-club': {
@@ -185,18 +164,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AiNoobClubRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/ai-noob-club-anmeldung': {
+      id: '/ai-noob-club-anmeldung'
+      path: '/ai-noob-club-anmeldung'
+      fullPath: '/ai-noob-club-anmeldung'
+      preLoaderRoute: typeof AiNoobClubAnmeldungRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/waitlist': {
-      id: '/api/public/waitlist'
-      path: '/api/public/waitlist'
-      fullPath: '/api/public/waitlist'
-      preLoaderRoute: typeof ApiPublicWaitlistRouteImport
+    '/impressum': {
+      id: '/impressum'
+      path: '/impressum'
+      fullPath: '/impressum'
+      preLoaderRoute: typeof ImpressumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ki-workflow-check': {
+      id: '/ki-workflow-check'
+      path: '/ki-workflow-check'
+      fullPath: '/ki-workflow-check'
+      preLoaderRoute: typeof KiWorkflowCheckRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/signup': {
@@ -204,6 +197,13 @@ declare module '@tanstack/react-router' {
       path: '/api/public/signup'
       fullPath: '/api/public/signup'
       preLoaderRoute: typeof ApiPublicSignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/waitlist': {
+      id: '/api/public/waitlist'
+      path: '/api/public/waitlist'
+      fullPath: '/api/public/waitlist'
+      preLoaderRoute: typeof ApiPublicWaitlistRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/lovable/email/transactional/preview': {
