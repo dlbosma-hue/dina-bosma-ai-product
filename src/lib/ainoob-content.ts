@@ -4,6 +4,7 @@ type NoobStrings = {
   badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string; heroLead: string; heroFor: string;
   forItems: string[];
   shopTitle: string; shopParagraphs: string[]; shopCta: string;
+  productEyebrow: string; productTitle: string; productBody: string; productBullets: string[]; productCta: string; productAlt: string;
   waitlistTitle: string; waitlistLead: string; meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
@@ -39,6 +40,17 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "No complicated language. No pressure to learn everything at once. Just practical AI support in a friendly, noob-friendly way.",
     ],
     shopCta: "Visit the shop",
+    productEyebrow: "New in the shop",
+    productTitle: "99 Prompts for Authentic AI Photos",
+    productBody:
+      "A digital PDF prompt pack for photos that actually look like you. Copy, paste, make it yours: one identity block, one of 99 scenes, one style add-on for light, lens and realism.",
+    productBullets: [
+      "40-page PDF, instant download",
+      "Works in most AI image tools",
+      "Personal and commercial use of the images you create",
+    ],
+    productCta: "View on Etsy",
+    productAlt: "99 Prompts for Authentic AI Photos, digital PDF prompt pack by AI Noob Club",
     waitlistTitle: "Join the waitlist.",
     waitlistLead:
       "The first course is still being built. Leave your email and you will hear first when workshops and courses open, plus a few useful starter tips in the meantime.",
@@ -121,6 +133,17 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Keine komplizierte Sprache. Kein Druck, alles auf einmal zu lernen. Nur praktische KI-Unterstützung, freundlich und einsteigerfreundlich erklärt.",
     ],
     shopCta: "Zum Shop",
+    productEyebrow: "Neu im Shop",
+    productTitle: "99 Prompts für authentische KI-Fotos",
+    productBody:
+      "Ein digitales PDF-Prompt-Paket für Fotos, die wirklich nach Ihnen aussehen. Kopieren, einfügen, anpassen: ein Identitätsblock, eine von 99 Szenen, ein Stil-Add-on für Licht, Linse und Realismus.",
+    productBullets: [
+      "40-seitiges PDF, sofortiger Download",
+      "Funktioniert in den meisten KI-Bild-Tools",
+      "Private und kommerzielle Nutzung der erstellten Bilder",
+    ],
+    productCta: "Auf Etsy ansehen",
+    productAlt: "99 Prompts für authentische KI-Fotos, digitales PDF-Prompt-Paket vom AI Noob Club",
     waitlistTitle: "Auf die Warteliste.",
     waitlistLead:
       "Der erste Kurs entsteht gerade. Mit Ihrer E-Mail erfahren Sie zuerst, wann Workshops und Kurse starten, und bekommen bis dahin ein paar hilfreiche Tipps.",
