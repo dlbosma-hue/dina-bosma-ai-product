@@ -13,17 +13,17 @@ export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
   head: () => ({
     meta: [
-      { title: "AI Noob Club, friendly AI learning by HUMINT" },
+      { title: "AI Noob Club | KI-Basics für Unternehmerinnen" },
       {
         name: "description",
         content:
-          "Workshops, online courses, and patient one-on-one coaching that teach practical AI to women in business, creators, and curious beginners. Join the waitlist.",
+          "KI-Basics für Unternehmerinnen und Frauen mit kleinem Business. Starte Schritt für Schritt, ohne deine eigene Stimme zu verlieren.",
       },
-      { property: "og:title", content: "AI Noob Club, friendly AI learning by HUMINT" },
+      { property: "og:title", content: "AI Noob Club | KI-Basics für Unternehmerinnen" },
       {
         property: "og:description",
         content:
-          "Practical AI for women in business, creators, and beginners of any age. Enhance, never replace. Join the waitlist.",
+          "AI basics for women entrepreneurs and female leaders with a small business. Start step by step and keep your own voice.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://humint.site/ai-noob-club" },
@@ -54,10 +54,10 @@ function NoobClub() {
 
   return (
     <main
-      className="min-h-screen bg-[oklch(0.975_0.018_78)] text-foreground"
+      className="min-h-screen bg-noob-paper text-foreground"
     >
       {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-[oklch(0.34_0.14_260)]/10 bg-[oklch(0.975_0.018_78)]/95 backdrop-blur-sm">
+      <header className="sticky top-0 z-40 border-b border-primary/10 bg-noob-paper/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-2 md:px-10">
         <Link to="/" className="flex items-center gap-3">
           <img
@@ -84,13 +84,13 @@ function NoobClub() {
           </button>
           <Link
             to="/ai-noob-club-anmeldung"
-            className="rounded-full border border-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.34_0.14_260)] transition-colors hover:bg-[oklch(0.34_0.14_260)]/10"
+            className="rounded-full border border-primary px-4 py-2 text-xs font-semibold text-primary transition-colors hover:bg-primary/10"
           >
             {lang === "de" ? "Jetzt dabei sein" : "Join now"}
           </Link>
           <a
             href="#waitlist"
-            className="rounded-full bg-[oklch(0.34_0.14_260)] px-4 py-2 text-xs font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
+            className="rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             {t.submit}
           </a>
@@ -100,10 +100,6 @@ function NoobClub() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[oklch(0.925_0.035_22)] opacity-70 blur-2xl"
-        />
         <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
           <h1 className="sr-only">{t.brand}</h1>
           <img
@@ -114,7 +110,7 @@ function NoobClub() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.heroLead}
           </p>
-          <div className="mt-8 rounded-3xl bg-[oklch(0.955_0.028_40)] p-6 md:p-8">
+          <div className="mt-8 rounded-3xl bg-noob-surface p-6 md:p-8">
             <h2 className="mb-4 text-xs uppercase tracking-[0.24em] text-foreground/60">
               {t.heroFor}
             </h2>
@@ -123,7 +119,7 @@ function NoobClub() {
                 <li key={item} className="flex gap-3 text-base leading-relaxed text-foreground/85">
                   <span
                     aria-hidden
-                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[oklch(0.34_0.14_260)]"
+                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-primary"
                   />
                   <span>{item}</span>
                 </li>
@@ -134,7 +130,7 @@ function NoobClub() {
       </section>
 
       {/* Shop */}
-      <section className="bg-[oklch(0.955_0.028_40)]/60">
+      <section className="bg-noob-surface/60">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-foreground/85">
@@ -146,14 +142,14 @@ function NoobClub() {
             href="https://www.etsy.com/shop/TheAINoobClub"
             target="_blank"
             rel="noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-[oklch(0.34_0.14_260)] px-6 py-3 text-sm font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             {t.shopCta}
             <span aria-hidden>→</span>
           </a>
 
           {/* Featured product */}
-          <article className="mt-10 grid items-center gap-8 rounded-3xl bg-[oklch(0.975_0.018_78)] p-6 md:grid-cols-[minmax(0,20rem)_1fr] md:p-8">
+          <article className="mt-10 grid items-center gap-8 rounded-3xl bg-noob-paper p-6 md:grid-cols-[minmax(0,20rem)_1fr] md:p-8">
             <img
               src={etsyProductAsset.url}
               alt={t.productAlt}
@@ -172,7 +168,7 @@ function NoobClub() {
                   <li key={b} className="flex gap-3 text-base text-foreground/85">
                     <span
                       aria-hidden
-                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[oklch(0.55_0.11_38)]"
+                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-noob-terracotta"
                     />
                     <span>{b}</span>
                   </li>
@@ -182,7 +178,7 @@ function NoobClub() {
                 href="https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[oklch(0.34_0.14_260)] px-6 py-3 text-sm font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 {t.productCta}
                 <span aria-hidden>→</span>
@@ -193,7 +189,7 @@ function NoobClub() {
       </section>
 
       {/* Waitlist */}
-      <section id="waitlist" className="scroll-mt-24 bg-[oklch(0.925_0.035_22)]/50">
+      <section id="waitlist" className="scroll-mt-24 bg-noob-blush/50">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.waitlistTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
@@ -221,7 +217,7 @@ function NoobClub() {
         <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.offerTitle}</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {t.offers.map((o) => (
-            <article key={o.title} className="rounded-3xl bg-[oklch(0.955_0.028_40)] p-6">
+            <article key={o.title} className="rounded-3xl bg-noob-surface p-6">
               <h3 className="font-serif text-2xl leading-snug">{o.title}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{o.body}</p>
             </article>
@@ -230,19 +226,19 @@ function NoobClub() {
       </section>
 
       {/* Values */}
-      <section className="bg-[oklch(0.955_0.028_40)]/60">
+      <section className="bg-noob-surface/60">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
             {t.valuesEyebrow}
           </p>
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
             {t.values.map((v) => (
               <article
                 key={v.title}
-                className="rounded-3xl border border-foreground/10 bg-[oklch(0.975_0.018_78)] p-6"
+                className="rounded-3xl border border-foreground/10 bg-noob-paper p-6"
               >
-                <h3 className="font-serif text-2xl leading-snug text-[oklch(0.55_0.11_38)]">
+                <h3 className="font-serif text-2xl leading-snug text-noob-terracotta">
                   {v.title}
                 </h3>
                 <p className="mt-3 text-base leading-relaxed text-foreground/80">{v.body}</p>
@@ -261,7 +257,7 @@ function NoobClub() {
           </div>
           <Link
             to="/"
-            className="mt-4 inline-flex shrink-0 items-center gap-2 rounded-full border border-foreground/40 px-5 py-2.5 text-sm transition-colors hover:bg-foreground hover:text-[oklch(0.975_0.018_78)] md:mt-0"
+            className="mt-4 inline-flex shrink-0 items-center gap-2 rounded-full border border-foreground/40 px-5 py-2.5 text-sm transition-colors hover:bg-foreground hover:text-noob-paper md:mt-0"
           >
             {t.consultingCta}
             <span aria-hidden>→</span>

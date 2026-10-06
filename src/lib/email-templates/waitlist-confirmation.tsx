@@ -22,7 +22,7 @@ const copy = {
     preview: 'You are on the AI Noob Club waitlist.',
     heading: 'Welcome to the AI Noob Club',
     greeting: (name?: string) => (name ? `Hi ${name},` : 'Hi there,'),
-    body: 'You are on the waitlist. The first course is still being built, and you will hear from us first when workshops and courses open.',
+    body: 'You are on the waitlist. The first course for women entrepreneurs who are new to AI is taking shape. You will hear from us when workshops and courses open.',
     body2:
       'In the meantime we will send a few useful starter tips now and then. No spam, no pressure to learn everything at once.',
     shop: 'Want something practical right away? Have a look at the shop:',
@@ -31,13 +31,13 @@ const copy = {
     brandLine: 'AI Noob Club | HUMINT',
   },
   de: {
-    preview: 'Sie stehen auf der Warteliste des AI Noob Club.',
+    preview: 'Du stehst auf der Warteliste des AI Noob Club.',
     heading: 'Willkommen im AI Noob Club',
     greeting: (name?: string) => (name ? `Hallo ${name},` : 'Hallo,'),
-    body: 'Sie stehen auf der Warteliste. Der erste Kurs entsteht noch, und Sie hören zuerst von uns, sobald Workshops und Kurse starten.',
+    body: 'Du stehst auf der Warteliste. Der erste Kurs für Unternehmerinnen, die neu bei KI sind, entsteht gerade. Du hörst von uns, sobald Workshops und Kurse starten.',
     body2:
-      'Bis dahin schicken wir Ihnen gelegentlich ein paar hilfreiche Einsteiger-Tipps. Kein Spam, kein Druck, alles auf einmal zu lernen.',
-    shop: 'Sie möchten sofort etwas Praktisches? Schauen Sie im Shop vorbei:',
+      'Bis dahin schicken wir dir ab und zu Tipps für deinen Start. Kein Spam. Kein Druck, alles auf einmal zu lernen.',
+    shop: 'Du möchtest direkt loslegen? Schau im Shop vorbei:',
     signoff: 'Bis bald.',
     nameLine: 'LG, Dina',
     brandLine: 'AI Noob Club | HUMINT',

@@ -13,14 +13,14 @@ const Email = ({ name, choice, lang }: Props) => {
   return (
     <Html lang={de ? 'de' : 'en'} dir="ltr">
       <Head />
-      <Preview>{de ? 'Danke für Ihre Anmeldung.' : 'Thanks for signing up.'}</Preview>
+      <Preview>{de ? 'Danke für deine Anmeldung.' : 'Thanks for signing up.'}</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Heading style={heading}>{de ? 'Danke für Ihre Anmeldung' : 'Thanks for signing up'}</Heading>
+          <Heading style={heading}>{de ? 'Danke für deine Anmeldung' : 'Thanks for signing up'}</Heading>
           <Text style={text}>{de ? (name ? `Hallo ${name},` : 'Hallo,') : name ? `Hi ${name},` : 'Hi there,'}</Text>
           <Text style={text}>
             {de
-              ? `wir haben Ihre Anmeldung für „${choice ?? ''}" erhalten. Ich melde mich in Kürze persönlich mit allen Details bei Ihnen.`
+              ? `wir haben deine Anmeldung für „${choice ?? ''}" erhalten. Ich melde mich in Kürze persönlich mit allen Details bei dir.`
               : `we received your sign-up for "${choice ?? ''}". I will get back to you personally with all the details soon.`}
           </Text>
           <Text style={text}>
@@ -39,7 +39,7 @@ const Email = ({ name, choice, lang }: Props) => {
 export const template = {
   component: Email,
   subject: (d: Record<string, any>) =>
-    d['lang'] === 'de' ? 'Ihre Anmeldung beim AI Noob Club' : 'Your AI Noob Club sign-up',
+    d['lang'] === 'de' ? 'Deine Anmeldung beim AI Noob Club' : 'Your AI Noob Club sign-up',
   displayName: 'Landingpage sign-up confirmation',
   previewData: { name: 'Jane', choice: 'Workshop', lang: 'de' },
 } satisfies TemplateEntry
