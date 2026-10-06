@@ -5,6 +5,8 @@ import { useEffect } from "react";
 export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { title: "Impressum, Dina Bosma Buczynska" },
       {
         name: "description",
