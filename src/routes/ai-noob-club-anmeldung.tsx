@@ -110,8 +110,8 @@ function SignupPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[oklch(0.975_0.018_78)] text-foreground">
-      <header className="sticky top-0 z-40 border-b border-[oklch(0.34_0.14_260)]/10 bg-[oklch(0.975_0.018_78)]/95 backdrop-blur-sm">
+    <main className="min-h-screen bg-noob-paper text-foreground">
+      <header className="sticky top-0 z-40 border-b border-primary/10 bg-noob-paper/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-6 py-2 md:px-10">
           <Link to="/ai-noob-club" className="flex items-center gap-3">
             <img src={badgeAsset.url} alt="" aria-hidden className="h-12 w-12" width={556} height={556} />
@@ -131,7 +131,7 @@ function SignupPage() {
         <h1 className="font-serif text-4xl leading-tight md:text-5xl">{t.title}</h1>
         <p className="mt-4 text-lg leading-relaxed text-foreground/80">{t.lead}</p>
 
-        <div className="mt-8 rounded-3xl bg-[oklch(0.925_0.035_22)]/50 p-6 md:p-8">
+        <div className="mt-8 rounded-3xl bg-noob-blush/50 p-6 md:p-8">
           {status === "done" ? (
             <p className="text-base text-foreground/85">{t.success}</p>
           ) : (
@@ -167,7 +167,7 @@ function SignupPage() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="rounded-full bg-[oklch(0.34_0.14_260)] px-7 py-3 text-base font-semibold text-[oklch(0.98_0.012_80)] hover:opacity-90 disabled:opacity-60"
+                  className="rounded-full bg-primary px-7 py-3 text-base font-semibold text-primary-foreground hover:opacity-90 disabled:opacity-60"
                 >
                   {status === "sending" ? t.sending : t.submit}
                 </button>

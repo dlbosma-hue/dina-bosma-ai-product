@@ -26,6 +26,10 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  --color-noob-paper: var(--noob-paper);
+  --color-noob-blush: var(--noob-blush);
+  --color-noob-surface: var(--noob-surface);
+  --color-noob-terracotta: var(--noob-terracotta);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -64,6 +68,10 @@
 }
 
 :root {
+  --noob-paper: oklch(0.975 0.018 78);
+  --noob-blush: oklch(0.925 0.035 22);
+  --noob-surface: oklch(0.955 0.028 40);
+  --noob-terracotta: oklch(0.55 0.11 38);
   --radius: 0rem;
   /* Warm paper background, deep navy ink, navy accent */
   --background: oklch(0.968 0.014 88);
@@ -106,6 +114,10 @@
 }
 
 .dark {
+  --noob-paper: oklch(0.22 0.025 260);
+  --noob-blush: oklch(0.30 0.035 22);
+  --noob-surface: oklch(0.27 0.028 40);
+  --noob-terracotta: oklch(0.75 0.09 38);
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.208 0.042 265.755);
