@@ -11,12 +11,12 @@ export const Route = createFileRoute("/ai-noob-club-anmeldung")({
       {
         name: "description",
         content:
-          "Melden Sie sich an: Workshop, 30-Minuten-Impuls oder Zwischen Intuition und Algorithmus. Sign up for AI Noob Club offers.",
+          "Für Unternehmerinnen beim KI-Einstieg: Workshop, 30-Minuten-Impuls oder Zwischen Intuition und Algorithmus. Join AI Noob Club for women entrepreneurs.",
       },
       { property: "og:title", content: "Anmeldung | AI Noob Club by HUMINT" },
       {
         property: "og:description",
-        content: "Workshop, 30-Minuten-Impuls oder Kunst & KI. Jetzt anmelden.",
+        content: "KI-Angebote für Unternehmerinnen und Frauen mit kleinem Business. Jetzt dabei sein.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/ai-noob-club-anmeldung")({
 const copy = {
   de: {
     title: "Jetzt anmelden.",
-    lead: "Wählen Sie aus, wofür Sie sich anmelden möchten. Ich melde mich persönlich mit allen Details bei Ihnen.",
-    choiceLabel: "Wofür möchten Sie sich anmelden?",
+    lead: "Für Unternehmerinnen, die neu bei KI sind. Wähle dein Angebot. Ich melde mich persönlich mit allen Details bei dir.",
+    choiceLabel: "Wofür möchtest du dich anmelden?",
     choicePlaceholder: "Bitte auswählen",
     options: { workshop: "Workshop", impuls: "30-Minuten-Impuls", kunst: "Zwischen Intuition und Algorithmus" },
     name: "Name",
@@ -37,15 +37,15 @@ const copy = {
     messagePlaceholder: "Fragen, Wünsche, Wunschtermin ...",
     submit: "Jetzt dabei sein",
     sending: "Wird gesendet ...",
-    success: "Danke! Ihre Anmeldung ist eingegangen. Eine Bestätigung ist unterwegs.",
-    error: "Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.",
-    privacy: "Kein Spam. Ihre Daten werden nur für diese Anmeldung genutzt.",
+    success: "Danke! Deine Anmeldung ist eingegangen. Eine Bestätigung ist unterwegs.",
+    error: "Das hat leider nicht geklappt. Bitte versuch es noch einmal.",
+    privacy: "Kein Spam. Deine Daten werden nur für diese Anmeldung genutzt.",
     back: "Zurück zum AI Noob Club",
     toggle: "EN",
   },
   en: {
     title: "Sign up now.",
-    lead: "Choose what you would like to sign up for. I will get back to you personally with all the details.",
+    lead: "For women entrepreneurs who are new to AI. Choose your offer. I will get back to you personally with the details.",
     choiceLabel: "What would you like to sign up for?",
     choicePlaceholder: "Please choose",
     options: { workshop: "Workshop", impuls: "30 Minute-check", kunst: "Art & AI: Between Intuition and Algorithm" },

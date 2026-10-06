@@ -13,17 +13,17 @@ export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
   head: () => ({
     meta: [
-      { title: "AI Noob Club, friendly AI learning by HUMINT" },
+      { title: "AI Noob Club | KI-Basics für Unternehmerinnen" },
       {
         name: "description",
         content:
-          "Workshops, online courses, and patient one-on-one coaching that teach practical AI to women in business, creators, and curious beginners. Join the waitlist.",
+          "KI-Basics für Unternehmerinnen und Frauen mit kleinem Business. Starte Schritt für Schritt, ohne deine eigene Stimme zu verlieren.",
       },
-      { property: "og:title", content: "AI Noob Club, friendly AI learning by HUMINT" },
+      { property: "og:title", content: "AI Noob Club | KI-Basics für Unternehmerinnen" },
       {
         property: "og:description",
         content:
-          "Practical AI for women in business, creators, and beginners of any age. Enhance, never replace. Join the waitlist.",
+          "AI basics for women entrepreneurs and female leaders with a small business. Start step by step and keep your own voice.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://humint.site/ai-noob-club" },
@@ -236,7 +236,7 @@ function NoobClub() {
             {t.valuesEyebrow}
           </p>
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
             {t.values.map((v) => (
               <article
                 key={v.title}
