@@ -86,7 +86,7 @@ function NoobClub() {
             to="/ai-noob-club-anmeldung"
             className="rounded-full border border-primary px-4 py-2 text-xs font-semibold text-primary transition-colors hover:bg-primary/10"
           >
-            {lang === "de" ? "Jetzt dabei sein" : "Join now"}
+            {lang === "de" ? "Jetzt dabei sein" : "Sign up now"}
           </Link>
           <a
             href="#waitlist"
