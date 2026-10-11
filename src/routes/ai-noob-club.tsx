@@ -71,6 +71,7 @@ function NoobClub() {
                   {t.heroSecondary}
                 </a>
               </div>
+              <a href="#treffen" className="mt-4 inline-block text-sm font-medium underline underline-offset-4">{ov.liveHeroLink}</a>
               <p className="mt-4 text-sm text-foreground/75">{t.heroFounder}</p>
             </div>
             <div className="relative z-0 mt-2 md:mt-0">
@@ -181,6 +182,31 @@ function NoobClub() {
             </article>
           </div>
           <p className="mt-8 text-center font-serif text-xl leading-snug md:text-2xl">{ov.line}</p>
+        </div>
+      </section>
+
+      {/* Treffen und Workshops */}
+      <section id="treffen" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.liveTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">{ov.liveIntro}</p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <span className={`${pillClass} self-start`}>{ov.meetupTag}</span>
+              <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.meetupName}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.meetupBody}</p>
+              {noobClub.links.meetup && (
+                <a href={noobClub.links.meetup} target="_blank" rel="noreferrer" className={`${btnPrimary} mt-6 self-start`}>{ov.meetupCta}</a>
+              )}
+            </article>
+            <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <span className={`${pillClass} self-start`}>{ov.workshopTag}</span>
+              <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.workshopName}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.workshopBody}</p>
+              <a href={noobClub.links.contact} target="_blank" rel="noreferrer" className={`${btnPrimary} mt-6 self-start`}>{ov.workshopCta}</a>
+            </article>
+          </div>
+          <p className="mt-8 text-center text-sm text-foreground/75">{ov.liveNote}</p>
         </div>
       </section>
 

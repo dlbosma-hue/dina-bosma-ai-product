@@ -12,6 +12,18 @@ export type NoobOffer = {
   assistantName: string;
   assistantBody: string;
   line: string;
+  liveTitle: string;
+  liveIntro: string;
+  meetupTag: string;
+  meetupName: string;
+  meetupBody: string;
+  meetupCta: string;
+  workshopTag: string;
+  workshopName: string;
+  workshopBody: string;
+  workshopCta: string;
+  liveNote: string;
+  liveHeroLink: string;
 };
 
 export const offersContent: Record<NoobLang, NoobOffer> = {
@@ -28,6 +40,18 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     assistantBody:
       "Deine fertig eingerichtete KI-Assistentin für die Content-Woche. Sie hilft dir, deine Woche zu planen und Entwürfe in deiner Stimme zu schreiben. Mit schriftlicher Einrichtungsanleitung. Einmal kaufen, kein Kurs.",
     line: "Der Spickzettel zeigt dir den Weg. Die Assistentin geht ihn mit dir.",
+    liveTitle: "Treffen und Workshops",
+    liveIntro: "Lernen geht auch zusammen. In Berlin und online.",
+    meetupTag: "Termin folgt",
+    meetupName: "AI for Women Meetup",
+    meetupBody: "Eine Community für Frauen, die neu bei KI sind. Mit Treffen in Berlin und online. Ich bringe das erste Online-Event an den Start: eine Stunde, ohne Vorwissen.",
+    meetupCta: "Zum Meetup",
+    workshopTag: "Auf Anfrage",
+    workshopName: "Workshops für alle Frauen",
+    workshopBody: "KI verstehen und ausprobieren, in kleinen Schritten. In Berlin vor Ort und online. Du brauchst kein Business und kein Vorwissen.",
+    workshopCta: "Schreib mir",
+    liveNote: "Die Workshops sind offen für alle Frauen. Der Rest der Seite richtet sich an Frauen mit eigenem Business.",
+    liveHeroLink: "Auch live: Meetups und Workshops in Berlin und online.",
   },
   en: {
     title: "What you can start with",
@@ -42,5 +66,17 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     assistantBody:
       "Your AI assistant for the content week, set up and ready to use. It helps you plan your week and write drafts in your voice. With a written setup guide. Buy once, no course.",
     line: "The cheat sheet shows you the way. The assistant walks it with you.",
+    liveTitle: "Meetups and workshops",
+    liveIntro: "Learning is easier together. In Berlin and online.",
+    meetupTag: "Date soon",
+    meetupName: "AI for Women Meetup",
+    meetupBody: "A community for women who are new to AI. With meetups in Berlin and online. I am bringing the first online event to life: one hour, no prior knowledge needed.",
+    meetupCta: "Go to the meetup",
+    workshopTag: "On request",
+    workshopName: "Workshops for all women",
+    workshopBody: "Understand and try AI in small steps. In Berlin in person and online. You do not need a business or any prior knowledge.",
+    workshopCta: "Write to me",
+    liveNote: "The workshops are open to all women. The rest of the page is for women with their own business.",
+    liveHeroLink: "Also live: meetups and workshops in Berlin and online.",
   },
 };
