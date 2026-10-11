@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
-import badgeAsset from "@/assets/ai-noob-club-badge.webp.asset.json";
+import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club-anmeldung")({
   component: SignupPage,

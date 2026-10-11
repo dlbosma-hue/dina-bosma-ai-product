@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
-import badgeAsset from "@/assets/ai-noob-club-badge.webp.asset.json";
+import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
 
 export const btnPrimary =
   "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
