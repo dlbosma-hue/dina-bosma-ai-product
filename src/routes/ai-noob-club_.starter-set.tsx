@@ -1,3 +1,4 @@
+import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import { noobClub } from "@/config/noobClub";
@@ -12,26 +13,14 @@ import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club_/starter-set")({
   component: StarterSetPage,
-  head: () => ({
-    meta: [
-      { title: "Content-Woche-Assistentin | AI Noob Club" },
-      { name: "description", content: "Eine KI-Assistentin für deine Social-Media-Woche. Sie kennt deine Stimme, plant deine Beiträge und schreibt Entwürfe." },
-      { property: "og:title", content: "Content-Woche-Assistentin | AI Noob Club" },
-      { property: "og:description", content: "An AI assistant for your social media week. It knows your voice, plans your posts and writes drafts." },
-      { property: "og:type", content: "product" },
-      { name: "twitter:card", content: "summary" },
-    ],
-    links: [
-      { rel: "canonical", href: "https://humint.site/ai-noob-club/starter-set" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" },
-    ],
-  }),
+  head: () => noobHead(noobMeta.starterSet),
 });
 
 const h2 = "font-serif text-3xl leading-tight md:text-4xl";
 const section = "mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16";
 
 function StarterSetPage() {
+  useNoobMeta(noobMeta.starterSet);
   const { lang } = useLanguage();
   const t = noobContent[lang];
   const s = startersetContent[lang];
@@ -121,7 +110,7 @@ function StarterSetPage() {
           <ol className="mt-8 grid gap-5 md:grid-cols-3">
             {s.steps.map((step, i) => (
               <li key={step} className="rounded-3xl border border-foreground/10 bg-noob-paper p-6">
-                <span aria-hidden className="font-serif text-5xl leading-none text-noob-terracotta">{i + 1}</span>
+                <span aria-hidden className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-noob-terracotta font-serif text-3xl leading-none text-noob-navy">{i + 1}</span>
                 <p className="mt-3 text-base leading-relaxed">{step}</p>
               </li>
             ))}
@@ -183,6 +172,8 @@ function StarterSetPage() {
           <img
             src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
             alt={t.meetYourHostAlt}
+            loading="lazy"
+            decoding="async"
             className="w-full max-w-[16rem] rounded-3xl"
             width={1168}
             height={1347}

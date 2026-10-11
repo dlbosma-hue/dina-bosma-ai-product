@@ -1,3 +1,4 @@
+import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Users, Leaf, ShieldCheck } from "lucide-react";
 import { noobClub } from "@/config/noobClub";
@@ -14,48 +15,14 @@ import etsyProductAsset from "@/assets/etsy-99-prompts.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
-  head: () => ({
-    meta: [
-      { title: "AI Noob Club | KI-Basics für Unternehmerinnen" },
-      {
-        name: "description",
-        content:
-          "KI-Basics für Unternehmerinnen und Frauen mit kleinem Business. Starte Schritt für Schritt, ohne deine eigene Stimme zu verlieren.",
-      },
-      { property: "og:title", content: "AI Noob Club | KI-Basics für Unternehmerinnen" },
-      {
-        property: "og:description",
-        content:
-          "AI basics for women entrepreneurs and female leaders with a small business. Start step by step and keep your own voice.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://humint.site/ai-noob-club" },
-      {
-        property: "og:image",
-        content:
-          "https://humint.site/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg",
-      },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      { property: "og:image:type", content: "image/jpeg" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "twitter:image",
-        content:
-          "https://humint.site/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg",
-      },
-    ],
-    links: [
-      { rel: "canonical", href: "https://humint.site/ai-noob-club" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" },
-    ],
-  }),
+  head: () => noobHead(noobMeta.home),
 });
 
 const extBtn =
   "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 
 function NoobClub() {
+  useNoobMeta(noobMeta.home);
   const { lang } = useLanguage();
   const t = noobContent[lang];
   const st = startersetContent[lang];
@@ -153,7 +120,7 @@ function NoobClub() {
                 className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6"
               >
                 <div className="flex items-center justify-between gap-3">
-                  <span aria-hidden className="font-serif text-5xl leading-none text-noob-terracotta">
+                  <span aria-hidden className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-noob-terracotta font-serif text-3xl leading-none text-noob-navy">
                     {i + 1}
                   </span>
                   <span className={pillClass}>{statusLabel(card.status)}</span>
@@ -255,6 +222,8 @@ function NoobClub() {
               <img
                 src={etsyProductAsset.url}
                 alt={t.productAlt}
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-56 rounded-2xl"
                 width={1264}
                 height={1264}
@@ -291,7 +260,7 @@ function NoobClub() {
             href={noobClub.links.etsyShop}
             target="_blank"
             rel="noreferrer"
-            className="mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-foreground underline underline-offset-4 hover:text-noob-terracotta"
+            className="mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-foreground underline underline-offset-4"
           >
             {t.shopAllCta}
             <span aria-hidden>→</span>
@@ -331,6 +300,8 @@ function NoobClub() {
             <img
               src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
               alt={t.meetYourHostAlt}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-[22rem] rounded-2xl"
               width={1168}
               height={1347}
