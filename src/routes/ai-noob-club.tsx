@@ -1,11 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { noobClub } from "@/config/noobClub";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
-import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
+import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
+import { startersetContent } from "@/lib/starterset-content";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.png.asset.json";
@@ -52,16 +51,10 @@ export const Route = createFileRoute("/ai-noob-club")({
 
 
 
-const btnPrimary =
-  "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
-const navLink =
-  "inline-flex min-h-11 items-center whitespace-nowrap px-2 text-sm font-medium text-foreground hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md";
-
 function NoobClub() {
-  const { lang, setLang } = useLanguage();
+  const { lang } = useLanguage();
   const t = noobContent[lang];
-  const [menuOpen, setMenuOpen] = useState(false);
-  const close = () => setMenuOpen(false);
+  const st = startersetContent[lang];
   const pillClass =
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
   const statusLabel = (s: "free" | "available" | "starter") =>
@@ -73,70 +66,9 @@ function NoobClub() {
           ? t.statusSoon
           : t.statusAvailable;
 
-  const langButton = (
-    <button
-      type="button"
-      onClick={() => setLang(lang === "en" ? "de" : "en")}
-      aria-label={t.langAria}
-      className="inline-flex h-11 min-w-11 items-center justify-center rounded-full border border-foreground/40 px-3 text-xs font-semibold uppercase tracking-[0.14em] text-foreground hover:border-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-    >
-      {t.langLabel}
-    </button>
-  );
-  const textLinks = (
-    <>
-      <a href="#starterset" onClick={close} className={navLink}>{t.navStarter}</a>
-      <a href="#checkliste" onClick={close} className={navLink}>{t.navChecklist}</a>
-      <Link to="/ai-noob-club-anmeldung" onClick={close} className={navLink}>
-        {lang === "de" ? "Jetzt dabei sein" : "Sign up now"}
-      </Link>
-    </>
-  );
-
   return (
     <main className="noob-theme min-h-screen">
-      {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-noob-rosa bg-noob-cream">
-        <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-2 md:px-10">
-          <div className="flex items-center gap-3">
-            <a href="#top" className="shrink-0 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-              <img src={badgeAsset.url} alt={t.brand} className="h-12 w-12" width={556} height={556} />
-            </a>
-            <span className="flex flex-col leading-tight">
-              <span className="text-xs font-medium uppercase tracking-[0.12em] text-foreground">
-                {t.headerSubtitle}
-              </span>
-              <Link to="/" className="text-[11px] text-foreground/75 underline-offset-2 hover:underline">
-                {t.badge}
-              </Link>
-            </span>
-          </div>
-          <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
-            {langButton}
-            {textLinks}
-            <a href="#waitlist" className={btnPrimary}>{t.navWaitlist}</a>
-          </nav>
-          <button
-            type="button"
-            onClick={() => setMenuOpen((o: boolean) => !o)}
-            aria-expanded={menuOpen}
-            aria-controls="noob-menu"
-            aria-label={menuOpen ? t.menuClose : t.menuOpen}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-foreground/40 text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring lg:hidden"
-          >
-            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
-        {menuOpen && (
-          <nav id="noob-menu" className="border-t border-noob-rosa bg-noob-cream px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
-            <div className="flex flex-col gap-1">
-              <div className="py-1">{langButton}</div>
-              {textLinks}
-              <a href="#waitlist" onClick={close} className={`${btnPrimary} mt-3 w-full`}>{t.navWaitlist}</a>
-            </div>
-          </nav>
-        )}
-      </header>
+      <NoobHeader />
 
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
@@ -332,6 +264,18 @@ function NoobClub() {
         </div>
       </section>
 
+      {/* Starter-Set teaser */}
+      <section id="starterset" className="noob-dark scroll-mt-24">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{st.teaserTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed">{st.teaserBody}</p>
+          <p className="mt-3 text-base opacity-85">
+            {noobClub.starterSet.status === "available" ? st.statusAvailable : st.statusSoon}
+          </p>
+          <Link to="/ai-noob-club/starter-set" className={`${btnPrimary} mt-8`}>{st.teaserCta}</Link>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
@@ -372,20 +316,7 @@ function NoobClub() {
         </div>
       </div></section>
 
-      {/* Footer */}
-      <footer className="bg-noob-cream">
-        <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-6 py-8 text-sm text-foreground/65 md:px-10">
-          <span>{t.footer}</span>
-          <span className="flex gap-4">
-            <Link to="/" className="hover:text-foreground">
-              {t.backHome}
-            </Link>
-            <Link to="/impressum" className="hover:text-foreground">
-              {t.imprint}
-            </Link>
-          </span>
-        </div>
-      </footer>
+      <NoobFooter />
     </main>
   );
 }
