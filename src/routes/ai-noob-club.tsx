@@ -296,16 +296,7 @@ function NoobClub() {
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
             {t.waitlistLead}
           </p>
-          <div className="mt-8 grid items-center gap-8 md:grid-cols-[minmax(0,22rem)_1fr]">
-            <img
-              src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
-              alt={t.meetYourHostAlt}
-              loading="lazy"
-              decoding="async"
-              className="w-full max-w-[22rem] rounded-2xl"
-              width={1168}
-              height={1347}
-            />
+          <div className="mt-8 max-w-xl">
             <WaitlistForm t={t} source="waitlist" />
           </div>
         </div>
