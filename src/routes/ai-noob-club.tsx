@@ -323,7 +323,7 @@ function NoobClub() {
       {/* Consulting cross-link */}
       <section className="bg-noob-cream">
         <div className="mx-auto max-w-3xl px-6 py-10 md:px-10">
-          <div className="rounded-2xl bg-noob-rosa p-5 md:flex md:items-center md:justify-between md:gap-6">
+          <div className="rounded-2xl bg-noob-sky p-5 md:flex md:items-center md:justify-between md:gap-6">
             <div>
               <h2 className="font-serif text-lg leading-snug">{t.consultingTitle}</h2>
               <p className="mt-1 text-sm text-foreground/80">{t.consultingBody}</p>
