@@ -66,13 +66,13 @@ export const noobMeta = {
   starterSet: {
     path: "/ai-noob-club/starter-set",
     type: "product",
-    de: { title: "Content-Woche-Assistentin | AI Noob Club", description: "Eine KI-Assistentin für deine Social-Media-Woche. Sie kennt deine Stimme, plant deine Beiträge und schreibt Entwürfe." },
-    en: { title: "Content Week Assistant | AI Noob Club", description: "An AI assistant for your social media week. It knows your voice, plans your posts and writes drafts." },
+    de: { title: "Content-Assistentin | AI Noob Club", description: "Eine KI-Assistentin für deine Content-Woche. Sie kennt deine Stimme, plant deine Beiträge und schreibt Entwürfe." },
+    en: { title: "Content Assistant | AI Noob Club", description: "An AI assistant for your content week. It knows your voice, plans your posts and writes drafts." },
   },
   checklist: {
     path: "/ai-noob-club/checkliste",
-    de: { title: "Gratis Content-Woche-Checkliste | AI Noob Club", description: "Eine Seite, mit der du eine ganze Woche Social Media in einem Rutsch planst. Gratis Checkliste." },
-    en: { title: "Free Content Week Checklist | AI Noob Club", description: "One page to plan a whole week of social media in one go. Free checklist." },
+    de: { title: "Wochen-Spickzettel | AI Noob Club", description: "Der Wochen-Spickzettel: eine ganze Woche Social Media in einem Rutsch planen. Gratis." },
+    en: { title: "Weekly Cheat Sheet | AI Noob Club", description: "A cheat sheet to plan a whole week of social media in one go. Free." },
   },
   thanks: {
     path: "/ai-noob-club/danke",

@@ -19,20 +19,20 @@ interface Props {
 
 const copy = {
   en: {
-    preview: 'You are on the AI Noob Club waitlist.',
+    preview: 'You are in the AI Noob Club.',
     heading: 'Welcome to the AI Noob Club',
     greeting: (name?: string) => (name ? `Hi ${name},` : 'Hi there,'),
-    body: 'You are on the waitlist. The first course for women entrepreneurs who are new to AI is taking shape. You will hear from us when workshops and courses open.',
+    body: 'Thank you. You get the Weekly Cheat Sheet by email. Unsubscribe any time, just reply to this email.',
     shop: 'Want something practical right away? Have a look at the shop:',
     signoff: 'Talk soon.',
     nameLine: 'Best, Dina',
     brandLine: 'AI Noob Club | HUMINT',
   },
   de: {
-    preview: 'Du stehst auf der Warteliste des AI Noob Club.',
+    preview: 'Du bist im AI Noob Club.',
     heading: 'Willkommen im AI Noob Club',
     greeting: (name?: string) => (name ? `Hallo ${name},` : 'Hallo,'),
-    body: 'Du stehst auf der Warteliste. Der erste Kurs für Unternehmerinnen, die neu bei KI sind, entsteht gerade. Du hörst von uns, sobald Workshops und Kurse starten.',
+    body: 'Danke, du bist dabei. Du bekommst den Wochen-Spickzettel per E-Mail. Abmelden geht jederzeit, ein kurzer Satz genügt.',
     shop: 'Du möchtest direkt loslegen? Schau im Shop vorbei:',
     signoff: 'Bis bald.',
     nameLine: 'LG, Dina',
