@@ -46,7 +46,7 @@ export function NoobHeader() {
           </Link>
           <span className="flex flex-col leading-tight">
             <span className="text-xs font-medium uppercase tracking-[0.12em] text-foreground">{t.headerSubtitle}</span>
-            <Link to="/" className="text-[11px] text-foreground/75 underline-offset-2 hover:underline">{t.badge}</Link>
+            <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
           </span>
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>

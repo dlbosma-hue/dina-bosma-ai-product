@@ -32,7 +32,7 @@ const copy = {
 };
 
 const inputCls =
-  "w-full rounded-full border border-border/70 bg-background/70 px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground/40 focus:border-foreground/50 focus-visible:ring-2 focus-visible:ring-ring";
+  "w-full rounded-full border border-foreground/50 bg-background px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground/75 focus:border-foreground/50 focus-visible:ring-2 focus-visible:ring-ring";
 
 /** The one Club signup form. Stores entries in the existing waitlist (Formspree). */
 export function WaitlistForm({
@@ -142,7 +142,7 @@ export function WaitlistForm({
         >
           {status === "sending" ? t.sending : (submitLabel ?? t.submit)}
         </button>
-        <span className="text-sm text-foreground/70">{c.note}</span>
+        <span className="text-sm text-foreground/75">{c.note}</span>
       </div>
       {status === "error" && <p role="alert" className="text-sm text-destructive">{t.error}</p>}
     </form>
