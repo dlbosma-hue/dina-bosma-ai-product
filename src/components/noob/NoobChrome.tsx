@@ -31,6 +31,7 @@ export function NoobHeader() {
     <>
       <Link to="/ai-noob-club" hash="starterset" onClick={close} className={navLink}>{t.navStarter}</Link>
       <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={navLink}>{t.navChecklist}</Link>
+      <Link to="/ai-noob-club" hash="treffen" onClick={close} className={navLink}>{t.navLive}</Link>
       <Link to="/ai-noob-club-anmeldung" onClick={close} className={navLink}>
         {lang === "de" ? "Jetzt dabei sein" : "Sign up now"}
       </Link>
@@ -89,6 +90,7 @@ export function NoobFooter() {
           <Link to="/impressum" className={fl}>Impressum</Link>
           <Link to="/datenschutz" className={fl}>Datenschutz</Link>
           {noobClub.showWiderruf && <Link to="/ai-noob-club/widerruf" className={fl}>{lang === "de" ? "Widerruf" : "Cancellation"}</Link>}
+          <Link to="/ai-noob-club" hash="treffen" className={fl}>{t.navLive}</Link>
           <Link to="/" className={fl}>{lang === "de" ? "Zur HUMINT Startseite" : "HUMINT homepage"}</Link>
           {noobClub.links.instagram && <a href={noobClub.links.instagram} target="_blank" rel="noreferrer" className={fl}>Instagram</a>}
         </nav>

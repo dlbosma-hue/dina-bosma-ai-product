@@ -60,8 +60,8 @@ export const noobMeta = {
   home: {
     path: "/ai-noob-club",
     image: `${BASE}/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg`,
-    de: { title: "AI Noob Club: KI für Unternehmerinnen", description: "KI-Basics für Unternehmerinnen mit kleinem Business. Starte Schritt für Schritt und behalte deine eigene Stimme." },
-    en: { title: "AI Noob Club: AI for women in business", description: "AI basics for women in business who are AI beginners. Start step by step and keep your own voice." },
+    de: { title: "AI Noob Club: KI für Unternehmerinnen", description: "KI-Basics für Unternehmerinnen mit kleinem Business. Starte Schritt für Schritt und behalte deine eigene Stimme. Meetups und Workshops in Berlin und online." },
+    en: { title: "AI Noob Club: AI for women in business", description: "AI basics for women in business who are AI beginners. Start step by step and keep your own voice. Meetups and workshops in Berlin and online." },
   },
   starterSet: {
     path: "/ai-noob-club/starter-set",

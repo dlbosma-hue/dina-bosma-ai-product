@@ -17,7 +17,7 @@ type NoobStrings = {
   pathRows: { text: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
-  headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; menuOpen: string; menuClose: string;
+  headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; navLive: string; menuOpen: string; menuClose: string;
   seoTitle: string; seoDesc: string;
 };
 
@@ -138,6 +138,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navStarter: "Content Assistant",
     navChecklist: "Weekly Cheat Sheet",
     navChecklistCta: "Get the cheat sheet",
+    navLive: "Meetups and workshops",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     seoTitle: "AI Noob Club | AI basics for women entrepreneurs",
@@ -260,6 +261,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navStarter: "Content-Assistentin",
     navChecklist: "Wochen-Spickzettel",
     navChecklistCta: "Spickzettel holen",
+    navLive: "Treffen und Workshops",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
     seoTitle: "AI Noob Club | KI-Basics für Unternehmerinnen",
