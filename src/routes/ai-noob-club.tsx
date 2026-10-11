@@ -79,7 +79,7 @@ function NoobClub() {
       </section>
 
       {/* Für wen */}
-      <section id="fuer-wen" className="scroll-mt-24 bg-noob-rosa">
+      <section id="fuer-wen" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.forTitle}</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -104,7 +104,7 @@ function NoobClub() {
       </section>
 
       {/* Weg */}
-      <section id="weg" className="scroll-mt-24 bg-noob-cream">
+      <section id="weg" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.pathTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
@@ -155,17 +155,17 @@ function NoobClub() {
       </section>
 
       {/* Angebote */}
-      <section id="angebote" className="scroll-mt-24 bg-noob-rosa">
+      <section id="angebote" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.title}</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <article id="checkliste" className="scroll-mt-24 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+            <article id="checkliste" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} self-start`}>{ov.freeTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.sheetName}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.sheetBody}</p>
               <div className="mt-6"><WaitlistForm t={t} source="checkliste" submitLabel={ov.sheetCta} note={ov.sheetNote} /></div>
             </article>
-            <article id="starterset" className="scroll-mt-24 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+            <article id="starterset" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} self-start`}>{ov.soonTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.assistantName}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.assistantBody}</p>
@@ -176,7 +176,7 @@ function NoobClub() {
       </section>
 
       {/* Shop */}
-      <section id="shop" className="scroll-mt-24 bg-noob-cream">
+      <section id="shop" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{t.shopIntro}</p>
@@ -263,7 +263,7 @@ function NoobClub() {
       </section>
 
       {/* Values */}
-      <section id="werte" className="noob-dark scroll-mt-24">
+      <section id="werte" className="noob-dark scroll-mt-44 md:scroll-mt-48">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
           <ul className="mt-8 grid gap-6 md:grid-cols-2">

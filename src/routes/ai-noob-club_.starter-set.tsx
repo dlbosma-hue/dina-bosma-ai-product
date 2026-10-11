@@ -205,7 +205,7 @@ function StarterSetPage() {
       </section>
 
       {/* 11 Signup */}
-      <section id="signup" className="scroll-mt-24 bg-noob-rosa">
+      <section id="signup" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className={section}>
           {available ? (
             <>
