@@ -10,6 +10,8 @@ import { offersContent } from "@/lib/offers-content";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v2.webp.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v2.webp.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
@@ -42,6 +44,13 @@ function NoobClub() {
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
+          <img
+            src={lang === "en" ? logoEnAsset.url : logoDeAsset.url}
+            alt={`${t.brand}: ${t.headerSubtitle}`}
+            className="mx-auto mb-10 block h-auto w-full max-w-3xl md:mb-12"
+            width={1920}
+            height={640}
+          />
           <div className="grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,20rem)]">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground/75">
