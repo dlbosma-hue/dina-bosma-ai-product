@@ -5,8 +5,6 @@ import { noobClub } from "@/config/noobClub";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de.png.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en.png.asset.json";
 import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
@@ -132,27 +130,60 @@ function NoobClub() {
 
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
-        <div className="relative mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
-          <h1 className="sr-only">{t.brand}</h1>
-          <img
-            src={lang === "de" ? logoDeAsset.url : logoEnAsset.url}
-            alt={`${t.brand}. ${t.tagline}`}
-            className="h-auto w-full max-w-2xl"
-          />
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">
-            {t.heroLead}
-          </p>
-          <div className="mt-8 rounded-3xl bg-noob-surface p-6 md:p-8">
-            <h2 className="mb-4 text-xs uppercase tracking-[0.24em] text-foreground/60">
-              {t.heroFor}
-            </h2>
-            <ul className="grid gap-3 md:grid-cols-2">
-              {t.forItems.map((item) => (
-                <li key={item} className="flex gap-3 text-base leading-relaxed text-foreground/85">
-                  <span
-                    aria-hidden
-                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-primary"
-                  />
+        <div className="mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
+          <div className="grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,20rem)]">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground/60">
+                {t.heroLabel}
+              </p>
+              <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
+                {t.heroTitle}
+              </h1>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-foreground/80">
+                {t.heroSubline}
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="#checkliste" className={btnPrimary}>{t.heroPrimary}</a>
+                <a
+                  href="#starterset"
+                  className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  {t.heroSecondary}
+                </a>
+              </div>
+              <p className="mt-4 text-sm text-foreground/65">{t.heroFounder}</p>
+            </div>
+            <div className="relative z-0 mt-2 md:mt-0">
+              <div aria-hidden className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-noob-rosa" />
+              <img
+                src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
+                alt={t.meetYourHostAlt}
+                className="relative w-full rounded-3xl"
+                width={1168}
+                height={1347}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Für wen */}
+      <section id="fuer-wen" className="bg-noob-rosa">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.forTitle}</h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {t.forCards.map((card) => (
+              <article key={card} className="rounded-3xl bg-noob-cream p-6 shadow-sm">
+                <p className="text-base leading-relaxed text-foreground/85">{card}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-6 rounded-3xl border border-foreground/10 bg-noob-cream/70 p-6">
+            <h3 className="font-serif text-2xl leading-snug">{t.notForTitle}</h3>
+            <ul className="mt-3 space-y-2">
+              {t.notForItems.map((item) => (
+                <li key={item} className="flex gap-3 text-base leading-relaxed text-foreground/80">
+                  <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/40" />
                   <span>{item}</span>
                 </li>
               ))}

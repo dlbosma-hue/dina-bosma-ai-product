@@ -1,8 +1,9 @@
 export type NoobLang = "en" | "de";
 
 type NoobStrings = {
-  badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string; heroLead: string; heroFor: string;
-  forItems: string[];
+  badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string;
+  heroLabel: string; heroTitle: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
+  forTitle: string; forCards: string[]; notForTitle: string; notForItems: string[];
   shopTitle: string; shopParagraphs: string[]; shopCta: string;
   productEyebrow: string; productTitle: string; productBody: string; productBullets: string[]; productCta: string; productAlt: string;
   waitlistTitle: string; waitlistLead: string; meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
@@ -23,14 +24,24 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     tagline: "AI basics for women with a business.",
     welcome: "Welcome to the AI Noob Club",
     heroShopCta: "Shop",
-    heroLead:
-      "AI basics for women entrepreneurs and leaders with a small business. You do almost everything yourself. Start small and use AI in your business, without losing your voice or the human touch.",
-    heroFor: "Made for",
-    forItems: [
-      "Women entrepreneurs who are completely new to AI",
-      "Women running a small business with little time and a lot on their plate",
-      "Female leaders who want support with emails, content and weekly planning",
-      "Women who worry about robotic writing or exposing customer data",
+    heroLabel: "AI Noob Club",
+    heroTitle: "AI for female entrepreneurs. Even when you start from zero.",
+    heroSubline:
+      "You do almost everything alone and have little time. Here you learn step by step how AI can help your business. Without sounding like a robot.",
+    heroPrimary: "Free content-week checklist",
+    heroSecondary: "To the Starter Set",
+    heroFounder: "From Dina in Berlin. Product manager, now AI consultant, self-employed with a small child.",
+    forTitle: "This is for you if you ...",
+    forCards: [
+      "... you run a small business or create content. And you do almost everything alone.",
+      "... you have tried AI before, but you do not use it regularly yet.",
+      "... you have little time and do not want to learn yet another tool you forget after a week.",
+      "... you worry that texts sound robotic or that customer data is not safe.",
+    ],
+    notForTitle: "Probably not for you if ...",
+    notForItems: [
+      "... you already build your own AI assistants.",
+      "... you expect finished results without thinking along yourself.",
     ],
     shopTitle: "Shop.",
     shopParagraphs: [
@@ -126,14 +137,24 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     tagline: "KI-Basics für Frauen mit eigenem Business.",
     welcome: "Willkommen im AI Noob Club",
     heroShopCta: "Shop",
-    heroLead:
-      "KI-Basics für Unternehmerinnen und Frauen mit kleinem Business. Du machst fast alles allein. Starte klein und nutze KI in deinem Business, ohne deine Stimme und Menschlichkeit zu verlieren.",
-    heroFor: "Für wen",
-    forItems: [
-      "Unternehmerinnen, die komplette KI-Einsteigerinnen sind",
-      "Frauen mit kleinem Business, wenig Zeit und vielen Aufgaben",
-      "Frauen in Führungsrollen, die Unterstützung bei Mails, Inhalten und Wochenplanung suchen",
-      "Frauen, die Sorge vor roboterhaften Texten oder gefährdeten Kundendaten haben",
+    heroLabel: "AI Noob Club",
+    heroTitle: "KI für Unternehmerinnen. Auch wenn du bei null startest.",
+    heroSubline:
+      "Du machst fast alles allein und hast wenig Zeit. Hier lernst du Schritt für Schritt, wie KI dir im Business hilft. Ohne dass du wie ein Roboter klingst.",
+    heroPrimary: "Gratis Content-Woche-Checkliste",
+    heroSecondary: "Zum Starter-Set",
+    heroFounder: "Von Dina aus Berlin. Produktmanagerin, jetzt KI-Beraterin, selbstständig mit kleinem Kind.",
+    forTitle: "Das hier ist für dich, wenn du ...",
+    forCards: [
+      "... ein kleines Business führst oder Content machst. Und fast alles allein.",
+      "... KI schon mal probiert hast, aber noch nicht regelmäßig nutzt.",
+      "... wenig Zeit hast und nicht noch ein Tool lernen willst, das du nach einer Woche vergisst.",
+      "... dir Sorgen machst, dass Texte nach Roboter klingen oder Kundendaten nicht sicher sind.",
+    ],
+    notForTitle: "Eher nichts für dich, wenn ...",
+    notForItems: [
+      "... du schon eigene KI-Assistentinnen baust.",
+      "... du fertige Ergebnisse erwartest, ohne selbst mitzudenken.",
     ],
     shopTitle: "Shop.",
     shopParagraphs: [
