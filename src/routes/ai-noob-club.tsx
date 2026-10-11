@@ -219,7 +219,8 @@ function NoobClub() {
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {/* Card 1: Instagram-Kit */}
             <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
-              <h3 className="font-serif text-3xl leading-snug">{t.kitTitle}</h3>
+              <span className={`${pillClass} self-start`}>{t.kitSoonTag}</span>
+              <h3 className="mt-4 font-serif text-3xl leading-snug">{t.kitTitle}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{t.kitBody}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {t.kitTags.map((tag) => (
