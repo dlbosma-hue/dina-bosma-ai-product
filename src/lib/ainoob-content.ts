@@ -51,7 +51,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Guides and templates that need no technical knowledge. Your voice stays yours. You check every text yourself and enter no customer data.",
     shopAllCta: "To the full shop",
-    kitTitle: "Content-Week-Kit",
+    kitTitle: "Instagram-Kit",
     kitBody: "Captions and visuals for Instagram, step by step.",
     kitTags: ["German and English", "Instant download"],
     kitEtsyCta: "View on Etsy",
@@ -108,7 +108,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         body: "You use AI for the tasks that eat your time.",
         learn: ["Customer emails", "Captions and newsletters", "Offers", "Weekly planning"],
         status: "available",
-        cta: "Go to the Content Week Kit",
+        cta: "Go to the Instagram Kit",
         href: "#shop",
       },
       {
@@ -172,7 +172,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Anleitungen und Vorlagen, für die du kein Technikwissen brauchst. Deine Stimme bleibt deine. Du prüfst jeden Text selbst und gibst keine Kundendaten ein.",
     shopAllCta: "Zum ganzen Shop",
-    kitTitle: "Content-Week-Kit",
+    kitTitle: "Instagram-Kit",
     kitBody: "Captions und Visuals für Instagram, Schritt für Schritt.",
     kitTags: ["Deutsch und Englisch", "Sofort als Download"],
     kitEtsyCta: "Bei Etsy ansehen",
@@ -229,7 +229,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         body: "Du nutzt KI bei den Aufgaben, die dir Zeit fressen.",
         learn: ["Kundinnenmails", "Captions und Newsletter", "Angebote", "Wochenplanung"],
         status: "available",
-        cta: "Zum Content-Week-Kit",
+        cta: "Zum Instagram-Kit",
         href: "#shop",
       },
       {
