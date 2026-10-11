@@ -4,8 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de-v2.webp.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en-v2.webp.asset.json";
+import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
 
 export const btnPrimary =
   "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
@@ -43,7 +42,7 @@ export function NoobHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 md:px-8">
         <div className="flex min-w-0 flex-col items-start">
           <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-            <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="block h-auto w-[210px] max-w-full md:w-[240px]" width={720} height={240} />
+            <img src={badgeAsset.url} alt={t.brand} className="noob-badge block h-16 w-16 md:h-20 md:w-20" width={768} height={768} />
           </Link>
           <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
         </div>
