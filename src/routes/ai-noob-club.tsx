@@ -5,6 +5,8 @@ import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
 import { startersetContent } from "@/lib/starterset-content";
+import { checklistContent } from "@/lib/checklist-content";
+import { ChecklistPreview } from "@/components/noob/ChecklistPreview";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.png.asset.json";
@@ -55,6 +57,7 @@ function NoobClub() {
   const { lang } = useLanguage();
   const t = noobContent[lang];
   const st = startersetContent[lang];
+  const ck = checklistContent[lang];
   const pillClass =
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
   const statusLabel = (s: "free" | "available" | "starter") =>
@@ -134,6 +137,18 @@ function NoobClub() {
         </div>
       </section>
 
+      {/* Checkliste */}
+      <section id="checkliste" className="scroll-mt-24 bg-noob-rosa">
+        <div className="mx-auto grid max-w-5xl items-center gap-10 px-6 py-12 md:grid-cols-[1fr_16rem] md:px-10 md:py-16">
+          <div>
+            <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ck.title}</h2>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{ck.body}</p>
+            <div className="mt-8"><WaitlistForm t={t} source="checkliste" submitLabel={ck.cta} /></div>
+          </div>
+          <ChecklistPreview label={ck.preview} alt={ck.previewAlt} />
+        </div>
+      </section>
+
       {/* Shop */}
       <section id="shop" className="scroll-mt-24 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
@@ -208,7 +223,7 @@ function NoobClub() {
               width={1168}
               height={1347}
             />
-            <WaitlistForm t={t} />
+            <WaitlistForm t={t} source="waitlist" />
           </div>
         </div>
       </section>
