@@ -4,8 +4,9 @@ type NoobStrings = {
   badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string;
   heroLabel: string; heroTitle: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
   forTitle: string; forCards: string[]; notForTitle: string; notForItems: string[];
-  shopTitle: string; shopParagraphs: string[]; shopCta: string;
-  productEyebrow: string; productTitle: string; productBody: string; productBullets: string[]; productCta: string; productAlt: string;
+  shopTitle: string; shopIntro: string; shopAllCta: string;
+  kitTitle: string; kitBody: string; kitTags: string[]; kitEtsyCta: string; kitGumroadCta: string;
+  productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
   waitlistTitle: string; waitlistLead: string; meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
@@ -46,16 +47,15 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "... you already build your own AI assistants.",
       "... you expect finished results without thinking along yourself.",
     ],
-    shopTitle: "Shop.",
-    shopParagraphs: [
-      "You know your business. AI is just new to you. These resources help you start with the basics, one step at a time.",
-      "Guides, templates and checklists for women entrepreneurs with a small business. No technical background needed.",
-      "Work on customer emails, captions, offers, newsletters and weekly planning. Explore authentic AI photos for your business.",
-      "Your voice stays yours. Learn to check what AI writes and keep customer data out of your requests.",
-      "No pressure to learn everything at once. Start with one task that matters to your business.",
-    ],
-    shopCta: "Visit the shop",
-    productEyebrow: "New in the shop",
+    shopTitle: "To get started: small helpers for everyday life",
+    shopIntro:
+      "Guides and templates that need no technical knowledge. Your voice stays yours. You check every text yourself and enter no customer data.",
+    shopAllCta: "To the full shop",
+    kitTitle: "Content-Week-Kit",
+    kitBody: "Captions and visuals for Instagram, step by step.",
+    kitTags: ["German and English", "Instant download"],
+    kitEtsyCta: "View on Etsy",
+    kitGumroadCta: "View on Gumroad",
     productTitle: "99 Prompts for Authentic AI Photos",
     productBody:
       "A PDF with 99 ready-to-use instructions for authentic AI photos. Describe yourself, choose a scene and adjust the light and style. Always label your AI twin as AI-generated.",
@@ -64,8 +64,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Works in most AI image tools",
       "Personal and commercial use of the images you create",
     ],
+    productTags: ["PDF in English"],
     productCta: "View on Etsy",
     productAlt: "99 Prompts for Authentic AI Photos, digital PDF prompt pack by AI Noob Club",
+    productNote: "I always label images with AI avatars or AI photos as AI. You should do the same.",
     waitlistTitle: "Join the waitlist.",
     waitlistLead:
       "The first course for women entrepreneurs who are new to AI is taking shape. Leave your email for workshop and course updates, plus a few starter tips.",
@@ -181,16 +183,15 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "... du schon eigene KI-Assistentinnen baust.",
       "... du fertige Ergebnisse erwartest, ohne selbst mitzudenken.",
     ],
-    shopTitle: "Shop.",
-    shopParagraphs: [
-      "Du kennst dein Business. KI ist nur neu für dich. Hier findest du Unterstützung für deinen Start mit den Basics. Schritt für Schritt.",
-      "Leitfäden, Vorlagen und Checklisten für Unternehmerinnen mit kleinem Business. Du brauchst keine technischen Vorkenntnisse.",
-      "Es geht um Kundinnenmails, Captions, Angebote, Newsletter und deine Wochenplanung. Auch authentische KI-Fotos für dein Business gehören dazu.",
-      "Deine Stimme bleibt deine. Du lernst, KI-Texte zu prüfen und keine Kundendaten in deine Anfragen einzugeben.",
-      "Kein Druck, alles auf einmal zu lernen. Starte mit einer Aufgabe, die für dein Business wichtig ist.",
-    ],
-    shopCta: "Zum Shop",
-    productEyebrow: "Neu im Shop",
+    shopTitle: "Zum Starten: kleine Hilfen für den Alltag",
+    shopIntro:
+      "Anleitungen und Vorlagen, für die du kein Technikwissen brauchst. Deine Stimme bleibt deine. Du prüfst jeden Text selbst und gibst keine Kundendaten ein.",
+    shopAllCta: "Zum ganzen Shop",
+    kitTitle: "Content-Week-Kit",
+    kitBody: "Captions und Visuals für Instagram, Schritt für Schritt.",
+    kitTags: ["Deutsch und Englisch", "Sofort als Download"],
+    kitEtsyCta: "Bei Etsy ansehen",
+    kitGumroadCta: "Bei Gumroad ansehen",
     productTitle: "99 Prompts für authentische KI-Fotos",
     productBody:
       "Ein PDF mit 99 fertigen Anweisungen für authentische KI-Fotos. Beschreibe dich, wähle eine Szene und passe Licht und Stil an. Kennzeichne deinen KI-Twin immer als KI-generiert.",
@@ -199,8 +200,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Funktioniert in den meisten KI-Bild-Tools",
       "Private und kommerzielle Nutzung der erstellten Bilder",
     ],
+    productTags: ["PDF auf Englisch"],
     productCta: "Auf Etsy ansehen",
     productAlt: "99 Prompts für authentische KI-Fotos, digitales PDF-Prompt-Paket vom AI Noob Club",
+    productNote: "Bilder mit KI-Avataren oder KI-Fotos kennzeichne ich immer als KI. Du solltest das auch tun.",
     waitlistTitle: "Auf die Warteliste.",
     waitlistLead:
       "Der erste Kurs für Unternehmerinnen, die neu bei KI sind, entsteht gerade. Mit deiner E-Mail bekommst du Infos zu Workshops und Kursen. Dazu ein paar Tipps für deinen Start.",
