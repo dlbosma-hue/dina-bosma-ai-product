@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
-import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v2.webp.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v2.webp.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club-anmeldung")({
   component: SignupPage,
@@ -110,12 +111,11 @@ function SignupPage() {
   }
 
   return (
-    <main className="min-h-screen bg-noob-paper text-foreground">
+    <main className="noob-theme min-h-screen bg-noob-paper text-foreground">
       <header className="sticky top-0 z-40 border-b border-primary/10 bg-noob-paper/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-6 py-2 md:px-10">
           <Link to="/ai-noob-club" className="flex items-center gap-3">
-            <img src={badgeAsset.url} alt="" aria-hidden className="noob-badge h-12 w-12" width={256} height={256} />
-            <span className="font-serif text-lg">AI Noob Club</span>
+            <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={lang === "en" ? "AI Noob Club" : "Der KI Noob Club"} className="h-auto w-[210px] max-w-full md:w-[240px]" width={720} height={240} />
           </Link>
           <button
             type="button"
