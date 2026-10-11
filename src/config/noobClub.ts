@@ -17,7 +17,8 @@ export const noobClub = {
   showWiderruf: false,
   links: {
     etsyShop: "https://www.etsy.com/shop/TheAINoobClub",
-    etsyKit: "https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic",
+    etsyKit: "",
+    etsyPrompts: "https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic",
     gumroadKit: "",
     instagram: "",
     newsletterUrl: "",
