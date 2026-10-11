@@ -51,7 +51,8 @@ export const Route = createFileRoute("/ai-noob-club")({
   }),
 });
 
-
+const extBtn =
+  "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 
 function NoobClub() {
   const { lang } = useLanguage();
@@ -113,7 +114,7 @@ function NoobClub() {
       </section>
 
       {/* Für wen */}
-      <section id="fuer-wen" className="bg-noob-rosa">
+      <section id="fuer-wen" className="scroll-mt-24 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.forTitle}</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -133,97 +134,6 @@ function NoobClub() {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Checkliste */}
-      <section id="checkliste" className="scroll-mt-24 bg-noob-rosa">
-        <div className="mx-auto grid max-w-5xl items-center gap-10 px-6 py-12 md:grid-cols-[1fr_16rem] md:px-10 md:py-16">
-          <div>
-            <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ck.title}</h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{ck.body}</p>
-            <div className="mt-8"><WaitlistForm t={t} source="checkliste" submitLabel={ck.cta} /></div>
-          </div>
-          <ChecklistPreview label={ck.preview} alt={ck.previewAlt} />
-        </div>
-      </section>
-
-      {/* Shop */}
-      <section id="shop" className="scroll-mt-24 bg-noob-rosa">
-        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
-          <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-foreground/85">
-            {t.shopParagraphs.map((p) => (
-              <p key={p.slice(0, 24)}>{p}</p>
-            ))}
-          </div>
-          <a
-            href={noobClub.links.etsyShop}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            {t.shopCta}
-            <span aria-hidden>→</span>
-          </a>
-
-          {/* Featured product */}
-          <article className="mt-10 grid items-center gap-8 rounded-3xl bg-noob-paper p-6 md:grid-cols-[minmax(0,20rem)_1fr] md:p-8">
-            <img
-              src={etsyProductAsset.url}
-              alt={t.productAlt}
-              className="w-full max-w-xs rounded-2xl"
-              width={1264}
-              height={1264}
-            />
-            <div>
-              <p className="mb-2 text-xs uppercase tracking-[0.24em] text-foreground/55">
-                {t.productEyebrow}
-              </p>
-              <h3 className="font-serif text-3xl leading-snug">{t.productTitle}</h3>
-              <p className="mt-3 text-base leading-relaxed text-foreground/80">{t.productBody}</p>
-              <ul className="mt-4 space-y-2">
-                {t.productBullets.map((b) => (
-                  <li key={b} className="flex gap-3 text-base text-foreground/85">
-                    <span
-                      aria-hidden
-                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-noob-terracotta"
-                    />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={noobClub.links.etsyKit}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-              >
-                {t.productCta}
-                <span aria-hidden>→</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      {/* Waitlist */}
-      <section id="waitlist" className="scroll-mt-24 bg-noob-cream">
-        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.waitlistTitle}</h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
-            {t.waitlistLead}
-          </p>
-          <div className="mt-8 grid items-center gap-8 md:grid-cols-[minmax(0,22rem)_1fr]">
-            <img
-              src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
-              alt={t.meetYourHostAlt}
-              className="w-full max-w-[22rem] rounded-2xl"
-              width={1168}
-              height={1347}
-            />
-            <WaitlistForm t={t} source="waitlist" />
           </div>
         </div>
       </section>
@@ -291,6 +201,103 @@ function NoobClub() {
         </div>
       </section>
 
+      {/* Checkliste */}
+      <section id="checkliste" className="scroll-mt-24 bg-noob-rosa">
+        <div className="mx-auto grid max-w-5xl items-center gap-10 px-6 py-12 md:grid-cols-[1fr_16rem] md:px-10 md:py-16">
+          <div>
+            <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ck.title}</h2>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{ck.body}</p>
+            <div className="mt-8"><WaitlistForm t={t} source="checkliste" submitLabel={ck.cta} /></div>
+          </div>
+          <ChecklistPreview label={ck.preview} alt={ck.previewAlt} />
+        </div>
+      </section>
+
+      {/* Shop */}
+      <section id="shop" className="scroll-mt-24 bg-noob-cream">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{t.shopIntro}</p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {/* Card 1: Content-Week-Kit */}
+            <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <h3 className="font-serif text-3xl leading-snug">{t.kitTitle}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{t.kitBody}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {t.kitTags.map((tag) => (
+                  <span key={tag} className={pillClass}>{tag}</span>
+                ))}
+              </div>
+              <div className="flex-1" />
+              <div className="mt-6 flex flex-wrap gap-3">
+                {noobClub.links.etsyKit && (
+                  <a href={noobClub.links.etsyKit} target="_blank" rel="noreferrer" className={extBtn}>
+                    {t.kitEtsyCta}
+                  </a>
+                )}
+                {noobClub.links.gumroadKit && (
+                  <a
+                    href={noobClub.links.gumroadKit}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  >
+                    {t.kitGumroadCta}
+                  </a>
+                )}
+              </div>
+            </article>
+
+            {/* Card 2: 99 Prompts */}
+            <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <img
+                src={etsyProductAsset.url}
+                alt={t.productAlt}
+                className="w-full max-w-56 rounded-2xl"
+                width={1264}
+                height={1264}
+              />
+              <h3 className="mt-5 font-serif text-3xl leading-snug">{t.productTitle}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{t.productBody}</p>
+              <ul className="mt-4 space-y-2">
+                {t.productBullets.map((b) => (
+                  <li key={b} className="flex gap-3 text-base text-foreground/85">
+                    <span
+                      aria-hidden
+                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-noob-terracotta"
+                    />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {t.productTags.map((tag) => (
+                  <span key={tag} className={pillClass}>{tag}</span>
+                ))}
+              </div>
+              <div className="flex-1" />
+              <div className="mt-6">
+                <a href={noobClub.links.etsyShop} target="_blank" rel="noreferrer" className={extBtn}>
+                  {t.productCta}
+                </a>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-foreground/65">{t.productNote}</p>
+            </article>
+          </div>
+
+          <a
+            href={noobClub.links.etsyShop}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-foreground underline underline-offset-4 hover:text-noob-terracotta"
+          >
+            {t.shopAllCta}
+            <span aria-hidden>→</span>
+          </a>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
@@ -310,6 +317,26 @@ function NoobClub() {
                 <p className="mt-3 text-base leading-relaxed text-foreground/80">{v.body}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Waitlist */}
+      <section id="waitlist" className="scroll-mt-24 bg-noob-rosa">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.waitlistTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
+            {t.waitlistLead}
+          </p>
+          <div className="mt-8 grid items-center gap-8 md:grid-cols-[minmax(0,22rem)_1fr]">
+            <img
+              src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
+              alt={t.meetYourHostAlt}
+              className="w-full max-w-[22rem] rounded-2xl"
+              width={1168}
+              height={1347}
+            />
+            <WaitlistForm t={t} source="waitlist" />
           </div>
         </div>
       </section>

@@ -234,3 +234,9 @@
   background-color: var(--noob-navy);
   color: var(--noob-cream);
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
