@@ -212,6 +212,7 @@
   --noob-surface: var(--noob-rosa);
   --background: var(--noob-cream);
   --foreground: var(--noob-navy);
+  --destructive: #9F1D12;
   --primary: var(--noob-terracotta);
   --primary-foreground: var(--noob-navy);
   --ring: var(--noob-navy);
