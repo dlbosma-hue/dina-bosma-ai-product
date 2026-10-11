@@ -62,6 +62,16 @@ function NoobClub() {
   const t = noobContent[lang];
   const [menuOpen, setMenuOpen] = useState(false);
   const close = () => setMenuOpen(false);
+  const pillClass =
+    "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
+  const statusLabel = (s: "free" | "available" | "starter") =>
+    s === "free"
+      ? t.statusFree
+      : s === "available"
+        ? t.statusAvailable
+        : noobClub.starterSet.status === "soon"
+          ? t.statusSoon
+          : t.statusAvailable;
 
   const langButton = (
     <button
@@ -193,7 +203,7 @@ function NoobClub() {
       </section>
 
       {/* Shop */}
-      <section className="bg-noob-rosa">
+      <section id="shop" className="scroll-mt-24 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <div className="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-foreground/85">
@@ -271,22 +281,56 @@ function NoobClub() {
         </div>
       </section>
 
-      {/* Offers */}
-      <section className="bg-noob-rosa"><div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-
-        <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
-          {t.offerEyebrow}
-        </p>
-        <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.offerTitle}</h2>
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {t.offers.map((o) => (
-            <article key={o.title} className="rounded-3xl bg-noob-cream p-6 shadow-sm">
-              <h3 className="font-serif text-2xl leading-snug">{o.title}</h3>
-              <p className="mt-3 text-base leading-relaxed text-foreground/80">{o.body}</p>
-            </article>
-          ))}
+      {/* Weg */}
+      <section id="weg" className="scroll-mt-24 bg-noob-cream">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.pathTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
+            {t.pathIntro}
+          </p>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {t.pathCards.map((card, i) => (
+              <article
+                key={card.title}
+                className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <span aria-hidden className="font-serif text-5xl leading-none text-noob-terracotta">
+                    {i + 1}
+                  </span>
+                  <span className={pillClass}>{statusLabel(card.status)}</span>
+                </div>
+                <h3 className="mt-4 font-serif text-2xl leading-snug">{card.title}</h3>
+                <p className="mt-2 text-base leading-relaxed text-foreground/80">{card.body}</p>
+                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-foreground/55">
+                  {t.learnLabel}
+                </p>
+                <ul className="mt-2 space-y-1.5">
+                  {card.learn.map((item) => (
+                    <li key={item} className="flex gap-2 text-base leading-relaxed text-foreground/85">
+                      <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-noob-terracotta" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex-1" />
+                <a href={card.href} className={`${btnPrimary} mt-6`}>{card.cta}</a>
+              </article>
+            ))}
+          </div>
+          <div className="mt-6 space-y-3">
+            {t.pathRows.map((row) => (
+              <div
+                key={row.text}
+                className="flex flex-wrap items-center justify-between gap-3 rounded-3xl border border-foreground/10 bg-noob-paper/70 px-5 py-3"
+              >
+                <p className="text-sm leading-relaxed text-foreground/80">{row.text}</p>
+                <span className={pillClass}>{t.statusLater}</span>
+              </div>
+            ))}
+          </div>
         </div>
-      </div></section>
+      </section>
 
       {/* Values */}
       <section className="bg-noob-cream">
