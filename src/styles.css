@@ -36,6 +36,7 @@
   --color-noob-navy: var(--noob-navy);
   --color-noob-cream: var(--noob-cream);
   --color-noob-rosa: var(--noob-rosa);
+  --color-noob-sky: var(--noob-sky);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -208,6 +209,7 @@
   --noob-terracotta: oklch(0.684 0.12 37);
   --noob-cream: oklch(0.966 0.02 78);
   --noob-rosa: oklch(0.889 0.043 20);
+  --noob-sky: oklch(0.89 0.045 235);
   --noob-paper: var(--noob-cream);
   --noob-blush: var(--noob-rosa);
   --noob-surface: var(--noob-rosa);
