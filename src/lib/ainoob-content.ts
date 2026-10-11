@@ -5,7 +5,7 @@ type NoobStrings = {
   heroLabel: string; heroTitle: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
   forTitle: string; forCards: string[]; notForTitle: string; notForItems: string[];
   shopTitle: string; shopIntro: string; shopAllCta: string;
-  kitTitle: string; kitBody: string; kitTags: string[]; kitEtsyCta: string; kitGumroadCta: string;
+  kitTitle: string; kitBody: string; kitSoonTag: string; kitTags: string[]; kitEtsyCta: string; kitGumroadCta: string;
   productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
   meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
@@ -54,6 +54,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopAllCta: "To the full shop",
     kitTitle: "Instagram-Kit",
     kitBody: "Captions and visuals for Instagram, step by step.",
+    kitSoonTag: "Coming soon",
     kitTags: ["German and English", "Instant download"],
     kitEtsyCta: "View on Etsy",
     kitGumroadCta: "View on Gumroad",
@@ -177,6 +178,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopAllCta: "Zum ganzen Shop",
     kitTitle: "Instagram-Kit",
     kitBody: "Captions und Visuals für Instagram, Schritt für Schritt.",
+    kitSoonTag: "Kommt bald",
     kitTags: ["Deutsch und Englisch", "Sofort als Download"],
     kitEtsyCta: "Bei Etsy ansehen",
     kitGumroadCta: "Bei Gumroad ansehen",
