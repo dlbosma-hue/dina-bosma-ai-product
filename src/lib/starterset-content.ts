@@ -2,12 +2,12 @@ import type { NoobLang } from "@/lib/ainoob-content";
 
 export const startersetContent = {
   de: {
-    teaserTitle: "Content-Woche-Assistentin",
+    teaserTitle: "Content-Assistentin",
     teaserBody: "Eine Assistentin, die deine Stimme kennt und deine Social-Media-Woche plant. Einmal einrichten, dann gehört sie dir.",
     statusSoon: "Kommt bald. Trag dich ein, dann schreibe ich dir, sobald es da ist.",
     statusAvailable: "Jetzt erhältlich.",
     teaserCta: "Alle Infos",
-    h1: "Content-Woche-Assistentin",
+    h1: "Content-Assistentin",
     subline: "Eine KI-Assistentin für deine Social-Media-Woche. Sie kennt deine Stimme, plant deine Beiträge und schreibt Entwürfe. Du richtest sie einmal ein.",
     infoDownload: "Digitaler Download",
     infoOnce: "Einmal zahlen, kein Abo",
@@ -53,12 +53,12 @@ export const startersetContent = {
     toolPending: "[Tool folgt]",
   },
   en: {
-    teaserTitle: "Content Week Assistant",
+    teaserTitle: "Content Assistant",
     teaserBody: "An assistant that knows your voice and plans your social media week. Set it up once, then it's yours.",
     statusSoon: "Coming soon. Sign up and I'll write to you as soon as it's ready.",
     statusAvailable: "Available now.",
     teaserCta: "All the details",
-    h1: "Content Week Assistant",
+    h1: "Content Assistant",
     subline: "An AI assistant for your social media week. It knows your voice, plans your posts and writes drafts. You set it up once.",
     infoDownload: "Digital download",
     infoOnce: "Pay once, no subscription",

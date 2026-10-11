@@ -6,9 +6,7 @@ import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
-import { startersetContent } from "@/lib/starterset-content";
-import { checklistContent } from "@/lib/checklist-content";
-import { ChecklistPreview } from "@/components/noob/ChecklistPreview";
+import { offersContent } from "@/lib/offers-content";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
@@ -25,8 +23,7 @@ function NoobClub() {
   useNoobMeta(noobMeta.home);
   const { lang } = useLanguage();
   const t = noobContent[lang];
-  const st = startersetContent[lang];
-  const ck = checklistContent[lang];
+  const ov = offersContent[lang];
   const pillClass =
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
   const statusLabel = (s: "free" | "available" | "starter") =>
@@ -82,7 +79,7 @@ function NoobClub() {
       </section>
 
       {/* Für wen */}
-      <section id="fuer-wen" className="scroll-mt-24 bg-noob-rosa">
+      <section id="fuer-wen" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.forTitle}</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -107,7 +104,7 @@ function NoobClub() {
       </section>
 
       {/* Weg */}
-      <section id="weg" className="scroll-mt-24 bg-noob-cream">
+      <section id="weg" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.pathTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
@@ -157,32 +154,29 @@ function NoobClub() {
         </div>
       </section>
 
-      {/* Starter-Set teaser */}
-      <section id="starterset" className="noob-dark scroll-mt-24">
+      {/* Angebote */}
+      <section id="angebote" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{st.teaserTitle}</h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed">{st.teaserBody}</p>
-          <p className="mt-3 text-base opacity-85">
-            {noobClub.starterSet.status === "available" ? st.statusAvailable : st.statusSoon}
-          </p>
-          <Link to="/ai-noob-club/starter-set" className={`${btnPrimary} mt-8`}>{st.teaserCta}</Link>
-        </div>
-      </section>
-
-      {/* Checkliste */}
-      <section id="checkliste" className="scroll-mt-24 bg-noob-rosa">
-        <div className="mx-auto grid max-w-5xl items-center gap-10 px-6 py-12 md:grid-cols-[1fr_16rem] md:px-10 md:py-16">
-          <div>
-            <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ck.title}</h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{ck.body}</p>
-            <div className="mt-8"><WaitlistForm t={t} source="checkliste" submitLabel={ck.cta} /></div>
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.title}</h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article id="checkliste" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <span className={`${pillClass} self-start`}>{ov.freeTag}</span>
+              <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.sheetName}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.sheetBody}</p>
+              <div className="mt-6"><WaitlistForm t={t} source="checkliste" submitLabel={ov.sheetCta} note={ov.sheetNote} /></div>
+            </article>
+            <article id="starterset" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <span className={`${pillClass} self-start`}>{ov.soonTag}</span>
+              <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.assistantName}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.assistantBody}</p>
+            </article>
           </div>
-          <ChecklistPreview label={ck.preview} alt={ck.previewAlt} />
+          <p className="mt-8 text-center font-serif text-xl leading-snug md:text-2xl">{ov.line}</p>
         </div>
       </section>
 
       {/* Shop */}
-      <section id="shop" className="scroll-mt-24 bg-noob-cream">
+      <section id="shop" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/85">{t.shopIntro}</p>
@@ -269,7 +263,7 @@ function NoobClub() {
       </section>
 
       {/* Values */}
-      <section id="werte" className="noob-dark scroll-mt-24">
+      <section id="werte" className="noob-dark scroll-mt-44 md:scroll-mt-48">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
           <ul className="mt-8 grid gap-6 md:grid-cols-2">

@@ -12,9 +12,9 @@ const copy = {
     email: "E-Mail-Adresse",
     consentA: {
       checkliste:
-        "Schick mir die Checkliste per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
+        "Schick mir den Wochen-Spickzettel per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
       starterset:
-        "Sag mir Bescheid, wenn das Starter-Set da ist. Abmeldung jederzeit. Mehr dazu in der ",
+        "Sag mir Bescheid, wenn die Content-Assistentin da ist. Abmeldung jederzeit. Mehr dazu in der ",
     },
     consentLink: "Datenschutzerklärung",
     note: "Kein Spam. Jederzeit abmeldbar.",
@@ -23,7 +23,7 @@ const copy = {
     errConsent: "Bitte setze den Haken, damit ich dir schreiben darf.",
     done: {
       checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail bei dir.",
-      starterset: "Danke. Ich schreibe dir, sobald das Starter-Set da ist.",
+      starterset: "Danke. Ich schreibe dir, sobald die Content-Assistentin da ist.",
     },
   },
   en: {
@@ -31,9 +31,9 @@ const copy = {
     email: "Email address",
     consentA: {
       checkliste:
-        "Send me the checklist by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
+        "Send me the Weekly Cheat Sheet by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
       starterset:
-        "Let me know when the Starter Set is ready. Unsubscribe any time. More in the ",
+        "Let me know when the Content Assistant is ready. Unsubscribe any time. More in the ",
     },
     consentLink: "privacy policy",
     note: "No spam. Unsubscribe any time.",
@@ -42,7 +42,7 @@ const copy = {
     errConsent: "Please tick the box so I'm allowed to email you.",
     done: {
       checkliste: "Thank you, you're in. I'll write to you by email.",
-      starterset: "Thank you. I'll write to you as soon as the Starter Set is ready.",
+      starterset: "Thank you. I'll write to you as soon as the Content Assistant is ready.",
     },
   },
 };
@@ -55,10 +55,12 @@ export function WaitlistForm({
   t,
   source,
   submitLabel,
+  note,
 }: {
   t: NoobContent;
   source: SignupSource;
   submitLabel?: string;
+  note?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<{ name?: boolean; email?: boolean; consent?: boolean }>({});
@@ -158,7 +160,7 @@ export function WaitlistForm({
         >
           {status === "sending" ? t.sending : (submitLabel ?? t.submit)}
         </button>
-        <span className="text-sm text-foreground/75">{c.note}</span>
+        <span className="text-sm text-foreground/75">{note ?? c.note}</span>
       </div>
       {status === "error" && <p role="alert" className="text-sm text-destructive">{t.error}</p>}
     </form>
