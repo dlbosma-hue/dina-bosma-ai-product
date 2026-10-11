@@ -42,7 +42,7 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
 
   if (status === "done") {
     return (
-      <div className="rounded-2xl bg-[oklch(0.955_0.028_40)] p-6 text-base text-foreground/85">
+      <div className="rounded-2xl bg-noob-surface p-6 text-base text-foreground/85">
         {t.success}
       </div>
     );
@@ -76,7 +76,7 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="rounded-full bg-[oklch(0.34_0.14_260)] px-7 py-3 text-base font-semibold text-[oklch(0.98_0.012_80)] transition-opacity hover:opacity-90 disabled:opacity-60"
+          className="inline-flex h-12 items-center rounded-full bg-primary px-7 text-base font-semibold text-primary-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60"
         >
           {status === "sending" ? t.sending : t.submit}
         </button>
