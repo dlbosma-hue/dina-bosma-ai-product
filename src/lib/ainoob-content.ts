@@ -10,7 +10,10 @@ type NoobStrings = {
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
   valuesEyebrow: string; valuesTitle: string; values: { title: string; body: string }[];
-  offerEyebrow: string; offerTitle: string; offers: { title: string; body: string }[];
+  pathTitle: string; pathIntro: string; learnLabel: string;
+  statusSoon: string; statusAvailable: string; statusFree: string; statusLater: string;
+  pathCards: { title: string; body: string; learn: string[]; status: "free" | "available" | "starter"; cta: string; href: string }[];
+  pathRows: { text: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
   headerSubtitle: string; navStarter: string; navChecklist: string; navWaitlist: string; menuOpen: string; menuClose: string;
@@ -96,21 +99,43 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         body: "No income promises. No made-up success stories. An AI twin is always labelled as AI-generated.",
       },
     ],
-    offerEyebrow: "For your business",
-    offerTitle: "Three ways to learn.",
-    offers: [
+    pathTitle: "Your path in three steps",
+    pathIntro:
+      "You do not have to be able to do everything at once. Start with the step that feels right right now.",
+    learnLabel: "You learn",
+    statusSoon: "Soon",
+    statusAvailable: "Available",
+    statusFree: "Free",
+    statusLater: "Later",
+    pathCards: [
       {
-        title: "AI workshops.",
-        body: "Small groups for women who are new to AI. Practise customer emails, captions and offers. Ask questions and work on your own business tasks.",
+        title: "Understand",
+        body: "You know what AI can and cannot do. And what happens with your data.",
+        learn: ["What a prompt is", "What AI is good at and what it is not", "Data-privacy basics for your business"],
+        status: "free",
+        cta: "Get the checklist",
+        href: "#checkliste",
       },
       {
-        title: "Self-paced online courses.",
-        body: "Short lessons, starting with the basics. Learn at your pace. Try newsletters, weekly planning and content in your own voice.",
+        title: "Apply",
+        body: "You use AI for the tasks that eat your time.",
+        learn: ["Customer emails", "Captions and newsletters", "Offers", "Weekly planning"],
+        status: "available",
+        cta: "Go to the Content Week Kit",
+        href: "#shop",
       },
       {
-        title: "One-on-one coaching.",
-        body: "Personal support for women entrepreneurs who are starting with AI. Bring your questions, your business tasks and your worries about customer data. We take it step by step.",
+        title: "Build",
+        body: "You build your own assistant that knows your voice.",
+        learn: ["Set up your own assistant", "Write down your voice", "Plan a week of content in one go"],
+        status: "starter",
+        cta: "To the Starter Set",
+        href: "#starterset",
       },
+    ],
+    pathRows: [
+      { text: "Workshops for all women, in Berlin and online. Coming later." },
+      { text: "Support: personal guidance in a small group or 1:1. Coming later, when there is demand." },
     ],
     consultingTitle: "Need support with your business workflows?",
     consultingBody:
@@ -209,21 +234,43 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         body: "Keine Einkommensversprechen. Keine erfundenen Erfolgsgeschichten. Ein KI-Twin wird immer als KI-generiert gekennzeichnet.",
       },
     ],
-    offerEyebrow: "Für dein Business",
-    offerTitle: "Drei Wege zu lernen.",
-    offers: [
+    pathTitle: "Dein Weg in drei Schritten",
+    pathIntro:
+      "Du musst nicht alles auf einmal können. Fang bei dem Schritt an, der sich gerade richtig anfühlt.",
+    learnLabel: "Du lernst",
+    statusSoon: "Bald",
+    statusAvailable: "Verfügbar",
+    statusFree: "Gratis",
+    statusLater: "Später",
+    pathCards: [
       {
-        title: "KI-Workshops.",
-        body: "Kleine Gruppen für Frauen, die neu bei KI sind. Wir üben Kundinnenmails, Captions und Angebote. Du stellst Fragen und arbeitest an Aufgaben aus deinem Business.",
+        title: "Verstehen",
+        body: "Du weißt, was KI kann und was nicht. Und was mit deinen Daten passiert.",
+        learn: ["Was ein Prompt ist", "Was KI gut kann und was nicht", "Datenschutz-Basics für dein Business"],
+        status: "free",
+        cta: "Checkliste holen",
+        href: "#checkliste",
       },
       {
-        title: "Selbstlernkurse online.",
-        body: "Kurze Lektionen, beginnend mit den Basics. Du lernst in deinem Tempo. Probiere Newsletter, Wochenplanung und Inhalte in deiner eigenen Stimme aus.",
+        title: "Anwenden",
+        body: "Du nutzt KI bei den Aufgaben, die dir Zeit fressen.",
+        learn: ["Kundinnenmails", "Captions und Newsletter", "Angebote", "Wochenplanung"],
+        status: "available",
+        cta: "Zum Content-Week-Kit",
+        href: "#shop",
       },
       {
-        title: "Einzelcoaching.",
-        body: "Persönliche Unterstützung für Unternehmerinnen beim KI-Einstieg. Bring deine Fragen, deine Aufgaben und deine Sorgen um Kundendaten mit. Wir gehen Schritt für Schritt vor.",
+        title: "Bauen",
+        body: "Du baust dir eine Assistentin, die deine Stimme kennt.",
+        learn: ["Eine eigene Assistentin einrichten", "Deine Stimme festhalten", "Eine Woche Content in einem Rutsch planen"],
+        status: "starter",
+        cta: "Zum Starter-Set",
+        href: "#starterset",
       },
+    ],
+    pathRows: [
+      { text: "Workshops für alle Frauen, in Berlin und online. Kommen später." },
+      { text: "Begleitung: persönliche Unterstützung in einer kleinen Gruppe oder 1:1. Kommt später, wenn der Bedarf da ist." },
     ],
     consultingTitle: "Du brauchst Unterstützung bei deinen Geschäftsabläufen?",
     consultingBody:
