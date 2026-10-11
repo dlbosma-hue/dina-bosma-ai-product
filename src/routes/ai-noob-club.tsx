@@ -9,9 +9,9 @@ import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome
 import { startersetContent } from "@/lib/starterset-content";
 import { checklistContent } from "@/lib/checklist-content";
 import { ChecklistPreview } from "@/components/noob/ChecklistPreview";
-import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
-import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
-import etsyProductAsset from "@/assets/etsy-99-prompts.png.asset.json";
+import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
+import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
+import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,

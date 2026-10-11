@@ -8,8 +8,8 @@ import { startersetContent } from "@/lib/starterset-content";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import meetYourHostEnAsset from "@/assets/meet-your-host-en.png.asset.json";
-import meetYourHostDeAsset from "@/assets/meet-your-host-de.png.asset.json";
+import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
+import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club_/starter-set")({
   component: StarterSetPage,
