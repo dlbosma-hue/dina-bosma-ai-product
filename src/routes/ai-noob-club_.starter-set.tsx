@@ -177,7 +177,6 @@ function StarterSetPage() {
             className="w-full max-w-[16rem] rounded-3xl"
             width={1168}
             height={1347}
-            loading="lazy"
           />
           <div>
             <h2 className={h2}>{s.aboutTitle}</h2>
