@@ -4,7 +4,7 @@ import { useLanguage } from "@/lib/i18n";
 
 type Status = "idle" | "sending" | "done" | "error";
 
-export function WaitlistForm({ t }: { t: NoobContent }) {
+export function WaitlistForm({ t, source }: { t: NoobContent; source?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const { lang } = useLanguage();
 
@@ -15,6 +15,7 @@ export function WaitlistForm({ t }: { t: NoobContent }) {
     const name = String(data.get("name") ?? "");
     const email = String(data.get("email") ?? "");
     data.append("_subject", "AI Noob Club waitlist");
+    if (source) data.append("source", source);
     setStatus("sending");
     try {
       const res = await fetch("https://formspree.io/f/maqkylpb", {
