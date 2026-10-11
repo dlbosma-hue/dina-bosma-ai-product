@@ -34,7 +34,8 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "You do almost everything alone and have little time. Here you learn step by step how AI can help your business. Without sounding like a robot.",
     heroPrimary: "Free content-week checklist",
     heroSecondary: "To the Starter Set",
-    heroFounder: "From Dina in Berlin. Product manager, now AI consultant, self-employed with a small child.",
+    heroFounder:
+      "Hi, I'm Dina from Berlin. I used to be a product manager and today I help women with small businesses use AI step by step. I run my own business, I have a small child and little time. Maybe just like you.",
     forTitle: "This is for you if ...",
     forCards: [
       "... you run a small business or create content. And you do almost everything alone.",
@@ -155,7 +156,8 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Du machst fast alles allein und hast wenig Zeit. Hier lernst du Schritt für Schritt, wie KI dir im Business hilft. Ohne dass du wie ein Roboter klingst.",
     heroPrimary: "Gratis Content-Woche-Checkliste",
     heroSecondary: "Zum Starter-Set",
-    heroFounder: "Von Dina aus Berlin. Produktmanagerin, jetzt KI-Beraterin, selbstständig mit kleinem Kind.",
+    heroFounder:
+      "Hi, ich bin Dina aus Berlin. Ich war Produktmanagerin und helfe heute Frauen mit kleinem Business, KI Schritt für Schritt zu nutzen. Ich bin selbstständig, habe ein kleines Kind und wenig Zeit. Genau wie du vielleicht.",
     forTitle: "Das hier ist für dich, wenn ...",
     forCards: [
       "... du ein kleines Business führst oder Content machst. Und fast alles allein.",
