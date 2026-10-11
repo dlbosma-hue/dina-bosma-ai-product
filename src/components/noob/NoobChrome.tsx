@@ -6,7 +6,6 @@ import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de-v2.webp.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en-v2.webp.asset.json";
-import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
 
 export const btnPrimary =
   "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
@@ -41,22 +40,20 @@ export function NoobHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-noob-rosa bg-noob-cream">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-2 md:px-10">
-        <div className="flex items-center gap-3">
-          <Link to="/ai-noob-club" hash="top" className="shrink-0 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-            <img src={badgeAsset.url} alt={t.brand} className="h-12 w-12 sm:hidden" width={256} height={256} />
-            <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="hidden h-14 w-auto sm:block" width={720} height={240} />
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 md:px-8">
+        <div className="flex min-w-0 flex-col items-start">
+          <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+            <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="block h-auto w-[210px] max-w-full md:w-[240px]" width={720} height={240} />
           </Link>
-          <span className="flex flex-col leading-tight">
-            <span className="text-xs font-medium uppercase tracking-[0.12em] text-foreground sm:sr-only">{t.headerSubtitle}</span>
-            <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
-          </span>
+          <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
           {langButton}
           {textLinks}
           <Link to="/ai-noob-club" hash="waitlist" className={btnPrimary}>{t.navWaitlist}</Link>
         </nav>
+        <div className="flex shrink-0 items-center gap-2 lg:hidden">
+        {langButton}
         <button
           type="button"
           onClick={() => setMenuOpen((o) => !o)}
@@ -67,11 +64,11 @@ export function NoobHeader() {
         >
           {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
+        </div>
       </div>
       {menuOpen && (
         <nav id="noob-menu" className="border-t border-noob-rosa bg-noob-cream px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
           <div className="flex flex-col gap-1">
-            <div className="py-1">{langButton}</div>
             {textLinks}
             <Link to="/ai-noob-club" hash="waitlist" onClick={close} className={`${btnPrimary} mt-3 w-full`}>{t.navWaitlist}</Link>
           </div>
