@@ -35,7 +35,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     heroPrimary: "Free content-week checklist",
     heroSecondary: "To the Starter Set",
     heroFounder: "From Dina in Berlin. Product manager, now AI consultant, self-employed with a small child.",
-    forTitle: "This is for you if you ...",
+    forTitle: "This is for you if ...",
     forCards: [
       "... you run a small business or create content. And you do almost everything alone.",
       "... you have tried AI before, but you do not use it regularly yet.",
@@ -156,12 +156,12 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     heroPrimary: "Gratis Content-Woche-Checkliste",
     heroSecondary: "Zum Starter-Set",
     heroFounder: "Von Dina aus Berlin. Produktmanagerin, jetzt KI-Beraterin, selbstständig mit kleinem Kind.",
-    forTitle: "Das hier ist für dich, wenn du ...",
+    forTitle: "Das hier ist für dich, wenn ...",
     forCards: [
-      "... ein kleines Business führst oder Content machst. Und fast alles allein.",
-      "... KI schon mal probiert hast, aber noch nicht regelmäßig nutzt.",
-      "... wenig Zeit hast und nicht noch ein Tool lernen willst, das du nach einer Woche vergisst.",
-      "... dir Sorgen machst, dass Texte nach Roboter klingen oder Kundendaten nicht sicher sind.",
+      "... du ein kleines Business führst oder Content machst. Und fast alles allein.",
+      "... du KI schon mal probiert hast, aber noch nicht regelmäßig nutzt.",
+      "... du wenig Zeit hast und nicht noch ein Tool lernen willst, das du nach einer Woche vergisst.",
+      "... du dir Sorgen machst, dass Texte nach Roboter klingen oder Kundendaten nicht sicher sind.",
     ],
     notForTitle: "Eher nichts für dich, wenn ...",
     notForItems: [
