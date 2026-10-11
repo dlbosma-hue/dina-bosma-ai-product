@@ -13,6 +13,9 @@ const copy = {
     consentA: "Ich möchte den AI-Noob-Club-Newsletter bekommen, etwa eine E-Mail pro Woche. Ich kann mich jederzeit abmelden. Mehr dazu in der ",
     consentLink: "Datenschutzerklärung",
     note: "Kein Spam. Jederzeit abmeldbar.",
+    errName: "Bitte gib deinen Vornamen ein.",
+    errEmail: "Bitte gib eine gültige E-Mail-Adresse ein.",
+    errConsent: "Bitte setze den Haken, damit wir dir schreiben dürfen.",
     done: "Fast geschafft. Bitte bestätige deine E-Mail-Adresse. Wir haben dir eine E-Mail geschickt.",
   },
   en: {
@@ -21,6 +24,9 @@ const copy = {
     consentA: "I'd like to get the AI Noob Club newsletter, about one email a week. I can unsubscribe at any time. More in the ",
     consentLink: "privacy policy",
     note: "No spam. Unsubscribe any time.",
+    errName: "Please enter your first name.",
+    errEmail: "Please enter a valid email address.",
+    errConsent: "Please tick the box so we're allowed to email you.",
     done: "Almost done. Please confirm your email address. We sent you an email.",
   },
 };
@@ -39,6 +45,7 @@ export function WaitlistForm({
   submitLabel?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
+  const [errors, setErrors] = useState<{ name?: boolean; email?: boolean; consent?: boolean }>({});
   const { lang } = useLanguage();
   const c = copy[lang];
   const id = `signup-${source}`;
@@ -49,7 +56,13 @@ export function WaitlistForm({
     const data = new FormData(form);
     const name = String(data.get("name") ?? "").trim().slice(0, 100);
     const email = String(data.get("email") ?? "").trim().slice(0, 255);
-    if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !data.get("consent")) return;
+    const errs = { name: !name, email: !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email), consent: !data.get("consent") };
+    setErrors(errs);
+    if (errs.name || errs.email || errs.consent) {
+      const first = errs.name ? "name" : errs.email ? "email" : "consent";
+      (form.elements.namedItem(first) as HTMLElement | null)?.focus();
+      return;
+    }
     data.set("name", name);
     data.set("email", email);
     data.set("consent", "yes");
@@ -92,15 +105,17 @@ export function WaitlistForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-4">
+    <form onSubmit={onSubmit} noValidate className="space-y-4">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block" htmlFor={`${id}-name`}>
           <span className="mb-1.5 block text-sm text-foreground/80">{c.name}</span>
-          <input id={`${id}-name`} type="text" name="name" required maxLength={100} autoComplete="given-name" className={inputCls} />
+          <input id={`${id}-name`} type="text" name="name" required maxLength={100} autoComplete="given-name" aria-invalid={errors.name || undefined} aria-describedby={errors.name ? `${id}-name-err` : undefined} className={inputCls} />
+          {errors.name && <span id={`${id}-name-err`} className="mt-1 block text-sm font-medium text-destructive">{c.errName}</span>}
         </label>
         <label className="block" htmlFor={`${id}-email`}>
           <span className="mb-1.5 block text-sm text-foreground/80">{c.email}</span>
-          <input id={`${id}-email`} type="email" name="email" required maxLength={255} autoComplete="email" className={inputCls} />
+          <input id={`${id}-email`} type="email" name="email" required maxLength={255} autoComplete="email" aria-invalid={errors.email || undefined} aria-describedby={errors.email ? `${id}-email-err` : undefined} className={inputCls} />
+          {errors.email && <span id={`${id}-email-err`} className="mt-1 block text-sm font-medium text-destructive">{c.errEmail}</span>}
         </label>
       </div>
       <label className="flex gap-3 text-sm leading-relaxed text-foreground/85" htmlFor={`${id}-consent`}>
@@ -109,6 +124,8 @@ export function WaitlistForm({
           type="checkbox"
           name="consent"
           required
+          aria-invalid={errors.consent || undefined}
+          aria-describedby={errors.consent ? `${id}-consent-err` : undefined}
           className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-noob-navy,currentColor)] focus-visible:ring-2 focus-visible:ring-ring"
         />
         <span>
@@ -116,6 +133,7 @@ export function WaitlistForm({
           <Link to="/datenschutz" className="underline underline-offset-2">{c.consentLink}</Link>.
         </span>
       </label>
+      {errors.consent && <p id={`${id}-consent-err`} className="text-sm font-medium text-destructive">{c.errConsent}</p>}
       <div className="flex flex-col gap-2">
         <button
           type="submit"
@@ -126,7 +144,7 @@ export function WaitlistForm({
         </button>
         <span className="text-sm text-foreground/70">{c.note}</span>
       </div>
-      {status === "error" && <p className="text-sm text-destructive">{t.error}</p>}
+      {status === "error" && <p role="alert" className="text-sm text-destructive">{t.error}</p>}
     </form>
   );
 }
