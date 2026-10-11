@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Sparkles, Users, Leaf, ShieldCheck } from "lucide-react";
 import { noobClub } from "@/config/noobClub";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
@@ -299,25 +300,23 @@ function NoobClub() {
       </section>
 
       {/* Values */}
-      <section className="bg-noob-cream">
+      <section id="werte" className="noob-dark scroll-mt-24">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <p className="mb-3 text-xs uppercase tracking-[0.24em] text-foreground/55">
-            {t.valuesEyebrow}
-          </p>
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {t.values.map((v) => (
-              <article
-                key={v.title}
-                className="rounded-3xl border border-foreground/10 bg-noob-paper p-6"
-              >
-                <h3 className="font-serif text-2xl leading-snug text-noob-terracotta">
-                  {v.title}
-                </h3>
-                <p className="mt-3 text-base leading-relaxed text-foreground/80">{v.body}</p>
-              </article>
-            ))}
-          </div>
+          <ul className="mt-8 grid gap-6 md:grid-cols-2">
+            {t.values.map((v, i) => {
+              const Icon = [Sparkles, Users, Leaf, ShieldCheck][i] ?? Sparkles;
+              return (
+                <li key={v.title} className="flex gap-4">
+                  <Icon className="mt-1 h-6 w-6 shrink-0 text-noob-terracotta" aria-hidden />
+                  <div>
+                    <h3 className="font-serif text-xl leading-snug">{v.title}</h3>
+                    <p className="mt-2 text-base leading-relaxed text-foreground/85">{v.body}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 
@@ -342,21 +341,19 @@ function NoobClub() {
       </section>
 
       {/* Consulting cross-link */}
-      <section className="noob-dark"><div className="mx-auto max-w-5xl px-6 py-10 md:px-10 md:py-12">
-        <div className="rounded-3xl border border-foreground/15 p-6 md:flex md:items-center md:justify-between md:gap-8 md:p-8">
-          <div>
-            <h2 className="font-serif text-2xl leading-snug">{t.consultingTitle}</h2>
-            <p className="mt-2 max-w-xl text-base text-foreground/75">{t.consultingBody}</p>
+      <section className="bg-noob-cream">
+        <div className="mx-auto max-w-3xl px-6 py-10 md:px-10">
+          <div className="rounded-2xl bg-noob-rosa p-5 md:flex md:items-center md:justify-between md:gap-6">
+            <div>
+              <h2 className="font-serif text-lg leading-snug">{t.consultingTitle}</h2>
+              <p className="mt-1 text-sm text-foreground/80">{t.consultingBody}</p>
+            </div>
+            <Link to="/" className="mt-3 inline-flex min-h-11 shrink-0 items-center gap-1 text-sm font-medium underline underline-offset-4 md:mt-0">
+              {t.consultingCta} <span aria-hidden>→</span>
+            </Link>
           </div>
-          <Link
-            to="/"
-            className="mt-4 inline-flex shrink-0 items-center gap-2 rounded-full border border-foreground/40 px-5 py-2.5 text-sm transition-colors hover:bg-foreground hover:text-noob-navy md:mt-0"
-          >
-            {t.consultingCta}
-            <span aria-hidden>→</span>
-          </Link>
         </div>
-      </div></section>
+      </section>
 
       <NoobFooter />
     </main>

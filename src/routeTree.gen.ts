@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AiNoobClubRouteImport } from './routes/ai-noob-club'
 import { Route as AiNoobClubAnmeldungRouteImport } from './routes/ai-noob-club-anmeldung'
+import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
@@ -19,6 +20,7 @@ import { Route as AiNoobClubChecklisteRouteImport } from './routes/ai-noob-club_
 import { Route as AiNoobClubDankeRouteImport } from './routes/ai-noob-club_.danke'
 import { Route as AiNoobClubDatenschutzRouteImport } from './routes/ai-noob-club_.datenschutz'
 import { Route as AiNoobClubStarterSetRouteImport } from './routes/ai-noob-club_.starter-set'
+import { Route as AiNoobClubWiderrufRouteImport } from './routes/ai-noob-club_.widerruf'
 import { Route as ApiPublicSignupRouteImport } from './routes/api/public/signup'
 import { Route as ApiPublicWaitlistRouteImport } from './routes/api/public/waitlist'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
@@ -36,6 +38,11 @@ const AiNoobClubRoute = AiNoobClubRouteImport.update({
 const AiNoobClubAnmeldungRoute = AiNoobClubAnmeldungRouteImport.update({
   id: '/ai-noob-club-anmeldung',
   path: '/ai-noob-club-anmeldung',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DatenschutzRoute = DatenschutzRouteImport.update({
+  id: '/datenschutz',
+  path: '/datenschutz',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImpressumRoute = ImpressumRouteImport.update({
@@ -73,6 +80,11 @@ const AiNoobClubStarterSetRoute = AiNoobClubStarterSetRouteImport.update({
   path: '/ai-noob-club/starter-set',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AiNoobClubWiderrufRoute = AiNoobClubWiderrufRouteImport.update({
+  id: '/ai-noob-club_/widerruf',
+  path: '/ai-noob-club/widerruf',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicSignupRoute = ApiPublicSignupRouteImport.update({
   id: '/api/public/signup',
   path: '/api/public/signup',
@@ -94,6 +106,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
   '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -101,6 +114,7 @@ export interface FileRoutesByFullPath {
   '/ai-noob-club/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club/datenschutz': typeof AiNoobClubDatenschutzRoute
   '/ai-noob-club/starter-set': typeof AiNoobClubStarterSetRoute
+  '/ai-noob-club/widerruf': typeof AiNoobClubWiderrufRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -109,6 +123,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
   '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -116,6 +131,7 @@ export interface FileRoutesByTo {
   '/ai-noob-club/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club/datenschutz': typeof AiNoobClubDatenschutzRoute
   '/ai-noob-club/starter-set': typeof AiNoobClubStarterSetRoute
+  '/ai-noob-club/widerruf': typeof AiNoobClubWiderrufRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -125,6 +141,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ai-noob-club': typeof AiNoobClubRoute
   '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
+  '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -132,6 +149,7 @@ export interface FileRoutesById {
   '/ai-noob-club_/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club_/datenschutz': typeof AiNoobClubDatenschutzRoute
   '/ai-noob-club_/starter-set': typeof AiNoobClubStarterSetRoute
+  '/ai-noob-club_/widerruf': typeof AiNoobClubWiderrufRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -142,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ai-noob-club'
     | '/ai-noob-club-anmeldung'
+    | '/datenschutz'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
@@ -149,6 +168,7 @@ export interface FileRouteTypes {
     | '/ai-noob-club/danke'
     | '/ai-noob-club/datenschutz'
     | '/ai-noob-club/starter-set'
+    | '/ai-noob-club/widerruf'
     | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
@@ -157,6 +177,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ai-noob-club'
     | '/ai-noob-club-anmeldung'
+    | '/datenschutz'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
@@ -164,6 +185,7 @@ export interface FileRouteTypes {
     | '/ai-noob-club/danke'
     | '/ai-noob-club/datenschutz'
     | '/ai-noob-club/starter-set'
+    | '/ai-noob-club/widerruf'
     | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
@@ -172,6 +194,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ai-noob-club'
     | '/ai-noob-club-anmeldung'
+    | '/datenschutz'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
@@ -179,6 +202,7 @@ export interface FileRouteTypes {
     | '/ai-noob-club_/danke'
     | '/ai-noob-club_/datenschutz'
     | '/ai-noob-club_/starter-set'
+    | '/ai-noob-club_/widerruf'
     | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
@@ -188,6 +212,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AiNoobClubRoute: typeof AiNoobClubRoute
   AiNoobClubAnmeldungRoute: typeof AiNoobClubAnmeldungRoute
+  DatenschutzRoute: typeof DatenschutzRoute
   ImpressumRoute: typeof ImpressumRoute
   KiWorkflowCheckRoute: typeof KiWorkflowCheckRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -195,6 +220,7 @@ export interface RootRouteChildren {
   AiNoobClubDankeRoute: typeof AiNoobClubDankeRoute
   AiNoobClubDatenschutzRoute: typeof AiNoobClubDatenschutzRoute
   AiNoobClubStarterSetRoute: typeof AiNoobClubStarterSetRoute
+  AiNoobClubWiderrufRoute: typeof AiNoobClubWiderrufRoute
   ApiPublicSignupRoute: typeof ApiPublicSignupRoute
   ApiPublicWaitlistRoute: typeof ApiPublicWaitlistRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
@@ -221,6 +247,13 @@ declare module '@tanstack/react-router' {
       path: '/ai-noob-club-anmeldung'
       fullPath: '/ai-noob-club-anmeldung'
       preLoaderRoute: typeof AiNoobClubAnmeldungRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/datenschutz': {
+      id: '/datenschutz'
+      path: '/datenschutz'
+      fullPath: '/datenschutz'
+      preLoaderRoute: typeof DatenschutzRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/impressum': {
@@ -272,6 +305,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AiNoobClubStarterSetRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-noob-club_/widerruf': {
+      id: '/ai-noob-club_/widerruf'
+      path: '/ai-noob-club/widerruf'
+      fullPath: '/ai-noob-club/widerruf'
+      preLoaderRoute: typeof AiNoobClubWiderrufRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/signup': {
       id: '/api/public/signup'
       path: '/api/public/signup'
@@ -300,6 +340,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AiNoobClubRoute: AiNoobClubRoute,
   AiNoobClubAnmeldungRoute: AiNoobClubAnmeldungRoute,
+  DatenschutzRoute: DatenschutzRoute,
   ImpressumRoute: ImpressumRoute,
   KiWorkflowCheckRoute: KiWorkflowCheckRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -307,6 +348,7 @@ const rootRouteChildren: RootRouteChildren = {
   AiNoobClubDankeRoute: AiNoobClubDankeRoute,
   AiNoobClubDatenschutzRoute: AiNoobClubDatenschutzRoute,
   AiNoobClubStarterSetRoute: AiNoobClubStarterSetRoute,
+  AiNoobClubWiderrufRoute: AiNoobClubWiderrufRoute,
   ApiPublicSignupRoute: ApiPublicSignupRoute,
   ApiPublicWaitlistRoute: ApiPublicWaitlistRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,

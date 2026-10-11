@@ -1,6 +1,8 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/inter/400.css";
 
 @custom-variant dark (&:is(.dark *));
 
