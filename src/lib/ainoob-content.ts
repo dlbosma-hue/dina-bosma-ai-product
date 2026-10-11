@@ -82,24 +82,12 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     error: "Something went wrong. Please try again in a moment.",
     privacy: "No spam. Unsubscribe any time.",
     valuesEyebrow: "What we stand for",
-    valuesTitle: "What matters to us.",
+    valuesTitle: "What matters to us",
     values: [
-      {
-        title: "Enhance, never replace.",
-        body: "AI strengthens people instead of replacing them. You keep your voice, your judgment and the final say.",
-      },
-      {
-        title: "Respect comes first.",
-        body: "Non-discrimination is our standard. We check for unfair assumptions and treat people with respect.",
-      },
-      {
-        title: "Green and mindful.",
-        body: "Use AI consciously. Keep requests focused and avoid unnecessary generations. Sometimes you do not need AI at all.",
-      },
-      {
-        title: "Honest about AI.",
-        body: "No income promises. No made-up success stories. An AI twin is always labelled as AI-generated.",
-      },
+      { title: "AI makes you stronger. It does not replace you.", body: "You always have the final say." },
+      { title: "Respect for everyone.", body: "No one here is left out or looked down on." },
+      { title: "Mindful and sustainable.", body: "We use AI when it helps, and leave it out when it is not needed." },
+      { title: "Honest.", body: "No income promises and no made up success stories. Anything made with an AI avatar or AI image is labelled as AI." },
     ],
     pathTitle: "Your path in three steps",
     pathIntro:
@@ -139,7 +127,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       { text: "Workshops for all women, in Berlin and online. Coming later." },
       { text: "Support: personal guidance in a small group or 1:1. Coming later, when there is demand." },
     ],
-    consultingTitle: "Need support with your business workflows?",
+    consultingTitle: "Do you need support with the workflows in your business?",
     consultingBody:
       "HUMINT can help you review your processes, plan how to use AI and put that plan into practice.",
     consultingCta: "See HUMINT consulting",
@@ -218,24 +206,12 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     error: "Da ist etwas schiefgelaufen. Bitte versuch es gleich noch einmal.",
     privacy: "Kein Spam. Jederzeit abmeldbar.",
     valuesEyebrow: "Wofür wir stehen",
-    valuesTitle: "Was uns wichtig ist.",
+    valuesTitle: "Was uns wichtig ist",
     values: [
-      {
-        title: "Verstärken, nicht ersetzen.",
-        body: "KI stärkt Menschen, statt sie zu ersetzen. Deine Stimme, dein Urteil und die letzte Entscheidung bleiben bei dir.",
-      },
-      {
-        title: "Respekt gehört dazu.",
-        body: "Nicht diskriminierend ist unser Standard. Wir prüfen auf Vorurteile und begegnen Menschen mit Respekt.",
-      },
-      {
-        title: "Grün und bewusst.",
-        body: "Nutze KI bewusst. Stelle gezielte Anfragen und vermeide unnötige Generierungen. Manchmal brauchst du gar keine KI.",
-      },
-      {
-        title: "Ehrlich mit KI.",
-        body: "Keine Einkommensversprechen. Keine erfundenen Erfolgsgeschichten. Ein KI-Twin wird immer als KI-generiert gekennzeichnet.",
-      },
+      { title: "KI stärkt dich. Sie ersetzt dich nicht.", body: "Du behältst immer das letzte Wort." },
+      { title: "Respekt für alle.", body: "Hier wird niemand ausgeschlossen oder abgewertet." },
+      { title: "Bewusst und nachhaltig.", body: "Wir nutzen KI, wenn sie hilft, und lassen sie weg, wenn sie nicht nötig ist." },
+      { title: "Ehrlich.", body: "Keine Einkommensversprechen und keine erfundenen Erfolgsgeschichten. Alles, was mit einem KI-Avatar oder KI-Bild gemacht ist, ist als KI gekennzeichnet." },
     ],
     pathTitle: "Dein Weg in drei Schritten",
     pathIntro:
@@ -275,7 +251,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       { text: "Workshops für alle Frauen, in Berlin und online. Kommen später." },
       { text: "Begleitung: persönliche Unterstützung in einer kleinen Gruppe oder 1:1. Kommt später, wenn der Bedarf da ist." },
     ],
-    consultingTitle: "Du brauchst Unterstützung bei deinen Geschäftsabläufen?",
+    consultingTitle: "Du brauchst Unterstützung bei den Abläufen in deinem Unternehmen?",
     consultingBody:
       "HUMINT hilft dir, deine Abläufe zu prüfen, den KI-Einsatz zu planen und deinen Plan umzusetzen.",
     consultingCta: "Zur HUMINT Beratung",
