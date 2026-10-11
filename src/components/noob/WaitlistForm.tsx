@@ -55,10 +55,12 @@ export function WaitlistForm({
   t,
   source,
   submitLabel,
+  note,
 }: {
   t: NoobContent;
   source: SignupSource;
   submitLabel?: string;
+  note?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<{ name?: boolean; email?: boolean; consent?: boolean }>({});
@@ -158,7 +160,7 @@ export function WaitlistForm({
         >
           {status === "sending" ? t.sending : (submitLabel ?? t.submit)}
         </button>
-        <span className="text-sm text-foreground/75">{c.note}</span>
+        <span className="text-sm text-foreground/75">{note ?? c.note}</span>
       </div>
       {status === "error" && <p role="alert" className="text-sm text-destructive">{t.error}</p>}
     </form>

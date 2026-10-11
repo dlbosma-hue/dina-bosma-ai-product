@@ -163,8 +163,7 @@ function NoobClub() {
               <span className={`${pillClass} self-start`}>{ov.freeTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.sheetName}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.sheetBody}</p>
-              <div className="mt-6"><WaitlistForm t={t} source="checkliste" submitLabel={ov.sheetCta} /></div>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/75">{ov.sheetNote}</p>
+              <div className="mt-6"><WaitlistForm t={t} source="checkliste" submitLabel={ov.sheetCta} note={ov.sheetNote} /></div>
             </article>
             <article id="starterset" className="scroll-mt-24 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} self-start`}>{ov.soonTag}</span>
