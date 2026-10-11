@@ -1,3 +1,4 @@
+import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
@@ -9,20 +10,11 @@ import { ChecklistPreview } from "@/components/noob/ChecklistPreview";
 
 export const Route = createFileRoute("/ai-noob-club_/checkliste")({
   component: ChecklistPage,
-  head: () => ({
-    meta: [
-      { title: "Deine Content-Woche auf einer Seite | AI Noob Club" },
-      { name: "description", content: "Eine Seite, mit der du eine ganze Woche Social Media in einem Rutsch planst. Gratis Checkliste." },
-      { property: "og:title", content: "Deine Content-Woche auf einer Seite | AI Noob Club" },
-      { property: "og:description", content: "One page to plan a whole week of social media in one go. Free checklist." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-    links: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" }],
-  }),
+  head: () => noobHead(noobMeta.checklist),
 });
 
 function ChecklistPage() {
+  useNoobMeta(noobMeta.checklist);
   const { lang } = useLanguage();
   const t = noobContent[lang];
   const c = checklistContent[lang];

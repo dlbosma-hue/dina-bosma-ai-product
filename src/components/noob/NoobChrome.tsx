@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
-import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
+import badgeAsset from "@/assets/ai-noob-club-badge.webp.asset.json";
 
 export const btnPrimary =
   "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
@@ -46,7 +46,7 @@ export function NoobHeader() {
           </Link>
           <span className="flex flex-col leading-tight">
             <span className="text-xs font-medium uppercase tracking-[0.12em] text-foreground">{t.headerSubtitle}</span>
-            <Link to="/" className="text-[11px] text-foreground/75 underline-offset-2 hover:underline">{t.badge}</Link>
+            <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
           </span>
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>

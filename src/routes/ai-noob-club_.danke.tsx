@@ -1,3 +1,4 @@
+import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { noobClub } from "@/config/noobClub";
 import { useLanguage } from "@/lib/i18n";
@@ -6,20 +7,11 @@ import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome
 
 export const Route = createFileRoute("/ai-noob-club_/danke")({
   component: ThanksPage,
-  head: () => ({
-    meta: [
-      { title: "Danke | AI Noob Club" },
-      { name: "description", content: "Danke, du bist dabei im AI Noob Club." },
-      { property: "og:title", content: "Danke | AI Noob Club" },
-      { property: "og:description", content: "Thank you, you're in the AI Noob Club." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "robots", content: "noindex" },
-    ],
-  }),
+  head: () => noobHead(noobMeta.thanks),
 });
 
 function ThanksPage() {
+  useNoobMeta(noobMeta.thanks);
   const { lang } = useLanguage();
   const c = checklistContent[lang];
   const pdf = noobClub.links.checklistPdf;
