@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
+import { noobClub } from "@/config/noobClub";
 import badgeAsset from "@/assets/ai-noob-club-badge.png.asset.json";
 
 export const btnPrimary =
@@ -80,17 +81,18 @@ export function NoobHeader() {
 export function NoobFooter() {
   const { lang } = useLanguage();
   const t = noobContent[lang];
+  const fl = "inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md";
   return (
-    <footer className="bg-noob-cream">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-6 py-8 text-sm text-foreground/65 md:px-10">
-        <span>{t.footer}</span>
-        <span className="flex flex-wrap gap-4">
-          <Link to="/" className="inline-flex min-h-11 items-center hover:text-foreground">{t.backHome}</Link>
-          <Link to="/impressum" className="inline-flex min-h-11 items-center hover:text-foreground">{t.imprint}</Link>
-          <Link to="/ai-noob-club/datenschutz" className="inline-flex min-h-11 items-center hover:text-foreground">
-            {lang === "de" ? "Datenschutz" : "Privacy"}
-          </Link>
-        </span>
+    <footer className="noob-dark">
+      <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-sm md:px-10">
+        <p>{t.footer}</p>
+        <nav aria-label={lang === "de" ? "Rechtliches" : "Legal"} className="flex flex-wrap gap-x-5">
+          <Link to="/impressum" className={fl}>Impressum</Link>
+          <Link to="/datenschutz" className={fl}>Datenschutz</Link>
+          {noobClub.showWiderruf && <Link to="/ai-noob-club/widerruf" className={fl}>{lang === "de" ? "Widerruf" : "Cancellation"}</Link>}
+          <Link to="/" className={fl}>{lang === "de" ? "Zur HUMINT Startseite" : "HUMINT homepage"}</Link>
+          {noobClub.links.instagram && <a href={noobClub.links.instagram} target="_blank" rel="noreferrer" className={fl}>Instagram</a>}
+        </nav>
       </div>
     </footer>
   );
