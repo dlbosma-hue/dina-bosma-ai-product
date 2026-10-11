@@ -50,7 +50,7 @@ export function NoobHeader() {
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
           {langButton}
           {textLinks}
-          <Link to="/ai-noob-club" hash="waitlist" className={btnPrimary}>{t.navWaitlist}</Link>
+          <Link to="/ai-noob-club" hash="checkliste" className={btnPrimary}>{t.navChecklistCta}</Link>
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
         {langButton}
@@ -70,7 +70,7 @@ export function NoobHeader() {
         <nav id="noob-menu" className="border-t border-noob-rosa bg-noob-cream px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
           <div className="flex flex-col gap-1">
             {textLinks}
-            <Link to="/ai-noob-club" hash="waitlist" onClick={close} className={`${btnPrimary} mt-3 w-full`}>{t.navWaitlist}</Link>
+            <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={`${btnPrimary} mt-3 w-full`}>{t.navChecklistCta}</Link>
           </div>
         </nav>
       )}

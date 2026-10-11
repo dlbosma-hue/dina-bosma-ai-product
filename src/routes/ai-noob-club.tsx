@@ -289,18 +289,6 @@ function NoobClub() {
         </div>
       </section>
 
-      {/* Waitlist */}
-      <section id="waitlist" className="scroll-mt-24 bg-noob-rosa">
-        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.waitlistTitle}</h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/80">
-            {t.waitlistLead}
-          </p>
-          <div className="mt-8 max-w-xl">
-            <WaitlistForm t={t} source="waitlist" />
-          </div>
-        </div>
-      </section>
 
       {/* Consulting cross-link */}
       <section className="bg-noob-cream">
