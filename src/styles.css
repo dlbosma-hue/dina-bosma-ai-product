@@ -195,3 +195,39 @@
     padding-top: var(--banner-height);
   }
 }
+
+/* AI Noob Club theme: scoped to the Club landing page wrapper. */
+.noob-theme {
+  --noob-navy: oklch(0.284 0.046 266);
+  --noob-terracotta: oklch(0.684 0.12 37);
+  --noob-cream: oklch(0.966 0.02 78);
+  --noob-rosa: oklch(0.889 0.043 20);
+  --noob-paper: var(--noob-cream);
+  --noob-blush: var(--noob-rosa);
+  --noob-surface: var(--noob-rosa);
+  --background: var(--noob-cream);
+  --foreground: var(--noob-navy);
+  --primary: var(--noob-terracotta);
+  --primary-foreground: var(--noob-navy);
+  --ring: var(--noob-navy);
+  --border: var(--noob-rosa);
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-serif: "Poppins", system-ui, sans-serif;
+  font-family: var(--font-body);
+  background-color: var(--noob-cream);
+  color: var(--noob-navy);
+}
+.noob-theme h1, .noob-theme h2, .noob-theme h3, .noob-theme .font-serif {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.noob-theme .uppercase { font-family: var(--font-body); }
+/* Navy section: cream text */
+.noob-theme .noob-dark {
+  --foreground: var(--noob-cream);
+  --ring: var(--noob-cream);
+  background-color: var(--noob-navy);
+  color: var(--noob-cream);
+}
