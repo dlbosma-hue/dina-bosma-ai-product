@@ -7,7 +7,7 @@ type NoobStrings = {
   shopTitle: string; shopIntro: string; shopAllCta: string;
   kitTitle: string; kitBody: string; kitTags: string[]; kitEtsyCta: string; kitGumroadCta: string;
   productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
-  waitlistTitle: string; waitlistLead: string; meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
+  meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
   valuesEyebrow: string; valuesTitle: string; values: { title: string; body: string }[];
@@ -17,7 +17,7 @@ type NoobStrings = {
   pathRows: { text: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
-  headerSubtitle: string; navStarter: string; navChecklist: string; navWaitlist: string; menuOpen: string; menuClose: string;
+  headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; menuOpen: string; menuClose: string;
   seoTitle: string; seoDesc: string;
 };
 
@@ -68,9 +68,6 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     productCta: "View on Etsy",
     productAlt: "99 Prompts for Authentic AI Photos, digital PDF prompt pack by AI Noob Club",
     productNote: "I always label images with AI avatars or AI photos as AI. You should do the same.",
-    waitlistTitle: "Join the waitlist.",
-    waitlistLead:
-      "The first course for women entrepreneurs who are new to AI is taking shape. Leave your email for workshop and course updates, plus a few starter tips.",
     meetYourHostAlt: "Meet your host: Dina, founder of the AI Noob Club, with a cup of coffee at her laptop",
     emailLabel: "Email address",
     emailPlaceholder: "you@example.com",
@@ -139,7 +136,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     headerSubtitle: "AI for women. Step by step.",
     navStarter: "Starter Set",
     navChecklist: "Free checklist",
-    navWaitlist: "Join the waitlist",
+    navChecklistCta: "Get the checklist",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     seoTitle: "AI Noob Club | AI basics for women entrepreneurs",
@@ -192,9 +189,6 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     productCta: "Auf Etsy ansehen",
     productAlt: "99 Prompts für authentische KI-Fotos, digitales PDF-Prompt-Paket vom AI Noob Club",
     productNote: "Bilder mit KI-Avataren oder KI-Fotos kennzeichne ich immer als KI. Du solltest das auch tun.",
-    waitlistTitle: "Auf die Warteliste.",
-    waitlistLead:
-      "Der erste Kurs für Unternehmerinnen, die neu bei KI sind, entsteht gerade. Mit deiner E-Mail bekommst du Infos zu Workshops und Kursen. Dazu ein paar Tipps für deinen Start.",
     meetYourHostAlt: "Meet your host: Dina, Gründerin des AI Noob Club, mit einer Tasse Kaffee am Laptop",
     emailLabel: "E-Mail-Adresse",
     emailPlaceholder: "name@beispiel.de",
@@ -263,7 +257,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     headerSubtitle: "KI für Frauen. Schritt für Schritt.",
     navStarter: "Starter-Set",
     navChecklist: "Gratis Checkliste",
-    navWaitlist: "Auf die Warteliste",
+    navChecklistCta: "Checkliste holen",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
     seoTitle: "AI Noob Club | KI-Basics für Unternehmerinnen",

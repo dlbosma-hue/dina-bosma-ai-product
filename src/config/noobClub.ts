@@ -21,7 +21,6 @@ export const noobClub = {
     etsyPrompts: "https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic",
     gumroadKit: "",
     instagram: "",
-    newsletterUrl: "",
     checklistPdf: "",
   },
 };

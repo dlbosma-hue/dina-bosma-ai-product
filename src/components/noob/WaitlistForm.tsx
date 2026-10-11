@@ -4,30 +4,46 @@ import type { NoobContent } from "@/lib/ainoob-content";
 import { useLanguage } from "@/lib/i18n";
 
 type Status = "idle" | "sending" | "done" | "error";
-export type SignupSource = "checkliste" | "waitlist" | "starterset";
+export type SignupSource = "checkliste" | "starterset";
 
 const copy = {
   de: {
     name: "Vorname",
     email: "E-Mail-Adresse",
-    consentA: "Ich möchte den AI-Noob-Club-Newsletter bekommen, etwa eine E-Mail pro Woche. Ich kann mich jederzeit abmelden. Mehr dazu in der ",
+    consentA: {
+      checkliste:
+        "Schick mir die Checkliste per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
+      starterset:
+        "Sag mir Bescheid, wenn das Starter-Set da ist. Abmeldung jederzeit. Mehr dazu in der ",
+    },
     consentLink: "Datenschutzerklärung",
     note: "Kein Spam. Jederzeit abmeldbar.",
     errName: "Bitte gib deinen Vornamen ein.",
     errEmail: "Bitte gib eine gültige E-Mail-Adresse ein.",
-    errConsent: "Bitte setze den Haken, damit wir dir schreiben dürfen.",
-    done: "Fast geschafft. Bitte bestätige deine E-Mail-Adresse. Wir haben dir eine E-Mail geschickt.",
+    errConsent: "Bitte setze den Haken, damit ich dir schreiben darf.",
+    done: {
+      checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail bei dir.",
+      starterset: "Danke. Ich schreibe dir, sobald das Starter-Set da ist.",
+    },
   },
   en: {
     name: "First name",
     email: "Email address",
-    consentA: "I'd like to get the AI Noob Club newsletter, about one email a week. I can unsubscribe at any time. More in the ",
+    consentA: {
+      checkliste:
+        "Send me the checklist by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
+      starterset:
+        "Let me know when the Starter Set is ready. Unsubscribe any time. More in the ",
+    },
     consentLink: "privacy policy",
     note: "No spam. Unsubscribe any time.",
     errName: "Please enter your first name.",
     errEmail: "Please enter a valid email address.",
-    errConsent: "Please tick the box so we're allowed to email you.",
-    done: "Almost done. Please confirm your email address. We sent you an email.",
+    errConsent: "Please tick the box so I'm allowed to email you.",
+    done: {
+      checkliste: "Thank you, you're in. I'll write to you by email.",
+      starterset: "Thank you. I'll write to you as soon as the Starter Set is ready.",
+    },
   },
 };
 
@@ -37,11 +53,11 @@ const inputCls =
 /** The one Club signup form. Stores entries in the existing waitlist (Formspree). */
 export function WaitlistForm({
   t,
-  source = "waitlist",
+  source,
   submitLabel,
 }: {
   t: NoobContent;
-  source?: SignupSource;
+  source: SignupSource;
   submitLabel?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
@@ -66,7 +82,7 @@ export function WaitlistForm({
     data.set("name", name);
     data.set("email", email);
     data.set("consent", "yes");
-    data.append("consent_text", c.consentA + c.consentLink + ".");
+    data.append("consent_text", c.consentA[source] + c.consentLink + ".");
     data.append("consent_at", new Date().toISOString());
     data.append("source", source);
     data.append("confirmed_at", "");
@@ -99,7 +115,7 @@ export function WaitlistForm({
   if (status === "done") {
     return (
       <div role="status" className="rounded-2xl bg-noob-surface p-6 text-base text-foreground/85">
-        {c.done}
+        {c.done[source]}
       </div>
     );
   }
@@ -129,7 +145,7 @@ export function WaitlistForm({
           className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-noob-navy,currentColor)] focus-visible:ring-2 focus-visible:ring-ring"
         />
         <span>
-          {c.consentA}
+          {c.consentA[source]}
           <Link to="/datenschutz" className="underline underline-offset-2">{c.consentLink}</Link>.
         </span>
       </label>
