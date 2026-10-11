@@ -12,6 +12,7 @@ type NoobStrings = {
   offerEyebrow: string; offerTitle: string; offers: { title: string; body: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
+  headerSubtitle: string; navStarter: string; navChecklist: string; navWaitlist: string; menuOpen: string; menuClose: string;
   seoTitle: string; seoDesc: string;
 };
 
@@ -109,6 +110,12 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     backHome: "HUMINT home",
     langLabel: "DE",
     langAria: "Switch to German",
+    headerSubtitle: "AI for women. Step by step.",
+    navStarter: "Starter Set",
+    navChecklist: "Free checklist",
+    navWaitlist: "Join the waitlist",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
     seoTitle: "AI Noob Club | AI basics for women entrepreneurs",
     seoDesc:
       "AI basics for female leaders and women with a small business. Learn emails, captions and planning step by step, without losing your voice.",
@@ -206,6 +213,12 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     backHome: "Zur HUMINT Startseite",
     langLabel: "EN",
     langAria: "Auf Englisch wechseln",
+    headerSubtitle: "KI für Frauen. Schritt für Schritt.",
+    navStarter: "Starter-Set",
+    navChecklist: "Gratis Checkliste",
+    navWaitlist: "Auf die Warteliste",
+    menuOpen: "Menü öffnen",
+    menuClose: "Menü schließen",
     seoTitle: "AI Noob Club | KI-Basics für Unternehmerinnen",
     seoDesc:
       "KI-Basics für Unternehmerinnen und Frauen mit kleinem Business. Mails, Captions und Planung Schritt für Schritt lernen, ohne die eigene Stimme zu verlieren.",
