@@ -21,7 +21,7 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     soonTag: "Kommt bald",
     sheetName: "Wochen-Spickzettel",
     sheetBody:
-      "Dein Spickzettel für eine Content-Woche. Auf 1 bis 2 Seiten siehst du, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
+      "Dein Spickzettel für eine Content-Woche. Auf 2 Seiten siehst du, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
     sheetCta: "Spickzettel holen",
     sheetNote: "Du bekommst eine E-Mail zur Bestätigung. Abmelden geht jederzeit.",
     assistantName: "Content-Assistentin",
@@ -35,7 +35,7 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     soonTag: "Coming soon",
     sheetName: "Weekly Cheat Sheet",
     sheetBody:
-      "Your cheat sheet for a week of content. On 1 to 2 pages you see the steps you need and tick them off yourself. No AI tool needed.",
+      "Your cheat sheet for a week of content. On 2 pages you see the steps you need and tick them off yourself. No AI tool needed.",
     sheetCta: "Get the cheat sheet",
     sheetNote: "You get an email to confirm. Unsubscribe any time.",
     assistantName: "Content Assistant",
