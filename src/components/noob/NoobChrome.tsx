@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v2.webp.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v2.webp.asset.json";
 import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
 
 export const btnPrimary =
@@ -42,10 +44,11 @@ export function NoobHeader() {
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-2 md:px-10">
         <div className="flex items-center gap-3">
           <Link to="/ai-noob-club" hash="top" className="shrink-0 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-            <img src={badgeAsset.url} alt={t.brand} className="h-12 w-12" width={556} height={556} />
+            <img src={badgeAsset.url} alt={t.brand} className="h-12 w-12 sm:hidden" width={256} height={256} />
+            <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="hidden h-14 w-auto sm:block" width={720} height={240} />
           </Link>
           <span className="flex flex-col leading-tight">
-            <span className="text-xs font-medium uppercase tracking-[0.12em] text-foreground">{t.headerSubtitle}</span>
+            <span className="text-xs font-medium uppercase tracking-[0.12em] text-foreground sm:sr-only">{t.headerSubtitle}</span>
             <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
           </span>
         </div>
