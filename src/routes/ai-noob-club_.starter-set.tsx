@@ -54,7 +54,7 @@ function StarterSetPage() {
   );
 
   const privacyLink = (
-    <Link to="/ai-noob-club/datenschutz" className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4">
+    <Link to="/datenschutz" className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4">
       {s.privacyLink}
     </Link>
   );

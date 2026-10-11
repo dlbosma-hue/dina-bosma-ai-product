@@ -113,7 +113,7 @@ export function WaitlistForm({
         />
         <span>
           {c.consentA}
-          <Link to="/ai-noob-club/datenschutz" className="underline underline-offset-2">{c.consentLink}</Link>.
+          <Link to="/datenschutz" className="underline underline-offset-2">{c.consentLink}</Link>.
         </span>
       </label>
       <div className="flex flex-col gap-2">
