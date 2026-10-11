@@ -203,7 +203,7 @@ function NoobClub() {
               <span className={`${pillClass} self-start`}>{ov.workshopTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.workshopName}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground/80">{ov.workshopBody}</p>
-              <a href={noobClub.links.contact} target="_blank" rel="noreferrer" className={`${btnPrimary} mt-6 self-start`}>{ov.workshopCta}</a>
+              <a href={noobClub.links.contact} className={`${btnPrimary} mt-6 self-start`}>{ov.workshopCta}</a>
             </article>
           </div>
           <p className="mt-8 text-center text-sm text-foreground/75">{ov.liveNote}</p>

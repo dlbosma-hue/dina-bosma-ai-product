@@ -24,7 +24,7 @@ export const noobClub = {
     checklistPdf: "",
     /** Meetup page. Empty = no button on the meetup card. */
     meetup: "",
-    /** Existing contact option of the site (booking link). */
-    contact: "https://calendly.com/dlbosma/30min",
+    /** Club contact email (opens the visitor's email app). HUMINT keeps its own Calendly. */
+    contact: "mailto:info@humint.site",
   },
 };
