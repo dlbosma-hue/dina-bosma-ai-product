@@ -92,10 +92,10 @@ function NoobClub() {
             </div>
             <div className="min-w-0">
               <span aria-hidden className="block h-[3px] w-10 bg-noob-terracotta" />
-              <h3 className="noob-h3-sans mt-3 text-[20px] leading-snug text-noob-navy">
+              <h3 className="mt-3 font-serif text-4xl leading-tight text-noob-navy md:text-5xl">
                 {t.aboutEyebrow}
               </h3>
-              <div className="mt-2 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
+              <div className="mt-4 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
                 {t.aboutParas.map((para, i) => (
                   <p key={i}>{para}</p>
                 ))}
