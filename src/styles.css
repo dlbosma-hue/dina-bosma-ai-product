@@ -235,6 +235,13 @@
 }
 .noob-badge { clip-path: circle(49% at 50% 50%); }
 .noob-theme .uppercase { font-family: var(--font-body); }
+/* Club bio heading: Poppins Bold instead of the Club display serif. */
+.noob-theme .noob-h3-sans {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
 /* Navy section: cream text */
 .noob-theme .noob-dark {
   --foreground: var(--noob-cream);

@@ -80,7 +80,6 @@ function NoobClub() {
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <div className="grid items-center gap-10 md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)]">
             <div className="flex flex-col items-center gap-4">
-              <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">{t.aboutEyebrow}</p>
               <div className="relative z-0 mx-auto w-full max-w-[17rem]">
                 <div aria-hidden className="absolute -inset-3 -z-10 rounded-full bg-noob-rosa" />
                 <img
@@ -92,12 +91,19 @@ function NoobClub() {
                 />
               </div>
             </div>
-            <div className="space-y-4 text-base leading-relaxed text-foreground md:text-lg">
-              {t.aboutParas.map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+            <div className="min-w-0">
+              <span aria-hidden className="block h-[3px] w-10 bg-noob-terracotta" />
+              <h3 className="noob-h3-sans mt-3 text-[20px] leading-snug text-noob-navy">
+                {t.aboutEyebrow}
+              </h3>
+              <div className="mt-2 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
+                {t.aboutParas.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
