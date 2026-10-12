@@ -27,14 +27,16 @@ function NoobClub() {
   const ov = offersContent[lang];
   const pillClass =
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
-  const statusLabel = (s: "free" | "available" | "starter") =>
+  const statusLabel = (s: "free" | "available" | "soon" | "starter") =>
     s === "free"
       ? t.statusFree
       : s === "available"
         ? t.statusAvailable
-        : noobClub.starterSet.status === "soon"
+        : s === "soon"
           ? t.statusSoon
-          : t.statusAvailable;
+          : noobClub.starterSet.status === "soon"
+            ? t.statusSoon
+            : t.statusAvailable;
 
   return (
     <main className="noob-theme min-h-screen">
@@ -167,17 +169,16 @@ function NoobClub() {
               </article>
             ))}
           </div>
-          <div className="mt-6 space-y-3">
-            {t.pathRows.map((row) => (
-              <div
-                key={row.text}
-                className="flex flex-wrap items-center justify-between gap-3 rounded-3xl border border-foreground/10 bg-noob-paper/70 px-5 py-3"
-              >
-                <p className="text-sm leading-relaxed text-foreground">{row.text}</p>
-                <span className={pillClass}>{t.statusLater}</span>
-              </div>
-            ))}
-          </div>
+          <p className="mt-6 text-sm leading-relaxed text-foreground">
+            {t.pathNote.before}{" "}
+            <a
+              href={noobClub.links.contact}
+              className="underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {t.pathNote.link}
+            </a>
+            {t.pathNote.after}
+          </p>
         </div>
       </section>
 
