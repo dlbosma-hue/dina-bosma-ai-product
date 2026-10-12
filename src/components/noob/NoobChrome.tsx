@@ -40,7 +40,7 @@ export function NoobHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-noob-rosa bg-noob-cream">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 md:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 pt-2 pb-4 md:px-8">
         <div className="flex min-w-0 flex-col items-start">
           <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
             <img src={badgeAsset.url} alt={t.brand} className="noob-badge block h-16 w-16 md:h-20 md:w-20" width={768} height={768} />
