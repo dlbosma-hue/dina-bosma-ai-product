@@ -13,9 +13,9 @@ type NoobStrings = {
   error: string; privacy: string;
   valuesEyebrow: string; valuesTitle: string; values: { title: string; body: string }[];
   pathTitle: string; pathIntro: string; learnLabel: string;
-  statusSoon: string; statusAvailable: string; statusFree: string; statusLater: string;
-  pathCards: { title: string; body: string; learn: string[]; status: "free" | "available" | "starter"; cta: string; href: string }[];
-  pathRows: { text: string }[];
+  pathNote: { before: string; link: string; after: string };
+  statusSoon: string; statusAvailable: string; statusFree: string;
+  pathCards: { title: string; body: string; learn: string[]; status: "free" | "available" | "soon" | "starter"; cta: string; href: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
   headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
@@ -104,7 +104,6 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     statusSoon: "Soon",
     statusAvailable: "Available",
     statusFree: "Free",
-    statusLater: "Later",
     pathCards: [
       {
         title: "Understand",
@@ -118,8 +117,8 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         title: "Apply",
         body: "You use AI for the tasks that eat your time.",
         learn: ["Customer emails", "Captions and newsletters", "Offers", "Weekly planning"],
-        status: "available",
-        cta: "Go to the Instagram Kit",
+        status: "soon",
+        cta: "Join the waitlist",
         href: "#shop",
       },
       {
@@ -131,10 +130,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         href: "#starterset",
       },
     ],
-    pathRows: [
-      { text: "Workshops for all women, in Berlin and online. Coming later." },
-      { text: "Support: personal guidance in a small group or 1:1. Coming later, when there is demand." },
-    ],
+    pathNote: { before: "Workshops are available on", link: "request", after: "." },
     consultingTitle: "Do you need support with the workflows in your business?",
     consultingBody:
       "HUMINT can help you review your processes, plan how to use AI and put that plan into practice.",
@@ -237,7 +233,6 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     statusSoon: "Bald",
     statusAvailable: "Verfügbar",
     statusFree: "Gratis",
-    statusLater: "Später",
     pathCards: [
       {
         title: "Verstehen",
@@ -251,8 +246,8 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         title: "Anwenden",
         body: "Du nutzt KI bei den Aufgaben, die dir Zeit fressen.",
         learn: ["Kundinnenmails", "Captions und Newsletter", "Angebote", "Wochenplanung"],
-        status: "available",
-        cta: "Zum Instagram-Kit",
+        status: "soon",
+        cta: "Auf die Warteliste",
         href: "#shop",
       },
       {
@@ -264,10 +259,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         href: "#starterset",
       },
     ],
-    pathRows: [
-      { text: "Workshops für alle Frauen, in Berlin und online. Kommen später." },
-      { text: "Begleitung: persönliche Unterstützung in einer kleinen Gruppe oder 1:1. Kommt später, wenn der Bedarf da ist." },
-    ],
+    pathNote: { before: "Workshops gibt es auf", link: "Anfrage", after: "." },
     consultingTitle: "Du brauchst Unterstützung bei den Abläufen in deinem Unternehmen?",
     consultingBody:
       "HUMINT hilft dir, deine Abläufe zu prüfen, den KI-Einsatz zu planen und deinen Plan umzusetzen.",
