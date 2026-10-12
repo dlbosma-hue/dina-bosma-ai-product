@@ -15,7 +15,7 @@ type NoobStrings = {
   pathTitle: string; pathIntro: string; learnLabel: string;
   pathNote: { before: string; link: string; after: string };
   statusSoon: string; statusAvailable: string; statusFree: string;
-  pathCards: { title: string; body: string; learn: string[]; status: "free" | "available" | "soon" | "starter"; cta: string; href: string }[];
+  pathCards: { title: string; body: string; learn: string[]; status: "free" | "available" | "soon" | "starter"; cta: string; href: string; cta2?: string; href2?: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
   headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
@@ -112,6 +112,8 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         status: "free",
         cta: "Get the cheat sheet",
         href: "#checkliste",
+        cta2: "Or go to the meetup",
+        href2: "#treffen",
       },
       {
         title: "Apply",
@@ -241,6 +243,8 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         status: "free",
         cta: "Spickzettel holen",
         href: "#checkliste",
+        cta2: "Oder zum Meetup",
+        href2: "#treffen",
       },
       {
         title: "Anwenden",
