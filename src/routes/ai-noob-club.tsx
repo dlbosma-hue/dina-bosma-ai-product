@@ -206,7 +206,6 @@ function NoobClub() {
               <a href={noobClub.links.contact} className={`${btnPrimary} mt-6 self-start`}>{ov.workshopCta}</a>
             </article>
           </div>
-          <p className="mt-8 text-center text-sm text-foreground">{ov.liveNote}</p>
         </div>
       </section>
 
