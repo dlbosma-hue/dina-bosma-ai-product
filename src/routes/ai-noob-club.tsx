@@ -203,7 +203,7 @@ function NoobClub() {
         </div>
       </section>
 
-      {/* Treffen und Workshops */}
+      {/* Community */}
       <section id="treffen" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.liveTitle}</h2>
