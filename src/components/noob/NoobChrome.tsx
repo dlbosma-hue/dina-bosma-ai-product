@@ -91,6 +91,9 @@ export function NoobFooter() {
           <Link to="/datenschutz" className={fl}>Datenschutz</Link>
           {noobClub.showWiderruf && <Link to="/ai-noob-club/widerruf" className={fl}>{lang === "de" ? "Widerruf" : "Cancellation"}</Link>}
           <Link to="/ai-noob-club" hash="treffen" className={fl}>{t.navLive}</Link>
+          {noobClub.links.meetup && (
+            <a href={noobClub.links.meetup} target="_blank" rel="noopener noreferrer" className={fl}>Meetup</a>
+          )}
           <Link to="/" className={fl}>{lang === "de" ? "Zur HUMINT Startseite" : "HUMINT homepage"}</Link>
           {noobClub.links.instagram && <a href={noobClub.links.instagram} target="_blank" rel="noreferrer" className={fl}>Instagram</a>}
         </nav>
