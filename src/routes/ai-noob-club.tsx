@@ -165,7 +165,17 @@ function NoobClub() {
                   ))}
                 </ul>
                 <div className="flex-1" />
-                <a href={card.href} className={`${btnPrimary} mt-6`}>{card.cta}</a>
+                <div className="mt-6 flex flex-col items-start gap-1">
+                  <a href={card.href} className={btnPrimary}>{card.cta}</a>
+                  {card.cta2 && card.href2 && (
+                    <a
+                      href={card.href2}
+                      className="inline-flex min-h-11 items-center rounded-sm text-sm font-medium text-foreground underline underline-offset-4 hover:no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    >
+                      {card.cta2}
+                    </a>
+                  )}
+                </div>
               </article>
             ))}
           </div>
