@@ -9,7 +9,7 @@ import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome
 import { offersContent } from "@/lib/offers-content";
 import dinaPortraitAsset from "@/assets/dina-portrait-circle.webp.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de-v6.png.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en-v6.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
