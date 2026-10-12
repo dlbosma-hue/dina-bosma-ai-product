@@ -45,7 +45,7 @@ export function NoobHeader() {
           <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
             <img src={badgeAsset.url} alt={t.brand} className="noob-badge block h-16 w-16 md:h-20 md:w-20" width={768} height={768} />
           </Link>
-          <Link to="/" className="-my-3 py-3 text-[11px] text-foreground/80 underline-offset-2 hover:underline">{t.badge}</Link>
+          <Link to="/" className="-my-3 py-3 text-[11px] text-foreground underline-offset-2 hover:underline">{t.badge}</Link>
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
           {langButton}

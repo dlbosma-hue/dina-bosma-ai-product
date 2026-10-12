@@ -48,7 +48,7 @@ const copy = {
 };
 
 const inputCls =
-  "w-full rounded-full border border-foreground/50 bg-background px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground/75 focus:border-foreground/50 focus-visible:ring-2 focus-visible:ring-ring";
+  "w-full rounded-full border border-foreground/50 bg-background px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground focus:border-foreground/50 focus-visible:ring-2 focus-visible:ring-ring";
 
 /** The one Club signup form. Stores entries in the existing waitlist (Formspree). */
 export function WaitlistForm({
@@ -116,7 +116,7 @@ export function WaitlistForm({
 
   if (status === "done") {
     return (
-      <div role="status" className="rounded-2xl bg-noob-surface p-6 text-base text-foreground/85">
+      <div role="status" className="rounded-2xl bg-noob-surface p-6 text-base text-foreground">
         {c.done[source]}
       </div>
     );
@@ -126,17 +126,17 @@ export function WaitlistForm({
     <form onSubmit={onSubmit} noValidate className="space-y-4">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block" htmlFor={`${id}-name`}>
-          <span className="mb-1.5 block text-sm text-foreground/80">{c.name}</span>
+          <span className="mb-1.5 block text-sm text-foreground">{c.name}</span>
           <input id={`${id}-name`} type="text" name="name" required maxLength={100} autoComplete="given-name" aria-invalid={errors.name || undefined} aria-describedby={errors.name ? `${id}-name-err` : undefined} className={inputCls} />
           {errors.name && <span id={`${id}-name-err`} className="mt-1 block text-sm font-medium text-destructive">{c.errName}</span>}
         </label>
         <label className="block" htmlFor={`${id}-email`}>
-          <span className="mb-1.5 block text-sm text-foreground/80">{c.email}</span>
+          <span className="mb-1.5 block text-sm text-foreground">{c.email}</span>
           <input id={`${id}-email`} type="email" name="email" required maxLength={255} autoComplete="email" aria-invalid={errors.email || undefined} aria-describedby={errors.email ? `${id}-email-err` : undefined} className={inputCls} />
           {errors.email && <span id={`${id}-email-err`} className="mt-1 block text-sm font-medium text-destructive">{c.errEmail}</span>}
         </label>
       </div>
-      <label className="flex gap-3 text-sm leading-relaxed text-foreground/85" htmlFor={`${id}-consent`}>
+      <label className="flex gap-3 text-sm leading-relaxed text-foreground" htmlFor={`${id}-consent`}>
         <input
           id={`${id}-consent`}
           type="checkbox"
@@ -160,7 +160,7 @@ export function WaitlistForm({
         >
           {status === "sending" ? t.sending : (submitLabel ?? t.submit)}
         </button>
-        <span className="text-sm text-foreground/75">{note ?? c.note}</span>
+        <span className="text-sm text-foreground">{note ?? c.note}</span>
       </div>
       {status === "error" && <p role="alert" className="text-sm text-destructive">{t.error}</p>}
     </form>

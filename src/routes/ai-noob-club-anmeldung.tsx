@@ -65,7 +65,7 @@ const copy = {
 } as const;
 
 const input =
-  "w-full rounded-2xl border border-border/70 bg-background/70 px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground/40 focus:border-foreground/50";
+  "w-full rounded-2xl border border-border/70 bg-background/70 px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground focus:border-foreground/50";
 
 function SignupPage() {
   const { lang, setLang } = useLanguage();
@@ -120,7 +120,7 @@ function SignupPage() {
           <button
             type="button"
             onClick={() => setLang(lang === "en" ? "de" : "en")}
-            className="rounded-full border border-foreground/25 px-3 py-1 text-xs uppercase tracking-[0.14em] text-foreground/70 hover:border-foreground/60 hover:text-foreground"
+            className="rounded-full border border-foreground/25 px-3 py-1 text-xs uppercase tracking-[0.14em] text-foreground hover:border-foreground/60 hover:text-foreground"
           >
             {t.toggle}
           </button>
@@ -129,15 +129,15 @@ function SignupPage() {
 
       <section className="mx-auto max-w-3xl px-6 py-12 md:px-10 md:py-16">
         <h1 className="font-serif text-4xl leading-tight md:text-5xl">{t.title}</h1>
-        <p className="mt-4 text-lg leading-relaxed text-foreground/80">{t.lead}</p>
+        <p className="mt-4 text-lg leading-relaxed text-foreground">{t.lead}</p>
 
         <div className="mt-8 rounded-3xl bg-noob-blush/50 p-6 md:p-8">
           {status === "done" ? (
-            <p className="text-base text-foreground/85">{t.success}</p>
+            <p className="text-base text-foreground">{t.success}</p>
           ) : (
             <form onSubmit={onSubmit} className="space-y-4">
               <label className="block">
-                <span className="mb-1.5 block text-sm text-foreground/70">{t.choiceLabel}</span>
+                <span className="mb-1.5 block text-sm text-foreground">{t.choiceLabel}</span>
                 <select name="choice" required defaultValue="" className={input}>
                   <option value="" disabled>
                     {t.choicePlaceholder}
@@ -151,16 +151,16 @@ function SignupPage() {
               </label>
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="block">
-                  <span className="mb-1.5 block text-sm text-foreground/70">{t.name}</span>
+                  <span className="mb-1.5 block text-sm text-foreground">{t.name}</span>
                   <input type="text" name="name" required className={input} />
                 </label>
                 <label className="block">
-                  <span className="mb-1.5 block text-sm text-foreground/70">{t.email}</span>
+                  <span className="mb-1.5 block text-sm text-foreground">{t.email}</span>
                   <input type="email" name="email" required className={input} />
                 </label>
               </div>
               <label className="block">
-                <span className="mb-1.5 block text-sm text-foreground/70">{t.message}</span>
+                <span className="mb-1.5 block text-sm text-foreground">{t.message}</span>
                 <textarea name="message" rows={4} placeholder={t.messagePlaceholder} className={input} />
               </label>
               <div className="flex flex-wrap items-center gap-4">
@@ -171,14 +171,14 @@ function SignupPage() {
                 >
                   {status === "sending" ? t.sending : t.submit}
                 </button>
-                <span className="text-sm text-foreground/60">{t.privacy}</span>
+                <span className="text-sm text-foreground">{t.privacy}</span>
               </div>
               {status === "error" && <p className="text-sm text-destructive">{t.error}</p>}
             </form>
           )}
         </div>
 
-        <Link to="/ai-noob-club" className="mt-8 inline-block text-sm text-foreground/70 underline hover:text-foreground">
+        <Link to="/ai-noob-club" className="mt-8 inline-block text-sm text-foreground underline hover:text-foreground">
           {t.back}
         </Link>
       </section>
