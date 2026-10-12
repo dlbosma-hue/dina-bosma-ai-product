@@ -40,7 +40,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     aboutParas: [
       "Hi, I'm Dina. I'm originally from the Netherlands and now live in Berlin. I used to be a product manager, and I'm still a bit obsessed with good products and smarter ways of working. Today I help women with small businesses get real use out of AI, one small step at a time.",
       "I know the time squeeze myself. I run my own business, and at home there's an extremely active 4-year-old who only has two speeds: full speed and asleep. So I don't believe in complicated tools or hours of tinkering. I believe in small changes that give you your time back.",
-      "My biggest change was not a new app. It was a different way of looking. I used to use AI like a tool for faster texts. Today I see it more like a small team in the background. The team prepares. I decide. I no longer ask: How do I get faster? I ask: What can my team take off my plate?",
+      "My biggest change in AI use was not a new app. It was a different way of looking. I used to use AI like a tool for faster texts. Today I see it more like a small team in the background. The team prepares. I decide. I no longer ask: How do I get faster? I ask: What can my team take off my plate?",
       "Because your time is your most valuable asset. Let's invest it better.",
     ],
     forTitle: "This is for you if ...",
@@ -170,7 +170,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     aboutParas: [
       "Hallo, ich bin Dina. Ich komme ursprünglich aus den Niederlanden und lebe jetzt in Berlin. Ich war Produktmanagerin und bin immer noch ein bisschen verrückt nach guten Produkten und schlaueren Wegen zu arbeiten. Heute helfe ich Frauen mit kleinem Business, KI wirklich zu nutzen. Ein kleiner Schritt nach dem anderen.",
       "Die Zeitnot kenne ich selbst. Ich führe mein eigenes Business, und zu Hause läuft ein extrem aktives 4-jähriges Kind herum, das nur zwei Gänge hat: Vollgas und schlafen. Deshalb glaube ich nicht an komplizierte Tools und stundenlanges Basteln. Ich glaube an kleine Veränderungen, die dir Zeit zurückgeben.",
-      "Meine größte Veränderung war keine neue App. Es war ein anderer Blick. Früher habe ich KI wie ein Werkzeug für schnellere Texte benutzt. Heute sehe ich sie eher als kleines Team im Hintergrund. Das Team bereitet vor. Ich entscheide. Ich frage nicht mehr: Wie werde ich schneller? Ich frage: Was kann mein Team für mich übernehmen?",
+      "Meine größte Veränderung im Umgang mit KI war keine neue App. Es war ein anderer Blick. Früher habe ich KI wie ein Werkzeug für schnellere Texte benutzt. Heute sehe ich sie eher als kleines Team im Hintergrund. Das Team bereitet vor. Ich entscheide. Ich frage nicht mehr: Wie werde ich schneller? Ich frage: Was kann mein Team für mich übernehmen?",
       "Denn deine Zeit ist dein wertvollstes Gut. Lass sie uns besser investieren.",
     ],
     forTitle: "Das hier ist für dich, wenn ...",
