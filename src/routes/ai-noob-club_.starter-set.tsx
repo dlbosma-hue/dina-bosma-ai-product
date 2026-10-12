@@ -8,8 +8,7 @@ import { startersetContent } from "@/lib/starterset-content";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
-import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
+import dinaPortraitAsset from "@/assets/dina-portrait-circle.webp.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club_/starter-set")({
   component: StarterSetPage,
@@ -170,13 +169,13 @@ function StarterSetPage() {
       <section className="bg-noob-rosa">
         <div className={`${section} grid items-center gap-8 md:grid-cols-[minmax(0,16rem)_1fr]`}>
           <img
-            src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
+            src={dinaPortraitAsset.url}
             alt={t.meetYourHostAlt}
             loading="lazy"
             decoding="async"
-            className="w-full max-w-[16rem] rounded-3xl"
-            width={1168}
-            height={1347}
+            className="w-full max-w-[16rem] rounded-full"
+            width={1882}
+            height={1882}
           />
           <div>
             <h2 className={h2}>{s.aboutTitle}</h2>
