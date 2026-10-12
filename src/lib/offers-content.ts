@@ -7,6 +7,7 @@ export type NoobOffer = {
   soonTag: string;
   sheetName: string;
   sheetBody: string;
+  sheetItems: string[];
   sheetCta: string;
   sheetNote: string;
   assistantName: string;
@@ -30,9 +31,12 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     title: "Womit du starten kannst",
     freeTag: "Gratis",
     soonTag: "Kommt bald",
-    sheetName: "Wochen-Spickzettel",
-    sheetBody:
-      "Dein Spickzettel für eine Content-Woche. Auf 2 Seiten siehst du, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
+    sheetName: "Deine 2 Gratis-Spickzettel",
+    sheetBody: "Du bekommst zwei Spickzettel per E-Mail:",
+    sheetItems: [
+      "KI-Basics: Was ein Prompt ist, was KI kann und was nicht, und was mit deinen Daten passiert. Eine Seite, ohne Fachchinesisch.",
+      "Wochen-Spickzettel: Deine Content-Woche auf 2 Seiten. Du siehst, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
+    ],
     sheetCta: "Spickzettel holen",
     sheetNote: "Du bekommst eine E-Mail zur Bestätigung. Abmelden geht jederzeit.",
     assistantName: "Content-Assistentin",
@@ -55,9 +59,12 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     title: "What you can start with",
     freeTag: "Free",
     soonTag: "Coming soon",
-    sheetName: "Weekly Cheat Sheet",
-    sheetBody:
-      "Your cheat sheet for a week of content. On 2 pages you see the steps you need and tick them off yourself. No AI tool needed.",
+    sheetName: "Your 2 free cheat sheets",
+    sheetBody: "You get two cheat sheets by email:",
+    sheetItems: [
+      "AI basics: what a prompt is, what AI can and cannot do, and what happens to your data. One page, no jargon.",
+      "Weekly cheat sheet: your week of content on 2 pages. You see the steps you need and tick them off yourself. No AI tool needed.",
+    ],
     sheetCta: "Get the cheat sheet",
     sheetNote: "You get an email to confirm. Unsubscribe any time.",
     assistantName: "Content Assistant",

@@ -12,7 +12,7 @@ const copy = {
     email: "E-Mail-Adresse",
     consentA: {
       checkliste:
-        "Schick mir den Wochen-Spickzettel per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
+        "Schick mir die beiden Spickzettel per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
       starterset:
         "Sag mir Bescheid, wenn die Content-Assistentin da ist. Abmeldung jederzeit. Mehr dazu in der ",
     },
@@ -31,7 +31,7 @@ const copy = {
     email: "Email address",
     consentA: {
       checkliste:
-        "Send me the Weekly Cheat Sheet by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
+        "Send me both cheat sheets by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
       starterset:
         "Let me know when the Content Assistant is ready. Unsubscribe any time. More in the ",
     },
