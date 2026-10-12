@@ -23,9 +23,9 @@ export function ClubCallout() {
         </p>
         <Link
           to="/ai-noob-club"
-          className="group mt-7 inline-flex items-center gap-2 text-base font-semibold text-foreground underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="group mt-7 inline-flex items-center gap-2 text-base font-semibold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
-          {t.clubCallout.link}
+          <span className="underline underline-offset-4">{t.clubCallout.link}</span>
           <span
             aria-hidden="true"
             className="inline-block transition-transform duration-200 motion-reduce:transition-none group-hover:translate-x-1 group-active:translate-x-1"
