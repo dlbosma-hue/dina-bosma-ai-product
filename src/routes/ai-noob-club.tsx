@@ -209,7 +209,7 @@ function NoobClub() {
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.meetupName}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground">{ov.meetupBody}</p>
               {noobClub.links.meetup && (
-                <a href={noobClub.links.meetup} target="_blank" rel="noreferrer" className={`${btnPrimary} mt-6 self-start`}>{ov.meetupCta}</a>
+                <a href={noobClub.links.meetup} target="_blank" rel="noopener noreferrer" className={`${btnPrimary} mt-6 self-start`}>{ov.meetupCta}</a>
               )}
             </article>
             <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
