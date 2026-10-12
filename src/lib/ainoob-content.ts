@@ -149,6 +149,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navChecklist: "Weekly Cheat Sheet",
     navChecklistCta: "Get the cheat sheet",
     navLive: "Meetups and workshops",
+    navCommunity: "Community",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     seoTitle: "AI Noob Club | AI for women who run their own business",
