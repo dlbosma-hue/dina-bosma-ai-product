@@ -70,7 +70,6 @@ function NoobClub() {
               </a>
             </div>
             <a href="#treffen" className="mt-4 inline-block text-sm font-medium underline underline-offset-4">{ov.liveHeroLink}</a>
-            <p className="mt-4 text-sm text-foreground">{t.heroFounder}</p>
           </div>
         </div>
       </section>
