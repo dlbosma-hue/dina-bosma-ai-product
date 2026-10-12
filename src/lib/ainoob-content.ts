@@ -142,9 +142,9 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navLive: "Meetups and workshops",
     menuOpen: "Open menu",
     menuClose: "Close menu",
-    seoTitle: "AI Noob Club | AI basics for women entrepreneurs",
+    seoTitle: "AI Noob Club | AI for women who run their own business",
     seoDesc:
-      "AI basics for female leaders and women with a small business. Learn emails, captions and planning step by step, without losing your voice.",
+      "AI basics for women who run their own business. Learn emails, captions and planning step by step, without losing your voice.",
   },
   de: {
     badge: "Eine HUMINT Initiative",
@@ -266,9 +266,9 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navLive: "Treffen und Workshops",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
-    seoTitle: "AI Noob Club | KI-Basics für Unternehmerinnen",
+    seoTitle: "AI Noob Club | KI für Frauen mit eigenem Business",
     seoDesc:
-      "KI-Basics für Unternehmerinnen und Frauen mit kleinem Business. Mails, Captions und Planung Schritt für Schritt lernen, ohne die eigene Stimme zu verlieren.",
+      "KI-Basics für Frauen, die ihr eigenes Business führen. Mails, Captions und Planung Schritt für Schritt lernen, ohne die eigene Stimme zu verlieren.",
   },
 };
 
