@@ -56,7 +56,7 @@ function StarterSetPage() {
       <section className="bg-noob-cream">
         <div className={section}>
           <h1 className="font-serif text-4xl leading-tight md:text-5xl">{s.h1}</h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-foreground/80">{s.subline}</p>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-foreground">{s.subline}</p>
           <ul className="mt-6 flex flex-wrap gap-2">
             {[s.infoDownload, s.infoOnce, cfg.priceEur ? `${cfg.priceEur} €` : s.pricePending].map((i) => (
               <li key={i} className="rounded-full bg-noob-rosa px-4 py-1.5 text-sm font-semibold text-noob-navy">{i}</li>
@@ -75,14 +75,14 @@ function StarterSetPage() {
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {t.forCards.map((c) => (
               <article key={c} className="rounded-3xl bg-noob-cream p-6 shadow-sm">
-                <p className="text-base leading-relaxed text-foreground/85">{c}</p>
+                <p className="text-base leading-relaxed text-foreground">{c}</p>
               </article>
             ))}
           </div>
           <div className="mt-6 rounded-3xl bg-noob-cream/70 p-6">
             <h3 className="font-serif text-2xl leading-snug">{t.notForTitle}</h3>
             <ul className="mt-3 space-y-2">
-              {t.notForItems.map((i) => <li key={i} className="text-base text-foreground/80">{i}</li>)}
+              {t.notForItems.map((i) => <li key={i} className="text-base text-foreground">{i}</li>)}
             </ul>
           </div>
         </div>
@@ -148,7 +148,7 @@ function StarterSetPage() {
       <section className="bg-noob-cream">
         <div className={section}>
           <h2 className={h2}>{s.privacyTitle}</h2>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-foreground/85">{s.privacy}</p>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-foreground">{s.privacy}</p>
           <div className="mt-2">{privacyLink}</div>
         </div>
       </section>
@@ -161,7 +161,7 @@ function StarterSetPage() {
             {cfg.guaranteeText && (
               <p className="mt-4 rounded-2xl border-l-4 border-noob-terracotta bg-noob-rosa px-5 py-4 text-base">{cfg.guaranteeText}</p>
             )}
-            {cfg.supportNote && <p className="mt-4 text-base text-foreground/80">{cfg.supportNote}</p>}
+            {cfg.supportNote && <p className="mt-4 text-base text-foreground">{cfg.supportNote}</p>}
           </div>
         </section>
       )}
@@ -194,7 +194,7 @@ function StarterSetPage() {
             {s.faq(cfg.tool, toolCost).map((f, i) => (
               <AccordionItem key={f.q} value={`q${i}`} className="border-foreground/15">
                 <AccordionTrigger className="min-h-11 text-left text-base font-semibold">{f.q}</AccordionTrigger>
-                <AccordionContent className="text-base leading-relaxed text-foreground/85">
+                <AccordionContent className="text-base leading-relaxed text-foreground">
                   {f.a}
                   {"privacy" in f && f.privacy && <div>{privacyLink}</div>}
                 </AccordionContent>

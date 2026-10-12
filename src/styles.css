@@ -214,7 +214,8 @@
   --noob-blush: var(--noob-rosa);
   --noob-surface: var(--noob-rosa);
   --background: var(--noob-cream);
-  --foreground: var(--noob-navy);
+  /* All Club text uses the same solid dark blue as the HUMINT site (:root --foreground). */
+
   --destructive: #9F1D12;
   --primary: var(--noob-terracotta);
   --primary-foreground: var(--noob-navy);
@@ -225,7 +226,7 @@
   --font-serif: "Instrument Serif", Georgia, serif;
   font-family: var(--font-body);
   background-color: var(--noob-cream);
-  color: var(--noob-navy);
+  color: var(--foreground);
 }
 .noob-theme h1, .noob-theme h2, .noob-theme h3, .noob-theme .font-serif {
   font-family: var(--font-serif);
