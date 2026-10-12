@@ -8,6 +8,7 @@ type NoobStrings = {
   kitTitle: string; kitBody: string; kitSoonTag: string; kitTags: string[]; kitEtsyCta: string; kitGumroadCta: string;
   productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
   meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
+  aboutEyebrow: string; aboutParas: string[];
   nameLabel: string; namePlaceholder: string; submit: string; sending: string; success: string;
   error: string; privacy: string;
   valuesEyebrow: string; valuesTitle: string; values: { title: string; body: string }[];
@@ -34,8 +35,13 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "You do almost everything yourself, and the day only has so many hours. Here you learn, step by step, how AI can give you some of that time back. And your business still sounds like you, not like a robot.",
     heroPrimary: "Free Weekly Cheat Sheet",
     heroSecondary: "To the Content Assistant",
-    heroFounder:
-      "Hi, I'm Dina from Berlin. I used to be a product manager and today I help women with small businesses use AI step by step. I run my own business, I have a small child and little time. Maybe just like you.",
+    heroFounder: "Hi, I'm Dina.",
+    aboutEyebrow: "About me",
+    aboutParas: [
+      "I'm originally from the Netherlands and now live in Berlin. I used to be a product manager, and I'm still a bit obsessed with good products and smarter ways of working. Today I help women with small businesses get real use out of AI, one small step at a time.",
+      "I know the time squeeze myself. I run my own business, and at home there's an extremely active 4-year-old who only has two speeds: full speed and asleep. So I don't believe in complicated tools or hours of tinkering. I believe in small changes that give you your time back.",
+      "Because your time is your most valuable asset. Let's invest it better.",
+    ],
     forTitle: "This is for you if ...",
     forCards: [
       "... you run a small business or create content. And you do almost everything alone.",
@@ -158,8 +164,13 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Du machst fast alles allein, und der Tag hat nur so viele Stunden. Hier lernst du Schritt für Schritt, wie KI dir Zeit zurückgibt. Und dein Business klingt weiter nach dir. Nicht nach einem Roboter.",
     heroPrimary: "Gratis Wochen-Spickzettel",
     heroSecondary: "Zur Content-Assistentin",
-    heroFounder:
-      "Hi, ich bin Dina aus Berlin. Ich war Produktmanagerin und helfe heute Frauen mit kleinem Business, KI Schritt für Schritt zu nutzen. Ich bin selbstständig, habe ein kleines Kind und wenig Zeit. Genau wie du vielleicht.",
+    heroFounder: "Hallo, ich bin Dina.",
+    aboutEyebrow: "Über mich",
+    aboutParas: [
+      "Ich komme ursprünglich aus den Niederlanden und lebe jetzt in Berlin. Ich war Produktmanagerin und bin immer noch ein bisschen verrückt nach guten Produkten und schlaueren Wegen zu arbeiten. Heute helfe ich Frauen mit kleinem Business, KI wirklich zu nutzen. Ein kleiner Schritt nach dem anderen.",
+      "Die Zeitnot kenne ich selbst. Ich führe mein eigenes Business, und zu Hause läuft ein extrem aktives 4-jähriges Kind herum, das nur zwei Gänge hat: Vollgas und schlafen. Deshalb glaube ich nicht an komplizierte Tools und stundenlanges Basteln. Ich glaube an kleine Veränderungen, die dir Zeit zurückgeben.",
+      "Denn deine Zeit ist dein wertvollstes Gut. Lass sie uns besser investieren.",
+    ],
     forTitle: "Das hier ist für dich, wenn ...",
     forCards: [
       "... du ein kleines Business führst oder Content machst. Und fast alles allein.",
