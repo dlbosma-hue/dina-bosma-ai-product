@@ -7,8 +7,7 @@ import { noobContent } from "@/lib/ainoob-content";
 import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
 import { offersContent } from "@/lib/offers-content";
-import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
-import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
+import dinaPortraitAsset from "@/assets/dina-portrait-circle.webp.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de-v6.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en-v6.png.asset.json";
@@ -51,38 +50,52 @@ function NoobClub() {
             width={1920}
             height={640}
           />
-          <div className="grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,20rem)]">
-            <div>
-              <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">
-                {t.heroLabel}
-              </p>
-              <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
-                {t.heroTitle}
-              </h1>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-foreground">
-                {t.heroSubline}
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#checkliste" className={btnPrimary}>{t.heroPrimary}</a>
-                <a
-                  href="#starterset"
-                  className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  {t.heroSecondary}
-                </a>
-              </div>
-              <a href="#treffen" className="mt-4 inline-block text-sm font-medium underline underline-offset-4">{ov.liveHeroLink}</a>
-              <p className="mt-4 text-sm text-foreground">{t.heroFounder}</p>
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">
+              {t.heroLabel}
+            </p>
+            <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
+              {t.heroTitle}
+            </h1>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-foreground">
+              {t.heroSubline}
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="#checkliste" className={btnPrimary}>{t.heroPrimary}</a>
+              <a
+                href="#starterset"
+                className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                {t.heroSecondary}
+              </a>
             </div>
-            <div className="relative z-0 mt-2 md:mt-0">
-              <div aria-hidden className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-noob-rosa" />
+            <a href="#treffen" className="mt-4 inline-block text-sm font-medium underline underline-offset-4">{ov.liveHeroLink}</a>
+            <p className="mt-4 text-sm text-foreground">{t.heroFounder}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Über Dina */}
+      <section id="dina" className="scroll-mt-44 md:scroll-mt-48 bg-noob-paper">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <div className="grid items-center gap-10 md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)]">
+            <div className="relative z-0 mx-auto w-full max-w-[17rem]">
+              <div aria-hidden className="absolute -inset-3 -z-10 rounded-full bg-noob-rosa" />
               <img
-                src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
+                src={dinaPortraitAsset.url}
                 alt={t.meetYourHostAlt}
-                className="relative w-full rounded-3xl"
-                width={1168}
-                height={1347}
+                className="relative w-full rounded-full"
+                width={1882}
+                height={1882}
               />
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">{t.aboutEyebrow}</p>
+              <div className="mt-5 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
+                {t.aboutParas.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -297,33 +310,6 @@ function NoobClub() {
         </div>
       </section>
 
-      {/* Values */}
-      {/* About Dina */}
-      <section id="dina" className="scroll-mt-44 md:scroll-mt-48 bg-noob-paper">
-        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <div className="grid items-center gap-10 md:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
-            <div className="relative z-0">
-              <div aria-hidden className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-noob-rosa" />
-              <img
-                src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
-                alt={t.meetYourHostAlt}
-                className="relative w-full rounded-3xl"
-                width={1168}
-                height={1347}
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">{t.aboutEyebrow}</p>
-              <div className="mt-5 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
-                {t.aboutParas.map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="werte" className="noob-dark scroll-mt-44 md:scroll-mt-48">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
