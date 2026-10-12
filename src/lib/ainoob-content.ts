@@ -281,6 +281,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navChecklist: "Wochen-Spickzettel",
     navChecklistCta: "Spickzettel holen",
     navLive: "Treffen und Workshops",
+    navCommunity: "Community",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
     seoTitle: "AI Noob Club | KI für Frauen mit eigenem Business",
