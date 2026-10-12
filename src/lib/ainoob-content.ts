@@ -50,6 +50,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "... you have tried AI before, but you do not use it regularly yet.",
       "... you have little time and do not want to learn yet another tool you forget after a week.",
       "... you worry that texts sound robotic or that customer data is not safe.",
+      "... you do not want your images to look like standard AI. They should look like you.",
     ],
     notForTitle: "Probably not for you if ...",
     notForItems: [
@@ -181,6 +182,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "... du KI schon mal probiert hast, aber noch nicht regelmäßig nutzt.",
       "... du wenig Zeit hast und nicht noch ein Tool lernen willst, das du nach einer Woche vergisst.",
       "... du dir Sorgen machst, dass Texte nach Roboter klingen oder Kundendaten nicht sicher sind.",
+      "... du nicht möchtest, dass deine Bilder nach Standard-KI aussehen. Sie sollen nach dir aussehen.",
     ],
     notForTitle: "Eher nichts für dich, wenn ...",
     notForItems: [
