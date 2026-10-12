@@ -29,9 +29,9 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     welcome: "Welcome to the AI Noob Club",
     heroShopCta: "Shop",
     heroLabel: "AI Noob Club",
-    heroTitle: "AI for female entrepreneurs. Even when you start from zero.",
+    heroTitle: "AI for women who run their own business. Even if you're starting from zero.",
     heroSubline:
-      "You do almost everything alone and have little time. Here you learn step by step how AI can help your business. Without sounding like a robot.",
+      "You do almost everything yourself, and the day only has so many hours. Here you learn, step by step, how AI can give you some of that time back. And your business still sounds like you, not like a robot.",
     heroPrimary: "Free Weekly Cheat Sheet",
     heroSecondary: "To the Content Assistant",
     heroFounder:
@@ -153,9 +153,9 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     welcome: "Willkommen im AI Noob Club",
     heroShopCta: "Shop",
     heroLabel: "AI Noob Club",
-    heroTitle: "KI für Unternehmerinnen. Auch wenn du bei null startest.",
+    heroTitle: "KI für Frauen, die ihr eigenes Business führen. Auch wenn du bei null startest.",
     heroSubline:
-      "Du machst fast alles allein und hast wenig Zeit. Hier lernst du Schritt für Schritt, wie KI dir im Business hilft. Ohne dass du wie ein Roboter klingst.",
+      "Du machst fast alles allein, und der Tag hat nur so viele Stunden. Hier lernst du Schritt für Schritt, wie KI dir Zeit zurückgibt. Und dein Business klingt weiter nach dir. Nicht nach einem Roboter.",
     heroPrimary: "Gratis Wochen-Spickzettel",
     heroSecondary: "Zur Content-Assistentin",
     heroFounder:
