@@ -10,8 +10,8 @@ import { offersContent } from "@/lib/offers-content";
 import meetYourHostEnAsset from "@/assets/meet-your-host-en.webp.asset.json";
 import meetYourHostDeAsset from "@/assets/meet-your-host-de.webp.asset.json";
 import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de-v5.png.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en-v5.png.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v6.png.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v6.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
