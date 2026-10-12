@@ -38,7 +38,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     heroFounder: "Hi, I'm Dina.",
     aboutEyebrow: "About me",
     aboutParas: [
-      "I'm originally from the Netherlands and now live in Berlin. I used to be a product manager, and I'm still a bit obsessed with good products and smarter ways of working. Today I help women with small businesses get real use out of AI, one small step at a time.",
+      "Hi, I'm Dina. I'm originally from the Netherlands and now live in Berlin. I used to be a product manager, and I'm still a bit obsessed with good products and smarter ways of working. Today I help women with small businesses get real use out of AI, one small step at a time.",
       "I know the time squeeze myself. I run my own business, and at home there's an extremely active 4-year-old who only has two speeds: full speed and asleep. So I don't believe in complicated tools or hours of tinkering. I believe in small changes that give you your time back.",
       "Because your time is your most valuable asset. Let's invest it better.",
     ],
@@ -167,7 +167,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     heroFounder: "Hallo, ich bin Dina.",
     aboutEyebrow: "Über mich",
     aboutParas: [
-      "Ich komme ursprünglich aus den Niederlanden und lebe jetzt in Berlin. Ich war Produktmanagerin und bin immer noch ein bisschen verrückt nach guten Produkten und schlaueren Wegen zu arbeiten. Heute helfe ich Frauen mit kleinem Business, KI wirklich zu nutzen. Ein kleiner Schritt nach dem anderen.",
+      "Hallo, ich bin Dina. Ich komme ursprünglich aus den Niederlanden und lebe jetzt in Berlin. Ich war Produktmanagerin und bin immer noch ein bisschen verrückt nach guten Produkten und schlaueren Wegen zu arbeiten. Heute helfe ich Frauen mit kleinem Business, KI wirklich zu nutzen. Ein kleiner Schritt nach dem anderen.",
       "Die Zeitnot kenne ich selbst. Ich führe mein eigenes Business, und zu Hause läuft ein extrem aktives 4-jähriges Kind herum, das nur zwei Gänge hat: Vollgas und schlafen. Deshalb glaube ich nicht an komplizierte Tools und stundenlanges Basteln. Ich glaube an kleine Veränderungen, die dir Zeit zurückgeben.",
       "Denn deine Zeit ist dein wertvollstes Gut. Lass sie uns besser investieren.",
     ],

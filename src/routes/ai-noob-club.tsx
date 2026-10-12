@@ -79,23 +79,23 @@ function NoobClub() {
       <section id="dina" className="scroll-mt-44 md:scroll-mt-48 bg-noob-paper">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <div className="grid items-center gap-10 md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)]">
-            <div className="relative z-0 mx-auto w-full max-w-[17rem]">
-              <div aria-hidden className="absolute -inset-3 -z-10 rounded-full bg-noob-rosa" />
-              <img
-                src={dinaPortraitAsset.url}
-                alt={t.meetYourHostAlt}
-                className="relative w-full rounded-full"
-                width={1882}
-                height={1882}
-              />
-            </div>
-            <div>
+            <div className="flex flex-col items-center gap-4">
               <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">{t.aboutEyebrow}</p>
-              <div className="mt-5 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
-                {t.aboutParas.map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
+              <div className="relative z-0 mx-auto w-full max-w-[17rem]">
+                <div aria-hidden className="absolute -inset-3 -z-10 rounded-full bg-noob-rosa" />
+                <img
+                  src={dinaPortraitAsset.url}
+                  alt={t.meetYourHostAlt}
+                  className="relative w-full rounded-full"
+                  width={1882}
+                  height={1882}
+                />
               </div>
+            </div>
+            <div className="space-y-4 text-base leading-relaxed text-foreground md:text-lg">
+              {t.aboutParas.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
           </div>
         </div>
