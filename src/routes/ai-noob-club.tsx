@@ -298,6 +298,33 @@ function NoobClub() {
       </section>
 
       {/* Values */}
+      {/* About Dina */}
+      <section id="dina" className="scroll-mt-44 md:scroll-mt-48 bg-noob-paper">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <div className="grid items-center gap-10 md:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
+            <div className="relative z-0">
+              <div aria-hidden className="absolute -inset-3 -z-10 rounded-[2.5rem] bg-noob-rosa" />
+              <img
+                src={lang === "en" ? meetYourHostEnAsset.url : meetYourHostDeAsset.url}
+                alt={t.meetYourHostAlt}
+                className="relative w-full rounded-3xl"
+                width={1168}
+                height={1347}
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">{t.aboutEyebrow}</p>
+              <div className="mt-5 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
+                {t.aboutParas.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="werte" className="noob-dark scroll-mt-44 md:scroll-mt-48">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
