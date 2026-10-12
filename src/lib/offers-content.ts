@@ -22,7 +22,6 @@ export type NoobOffer = {
   workshopName: string;
   workshopBody: string;
   workshopCta: string;
-  liveNote: string;
   liveHeroLink: string;
 };
 
@@ -50,7 +49,6 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     workshopName: "Workshops für alle Frauen",
     workshopBody: "KI verstehen und ausprobieren, in kleinen Schritten. In Berlin vor Ort und online. Du brauchst kein Business und kein Vorwissen.",
     workshopCta: "Schreib mir",
-    liveNote: "Die Workshops sind offen für alle Frauen. Der Rest der Seite richtet sich an Frauen mit eigenem Business.",
     liveHeroLink: "Auch live: Meetups und Workshops in Berlin und online.",
   },
   en: {
@@ -75,8 +73,7 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     workshopTag: "On request",
     workshopName: "Workshops for all women",
     workshopBody: "Understand and try AI in small steps. In Berlin in person and online. You do not need a business or any prior knowledge.",
-    workshopCta: "Write to me",
-    liveNote: "The workshops are open to all women. The rest of the page is for women with their own business.",
+    workshopCta: "Write me",
     liveHeroLink: "Also live: meetups and workshops in Berlin and online.",
   },
 };
