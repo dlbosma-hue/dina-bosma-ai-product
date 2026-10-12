@@ -232,6 +232,8 @@
   font-family: var(--font-body);
   background-color: var(--noob-cream);
   color: var(--foreground);
+  /* Club pages have no fixed banner, so drop the global main offset that pushed the badge down. */
+  padding-top: 0;
 }
 .noob-theme h1, .noob-theme h2, .noob-theme h3, .noob-theme .font-serif {
   font-family: var(--font-serif);
