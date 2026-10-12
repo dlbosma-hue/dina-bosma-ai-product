@@ -32,7 +32,7 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     freeTag: "Gratis",
     soonTag: "Kommt bald",
     sheetName: "Deine 2 Gratis-Spickzettel",
-    sheetBody: "Du bekommst zwei Spickzettel per E-Mail:",
+    sheetBody: "Dein Starterpaket: zwei Spickzettel, die dir den Einstieg leichter machen:",
     sheetItems: [
       "KI-Basics: Was ein Prompt ist, was KI kann und was nicht, und was mit deinen Daten passiert. Eine Seite, ohne Fachchinesisch.",
       "Wochen-Spickzettel: Deine Content-Woche auf 2 Seiten. Du siehst, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
@@ -60,7 +60,7 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     freeTag: "Free",
     soonTag: "Coming soon",
     sheetName: "Your 2 free cheat sheets",
-    sheetBody: "You get two cheat sheets by email:",
+    sheetBody: "Two cheat sheets to get you off to a flying start:",
     sheetItems: [
       "AI basics: what a prompt is, what AI can and cannot do, and what happens to your data. One page, no jargon.",
       "Weekly cheat sheet: your week of content on 2 pages. You see the steps you need and tick them off yourself. No AI tool needed.",
