@@ -63,13 +63,12 @@ function NoobClub() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#checkliste" className={btnPrimary}>{t.heroPrimary}</a>
               <a
-                href="#starterset"
+                href="#treffen"
                 className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 {t.heroSecondary}
               </a>
             </div>
-            <a href="#treffen" className="mt-4 inline-block text-sm font-medium underline underline-offset-4">{ov.liveHeroLink}</a>
           </div>
         </div>
       </section>

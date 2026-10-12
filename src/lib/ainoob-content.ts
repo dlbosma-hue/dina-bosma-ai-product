@@ -18,7 +18,7 @@ type NoobStrings = {
   pathRows: { text: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
-  headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; navLive: string; menuOpen: string; menuClose: string;
+  headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
   seoTitle: string; seoDesc: string;
 };
 
@@ -30,11 +30,11 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     welcome: "Welcome to the AI Noob Club",
     heroShopCta: "Shop",
     heroLabel: "AI Noob Club",
-    heroTitle: "AI for women who run their own business. Even if you're starting from zero.",
+    heroTitle: "AI for women with their own business. Whether you're starting from zero or already a bit further along.",
     heroSubline:
       "You do almost everything yourself, and the day only has so many hours. Here you learn, step by step, how AI can give you some of that time back. And your business still sounds like you, not like a robot.",
     heroPrimary: "Free Weekly Cheat Sheet",
-    heroSecondary: "To the Content Assistant",
+    heroSecondary: "To the community",
     heroFounder: "Hi, I'm Dina.",
     aboutEyebrow: "About me",
     aboutParas: [
@@ -149,6 +149,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navChecklist: "Weekly Cheat Sheet",
     navChecklistCta: "Get the cheat sheet",
     navLive: "Meetups and workshops",
+    navCommunity: "Community",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     seoTitle: "AI Noob Club | AI for women who run their own business",
@@ -162,11 +163,11 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     welcome: "Willkommen im AI Noob Club",
     heroShopCta: "Shop",
     heroLabel: "AI Noob Club",
-    heroTitle: "KI für Frauen, die ihr eigenes Business führen. Auch wenn du bei null startest.",
+    heroTitle: "KI für Frauen mit eigenem Business. Ob du bei null startest oder schon ein bisschen weiter bist.",
     heroSubline:
       "Du machst fast alles allein, und der Tag hat nur so viele Stunden. Hier lernst du Schritt für Schritt, wie KI dir Zeit zurückgibt. Und dein Business klingt weiter nach dir. Nicht nach einem Roboter.",
     heroPrimary: "Gratis Wochen-Spickzettel",
-    heroSecondary: "Zur Content-Assistentin",
+    heroSecondary: "Zur Community",
     heroFounder: "Hallo, ich bin Dina.",
     aboutEyebrow: "Über mich",
     aboutParas: [
@@ -281,6 +282,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navChecklist: "Wochen-Spickzettel",
     navChecklistCta: "Spickzettel holen",
     navLive: "Treffen und Workshops",
+    navCommunity: "Community",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
     seoTitle: "AI Noob Club | KI für Frauen mit eigenem Business",
