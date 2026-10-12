@@ -319,6 +319,11 @@ const en = {
     values:
       "I work with EU values in mind: privacy first, human oversight, proportionate technology, and respect for the people affected by the system.",
   },
+  clubCallout: {
+    headline: "New to AI and want to start at your own pace?",
+    text: "AI Noob Club is the HUMINT community for beginners. Simple explanations, meetups and workshops, no jargon.",
+    link: "Visit AI Noob Club",
+  },
   form: {
     name: "Name",
     email: "Email",
@@ -676,6 +681,11 @@ const de: typeof en = {
       "Die meisten Projekte starten mit einem Scoping-Gespräch oder einem eintägigen Workshop. Danach wird die Zusammenarbeit so zugeschnitten, wie es für Ihr Team und Ihre Situation wirklich sinnvoll ist. Gerne bespreche ich mit Ihnen, wie das aussehen könnte.",
     values:
       "Ich arbeite mit europäischen Werten im Blick: Datenschutz, menschliche Aufsicht, angemessene Technologie und Respekt gegenüber den Menschen, die vom System betroffen sind.",
+  },
+  clubCallout: {
+    headline: "Neu bei KI und möchtest in deinem Tempo starten?",
+    text: "Der AI Noob Club ist die HUMINT Community für Einsteiger. Einfach erklärt, mit Meetups und Workshops, ohne Fachchinesisch.",
+    link: "Zum AI Noob Club",
   },
   form: {
     name: "Name",

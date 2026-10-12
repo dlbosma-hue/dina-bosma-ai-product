@@ -37,6 +37,8 @@
   --color-noob-cream: var(--noob-cream);
   --color-noob-rosa: var(--noob-rosa);
   --color-noob-sky: var(--noob-sky);
+  --color-noob-callout: var(--noob-callout);
+  --color-noob-callout-border: var(--noob-callout-border);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -79,6 +81,9 @@
   --noob-blush: oklch(0.925 0.035 22);
   --noob-surface: oklch(0.955 0.028 40);
   --noob-terracotta: oklch(0.55 0.11 38);
+  /* HUMINT homepage callout toward the AI Noob Club: soft rosa card, slightly darker rosa border. */
+  --noob-callout: oklch(0.921 0.0308 2.6);
+  --noob-callout-border: oklch(0.866 0.0462 6.3);
   --radius: 0rem;
   /* Warm paper background, deep navy ink, navy accent */
   --background: oklch(0.968 0.014 88);
