@@ -92,7 +92,7 @@ function NoobClub() {
             </div>
             <div className="min-w-0">
               <span aria-hidden className="block h-[3px] w-10 bg-noob-terracotta" />
-              <h3 className="mt-3 font-serif text-4xl leading-tight text-noob-navy md:text-5xl">
+              <h3 className="mt-3 font-serif text-3xl leading-tight text-noob-navy md:text-4xl">
                 {t.aboutEyebrow}
               </h3>
               <div className="mt-4 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
