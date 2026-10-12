@@ -25,6 +25,6 @@ export const noobClub = {
     /** Meetup page. Empty = no button on the meetup card. */
     meetup: "https://meetup.com/ai-for-women-berlin-beginner-meetup",
     /** Club contact email (opens the visitor's email app). HUMINT keeps its own Calendly. */
-    contact: "mailto:info@humint.site",
+    contact: "mailto:ai.noobclub@humint.site",
   },
 };
