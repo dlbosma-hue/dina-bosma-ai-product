@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en-v6.png.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club-anmeldung")({
   component: SignupPage,
