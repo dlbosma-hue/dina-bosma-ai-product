@@ -216,6 +216,9 @@ function NoobClub() {
             <div>
               <h2 className="font-serif text-4xl leading-tight md:text-5xl">{community.title}</h2>
               <p className="mt-4 text-lg leading-relaxed">{community.subline}</p>
+              <p className="mt-4 border-l-4 border-noob-terracotta bg-noob-rosa py-3 pl-4 pr-3 text-base font-semibold leading-relaxed text-noob-navy">
+                {community.firstTesters}
+              </p>
             </div>
             <div className="md:col-start-2 md:row-span-2 md:row-start-1">
               <CommunityVideo key={lang} lang={lang} />

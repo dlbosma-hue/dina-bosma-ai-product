@@ -2,6 +2,7 @@ export const communityContent = {
   de: {
     title: "Die Gründerinnen-Community",
     subline: "20 Unternehmerinnen testen meine KI-Produkte vor allen anderen. Kostenlos.",
+    firstTesters: "Du gehörst zu den Ersten, die den Edit-Guide kostenlos testen.",
     points: ["Früher Zugang.", "Mitreden.", "1:1 Business-Check zum halben Preis."],
     how: "So geht's",
     steps: ["1. Anmelden.", "2. Produkt testen.", "3. Kurzes Feedback geben."],
@@ -15,6 +16,7 @@ export const communityContent = {
   en: {
     title: "The Founders' Community",
     subline: "20 women entrepreneurs test my AI products before anyone else. For free.",
+    firstTesters: "You're among the first people to test the Edit Guide, for free.",
     points: ["Early access.", "A say in what I build.", "1:1 business check at half price."],
     how: "How it works",
     steps: ["1. Sign up.", "2. Test a product.", "3. Give short feedback."],
