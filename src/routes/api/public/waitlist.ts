@@ -32,6 +32,7 @@ export const Route = createFileRoute('/api/public/waitlist')({
     form.set('_subject', `AI Noob Club signup (${data.source})`)
     let formspreeDelivered = false
     let sent = false
+    let ownerNotified = false
     try {
       const response = await fetch('https://formspree.io/f/maqkylpb', { method: 'POST', body: form, headers: { Accept: 'application/json' } })
       formspreeDelivered = response.ok
@@ -40,7 +41,11 @@ export const Route = createFileRoute('/api/public/waitlist')({
       const result = await sendTemplateEmail(confirmationTemplate(data.source), data.email, { templateData: { name: data.name, lang: data.lang }, idempotencyKey: `club-confirmation-${data.id}` })
       sent = result.sent
     } catch { console.error('Club confirmation delivery failed') }
-    await supabaseAdmin.from('waitlist_submissions').update({ formspree_delivered: formspreeDelivered, confirmation_sent: sent }).eq('id', data.id)
+    try {
+      const result = await sendTemplateEmail('club-signup-notification', 'ai.noobclub@humint.site', { templateData: data, idempotencyKey: `club-owner-${data.id}` })
+      ownerNotified = result.sent
+    } catch { console.error('Club owner email failed') }
+    await supabaseAdmin.from('waitlist_submissions').update({ formspree_delivered: formspreeDelivered, confirmation_sent: sent, owner_notified: ownerNotified }).eq('id', data.id)
     return Response.json({ ok: true, sent })
   } } },
 })

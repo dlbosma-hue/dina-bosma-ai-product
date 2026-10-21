@@ -28,6 +28,7 @@ export type Database = {
           ip_hash: string
           lang: string
           name: string
+          owner_notified: boolean
           pain: string
           source: string
         }
@@ -44,6 +45,7 @@ export type Database = {
           ip_hash: string
           lang?: string
           name: string
+          owner_notified?: boolean
           pain?: string
           source: string
         }
@@ -60,6 +62,7 @@ export type Database = {
           ip_hash?: string
           lang?: string
           name?: string
+          owner_notified?: boolean
           pain?: string
           source?: string
         }
