@@ -214,13 +214,13 @@
 .noob-theme {
   --noob-navy: oklch(0.284 0.046 266);
   /* Mood-board pass 2: lighter, softer blocks. Orange text and icons keep the ink value. */
-  --noob-terracotta: oklch(0.75 0.105 37);
-  --noob-terracotta-ink: oklch(0.684 0.12 37);
-  --noob-cream: oklch(0.966 0.02 78);
-  --noob-rosa: oklch(0.915 0.05 10);
-  --noob-sky: oklch(0.945 0.028 225);
-  --noob-callout: oklch(0.945 0.026 2.6);
-  --noob-callout-border: oklch(0.895 0.038 6.3);
+  --noob-terracotta: oklch(0.86 0.065 55);
+  --noob-terracotta-ink: oklch(0.62 0.12 40);
+  --noob-cream: oklch(0.975 0.014 80);
+  --noob-rosa: oklch(0.945 0.025 10);
+  --noob-sky: oklch(0.955 0.02 230);
+  --noob-callout: oklch(0.96 0.016 5);
+  --noob-callout-border: oklch(0.915 0.03 8);
   --noob-paper: var(--noob-cream);
   --noob-blush: var(--noob-rosa);
   --noob-surface: var(--noob-rosa);
