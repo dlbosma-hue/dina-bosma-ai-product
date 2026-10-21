@@ -1,3 +1,6 @@
+import videoDeAsset from "@/assets/edit-guide-reel-de.mp4.asset.json";
+import videoDePosterAsset from "@/assets/edit-guide-reel-de-poster.jpg.asset.json";
+
 export const communityContent = {
   de: {
     title: "Die Gründerinnen-Community",
