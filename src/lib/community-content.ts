@@ -1,3 +1,6 @@
+import videoDeAsset from "@/assets/edit-guide-reel-de.mp4.asset.json";
+import videoDePosterAsset from "@/assets/edit-guide-reel-de-poster.jpg.asset.json";
+
 export const communityContent = {
   de: {
     title: "Die Gründerinnen-Community",
@@ -29,13 +32,15 @@ export const communityContent = {
   },
 };
 
+const siteUrl = "https://humint.site";
+
 export const communityVideoSchema = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
   name: "Edit-Guide: Reels schneiden mit Claude",
   description: communityContent.de.caption,
-  thumbnailUrl: "https://humint.site/videos/edit-guide-reel-de-poster.jpg",
-  contentUrl: "https://humint.site/videos/edit-guide-reel-de.mp4",
+  thumbnailUrl: `${siteUrl}${videoDePosterAsset.url}`,
+  contentUrl: `${siteUrl}${videoDeAsset.url}`,
   uploadDate: "2026-10-21",
   duration: "PT44S",
 };
