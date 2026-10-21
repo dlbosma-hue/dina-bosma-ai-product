@@ -3,11 +3,14 @@ import type { NoobLang } from "@/lib/ainoob-content";
 import { communityContent } from "@/lib/community-content";
 import videoDeAsset from "@/assets/edit-guide-reel-de.mp4.asset.json";
 import posterDeAsset from "@/assets/edit-guide-reel-de-poster.jpg.asset.json";
+import videoEnAsset from "@/assets/edit-guide-reel-en.mp4.asset.json";
+import posterEnAsset from "@/assets/edit-guide-reel-en-poster.jpg.asset.json";
 
-// The German reel exists. The English one is added here as soon as its file is uploaded,
-// so a missing upload never leaves a broken player on the page.
+// Each language has its own reel. A language with no entry here, or a file that stops
+// resolving, never leaves a broken player on the page.
 const clubVideo: Partial<Record<NoobLang, { poster: string; video: string }>> = {
   de: { poster: posterDeAsset.url, video: videoDeAsset.url },
+  en: { poster: posterEnAsset.url, video: videoEnAsset.url },
 };
 
 export function CommunityVideo({ lang }: { lang: NoobLang }) {

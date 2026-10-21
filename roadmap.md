@@ -15,3 +15,4 @@
 - [x] 2026-10-21: Verified two bilingual forms, business and pain storage, confirmation and owner sends, mobile layout and permanent redirects; video files will be supplied separately.
 - [x] 2026-10-21: Added the optional step 3 info line in the three-step section, DE and EN, verified in preview without publishing.
 - [x] 2026-10-21: Published the German Edit-Guide reel in the Community section with a cover made from its opening frame; the English player stays hidden until that file is supplied.
+- [x] 2026-10-21: Published the English Edit-Guide reel with its own cover in the Community section, DE and EN verified in preview without publishing.
