@@ -4,7 +4,7 @@ import type { NoobContent } from "@/lib/ainoob-content";
 import { useLanguage } from "@/lib/i18n";
 
 type Status = "idle" | "sending" | "done" | "error";
-export type SignupSource = "checkliste" | "starterset";
+export type SignupSource = "checkliste" | "starterset" | "editguide";
 
 const copy = {
   de: {
