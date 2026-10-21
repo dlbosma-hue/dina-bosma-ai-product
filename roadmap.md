@@ -16,3 +16,4 @@
 - [x] 2026-10-21: Added the optional step 3 info line in the three-step section, DE and EN, verified in preview without publishing.
 - [x] 2026-10-21: Published the German Edit-Guide reel in the Community section with a cover made from its opening frame; the English player stays hidden until that file is supplied.
 - [x] 2026-10-21: Published the English Edit-Guide reel with its own cover in the Community section, DE and EN verified in preview without publishing.
+- [x] 2026-10-21: Added the bilingual Instagram link-in-bio page at /ai-noob-club/links with five links, noindex, verified DE and EN on phone and desktop without publishing.

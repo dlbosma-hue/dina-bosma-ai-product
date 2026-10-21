@@ -80,6 +80,12 @@ export const noobMeta = {
     de: { title: "Widerruf und Stornierung | AI Noob Club", description: "Widerruf und Stornierung im AI Noob Club von HUMINT." },
     en: { title: "Withdrawal and cancellation | AI Noob Club", description: "Withdrawal and cancellation at the AI Noob Club by HUMINT." },
   },
+  bio: {
+    path: "/ai-noob-club/links",
+    noindex: true,
+    de: { title: "Link in Bio | AI Noob Club", description: "Die wichtigsten Links vom AI Noob Club: Gründerinnen-Community, Gratis-Starterpaket, KI-Foto-Prompts, Treffen in Berlin und Workshops." },
+    en: { title: "Link in bio | AI Noob Club", description: "The most important links from the AI Noob Club: Founders' Community, free starter pack, AI photo prompts, Berlin meetups and workshops." },
+  },
   privacy: {
     path: "/datenschutz",
     de: { title: "Datenschutz | AI Noob Club", description: "Datenschutzerklärung des AI Noob Club von HUMINT." },

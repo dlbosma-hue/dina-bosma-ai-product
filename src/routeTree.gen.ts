@@ -19,6 +19,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as AiNoobClubChecklisteRouteImport } from './routes/ai-noob-club_.checkliste'
 import { Route as AiNoobClubDankeRouteImport } from './routes/ai-noob-club_.danke'
 import { Route as AiNoobClubDatenschutzRouteImport } from './routes/ai-noob-club_.datenschutz'
+import { Route as AiNoobClubLinksRouteImport } from './routes/ai-noob-club_.links'
 import { Route as AiNoobClubStarterSetRouteImport } from './routes/ai-noob-club_.starter-set'
 import { Route as AiNoobClubWiderrufRouteImport } from './routes/ai-noob-club_.widerruf'
 import { Route as ApiPublicSignupRouteImport } from './routes/api/public/signup'
@@ -75,6 +76,11 @@ const AiNoobClubDatenschutzRoute = AiNoobClubDatenschutzRouteImport.update({
   path: '/ai-noob-club/datenschutz',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AiNoobClubLinksRoute = AiNoobClubLinksRouteImport.update({
+  id: '/ai-noob-club_/links',
+  path: '/ai-noob-club/links',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AiNoobClubStarterSetRoute = AiNoobClubStarterSetRouteImport.update({
   id: '/ai-noob-club_/starter-set',
   path: '/ai-noob-club/starter-set',
@@ -113,6 +119,7 @@ export interface FileRoutesByFullPath {
   '/ai-noob-club/checkliste': typeof AiNoobClubChecklisteRoute
   '/ai-noob-club/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club/datenschutz': typeof AiNoobClubDatenschutzRoute
+  '/ai-noob-club/links': typeof AiNoobClubLinksRoute
   '/ai-noob-club/starter-set': typeof AiNoobClubStarterSetRoute
   '/ai-noob-club/widerruf': typeof AiNoobClubWiderrufRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
@@ -130,6 +137,7 @@ export interface FileRoutesByTo {
   '/ai-noob-club/checkliste': typeof AiNoobClubChecklisteRoute
   '/ai-noob-club/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club/datenschutz': typeof AiNoobClubDatenschutzRoute
+  '/ai-noob-club/links': typeof AiNoobClubLinksRoute
   '/ai-noob-club/starter-set': typeof AiNoobClubStarterSetRoute
   '/ai-noob-club/widerruf': typeof AiNoobClubWiderrufRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
@@ -148,6 +156,7 @@ export interface FileRoutesById {
   '/ai-noob-club_/checkliste': typeof AiNoobClubChecklisteRoute
   '/ai-noob-club_/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club_/datenschutz': typeof AiNoobClubDatenschutzRoute
+  '/ai-noob-club_/links': typeof AiNoobClubLinksRoute
   '/ai-noob-club_/starter-set': typeof AiNoobClubStarterSetRoute
   '/ai-noob-club_/widerruf': typeof AiNoobClubWiderrufRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
@@ -167,6 +176,7 @@ export interface FileRouteTypes {
     | '/ai-noob-club/checkliste'
     | '/ai-noob-club/danke'
     | '/ai-noob-club/datenschutz'
+    | '/ai-noob-club/links'
     | '/ai-noob-club/starter-set'
     | '/ai-noob-club/widerruf'
     | '/api/public/signup'
@@ -184,6 +194,7 @@ export interface FileRouteTypes {
     | '/ai-noob-club/checkliste'
     | '/ai-noob-club/danke'
     | '/ai-noob-club/datenschutz'
+    | '/ai-noob-club/links'
     | '/ai-noob-club/starter-set'
     | '/ai-noob-club/widerruf'
     | '/api/public/signup'
@@ -201,6 +212,7 @@ export interface FileRouteTypes {
     | '/ai-noob-club_/checkliste'
     | '/ai-noob-club_/danke'
     | '/ai-noob-club_/datenschutz'
+    | '/ai-noob-club_/links'
     | '/ai-noob-club_/starter-set'
     | '/ai-noob-club_/widerruf'
     | '/api/public/signup'
@@ -219,6 +231,7 @@ export interface RootRouteChildren {
   AiNoobClubChecklisteRoute: typeof AiNoobClubChecklisteRoute
   AiNoobClubDankeRoute: typeof AiNoobClubDankeRoute
   AiNoobClubDatenschutzRoute: typeof AiNoobClubDatenschutzRoute
+  AiNoobClubLinksRoute: typeof AiNoobClubLinksRoute
   AiNoobClubStarterSetRoute: typeof AiNoobClubStarterSetRoute
   AiNoobClubWiderrufRoute: typeof AiNoobClubWiderrufRoute
   ApiPublicSignupRoute: typeof ApiPublicSignupRoute
@@ -298,6 +311,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AiNoobClubDatenschutzRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-noob-club_/links': {
+      id: '/ai-noob-club_/links'
+      path: '/ai-noob-club/links'
+      fullPath: '/ai-noob-club/links'
+      preLoaderRoute: typeof AiNoobClubLinksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ai-noob-club_/starter-set': {
       id: '/ai-noob-club_/starter-set'
       path: '/ai-noob-club/starter-set'
@@ -347,6 +367,7 @@ const rootRouteChildren: RootRouteChildren = {
   AiNoobClubChecklisteRoute: AiNoobClubChecklisteRoute,
   AiNoobClubDankeRoute: AiNoobClubDankeRoute,
   AiNoobClubDatenschutzRoute: AiNoobClubDatenschutzRoute,
+  AiNoobClubLinksRoute: AiNoobClubLinksRoute,
   AiNoobClubStarterSetRoute: AiNoobClubStarterSetRoute,
   AiNoobClubWiderrufRoute: AiNoobClubWiderrufRoute,
   ApiPublicSignupRoute: ApiPublicSignupRoute,
