@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, Scripts, redirect } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
 import { LanguageProvider } from "@/lib/i18n";
@@ -26,6 +26,11 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
+  beforeLoad: ({ location }) => {
+    if (location.pathname.replace(/\/$/, "") === "/ai-noob-club_/datenschutz") {
+      throw redirect({ to: "/datenschutz", statusCode: 301 });
+    }
+  },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
