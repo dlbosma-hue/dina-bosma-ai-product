@@ -159,6 +159,11 @@ function NoobClub() {
                     </li>
                   ))}
                 </ul>
+                {card.info && (
+                  <p className="mt-4 border-l-4 border-noob-terracotta bg-noob-rosa py-2.5 pl-3 pr-3 text-sm font-semibold leading-relaxed text-noob-navy">
+                    {card.info}
+                  </p>
+                )}
                 <div className="flex-1" />
                 <div className="mt-6 flex flex-col items-start gap-1">
                   <a href={card.href} className={`${btnPrimary} h-auto min-h-12 whitespace-normal py-3 text-center`}>{card.cta}</a>
