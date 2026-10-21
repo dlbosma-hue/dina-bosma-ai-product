@@ -18,3 +18,5 @@
 - [x] 2026-10-21: Published the English Edit-Guide reel with its own cover in the Community section, DE and EN verified in preview without publishing.
 - [x] 2026-10-21: Added the bilingual Instagram link-in-bio page at /ai-noob-club/links with five links, noindex, verified DE and EN on phone and desktop without publishing.
 - [x] 2026-10-21: Lightened the Club pink, orange and blue palette, kept orange text on a readable ink shade, and named free early Edit-Guide access in the Community link on the bio page; DE and EN verified without publishing.
+- [x] 2026-10-21: Reworded the Community hint on the Instagram link-in-bio page in DE and EN; verified on phone and desktop without publishing.
+- [x] 2026-10-21: Brightened the Club orange to match the logo letters (blocks oklch(0.75 0.13 38), text and icons oklch(0.65 0.16 35)); DE and EN verified without publishing.
