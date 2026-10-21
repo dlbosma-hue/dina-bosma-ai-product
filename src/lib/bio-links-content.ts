@@ -30,7 +30,7 @@ export const bioLinksContent = {
       {
         id: "community",
         title: "Gründerinnen-Community: Edit-Guide für Reels gratis vorab testen",
-        hint: "Früheren Zugang für die ersten Testerinnen. Kostenlos.",
+        hint: "Du gehörst zu den Ersten, die u.a. den Edit-Guide kostenlos testen.",
         featured: true,
       },
       {
@@ -66,7 +66,7 @@ export const bioLinksContent = {
       {
         id: "community",
         title: "Founders' Community: free early access to the Reels Edit Guide",
-        hint: "Early access for the first testers. Free.",
+        hint: "You're among the first people to test the Edit Guide and more, for free.",
         featured: true,
       },
       {
