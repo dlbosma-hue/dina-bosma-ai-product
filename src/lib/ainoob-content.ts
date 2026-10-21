@@ -15,7 +15,7 @@ type NoobStrings = {
   pathTitle: string; pathIntro: string; learnLabel: string;
   pathNote: { before: string; link: string; after: string };
   statusSoon: string; statusAvailable: string; statusFree: string;
-  pathCards: { title: string; body: string; learn: string[]; status?: "free"; cta: string; href: string; cta2?: string; href2?: string }[];
+  pathCards: { title: string; body: string; learn: string[]; status?: "free"; cta: string; href: string; cta2?: string; href2?: string; info?: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
   headerSubtitle: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
@@ -125,6 +125,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         title: "Build",
         body: "You build your own assistant that knows your voice.",
         learn: ["Set up your own assistant", "Write down your voice", "Plan a week of content in one go"],
+        info: "Info: You test my digital products for free in the Community and get early access.",
         cta: "Test early in the Community",
         href: "#community",
       },
@@ -252,6 +253,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         title: "Bauen",
         body: "Du baust dir eine Assistentin, die deine Stimme kennt.",
         learn: ["Eine eigene Assistentin einrichten", "Deine Stimme festhalten", "Eine Woche Content in einem Rutsch planen"],
+        info: "Info: Meine digitalen Produkte testest du kostenlos in der Community und bekommst früheren Zugang.",
         cta: "Früh testen in der Community",
         href: "#community",
       },
