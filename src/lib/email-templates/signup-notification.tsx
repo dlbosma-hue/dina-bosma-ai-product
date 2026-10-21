@@ -13,10 +13,10 @@ interface Props {
 const Email = ({ name, email, choice, message, lang }: Props) => (
   <Html lang="de" dir="ltr">
     <Head />
-    <Preview>{`Neue Anmeldung: ${choice ?? '-'}`}</Preview>
+    <Preview>{`Neue Registrierung: ${choice ?? '-'}`}</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Heading style={heading}>Neue Anmeldung über die Landingpage</Heading>
+        <Heading style={heading}>Neue Registrierung über die Landingpage</Heading>
         <Text style={text}><b>Auswahl:</b> {choice || '-'}</Text>
         <Text style={text}><b>Name:</b> {name || '-'}</Text>
         <Text style={text}><b>E-Mail:</b> {email || '-'}</Text>
@@ -29,7 +29,7 @@ const Email = ({ name, email, choice, message, lang }: Props) => (
 
 export const template = {
   component: Email,
-  subject: (d: Record<string, any>) => `Neue Anmeldung: ${d['choice'] ?? ''} (${d['name'] ?? ''})`,
+  subject: (d: Record<string, any>) => `Neue Registrierung: ${d['choice'] ?? ''} (${d['name'] ?? ''})`,
   displayName: 'Landingpage sign-up notice (to Dina)',
   to: 'landingpage@humint.site',
   previewData: { name: 'Jane', email: 'jane@example.com', choice: 'Workshop', message: 'Hallo!', lang: 'de' },

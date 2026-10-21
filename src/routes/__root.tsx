@@ -39,8 +39,6 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "HUMINT, Human intelligence. AI powered." },
       { name: "twitter:description", content: "AI consulting by Dina Bosma Buczynska. Strategy, build and the human side. Based in Berlin." },
-      { property: "og:image", content: "https://humint.site/og-image.jpg?v=2" },
-      { name: "twitter:image", content: "https://humint.site/og-image.jpg?v=2" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -56,6 +54,16 @@ export const Route = createRootRoute({
       { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
     scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org", "@type": "Organization",
+          name: "HUMINT", url: "https://humint.site",
+          founder: { "@type": "Person", name: "Dina Bosma-Buczynska" },
+          areaServed: "Berlin",
+          sameAs: ["https://www.linkedin.com/in/dina-bosma-buczynska-b1a64544/", "https://github.com/dlbosma-hue", "https://medium.com/@dinaleonidovnabosma"],
+        }),
+      },
       {
         type: "application/ld+json",
         children: JSON.stringify({

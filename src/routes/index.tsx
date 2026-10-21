@@ -25,6 +25,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "HUMINT | KI-Beratung und Umsetzung" },
       { property: "og:description", content: "KI-Strategie, praktische Umsetzung und die menschliche Seite. Beratung von Dina Bosma-Buczynska." },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://humint.site/og-image.jpg?v=2" },
+      { name: "twitter:image", content: "https://humint.site/og-image.jpg?v=2" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://humint.site/" },
     ],

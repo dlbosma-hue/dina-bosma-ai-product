@@ -1,19 +1,7 @@
 // AI Noob Club settings. Change values here, not in components.
-export type StarterSetStatus = "soon" | "available";
-
 export const noobClub = {
-  starterSet: {
-    title: "",
-    status: "soon" as StarterSetStatus,
-    priceEur: "",
-    tool: "",
-    toolCostNote: "",
-    buyUrlGumroad: "",
-    buyUrlEtsy: "",
-    includesRecording: false,
-    supportNote: "",
-    guaranteeText: "",
-  },
+  communityCapacity: 20,
+  promptsPriceEur: 9.99,
   showWiderruf: false,
   links: {
     etsyShop: "https://www.etsy.com/shop/TheAINoobClub",
