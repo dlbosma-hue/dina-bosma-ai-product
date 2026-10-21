@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Simplify Club to starter pack and Founders' Community forms, bilingual renames, sale price, redirects and SEO; verify storage and preview without publishing.
+
 - [x] Remove the Club newsletter block, point the header button to the free checklist, and drop newsletter wording from the signup consent and confirmation email.
 
 - [x] Correct repeated Club host photo, display wide language-specific logos, remove circle-logo white background, and restore original creative headlines.
