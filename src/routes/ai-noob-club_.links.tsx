@@ -68,7 +68,7 @@ function BioLinksPage() {
                 >
                   <span
                     aria-hidden
-                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-noob-cream font-serif text-lg text-noob-terracotta"
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-noob-cream font-serif text-lg text-noob-navy"
                   >
                     {i + 1}
                   </span>
@@ -76,7 +76,7 @@ function BioLinksPage() {
                     <span className="block text-base font-semibold leading-snug text-foreground">
                       {l.title}
                     </span>
-                    <span className="mt-1 block text-sm leading-snug text-foreground/75">{l.hint}</span>
+                    <span className="mt-1 block text-sm leading-snug text-foreground">{l.hint}</span>
                   </span>
                   {l.external ? (
                     <>

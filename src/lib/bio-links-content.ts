@@ -29,8 +29,8 @@ export const bioLinksContent = {
     links: [
       {
         id: "community",
-        title: "Gründerinnen-Community: kostenlos testen",
-        hint: "Lernen geht auch zusammen. Du testest neue Produkte kostenlos.",
+        title: "Gründerinnen-Community: Edit-Guide für Reels gratis vorab testen",
+        hint: "Früheren Zugang für die ersten Testerinnen. Kostenlos.",
         featured: true,
       },
       {
@@ -65,8 +65,8 @@ export const bioLinksContent = {
     links: [
       {
         id: "community",
-        title: "Founders' Community: test for free",
-        hint: "Learning works better together. You test new products for free.",
+        title: "Founders' Community: free early access to the Reels Edit Guide",
+        hint: "Early access for the first testers. Free.",
         featured: true,
       },
       {

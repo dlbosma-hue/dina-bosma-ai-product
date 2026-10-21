@@ -95,7 +95,7 @@ export function WaitlistForm({ t, source, submitLabel, note }: { t: NoobContent;
         </label>
       </>}
       <label className="flex gap-3 text-sm leading-relaxed" htmlFor={`${id}-consent`}>
-        <input id={`${id}-consent`} type="checkbox" name="consent" required aria-invalid={errors.consent || undefined} aria-describedby={errors.consent ? `${id}-consent-err` : undefined} className="mt-0.5 h-5 w-5 shrink-0 accent-noob-terracotta focus-visible:ring-2 focus-visible:ring-ring" />
+        <input id={`${id}-consent`} type="checkbox" name="consent" required aria-invalid={errors.consent || undefined} aria-describedby={errors.consent ? `${id}-consent-err` : undefined} className="mt-0.5 h-5 w-5 shrink-0 accent-noob-terracotta-ink focus-visible:ring-2 focus-visible:ring-ring" />
         <span>{consent[source]}<Link to="/datenschutz" className="underline underline-offset-2">{consent.privacy}</Link>.</span>
       </label>
       {errorText("consent", c.errConsent)}

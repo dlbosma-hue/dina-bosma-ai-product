@@ -28,7 +28,7 @@ function ChecklistPage() {
             <ul className="mt-6 space-y-3">
               {c.benefits.map((b) => (
                 <li key={b} className="flex gap-3 text-base leading-relaxed">
-                  <Check aria-hidden className="mt-0.5 h-5 w-5 shrink-0 text-noob-terracotta" />
+                  <Check aria-hidden className="mt-0.5 h-5 w-5 shrink-0 text-noob-terracotta-ink" />
                   <span>{b}</span>
                 </li>
               ))}
