@@ -52,7 +52,7 @@ function NoobClub() {
             </p>
             <h1 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
               {t.heroTitle}{" "}
-              <span className="italic text-noob-terracotta">{t.heroContinuation}</span>
+              <span className="italic text-noob-terracotta-ink">{t.heroContinuation}</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-foreground">
               {t.heroSubline}
@@ -292,7 +292,7 @@ function NoobClub() {
                 height={1264}
               />
               <h3 className="mt-5 font-serif text-3xl leading-snug">{t.productTitle}</h3>
-              <p className="mt-3 text-2xl font-semibold text-noob-terracotta">{t.productPrice}</p>
+              <p className="mt-3 text-2xl font-semibold text-noob-terracotta-ink">{t.productPrice}</p>
               <p className="mt-3 text-base leading-relaxed text-foreground">{t.productBody}</p>
               <ul className="mt-4 space-y-2">
                 {t.productBullets.map((b) => (
@@ -344,7 +344,7 @@ function NoobClub() {
               const Icon = [Sparkles, Users, Leaf, ShieldCheck][i] ?? Sparkles;
               return (
                 <li key={v.title} className="flex gap-4">
-                  <Icon className="mt-1 h-6 w-6 shrink-0 text-noob-terracotta" aria-hidden />
+                  <Icon className="mt-1 h-6 w-6 shrink-0 text-noob-terracotta-ink" aria-hidden />
                   <div>
                     <h3 className="font-serif text-xl leading-snug">{v.title}</h3>
                     <p className="mt-2 text-base leading-relaxed text-foreground">{v.body}</p>
