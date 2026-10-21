@@ -1,0 +1,1 @@
+ALTER TABLE public.waitlist_submissions ADD COLUMN owner_notified boolean NOT NULL DEFAULT false;

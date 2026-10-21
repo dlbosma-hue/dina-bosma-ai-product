@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792591953551,
+      "tag": "0000_create_club_waitlist_submissions",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792592100201,
+      "tag": "0001_track_club_owner_notifications",
+      "breakpoints": true
+    }
+  ]
+}

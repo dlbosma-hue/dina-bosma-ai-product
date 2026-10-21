@@ -29,12 +29,10 @@ export function NoobHeader() {
   );
   const textLinks = (
     <>
-      <Link to="/ai-noob-club" hash="starterset" onClick={close} className={navLink}>{t.navStarter}</Link>
       <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={navLink}>{t.navChecklist}</Link>
-      <Link to="/ai-noob-club" hash="treffen" onClick={close} className={navLink}>{t.navCommunity}</Link>
-      <Link to="/ai-noob-club-anmeldung" onClick={close} className={navLink}>
-        {lang === "de" ? "Jetzt dabei sein" : "Sign up now"}
-      </Link>
+      <Link to="/ai-noob-club" hash="community" onClick={close} className={navLink}>{t.navCommunity}</Link>
+      <Link to="/ai-noob-club" hash="treffen" onClick={close} className={navLink}>{t.navLive}</Link>
+      <Link to="/ai-noob-club" hash="shop" onClick={close} className={navLink}>{t.heroShopCta}</Link>
     </>
   );
 

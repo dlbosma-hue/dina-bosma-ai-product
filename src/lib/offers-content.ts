@@ -1,18 +1,14 @@
 import type { NoobLang } from "@/lib/ainoob-content";
 
-/** Copy for the two offers on the Club landing page: the free sheet and the paid assistant. */
+/** Starter pack and public meetup copy. */
 export type NoobOffer = {
   title: string;
   freeTag: string;
-  soonTag: string;
   sheetName: string;
   sheetBody: string;
   sheetItems: string[];
   sheetCta: string;
   sheetNote: string;
-  assistantName: string;
-  assistantBody: string;
-  line: string;
   liveTitle: string;
   liveIntro: string;
   meetupTag: string;
@@ -23,27 +19,21 @@ export type NoobOffer = {
   workshopName: string;
   workshopBody: string;
   workshopCta: string;
-  liveHeroLink: string;
 };
 
 export const offersContent: Record<NoobLang, NoobOffer> = {
   de: {
     title: "Womit du starten kannst",
     freeTag: "Gratis",
-    soonTag: "Kommt bald",
-    sheetName: "Deine 2 Gratis-Spickzettel",
-    sheetBody: "Dein Starterpaket: zwei Spickzettel, die dir den Einstieg leichter machen:",
+    sheetName: "Dein Gratis-Starterpaket",
+    sheetBody: "Dein Starterpaket: zwei PDFs, die dir den Einstieg leichter machen:",
     sheetItems: [
       "KI-Basics: Was ein Prompt ist, was KI kann und was nicht, und was mit deinen Daten passiert. Eine Seite, ohne Fachchinesisch.",
-      "Wochen-Spickzettel: Deine Content-Woche auf 2 Seiten. Du siehst, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
+      "Content-Wochenplan: Deine Content-Woche auf 2 Seiten. Du siehst, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
     ],
-    sheetCta: "Spickzettel holen",
+    sheetCta: "Starterpaket holen",
     sheetNote: "Du bekommst eine E-Mail zur Bestätigung. Abmelden geht jederzeit.",
-    assistantName: "Content-Assistentin",
-    assistantBody:
-      "Deine fertig eingerichtete KI-Assistentin für die Content-Woche. Sie hilft dir, deine Woche zu planen und Entwürfe in deiner Stimme zu schreiben. Mit schriftlicher Einrichtungsanleitung. Einmal kaufen, kein Kurs.",
-    line: "Der Spickzettel zeigt dir den Weg. Die Assistentin geht ihn mit dir.",
-    liveTitle: "Community",
+    liveTitle: "Treffen und Workshops",
     liveIntro: "Lernen geht auch zusammen. In Berlin und online.",
     meetupTag: "Termine auf Meetup",
     meetupName: "AI for Women Meetup",
@@ -53,25 +43,19 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     workshopName: "Workshops",
     workshopBody: "KI verstehen und ausprobieren, in kleinen Schritten. In Berlin vor Ort und online. Du brauchst kein Business und kein Vorwissen.",
     workshopCta: "Schreib mir",
-    liveHeroLink: "Auch live: Meetups und Workshops in Berlin und online.",
   },
   en: {
     title: "What you can start with",
     freeTag: "Free",
-    soonTag: "Coming soon",
-    sheetName: "Your 2 free cheat sheets",
-    sheetBody: "Two cheat sheets to get you off to a flying start:",
+    sheetName: "Your free starter pack",
+    sheetBody: "Your starter pack: two PDFs to get you off to a flying start:",
     sheetItems: [
       "AI basics: what a prompt is, what AI can and cannot do, and what happens to your data. One page, no jargon.",
-      "Weekly cheat sheet: your week of content on 2 pages. You see the steps you need and tick them off yourself. No AI tool needed.",
+      "Weekly Content Plan: your week of content on 2 pages. You see the steps you need and tick them off yourself. No AI tool needed.",
     ],
-    sheetCta: "Get the cheat sheet",
+    sheetCta: "Get the starter pack",
     sheetNote: "You get an email to confirm. Unsubscribe any time.",
-    assistantName: "Content Assistant",
-    assistantBody:
-      "Your AI assistant for the content week, set up and ready to use. It helps you plan your week and write drafts in your voice. With a written setup guide. Buy once, no course.",
-    line: "The cheat sheet shows you the way. The assistant walks it with you.",
-    liveTitle: "Community",
+    liveTitle: "Meetups and workshops",
     liveIntro: "Learning is easier together. In Berlin and online.",
     meetupTag: "Dates on Meetup",
     meetupName: "AI for Women Meetup",
@@ -81,6 +65,5 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
     workshopName: "Workshops",
     workshopBody: "Understand and try AI in small steps. In Berlin in person and online. You do not need a business or any prior knowledge.",
     workshopCta: "Write me",
-    liveHeroLink: "Also live: meetups and workshops in Berlin and online.",
   },
 };

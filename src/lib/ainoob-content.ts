@@ -2,10 +2,10 @@ export type NoobLang = "en" | "de";
 
 type NoobStrings = {
   badge: string; brand: string; tagline: string; welcome: string; heroShopCta: string;
-  heroLabel: string; heroTitle: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
+  heroLabel: string; heroTitle: string; heroContinuation: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
   forTitle: string; forCards: string[]; notForTitle: string; notForItems: string[];
   shopTitle: string; shopIntro: string; shopAllCta: string;
-  kitTitle: string; kitBody: string; kitSoonTag: string; kitTags: string[];
+  communityProductLine: string; communityLink: string; saleLabel: string; productPrice: string;
   productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
   meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   aboutEyebrow: string; aboutParas: string[];
@@ -15,10 +15,10 @@ type NoobStrings = {
   pathTitle: string; pathIntro: string; learnLabel: string;
   pathNote: { before: string; link: string; after: string };
   statusSoon: string; statusAvailable: string; statusFree: string;
-  pathCards: { title: string; body: string; learn: string[]; status: "free" | "available" | "soon" | "starter"; cta: string; href: string; cta2?: string; href2?: string }[];
+  pathCards: { title: string; body: string; learn: string[]; status?: "free"; cta: string; href: string; cta2?: string; href2?: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
-  headerSubtitle: string; navStarter: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
+  headerSubtitle: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
   seoTitle: string; seoDesc: string;
 };
 
@@ -30,11 +30,12 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     welcome: "Welcome to the AI Noob Club",
     heroShopCta: "Shop",
     heroLabel: "AI Noob Club",
-    heroTitle: "AI for women with their own business. Whether you're starting from zero or already a bit further along.",
+    heroTitle: "AI for women with their own business.",
+    heroContinuation: "Whether you're starting from zero or already a bit further along.",
     heroSubline:
       "You do almost everything yourself, and the day only has so many hours. Here you learn, step by step, how AI can give you some of that time back. And your business still sounds like you, not like a robot.",
-    heroPrimary: "Free Weekly Cheat Sheet",
-    heroSecondary: "To the community",
+    heroPrimary: "Free starter pack",
+    heroSecondary: "To the Community",
     heroFounder: "Hi, I'm Dina.",
     aboutEyebrow: "About me",
     aboutParas: [
@@ -61,11 +62,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Guides and templates that need no technical knowledge. Your voice stays yours. You check every text yourself and enter no customer data.",
     shopAllCta: "To the full shop",
-    kitTitle: "Edit Guide: Cutting Reels with Claude",
-    kitBody:
-      "You learn step by step how to cut your reels with Claude, with and without your own video. The creativity stays with you: your voice, your brand. Claude only helps with the cutting.",
-    kitSoonTag: "Coming soon",
-    kitTags: ["German and English", "Digital guide"],
+    communityProductLine: 'You test the Edit Guide "Cutting Reels with Claude" first in the Founders\' Community.',
+    communityLink: "To the Community",
+    saleLabel: "Sale",
+    productPrice: "Now €9.99",
     productTitle: "99 Prompts for Authentic AI Photos",
     productBody:
       "A PDF with 99 ready-to-use instructions for authentic AI photos. Describe yourself, choose a scene and adjust the light and style. Always label your AI twin as AI-generated.",
@@ -75,7 +75,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Personal and commercial use of the images you create",
     ],
     productTags: ["PDF in English"],
-    productCta: "View on Etsy",
+    productCta: "€9.99 on Etsy",
     productAlt: "99 Prompts for Authentic AI Photos, digital PDF prompt pack by AI Noob Club",
     productNote: "I always label images with AI avatars or AI photos as AI. You should do the same.",
     meetYourHostAlt: "Portrait of Dina, founder of the AI Noob Club",
@@ -109,7 +109,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         body: "You know what AI can and cannot do. And what happens with your data.",
         learn: ["What a prompt is", "What AI is good at and what it is not", "Data-privacy basics for your business"],
         status: "free",
-        cta: "Get the cheat sheet",
+        cta: "Get the starter pack",
         href: "#checkliste",
         cta2: "Or go to the meetup",
         href2: "#treffen",
@@ -118,17 +118,15 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         title: "Apply",
         body: "You use AI for the tasks that eat your time.",
         learn: ["Customer emails", "Captions and newsletters", "Offers", "Weekly planning"],
-        status: "soon",
-        cta: "Join the waitlist",
-        href: "#edit-guide",
+        cta: "To the Community",
+        href: "#community",
       },
       {
         title: "Build",
         body: "You build your own assistant that knows your voice.",
         learn: ["Set up your own assistant", "Write down your voice", "Plan a week of content in one go"],
-        status: "starter",
-        cta: "To the Content Assistant",
-        href: "#starterset",
+        cta: "Test early in the Community",
+        href: "#community",
       },
     ],
     pathNote: { before: "Workshops are available on", link: "request", after: "." },
@@ -141,11 +139,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     backHome: "HUMINT home",
     langLabel: "DE",
     langAria: "Switch to German",
-    headerSubtitle: "AI for women. Step by step.",
-    navStarter: "Content Assistant",
-    navChecklist: "Weekly Cheat Sheet",
-    navChecklistCta: "Get the cheat sheet",
-    navLive: "Community",
+    headerSubtitle: "You’re the boss. AI is new to the team.",
+    navChecklist: "Starter pack",
+    navChecklistCta: "Get the starter pack",
+    navLive: "Meetups",
     navCommunity: "Community",
     menuOpen: "Open menu",
     menuClose: "Close menu",
@@ -160,10 +157,11 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     welcome: "Willkommen im AI Noob Club",
     heroShopCta: "Shop",
     heroLabel: "AI Noob Club",
-    heroTitle: "KI für Frauen mit eigenem Business. Ob du bei null startest oder schon ein bisschen weiter bist.",
+    heroTitle: "KI für Frauen mit eigenem Business.",
+    heroContinuation: "Ob du bei null startest oder schon ein bisschen weiter bist.",
     heroSubline:
       "Du machst fast alles allein, und der Tag hat nur so viele Stunden. Hier lernst du Schritt für Schritt, wie KI dir Zeit zurückgibt. Und dein Business klingt weiter nach dir. Nicht nach einem Roboter.",
-    heroPrimary: "Gratis Wochen-Spickzettel",
+    heroPrimary: "Gratis Starterpaket",
     heroSecondary: "Zur Community",
     heroFounder: "Hallo, ich bin Dina.",
     aboutEyebrow: "Über mich",
@@ -191,11 +189,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Anleitungen und Vorlagen, für die du kein Technikwissen brauchst. Deine Stimme bleibt deine. Du prüfst jeden Text selbst und gibst keine Kundendaten ein.",
     shopAllCta: "Zum ganzen Shop",
-    kitTitle: "Edit-Guide: Reels schneiden mit Claude",
-    kitBody:
-      "Du lernst Schritt für Schritt, wie du deine Reels mit Claude schneidest, mit und ohne eigenes Video. Die Kreativität bleibt bei dir: deine Stimme, deine Marke. Claude hilft nur beim Schneiden.",
-    kitSoonTag: "Kommt bald",
-    kitTags: ["Deutsch und Englisch", "Digitaler Guide"],
+    communityProductLine: "Der Edit-Guide „Reels schneiden mit Claude“ testest du zuerst in der Gründerinnen-Community.",
+    communityLink: "Zur Community",
+    saleLabel: "Angebot",
+    productPrice: "Jetzt 9,99 €",
     productTitle: "99 Prompts für authentische KI-Fotos",
     productBody:
       "Ein PDF mit 99 fertigen Anweisungen für authentische KI-Fotos. Beschreibe dich, wähle eine Szene und passe Licht und Stil an. Kennzeichne deinen KI-Twin immer als KI-generiert.",
@@ -205,7 +202,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
       "Private und kommerzielle Nutzung der erstellten Bilder",
     ],
     productTags: ["PDF auf Englisch"],
-    productCta: "Auf Etsy ansehen",
+    productCta: "Für 9,99 € auf Etsy",
     productAlt: "99 Prompts für authentische KI-Fotos, digitales PDF-Prompt-Paket vom AI Noob Club",
     productNote: "Bilder mit KI-Avataren oder KI-Fotos kennzeichne ich immer als KI. Du solltest das auch tun.",
     meetYourHostAlt: "Porträt von Dina, Gründerin des AI Noob Club",
@@ -239,7 +236,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         body: "Du weißt, was KI kann und was nicht. Und was mit deinen Daten passiert.",
         learn: ["Was ein Prompt ist", "Was KI gut kann und was nicht", "Datenschutz-Basics für dein Business"],
         status: "free",
-        cta: "Spickzettel holen",
+        cta: "Starterpaket holen",
         href: "#checkliste",
         cta2: "Oder zum Meetup",
         href2: "#treffen",
@@ -248,17 +245,15 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         title: "Anwenden",
         body: "Du nutzt KI bei den Aufgaben, die dir Zeit fressen.",
         learn: ["Kundinnenmails", "Captions und Newsletter", "Angebote", "Wochenplanung"],
-        status: "soon",
-        cta: "Auf die Warteliste",
-        href: "#edit-guide",
+        cta: "Zur Community",
+        href: "#community",
       },
       {
         title: "Bauen",
         body: "Du baust dir eine Assistentin, die deine Stimme kennt.",
         learn: ["Eine eigene Assistentin einrichten", "Deine Stimme festhalten", "Eine Woche Content in einem Rutsch planen"],
-        status: "starter",
-        cta: "Zur Content-Assistentin",
-        href: "#starterset",
+        cta: "Früh testen in der Community",
+        href: "#community",
       },
     ],
     pathNote: { before: "Workshops gibt es auf", link: "Anfrage", after: "." },
@@ -271,11 +266,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     backHome: "Zur HUMINT Startseite",
     langLabel: "EN",
     langAria: "Auf Englisch wechseln",
-    headerSubtitle: "KI für Frauen. Schritt für Schritt.",
-    navStarter: "Content-Assistentin",
-    navChecklist: "Wochen-Spickzettel",
-    navChecklistCta: "Spickzettel holen",
-    navLive: "Community",
+    headerSubtitle: "Du bist die Chefin. KI ist neu im Team.",
+    navChecklist: "Starterpaket",
+    navChecklistCta: "Starterpaket holen",
+    navLive: "Treffen",
     navCommunity: "Community",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",

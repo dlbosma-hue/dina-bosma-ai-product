@@ -7,13 +7,13 @@ import { useLanguage } from "@/lib/i18n";
 export const Route = createFileRoute("/ki-workflow-check")({
   head: () => ({
     meta: [
-      { title: "KI-Workflow-Check — HUMINT" },
+      { title: "KI-Workflow-Check | HUMINT" },
       {
         name: "description",
         content:
           "In 2 Minuten wissen Sie, welcher erste KI-Schritt sich in Ihrem Alltag wirklich lohnt. Fünf kurze Fragen, eine konkrete Empfehlung.",
       },
-      { property: "og:title", content: "KI-Workflow-Check — HUMINT" },
+      { property: "og:title", content: "KI-Workflow-Check | HUMINT" },
       {
         property: "og:description",
         content:

@@ -63,16 +63,10 @@ export const noobMeta = {
     de: { title: "AI Noob Club: KI für Frauen mit eigenem Business", description: "KI-Basics für Frauen, die ihr eigenes Business führen. Starte Schritt für Schritt und behalte deine eigene Stimme. Meetups und Workshops in Berlin und online." },
     en: { title: "AI Noob Club: AI for women who run their own business", description: "AI basics for women who run their own business, even if you're starting from zero. Learn step by step and keep your own voice. Meetups and workshops in Berlin and online." },
   },
-  starterSet: {
-    path: "/ai-noob-club/starter-set",
-    type: "product",
-    de: { title: "Content-Assistentin | AI Noob Club", description: "Eine KI-Assistentin für deine Content-Woche. Sie kennt deine Stimme, plant deine Beiträge und schreibt Entwürfe." },
-    en: { title: "Content Assistant | AI Noob Club", description: "An AI assistant for your content week. It knows your voice, plans your posts and writes drafts." },
-  },
   checklist: {
     path: "/ai-noob-club/checkliste",
-    de: { title: "Wochen-Spickzettel | AI Noob Club", description: "Der Wochen-Spickzettel: eine ganze Woche Social Media in einem Rutsch planen. Gratis." },
-    en: { title: "Weekly Cheat Sheet | AI Noob Club", description: "A cheat sheet to plan a whole week of social media in one go. Free." },
+    de: { title: "Content-Wochenplan | AI Noob Club", description: "Der Content-Wochenplan: eine ganze Woche Social Media in einem Rutsch planen. Gratis." },
+    en: { title: "Weekly Content Plan | AI Noob Club", description: "A Weekly Content Plan to plan a whole week of social media in one go. Free." },
   },
   thanks: {
     path: "/ai-noob-club/danke",
