@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts, redirect } from "@
 
 import appCss from "../styles.css?url";
 import { LanguageProvider } from "@/lib/i18n";
+import { clubLegacyRedirect } from "@/lib/club-legacy-redirect";
 
 function NotFoundComponent() {
   return (
@@ -27,6 +28,10 @@ function NotFoundComponent() {
 
 export const Route = createRootRoute({
   beforeLoad: ({ location }) => {
+    const clubHref = clubLegacyRedirect(location.pathname, location.searchStr);
+    if (clubHref) {
+      throw redirect({ href: clubHref, statusCode: 301, replace: true });
+    }
     if (location.pathname.replace(/\/$/, "") === "/ai-noob-club_/datenschutz") {
       throw redirect({ to: "/datenschutz", statusCode: 301 });
     }
