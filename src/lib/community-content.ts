@@ -1,0 +1,39 @@
+export const communityContent = {
+  de: {
+    title: "Die Gründerinnen-Community",
+    subline: "20 Unternehmerinnen testen meine KI-Produkte vor allen anderen. Kostenlos.",
+    points: ["Früher Zugang.", "Mitreden.", "1:1 Business-Check zum halben Preis."],
+    how: "So geht's",
+    steps: ["1. Anmelden.", "2. Produkt testen.", "3. Kurzes Feedback geben."],
+    distinction: "Die Community testet meine Produkte. Die Treffen sind offen für alle, die KI zusammen lernen wollen.",
+    caption: "Ein Beispiel, was du in der Community früher bekommst: der Edit-Guide „Reels schneiden mit Claude“.",
+    videoLabel: "Edit-Guide: Reels schneiden mit Claude",
+    button: "Ich bin dabei",
+    note: "Kostenlos und unverbindlich. Dein Feedback hilft mir, bessere Produkte zu bauen.",
+    extra: "Sind alle 20 Plätze vergeben, kommst du auf die Warteliste.",
+  },
+  en: {
+    title: "The Founders' Community",
+    subline: "20 women entrepreneurs test my AI products before anyone else. For free.",
+    points: ["Early access.", "A say in what I build.", "1:1 business check at half price."],
+    how: "How it works",
+    steps: ["1. Sign up.", "2. Test a product.", "3. Give short feedback."],
+    distinction: "The Community tests my products. The meetups are open to everyone who wants to learn AI together.",
+    caption: 'An example of what you get earlier in the Community: the Edit Guide "Cutting Reels with Claude".',
+    videoLabel: "Edit Guide: Cutting Reels with Claude",
+    button: "I'm in",
+    note: "Free and non-binding. Your feedback helps me build better products.",
+    extra: "If all 20 spots are taken, you go on the waiting list.",
+  },
+};
+
+export const communityVideoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Edit-Guide: Reels schneiden mit Claude",
+  description: communityContent.de.caption,
+  thumbnailUrl: "https://humint.site/videos/edit-guide-reel-de-poster.jpg",
+  contentUrl: "https://humint.site/videos/edit-guide-reel-de.mp4",
+  uploadDate: "2026-10-21",
+  duration: "PT44S",
+};
