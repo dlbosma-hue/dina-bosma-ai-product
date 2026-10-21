@@ -17,3 +17,4 @@
 - [x] 2026-10-21: Published the German Edit-Guide reel in the Community section with a cover made from its opening frame; the English player stays hidden until that file is supplied.
 - [x] 2026-10-21: Published the English Edit-Guide reel with its own cover in the Community section, DE and EN verified in preview without publishing.
 - [x] 2026-10-21: Added the bilingual Instagram link-in-bio page at /ai-noob-club/links with five links, noindex, verified DE and EN on phone and desktop without publishing.
+- [x] 2026-10-21: Lightened the Club pink, orange and blue palette, kept orange text on a readable ink shade, and named free early Edit-Guide access in the Community link on the bio page; DE and EN verified without publishing.
