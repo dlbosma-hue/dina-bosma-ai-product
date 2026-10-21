@@ -47,13 +47,13 @@ function NoobClub() {
             fetchPriority="high"
           />
           <div className="max-w-3xl">
-            <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">
+            <p className="inline-flex items-center rounded-full bg-noob-rosa px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-noob-navy">
               {t.heroLabel}
             </p>
-            <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
-              {t.heroTitle}
+            <h1 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
+              {t.heroTitle}{" "}
+              <span className="italic text-noob-terracotta">{t.heroContinuation}</span>
             </h1>
-            <p className="mt-4 max-w-2xl text-xl leading-relaxed text-foreground">{t.heroContinuation}</p>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-foreground">
               {t.heroSubline}
             </p>
@@ -68,6 +68,7 @@ function NoobClub() {
             </div>
           </div>
         </div>
+        <div aria-hidden className="noob-stripes" />
       </section>
 
       {/* Über Dina */}
@@ -128,7 +129,7 @@ function NoobClub() {
       </section>
 
       {/* Weg */}
-      <section id="weg" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
+      <section id="weg" className="scroll-mt-44 md:scroll-mt-48 bg-noob-sky">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.pathTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">
@@ -332,9 +333,12 @@ function NoobClub() {
       </section>
 
 
-      <section id="werte" className="noob-dark scroll-mt-44 md:scroll-mt-48">
+      <section id="werte" className="scroll-mt-44 md:scroll-mt-48 bg-noob-sky">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
+          <p className="inline-flex items-center rounded-full bg-noob-cream px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-noob-navy">
+            {t.valuesEyebrow}
+          </p>
+          <h2 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">{t.valuesTitle}</h2>
           <ul className="mt-8 grid gap-6 md:grid-cols-2">
             {t.values.map((v, i) => {
               const Icon = [Sparkles, Users, Leaf, ShieldCheck][i] ?? Sparkles;

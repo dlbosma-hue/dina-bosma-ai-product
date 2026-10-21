@@ -81,7 +81,8 @@ export function NoobFooter() {
   const t = noobContent[lang];
   const fl = "inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md";
   return (
-    <footer className="noob-dark">
+    <footer className="bg-noob-rosa">
+      <div aria-hidden className="noob-stripes" />
       <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-sm md:px-10">
         <p>{t.footer}</p>
         <nav aria-label={lang === "de" ? "Rechtliches" : "Legal"} className="flex flex-wrap gap-x-5">
