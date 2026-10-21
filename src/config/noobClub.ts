@@ -14,5 +14,14 @@ export const noobClub = {
     meetup: "https://meetup.com/ai-for-women-berlin-beginner-meetup",
     /** Club contact email (opens the visitor's email app). HUMINT keeps its own Calendly. */
     contact: "mailto:ai.noobclub@humint.site",
+    /**
+     * Link-in-bio page (/ai-noob-club/links). Paths are relative on purpose:
+     * on humint.site they resolve to the exact https://humint.site/... URLs,
+     * and they still work in the preview.
+     */
+    bioCommunity: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_community#community",
+    bioStarterpaket: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_starterpaket#checkliste",
+    bioPrompts: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_prompts#shop",
+    bioWorkshop: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_workshop#treffen",
   },
 };
