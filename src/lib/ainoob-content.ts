@@ -120,7 +120,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         learn: ["Customer emails", "Captions and newsletters", "Offers", "Weekly planning"],
         status: "soon",
         cta: "Join the waitlist",
-        href: "#shop",
+        href: "#edit-guide",
       },
       {
         title: "Build",
@@ -250,7 +250,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         learn: ["Kundinnenmails", "Captions und Newsletter", "Angebote", "Wochenplanung"],
         status: "soon",
         cta: "Auf die Warteliste",
-        href: "#shop",
+        href: "#edit-guide",
       },
       {
         title: "Bauen",
