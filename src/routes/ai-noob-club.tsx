@@ -1,3 +1,5 @@
+import { CommunityVideo } from "@/components/noob/CommunityVideo";
+import { communityContent, communityVideoSchema } from "@/lib/community-content";
 import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Users, Leaf, ShieldCheck } from "lucide-react";
@@ -14,7 +16,7 @@ import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club")({
   component: NoobClub,
-  head: () => noobHead(noobMeta.home),
+  head: () => ({ ...noobHead(noobMeta.home), scripts: [{ type: "application/ld+json", children: JSON.stringify(communityVideoSchema) }] }),
 });
 
 const extBtn =
@@ -27,16 +29,7 @@ function NoobClub() {
   const ov = offersContent[lang];
   const pillClass =
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
-  const statusLabel = (s: "free" | "available" | "soon" | "starter") =>
-    s === "free"
-      ? t.statusFree
-      : s === "available"
-        ? t.statusAvailable
-        : s === "soon"
-          ? t.statusSoon
-          : noobClub.starterSet.status === "soon"
-            ? t.statusSoon
-            : t.statusAvailable;
+  const community = communityContent[lang];
 
   return (
     <main className="noob-theme min-h-screen">
@@ -51,6 +44,7 @@ function NoobClub() {
             className="mx-auto mb-10 block h-auto w-full max-w-3xl md:mb-12"
             width={1920}
             height={640}
+            fetchPriority="high"
           />
           <div className="max-w-3xl">
             <p className="text-xs font-medium uppercase tracking-[0.24em] text-foreground">
@@ -59,13 +53,14 @@ function NoobClub() {
             <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
               {t.heroTitle}
             </h1>
+            <p className="mt-4 max-w-2xl text-xl leading-relaxed text-foreground">{t.heroContinuation}</p>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-foreground">
               {t.heroSubline}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#checkliste" className={btnPrimary}>{t.heroPrimary}</a>
               <a
-                href="#treffen"
+                href="#community"
                 className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 {t.heroSecondary}
@@ -93,9 +88,9 @@ function NoobClub() {
             </div>
             <div className="min-w-0">
               <span aria-hidden className="block h-[3px] w-10 bg-noob-terracotta" />
-              <h3 className="mt-3 font-serif text-3xl leading-tight text-noob-navy md:text-4xl">
+              <h2 className="mt-3 font-serif text-3xl leading-tight text-noob-navy md:text-4xl">
                 {t.aboutEyebrow}
-              </h3>
+              </h2>
               <div className="mt-4 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
                 {t.aboutParas.map((para, i) => (
                   <p key={i}>{para}</p>
@@ -149,7 +144,7 @@ function NoobClub() {
                   <span aria-hidden className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-noob-terracotta font-serif text-3xl leading-none text-noob-navy">
                     {i + 1}
                   </span>
-                  <span className={pillClass}>{statusLabel(card.status)}</span>
+                  {card.status === "free" && <span className={pillClass}>{t.statusFree}</span>}
                 </div>
                 <h3 className="mt-4 font-serif text-2xl leading-snug">{card.title}</h3>
                 <p className="mt-2 text-base leading-relaxed text-foreground">{card.body}</p>
@@ -166,7 +161,7 @@ function NoobClub() {
                 </ul>
                 <div className="flex-1" />
                 <div className="mt-6 flex flex-col items-start gap-1">
-                  <a href={card.href} className={btnPrimary}>{card.cta}</a>
+                  <a href={card.href} className={`${btnPrimary} h-auto min-h-12 whitespace-normal py-3 text-center`}>{card.cta}</a>
                   {card.cta2 && card.href2 && (
                     <a
                       href={card.href2}
@@ -196,7 +191,7 @@ function NoobClub() {
       <section id="angebote" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.title}</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="mx-auto mt-8 max-w-3xl">
             <article id="checkliste" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} self-start`}>{ov.freeTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.sheetName}</h3>
@@ -211,18 +206,38 @@ function NoobClub() {
               </ul>
               <div className="mt-6"><WaitlistForm t={t} source="checkliste" submitLabel={ov.sheetCta} note={ov.sheetNote} /></div>
             </article>
-            <article id="starterset" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
-              <span className={`${pillClass} self-start`}>{ov.soonTag}</span>
-              <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.assistantName}</h3>
-              <p className="mt-3 text-base leading-relaxed text-foreground">{ov.assistantBody}</p>
-            </article>
           </div>
-          <p className="mt-8 text-center font-serif text-xl leading-snug md:text-2xl">{ov.line}</p>
+        </div>
+      </section>
+
+      <section id="community" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <div className="grid gap-x-12 gap-y-6 md:grid-cols-[minmax(0,1fr)_20rem]">
+            <div>
+              <h2 className="font-serif text-4xl leading-tight md:text-5xl">{community.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed">{community.subline}</p>
+            </div>
+            <div className="md:col-start-2 md:row-span-2 md:row-start-1">
+              <CommunityVideo key={lang} lang={lang} />
+            </div>
+            <div className="min-w-0">
+              <ul className="flex flex-wrap gap-2">
+                {community.points.map((point) => <li key={point} className={pillClass}>{point}</li>)}
+              </ul>
+              <h3 className="mt-6 font-serif text-2xl">{community.how}</h3>
+              <ol className="mt-3 space-y-2 text-base">{community.steps.map((step) => <li key={step}>{step}</li>)}</ol>
+              <p className="mt-5 text-sm leading-relaxed">{community.distinction}</p>
+              <div className="mt-6 rounded-3xl border border-noob-rosa bg-noob-rosa p-6 md:p-8">
+                <WaitlistForm t={t} source="community" submitLabel={community.button} note={community.note} />
+                <p className="mt-3 text-sm leading-relaxed">{community.extra}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Community */}
-      <section id="treffen" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
+      <section id="treffen" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.liveTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{ov.liveIntro}</p>
@@ -251,23 +266,13 @@ function NoobClub() {
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.shopIntro}</p>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {/* Card 1: Edit-Guide */}
-            <article id="edit-guide" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
-              <span className={`${pillClass} self-start`}>{t.kitSoonTag}</span>
-              <h3 className="mt-4 font-serif text-3xl leading-snug">{t.kitTitle}</h3>
-              <p className="mt-3 text-base leading-relaxed text-foreground">{t.kitBody}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {t.kitTags.map((tag) => (
-                  <span key={tag} className={pillClass}>{tag}</span>
-                ))}
-              </div>
-              <div className="flex-1" />
-              <div className="mt-6"><WaitlistForm t={t} source="editguide" /></div>
-            </article>
-
-            {/* Card 2: 99 Prompts */}
+          <p className="mt-5 max-w-3xl text-base leading-relaxed">{t.editGuideLine}{" "}
+            <a href="#community" className="font-semibold underline underline-offset-4">{t.communityLink}</a>
+          </p>
+          <div className="mx-auto mt-10 max-w-3xl">
+            {/* 99 Prompts */}
             <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <span className={`${pillClass} mb-4 self-start`}>{t.saleLabel}</span>
               <img
                 src={etsyProductAsset.url}
                 alt={t.productAlt}
@@ -278,6 +283,7 @@ function NoobClub() {
                 height={1264}
               />
               <h3 className="mt-5 font-serif text-3xl leading-snug">{t.productTitle}</h3>
+              <p className="mt-3 text-2xl font-semibold text-noob-terracotta">{t.productPrice}</p>
               <p className="mt-3 text-base leading-relaxed text-foreground">{t.productBody}</p>
               <ul className="mt-4 space-y-2">
                 {t.productBullets.map((b) => (
