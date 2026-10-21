@@ -15,6 +15,8 @@ const copy = {
         "Schick mir die beiden Spickzettel per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
       starterset:
         "Sag mir Bescheid, wenn die Content-Assistentin da ist. Abmeldung jederzeit. Mehr dazu in der ",
+      editguide:
+        "Sag mir Bescheid, wenn der Edit-Guide da ist. Abmeldung jederzeit. Mehr dazu in der ",
     },
     consentLink: "Datenschutzerklärung",
     note: "Kein Spam. Jederzeit abmeldbar.",
@@ -24,6 +26,7 @@ const copy = {
     done: {
       checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail bei dir.",
       starterset: "Danke. Ich schreibe dir, sobald die Content-Assistentin da ist.",
+      editguide: "Danke, du bist auf der Liste. Ich schreibe dir, sobald der Edit-Guide da ist.",
     },
   },
   en: {
@@ -34,6 +37,8 @@ const copy = {
         "Send me both cheat sheets by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
       starterset:
         "Let me know when the Content Assistant is ready. Unsubscribe any time. More in the ",
+      editguide:
+        "Let me know when the Edit Guide is ready. Unsubscribe any time. More in the ",
     },
     consentLink: "privacy policy",
     note: "No spam. Unsubscribe any time.",
@@ -43,6 +48,7 @@ const copy = {
     done: {
       checkliste: "Thank you, you're in. I'll write to you by email.",
       starterset: "Thank you. I'll write to you as soon as the Content Assistant is ready.",
+      editguide: "Thank you, you're on the list. I'll write to you as soon as the Edit Guide is ready.",
     },
   },
 };
