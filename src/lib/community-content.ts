@@ -1,5 +1,7 @@
 import videoDeAsset from "@/assets/edit-guide-reel-de.mp4.asset.json";
 import videoDePosterAsset from "@/assets/edit-guide-reel-de-poster.jpg.asset.json";
+import videoEnAsset from "@/assets/edit-guide-reel-en.mp4.asset.json";
+import videoEnPosterAsset from "@/assets/edit-guide-reel-en-poster.jpg.asset.json";
 
 export const communityContent = {
   de: {
@@ -34,13 +36,34 @@ export const communityContent = {
 
 const siteUrl = "https://humint.site";
 
-export const communityVideoSchema = {
+const videoSchema = (
+  name: string,
+  description: string,
+  poster: string,
+  video: string,
+) => ({
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  name: "Edit-Guide: Reels schneiden mit Claude",
-  description: communityContent.de.caption,
-  thumbnailUrl: `${siteUrl}${videoDePosterAsset.url}`,
-  contentUrl: `${siteUrl}${videoDeAsset.url}`,
+  name,
+  description,
+  thumbnailUrl: `${siteUrl}${poster}`,
+  contentUrl: `${siteUrl}${video}`,
   uploadDate: "2026-10-21",
   duration: "PT44S",
-};
+});
+
+// Both reels are described so the structured data matches whichever language the visitor reads.
+export const communityVideoSchema = [
+  videoSchema(
+    "Edit-Guide: Reels schneiden mit Claude",
+    communityContent.de.caption,
+    videoDePosterAsset.url,
+    videoDeAsset.url,
+  ),
+  videoSchema(
+    "Edit Guide: Cutting Reels with Claude",
+    communityContent.en.caption,
+    videoEnPosterAsset.url,
+    videoEnAsset.url,
+  ),
+];
