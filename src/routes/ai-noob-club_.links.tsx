@@ -68,7 +68,7 @@ function BioLinksPage() {
                 >
                   <span
                     aria-hidden
-                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-noob-cream font-serif text-lg text-noob-terracotta-ink"
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-noob-cream font-serif text-lg text-noob-navy"
                   >
                     {i + 1}
                   </span>
