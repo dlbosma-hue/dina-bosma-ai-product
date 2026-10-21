@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Simplify Club to starter pack and Founders' Community forms, bilingual renames, sale price, redirects and SEO; verify storage and preview without publishing.
+- [x] Simplify Club to starter pack and Founders' Community forms, bilingual renames, sale price, redirects and SEO; verify storage and preview without publishing.
 
 - [x] Remove the Club newsletter block, point the header button to the free checklist, and drop newsletter wording from the signup consent and confirmation email.
 
@@ -11,3 +11,5 @@
 - [x] Add a secondary "Oder zum Meetup" text link under step 1 of the three-step section, DE and EN.
 - [x] Move the round Club badge up into the top bar on Club pages (remove the empty strip above it, keep HUMINT pages untouched).
 - [x] Replace the former kit card with the Community product-testing link in DE and EN.
+
+- [x] 2026-10-21: Verified two bilingual forms, business and pain storage, confirmation and owner sends, mobile layout and permanent redirects; video files will be supplied separately.
