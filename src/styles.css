@@ -213,9 +213,9 @@
 /* AI Noob Club theme: scoped to the Club landing page wrapper. */
 .noob-theme {
   --noob-navy: oklch(0.284 0.046 266);
-  /* Mood-board pass 2: lighter, softer blocks. Orange text and icons keep the ink value. */
-  --noob-terracotta: oklch(0.86 0.065 55);
-  --noob-terracotta-ink: oklch(0.62 0.12 40);
+  /* Mood-board pass 3: orange brighter and closer to the logo letters (#DE674A). */
+  --noob-terracotta: oklch(0.75 0.13 38);
+  --noob-terracotta-ink: oklch(0.65 0.16 35);
   --noob-cream: oklch(0.975 0.014 80);
   --noob-rosa: oklch(0.945 0.025 10);
   --noob-sky: oklch(0.955 0.02 230);
