@@ -1,3 +1,4 @@
+/// <reference types="bun" />
 import { describe, expect, test } from "bun:test";
 import { clubSignupSchema, confirmationTemplate, validateSignupFields } from "./club-signup";
 import { noobClub } from "../config/noobClub";
