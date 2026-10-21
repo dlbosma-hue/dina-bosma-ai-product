@@ -252,8 +252,8 @@ function NoobClub() {
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.shopIntro}</p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {/* Card 1: Instagram-Kit */}
-            <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+            {/* Card 1: Edit-Guide */}
+            <article id="edit-guide" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} self-start`}>{t.kitSoonTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{t.kitTitle}</h3>
               <p className="mt-3 text-base leading-relaxed text-foreground">{t.kitBody}</p>
@@ -263,23 +263,7 @@ function NoobClub() {
                 ))}
               </div>
               <div className="flex-1" />
-              <div className="mt-6 flex flex-wrap gap-3">
-                {noobClub.links.etsyKit && (
-                  <a href={noobClub.links.etsyKit} target="_blank" rel="noreferrer" className={extBtn}>
-                    {t.kitEtsyCta}
-                  </a>
-                )}
-                {noobClub.links.gumroadKit && (
-                  <a
-                    href={noobClub.links.gumroadKit}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border border-foreground/40 px-6 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-noob-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    {t.kitGumroadCta}
-                  </a>
-                )}
-              </div>
+              <div className="mt-6"><WaitlistForm t={t} source="editguide" /></div>
             </article>
 
             {/* Card 2: 99 Prompts */}

@@ -5,7 +5,7 @@ type NoobStrings = {
   heroLabel: string; heroTitle: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
   forTitle: string; forCards: string[]; notForTitle: string; notForItems: string[];
   shopTitle: string; shopIntro: string; shopAllCta: string;
-  kitTitle: string; kitBody: string; kitSoonTag: string; kitTags: string[]; kitEtsyCta: string; kitGumroadCta: string;
+  kitTitle: string; kitBody: string; kitSoonTag: string; kitTags: string[];
   productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
   meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   aboutEyebrow: string; aboutParas: string[];
@@ -61,12 +61,11 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Guides and templates that need no technical knowledge. Your voice stays yours. You check every text yourself and enter no customer data.",
     shopAllCta: "To the full shop",
-    kitTitle: "Instagram-Kit",
-    kitBody: "Captions and visuals for Instagram, step by step.",
+    kitTitle: "Edit Guide: Cutting Reels with Claude",
+    kitBody:
+      "You learn step by step how to cut your reels with Claude, with and without your own video. The creativity stays with you: your voice, your brand. Claude only helps with the cutting.",
     kitSoonTag: "Coming soon",
-    kitTags: ["German and English"],
-    kitEtsyCta: "View on Etsy",
-    kitGumroadCta: "View on Gumroad",
+    kitTags: ["German and English", "Digital guide"],
     productTitle: "99 Prompts for Authentic AI Photos",
     productBody:
       "A PDF with 99 ready-to-use instructions for authentic AI photos. Describe yourself, choose a scene and adjust the light and style. Always label your AI twin as AI-generated.",
@@ -121,7 +120,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         learn: ["Customer emails", "Captions and newsletters", "Offers", "Weekly planning"],
         status: "soon",
         cta: "Join the waitlist",
-        href: "#shop",
+        href: "#edit-guide",
       },
       {
         title: "Build",
@@ -192,12 +191,11 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Anleitungen und Vorlagen, für die du kein Technikwissen brauchst. Deine Stimme bleibt deine. Du prüfst jeden Text selbst und gibst keine Kundendaten ein.",
     shopAllCta: "Zum ganzen Shop",
-    kitTitle: "Instagram-Kit",
-    kitBody: "Captions und Visuals für Instagram, Schritt für Schritt.",
+    kitTitle: "Edit-Guide: Reels schneiden mit Claude",
+    kitBody:
+      "Du lernst Schritt für Schritt, wie du deine Reels mit Claude schneidest, mit und ohne eigenes Video. Die Kreativität bleibt bei dir: deine Stimme, deine Marke. Claude hilft nur beim Schneiden.",
     kitSoonTag: "Kommt bald",
-    kitTags: ["Deutsch und Englisch"],
-    kitEtsyCta: "Bei Etsy ansehen",
-    kitGumroadCta: "Bei Gumroad ansehen",
+    kitTags: ["Deutsch und Englisch", "Digitaler Guide"],
     productTitle: "99 Prompts für authentische KI-Fotos",
     productBody:
       "Ein PDF mit 99 fertigen Anweisungen für authentische KI-Fotos. Beschreibe dich, wähle eine Szene und passe Licht und Stil an. Kennzeichne deinen KI-Twin immer als KI-generiert.",
@@ -252,7 +250,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
         learn: ["Kundinnenmails", "Captions und Newsletter", "Angebote", "Wochenplanung"],
         status: "soon",
         cta: "Auf die Warteliste",
-        href: "#shop",
+        href: "#edit-guide",
       },
       {
         title: "Bauen",
