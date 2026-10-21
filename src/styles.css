@@ -214,7 +214,7 @@
   --noob-terracotta: oklch(0.684 0.12 37);
   --noob-cream: oklch(0.966 0.02 78);
   --noob-rosa: oklch(0.875 0.065 10);
-  --noob-sky: oklch(0.905 0.06 225);
+  --noob-sky: oklch(0.93 0.032 225);
   --noob-paper: var(--noob-cream);
   --noob-blush: var(--noob-rosa);
   --noob-surface: var(--noob-rosa);
