@@ -5,7 +5,7 @@ type NoobStrings = {
   heroLabel: string; heroTitle: string; heroContinuation: string; heroSubline: string; heroPrimary: string; heroSecondary: string; heroFounder: string;
   forTitle: string; forCards: string[]; notForTitle: string; notForItems: string[];
   shopTitle: string; shopIntro: string; shopAllCta: string;
-  editGuideLine: string; communityLink: string; saleLabel: string; productPrice: string;
+  communityProductLine: string; communityLink: string; saleLabel: string; productPrice: string;
   productTitle: string; productBody: string; productBullets: string[]; productTags: string[]; productCta: string; productAlt: string; productNote: string;
   meetYourHostAlt: string; emailLabel: string; emailPlaceholder: string;
   aboutEyebrow: string; aboutParas: string[];
@@ -62,7 +62,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Guides and templates that need no technical knowledge. Your voice stays yours. You check every text yourself and enter no customer data.",
     shopAllCta: "To the full shop",
-    editGuideLine: 'You test the Edit Guide "Cutting Reels with Claude" first in the Founders\' Community.',
+    communityProductLine: 'You test the Edit Guide "Cutting Reels with Claude" first in the Founders\' Community.',
     communityLink: "To the Community",
     saleLabel: "Sale",
     productPrice: "Now €9.99",
@@ -189,7 +189,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     shopIntro:
       "Anleitungen und Vorlagen, für die du kein Technikwissen brauchst. Deine Stimme bleibt deine. Du prüfst jeden Text selbst und gibst keine Kundendaten ein.",
     shopAllCta: "Zum ganzen Shop",
-    editGuideLine: "Der Edit-Guide „Reels schneiden mit Claude“ testest du zuerst in der Gründerinnen-Community.",
+    communityProductLine: "Der Edit-Guide „Reels schneiden mit Claude“ testest du zuerst in der Gründerinnen-Community.",
     communityLink: "Zur Community",
     saleLabel: "Angebot",
     productPrice: "Jetzt 9,99 €",

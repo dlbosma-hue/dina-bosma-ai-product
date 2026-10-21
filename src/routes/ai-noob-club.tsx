@@ -266,7 +266,7 @@ function NoobClub() {
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.shopIntro}</p>
 
-          <p className="mt-5 max-w-3xl text-base leading-relaxed">{t.editGuideLine}{" "}
+          <p className="mt-5 max-w-3xl text-base leading-relaxed">{t.communityProductLine}{" "}
             <a href="#community" className="font-semibold underline underline-offset-4">{t.communityLink}</a>
           </p>
           <div className="mx-auto mt-10 max-w-3xl">
