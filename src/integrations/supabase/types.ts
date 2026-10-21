@@ -14,13 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      waitlist_submissions: {
+        Row: {
+          business: string
+          confirmation_sent: boolean
+          consent: boolean
+          consent_at: string
+          consent_text: string
+          created_at: string
+          email: string
+          formspree_delivered: boolean
+          id: string
+          ip_hash: string
+          lang: string
+          name: string
+          pain: string
+          source: string
+        }
+        Insert: {
+          business?: string
+          confirmation_sent?: boolean
+          consent: boolean
+          consent_at: string
+          consent_text: string
+          created_at?: string
+          email: string
+          formspree_delivered?: boolean
+          id?: string
+          ip_hash: string
+          lang?: string
+          name: string
+          pain?: string
+          source: string
+        }
+        Update: {
+          business?: string
+          confirmation_sent?: boolean
+          consent?: boolean
+          consent_at?: string
+          consent_text?: string
+          created_at?: string
+          email?: string
+          formspree_delivered?: boolean
+          id?: string
+          ip_hash?: string
+          lang?: string
+          name?: string
+          pain?: string
+          source?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      store_club_submission: {
+        Args: { p_data: Json; p_ip_hash: string }
+        Returns: string
+      }
     }
     Enums: {
       [_ in never]: never
