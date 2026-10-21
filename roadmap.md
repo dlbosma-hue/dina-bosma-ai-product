@@ -13,3 +13,4 @@
 - [x] Replace the former kit card with the Community product-testing link in DE and EN.
 
 - [x] 2026-10-21: Verified two bilingual forms, business and pain storage, confirmation and owner sends, mobile layout and permanent redirects; video files will be supplied separately.
+- [x] 2026-10-21: Added the optional step 3 info line in the three-step section, DE and EN, verified in preview without publishing.
