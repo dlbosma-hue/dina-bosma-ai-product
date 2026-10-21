@@ -213,8 +213,8 @@
   --noob-navy: oklch(0.284 0.046 266);
   --noob-terracotta: oklch(0.684 0.12 37);
   --noob-cream: oklch(0.966 0.02 78);
-  --noob-rosa: oklch(0.889 0.043 20);
-  --noob-sky: oklch(0.89 0.045 235);
+  --noob-rosa: oklch(0.875 0.065 10);
+  --noob-sky: oklch(0.905 0.06 225);
   --noob-paper: var(--noob-cream);
   --noob-blush: var(--noob-rosa);
   --noob-surface: var(--noob-rosa);
@@ -249,12 +249,15 @@
   letter-spacing: 0;
 }
 
-/* Navy section: cream text */
-.noob-theme .noob-dark {
-  --foreground: var(--noob-cream);
-  --ring: var(--noob-cream);
-  background-color: var(--noob-navy);
-  color: var(--noob-cream);
+/* Playful stripe divider in the three Club background colors (mood-board ticket stripes). */
+.noob-theme .noob-stripes {
+  height: 0.875rem;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--noob-rosa) 0 28px,
+    var(--noob-terracotta) 28px 56px,
+    var(--noob-sky) 56px 84px
+  );
 }
 
 @media (prefers-reduced-motion: no-preference) {

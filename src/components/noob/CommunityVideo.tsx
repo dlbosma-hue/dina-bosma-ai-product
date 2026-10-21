@@ -36,7 +36,7 @@ export function CommunityVideo({ lang }: { lang: NoobLang }) {
     <figure className="mx-auto w-full max-w-[20rem]">
       <video controls playsInline preload="none" poster={src.poster} src={src.video}
         aria-label={communityContent[lang].videoLabel} onError={() => setFailed(true)}
-        className="aspect-[9/16] w-full rounded-3xl bg-noob-navy" />
+        className="aspect-[9/16] w-full rounded-3xl bg-noob-rosa" />
       <figcaption className="mt-3 text-sm leading-relaxed text-foreground">{communityContent[lang].caption}</figcaption>
     </figure>
   );
