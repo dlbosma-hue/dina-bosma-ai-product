@@ -1,5 +1,6 @@
-/// <reference types="bun" />
-import { describe, expect, test } from "bun:test";
+import { describe, test } from "node:test";
+import assert from "node:assert/strict";
+const expect = (actual: unknown) => ({ toBe: (expected: unknown) => assert.equal(actual, expected) });
 import { clubSignupSchema, confirmationTemplate, validateSignupFields } from "./club-signup";
 import { noobClub } from "../config/noobClub";
 
