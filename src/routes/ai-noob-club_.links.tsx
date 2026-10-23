@@ -66,7 +66,7 @@ function BioLinksPage() {
         <ol className="mx-auto flex max-w-md flex-col gap-3 px-5 py-8 md:max-w-xl md:py-12">
           {c.links.map((l, i) => {
             const href = hrefs[l.id];
-            const img = linkImage[l.id];
+            const img = linkImages[lang][l.id];
             if (!href) return null;
             return (
               <li key={l.id}>
