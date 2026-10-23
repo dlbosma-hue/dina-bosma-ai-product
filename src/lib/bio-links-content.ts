@@ -5,6 +5,8 @@ export type BioLink = {
   id: "community" | "starterpaket" | "prompts" | "meetup" | "workshop";
   title: string;
   hint: string;
+  /** Alt text for the promotional graphic shown under this card. */
+  imageAlt?: string;
   /** Featured card (terracotta) instead of the soft rosa card. */
   featured?: boolean;
   /** Opens a site outside humint.site in a new tab. */
@@ -42,6 +44,8 @@ export const bioLinksContent = {
         id: "prompts",
         title: "99 Prompts für authentische KI-Fotos",
         hint: "40 Seiten PDF, Sofort-Download, auf Englisch.",
+        imageAlt:
+          "Anzeige: Digital PDF, Prompt pack. 99 Prompts für authentische KI-Fotos. Nur 9,99 Euro, Sofort-Download.",
         external: true,
       },
       {
