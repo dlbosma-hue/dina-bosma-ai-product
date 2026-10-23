@@ -8,7 +8,8 @@ import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { NoobHeader, NoobFooter } from "@/components/noob/NoobChrome";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
-import bioPromptsAsset from "@/assets/prompts99-bio.png.asset.json";
+import bioPromptsDeAsset from "@/assets/prompts99-bio-de.png.asset.json";
+import bioPromptsEnAsset from "@/assets/prompts99-bio-en.jpg.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club_/links")({
   component: BioLinksPage,
@@ -34,9 +35,10 @@ function BioLinksPage() {
     workshop: noobClub.links.bioWorkshop,
   };
 
-  /** Optional promotional graphic shown under a card. */
-  const linkImage: Partial<Record<BioLinkId, string>> = {
-    prompts: bioPromptsAsset.url,
+  /** Optional promotional graphic shown under a card, per language. */
+  const linkImages: Record<Lang, Partial<Record<BioLinkId, string>>> = {
+    de: { prompts: bioPromptsDeAsset.url },
+    en: { prompts: bioPromptsEnAsset.url },
   };
 
   return (
