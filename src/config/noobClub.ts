@@ -21,7 +21,7 @@ export const noobClub = {
      */
     bioCommunity: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_community#community",
     bioStarterpaket: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_starterpaket#checkliste",
-    bioPrompts: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_prompts#shop",
+    bioPrompts: "https://theainoobclub.etsy.com/listing/4588968808",
     bioWorkshop: "/ai-noob-club?utm_source=ig&utm_medium=social&utm_content=bio_workshop#treffen",
   },
 };
