@@ -45,7 +45,7 @@ export const bioLinksContent = {
         title: "99 Prompts für authentische KI-Fotos",
         hint: "40 Seiten PDF, Sofort-Download, auf Englisch.",
         imageAlt:
-          "Anzeige: Digital PDF, Prompt pack. 99 Prompts für authentische KI-Fotos. Nur 9,99 Euro, Sofort-Download.",
+          "Anzeige: Digital PDF, Prompt-Paket. 99 Prompts für KI-Fotos, Fotos, die echt wirken, ohne Fotoshooting. Sofort-Download PDF.",
         external: true,
       },
       {
@@ -84,7 +84,7 @@ export const bioLinksContent = {
         title: "99 prompts for authentic AI photos",
         hint: "40-page PDF, instant download, in English.",
         imageAlt:
-          "Ad: Digital PDF, prompt pack. 99 prompts for photos that look real. Only €9.99, instant download.",
+          "Ad: Digital PDF prompt pack. 99 AI photo prompts, real-looking brand photos, no photoshoot needed. Instant download PDF.",
         external: true,
       },
       {
