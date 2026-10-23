@@ -10,7 +10,14 @@ import { WaitlistForm } from "@/components/noob/WaitlistForm";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
 import { offersContent } from "@/lib/offers-content";
 import dinaPortraitAsset from "@/assets/dina-portrait-circle.webp.asset.json";
-import etsyProductAsset from "@/assets/etsy-99-prompts.webp.asset.json";
+import p99De1 from "@/assets/prompts99-de-1.png.asset.json";
+import p99De2 from "@/assets/prompts99-de-2.png.asset.json";
+import p99De3 from "@/assets/prompts99-de-3.png.asset.json";
+import p99En1 from "@/assets/prompts99-en-1.png.asset.json";
+import p99En2 from "@/assets/prompts99-en-2.png.asset.json";
+import p99En3 from "@/assets/prompts99-en-3.png.asset.json";
+
+const productImages = { de: [p99De1, p99De2, p99De3], en: [p99En1, p99En2, p99En3] };
 import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
 
@@ -282,15 +289,20 @@ function NoobClub() {
             {/* 99 Prompts */}
             <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} mb-4 self-start`}>{t.saleLabel}</span>
-              <img
-                src={etsyProductAsset.url}
-                alt={t.productAlt}
-                loading="lazy"
-                decoding="async"
-                className="w-full max-w-56 rounded-2xl"
-                width={1264}
-                height={1264}
-              />
+              <div className="grid grid-cols-3 gap-3">
+                {productImages[lang].map((img, i) => (
+                  <img
+                    key={img.url}
+                    src={img.url}
+                    alt={i === 0 ? t.productAlt : ""}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full rounded-2xl"
+                    width={1080}
+                    height={1350}
+                  />
+                ))}
+              </div>
               <h3 className="mt-5 font-serif text-3xl leading-snug">{t.productTitle}</h3>
               <p className="mt-3 text-2xl font-semibold text-noob-terracotta-ink">{t.productPrice}</p>
               <p className="mt-3 text-base leading-relaxed text-foreground">{t.productBody}</p>

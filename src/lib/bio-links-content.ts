@@ -42,6 +42,7 @@ export const bioLinksContent = {
         id: "prompts",
         title: "99 Prompts für authentische KI-Fotos",
         hint: "40 Seiten PDF, Sofort-Download, auf Englisch.",
+        external: true,
       },
       {
         id: "meetup",
@@ -78,6 +79,7 @@ export const bioLinksContent = {
         id: "prompts",
         title: "99 prompts for authentic AI photos",
         hint: "40-page PDF, instant download, in English.",
+        external: true,
       },
       {
         id: "meetup",
