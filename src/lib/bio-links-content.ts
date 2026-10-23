@@ -83,6 +83,8 @@ export const bioLinksContent = {
         id: "prompts",
         title: "99 prompts for authentic AI photos",
         hint: "40-page PDF, instant download, in English.",
+        imageAlt:
+          "Ad: Digital PDF, prompt pack. 99 prompts for photos that look real. Only €9.99, instant download.",
         external: true,
       },
       {

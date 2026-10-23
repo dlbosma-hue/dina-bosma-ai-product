@@ -8,6 +8,7 @@ import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { NoobHeader, NoobFooter } from "@/components/noob/NoobChrome";
 import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
 import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
+import bioPromptsAsset from "@/assets/prompts99-bio.png.asset.json";
 
 export const Route = createFileRoute("/ai-noob-club_/links")({
   component: BioLinksPage,
@@ -31,6 +32,11 @@ function BioLinksPage() {
     prompts: noobClub.links.bioPrompts,
     meetup: noobClub.links.meetup,
     workshop: noobClub.links.bioWorkshop,
+  };
+
+  /** Optional promotional graphic shown under a card. */
+  const linkImage: Partial<Record<BioLinkId, string>> = {
+    prompts: bioPromptsAsset.url,
   };
 
   return (
@@ -58,6 +64,7 @@ function BioLinksPage() {
         <ol className="mx-auto flex max-w-md flex-col gap-3 px-5 py-8 md:max-w-xl md:py-12">
           {c.links.map((l, i) => {
             const href = hrefs[l.id];
+            const img = linkImage[l.id];
             if (!href) return null;
             return (
               <li key={l.id}>
@@ -90,6 +97,23 @@ function BioLinksPage() {
                     />
                   )}
                 </a>
+                {img ? (
+                  <a
+                    href={href}
+                    {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="mt-3 block overflow-hidden rounded-3xl border border-noob-callout-border transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <img
+                      src={img}
+                      alt={l.imageAlt ?? ""}
+                      width={1080}
+                      height={1350}
+                      loading="lazy"
+                      className="block h-auto w-full"
+                    />
+                    {l.external ? <span className="sr-only">{c.externalHint}</span> : null}
+                  </a>
+                ) : null}
               </li>
             );
           })}
