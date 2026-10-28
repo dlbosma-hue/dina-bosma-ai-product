@@ -3,12 +3,12 @@ import { z } from "zod";
 export type SignupSource = "checkliste" | "community";
 export const signupConsent = {
   de: {
-    checkliste: "Schick mir das Starterpaket per E-Mail. Ich möchte auch wissen, wann es im AI Noob Club weitergeht. Abmeldung jederzeit. Mehr dazu in der ",
+    checkliste: "Schick mir das Starter-Kit per E-Mail. Ich möchte die neuesten Infos zu Workshops und neuen Produkten bekommen. Abmeldung jederzeit. Mehr dazu in der ",
     community: "Ich möchte in der Gründerinnen-Community dabei sein und per E-Mail darüber informiert werden. Abmeldung jederzeit. Mehr dazu in der ",
     privacy: "Datenschutzerklärung",
   },
   en: {
-    checkliste: "Send me the starter pack by email. I'd also like to know when the AI Noob Club goes on. Unsubscribe any time. More in the ",
+    checkliste: "Send me the starter kit by email. I'd like to get the latest news on workshops and new products. Unsubscribe any time. More in the ",
     community: "I'd like to join the Founders' Community and hear about it by email. Unsubscribe any time. More in the ",
     privacy: "privacy policy",
   },

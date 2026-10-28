@@ -1,6 +1,6 @@
 import type { NoobLang } from "@/lib/ainoob-content";
 
-/** Starter pack and public meetup copy. */
+/** Starter kit and public meetup copy. */
 export type NoobOffer = {
   title: string;
   freeTag: string;
@@ -25,13 +25,13 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
   de: {
     title: "Womit du starten kannst",
     freeTag: "Gratis",
-    sheetName: "Dein Gratis-Starterpaket",
-    sheetBody: "Dein Starterpaket: zwei PDFs, die dir den Einstieg leichter machen:",
+    sheetName: "Dein Gratis-Starter-Kit",
+    sheetBody: "Dein Starter-Kit: zwei PDFs, die dir den Einstieg leichter machen:",
     sheetItems: [
       "KI-Basics: Was ein Prompt ist, was KI kann und was nicht, und was mit deinen Daten passiert. Eine Seite, ohne Fachchinesisch.",
       "Content-Wochenplan: Deine Content-Woche auf 2 Seiten. Du siehst, welche Schritte du brauchst, und hakst sie selbst ab. Ganz ohne KI-Tool.",
     ],
-    sheetCta: "Starterpaket holen",
+    sheetCta: "Starter-Kit holen",
     sheetNote: "Du bekommst eine E-Mail zur Bestätigung. Abmelden geht jederzeit.",
     liveTitle: "Treffen und Workshops",
     liveIntro: "Lernen geht auch zusammen. In Berlin und online.",
@@ -47,13 +47,13 @@ export const offersContent: Record<NoobLang, NoobOffer> = {
   en: {
     title: "What you can start with",
     freeTag: "Free",
-    sheetName: "Your free starter pack",
-    sheetBody: "Your starter pack: two PDFs to get you off to a flying start:",
+    sheetName: "Your free starter kit",
+    sheetBody: "Your starter kit: two PDFs to get you off to a flying start:",
     sheetItems: [
       "AI basics: what a prompt is, what AI can and cannot do, and what happens to your data. One page, no jargon.",
       "Weekly Content Plan: your week of content on 2 pages. You see the steps you need and tick them off yourself. No AI tool needed.",
     ],
-    sheetCta: "Get the starter pack",
+    sheetCta: "Get the starter kit",
     sheetNote: "You get an email to confirm. Unsubscribe any time.",
     liveTitle: "Meetups and workshops",
     liveIntro: "Learning is easier together. In Berlin and online.",

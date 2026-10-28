@@ -4,7 +4,7 @@ import type { TemplateEntry } from './registry'
 function Email({ name, email, business, pain, source }: { name?: string; email?: string; business?: string; pain?: string; source?: string }) {
   return <Html lang="de"><Head /><Preview>Neue Club-Registrierung</Preview><Body style={main}>
     <Container style={container}><Heading>Neue Club-Registrierung</Heading>
-      <Text>{source === 'community' ? 'Gründerinnen-Community' : 'Gratis-Starterpaket'}</Text>
+      <Text>{source === 'community' ? 'Gründerinnen-Community' : 'Gratis-Starter-Kit'}</Text>
       <Text>Name: {name}<br />E-Mail: {email}</Text>
       {business && <Text>Business: {business}</Text>}{pain && <Text>Was nervt gerade: {pain}</Text>}
     </Container></Body></Html>
