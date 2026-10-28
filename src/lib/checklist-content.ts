@@ -7,7 +7,7 @@ export const checklistContent: Record<
   de: {
     title: "Content-Wochenplan",
     body: "Dein Content-Wochenplan zeigt dir, wie du eine ganze Woche Social Media in einem Rutsch planst. Du kannst ihn sofort nutzen, auch ohne KI.",
-    cta: "Starterpaket holen",
+    cta: "Starter-Kit holen",
     preview: "Vorschau folgt",
     previewAlt: "Platzhalter für die Vorschau des Content-Wochenplans",
     benefits: [
@@ -22,7 +22,7 @@ export const checklistContent: Record<
   en: {
     title: "Weekly Content Plan",
     body: "A Weekly Content Plan that shows you how to plan a whole week of social media in one go. You can use it right away, even without AI.",
-    cta: "Get the starter pack",
+    cta: "Get the starter kit",
     preview: "Preview coming soon",
     previewAlt: "Placeholder for the preview of the Weekly Content Plan",
     benefits: [

@@ -6,7 +6,7 @@
 
 - [Home](/): Overview of services, approach, case studies, and contact.
 
-- [AI Noob Club](/ai-noob-club): AI basics for women who run their own business, starter pack, Gründerinnen-Community, meetups and workshops.
+- [AI Noob Club](/ai-noob-club): AI basics for women who run their own business, starter kit, Gründerinnen-Community, meetups and workshops.
 - [KI-Workflow-Check](/ki-workflow-check): Five questions to find a practical first AI step.
 
 ## Optional

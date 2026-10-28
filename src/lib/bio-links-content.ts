@@ -37,7 +37,7 @@ export const bioLinksContent = {
       },
       {
         id: "starterpaket",
-        title: "Gratis Starterpaket",
+        title: "Gratis Starter-Kit",
         hint: "KI-Basics und Wochenplan, gratis per E-Mail.",
       },
       {
@@ -76,7 +76,7 @@ export const bioLinksContent = {
       },
       {
         id: "starterpaket",
-        title: "Free starter pack",
+        title: "Free starter kit",
         hint: "AI basics and a weekly plan, free by email.",
       },
       {

@@ -14,7 +14,7 @@ const copy = {
     errName: "Bitte gib deinen Namen ein.", errEmail: "Bitte gib eine gültige E-Mail-Adresse ein.",
     errBusiness: "Bitte beschreibe dein Business in einem Satz.", errConsent: "Bitte setze den Haken, damit ich dir schreiben darf.",
     note: "Kein Spam. Jederzeit abmeldbar.",
-    done: { checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail mit deinem Starterpaket bei dir.", community: "Danke, du bist auf der Liste. Ich melde mich bald persönlich bei dir." },
+    done: { checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail mit deinem Starter-Kit bei dir.", community: "Danke, du bist auf der Liste. Ich melde mich bald persönlich bei dir." },
   },
   en: {
     name: "First name", communityName: "Name", email: "Email address", communityEmail: "Email",
@@ -22,7 +22,7 @@ const copy = {
     errName: "Please enter your name.", errEmail: "Please enter a valid email address.",
     errBusiness: "Please describe your business in one sentence.", errConsent: "Please tick the box so I'm allowed to email you.",
     note: "No spam. Unsubscribe any time.",
-    done: { checkliste: "Thank you, you're in. I'll email you with your starter pack.", community: "Thank you, you're on the list. I'll get back to you personally soon." },
+    done: { checkliste: "Thank you, you're in. I'll email you with your starter kit.", community: "Thank you, you're on the list. I'll get back to you personally soon." },
   },
 };
 const inputCls = "w-full rounded-full border border-foreground/50 bg-background px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground focus-visible:ring-2 focus-visible:ring-ring";
