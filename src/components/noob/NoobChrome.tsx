@@ -58,11 +58,13 @@ export function NoobHeader() {
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
           {langButton}
+          {igLink}
           {textLinks}
           <Link to="/ai-noob-club" hash="checkliste" className={btnPrimary}>{t.navChecklistCta}</Link>
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
         {langButton}
+        {igLink}
         <button
           type="button"
           onClick={() => setMenuOpen((o) => !o)}
