@@ -8,7 +8,7 @@ export const noobClub = {
     etsyKit: "",
     etsyPrompts: "https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic",
     gumroadKit: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/ai.noobclub",
     checklistPdf: "",
     /** Meetup page. Empty = no button on the meetup card. */
     meetup: "https://meetup.com/ai-for-women-berlin-beginner-meetup",
