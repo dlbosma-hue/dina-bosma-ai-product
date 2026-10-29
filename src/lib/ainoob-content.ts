@@ -17,7 +17,7 @@ type NoobStrings = {
   statusSoon: string; statusAvailable: string; statusFree: string;
   pathCards: { title: string; body: string; learn: string[]; status?: "free"; cta: string; href: string; cta2?: string; href2?: string; info?: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
-  footer: string; imprint: string; backHome: string; langLabel: string; langAria: string;
+  footer: string; imprint: string; backHome: string; langLabel: string; langAria: string; igAria: string;
   headerSubtitle: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
   seoTitle: string; seoDesc: string;
 };
@@ -140,6 +140,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     backHome: "HUMINT home",
     langLabel: "DE",
     langAria: "Switch to German",
+    igAria: "AI Noob Club on Instagram (opens a new page)",
     headerSubtitle: "You’re the boss. AI is new to the team.",
     navChecklist: "Starter kit",
     navChecklistCta: "Get the starter kit",
@@ -268,6 +269,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     backHome: "Zur HUMINT Startseite",
     langLabel: "EN",
     langAria: "Auf Englisch wechseln",
+    igAria: "AI Noob Club auf Instagram (öffnet eine neue Seite)",
     headerSubtitle: "Du bist die Chefin. KI ist neu im Team.",
     navChecklist: "Starter-Kit",
     navChecklistCta: "Starter-Kit holen",

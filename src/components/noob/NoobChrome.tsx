@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Instagram, Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
@@ -27,6 +27,17 @@ export function NoobHeader() {
       {t.langLabel}
     </button>
   );
+  const igLink = noobClub.links.instagram ? (
+    <a
+      href={noobClub.links.instagram}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={t.igAria}
+      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-foreground/40 text-foreground hover:border-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+    >
+      <Instagram aria-hidden className="h-5 w-5" />
+    </a>
+  ) : null;
   const textLinks = (
     <>
       <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={navLink}>{t.navChecklist}</Link>
@@ -47,11 +58,13 @@ export function NoobHeader() {
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
           {langButton}
+          {igLink}
           {textLinks}
           <Link to="/ai-noob-club" hash="checkliste" className={btnPrimary}>{t.navChecklistCta}</Link>
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
         {langButton}
+        {igLink}
         <button
           type="button"
           onClick={() => setMenuOpen((o) => !o)}
