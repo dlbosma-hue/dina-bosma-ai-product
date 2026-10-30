@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { useLanguage } from "@/lib/i18n";
+import ogAsset from "@/assets/og-ainoob-club.jpg.asset.json";
 
 const BASE = "https://humint.site";
-export const NOOB_LOGO_SHARE = `${BASE}/og-ainoob-club.jpg`;
+/** Share preview image (og:image / twitter:image) for all Club pages. */
+export const NOOB_LOGO_SHARE = `${BASE}${ogAsset.url}`;
 
 export type NoobMeta = {
   path: string;
@@ -59,7 +61,6 @@ export function useNoobMeta(m: NoobMeta) {
 export const noobMeta = {
   home: {
     path: "/ai-noob-club",
-    image: `${BASE}/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg`,
     de: { title: "AI Noob Club: KI für Frauen mit eigenem Business", description: "KI-Basics für Frauen, die ihr eigenes Business führen. Starte Schritt für Schritt und behalte deine eigene Stimme. Meetups und Workshops in Berlin und online." },
     en: { title: "AI Noob Club: AI for women who run their own business", description: "AI basics for women who run their own business, even if you're starting from zero. Learn step by step and keep your own voice. Meetups and workshops in Berlin and online." },
   },
