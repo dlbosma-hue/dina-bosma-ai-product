@@ -151,7 +151,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     startCheckLabel: "Free 1:1",
     startCheckTitle: "AI Start Check",
     startCheckBody:
-      "In 15 minutes we find three simple ways AI can make your working day easier. For example with content, planning or customer contact. You get concrete ideas you can try right away. Free and without obligation.",
+      "In 20 minutes we find three simple ways AI can make your working day easier. For example with content, planning or customer contact. You get concrete ideas you can try right away. Free and without obligation.",
     startCheckCta: "Book your free AI Start Check",
     startCheckPrivacy: "Booking runs via Calendly. Details in the",
     startCheckPrivacyLink: "privacy policy",
@@ -288,7 +288,7 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     startCheckLabel: "Gratis 1:1",
     startCheckTitle: "KI-Start-Check",
     startCheckBody:
-      "In 15 Minuten finden wir gemeinsam drei einfache Möglichkeiten, wie KI deinen Arbeitsalltag erleichtern kann. Zum Beispiel bei Content, Planung oder Kundenkontakt. Du bekommst konkrete Ideen, die du sofort ausprobieren kannst. Kostenlos und unverbindlich.",
+      "In 20 Minuten finden wir gemeinsam drei einfache Möglichkeiten, wie KI deinen Arbeitsalltag erleichtern kann. Zum Beispiel bei Content, Planung oder Kundenkontakt. Du bekommst konkrete Ideen, die du sofort ausprobieren kannst. Kostenlos und unverbindlich.",
     startCheckCta: "Gratis KI-Start-Check buchen",
     startCheckPrivacy: "Die Buchung läuft über Calendly. Details im",
     startCheckPrivacyLink: "Datenschutz",

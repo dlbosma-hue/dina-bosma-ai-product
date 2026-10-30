@@ -32,7 +32,7 @@ export const bioLinksContent = {
       {
         id: "startcheck",
         title: "Kostenloses 1:1: KI-Start-Check",
-        hint: "In 15 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag.",
+        hint: "In 20 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag.",
         external: true,
       },
       {
@@ -77,7 +77,7 @@ export const bioLinksContent = {
       {
         id: "startcheck",
         title: "Free 1:1: AI Start Check",
-        hint: "In 15 minutes, we'll find three simple AI ideas for your working day.",
+        hint: "In 20 minutes, we'll find three simple AI ideas for your working day.",
         external: true,
       },
       {
