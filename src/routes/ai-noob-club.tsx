@@ -217,7 +217,7 @@ function NoobClub() {
           <p className="mt-4 text-sm leading-relaxed text-foreground">
             {t.startCheckPrivacy}{" "}
             <Link to="/datenschutz" className="underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-              Datenschutz
+              {t.startCheckPrivacyLink}
             </Link>
             .{" "}
             <a
