@@ -2,7 +2,7 @@ import type { Lang } from "./content";
 
 export type BioLink = {
   /** Key used to resolve the URL in src/config/noobClub.ts. */
-  id: "community" | "starterpaket" | "prompts" | "meetup" | "workshop";
+  id: "startcheck" | "community" | "starterpaket" | "prompts" | "meetup" | "workshop";
   title: string;
   hint: string;
   /** Alt text for the promotional graphic shown under this card. */
@@ -29,6 +29,12 @@ export const bioLinksContent = {
     intro:
       "Der AI Noob Club ist die HUMINT Community für Frauen, die neu bei KI sind. Hier sind die wichtigsten Links.",
     links: [
+      {
+        id: "startcheck",
+        title: "Kostenloses 1:1: KI-Start-Check",
+        hint: "In 15 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag.",
+        external: true,
+      },
       {
         id: "community",
         title: "Gründerinnen-Community: Edit-Guide für Reels gratis vorab testen",
@@ -68,6 +74,12 @@ export const bioLinksContent = {
     intro:
       "The AI Noob Club is the HUMINT community for women who are new to AI. Here are the most important links.",
     links: [
+      {
+        id: "startcheck",
+        title: "Free 1:1: AI Start Check",
+        hint: "In 15 minutes, we'll find three simple AI ideas for your working day.",
+        external: true,
+      },
       {
         id: "community",
         title: "Founders' Community: free early access to the Reels Edit Guide",

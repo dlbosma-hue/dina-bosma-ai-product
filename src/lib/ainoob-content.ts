@@ -18,7 +18,8 @@ type NoobStrings = {
   pathCards: { title: string; body: string; learn: string[]; status?: "free"; cta: string; href: string; cta2?: string; href2?: string; info?: string }[];
   consultingTitle: string; consultingBody: string; consultingCta: string;
   footer: string; imprint: string; backHome: string; langLabel: string; langAria: string; igAria: string;
-  headerSubtitle: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; menuOpen: string; menuClose: string;
+  headerSubtitle: string; navChecklist: string; navChecklistCta: string; navLive: string; navCommunity: string; navStartCheck: string; menuOpen: string; menuClose: string;
+  startCheckLabel: string; startCheckTitle: string; startCheckBody: string; startCheckCta: string; startCheckPrivacy: string;
   seoTitle: string; seoDesc: string;
 };
 
@@ -146,6 +147,13 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navChecklistCta: "Get the starter kit",
     navLive: "Meetups",
     navCommunity: "Community",
+    navStartCheck: "AI Start Check",
+    startCheckLabel: "Free 1:1",
+    startCheckTitle: "AI Start Check",
+    startCheckBody:
+      "In 15 minutes we find three simple ways AI can make your working day easier. For example with content, planning or customer contact. You get concrete ideas you can try right away. Free and without obligation.",
+    startCheckCta: "Book your free AI Start Check",
+    startCheckPrivacy: "Booking runs via Calendly. Details in the",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     seoTitle: "AI Noob Club | AI for women who run their own business",
@@ -275,6 +283,13 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     navChecklistCta: "Starter-Kit holen",
     navLive: "Treffen",
     navCommunity: "Community",
+    navStartCheck: "KI-Start-Check",
+    startCheckLabel: "Gratis 1:1",
+    startCheckTitle: "KI-Start-Check",
+    startCheckBody:
+      "In 15 Minuten finden wir gemeinsam drei einfache Möglichkeiten, wie KI deinen Arbeitsalltag erleichtern kann. Zum Beispiel bei Content, Planung oder Kundenkontakt. Du bekommst konkrete Ideen, die du sofort ausprobieren kannst. Kostenlos und unverbindlich.",
+    startCheckCta: "Gratis KI-Start-Check buchen",
+    startCheckPrivacy: "Die Buchung läuft über Calendly. Details im",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
     seoTitle: "AI Noob Club | KI für Frauen mit eigenem Business",
