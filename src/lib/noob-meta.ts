@@ -61,7 +61,6 @@ export function useNoobMeta(m: NoobMeta) {
 export const noobMeta = {
   home: {
     path: "/ai-noob-club",
-    image: `${BASE}/__l5e/assets-v1/705bb551-e3d7-4189-88a2-1beda7e2b627/ai-noob-club-preview.jpg`,
     de: { title: "AI Noob Club: KI für Frauen mit eigenem Business", description: "KI-Basics für Frauen, die ihr eigenes Business führen. Starte Schritt für Schritt und behalte deine eigene Stimme. Meetups und Workshops in Berlin und online." },
     en: { title: "AI Noob Club: AI for women who run their own business", description: "AI basics for women who run their own business, even if you're starting from zero. Learn step by step and keep your own voice. Meetups and workshops in Berlin and online." },
   },
