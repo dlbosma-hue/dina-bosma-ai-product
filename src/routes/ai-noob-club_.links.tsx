@@ -18,7 +18,7 @@ export const Route = createFileRoute("/ai-noob-club_/links")({
 });
 
 const card =
-  "group flex min-h-19 items-center gap-4 rounded-3xl border px-5 py-4 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
+  "group flex min-h-16 items-center gap-3 rounded-2xl border px-4 py-3 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 const soft = "border-noob-callout-border bg-noob-callout hover:border-noob-terracotta";
 const featured = "border-noob-terracotta bg-primary hover:opacity-90";
 
