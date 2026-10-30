@@ -65,7 +65,7 @@ function BioLinksPage() {
       </section>
       <div aria-hidden className="noob-stripes" />
       <section>
-        <ol className="mx-auto flex max-w-md flex-col gap-3 px-5 py-8 md:max-w-xl md:py-12">
+        <ol className="mx-auto flex max-w-md flex-col gap-2 px-4 py-5 md:max-w-xl md:px-6 md:py-7">
           {c.links.map((l, i) => {
             const href = hrefs[l.id];
             const img = linkImages[lang][l.id];
@@ -79,25 +79,25 @@ function BioLinksPage() {
                 >
                   <span
                     aria-hidden
-                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-noob-cream font-serif text-lg text-noob-navy"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-noob-cream font-serif text-base text-noob-navy"
                   >
                     {i + 1}
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block text-base font-semibold leading-snug text-foreground">
+                    <span className="block text-sm font-semibold leading-snug text-foreground md:text-base">
                       {l.title}
                     </span>
-                    <span className="mt-1 block text-sm leading-snug text-foreground">{l.hint}</span>
+                    <span className="mt-0.5 block text-xs leading-snug text-foreground md:text-sm">{l.hint}</span>
                   </span>
                   {l.external ? (
                     <>
-                      <ArrowUpRight aria-hidden className="h-5 w-5 shrink-0 text-foreground" />
+                      <ArrowUpRight aria-hidden className="h-4 w-4 shrink-0 text-foreground" />
                       <span className="sr-only">{c.externalHint}</span>
                     </>
                   ) : (
                     <ArrowRight
                       aria-hidden
-                      className="h-5 w-5 shrink-0 text-foreground transition-transform group-hover:translate-x-1"
+                      className="h-4 w-4 shrink-0 text-foreground transition-transform group-hover:translate-x-1"
                     />
                   )}
                 </a>
@@ -105,7 +105,7 @@ function BioLinksPage() {
                   <a
                     href={href}
                     {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="mt-3 block overflow-hidden rounded-3xl border border-noob-callout-border transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    className="mt-2 block overflow-hidden rounded-2xl border border-noob-callout-border transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
                     <img
                       src={img}
