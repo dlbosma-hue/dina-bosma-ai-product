@@ -29,6 +29,7 @@ function BioLinksPage() {
   const c = bioLinksContent[lang];
 
   const hrefs: Record<BioLinkId, string> = {
+    startcheck: noobClub.links.calendlyStartCheck,
     community: noobClub.links.bioCommunity,
     starterpaket: noobClub.links.bioStarterpaket,
     prompts: noobClub.links.bioPrompts,
@@ -127,4 +128,4 @@ function BioLinksPage() {
   );
 }
 
-type BioLinkId = "community" | "starterpaket" | "prompts" | "meetup" | "workshop";
+type BioLinkId = "startcheck" | "community" | "starterpaket" | "prompts" | "meetup" | "workshop";

@@ -40,6 +40,7 @@ export function NoobHeader() {
   ) : null;
   const textLinks = (
     <>
+      <Link to="/ai-noob-club" hash="ki-start-check" onClick={close} className={navLink}>{t.navStartCheck}</Link>
       <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={navLink}>{t.navChecklist}</Link>
       <Link to="/ai-noob-club" hash="community" onClick={close} className={navLink}>{t.navCommunity}</Link>
       <Link to="/ai-noob-club" hash="treffen" onClick={close} className={navLink}>{t.navLive}</Link>
