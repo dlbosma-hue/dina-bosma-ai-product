@@ -9,6 +9,8 @@ export const noobClub = {
     etsyPrompts: "https://www.etsy.com/listing/4588968808/99-ai-image-prompts-for-authentic",
     gumroadKit: "",
     instagram: "https://www.instagram.com/ai.noobclub",
+    /** Free 1:1 AI Start Check booking (Calendly). */
+    calendlyStartCheck: "https://calendly.com/dlbosma/1-1-ai-start-check",
     checklistPdf: "",
     /** Meetup page. Empty = no button on the meetup card. */
     meetup: "https://meetup.com/ai-for-women-berlin-beginner-meetup",
