@@ -47,20 +47,20 @@ function BioLinksPage() {
     <main className="noob-theme min-h-screen bg-noob-cream">
       <NoobHeader />
       <section className="bg-noob-rosa">
-        <div className="mx-auto max-w-md px-6 pb-10 pt-8 text-center md:max-w-xl">
+        <div className="mx-auto max-w-md px-6 pb-5 pt-4 text-center md:max-w-xl">
           <img
             src={lang === "en" ? logoEnAsset.url : logoDeAsset.url}
             alt={`${t.brand}: ${t.headerSubtitle}`}
-            className="mx-auto block h-auto w-full max-w-sm"
+            className="mx-auto block h-auto w-full max-w-56 md:max-w-64"
             width={1920}
             height={640}
             fetchPriority="high"
           />
-          <span className="mt-7 inline-flex rounded-full border border-noob-callout-border bg-noob-callout px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em]">
+          <span className="mt-3 inline-flex rounded-full border border-noob-callout-border bg-noob-callout px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em]">
             {c.label}
           </span>
-          <h1 className="mt-4 text-3xl leading-tight md:text-4xl">{c.title}</h1>
-          <p className="mx-auto mt-3 max-w-sm text-base leading-relaxed md:max-w-md">{c.intro}</p>
+          <h1 className="mt-2 text-2xl leading-tight md:text-3xl">{c.title}</h1>
+          <p className="mx-auto mt-2 max-w-sm text-sm leading-snug md:max-w-md md:text-base">{c.intro}</p>
         </div>
       </section>
       <div aria-hidden className="noob-stripes" />
