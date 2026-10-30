@@ -42,6 +42,38 @@ function NoobClub() {
     <main className="noob-theme min-h-screen">
       <NoobHeader />
 
+      {/* 1:1 KI-Start-Check */}
+      <section id="ki-start-check" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
+        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
+          <span className={`${pillClass} uppercase tracking-[0.14em]`}>{t.startCheckLabel}</span>
+          <h2 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">{t.startCheckTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.startCheckBody}</p>
+          <div className="mt-8 max-w-3xl overflow-hidden rounded-3xl border border-foreground/10 bg-noob-paper">
+            <iframe
+              src={`${noobClub.links.calendlyStartCheck}?hide_event_type_details=1&hide_gdpr_banner=1`}
+              title={t.startCheckTitle}
+              loading="lazy"
+              className="h-[640px] w-full"
+            />
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-foreground">
+            {t.startCheckPrivacy}{" "}
+            <Link to="/datenschutz" className="underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              {t.startCheckPrivacyLink}
+            </Link>
+            .{" "}
+            <a
+              href={noobClub.links.calendlyStartCheck}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {t.startCheckCta}
+            </a>
+          </p>
+        </div>
+      </section>
+
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-8 md:px-10 md:pb-16">
@@ -196,38 +228,6 @@ function NoobClub() {
               {t.pathNote.link}
             </a>
             {t.pathNote.after}
-          </p>
-        </div>
-      </section>
-
-      {/* 1:1 KI-Start-Check */}
-      <section id="ki-start-check" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
-        <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <span className={`${pillClass} uppercase tracking-[0.14em]`}>{t.startCheckLabel}</span>
-          <h2 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">{t.startCheckTitle}</h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.startCheckBody}</p>
-          <div className="mt-8 max-w-3xl overflow-hidden rounded-3xl border border-foreground/10 bg-noob-paper">
-            <iframe
-              src={`${noobClub.links.calendlyStartCheck}?hide_event_type_details=1&hide_gdpr_banner=1`}
-              title={t.startCheckTitle}
-              loading="lazy"
-              className="h-[640px] w-full"
-            />
-          </div>
-          <p className="mt-4 text-sm leading-relaxed text-foreground">
-            {t.startCheckPrivacy}{" "}
-            <Link to="/datenschutz" className="underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-              {t.startCheckPrivacyLink}
-            </Link>
-            .{" "}
-            <a
-              href={noobClub.links.calendlyStartCheck}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            >
-              {t.startCheckCta}
-            </a>
           </p>
         </div>
       </section>
