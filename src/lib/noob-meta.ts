@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { useLanguage } from "@/lib/i18n";
+import ogAsset from "@/assets/og-ainoob-club.jpg.asset.json";
 
 const BASE = "https://humint.site";
-export const NOOB_LOGO_SHARE = `${BASE}/og-ainoob-club.jpg`;
+/** Share preview image (og:image / twitter:image) for all Club pages. */
+export const NOOB_LOGO_SHARE = `${BASE}${ogAsset.url}`;
 
 export type NoobMeta = {
   path: string;
