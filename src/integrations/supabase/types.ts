@@ -30,6 +30,7 @@ export type Database = {
           name: string
           owner_notified: boolean
           pain: string
+          runde: string | null
           source: string
         }
         Insert: {
@@ -47,6 +48,7 @@ export type Database = {
           name: string
           owner_notified?: boolean
           pain?: string
+          runde?: string | null
           source: string
         }
         Update: {
@@ -64,6 +66,7 @@ export type Database = {
           name?: string
           owner_notified?: boolean
           pain?: string
+          runde?: string | null
           source?: string
         }
         Relationships: []

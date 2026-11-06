@@ -1,43 +1,61 @@
 import { z } from "zod";
 
 export type SignupSource = "checkliste" | "community";
+export const clubRundeSchema = z.enum(["beta", "frueh", "edit-guide"]);
+export type ClubRunde = z.infer<typeof clubRundeSchema>;
+export type CourseRunde = Exclude<ClubRunde, "edit-guide">;
+
 export const signupConsent = {
   de: {
     checkliste: "Schick mir das Starter-Kit per E-Mail. Ich möchte die neuesten Infos zu Workshops und neuen Produkten bekommen. Abmeldung jederzeit. Mehr dazu in der ",
-    community: "Ich möchte in der Gründerinnen-Community dabei sein und per E-Mail darüber informiert werden. Abmeldung jederzeit. Mehr dazu in der ",
+    community: "Ich möchte auf die Warteliste für „Meine Content-Assistentin“ und per E-Mail dazu informiert werden. Abmeldung jederzeit. Mehr dazu in der ",
+    editGuide: "Schick mir den Edit-Guide per E-Mail und halte mich über neue Produkte auf dem Laufenden. Abmeldung jederzeit. Mehr dazu in der ",
     privacy: "Datenschutzerklärung",
   },
   en: {
     checkliste: "Send me the starter kit by email. I'd like to get the latest news on workshops and new products. Unsubscribe any time. More in the ",
-    community: "I'd like to join the Founders' Community and hear about it by email. Unsubscribe any time. More in the ",
+    community: "I'd like to join the waitlist for My Content Assistant and receive updates about it by email. Unsubscribe any time. More in the ",
+    editGuide: "Send me the Edit Guide by email and keep me posted about new products. Unsubscribe any time. More in the ",
     privacy: "privacy policy",
   },
 };
 
 export const clubSignupSchema = z.object({
   id: z.string().uuid(),
-  name: z.string().trim().min(1).max(100),
+  name: z.string().trim().max(100).default(""),
   email: z.string().trim().email().max(254),
   source: z.enum(["checkliste", "community"]),
+  runde: clubRundeSchema.optional(),
   lang: z.enum(["de", "en"]).default("de"),
   business: z.string().trim().max(200).default(""),
   pain: z.string().trim().max(500).default(""),
   consent: z.literal(true),
 }).superRefine((data, ctx) => {
-  if (data.source === "community" && !data.business) {
-    ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["business"], message: "Business required" });
+  if (data.source === "community" && !data.runde) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["runde"], message: "Round required" });
+  }
+  if (data.source === "checkliste" && data.runde) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["runde"], message: "Round not allowed" });
+  }
+  if ((data.source === "checkliste" || data.runde !== "edit-guide") && !data.name) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["name"], message: "Name required" });
   }
 });
 
-export function confirmationTemplate(source: SignupSource) {
-  return source === "community" ? "community-confirmation" : "waitlist-confirmation";
+export function confirmationTemplate(source: SignupSource, runde?: ClubRunde) {
+  if (source === "checkliste") return "waitlist-confirmation";
+  return runde === "edit-guide" ? "edit-guide-confirmation" : "community-confirmation";
 }
 
-export function validateSignupFields(data: { name: string; email: string; business: string; consent: boolean }, source: SignupSource) {
+export function validateSignupFields(
+  data: { name: string; email: string; business?: string; consent: boolean },
+  source: SignupSource,
+  runde?: ClubRunde,
+) {
   return {
-    name: !data.name.trim() || data.name.length > 100,
+    name: (source === "checkliste" || runde !== "edit-guide") && (!data.name.trim() || data.name.length > 100),
     email: !z.string().email().max(254).safeParse(data.email.trim()).success,
-    business: source === "community" && (!data.business.trim() || data.business.length > 200),
+    business: false,
     consent: !data.consent,
   };
 }

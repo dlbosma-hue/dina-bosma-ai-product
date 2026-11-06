@@ -15,6 +15,13 @@
       "when": 1792592100201,
       "tag": "0001_track_club_owner_notifications",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793981480337,
+      "tag": "0002_add_course_round_to_club_waitlist",
+      "breakpoints": true
     }
   ]
 }

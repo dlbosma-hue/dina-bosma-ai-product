@@ -17,7 +17,7 @@ export const Route = createFileRoute('/api/public/waitlist')({
     if (!parsed.success) return Response.json({ ok: false }, { status: 400 })
     const data = parsed.data
     const c = signupConsent[data.lang]
-    const consent_text = c[data.source] + c.privacy + '.'
+    const consent_text = (data.runde === 'edit-guide' ? c.editGuide : c[data.source]) + c.privacy + '.'
     const consent_at = new Date().toISOString()
     // Only the platform-provided address is used; never trust X-Forwarded-For.
     const address = request.headers.get('cf-connecting-ip') ?? 'local-preview'
@@ -38,7 +38,7 @@ export const Route = createFileRoute('/api/public/waitlist')({
       formspreeDelivered = response.ok
     } catch { console.error('Club owner delivery failed') }
     try {
-      const result = await sendTemplateEmail(confirmationTemplate(data.source), data.email, { templateData: { name: data.name, lang: data.lang }, idempotencyKey: `club-confirmation-${data.id}` })
+      const result = await sendTemplateEmail(confirmationTemplate(data.source, data.runde), data.email, { templateData: { name: data.name, lang: data.lang, runde: data.runde }, idempotencyKey: `club-confirmation-${data.id}` })
       sent = result.sent
     } catch { console.error('Club confirmation delivery failed') }
     try {

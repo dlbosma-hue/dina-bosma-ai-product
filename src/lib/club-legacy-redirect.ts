@@ -5,7 +5,8 @@ export function clubLegacyRedirect(pathname: string, searchStr: string): string 
 
   const anchor = match[1]?.replace(/\/+$/, "");
   const hashes: Record<string, string> = {
-    "edit-guide": "community",
+    "edit-guide": "edit-guide",
+    warteliste: "warteliste",
     checkliste: "checkliste",
     community: "community",
     treffen: "treffen",

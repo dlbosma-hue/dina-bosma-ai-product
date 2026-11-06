@@ -2,7 +2,7 @@ import type { Lang } from "./content";
 
 export type BioLink = {
   /** Key used to resolve the URL in src/config/noobClub.ts. */
-  id: "startcheck" | "community" | "starterpaket" | "prompts" | "meetup" | "workshop";
+  id: "startcheck" | "community" | "editguide" | "starterpaket" | "prompts" | "meetup" | "workshop";
   title: string;
   hint: string;
   /** Alt text for the promotional graphic shown under this card. */
@@ -37,9 +37,14 @@ export const bioLinksContent = {
       },
       {
         id: "community",
-        title: "Gründerinnen-Community: Edit-Guide für Reels gratis vorab testen",
-        hint: "Du gehörst zu den Ersten, die u.a. den Edit-Guide kostenlos testen.",
+        title: "Auf die Warteliste: Meine Content-Assistentin",
+        hint: "Früh dabei sein und weniger zahlen. 10 Beta-Plätze, danach Frühzugang.",
         featured: true,
+      },
+      {
+        id: "editguide",
+        title: "Gratis: Edit-Guide Reels schneiden mit Claude",
+        hint: "Kostenloser PDF-Guide per E-Mail.",
       },
       {
         id: "starterpaket",
@@ -82,9 +87,14 @@ export const bioLinksContent = {
       },
       {
         id: "community",
-        title: "Founders' Community: free early access to the Reels Edit Guide",
-        hint: "You're among the first people to test the Edit Guide and more, for free.",
+        title: "Join the waitlist: My Content Assistant",
+        hint: "Join early and pay less. 10 beta spots, then early access.",
         featured: true,
+      },
+      {
+        id: "editguide",
+        title: "Free: Edit Guide for cutting Reels with Claude",
+        hint: "Free PDF guide by email.",
       },
       {
         id: "starterpaket",
