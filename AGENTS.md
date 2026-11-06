@@ -8,3 +8,4 @@
 - Handle the literal legacy underscore privacy URL in the root beforeLoad; an escaped underscore route collides with the existing pathless route's generated symbol.
 - Repair Club paths containing encoded fragments centrally in root beforeLoad with the browser-safe Club redirect helper, preserving the raw query string and sharing the same permanent redirect on server and client.
 - Render the two-round course waitlist only through the shared CourseWaitlist component, so the Community section and course page keep one copy and one form.
+- Keep language-specific Edit-Guide PDF asset URLs in the Club configuration, so download buttons use one mapping without bundling large binaries.
