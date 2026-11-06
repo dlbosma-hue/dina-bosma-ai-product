@@ -40,19 +40,18 @@ export const clubSignupSchema = z.object({
   }
 });
 
-export function confirmationTemplate(source: SignupSource, runde?: ClubRunde) {
+export function confirmationTemplate(source: SignupSource, _runde?: ClubRunde) {
   if (source === "checkliste") return "waitlist-confirmation";
-  void runde;
   return "community-confirmation";
 }
 
 export function validateSignupFields(
   data: { name: string; email: string; business?: string; consent: boolean },
-  source: SignupSource,
-  runde?: ClubRunde,
+  _source?: SignupSource,
+  _runde?: ClubRunde,
 ) {
   return {
-    name: (void source, void runde, !data.name.trim() || data.name.length > 100),
+    name: !data.name.trim() || data.name.length > 100,
     email: !z.string().email().max(254).safeParse(data.email.trim()).success,
     business: false,
     consent: !data.consent,
