@@ -13,10 +13,10 @@ describe("Club signup rules", () => {
     expect(clubSignupSchema.safeParse(valid).success).toBe(true);
     expect(clubSignupSchema.safeParse({ ...valid, source: "removed-product" }).success).toBe(false);
   });
-  test("community signups require one of the three rounds", () => {
+  test("community signups require one of the two course rounds", () => {
     const { runde, ...withoutRound } = valid;
     expect(clubSignupSchema.safeParse(withoutRound).success).toBe(false);
-    for (const round of ["beta", "frueh", "edit-guide"]) {
+    for (const round of ["beta", "frueh"]) {
       expect(clubSignupSchema.safeParse({ ...valid, runde: round }).success).toBe(true);
     }
     expect(clubSignupSchema.safeParse({ ...valid, runde: "other" }).success).toBe(false);
@@ -30,10 +30,8 @@ describe("Club signup rules", () => {
     const { runde, ...starter } = valid;
     expect(clubSignupSchema.safeParse({ ...starter, source: "checkliste", name: "" }).success).toBe(false);
   });
-  test("Edit Guide signups may omit the name", () => {
-    expect(clubSignupSchema.safeParse({ ...valid, runde: "edit-guide", name: "" }).success).toBe(true);
-    const { name, ...withoutName } = valid;
-    expect(clubSignupSchema.safeParse({ ...withoutName, runde: "edit-guide" }).success).toBe(true);
+  test("retired Edit Guide email round is rejected", () => {
+    expect(clubSignupSchema.safeParse({ ...valid, runde: "edit-guide", name: "" }).success).toBe(false);
   });
   test("email must be valid", () => { expect(clubSignupSchema.safeParse({ ...valid, email: "invalid" }).success).toBe(false); });
   test("community business is optional", () => {
@@ -56,7 +54,6 @@ describe("Club signup rules", () => {
     expect(confirmationTemplate("community", "beta")).toBe("community-confirmation");
     expect(confirmationTemplate("community", "frueh")).toBe("community-confirmation");
   });
-  test("Edit Guide gets its own confirmation", () => { expect(confirmationTemplate("community", "edit-guide")).toBe("edit-guide-confirmation"); });
   test("starter pack keeps its confirmation", () => { expect(confirmationTemplate("checkliste")).toBe("waitlist-confirmation"); });
   test("client does not require community business", () => { expect(validateSignupFields({ name: "Dina", email: "test@example.com", business: "", consent: true }, "community", "beta").business).toBe(false); });
   test("retired 20 place capacity setting is gone", () => { expect("communityCapacity" in noobClub).toBe(false); });
