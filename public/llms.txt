@@ -6,7 +6,7 @@
 
 - [Home](/): Overview of services, approach, case studies, and contact.
 
-- [AI Noob Club](/ai-noob-club): AI basics for women who run their own business, starter kit, the Meine Content-Assistentin course waitlist, free Edit-Guide, meetups and workshops.
+- [AI Noob Club](/ai-noob-club): AI basics for women who run their own business, starter pack, the Meine Content-Assistentin course waitlist, free Edit-Guide, meetups and workshops.
 - [Meine Content-Assistentin](/ai-noob-club/content-assistentin): Self-paced course waitlist for an AI assistant that knows your voice and look.
 - [KI-Workflow-Check](/ki-workflow-check): Five questions to find a practical first AI step.
 

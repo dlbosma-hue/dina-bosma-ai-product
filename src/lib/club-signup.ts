@@ -7,13 +7,13 @@ export type CourseRunde = Exclude<ClubRunde, "edit-guide">;
 
 export const signupConsent = {
   de: {
-    checkliste: "Schick mir das Starter-Kit per E-Mail. Ich möchte die neuesten Infos zu Workshops und neuen Produkten bekommen. Abmeldung jederzeit. Mehr dazu in der ",
+    checkliste: "Schick mir das Starterpaket per E-Mail. Ich möchte die neuesten Infos zu Workshops und neuen Produkten bekommen. Abmeldung jederzeit. Mehr dazu in der ",
     community: "Ich möchte auf die Warteliste für „Meine Content-Assistentin“ und per E-Mail dazu informiert werden. Abmeldung jederzeit. Mehr dazu in der ",
     editGuide: "Schick mir den Edit-Guide per E-Mail und halte mich über neue Produkte auf dem Laufenden. Abmeldung jederzeit. Mehr dazu in der ",
     privacy: "Datenschutzerklärung",
   },
   en: {
-    checkliste: "Send me the starter kit by email. I'd like to get the latest news on workshops and new products. Unsubscribe any time. More in the ",
+    checkliste: "Send me the starter pack by email. I'd like to get the latest news on workshops and new products. Unsubscribe any time. More in the ",
     community: "I'd like to join the waitlist for My Content Assistant and receive updates about it by email. Unsubscribe any time. More in the ",
     editGuide: "Send me the Edit Guide by email and keep me posted about new products. Unsubscribe any time. More in the ",
     privacy: "privacy policy",

@@ -15,7 +15,7 @@ const copy = {
     note: "Kein Spam. Jederzeit abmeldbar.", roundLabel: "Wähle deine Runde",
     rounds: { beta: "Runde 1 Beta-Community", frueh: "Runde 2 Frühe Warteliste" },
     done: {
-      checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail mit deinem Starter-Kit bei dir.",
+      checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail mit deinem Starterpaket bei dir.",
       beta: "Danke! Ich melde mich persönlich bei dir.",
       frueh: "Danke, du bist eingetragen. Ich melde mich per E-Mail bei dir.",
       editGuide: "Danke! Dein Edit-Guide ist bereit.",
@@ -29,7 +29,7 @@ const copy = {
     note: "No spam. Unsubscribe any time.", roundLabel: "Choose your round",
     rounds: { beta: "Round 1 Beta Community", frueh: "Round 2 early waitlist" },
     done: {
-      checkliste: "Thank you, you're in. I'll email you with your starter kit.",
+      checkliste: "Thank you, you're in. I'll email you with your starter pack.",
       beta: "Thank you! I'll get back to you personally.",
       frueh: "Thank you, you're signed up. I'll get in touch by email.",
       editGuide: "Thank you! Your Edit Guide is ready.",

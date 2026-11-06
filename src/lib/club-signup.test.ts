@@ -7,7 +7,7 @@ import { noobClub } from "../config/noobClub";
 const valid = { id: "7690dced-7e64-4e17-a011-99977843001c", name: "Dina", email: "test@example.com", source: "community", runde: "beta", lang: "de", business: "", pain: "", consent: true };
 
 describe("Club signup rules", () => {
-  test("starter kit and course community remain the signup sources", () => {
+  test("starter pack and course community remain the signup sources", () => {
     const { runde, ...starter } = valid;
     expect(clubSignupSchema.safeParse({ ...starter, source: "checkliste" }).success).toBe(true);
     expect(clubSignupSchema.safeParse(valid).success).toBe(true);
@@ -21,10 +21,10 @@ describe("Club signup rules", () => {
     }
     expect(clubSignupSchema.safeParse({ ...valid, runde: "other" }).success).toBe(false);
   });
-  test("starter kit signups do not take a course round", () => {
+  test("starter pack signups do not take a course round", () => {
     expect(clubSignupSchema.safeParse({ ...valid, source: "checkliste" }).success).toBe(false);
   });
-  test("name is required for the starter kit and both course rounds", () => {
+  test("name is required for the starter pack and both course rounds", () => {
     expect(clubSignupSchema.safeParse({ ...valid, name: " " }).success).toBe(false);
     expect(clubSignupSchema.safeParse({ ...valid, runde: "frueh", name: "" }).success).toBe(false);
     const { runde, ...starter } = valid;
@@ -57,7 +57,7 @@ describe("Club signup rules", () => {
     expect(confirmationTemplate("community", "frueh")).toBe("community-confirmation");
   });
   test("Edit Guide gets its own confirmation", () => { expect(confirmationTemplate("community", "edit-guide")).toBe("edit-guide-confirmation"); });
-  test("starter kit keeps its confirmation", () => { expect(confirmationTemplate("checkliste")).toBe("waitlist-confirmation"); });
+  test("starter pack keeps its confirmation", () => { expect(confirmationTemplate("checkliste")).toBe("waitlist-confirmation"); });
   test("client does not require community business", () => { expect(validateSignupFields({ name: "Dina", email: "test@example.com", business: "", consent: true }, "community", "beta").business).toBe(false); });
   test("retired 20 place capacity setting is gone", () => { expect("communityCapacity" in noobClub).toBe(false); });
   test("99 Prompts sale price is 9.99 EUR", () => { expect(noobClub.promptsPriceEur).toBe(9.99); });

@@ -44,11 +44,11 @@ export const bioLinksContent = {
       {
         id: "editguide",
         title: "Gratis: Edit-Guide Reels schneiden mit Claude",
-        hint: "Kostenloser PDF-Guide per E-Mail.",
+        hint: "Kostenloser PDF-Guide, direkt zum Download.",
       },
       {
         id: "starterpaket",
-        title: "Gratis Starter-Kit",
+        title: "Gratis Starterpaket",
         hint: "KI-Basics und Wochenplan, gratis per E-Mail.",
       },
       {
@@ -94,11 +94,11 @@ export const bioLinksContent = {
       {
         id: "editguide",
         title: "Free: Edit Guide for cutting Reels with Claude",
-        hint: "Free PDF guide by email.",
+        hint: "Free PDF guide, direct download.",
       },
       {
         id: "starterpaket",
-        title: "Free starter kit",
+        title: "Free starter pack",
         hint: "AI basics and a weekly plan, free by email.",
       },
       {

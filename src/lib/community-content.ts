@@ -7,7 +7,7 @@ export const communityContent = {
   de: {
     label: "Gründerinnen-Community",
     title: "Komm früh rein.",
-    intro: "„Meine Content-Assistentin“ ist in Arbeit. Es ist ein Selbstlernkurs für Frauen mit kleinem Business. Du baust dir eine KI-Assistentin, die deine Stimme und deinen Look kennt. Wer früh dabei ist, zahlt weniger.",
+    intro: "„Meine Content-Assistentin“ ist ein Selbstlernkurs für Frauen mit kleinem Business. Du baust dir eine KI-Assistentin, die deine Stimme und deinen Look kennt. Wer früh dabei ist, zahlt weniger.",
     courseLink: "Mehr zum Kurs",
     cards: [
       {
@@ -41,7 +41,7 @@ export const communityContent = {
     freeLabel: "Gratis",
     guideTitle: "Edit-Guide: Reels schneiden mit Claude",
     guideBody: "Der Guide zeigt dir, wie du deine Reels mit Claude schneidest. Kostenlos, als PDF.",
-    guideCta: "Guide herunterladen",
+    guideCta: "PDF öffnen",
     caption: "Ein kurzer Einblick in den Edit-Guide.",
     videoLabel: "Edit-Guide: Reels schneiden mit Claude",
     smallPrint: "Ich verspreche keine Einnahmen und keine Reichweite. Du bekommst einen klaren Ablauf und entscheidest am Ende selbst. Du kannst dich jederzeit austragen.",
@@ -50,7 +50,7 @@ export const communityContent = {
   en: {
     label: "Founders' Community",
     title: "Come in early.",
-    intro: "My Content Assistant is in the works. It's a self-paced course for women with small businesses. You'll build an AI assistant that knows your voice and your look. If you join early, you pay less.",
+    intro: "My Content Assistant is a self-paced course for women with small businesses. You'll build an AI assistant that knows your voice and your look. If you join early, you pay less.",
     courseLink: "More about the course",
     cards: [
       {
@@ -84,7 +84,7 @@ export const communityContent = {
     freeLabel: "Free",
     guideTitle: "Edit Guide: cutting Reels with Claude",
     guideBody: "The guide shows you how to cut your Reels with Claude. Free, as a PDF.",
-    guideCta: "Download the guide",
+    guideCta: "Open the PDF",
     caption: "A short preview of the Edit Guide.",
     videoLabel: "Edit Guide: cutting Reels with Claude",
     smallPrint: "I don't promise income or reach. You get a clear process and make your own decision at the end. You can opt out at any time.",
