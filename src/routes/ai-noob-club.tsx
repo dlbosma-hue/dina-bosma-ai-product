@@ -40,6 +40,12 @@ function NoobClub() {
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
   const community = communityContent[lang];
   const [courseRound, setCourseRound] = useState<CourseRunde>("beta");
+  const chooseCourseRound = (round: CourseRunde) => {
+    setCourseRound(round);
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.getElementById("warteliste")?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#warteliste`);
+  };
 
   return (
     <main className="noob-theme min-h-screen">
@@ -273,13 +279,13 @@ function NoobClub() {
                   ))}
                 </ul>
                 <div className="flex-1" />
-                <a
-                  href="#warteliste"
-                  onClick={() => setCourseRound(card.id)}
+                <button
+                  type="button"
+                  onClick={() => chooseCourseRound(card.id)}
                   className="mt-6 inline-flex min-h-12 w-fit max-w-full items-center justify-center whitespace-normal rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
                   {card.button}
-                </a>
+                </button>
                 {"note" in card && <p className="mt-3 text-sm leading-relaxed">{card.note}</p>}
               </article>
             ))}
