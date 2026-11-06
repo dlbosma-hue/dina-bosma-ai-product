@@ -253,7 +253,7 @@ function NoobClub() {
               <div className="mt-6 w-full max-w-[14rem] self-center">
                 <CommunityVideo key={lang} lang={lang} />
               </div>
-              <a href="/downloads/reels-schneiden-mit-claude.pdf" target="_blank" rel="noopener" className={`${btnPrimary} mt-6 self-start`}>{community.guideCta}</a>
+              <a href={noobClub.links.editGuidePdf[lang]} target="_blank" rel="noopener" className={`${btnPrimary} mt-6 self-start`}>{community.guideCta}</a>
             </article>
           </div>
         </div>
