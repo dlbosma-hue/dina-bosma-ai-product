@@ -8,11 +8,11 @@ const rounds: Record<string, string> = {
 }
 
 function Email({ name, email, source, runde }: { name?: string; email?: string; source?: string; runde?: string }) {
-  const list = source === 'checkliste' ? 'Gratis-Starter-Kit' : rounds[runde ?? ''] ?? 'Gründerinnen-Community'
+  const list = source === 'checkliste' ? 'Gratis-Starterpaket' : rounds[runde ?? ''] ?? 'Gründerinnen-Community'
   return <Html lang="de"><Head /><Preview>Neue Club-Registrierung</Preview><Body style={main}>
     <Container style={container}><Heading>Neue Club-Registrierung</Heading>
       <Text>{list}</Text>
-      <Text>Name: {name || 'Nicht angegeben'}<br />E-Mail: {email}<br />Runde: {runde || 'Starter-Kit'}</Text>
+      <Text>Name: {name || 'Nicht angegeben'}<br />E-Mail: {email}<br />Runde: {runde || 'Starterpaket'}</Text>
     </Container></Body></Html>
 }
 export const template = {

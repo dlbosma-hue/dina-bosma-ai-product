@@ -89,8 +89,8 @@ export const noobMeta = {
   bio: {
     path: "/ai-noob-club/links",
     noindex: true,
-    de: { title: "Link in Bio | AI Noob Club", description: "Die wichtigsten Links vom AI Noob Club: Kurs-Warteliste, Gratis Edit-Guide, Starter-Kit, KI-Foto-Prompts, Treffen und Workshops." },
-    en: { title: "Link in bio | AI Noob Club", description: "The most important links from the AI Noob Club: course waitlist, free Edit Guide, starter kit, AI photo prompts, meetups and workshops." },
+    de: { title: "Link in Bio | AI Noob Club", description: "Die wichtigsten Links vom AI Noob Club: Kurs-Warteliste, Gratis Edit-Guide, Starterpaket, KI-Foto-Prompts, Treffen und Workshops." },
+    en: { title: "Link in bio | AI Noob Club", description: "The most important links from the AI Noob Club: course waitlist, free Edit Guide, starter pack, AI photo prompts, meetups and workshops." },
   },
   privacy: {
     path: "/datenschutz",

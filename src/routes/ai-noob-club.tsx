@@ -231,7 +231,7 @@ function NoobClub() {
       <section id="angebote" className="scroll-mt-44 md:scroll-mt-48 bg-noob-rosa">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{ov.title}</h2>
-          <div className="mx-auto mt-8 max-w-3xl">
+          <div className="mt-8 grid items-start gap-6 md:grid-cols-2">
             <article id="checkliste" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
               <span className={`${pillClass} self-start`}>{ov.freeTag}</span>
               <h3 className="mt-4 font-serif text-3xl leading-snug">{ov.sheetName}</h3>
@@ -246,6 +246,15 @@ function NoobClub() {
               </ul>
               <div className="mt-6"><WaitlistForm t={t} source="checkliste" submitLabel={ov.sheetCta} note={ov.sheetNote} /></div>
             </article>
+            <article id="edit-guide" className="scroll-mt-44 md:scroll-mt-48 flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">
+              <span className={`${pillClass} self-start`}>{community.freeLabel}</span>
+              <h3 className="mt-4 font-serif text-3xl leading-snug">{community.guideTitle}</h3>
+              <p className="mt-3 text-base leading-relaxed text-foreground">{community.guideBody}</p>
+              <div className="mt-6 w-full max-w-[14rem] self-center">
+                <CommunityVideo key={lang} lang={lang} />
+              </div>
+              <a href="/downloads/reels-schneiden-mit-claude.pdf" target="_blank" rel="noopener" className={`${btnPrimary} mt-6 self-start`}>{community.guideCta}</a>
+            </article>
           </div>
         </div>
       </section>
@@ -258,33 +267,6 @@ function NoobClub() {
           <Link to="/ai-noob-club/content-assistentin" className="mt-3 inline-flex min-h-11 items-center font-semibold text-noob-terracotta-ink underline underline-offset-4">{community.courseLink}</Link>
 
           <CourseWaitlist />
-
-          <div className="mt-12">
-            <h3 className="max-w-3xl font-serif text-3xl leading-tight md:text-4xl">{community.buildTitle}</h3>
-            <ul className="mt-6 grid gap-4 md:grid-cols-2">
-              {community.buildItems.map((item) => (
-                <li key={item.title} className="rounded-2xl bg-noob-rosa p-5 text-base leading-relaxed">
-                  <strong className="font-semibold">{item.title}</strong> {item.body}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 max-w-3xl text-base leading-relaxed">{community.buildNote}</p>
-            <p className="mt-6 font-serif text-3xl leading-tight text-noob-terracotta-ink md:text-4xl">{community.buildClosing}</p>
-          </div>
-
-          <div id="edit-guide" className="mt-12 scroll-mt-44 rounded-3xl bg-noob-sky p-6 md:scroll-mt-48 md:p-8">
-            <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_18rem]">
-              <div>
-                <span className="inline-flex rounded-full bg-noob-cream px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-noob-navy">{community.freeLabel}</span>
-                <h3 className="mt-4 font-serif text-3xl leading-tight">{community.guideTitle}</h3>
-                <p className="mt-3 text-base leading-relaxed">{community.guideBody}</p>
-                <div className="mt-6">
-                  <WaitlistForm t={t} source="community" runde="edit-guide" submitLabel={community.guideCta} />
-                </div>
-              </div>
-              <CommunityVideo key={lang} lang={lang} />
-            </div>
-          </div>
 
           <p className="mt-8 max-w-3xl text-sm leading-relaxed">
             {community.smallPrint}{" "}
@@ -325,9 +307,6 @@ function NoobClub() {
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">{t.shopTitle}</h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.shopIntro}</p>
 
-          <p className="mt-5 max-w-3xl text-base leading-relaxed">{t.communityProductLine}{" "}
-            <a href="#edit-guide" className="font-semibold underline underline-offset-4">{t.communityLink}</a>
-          </p>
           <div className="mx-auto mt-10 max-w-3xl">
             {/* 99 Prompts */}
             <article className="flex flex-col rounded-3xl border border-foreground/10 bg-noob-paper p-6 md:p-8">

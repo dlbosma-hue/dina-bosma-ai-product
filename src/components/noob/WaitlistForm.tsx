@@ -15,12 +15,10 @@ const copy = {
     note: "Kein Spam. Jederzeit abmeldbar.", roundLabel: "Wähle deine Runde",
     rounds: { beta: "Runde 1 Beta-Community", frueh: "Runde 2 Frühe Warteliste" },
     done: {
-      checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail mit deinem Starter-Kit bei dir.",
+      checkliste: "Danke, du bist dabei. Ich melde mich per E-Mail mit deinem Starterpaket bei dir.",
       beta: "Danke! Ich melde mich persönlich bei dir.",
       frueh: "Danke, du bist eingetragen. Ich melde mich per E-Mail bei dir.",
-      editGuide: "Danke! Dein Edit-Guide ist bereit.",
     },
-    pdf: "PDF öffnen",
   },
   en: {
     name: "First name", email: "Email address",
@@ -29,12 +27,10 @@ const copy = {
     note: "No spam. Unsubscribe any time.", roundLabel: "Choose your round",
     rounds: { beta: "Round 1 Beta Community", frueh: "Round 2 early waitlist" },
     done: {
-      checkliste: "Thank you, you're in. I'll email you with your starter kit.",
+      checkliste: "Thank you, you're in. I'll email you with your starter pack.",
       beta: "Thank you! I'll get back to you personally.",
       frueh: "Thank you, you're signed up. I'll get in touch by email.",
-      editGuide: "Thank you! Your Edit Guide is ready.",
     },
-    pdf: "Open PDF",
   },
 };
 const inputCls = "w-full rounded-full border border-foreground/50 bg-background px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground focus-visible:ring-2 focus-visible:ring-ring";
@@ -60,14 +56,13 @@ export function WaitlistForm({ t, source, submitLabel, note, runde, onRundeChang
   const consent = signupConsent[lang];
   const id = `signup-${source}-${runde ?? "standard"}`;
   const selectedRunde = runde ?? internalRunde;
-  const editGuide = source === "community" && selectedRunde === "edit-guide";
-  const consentText = editGuide ? consent.editGuide : consent[source];
+  const consentText = consent[source];
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const name = editGuide ? "" : String(data.get("name") ?? "").trim();
+    const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
     const errs = validateSignupFields({ name, email, consent: !!data.get("consent") }, source, selectedRunde);
     setErrors(errs);
@@ -95,22 +90,17 @@ export function WaitlistForm({ t, source, submitLabel, note, runde, onRundeChang
   }
 
   if (status === "done") {
-    const message = source === "checkliste" ? c.done.checkliste : selectedRunde === "beta" ? c.done.beta : selectedRunde === "frueh" ? c.done.frueh : c.done.editGuide;
+    const message = source === "checkliste" ? c.done.checkliste : selectedRunde === "beta" ? c.done.beta : c.done.frueh;
     return (
       <div role="status" className="rounded-2xl bg-noob-cream p-6 text-base text-foreground">
         <p>{message}</p>
-        {editGuide && (
-          <a href="/downloads/reels-schneiden-mit-claude.pdf" className="mt-5 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-7 py-3 text-base font-semibold text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-            {c.pdf}
-          </a>
-        )}
       </div>
     );
   }
   const errorText = (field: "name" | "email" | "consent", message: string) => errors[field] && <span id={`${id}-${field}-err`} className="mt-1 block text-sm font-medium text-destructive">{message}</span>;
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-4">
-      {showRounds && !editGuide && (
+      {showRounds && (
         <fieldset>
           <legend className="mb-2 text-sm font-semibold">{c.roundLabel}</legend>
           <div className="grid gap-2 sm:grid-cols-2">
@@ -133,14 +123,12 @@ export function WaitlistForm({ t, source, submitLabel, note, runde, onRundeChang
           </div>
         </fieldset>
       )}
-      <div className={`grid gap-4 ${editGuide ? "" : "sm:grid-cols-2"}`}>
-        {!editGuide && (
+      <div className={"grid gap-4 sm:grid-cols-2"}>
           <label className="block" htmlFor={`${id}-name`}>
             <span className="mb-1.5 block text-sm">{c.name}</span>
             <input id={`${id}-name`} name="name" required maxLength={100} autoComplete="given-name" aria-invalid={errors.name || undefined} aria-describedby={errors.name ? `${id}-name-err` : undefined} className={inputCls} />
             {errorText("name", c.errName)}
           </label>
-        )}
         <label className="block" htmlFor={`${id}-email`}>
           <span className="mb-1.5 block text-sm">{c.email}</span>
           <input id={`${id}-email`} type="email" name="email" required maxLength={254} autoComplete="email" aria-invalid={errors.email || undefined} aria-describedby={errors.email ? `${id}-email-err` : undefined} className={inputCls} />

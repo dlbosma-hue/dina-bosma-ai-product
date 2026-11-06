@@ -17,7 +17,7 @@ export const Route = createFileRoute('/api/public/waitlist')({
     if (!parsed.success) return Response.json({ ok: false }, { status: 400 })
     const data = parsed.data
     const c = signupConsent[data.lang]
-    const consent_text = (data.runde === 'edit-guide' ? c.editGuide : c[data.source]) + c.privacy + '.'
+    const consent_text = c[data.source] + c.privacy + '.'
     const consent_at = new Date().toISOString()
     // Only the platform-provided address is used; never trust X-Forwarded-For.
     const address = request.headers.get('cf-connecting-ip') ?? 'local-preview'
