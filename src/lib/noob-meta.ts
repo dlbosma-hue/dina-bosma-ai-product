@@ -69,6 +69,11 @@ export const noobMeta = {
     de: { title: "Content-Wochenplan | AI Noob Club", description: "Der Content-Wochenplan: eine ganze Woche Social Media in einem Rutsch planen. Gratis." },
     en: { title: "Weekly Content Plan | AI Noob Club", description: "A Weekly Content Plan to plan a whole week of social media in one go. Free." },
   },
+  course: {
+    path: "/ai-noob-club/content-assistentin",
+    de: { title: "Meine Content-Assistentin | AI Noob Club", description: "Selbstlernkurs: Bau dir eine KI-Assistentin, die deine Stimme und deinen Look kennt. Klingt nach dir. Sieht aus wie du. Jetzt auf die Warteliste." },
+    en: { title: "My Content Assistant | AI Noob Club", description: "Self-paced course: build an AI assistant that knows your voice and your look. Sounds like you. Looks like you. Join the waitlist." },
+  },
   thanks: {
     path: "/ai-noob-club/danke",
     noindex: true,
