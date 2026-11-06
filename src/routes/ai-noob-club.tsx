@@ -254,30 +254,82 @@ function NoobClub() {
 
       <section id="community" className="scroll-mt-44 md:scroll-mt-48 bg-noob-cream">
         <div className="mx-auto max-w-5xl px-6 py-12 md:px-10 md:py-16">
-          <div className="grid gap-x-12 gap-y-6 md:grid-cols-[minmax(0,1fr)_20rem]">
-            <div>
-              <h2 className="font-serif text-4xl leading-tight md:text-5xl">{community.title}</h2>
-              <p className="mt-4 text-lg leading-relaxed">{community.subline}</p>
-              <p className="mt-4 border-l-4 border-noob-terracotta bg-noob-rosa py-3 pl-4 pr-3 text-base font-semibold leading-relaxed text-noob-navy">
-                {community.firstTesters}
-              </p>
-            </div>
-            <div className="md:col-start-2 md:row-span-2 md:row-start-1">
+          <span className={`${pillClass} uppercase tracking-[0.14em]`}>{community.label}</span>
+          <h2 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">{community.title}</h2>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed">{community.intro}</p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {community.cards.map((card) => (
+              <article key={card.id} className="flex flex-col rounded-3xl bg-noob-rosa p-6 md:p-8">
+                <span className="inline-flex w-fit rounded-full bg-noob-cream px-3 py-1 text-xs font-semibold text-noob-navy">{card.tag}</span>
+                <h3 className="mt-4 font-serif text-3xl leading-snug">{card.title}</h3>
+                <p className="mt-3 text-base leading-relaxed">{card.body}</p>
+                <ul className="mt-5 space-y-2">
+                  {card.bullets.map((item) => (
+                    <li key={item} className="flex gap-3 text-base leading-relaxed">
+                      <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-noob-terracotta" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex-1" />
+                <a
+                  href="#warteliste"
+                  onClick={() => setCourseRound(card.id)}
+                  className="mt-6 inline-flex min-h-12 w-fit max-w-full items-center justify-center whitespace-normal rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  {card.button}
+                </a>
+                {"note" in card && <p className="mt-3 text-sm leading-relaxed">{card.note}</p>}
+              </article>
+            ))}
+          </div>
+
+          <div id="warteliste" className="mt-6 scroll-mt-44 rounded-3xl bg-noob-rosa p-6 md:scroll-mt-48 md:p-8">
+            <WaitlistForm
+              t={t}
+              source="community"
+              runde={courseRound}
+              onRundeChange={setCourseRound}
+              showRounds
+              submitLabel={courseRound === "beta" ? community.cards[0].button : community.cards[1].button}
+              note=""
+            />
+          </div>
+
+          <div className="mt-12">
+            <h3 className="max-w-3xl font-serif text-3xl leading-tight md:text-4xl">{community.buildTitle}</h3>
+            <ul className="mt-6 grid gap-4 md:grid-cols-2">
+              {community.buildItems.map((item) => (
+                <li key={item.title} className="rounded-2xl bg-noob-rosa p-5 text-base leading-relaxed">
+                  <strong className="font-semibold">{item.title}</strong> {item.body}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed">{community.buildNote}</p>
+            <p className="mt-6 font-serif text-3xl leading-tight text-noob-terracotta-ink md:text-4xl">{community.buildClosing}</p>
+          </div>
+
+          <div id="edit-guide" className="mt-12 scroll-mt-44 rounded-3xl bg-noob-sky p-6 md:scroll-mt-48 md:p-8">
+            <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_18rem]">
+              <div>
+                <span className="inline-flex rounded-full bg-noob-cream px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-noob-navy">{community.freeLabel}</span>
+                <h3 className="mt-4 font-serif text-3xl leading-tight">{community.guideTitle}</h3>
+                <p className="mt-3 text-base leading-relaxed">{community.guideBody}</p>
+                <div className="mt-6">
+                  <WaitlistForm t={t} source="community" runde="edit-guide" submitLabel={community.guideCta} />
+                </div>
+              </div>
               <CommunityVideo key={lang} lang={lang} />
             </div>
-            <div className="min-w-0">
-              <ul className="flex flex-wrap gap-2">
-                {community.points.map((point) => <li key={point} className={pillClass}>{point}</li>)}
-              </ul>
-              <h3 className="mt-6 font-serif text-2xl">{community.how}</h3>
-              <ol className="mt-3 space-y-2 text-base">{community.steps.map((step) => <li key={step}>{step}</li>)}</ol>
-              <p className="mt-5 text-sm leading-relaxed">{community.distinction}</p>
-              <div className="mt-6 rounded-3xl border border-noob-rosa bg-noob-rosa p-6 md:p-8">
-                <WaitlistForm t={t} source="community" submitLabel={community.button} note={community.note} />
-                <p className="mt-3 text-sm leading-relaxed">{community.extra}</p>
-              </div>
-            </div>
           </div>
+
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed">
+            {community.smallPrint}{" "}
+            <Link to="/datenschutz" className="underline underline-offset-4 hover:no-underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              {community.privacy}
+            </Link>
+          </p>
         </div>
       </section>
 
