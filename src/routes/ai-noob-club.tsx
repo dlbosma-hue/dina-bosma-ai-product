@@ -44,7 +44,6 @@ function NoobClub() {
     setCourseRound(round);
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     document.getElementById("warteliste")?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
-    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#warteliste`);
   };
 
   return (
