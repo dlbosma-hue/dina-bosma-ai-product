@@ -8,6 +8,7 @@ export const communityContent = {
     label: "Gründerinnen-Community",
     title: "Komm früh rein.",
     intro: "„Meine Content-Assistentin“ ist in Arbeit. Es ist ein Selbstlernkurs für Frauen mit kleinem Business. Du baust dir eine KI-Assistentin, die deine Stimme und deinen Look kennt. Wer früh dabei ist, zahlt weniger.",
+    courseLink: "Mehr zum Kurs",
     cards: [
       {
         id: "beta",
@@ -50,6 +51,7 @@ export const communityContent = {
     label: "Founders' Community",
     title: "Come in early.",
     intro: "My Content Assistant is in the works. It's a self-paced course for women with small businesses. You'll build an AI assistant that knows your voice and your look. If you join early, you pay less.",
+    courseLink: "More about the course",
     cards: [
       {
         id: "beta",
