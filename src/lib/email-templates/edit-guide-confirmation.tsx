@@ -1,4 +1,5 @@
 import { Body, Button, Container, Head, Heading, Html, Preview, Text } from '@react-email/components'
+import { noobClub } from '@/config/noobClub'
 import type { TemplateEntry } from './registry'
 
 const copy = {
