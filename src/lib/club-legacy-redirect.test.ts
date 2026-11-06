@@ -4,7 +4,8 @@ import { clubLegacyRedirect } from "./club-legacy-redirect";
 
 describe("Club encoded fragment redirects", () => {
   const mappings = {
-    "edit-guide": "community",
+    "edit-guide": "edit-guide",
+    warteliste: "warteliste",
     checkliste: "checkliste",
     community: "community",
     treffen: "treffen",
@@ -30,7 +31,7 @@ describe("Club encoded fragment redirects", () => {
   });
   test("tracking query string is preserved exactly", () => {
     const query = "?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=a%2Bb&extra=one+two&extra=three";
-    assert.equal(clubLegacyRedirect("/ai-noob-club#edit-guide", query), `/ai-noob-club${query}#community`);
+    assert.equal(clubLegacyRedirect("/ai-noob-club#edit-guide", query), `/ai-noob-club${query}#edit-guide`);
   });
   test("ordinary Club and unrelated URLs are untouched", () => {
     for (const path of ["/ai-noob-club", "/ai-noob-club/", "/other%23edit-guide", "/ai-noob-club-other%23shop"]) {

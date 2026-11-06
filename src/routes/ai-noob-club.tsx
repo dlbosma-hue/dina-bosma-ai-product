@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { CommunityVideo } from "@/components/noob/CommunityVideo";
 import { communityContent, communityVideoSchema } from "@/lib/community-content";
+import type { CourseRunde } from "@/lib/club-signup";
 import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Sparkles, Users, Leaf, ShieldCheck } from "lucide-react";
@@ -37,6 +39,7 @@ function NoobClub() {
   const pillClass =
     "inline-flex items-center rounded-full bg-noob-rosa px-3 py-1 text-xs font-semibold text-noob-navy";
   const community = communityContent[lang];
+  const [courseRound, setCourseRound] = useState<CourseRunde>("beta");
 
   return (
     <main className="noob-theme min-h-screen">
@@ -309,7 +312,7 @@ function NoobClub() {
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground">{t.shopIntro}</p>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed">{t.communityProductLine}{" "}
-            <a href="#community" className="font-semibold underline underline-offset-4">{t.communityLink}</a>
+            <a href="#edit-guide" className="font-semibold underline underline-offset-4">{t.communityLink}</a>
           </p>
           <div className="mx-auto mt-10 max-w-3xl">
             {/* 99 Prompts */}
