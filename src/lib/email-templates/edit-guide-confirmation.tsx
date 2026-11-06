@@ -24,7 +24,7 @@ function Email({ lang }: { lang?: string }) {
   return <Html lang={de ? 'de' : 'en'}><Head /><Preview>{t.preview}</Preview><Body style={main}>
     <Container style={container}><Heading style={heading}>{t.title}</Heading>
       <Text style={text}>{t.body}</Text>
-      <Button href="https://humint.site/downloads/reels-schneiden-mit-claude.pdf" style={button}>{t.cta}</Button>
+      <Button href={`https://humint.site${noobClub.links.editGuidePdf[de ? 'de' : 'en']}`} style={button}>{t.cta}</Button>
       <Text style={text}>{t.signoff}<br />AI Noob Club | HUMINT</Text>
     </Container></Body></Html>
 }

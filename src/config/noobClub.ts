@@ -11,6 +11,11 @@ export const noobClub = {
     /** Free 1:1 AI Start Check booking (Calendly). */
     calendlyStartCheck: "https://calendly.com/dlbosma/1-1-ai-start-check",
     checklistPdf: "",
+    /** Edit-Guide PDFs, one per language. Dina uploads the files to public/downloads. */
+    editGuidePdf: {
+      de: "/downloads/edit-guide-deutsch.pdf",
+      en: "/downloads/edit-guide-english.pdf",
+    },
     /** Meetup page. Empty = no button on the meetup card. */
     meetup: "https://meetup.com/ai-for-women-berlin-beginner-meetup",
     /** Club contact email (opens the visitor's email app). HUMINT keeps its own Calendly. */
