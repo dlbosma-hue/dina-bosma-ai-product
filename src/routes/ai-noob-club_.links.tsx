@@ -31,6 +31,7 @@ function BioLinksPage() {
   const hrefs: Record<BioLinkId, string> = {
     startcheck: noobClub.links.calendlyStartCheck,
     community: noobClub.links.bioCommunity,
+    editguide: noobClub.links.bioEditGuide,
     starterpaket: noobClub.links.bioStarterpaket,
     prompts: noobClub.links.bioPrompts,
     meetup: noobClub.links.meetup,
@@ -128,4 +129,4 @@ function BioLinksPage() {
   );
 }
 
-type BioLinkId = "startcheck" | "community" | "starterpaket" | "prompts" | "meetup" | "workshop";
+type BioLinkId = "startcheck" | "community" | "editguide" | "starterpaket" | "prompts" | "meetup" | "workshop";

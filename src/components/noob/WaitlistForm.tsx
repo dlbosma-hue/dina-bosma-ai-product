@@ -95,7 +95,7 @@ export function WaitlistForm({ t, source, submitLabel, note, runde, onRundeChang
   }
 
   if (status === "done") {
-    const message = source === "checkliste" ? c.done.checkliste : editGuide ? c.done.editGuide : c.done[selectedRunde];
+    const message = source === "checkliste" ? c.done.checkliste : selectedRunde === "beta" ? c.done.beta : selectedRunde === "frueh" ? c.done.frueh : c.done.editGuide;
     return (
       <div role="status" className="rounded-2xl bg-noob-cream p-6 text-base text-foreground">
         <p>{message}</p>

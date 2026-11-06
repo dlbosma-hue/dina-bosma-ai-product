@@ -3,6 +3,7 @@ import { template as waitlistConfirmation } from './waitlist-confirmation'
 import { template as signupConfirmation } from './signup-confirmation'
 import { template as signupNotification } from './signup-notification'
 import { template as communityConfirmation } from './community-confirmation'
+import { template as editGuideConfirmation } from './edit-guide-confirmation'
 import { template as clubSignupNotification } from './club-signup-notification'
 
 export interface TemplateEntry {
@@ -21,6 +22,7 @@ export interface TemplateEntry {
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'waitlist-confirmation': waitlistConfirmation,
   'community-confirmation': communityConfirmation,
+  'edit-guide-confirmation': editGuideConfirmation,
   'club-signup-notification': clubSignupNotification,
   'signup-confirmation': signupConfirmation,
   'signup-notification': signupNotification,
