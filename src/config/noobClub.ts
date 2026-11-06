@@ -1,3 +1,6 @@
+import editGuideDeutsch from "../assets/edit-guide-deutsch.pdf.asset.json";
+import editGuideEnglish from "../assets/edit-guide-english.pdf.asset.json";
+
 // AI Noob Club settings. Change values here, not in components.
 export const noobClub = {
   promptsPriceEur: 9.99,
@@ -11,10 +14,10 @@ export const noobClub = {
     /** Free 1:1 AI Start Check booking (Calendly). */
     calendlyStartCheck: "https://calendly.com/dlbosma/1-1-ai-start-check",
     checklistPdf: "",
-    /** Edit-Guide PDFs, one per language. Dina uploads the files to public/downloads. */
+    /** Direct Edit-Guide PDFs, hosted as assets and selected by language. */
     editGuidePdf: {
-      de: "/downloads/edit-guide-deutsch.pdf",
-      en: "/downloads/edit-guide-english.pdf",
+      de: editGuideDeutsch.url,
+      en: editGuideEnglish.url,
     },
     /** Meetup page. Empty = no button on the meetup card. */
     meetup: "https://meetup.com/ai-for-women-berlin-beginner-meetup",
