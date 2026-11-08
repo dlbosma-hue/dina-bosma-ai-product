@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
 import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
+import { Button } from "@/components/ui/button";
 
 export function ClubCallout() {
   const { t } = useLanguage();
@@ -21,6 +22,7 @@ export function ClubCallout() {
         <p className="mt-4 max-w-xl text-base leading-relaxed text-foreground md:text-lg">
           {t.clubCallout.text}
         </p>
+        <Button asChild variant="outline" className="humint-secondary-button mt-7">
         <Link
           to="/ai-noob-club"
           className="group mt-7 inline-flex items-center gap-2 text-base font-semibold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -33,6 +35,7 @@ export function ClubCallout() {
             &#8594;
           </span>
         </Link>
+        </Button>
       </div>
     </section>
   );

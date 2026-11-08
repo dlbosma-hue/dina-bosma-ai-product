@@ -6,12 +6,13 @@ export function Services() {
   const services = t.services.items;
   return (
     <Section id="services" eyebrow={t.services.eyebrow} title={t.services.title}>
-      <ul className="divide-y divide-border border-y border-border">
+      <ul className="humint-services-grid">
         {services.map((s) => (
           <li
             key={s.title}
-            className="grid gap-3 py-6 md:grid-cols-12 md:gap-8 md:py-7"
+              className="humint-service-card"
           >
+            <span aria-hidden="true" className="humint-service-dot" />
             <h3 className="font-serif text-[26px] leading-tight md:col-span-5 md:text-[32px]">
               {s.title}
             </h3>

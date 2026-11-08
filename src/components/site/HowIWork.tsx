@@ -10,20 +10,25 @@ const icons = [findIcon, decideIcon, buildIcon, handoverIcon];
 export function HowIWork() {
   const { t } = useLanguage();
   const steps = t.how.steps;
+  const lastDescription = steps[3]?.desc ?? "";
+  const sentenceEnd = lastDescription.indexOf(".");
+  const quote = sentenceEnd >= 0 ? lastDescription.slice(0, sentenceEnd + 1) : "";
+  const remainingDescription = quote ? lastDescription.slice(sentenceEnd + 1).trim() : lastDescription;
   return (
     <Section id="how" eyebrow={t.how.eyebrow} title={t.how.title}>
-      <ol className="divide-y divide-border border-y border-border">
+      <ol className="humint-timeline">
         {steps.map((s, i) => {
           const icon = icons[i];
           return (
             <li
               key={s.title}
-              className="grid gap-5 py-6 md:grid-cols-12 md:gap-8 md:py-7"
+              className="humint-timeline-step"
             >
-              <div className="md:col-span-5">
-                <div className="mb-3 aspect-square w-full max-w-[180px] overflow-hidden border-2 border-white md:mb-4 md:max-w-[200px]">
+              <span className="humint-step-number" aria-hidden="true">{i + 1}</span>
+              <div className="humint-step-content">
+                <div className="humint-step-icon">
                   <img
-                    src={icon.url}
+                    src={icon?.url}
                     alt=""
                     loading="lazy"
                     className="block h-full w-full scale-[1.08] object-cover object-center"
@@ -32,14 +37,15 @@ export function HowIWork() {
                 <h3 className="font-serif text-[26px] leading-tight md:text-[32px]">
                   {s.title}
                 </h3>
-              </div>
               <p className="text-base leading-relaxed text-muted-foreground md:col-span-7 md:self-end">
-                {s.desc}
+                {i === 3 ? remainingDescription : s.desc}
               </p>
+              </div>
             </li>
           );
         })}
       </ol>
+      {quote && <blockquote className="humint-workflow-quote">{quote}</blockquote>}
     </Section>
   );
 }

@@ -14,6 +14,7 @@ export function Section({ id, eyebrow, title, children, className = "" }: Sectio
       id={id}
       className={`mx-auto max-w-5xl scroll-mt-24 px-6 py-7 md:px-10 md:py-10 ${className}`}
     >
+      <div className="humint-section-inner">
       {(eyebrow || title) && (
         <div className="mb-5 md:mb-6">
           {eyebrow && (
@@ -28,6 +29,7 @@ export function Section({ id, eyebrow, title, children, className = "" }: Sectio
         </div>
       )}
       {children}
+      </div>
     </section>
   );
 }
