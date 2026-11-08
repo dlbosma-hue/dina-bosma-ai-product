@@ -25,12 +25,12 @@ export function CaseStudies() {
               </ul>
             )}
             {c.metrics.length > 0 && (
-              <div className="mt-8 grid grid-cols-2 gap-6 border-t-2 border-navy pt-6 md:max-w-2xl">
+              <div className="mt-8 grid grid-cols-1 gap-6 border-t-2 border-navy pt-6 sm:grid-cols-2 md:max-w-2xl">
                 {c.metrics.map((m) => (
                   <div key={m.label}>
                     <div className="font-headline text-4xl leading-[1.05] md:text-5xl">{m.value}</div>
                     <div className="mt-2 text-sm font-semibold uppercase tracking-[0.08em] text-navy">{m.label}</div>
-                    {c.client === spottr && m.value.includes("099") && <p className="mt-2 text-sm text-navy">{t.cases.roiNote}</p>}
+                    {c.client === spottr && m.value.includes("099") && <p className="mt-2 text-base text-navy">{t.cases.roiNote}</p>}
                   </div>
                 ))}
               </div>

@@ -63,7 +63,7 @@ function BioLinksPage() {
                   <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center border-2 border-navy bg-cream font-headline text-lg leading-none text-navy">{i + 1}</span>
                   <span className="min-w-0 flex-1">
                     <span className="block text-base font-semibold leading-snug text-navy">{l.title}</span>
-                    <span className="mt-0.5 block text-sm leading-snug text-navy">{l.hint}</span>
+                    <span className="mt-0.5 block text-base leading-snug text-navy">{l.hint}</span>
                   </span>
                   {l.external ? <><ArrowUpRight aria-hidden className="h-5 w-5 shrink-0 text-navy" /><span className="sr-only">{c.externalHint}</span></> : <ArrowRight aria-hidden className="h-5 w-5 shrink-0 text-navy transition-transform duration-200 group-hover:translate-x-1" />}
                 </a>
