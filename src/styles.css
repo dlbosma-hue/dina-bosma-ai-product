@@ -1,6 +1,9 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/instrument-serif/400.css";
 @import "@fontsource/anton/latin-400.css";
 @import "@fontsource/architects-daughter/latin-400.css";
 @import "@fontsource/patrick-hand/latin-400.css";
@@ -10,18 +13,17 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.5rem;
-  --radius-2xl: 0.5rem;
-  --radius-3xl: 0.5rem;
-  --radius-4xl: 0.5rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
   --font-headline: "Anton", sans-serif;
   --font-tape: "Architects Daughter", cursive;
   --font-note: "Patrick Hand", cursive;
   --font-body: "Inter", system-ui, sans-serif;
-  --font-sans: var(--font-body);
   --font-size-base: 1.0625rem;
   --font-size-base--line-height: 1.6;
   --font-size-lg: 1.1875rem;
@@ -33,15 +35,17 @@
   --color-sky: var(--sky);
   --color-mid-sky: var(--mid-sky);
   --color-link: var(--link);
-  --color-noob-paper: var(--cream);
-  --color-noob-blush: var(--rose);
-  --color-noob-surface: var(--rose);
-  --color-noob-navy: var(--navy);
-  --color-noob-cream: var(--cream);
-  --color-noob-rosa: var(--rose);
-  --color-noob-sky: var(--sky);
-  --color-noob-callout: var(--rose);
-  --color-noob-callout-border: var(--navy);
+  --color-noob-paper: var(--noob-paper);
+  --color-noob-blush: var(--noob-blush);
+  --color-noob-surface: var(--noob-surface);
+  --color-noob-terracotta: var(--noob-terracotta);
+  --color-noob-terracotta-ink: var(--noob-terracotta-ink);
+  --color-noob-navy: var(--noob-navy);
+  --color-noob-cream: var(--noob-cream);
+  --color-noob-rosa: var(--noob-rosa);
+  --color-noob-sky: var(--noob-sky);
+  --color-noob-callout: var(--noob-callout);
+  --color-noob-callout-border: var(--noob-callout-border);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -61,20 +65,22 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
   --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--accent-grapefruit);
-  --color-chart-2: var(--mid-sky);
-  --color-chart-3: var(--navy);
-  --color-chart-4: var(--rose);
-  --color-chart-5: var(--link);
-  --color-sidebar: var(--cream);
-  --color-sidebar-foreground: var(--navy);
-  --color-sidebar-primary: var(--accent-grapefruit);
-  --color-sidebar-primary-foreground: var(--navy);
-  --color-sidebar-accent: var(--rose);
-  --color-sidebar-accent-foreground: var(--navy);
-  --color-sidebar-border: var(--navy);
-  --color-sidebar-ring: var(--navy);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
@@ -85,48 +91,105 @@
   --sky: #BFE0F5;
   --mid-sky: #8DC0E6;
   --link: #012868;
-  --background: var(--cream);
-  --foreground: var(--navy);
-  --card: var(--cream);
-  --card-foreground: var(--navy);
-  --popover: var(--cream);
-  --popover-foreground: var(--navy);
-  --primary: var(--accent-grapefruit);
-  --primary-foreground: var(--navy);
-  --secondary: var(--sky);
-  --secondary-foreground: var(--navy);
-  --muted: var(--rose);
-  --muted-foreground: var(--navy);
-  --accent: var(--accent-grapefruit);
-  --accent-foreground: var(--navy);
-  --destructive: var(--navy);
-  --destructive-foreground: var(--cream);
-  --border: var(--navy);
-  --input: var(--navy);
-  --ring: var(--navy);
-  --radius: 0.5rem;
+  --noob-paper: oklch(0.975 0.018 78);
+  --noob-blush: oklch(0.925 0.035 22);
+  --noob-surface: oklch(0.955 0.028 40);
+  --noob-terracotta: oklch(0.55 0.11 38);
+  --noob-terracotta-ink: oklch(0.55 0.11 38);
+  --noob-callout: oklch(0.921 0.0308 2.6);
+  --noob-callout-border: oklch(0.866 0.0462 6.3);
+  --radius: 0rem;
+  --background: oklch(0.968 0.014 88);
+  --foreground: oklch(0.30 0.12 260);
+  --card: oklch(0.968 0.014 88);
+  --card-foreground: oklch(0.30 0.12 260);
+  --popover: oklch(0.968 0.014 88);
+  --popover-foreground: oklch(0.30 0.12 260);
+  --primary: oklch(0.34 0.14 260);
+  --primary-foreground: oklch(0.968 0.014 88);
+  --secondary: oklch(0.96 0.015 250);
+  --secondary-foreground: oklch(0.30 0.12 260);
+  --muted: oklch(0.96 0.015 250);
+  --muted-foreground: oklch(0.40 0.10 260);
+  --accent: oklch(0.42 0.15 260);
+  --accent-foreground: oklch(0.985 0.005 80);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.88 0.02 250);
+  --input: oklch(0.88 0.02 250);
+  --ring: oklch(0.42 0.14 255);
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-body: "Nunito", system-ui, -apple-system, sans-serif;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.984 0.003 247.858);
+  --sidebar-foreground: oklch(0.129 0.042 264.695);
+  --sidebar-primary: oklch(0.208 0.042 265.755);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --banner-height: 3.5rem;
+  --sidebar-accent: oklch(0.968 0.007 247.896);
+  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
+  --sidebar-border: oklch(0.929 0.013 255.508);
+  --sidebar-ring: oklch(0.704 0.04 256.788);
+}
+
+.dark {
+  --noob-paper: oklch(0.22 0.025 260);
+  --noob-blush: oklch(0.30 0.035 22);
+  --noob-surface: oklch(0.27 0.028 40);
+  --noob-terracotta: oklch(0.75 0.09 38);
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.208 0.042 265.755);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.929 0.013 255.508);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
 @layer base {
   * {
-    border-color: var(--navy);
-  }
-
-  html {
-    background: var(--cream);
-    scroll-padding-top: 8rem;
+    border-color: var(--color-border);
   }
 
   body {
-    min-width: 320px;
-    background: var(--cream);
-    color: var(--navy);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
     font-family: var(--font-body);
-    font-size: 17px;
     font-weight: 400;
-    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
   }
 
   h1,
@@ -135,51 +198,26 @@
   h4,
   h5,
   h6 {
-    color: var(--navy);
-    font-family: var(--font-headline);
+    font-family: var(--font-sans);
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
     font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.05;
+    letter-spacing: -0.01em;
   }
 
-  p {
-    max-width: 65ch;
-  }
-
-  a {
-    color: var(--link);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.2em;
-  }
-
-  button,
-  input,
-  textarea,
-  select {
-    font-family: var(--font-body);
-  }
-
-  button,
-  a,
-  input,
-  textarea,
-  select,
-  summary {
-    outline-offset: 2px;
-  }
-
-  :focus-visible {
-    outline: 3px solid var(--navy);
-    outline-offset: 2px;
+  .uppercase {
+    font-family: var(--font-mono);
+    font-weight: 400;
   }
 
   ::selection {
-    background: var(--accent-grapefruit);
-    color: var(--navy);
+    background-color: oklch(0.38 0.11 255 / 0.2);
   }
 
   main {
-    padding-top: 0;
+    padding-top: var(--banner-height);
   }
 }
 
@@ -189,7 +227,7 @@
   border: 2px solid var(--navy);
   background: var(--cream);
   color: var(--navy);
-  font-family: var(--font-headline);
+  font-family: "Anton", sans-serif;
   font-weight: 400;
   line-height: 1.05;
   padding: 4px 20px 10px;
@@ -213,7 +251,7 @@
   background-color: var(--sky);
   background-image: repeating-linear-gradient(0deg, transparent 0 35px, color-mix(in srgb, var(--mid-sky) 33%, transparent) 35px 36px), repeating-linear-gradient(90deg, transparent 0 35px, color-mix(in srgb, var(--mid-sky) 33%, transparent) 35px 36px);
   color: var(--navy);
-  font-family: var(--font-tape);
+  font-family: "Architects Daughter", cursive;
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -231,7 +269,7 @@
   display: inline-block;
   max-width: 100%;
   color: var(--navy);
-  font-family: var(--font-note);
+  font-family: "Patrick Hand", cursive;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.2;
@@ -249,7 +287,7 @@
   border-radius: 6px;
   background: var(--accent-grapefruit);
   color: var(--navy);
-  font-family: var(--font-body);
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.25;
@@ -287,22 +325,116 @@
   border-radius: 0;
   background: var(--cream);
   color: var(--navy);
-  font-family: var(--font-body);
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.25;
   padding: 0.35rem 0.75rem;
 }
 
+html:has(.noob-theme) {
+  background: var(--cream);
+  scroll-padding-top: 8rem;
+}
+
 .noob-theme {
+  --radius: 0.5rem;
+  --noob-navy: var(--navy);
+  --noob-terracotta: var(--accent-grapefruit);
+  --noob-terracotta-ink: var(--navy);
+  --noob-cream: var(--cream);
+  --noob-rosa: var(--rose);
+  --noob-sky: var(--sky);
+  --noob-callout: var(--rose);
+  --noob-callout-border: var(--navy);
+  --noob-paper: var(--cream);
+  --noob-blush: var(--rose);
+  --noob-surface: var(--rose);
   --background: var(--cream);
   --foreground: var(--navy);
+  --card: var(--cream);
+  --card-foreground: var(--navy);
+  --popover: var(--cream);
+  --popover-foreground: var(--navy);
   --primary: var(--accent-grapefruit);
   --primary-foreground: var(--navy);
+  --secondary: var(--sky);
+  --secondary-foreground: var(--navy);
+  --muted: var(--rose);
+  --muted-foreground: var(--navy);
+  --accent: var(--accent-grapefruit);
+  --accent-foreground: var(--navy);
+  --destructive: var(--navy);
+  --destructive-foreground: var(--cream);
   --border: var(--navy);
+  --input: var(--navy);
+  --ring: var(--navy);
   background: var(--cream);
   color: var(--navy);
-  font-family: var(--font-body);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-top: 0;
+}
+
+.noob-theme h1,
+.noob-theme h2,
+.noob-theme h3,
+.noob-theme h4,
+.noob-theme h5,
+.noob-theme h6 {
+  color: var(--navy);
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+
+.noob-theme p {
+  max-width: 65ch;
+}
+
+.noob-theme a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.noob-theme button,
+.noob-theme input,
+.noob-theme textarea,
+.noob-theme select {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.noob-theme button,
+.noob-theme a,
+.noob-theme input,
+.noob-theme textarea,
+.noob-theme select,
+.noob-theme summary {
+  outline-offset: 2px;
+}
+
+.noob-theme :focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
+
+.noob-theme ::selection {
+  background: var(--accent-grapefruit);
+  color: var(--navy);
+}
+
+.noob-theme .uppercase {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.noob-theme .noob-h3-sans {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .noob-badge {
@@ -316,9 +448,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  html:has(.noob-theme) {
+    scroll-behavior: auto;
+  }
+
+  .noob-theme,
+  .noob-theme *,
+  .noob-theme *::before,
+  .noob-theme *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
