@@ -6,15 +6,23 @@ export function About() {
   const { t } = useLanguage();
   return (
     <Section id="about" eyebrow={t.about.eyebrow}>
-      <div className="grid items-center gap-10 md:grid-cols-5">
-        <div className="space-y-5 text-lg text-navy md:col-span-3">
+      <div className="grid gap-10 md:grid-cols-5">
+        <div className="md:col-span-3 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>{t.about.p1}</p>
           <p>{t.about.p2}</p>
-          <p>{t.about.p3a}<br />{t.about.p3b}</p>
+          <p>
+            {t.about.p3a}
+            <br />
+            {t.about.p3b}
+          </p>
           <p className="text-base">{t.about.p4}</p>
         </div>
-        <aside className="retro-card mx-auto w-full max-w-xs bg-rose p-5 md:col-span-2">
-          <img src={dinaPortrait} alt={t.about.portraitAlt} className="aspect-square w-full rounded-full border-2 border-navy object-cover" />
+        <aside className="md:col-span-2 md:border-l md:border-border md:pl-10 flex flex-col justify-center">
+          <img
+            src={dinaPortrait}
+            alt={t.about.portraitAlt}
+            className="aspect-square w-full max-w-[240px] rounded-full object-cover mx-auto"
+          />
         </aside>
       </div>
     </Section>

@@ -39,7 +39,7 @@ export function Stack() {
             </div>
             <div className="flex flex-wrap gap-x-6 gap-y-3 md:col-span-4">
               {g.items.map((t) => (
-                <span key={t} className="font-headline text-xl text-foreground/90">
+                <span key={t} className="font-serif text-xl text-foreground/90">
                   {t}
                 </span>
               ))}

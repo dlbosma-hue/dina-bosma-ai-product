@@ -3,29 +3,53 @@ import { useLanguage } from "@/lib/i18n";
 
 export function Credentials() {
   const { t } = useLanguage();
-  const groups = [
-    { heading: t.credentials.experienceHeading, items: t.credentials.experience },
-    { heading: t.credentials.certificationsHeading, items: t.credentials.certifications },
-  ];
+  const items = t.credentials.certifications;
+  const experience = t.credentials.experience;
   return (
-    <Section id="credentials" eyebrow={t.credentials.eyebrow} title={t.credentials.title}>
-      <div className="grid gap-6 md:grid-cols-2">
-        {groups.map((group) => (
-          <section key={group.heading} className="retro-card bg-cream p-6 md:p-8">
-            <h3 className="text-3xl">{group.heading}</h3>
-            <ul className="mt-6 divide-y-2 divide-navy">
-              {group.items.map((i) => (
-                <li key={i.title} className="py-5 first:pt-0 last:pb-0">
-                  <div className="flex flex-col gap-2">
-                    <span className="font-headline text-2xl leading-[1.05]">{i.title}</span>
-                    <span className="text-sm text-navy">{i.org}{i.year && <span className="ml-3 font-semibold">{i.year}</span>}</span>
-                  </div>
-                  <p className="mt-2 text-base text-navy">{i.detail}</p>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+    <Section
+      id="credentials"
+      eyebrow={t.credentials.eyebrow}
+      title={t.credentials.title}
+    >
+      <div className="grid gap-10 md:grid-cols-2 md:gap-12">
+        <div>
+          <h3 className="mb-5 text-sm uppercase tracking-[0.2em] text-muted-foreground">
+            {t.credentials.experienceHeading}
+          </h3>
+          <ul className="divide-y divide-border border-y border-border">
+            {experience.map((i) => (
+              <li key={i.title} className="py-5">
+                <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between md:gap-6">
+                  <span className="font-serif text-[22px] leading-tight md:text-[26px]">{i.title}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {i.org}
+                    {i.year && <span className="ml-3 font-mono text-xs">{i.year}</span>}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{i.detail}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className="mb-5 text-sm uppercase tracking-[0.2em] text-muted-foreground">
+            {t.credentials.certificationsHeading}
+          </h3>
+          <ul className="divide-y divide-border border-y border-border">
+            {items.map((i) => (
+              <li key={i.title} className="py-5">
+                <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between md:gap-6">
+                  <span className="font-serif text-[22px] leading-tight md:text-[26px]">{i.title}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {i.org}
+                    {i.year && <span className="ml-3 font-mono text-xs">{i.year}</span>}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{i.detail}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Section>
   );
