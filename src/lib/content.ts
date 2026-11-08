@@ -318,6 +318,8 @@ const en = {
       "Most projects start with a scoping conversation or a one day workshop. From there, engagements are shaped around what actually makes sense for your team and situation. Happy to talk through what that could look like.",
     values:
       "I work with EU values in mind: privacy first, human oversight, proportionate technology, and respect for the people affected by the system.",
+    bookingCta: "Book an intro call",
+    calendlyNote: "Booking runs through Calendly. Clicking opens Calendly in a new tab.",
   },
   clubCallout: {
     headline: "New to AI and want to start at your own pace?",
@@ -681,6 +683,8 @@ const de: typeof en = {
       "Die meisten Projekte starten mit einem Scoping-Gespräch oder einem eintägigen Workshop. Danach wird die Zusammenarbeit so zugeschnitten, wie es für Ihr Team und Ihre Situation wirklich sinnvoll ist. Gerne bespreche ich mit Ihnen, wie das aussehen könnte.",
     values:
       "Ich arbeite mit europäischen Werten im Blick: Datenschutz, menschliche Aufsicht, angemessene Technologie und Respekt gegenüber den Menschen, die vom System betroffen sind.",
+    bookingCta: "Kennenlerngespräch buchen",
+    calendlyNote: "Die Buchung läuft über Calendly. Mit dem Klick öffnet sich Calendly in einem neuen Tab.",
   },
   clubCallout: {
     headline: "Neu bei KI und möchtest in deinem Tempo starten?",
