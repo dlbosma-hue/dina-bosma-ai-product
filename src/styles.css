@@ -674,10 +674,18 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme footer a { font-size: 14px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center; }
 .humint-theme footer > div > div:last-child { flex-wrap: wrap; }
 .humint-theme header a:not(:first-child) { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-color: var(--sky-100); }
-.humint-theme header a:first-child { flex-shrink: 0; }
+.humint-theme header > div { gap: 12px; }
+.humint-theme header > div > a:first-child { flex-shrink: 0; }
+.humint-theme header nav { min-width: 0; gap: 12px; padding-left: 12px; }
+.humint-theme header nav a { min-width: 0; }
+.humint-theme header > div > .shrink-0 { min-width: 0; flex-shrink: 1; gap: 8px; }
+.humint-theme header > div > .shrink-0 > a { white-space: normal; }
+.humint-theme header > div > .shrink-0 > a:first-child { display: none; }
+.humint-theme header > div > .shrink-0 > a:nth-child(2) { max-width: 110px; }
 .humint-theme .humint-project-button { border: 0; border-radius: 0; background: transparent; color: var(--ink); height: auto; justify-content: start; white-space: normal; }
 .humint-project-dialog { background: var(--white); border: 1px solid var(--sky-100); border-radius: 20px; }
 @media (min-width: 768px) {
+  .humint-theme header > div > .shrink-0 > a:first-child { display: inline-flex; }
   .humint-theme > section:not(#top) { padding: 56px 24px; }
   .humint-theme .humint-collaboration { padding: 56px 24px; }
   .humint-theme #top > div:last-child > p:first-of-type { font-size: 40px; }
