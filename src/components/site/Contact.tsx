@@ -37,7 +37,7 @@ export function Contact() {
           <span>{t.contact.bookingCta}</span>
           <span
             aria-hidden="true"
-            className="inline-block transition-transform duration-200 motion-reduce:transition-none group-hover:translate-x-1 group-active:translate-x-1"
+            className="inline-block transition-transform duration-200 motion-reduce:translate-x-0 motion-reduce:transition-none group-hover:translate-x-1 group-active:translate-x-1"
           >
             &#8594;
           </span>
