@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Apply the approved HUMINT-only calm redesign; preserve all copy, headings, links and Club styling; verify DE/EN at 390px and 1280px without publishing.
+- [x] Apply the approved HUMINT-only calm redesign; preserve copy, heading sizes, links and Club styling; verify DE/EN at 390px and 1280px without publishing. Existing mono heading labels use Figtree per the no-mono requirement; the unchanged tagline keeps its original font. 29 tests pass; project dialog, anchors, language toggle and PDF checked.
 
 - [x] Restore the complete HUMINT website to its pre-retro design from version fae27ae while preserving every AI Noob Club update, including the new header logo. Merge shared styles carefully and verify both sites.
 
