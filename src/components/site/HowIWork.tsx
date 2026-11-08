@@ -9,33 +9,16 @@ const icons = [findIcon, decideIcon, buildIcon, handoverIcon];
 
 export function HowIWork() {
   const { t } = useLanguage();
-  const steps = t.how.steps;
   return (
     <Section id="how" eyebrow={t.how.eyebrow} title={t.how.title}>
-      <ol className="divide-y divide-border border-y border-border">
-        {steps.map((s, i) => {
+      <ol className="grid gap-5 md:grid-cols-2">
+        {t.how.steps.map((s, i) => {
           const icon = icons[i];
           return (
-            <li
-              key={s.title}
-              className="grid gap-5 py-6 md:grid-cols-12 md:gap-8 md:py-7"
-            >
-              <div className="md:col-span-5">
-                <div className="mb-3 aspect-square w-full max-w-[180px] overflow-hidden border-2 border-white md:mb-4 md:max-w-[200px]">
-                  <img
-                    src={icon.url}
-                    alt=""
-                    loading="lazy"
-                    className="block h-full w-full scale-[1.08] object-cover object-center"
-                  />
-                </div>
-                <h3 className="font-serif text-[26px] leading-tight md:text-[32px]">
-                  {s.title}
-                </h3>
-              </div>
-              <p className="text-base leading-relaxed text-muted-foreground md:col-span-7 md:self-end">
-                {s.desc}
-              </p>
+            <li key={s.title} className={`retro-card p-6 md:p-8 ${i % 2 ? "bg-rose" : "bg-cream"}`}>
+              {icon && <img src={icon.url} alt="" loading="lazy" className="mb-6 aspect-square w-28 border-2 border-navy object-cover" />}
+              <h3 className="text-3xl md:text-4xl">{s.title}</h3>
+              <p className="mt-4 text-base text-navy">{s.desc}</p>
             </li>
           );
         })}

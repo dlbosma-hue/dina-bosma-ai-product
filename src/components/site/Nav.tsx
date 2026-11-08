@@ -5,7 +5,6 @@ import { useLanguage } from "@/lib/i18n";
 export function Nav() {
   const { t, lang, setLang } = useLanguage();
   const links = t.nav.links;
-
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -13,7 +12,6 @@ export function Nav() {
     const sections = ids
       .map((id) => document.getElementById(id))
       .filter((el): el is HTMLElement => el !== null);
-
     if (sections.length === 0) return;
 
     const observer = new IntersectionObserver(
@@ -21,30 +19,22 @@ export function Nav() {
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        if (visible[0]) {
-          setActiveId(visible[0].target.id);
-        }
+        if (visible[0]) setActiveId(visible[0].target.id);
       },
-      {
-        rootMargin: "-20% 0px -60% 0px",
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-      },
+      { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
     );
-
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
-  }, []);
+  }, [links]);
 
   return (
-<header className="sticky top-0 z-40 border-b border-border/60 bg-background">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-2 md:px-10">
-        <Link to="/" className="flex flex-col leading-tight">
-          <span className="font-serif text-xl tracking-tight">HUMINT</span>
-          <span className="text-[11px] font-light text-muted-foreground tracking-wide">
-            {t.nav.tagline}
-          </span>
+    <header className="sticky top-0 z-40 border-b-2 border-navy bg-cream">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 md:gap-5 md:px-8">
+        <Link to="/" className="flex min-w-0 flex-col items-start leading-tight" aria-label="HUMINT">
+          <span className="retro-chip retro-chip-accent px-3 pb-1 pt-0.5 text-xl md:px-4 md:pb-1.5 md:text-2xl">HUMINT</span>
+          <span className="mt-2 hidden text-xs text-navy md:block">{t.nav.tagline}</span>
         </Link>
-        <nav className="hidden flex-1 items-center justify-center gap-6 border-l border-border/40 pl-6 text-xs text-muted-foreground md:flex lg:gap-8 lg:pl-10 lg:text-sm">
+        <nav className="hidden flex-1 items-center justify-center gap-5 text-sm text-navy lg:flex" aria-label="HUMINT">
           {links.map((l) => {
             const isActive = activeId === l.href.slice(1);
             return (
@@ -53,43 +43,30 @@ export function Nav() {
                 to="/"
                 hash={l.href.slice(1)}
                 hashScrollIntoView
-                className={`min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem] ${
-                  isActive ? "text-foreground font-medium" : ""
-                }`}
+                className={`inline-flex min-h-11 items-center text-center leading-snug underline-offset-4 hover:underline ${isActive ? "font-semibold underline" : ""}`}
               >
                 {l.label}
               </Link>
             );
           })}
           {lang === "de" && (
-            <Link
-              to="/ki-workflow-check"
-              className="min-w-[4.5rem] text-center leading-snug transition-colors hover:text-foreground lg:min-w-[5.5rem]"
-            >
+            <Link to="/ki-workflow-check" className="inline-flex min-h-11 items-center text-center leading-snug underline-offset-4 hover:underline">
               {t.nav.kiCheck}
             </Link>
           )}
         </nav>
-        <div className="flex shrink-0 items-center gap-3">
-          <a
-            href="https://calendly.com/dlbosma/30min"
-            target="_blank"
-            rel="noreferrer"
-            className="hidden rounded-none border border-foreground px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background md:inline-block"
-          >
+        <div className="flex shrink-0 items-center gap-2">
+          <a href="https://calendly.com/dlbosma/30min" target="_blank" rel="noreferrer" className="retro-button hidden xl:inline-flex">
             {t.nav.cta}
           </a>
-          <Link
-            to="/ai-noob-club"
-            className="border border-[oklch(0.72_0.12_20)] px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.12em] text-foreground transition-colors hover:bg-[oklch(0.72_0.12_20)]/10"
-          >
+          <Link to="/ai-noob-club" className="retro-button retro-button-secondary px-3 text-xs sm:text-sm">
             {t.nav.noobClub}
           </Link>
           <button
             type="button"
             onClick={() => setLang(lang === "en" ? "de" : "en")}
             aria-label={t.langAria}
-            className="rounded-none border border-border px-2.5 py-1 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center border-2 border-navy bg-cream px-2 text-xs font-semibold uppercase tracking-[0.08em] text-navy transition-colors duration-200 hover:bg-rose"
           >
             {t.langLabel}
           </button>

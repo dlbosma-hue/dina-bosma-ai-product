@@ -5,32 +5,14 @@ export function Belief() {
   const { t } = useLanguage();
   return (
     <Section id="belief" eyebrow={t.belief.eyebrow}>
-      <div className="flex flex-col items-center py-2 md:py-4">
-        <blockquote className="text-center font-serif tracking-tight text-foreground">
-          <p className="text-[42px] leading-[1.05] md:text-[66px]">
-            {t.belief.line1}
-            <span className="mt-2 block">
-              <span className="relative inline-block">
-                {t.belief.word}
-                <span
-                  aria-hidden="true"
-                  className="absolute -bottom-1 left-0 h-[3px] w-full bg-accent"
-                />
-              </span>
-            </span>
-            <span className="mt-4 block">{t.belief.line3}</span>
-          </p>
-        </blockquote>
+      <blockquote className="max-w-5xl font-headline text-4xl leading-[1.05] text-navy md:text-7xl">
+        <p className="max-w-none">{t.belief.line1}<span className="mt-2 block"><span className="inline-block border-b-4 border-grapefruit pb-1">{t.belief.word}</span></span><span className="mt-4 block">{t.belief.line3}</span></p>
+      </blockquote>
+      <div className="mt-8 space-y-4 text-lg text-navy">
+        <p>{t.belief.body}</p>
+        <p>{t.belief.body2}</p>
+        <p>{t.belief.body3}</p>
       </div>
-      <p className="mx-auto mt-6 md:mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        {t.belief.body}
-      </p>
-      <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        {t.belief.body2}
-      </p>
-      <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        {t.belief.body3}
-      </p>
     </Section>
   );
 }
