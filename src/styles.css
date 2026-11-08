@@ -9,6 +9,11 @@
 @import "@fontsource/patrick-hand/latin-400.css";
 @import "@fontsource/inter/latin-400.css";
 @import "@fontsource/inter/latin-600.css";
+@import "@fontsource/figtree/latin-400.css";
+@import "@fontsource/figtree/latin-500.css";
+@import "@fontsource/figtree/latin-600.css";
+@import "@fontsource/figtree/latin-700.css";
+@import "@fontsource/young-serif/latin-400.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -451,6 +456,232 @@ html:has(.noob-theme) {
 
 .noob-badge {
   clip-path: circle(49% at 50% 50%);
+}
+
+/* HUMINT's independent, calm visual system. Brand headings retain their original styling. */
+.humint-theme {
+  --ink: #16233F;
+  --blue: #3B6A9A;
+  --sky-50: #F2F7FC;
+  --sky-100: #E4EEF8;
+  --sky-200: #CFE2F3;
+  --sand: #F3DFC9;
+  --white: #FFFFFF;
+  --timeline-line: #9DB8D3;
+  --font-body: "Figtree", sans-serif;
+  --font-accent: "Young Serif", serif;
+  --font-heading: "Instrument Serif", Georgia, serif;
+  --font-logo: "Instrument Serif", Georgia, serif;
+  --font-mono: "Figtree", sans-serif;
+  --background: var(--white);
+  --foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--white);
+  --muted: var(--sky-50);
+  --muted-foreground: var(--ink);
+  --accent: var(--blue);
+  --border: var(--sky-100);
+  --ring: var(--blue);
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+html:has(.humint-theme) { scroll-behavior: auto; }
+.humint-theme *, .humint-theme *::before, .humint-theme *::after {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+.humint-theme :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.humint-theme p, .humint-theme li, .humint-theme button, .humint-theme a,
+.humint-theme .font-mono, .humint-theme figcaption, .humint-theme .uppercase {
+  font-family: var(--font-body);
+}
+.humint-theme p { font-size: 16px; line-height: 1.6; }
+.humint-theme h1, .humint-theme h2, .humint-theme h3 {
+  color: oklch(0.30 0.12 260);
+}
+.humint-theme h3.uppercase {
+  /* These existing labels are headings; preserve their sizes and replace retired mono only. */
+  font-family: var(--font-body);
+}
+.humint-theme header > div, .humint-theme footer > div {
+  max-width: 1120px;
+}
+.humint-theme header a:first-child span:first-child,
+.humint-theme footer .font-serif {
+  font-family: var(--font-logo);
+  color: oklch(0.30 0.12 260);
+}
+.humint-theme header a:first-child span:last-child {
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+  color: oklch(0.40 0.10 260);
+}
+.humint-theme > section:not(#top) {
+  width: 100%;
+  max-width: none;
+  padding: 36px 24px;
+  margin: 0;
+  border: 0;
+  background: var(--white);
+}
+.humint-theme .humint-section-inner,
+.humint-theme > #contact > *,
+.humint-theme > section:not([id]) > div {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.humint-theme > section#about,
+.humint-theme > section#services,
+.humint-theme > section#how,
+.humint-theme > section#projects,
+.humint-theme > section#contact {
+  background: var(--sky-50);
+}
+.humint-theme #services .humint-service-card,
+.humint-theme #credentials li,
+.humint-theme .humint-audience-card { background: var(--sky-50); }
+.humint-theme #services .humint-service-card { background: var(--white); }
+.humint-theme .uppercase:not(h3):not(button):not(a) {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+}
+.humint-theme .humint-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.humint-theme .humint-service-card {
+  min-width: 0;
+  min-height: 122px;
+  border-radius: 18px;
+  padding: 16px;
+}
+.humint-theme .humint-service-dot {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--sky-200);
+  margin-bottom: 12px;
+}
+.humint-theme .humint-service-card:nth-child(even) .humint-service-dot { background: var(--sand); }
+.humint-theme .humint-service-card h3 { overflow-wrap: anywhere; hyphens: auto; }
+.humint-theme .humint-service-card p { margin-top: 12px; font-size: 13px; color: color-mix(in srgb, var(--ink) 80%, transparent); }
+.humint-theme .humint-collaboration { padding-top: 36px; background: var(--white); }
+.humint-theme .humint-collaboration > section { max-width: 1120px; }
+.humint-theme .humint-collaboration #who > .humint-section-inner > .grid { grid-template-columns: 1fr; }
+.humint-theme .humint-audience-grid { display: grid; gap: 12px; padding: 0; list-style: none; }
+.humint-theme .humint-audience-card { padding: 16px; border-radius: 18px; font-size: 16px; }
+.humint-theme #testimonials .grid { gap: 12px; background: transparent; }
+.humint-theme #testimonials figure { background: var(--white); border: 1px solid var(--sky-100); border-radius: 18px; padding: 24px; }
+.humint-theme #testimonials blockquote { font-family: var(--font-body); }
+.humint-theme #testimonials figcaption { font-size: 13px; }
+.humint-theme #testimonials figcaption span { font-size: 13px; font-weight: 700; }
+.humint-theme #belief blockquote, .humint-theme #belief blockquote p {
+  font-family: var(--font-body); font-weight: 600; font-size: 20px; line-height: 1.6; color: var(--blue);
+}
+.humint-theme #belief blockquote span { margin: 0; }
+.humint-theme #belief blockquote span[aria-hidden] { display: none; }
+.humint-theme #about p:nth-child(3) { font-weight: 600; font-size: 20px; color: var(--blue); }
+.humint-theme .humint-timeline { list-style: none; padding: 0; margin-top: 32px; }
+.humint-theme .humint-timeline-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 18px;
+  padding-bottom: 30px;
+}
+.humint-theme .humint-timeline-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 38px;
+  bottom: 0;
+  border-left: 1.5px dashed var(--timeline-line);
+}
+.humint-theme .humint-step-number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: var(--sky-100);
+  font-family: var(--font-accent);
+  font-size: 16px;
+}
+.humint-theme .humint-timeline-step:last-child .humint-step-number { background: var(--ink); color: var(--white); }
+.humint-theme .humint-step-icon { float: right; width: 56px; height: 56px; margin: 0 0 10px 12px; overflow: hidden; }
+.humint-theme .humint-step-content p { margin-top: 12px; font-size: 14px; }
+.humint-theme .humint-workflow-quote {
+  margin-top: 10px;
+  border-radius: 18px;
+  padding: 18px;
+  background: var(--white);
+  font-family: var(--font-accent);
+  font-size: 18px;
+  line-height: 1.4;
+}
+.humint-theme .humint-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 32px; }
+.humint-theme .humint-metric-card { min-width: 0; border-radius: 20px; padding: 20px 16px; background: var(--sky-100); }
+.humint-theme .humint-metric-card:nth-child(even) { background: var(--sand); }
+.humint-theme .humint-metrics-spottr .humint-metric-card { background: var(--white); border: 1px solid var(--sky-100); }
+.humint-theme .humint-metric-value { font-family: var(--font-body); font-weight: 700; font-size: 38px; line-height: 1; overflow-wrap: anywhere; }
+.humint-theme .humint-metric-card .uppercase { text-transform: none; font-weight: 400; font-size: 13px; letter-spacing: 0; }
+.humint-theme #work article { border-color: var(--sky-100); }
+.humint-theme #work .flex.flex-wrap > span { background: var(--sky-100); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 500; }
+.humint-theme #work .flex.flex-wrap > span > span { display: none; }
+.humint-theme #credentials ul { display: grid; gap: 12px; border: 0; }
+.humint-theme #credentials li { border: 0; border-radius: 18px; padding: 16px; }
+.humint-theme #credentials li .font-serif { font-family: var(--font-body); font-weight: 600; font-size: 16px; }
+.humint-theme .humint-primary-button,
+.humint-theme .humint-secondary-button,
+.humint-theme .humint-language-button {
+  min-height: 44px;
+  width: fit-content;
+  height: auto;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  border: 0;
+  padding: 15px 24px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 15.5px;
+  line-height: 1.4;
+  white-space: normal;
+}
+.humint-theme .humint-primary-button { border-bottom: 0; }
+.humint-theme .humint-secondary-button { border: 1.5px solid var(--ink); background: var(--white); color: var(--ink); }
+.humint-theme .humint-secondary-button .underline { text-decoration: none; }
+.humint-theme .humint-language-button { padding: 8px 12px; font-size: 12px; background: var(--white); color: var(--ink); border: 1px solid var(--sky-100); }
+.humint-theme #top > .bg-foreground\/55 { background: color-mix(in srgb, var(--ink) 55%, transparent); }
+.humint-theme #top h1 { color: oklch(0.968 0.014 88); }
+.humint-theme #top > div:last-child > p:first-of-type { font-family: var(--font-body); font-size: 24px; }
+.humint-theme #top a:not(.humint-primary-button) { font-weight: 500; border-bottom: 1.5px solid var(--blue); }
+.humint-theme #top .uppercase { color: var(--white); }
+.humint-theme #top p { color: var(--white); }
+.humint-theme #top > div:last-child { max-width: 1120px; }
+.humint-theme > section:not([id]):last-of-type > div { background: transparent; border: 0; border-radius: 0; padding: 0; }
+.humint-theme footer a { font-size: 14px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center; }
+.humint-theme footer > div > div:last-child { flex-wrap: wrap; }
+.humint-theme header a:not(:first-child) { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-color: var(--sky-100); }
+.humint-theme .humint-project-button { border: 0; border-radius: 0; background: transparent; color: var(--ink); height: auto; justify-content: start; white-space: normal; }
+.humint-project-dialog { background: var(--white); border: 1px solid var(--sky-100); border-radius: 20px; }
+@media (min-width: 768px) {
+  .humint-theme > section:not(#top) { padding: 56px 24px; }
+  .humint-theme .humint-collaboration { padding-top: 56px; }
+  .humint-theme .humint-services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .humint-theme .humint-audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .humint-theme .humint-timeline { max-width: 900px; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
