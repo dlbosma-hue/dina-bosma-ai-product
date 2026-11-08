@@ -8,7 +8,7 @@ export function CredibilityStrip() {
         {t.credibility.map((item, i) => (
           <span key={item} className="flex items-center gap-5">
             {item}
-            {i < t.credibility.length - 1 && <span aria-hidden className="hidden h-0.5 w-8 bg-navy md:inline-block" />}
+            {i < t.credibility.length - 1 && <span aria-hidden className="hidden h-0.5 w-8 bg-grapefruit md:inline-block" />}
           </span>
         ))}
       </div>

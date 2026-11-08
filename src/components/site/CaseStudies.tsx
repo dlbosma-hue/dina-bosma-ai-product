@@ -19,7 +19,7 @@ export function CaseStudies() {
               <ul className="mt-7 space-y-3">
                 {c.deliverables.map((d) => (
                   <li key={d} className="flex gap-3 text-base text-navy">
-                    <span aria-hidden className="mt-3 h-0.5 w-4 shrink-0 bg-navy" /><span>{d}</span>
+                    <span aria-hidden className="mt-3 h-0.5 w-4 shrink-0 bg-grapefruit" /><span>{d}</span>
                   </li>
                 ))}
               </ul>
