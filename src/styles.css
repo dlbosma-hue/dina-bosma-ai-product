@@ -391,6 +391,16 @@ html:has(.noob-theme) {
   max-width: 65ch;
 }
 
+.noob-theme .text-base {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.noob-theme .text-lg {
+  font-size: 1.1875rem;
+  line-height: 1.6;
+}
+
 .noob-theme a {
   color: var(--link);
   text-decoration-thickness: 1px;
