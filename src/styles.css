@@ -471,7 +471,7 @@ html:has(.noob-theme) {
   --font-accent: var(--font-body);
   --font-heading: "Instrument Serif", Georgia, serif;
   --font-logo: "Instrument Serif", Georgia, serif;
-  --font-mono: "Figtree", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   --background: var(--white);
   --foreground: var(--ink);
   --primary: var(--ink);
@@ -546,6 +546,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme .humint-audience-card { background: var(--sky-50); }
 .humint-theme > section[aria-label="Credibility"] { background: var(--sky-50); }
 .humint-theme .uppercase:not(h3):not(button):not(a) {
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.14em;
