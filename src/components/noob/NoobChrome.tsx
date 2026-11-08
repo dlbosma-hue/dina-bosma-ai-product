@@ -4,7 +4,7 @@ import { Instagram, Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
-import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
+import headerLogoAsset from "@/assets/ai-noob-club-header-logo.png.asset.json";
 
 export const btnPrimary = "retro-button";
 const navLink = "inline-flex min-h-11 items-center px-1 text-sm font-semibold text-navy underline-offset-4 hover:underline";
