@@ -3,13 +3,21 @@ import { useLanguage } from "@/lib/i18n";
 
 export function Services() {
   const { t } = useLanguage();
+  const services = t.services.items;
   return (
     <Section id="services" eyebrow={t.services.eyebrow} title={t.services.title}>
-      <ul className="grid gap-4">
-        {t.services.items.map((s, i) => (
-          <li key={s.title} className={`retro-card grid gap-4 p-6 md:grid-cols-12 md:gap-8 md:p-8 ${i % 2 ? "bg-rose" : "bg-cream"}`}>
-            <h3 className="text-3xl md:col-span-5 md:text-4xl">{s.title}</h3>
-            <p className="text-base text-navy md:col-span-7">{s.desc}</p>
+      <ul className="divide-y divide-border border-y border-border">
+        {services.map((s) => (
+          <li
+            key={s.title}
+            className="grid gap-3 py-6 md:grid-cols-12 md:gap-8 md:py-7"
+          >
+            <h3 className="font-serif text-[26px] leading-tight md:col-span-5 md:text-[32px]">
+              {s.title}
+            </h3>
+            <p className="text-base leading-relaxed text-muted-foreground md:col-span-7">
+              {s.desc}
+            </p>
           </li>
         ))}
       </ul>
