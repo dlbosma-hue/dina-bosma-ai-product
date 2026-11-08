@@ -33,7 +33,7 @@ export function CourseWaitlist() {
               ))}
             </ul>
             <div className="flex-1" />
-            <button type="button" onClick={() => chooseCourseRound(card.id)} className="retro-button mt-6 w-fit whitespace-normal">
+            <button type="button" onClick={() => chooseCourseRound(card.id)} className="retro-button retro-button-secondary mt-6 w-fit whitespace-normal">
               {card.button}
             </button>
             {"note" in card && <p className="mt-3 text-base">{card.note}</p>}
