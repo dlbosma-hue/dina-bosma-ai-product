@@ -56,7 +56,7 @@ export function Recommendations() {
             key={r.role + r.date}
             className="flex flex-col justify-between gap-6 bg-background p-8 md:p-10"
           >
-            <blockquote className="font-serif text-lg leading-snug text-foreground/90 md:text-xl">
+            <blockquote className="font-headline text-lg leading-snug text-foreground/90 md:text-xl">
               <span aria-hidden className="mr-1 text-muted-foreground">
                 &ldquo;
               </span>
@@ -67,7 +67,7 @@ export function Recommendations() {
             </blockquote>
             <figcaption className="flex flex-col gap-1 border-t border-border pt-4 text-sm">
               <span className="text-foreground">{r.role}</span>
-              <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+              <span className="font-body text-xs uppercase tracking-wider text-muted-foreground">
                 {r.date}
               </span>
             </figcaption>
