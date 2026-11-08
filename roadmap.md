@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Restyle the complete HUMINT and AI Noob Club website from the uploaded retro design brief: local fonts, semantic palette, flat chips/tape/cards, favicon, exact copy removals, responsive and accessibility checks. Preserve all routes, content, links and functions; do not publish.
+- [x] Restyle the complete HUMINT and AI Noob Club website from the uploaded retro design brief: local fonts, semantic palette, flat chips/tape/cards, favicon, exact copy removals, responsive and accessibility checks. Preserve all routes, content, links and functions; do not publish.
 
 - [x] Rework the bilingual Community into the two-round "Meine Content-Assistentin" waitlist, add the Edit-Guide download form, update storage and emails, refresh link-in-bio, and verify both anchors and 390 px layouts without publishing.
 
