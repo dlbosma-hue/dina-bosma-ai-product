@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
+import { Button } from "@/components/ui/button";
 
 export function Nav() {
   const { t, lang, setLang } = useLanguage();
@@ -85,14 +86,15 @@ export function Nav() {
           >
             {t.nav.noobClub}
           </Link>
-          <button
+          <Button
+            variant="outline"
             type="button"
             onClick={() => setLang(lang === "en" ? "de" : "en")}
             aria-label={t.langAria}
-            className="rounded-none border border-border px-2.5 py-1 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+            className="humint-language-button rounded-none border border-border px-2.5 py-1 font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground"
           >
             {t.langLabel}
-          </button>
+          </Button>
         </div>
       </div>
     </header>

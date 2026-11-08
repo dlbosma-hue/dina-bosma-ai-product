@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Section } from "./Section";
 import { useLanguage } from "@/lib/i18n";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -32,10 +33,11 @@ export function Projects() {
       <ul className="divide-y divide-border border-y border-border">
         {projects.map((p) => (
           <li key={p.title}>
-            <button
+            <Button
+              variant="ghost"
               type="button"
               onClick={() => setSelected(p)}
-              className="group grid w-full gap-2 py-6 text-left transition-colors hover:bg-muted/30 md:grid-cols-12 md:items-baseline md:gap-8 md:py-7"
+              className="humint-project-button group grid w-full gap-2 py-6 text-left md:grid-cols-12 md:items-baseline md:gap-8 md:py-7"
             >
               <h3 className="font-serif text-[22px] leading-tight md:col-span-5 md:text-[26px]">
                 {p.title}
@@ -49,7 +51,7 @@ export function Projects() {
               >
                 ↗
               </span>
-            </button>
+            </Button>
           </li>
         ))}
       </ul>
@@ -60,7 +62,7 @@ export function Projects() {
           if (!open) setSelected(null);
         }}
       >
-        <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-2xl">
+        <DialogContent className="humint-theme humint-project-dialog max-h-[85vh] overflow-y-auto sm:max-w-2xl">
           {selected && (
             <>
               <DialogHeader>

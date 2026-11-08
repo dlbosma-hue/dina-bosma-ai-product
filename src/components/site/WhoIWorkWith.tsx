@@ -6,7 +6,7 @@ import dachAsset from "@/assets/dach.png.asset.json";
 export function WhoIWorkWith() {
   const { t } = useLanguage();
   return (
-    <div className="space-y-5">
+    <div className="humint-collaboration space-y-5">
       <div className="mx-auto max-w-3xl px-5 sm:px-8 lg:px-12">
         <img
           src={dachAsset.url}
@@ -20,9 +20,9 @@ export function WhoIWorkWith() {
         <div className="space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>{t.who.intro}</p>
           <p>{t.who.listIntro}</p>
-          <ul className="space-y-3 pl-5 list-disc marker:text-muted-foreground">
+          <ul className="humint-audience-grid">
             {t.who.bullets.map((b) => (
-              <li key={b}>{b}</li>
+              <li key={b} className="humint-audience-card">{b}</li>
             ))}
           </ul>
           <p>{t.who.closing}</p>

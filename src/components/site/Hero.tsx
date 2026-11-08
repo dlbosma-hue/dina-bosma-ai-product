@@ -1,5 +1,6 @@
 import { useLanguage } from "@/lib/i18n";
 import heroWave from "@/assets/hero-wave.png.asset.json";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   const { t } = useLanguage();
@@ -35,6 +36,7 @@ export function Hero() {
           {t.hero.availability}
         </p>
         <div className="mt-10 flex flex-col items-start gap-8">
+          <Button asChild className="humint-primary-button">
           <a
             href="https://calendly.com/dlbosma/30min"
             target="_blank"
@@ -44,6 +46,7 @@ export function Hero() {
             {t.hero.ctaPrimary}
             <span aria-hidden>→</span>
           </a>
+          </Button>
           <a
             href={t.hero.secondaryHref}
             target="_blank"

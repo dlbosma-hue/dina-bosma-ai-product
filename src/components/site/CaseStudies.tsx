@@ -5,7 +5,7 @@ import spottrDeck from "@/assets/spottr-deck.pdf.asset.json";
 export function CaseStudies() {
   const { t } = useLanguage();
   const cases = t.cases.items;
-  const spottr = cases[1]!.client;
+  const spottr = cases[1]?.client;
   return (
     <Section id="work" eyebrow={t.cases.eyebrow} title={t.cases.title}>
       <div className="grid gap-10 md:gap-12">
@@ -38,10 +38,10 @@ export function CaseStudies() {
             )}
 
             {c.metrics.length > 0 && (
-              <div className="mt-10 grid grid-cols-2 gap-10 border-t border-border pt-8 md:max-w-2xl">
+              <div className={`humint-metrics ${c.client === spottr ? "humint-metrics-spottr" : ""}`}>
                 {c.metrics.map((m) => (
-                  <div key={m.label}>
-                    <div className="font-serif text-[38px] md:text-[50px]">{m.value}</div>
+                  <div key={m.label} className="humint-metric-card">
+                    <div className="humint-metric-value">{m.value}</div>
                     <div className="mt-2 text-sm uppercase tracking-[0.16em] text-muted-foreground">{m.label}</div>
                     {c.client === spottr && m.value.includes("099") && (
                       <div className="mt-2 text-[11px] leading-snug text-muted-foreground/70">
