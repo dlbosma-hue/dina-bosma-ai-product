@@ -28,14 +28,23 @@ export function Contact() {
         <p className="mb-8 max-w-2xl text-base text-muted-foreground">
           {t.contact.values}
         </p>
-        <div className="mb-12 max-w-3xl overflow-hidden border border-border/60">
-          <iframe
-            src="https://calendly.com/dlbosma/30min?hide_event_type_details=1&hide_gdpr_banner=1"
-            title="Calendly – Gespräch buchen"
-            loading="lazy"
-            className="h-[700px] w-full"
-          />
-        </div>
+        <a
+          href="https://calendly.com/dlbosma/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-foreground px-6 py-3 text-base font-semibold text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        >
+          <span>{t.contact.bookingCta}</span>
+          <span
+            aria-hidden="true"
+            className="inline-block transition-transform duration-200 motion-reduce:transition-none group-hover:translate-x-1 group-active:translate-x-1"
+          >
+            &#8594;
+          </span>
+        </a>
+        <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
+          {t.contact.calendlyNote}
+        </p>
       </div>
 
     </section>
