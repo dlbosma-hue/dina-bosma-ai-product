@@ -7,8 +7,8 @@ import { noobClub } from "@/config/noobClub";
 import { bioLinksContent } from "@/lib/bio-links-content";
 import { noobHead, noobMeta, useNoobMeta } from "@/lib/noob-meta";
 import { NoobHeader, NoobFooter } from "@/components/noob/NoobChrome";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v8.png.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v8.png.asset.json";
 import bioPromptsDeAsset from "@/assets/prompts99-bio-de.png.asset.json";
 import bioPromptsEnAsset from "@/assets/prompts99-bio-en.jpg.asset.json";
 

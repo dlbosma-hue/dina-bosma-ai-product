@@ -17,8 +17,8 @@ import p99De3 from "@/assets/prompts99-de-3.png.asset.json";
 import p99En1 from "@/assets/prompts99-en-1.png.asset.json";
 import p99En2 from "@/assets/prompts99-en-2.png.asset.json";
 import p99En3 from "@/assets/prompts99-en-3.png.asset.json";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de-v7.png.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en-v7.png.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v8.png.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v8.png.asset.json";
 
 const productImages = { de: [p99De1, p99De2, p99De3], en: [p99En1, p99En2, p99En3] };
 
