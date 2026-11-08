@@ -33,8 +33,8 @@ const copy = {
     },
   },
 };
-const inputCls = "w-full rounded-full border border-foreground/50 bg-background px-5 py-3 text-base outline-none transition-colors placeholder:text-foreground focus-visible:ring-2 focus-visible:ring-ring";
-const radioCls = "mt-0.5 h-5 w-5 shrink-0 accent-noob-terracotta-ink focus-visible:ring-2 focus-visible:ring-ring";
+const inputCls = "w-full rounded-md border-2 border-navy bg-cream px-4 py-3 text-base text-navy placeholder:text-navy";
+const radioCls = "mt-0.5 h-5 w-5 shrink-0 accent-grapefruit";
 
 type Props = {
   t: NoobContent;
@@ -91,62 +91,48 @@ export function WaitlistForm({ t, source, submitLabel, note, runde, onRundeChang
 
   if (status === "done") {
     const message = source === "checkliste" ? c.done.checkliste : selectedRunde === "beta" ? c.done.beta : c.done.frueh;
-    return (
-      <div role="status" className="rounded-2xl bg-noob-cream p-6 text-base text-foreground">
-        <p>{message}</p>
-      </div>
-    );
+    return <div role="status" className="retro-card bg-sky p-6 text-base text-navy"><p>{message}</p></div>;
   }
-  const errorText = (field: "name" | "email" | "consent", message: string) => errors[field] && <span id={`${id}-${field}-err`} className="mt-1 block text-sm font-medium text-destructive">{message}</span>;
+  const errorText = (field: "name" | "email" | "consent", message: string) => errors[field] && <span id={`${id}-${field}-err`} className="mt-1 block text-sm font-semibold text-navy">{message}</span>;
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-4">
       {showRounds && (
         <fieldset>
           <legend className="mb-2 text-sm font-semibold">{c.roundLabel}</legend>
-          <div className="grid gap-2 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2">
             {(["beta", "frueh"] as const).map((option) => (
-              <label key={option} className="flex min-h-12 cursor-pointer items-center gap-3 rounded-2xl bg-noob-cream px-4 py-3 text-sm font-medium">
-                <input
-                  type="radio"
-                  name="runde"
-                  value={option}
-                  checked={selectedRunde === option}
-                  onChange={() => {
-                    if (onRundeChange) onRundeChange(option);
-                    else setInternalRunde(option);
-                  }}
-                  className={radioCls}
-                />
+              <label key={option} className="retro-card flex min-h-12 cursor-pointer items-center gap-3 bg-cream px-4 py-3 text-sm font-semibold">
+                <input type="radio" name="runde" value={option} checked={selectedRunde === option} onChange={() => { if (onRundeChange) onRundeChange(option); else setInternalRunde(option); }} className={radioCls} />
                 <span>{c.rounds[option]}</span>
               </label>
             ))}
           </div>
         </fieldset>
       )}
-      <div className={"grid gap-4 sm:grid-cols-2"}>
-          <label className="block" htmlFor={`${id}-name`}>
-            <span className="mb-1.5 block text-sm">{c.name}</span>
-            <input id={`${id}-name`} name="name" required maxLength={100} autoComplete="given-name" aria-invalid={errors.name || undefined} aria-describedby={errors.name ? `${id}-name-err` : undefined} className={inputCls} />
-            {errorText("name", c.errName)}
-          </label>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <label className="block" htmlFor={`${id}-name`}>
+          <span className="mb-1.5 block text-sm font-semibold">{c.name}</span>
+          <input id={`${id}-name`} name="name" required maxLength={100} autoComplete="given-name" aria-invalid={errors.name || undefined} aria-describedby={errors.name ? `${id}-name-err` : undefined} className={inputCls} />
+          {errorText("name", c.errName)}
+        </label>
         <label className="block" htmlFor={`${id}-email`}>
-          <span className="mb-1.5 block text-sm">{c.email}</span>
+          <span className="mb-1.5 block text-sm font-semibold">{c.email}</span>
           <input id={`${id}-email`} type="email" name="email" required maxLength={254} autoComplete="email" aria-invalid={errors.email || undefined} aria-describedby={errors.email ? `${id}-email-err` : undefined} className={inputCls} />
           {errorText("email", c.errEmail)}
         </label>
       </div>
-      <label className="flex gap-3 text-sm leading-relaxed" htmlFor={`${id}-consent`}>
+      <label className="flex gap-3 text-base leading-relaxed" htmlFor={`${id}-consent`}>
         <input id={`${id}-consent`} type="checkbox" name="consent" required aria-invalid={errors.consent || undefined} aria-describedby={errors.consent ? `${id}-consent-err` : undefined} className={radioCls} />
-        <span>{consentText}<Link to="/datenschutz" className="underline underline-offset-2">{consent.privacy}</Link>.</span>
+        <span>{consentText}<Link to="/datenschutz" className="text-link underline">{consent.privacy}</Link>.</span>
       </label>
       {errorText("consent", c.errConsent)}
       <div className="flex flex-col gap-2">
-        <Button type="submit" disabled={status === "sending"} className="h-auto min-h-12 w-fit max-w-full whitespace-normal rounded-full bg-primary px-7 py-3 text-base font-semibold text-primary-foreground shadow-none hover:bg-primary/90">
+        <Button type="submit" disabled={status === "sending"} className="h-auto min-h-12 w-fit max-w-full whitespace-normal px-7 py-3 text-base">
           {status === "sending" ? t.sending : (submitLabel ?? t.submit)}
         </Button>
-        {(note ?? c.note) && <span className="text-sm">{note ?? c.note}</span>}
+        {(note ?? c.note) && <span className="text-base">{note ?? c.note}</span>}
       </div>
-      {status === "error" && <p role="alert" className="text-sm text-destructive">{t.error}</p>}
+      {status === "error" && <p role="alert" className="text-base font-semibold text-navy">{t.error}</p>}
     </form>
   );
 }

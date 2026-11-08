@@ -6,10 +6,8 @@ import { noobContent } from "@/lib/ainoob-content";
 import { noobClub } from "@/config/noobClub";
 import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
 
-export const btnPrimary =
-  "inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
-const navLink =
-  "inline-flex min-h-11 items-center whitespace-nowrap px-2 text-sm font-medium text-foreground hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md";
+export const btnPrimary = "retro-button";
+const navLink = "inline-flex min-h-11 items-center px-1 text-sm font-semibold text-navy underline-offset-4 hover:underline";
 
 export function NoobHeader() {
   const { lang, setLang } = useLanguage();
@@ -18,23 +16,12 @@ export function NoobHeader() {
   const close = () => setMenuOpen(false);
 
   const langButton = (
-    <button
-      type="button"
-      onClick={() => setLang(lang === "en" ? "de" : "en")}
-      aria-label={t.langAria}
-      className="inline-flex h-11 min-w-11 items-center justify-center rounded-full border border-foreground/40 px-3 text-xs font-semibold uppercase tracking-[0.14em] text-foreground hover:border-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-    >
+    <button type="button" onClick={() => setLang(lang === "en" ? "de" : "en")} aria-label={t.langAria} className="inline-flex h-11 min-w-11 items-center justify-center border-2 border-navy bg-cream px-2 text-xs font-semibold uppercase tracking-[0.08em] text-navy transition-colors duration-200 hover:bg-rose">
       {t.langLabel}
     </button>
   );
   const igLink = noobClub.links.instagram ? (
-    <a
-      href={noobClub.links.instagram}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={t.igAria}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-foreground/40 text-foreground hover:border-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-    >
+    <a href={noobClub.links.instagram} target="_blank" rel="noopener noreferrer" aria-label={t.igAria} className="inline-flex h-11 w-11 items-center justify-center border-2 border-navy bg-cream text-navy transition-colors duration-200 hover:bg-rose">
       <Instagram aria-hidden className="h-5 w-5" />
     </a>
   ) : null;
@@ -49,37 +36,27 @@ export function NoobHeader() {
   );
 
   return (
-    <header className="sticky top-0 z-40 border-b border-noob-rosa bg-noob-cream">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 pt-2 pb-4 md:px-8">
+    <header className="sticky top-0 z-40 border-b-2 border-navy bg-cream">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 md:px-8">
         <div className="flex min-w-0 flex-col items-start">
-          <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-            <img src={badgeAsset.url} alt={t.brand} className="noob-badge block h-16 w-16 md:h-20 md:w-20" width={768} height={768} />
+          <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0">
+            <img src={badgeAsset.url} alt={t.brand} className="noob-badge block h-14 w-14 md:h-20 md:w-20" width={768} height={768} />
           </Link>
-          <Link to="/" className="-my-3 py-3 text-[11px] text-foreground underline-offset-2 hover:underline">{t.badge}</Link>
+          <Link to="/" className="text-xs text-link underline-offset-2 hover:underline">{t.badge}</Link>
         </div>
         <nav className="hidden items-center gap-2 lg:flex" aria-label={t.brand}>
-          {langButton}
-          {igLink}
-          {textLinks}
+          {langButton}{igLink}{textLinks}
           <Link to="/ai-noob-club" hash="checkliste" className={btnPrimary}>{t.navChecklistCta}</Link>
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
-        {langButton}
-        {igLink}
-        <button
-          type="button"
-          onClick={() => setMenuOpen((o) => !o)}
-          aria-expanded={menuOpen}
-          aria-controls="noob-menu"
-          aria-label={menuOpen ? t.menuClose : t.menuOpen}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-foreground/40 text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring lg:hidden"
-        >
-          {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+          {langButton}{igLink}
+          <button type="button" onClick={() => setMenuOpen((o) => !o)} aria-expanded={menuOpen} aria-controls="noob-menu" aria-label={menuOpen ? t.menuClose : t.menuOpen} className="inline-flex h-11 w-11 items-center justify-center border-2 border-navy bg-cream text-navy transition-colors duration-200 hover:bg-rose">
+            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
       {menuOpen && (
-        <nav id="noob-menu" className="border-t border-noob-rosa bg-noob-cream px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
+        <nav id="noob-menu" className="border-t-2 border-navy bg-rose px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
           <div className="flex flex-col gap-1">
             {textLinks}
             <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={`${btnPrimary} mt-3 w-full`}>{t.navChecklistCta}</Link>
@@ -93,20 +70,17 @@ export function NoobHeader() {
 export function NoobFooter() {
   const { lang } = useLanguage();
   const t = noobContent[lang];
-  const fl = "inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md";
+  const fl = "inline-flex min-h-11 items-center text-link underline-offset-4 hover:underline";
   return (
-    <footer className="bg-noob-rosa">
-      <div aria-hidden className="noob-stripes" />
-      <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-sm md:px-10">
+    <footer className="border-t-2 border-navy bg-rose">
+      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-navy md:px-8">
         <p>{t.footer}</p>
         <nav aria-label={lang === "de" ? "Rechtliches" : "Legal"} className="flex flex-wrap gap-x-5">
           <Link to="/impressum" className={fl}>Impressum</Link>
           <Link to="/datenschutz" className={fl}>Datenschutz</Link>
           {noobClub.showWiderruf && <Link to="/ai-noob-club/widerruf" className={fl}>{lang === "de" ? "Widerruf" : "Cancellation"}</Link>}
           <Link to="/ai-noob-club" hash="treffen" className={fl}>{t.navLive}</Link>
-          {noobClub.links.meetup && (
-            <a href={noobClub.links.meetup} target="_blank" rel="noopener noreferrer" className={fl}>Meetup</a>
-          )}
+          {noobClub.links.meetup && <a href={noobClub.links.meetup} target="_blank" rel="noopener noreferrer" className={fl}>Meetup</a>}
           <Link to="/" className={fl}>{lang === "de" ? "Zur HUMINT Startseite" : "HUMINT homepage"}</Link>
           {noobClub.links.instagram && <a href={noobClub.links.instagram} target="_blank" rel="noreferrer" className={fl}>Instagram</a>}
         </nav>
