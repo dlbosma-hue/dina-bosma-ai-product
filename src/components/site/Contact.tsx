@@ -3,41 +3,20 @@ import { useLanguage } from "@/lib/i18n";
 export function Contact() {
   const { t } = useLanguage();
   return (
-    <section
-      id="contact"
-      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-7 md:px-10 md:py-10"
-    >
-      <div className="mb-6 flex items-center gap-3 text-[13px] uppercase tracking-[0.28em] text-muted-foreground">
-        <span aria-hidden="true" className="h-3 w-[3px] shrink-0 bg-accent" />
-        {t.contact.eyebrow}
-      </div>
-      <h2 className="max-w-3xl font-serif text-[50px] leading-[1.02] md:text-[74px]">
-        {t.contact.title}
-      </h2>
-      <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-        {t.contact.intro}
-      </p>
-
-      <div className="mt-8">
-        <p className="mb-4 max-w-2xl text-base text-muted-foreground">
-          {t.contact.availability}
-        </p>
-        <p className="mb-8 max-w-2xl text-base text-muted-foreground">
-          {t.contact.pricing}
-        </p>
-        <p className="mb-8 max-w-2xl text-base text-muted-foreground">
-          {t.contact.values}
-        </p>
-        <div className="mb-12 max-w-3xl overflow-hidden border border-border/60">
-          <iframe
-            src="https://calendly.com/dlbosma/30min?hide_event_type_details=1&hide_gdpr_banner=1"
-            title="Calendly – Gespräch buchen"
-            loading="lazy"
-            className="h-[700px] w-full"
-          />
+    <section id="contact" className="scroll-mt-28 border-b-2 border-navy bg-sky">
+      <div className="mx-auto max-w-6xl px-5 py-12 md:px-8 md:py-16">
+        <span className="retro-tape bg-rose">{t.contact.eyebrow}</span>
+        <h2 className="mt-7 max-w-4xl text-5xl md:text-7xl">{t.contact.title}</h2>
+        <p className="mt-6 text-lg text-navy">{t.contact.intro}</p>
+        <div className="mt-7 space-y-4 text-base text-navy">
+          <p>{t.contact.availability}</p>
+          <p>{t.contact.pricing}</p>
+          <p>{t.contact.values}</p>
+        </div>
+        <div className="mt-8 max-w-4xl overflow-hidden border-2 border-navy bg-cream">
+          <iframe src="https://calendly.com/dlbosma/30min?hide_event_type_details=1&hide_gdpr_banner=1" title="Calendly – Gespräch buchen" loading="lazy" className="h-[700px] w-full" />
         </div>
       </div>
-
     </section>
   );
 }
