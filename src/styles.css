@@ -220,7 +220,7 @@
 @utility retro-chip {
   display: inline-block;
   max-width: 100%;
-  border: 2px solid var(--navy);
+  border: 2px solid var(--noob-border, var(--navy));
   background: var(--cream);
   color: var(--navy);
   font-family: "Anton", sans-serif;
