@@ -335,6 +335,7 @@ html:has(.noob-theme) {
 
 .noob-theme {
   --radius: 0.5rem;
+  --rose: #F8DCDA;
   --noob-border: #012868;
   --noob-navy: var(--navy);
   --noob-terracotta: var(--accent-grapefruit);
