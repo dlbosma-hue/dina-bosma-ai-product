@@ -1,40 +1,38 @@
 import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
-import badgeAsset from "@/assets/ai-noob-club-badge-v2.webp.asset.json";
+import logoDeAsset from "@/assets/ai-noob-club-logo-de-v8.png.asset.json";
+import logoEnAsset from "@/assets/ai-noob-club-logo-en-v8.png.asset.json";
 import { Button } from "@/components/ui/button";
 
 export function ClubCallout() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   return (
-    <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-24">
-      <div className="rounded-[24px] border border-noob-callout-border bg-noob-callout p-7 md:p-12">
+    <section id="club-callout" className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-24">
+      <div className="rounded-[24px] border-2 border-link !bg-rose !p-7 shadow-none md:!p-12">
         <img
-          src={badgeAsset.url}
-          alt=""
-          aria-hidden="true"
-          className="noob-badge mb-5 block h-16 w-16 md:h-20 md:w-20"
-          width={768}
-          height={768}
+          src={lang === "en" ? logoEnAsset.url : logoDeAsset.url}
+          alt={lang === "en" ? "AI Noob Club: You're the boss. AI is new to the team." : "AI Noob Club: Du bist die Chefin. KI ist neu im Team."}
+          loading="lazy"
+          className="mb-6 block h-auto w-full max-w-xs md:max-w-sm"
+          width={1920}
+          height={640}
         />
-        <h2 className="max-w-3xl font-serif text-[32px] leading-[1.06] text-foreground md:text-[52px]">
+        <h2 className="max-w-3xl !font-serif text-[32px] leading-[1.06] !text-navy md:text-[52px]">
           {t.clubCallout.headline}
         </h2>
-        <p className="mt-4 max-w-xl text-base leading-relaxed text-foreground md:text-lg">
+        <p className="mt-4 max-w-xl text-base leading-relaxed text-navy md:text-lg">
           {t.clubCallout.text}
         </p>
-        <Button asChild variant="outline" className="humint-secondary-button mt-7">
-        <Link
-          to="/ai-noob-club"
-          className="group mt-7 inline-flex items-center gap-2 text-base font-semibold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-        >
-          <span className="underline underline-offset-4">{t.clubCallout.link}</span>
-          <span
-            aria-hidden="true"
-            className="inline-block transition-transform duration-200 motion-reduce:transition-none group-hover:translate-x-1 group-active:translate-x-1"
-          >
-            &#8594;
-          </span>
-        </Link>
+        <Button asChild variant="outline" className="group mt-7 h-auto min-h-11 rounded-full border-2 border-link bg-cream px-6 py-3 text-base font-semibold text-navy whitespace-normal focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+          <Link to="/ai-noob-club">
+            <span>{t.clubCallout.link}</span>
+            <span
+              aria-hidden="true"
+              className="inline-block transition-transform duration-200 motion-reduce:transition-none group-hover:translate-x-1 group-active:translate-x-1"
+            >
+              &#8594;
+            </span>
+          </Link>
         </Button>
       </div>
     </section>

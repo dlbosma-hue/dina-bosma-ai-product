@@ -321,7 +321,7 @@ const en = {
   },
   clubCallout: {
     headline: "New to AI and want to start at your own pace?",
-    text: "AI Noob Club is the HUMINT community for beginners. Simple explanations, meetups and workshops, no jargon.",
+    text: "AI Noob Club is for women entrepreneurs and creators who are new to AI. Simple explanations, meetups and workshops, no jargon.",
     link: "Visit AI Noob Club",
   },
   form: {
@@ -335,7 +335,7 @@ const en = {
     networkError: "Network error. Please try again.",
   },
   footer: {
-    brand: "HUMINT - Human intelligence. AI powered.",
+    brand: "HUMINT · Human intelligence. AI powered.",
     meta: "Dina Bosma Buczynska · Berlin · EN / DE / NL",
     impressum: "Impressum",
   },
@@ -684,7 +684,7 @@ const de: typeof en = {
   },
   clubCallout: {
     headline: "Neu bei KI und möchtest in deinem Tempo starten?",
-    text: "Der AI Noob Club ist die HUMINT Community für Einsteiger. Einfach erklärt, mit Meetups und Workshops, ohne Fachchinesisch.",
+    text: "Der AI Noob Club ist für Unternehmerinnen und Creatorinnen, die neu bei KI sind. Einfach erklärt, mit Meetups und Workshops, ohne Fachchinesisch.",
     link: "Zum AI Noob Club",
   },
   form: {
