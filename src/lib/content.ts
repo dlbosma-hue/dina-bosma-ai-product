@@ -320,6 +320,9 @@ const en = {
       "I work with EU values in mind: privacy first, human oversight, proportionate technology, and respect for the people affected by the system.",
     bookingCta: "Book an intro call",
     calendlyNote: "Booking runs through Calendly. Clicking opens Calendly in a new tab.",
+    emailAlt: "Or request an appointment with your exact wishes.",
+    emailCta: "Request by email",
+    emailSubject: "Appointment request",
   },
   clubCallout: {
     headline: "New to AI and want to start at your own pace?",
@@ -685,6 +688,9 @@ const de: typeof en = {
       "Ich arbeite mit europäischen Werten im Blick: Datenschutz, menschliche Aufsicht, angemessene Technologie und Respekt gegenüber den Menschen, die vom System betroffen sind.",
     bookingCta: "Kennenlerngespräch buchen",
     calendlyNote: "Die Buchung läuft über Calendly. Mit dem Klick öffnet sich Calendly in einem neuen Tab.",
+    emailAlt: "Oder fragen Sie einen Termin mit Ihren genauen Wünschen an.",
+    emailCta: "Termin per E-Mail anfragen",
+    emailSubject: "Terminanfrage",
   },
   clubCallout: {
     headline: "Neu bei KI und möchtest in deinem Tempo starten?",

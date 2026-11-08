@@ -45,6 +45,15 @@ export function Contact() {
         <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
           {t.contact.calendlyNote}
         </p>
+        <div className="mt-5 max-w-2xl text-base text-foreground">
+          <p>{t.contact.emailAlt}</p>
+          <a
+            href={`mailto:info@humint.site?subject=${encodeURIComponent(t.contact.emailSubject)}`}
+            className="mt-1 inline-flex min-h-11 items-center underline underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            {t.contact.emailCta}: info@humint.site
+          </a>
+        </div>
       </div>
 
     </section>
