@@ -536,8 +536,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   margin-left: auto;
   margin-right: auto;
 }
-.humint-theme > section#about,
-.humint-theme > section#services,
+.humint-theme > section#belief,
 .humint-theme > section#how,
 .humint-theme > section#projects,
 .humint-theme > section#contact {
@@ -546,7 +545,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme #services .humint-service-card,
 .humint-theme #credentials li,
 .humint-theme .humint-audience-card { background: var(--sky-50); }
-.humint-theme #services .humint-service-card { background: var(--white); }
+.humint-theme > section[aria-label="Credibility"] { background: var(--sky-50); }
 .humint-theme .uppercase:not(h3):not(button):not(a) {
   font-weight: 700;
   font-size: 12px;
@@ -574,11 +573,12 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme .humint-service-card:nth-child(even) .humint-service-dot { background: var(--sand); }
 .humint-theme .humint-service-card h3 { overflow-wrap: anywhere; hyphens: auto; }
 .humint-theme .humint-service-card p { margin-top: 12px; font-size: 13px; color: color-mix(in srgb, var(--ink) 80%, transparent); }
-.humint-theme .humint-collaboration { padding-top: 36px; background: var(--white); }
-.humint-theme .humint-collaboration > section { max-width: 1120px; }
+.humint-theme .humint-collaboration { padding: 36px 24px; background: var(--sky-50); }
+.humint-theme .humint-collaboration > div { padding: 0; }
+.humint-theme .humint-collaboration > section { max-width: 1120px; padding: 0; }
 .humint-theme .humint-collaboration #who > .humint-section-inner > .grid { grid-template-columns: 1fr; }
 .humint-theme .humint-audience-grid { display: grid; gap: 12px; padding: 0; list-style: none; }
-.humint-theme .humint-audience-card { padding: 16px; border-radius: 18px; font-size: 16px; }
+.humint-theme .humint-audience-card { padding: 16px; border-radius: 18px; font-size: 16px; background: var(--white); }
 .humint-theme #testimonials .grid { gap: 12px; background: transparent; }
 .humint-theme #testimonials figure { background: var(--white); border: 1px solid var(--sky-100); border-radius: 18px; padding: 24px; }
 .humint-theme #testimonials blockquote { font-family: var(--font-body); }
@@ -635,10 +635,10 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme .humint-metric-card:nth-child(even) { background: var(--sand); }
 .humint-theme .humint-metrics-spottr .humint-metric-card { background: var(--white); border: 1px solid var(--sky-100); }
 .humint-theme .humint-metric-value { font-family: var(--font-body); font-weight: 700; font-size: 38px; line-height: 1; overflow-wrap: anywhere; }
-.humint-theme .humint-metric-card .uppercase { text-transform: none; font-weight: 400; font-size: 13px; letter-spacing: 0; }
+.humint-theme .humint-metric-card .uppercase { font-weight: 400; font-size: 13px; letter-spacing: 0; }
 .humint-theme #work article { border-color: var(--sky-100); }
 .humint-theme #work .flex.flex-wrap > span { background: var(--sky-100); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 500; }
-.humint-theme #work .flex.flex-wrap > span > span { display: none; }
+.humint-theme #work .flex.flex-wrap > span > span { color: var(--ink); }
 .humint-theme #credentials ul { display: grid; gap: 12px; border: 0; }
 .humint-theme #credentials li { border: 0; border-radius: 18px; padding: 16px; }
 .humint-theme #credentials li .font-serif { font-family: var(--font-body); font-weight: 600; font-size: 16px; }
@@ -665,7 +665,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme .humint-language-button { padding: 8px 12px; font-size: 12px; background: var(--white); color: var(--ink); border: 1px solid var(--sky-100); }
 .humint-theme #top > .bg-foreground\/55 { background: color-mix(in srgb, var(--ink) 55%, transparent); }
 .humint-theme #top h1 { color: oklch(0.968 0.014 88); }
-.humint-theme #top > div:last-child > p:first-of-type { font-family: var(--font-body); font-size: 24px; }
+.humint-theme #top > div:last-child > p:first-of-type { font-family: var(--font-heading); font-size: 30px; line-height: 1.2; color: oklch(0.968 0.014 88); }
 .humint-theme #top a:not(.humint-primary-button) { font-weight: 500; border-bottom: 1.5px solid var(--blue); }
 .humint-theme #top .uppercase { color: var(--white); }
 .humint-theme #top p { color: var(--white); }
@@ -674,11 +674,13 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme footer a { font-size: 14px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center; }
 .humint-theme footer > div > div:last-child { flex-wrap: wrap; }
 .humint-theme header a:not(:first-child) { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-color: var(--sky-100); }
+.humint-theme header a:first-child { flex-shrink: 0; }
 .humint-theme .humint-project-button { border: 0; border-radius: 0; background: transparent; color: var(--ink); height: auto; justify-content: start; white-space: normal; }
 .humint-project-dialog { background: var(--white); border: 1px solid var(--sky-100); border-radius: 20px; }
 @media (min-width: 768px) {
   .humint-theme > section:not(#top) { padding: 56px 24px; }
-  .humint-theme .humint-collaboration { padding-top: 56px; }
+  .humint-theme .humint-collaboration { padding: 56px 24px; }
+  .humint-theme #top > div:last-child > p:first-of-type { font-size: 40px; }
   .humint-theme .humint-services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .humint-theme .humint-audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .humint-theme .humint-timeline { max-width: 900px; }
