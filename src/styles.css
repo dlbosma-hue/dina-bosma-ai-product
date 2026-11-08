@@ -551,6 +551,13 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   font-size: 12px;
   letter-spacing: 0.14em;
 }
+/* Section sub-labels that must read exactly like the small titles above each heading. */
+.humint-theme .uppercase.humint-eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+}
 .humint-theme .humint-services-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -581,7 +588,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme .humint-audience-card { padding: 16px; border-radius: 18px; font-size: 16px; background: var(--white); }
 .humint-theme #testimonials .grid { gap: 12px; background: transparent; }
 .humint-theme #testimonials figure { background: var(--white); border: 1px solid var(--sky-100); border-radius: 18px; padding: 24px; }
-.humint-theme #testimonials blockquote { font-family: var(--font-body); }
+.humint-theme #testimonials blockquote { font-family: var(--font-heading); }
 .humint-theme #testimonials figcaption { font-size: 13px; }
 .humint-theme #testimonials figcaption span { font-size: 13px; font-weight: 700; }
 .humint-theme #belief blockquote, .humint-theme #belief blockquote p {
