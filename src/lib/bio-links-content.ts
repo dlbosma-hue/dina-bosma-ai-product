@@ -7,7 +7,7 @@ export type BioLink = {
   hint: string;
   /** Alt text for the promotional graphic shown under this card. */
   imageAlt?: string;
-  /** Featured card (terracotta) instead of the soft rosa card. */
+  /** Featured grapefruit card instead of the soft cream card. */
   featured?: boolean;
   /** Opens a site outside humint.site in a new tab. */
   external?: boolean;

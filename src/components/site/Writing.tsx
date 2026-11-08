@@ -37,7 +37,7 @@ export function Writing() {
               <div className="mb-3 text-xs uppercase tracking-[0.18em] text-muted-foreground">
                 {a.eyebrow}
               </div>
-              <h3 className="font-serif text-2xl leading-tight md:text-3xl">
+              <h3 className="font-headline text-2xl leading-tight md:text-3xl">
                 {a.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">

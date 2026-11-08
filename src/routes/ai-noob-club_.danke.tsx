@@ -5,10 +5,7 @@ import { useLanguage } from "@/lib/i18n";
 import { checklistContent } from "@/lib/checklist-content";
 import { NoobHeader, NoobFooter, btnPrimary } from "@/components/noob/NoobChrome";
 
-export const Route = createFileRoute("/ai-noob-club_/danke")({
-  component: ThanksPage,
-  head: () => noobHead(noobMeta.thanks),
-});
+export const Route = createFileRoute("/ai-noob-club_/danke")({ component: ThanksPage, head: () => noobHead(noobMeta.thanks) });
 
 function ThanksPage() {
   useNoobMeta(noobMeta.thanks);
@@ -18,14 +15,10 @@ function ThanksPage() {
   return (
     <main className="noob-theme min-h-screen">
       <NoobHeader />
-      <section className="bg-noob-cream">
-        <div className="mx-auto max-w-3xl px-6 py-16 md:px-10">
-          <h1 className="font-serif text-4xl">{c.thanks}</h1>
-          {pdf ? (
-            <a href={pdf} download className={`${btnPrimary} mt-8`}>{c.download}</a>
-          ) : (
-            <p className="mt-6 text-base">{c.downloadLater}</p>
-          )}
+      <section className="border-b-2 border-navy bg-cream">
+        <div className="mx-auto max-w-3xl px-5 py-16 md:px-8">
+          <h1 className="text-4xl md:text-6xl">{c.thanks}</h1>
+          {pdf ? <a href={pdf} download className={`${btnPrimary} mt-8`}>{c.download}</a> : <p className="mt-6 text-base">{c.downloadLater}</p>}
         </div>
       </section>
       <NoobFooter />
