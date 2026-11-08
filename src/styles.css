@@ -459,30 +459,30 @@ html:has(.noob-theme) {
 
 /* HUMINT's independent, calm visual system. Brand headings retain their original styling. */
 .humint-theme {
-  --ink: #16233F;
-  --blue: #3B6A9A;
-  --sky-50: #F2F7FC;
-  --sky-100: #E4EEF8;
-  --sky-200: #CFE2F3;
-  --sand: #F3DFC9;
-  --white: #FFFFFF;
-  --timeline-line: #9DB8D3;
+  --ink: oklch(0.30 0.12 260);
+  --blue: oklch(0.42 0.15 260);
+  --sky-50: oklch(0.96 0.015 250);
+  --sky-100: oklch(0.88 0.02 250);
+  --sky-200: oklch(0.88 0.02 250);
+  --sand: oklch(0.968 0.014 88);
+  --white: oklch(0.968 0.014 88);
+  --timeline-line: oklch(0.88 0.02 250);
   --font-body: "Figtree", sans-serif;
   --font-accent: var(--font-body);
   --font-heading: "Instrument Serif", Georgia, serif;
   --font-logo: "Instrument Serif", Georgia, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  --background: var(--white);
-  --foreground: var(--ink);
-  --primary: var(--ink);
-  --primary-foreground: var(--white);
-  --muted: var(--sky-50);
-  --muted-foreground: var(--ink);
-  --accent: var(--blue);
-  --border: var(--sky-100);
-  --ring: var(--blue);
-  background: var(--white);
-  color: var(--ink);
+  --background: oklch(0.968 0.014 88);
+  --foreground: oklch(0.30 0.12 260);
+  --primary: oklch(0.34 0.14 260);
+  --primary-foreground: oklch(0.968 0.014 88);
+  --muted: oklch(0.96 0.015 250);
+  --muted-foreground: oklch(0.40 0.10 260);
+  --accent: oklch(0.42 0.15 260);
+  --border: oklch(0.88 0.02 250);
+  --ring: oklch(0.42 0.14 255);
+  background: var(--background);
+  color: var(--foreground);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
@@ -572,7 +572,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 }
 .humint-theme .humint-service-card:nth-child(even) .humint-service-dot { background: var(--sand); }
 .humint-theme .humint-service-card h3 { overflow-wrap: anywhere; hyphens: auto; }
-.humint-theme .humint-service-card p { margin-top: 12px; font-size: 13px; color: color-mix(in srgb, var(--ink) 80%, transparent); }
+.humint-theme .humint-service-card p { margin-top: 12px; font-size: 13px; color: var(--muted-foreground); }
 .humint-theme .humint-collaboration { padding: 36px 24px; background: var(--sky-50); }
 .humint-theme .humint-collaboration > div { padding: 0; }
 .humint-theme .humint-collaboration > section { max-width: 1120px; padding: 0; }
@@ -585,11 +585,11 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme #testimonials figcaption { font-size: 13px; }
 .humint-theme #testimonials figcaption span { font-size: 13px; font-weight: 700; }
 .humint-theme #belief blockquote, .humint-theme #belief blockquote p {
-  font-family: var(--font-body); font-weight: 600; font-size: 20px; line-height: 1.6; color: var(--blue);
+  font-family: var(--font-body); font-weight: 600; font-size: 20px; line-height: 1.6; color: var(--foreground);
 }
 .humint-theme #belief blockquote span { margin: 0; }
 .humint-theme #belief blockquote span[aria-hidden] { display: none; }
-.humint-theme #about p:nth-child(3) { font-weight: 600; font-size: 20px; color: var(--blue); }
+.humint-theme #about p:nth-child(3) { font-weight: 600; font-size: 20px; color: var(--foreground); }
 .humint-theme .humint-timeline { list-style: none; padding: 0; margin-top: 32px; }
 .humint-theme .humint-timeline-step {
   position: relative;
@@ -673,7 +673,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme > section:not([id]):last-of-type > div { background: transparent; border: 0; border-radius: 0; padding: 0; }
 .humint-theme footer a { font-size: 14px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center; }
 .humint-theme footer > div > div:last-child { flex-wrap: wrap; }
-.humint-theme header a:not(:first-child) { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-color: var(--sky-100); }
+.humint-theme header a:not(:first-child) { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 .humint-theme header > div { gap: 12px; }
 .humint-theme header > div > a:first-child { flex-shrink: 0; }
 .humint-theme header nav { min-width: 0; gap: 12px; padding-left: 12px; }
