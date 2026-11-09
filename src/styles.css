@@ -615,11 +615,10 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   top: 0.56em;
   width: 18px;
   height: 18px;
-  background: var(--sky-200);
+  background: color-mix(in oklab, var(--blue) 25%, var(--white));
   border: 2px solid var(--ink);
   transform: translateY(-50%) rotate(-4deg);
 }
-.humint-theme > section#belief { padding-bottom: 24px; }
 .humint-theme #about p:nth-child(3) { font-weight: 600; font-size: 20px; color: var(--foreground); }
 .humint-theme .humint-timeline { list-style: none; padding: 0; margin-top: 32px; }
 .humint-theme .humint-timeline-step {
@@ -724,6 +723,8 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   .humint-theme .humint-audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .humint-theme .humint-timeline { max-width: 900px; }
 }
+/* Keep the belief section tight under its statement on every width. */
+.humint-theme > section#belief { padding-bottom: 24px; }
 
 @media (prefers-reduced-motion: no-preference) {
   html {

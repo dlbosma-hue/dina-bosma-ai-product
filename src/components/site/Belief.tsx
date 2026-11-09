@@ -10,13 +10,13 @@ export function Belief() {
           <li key={point}>{point}</li>
         ))}
       </ul>
-      <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+      <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         {t.belief.body}
       </p>
-      <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+      <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         {t.belief.body2}
       </p>
-      <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+      <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         {t.belief.body3}
       </p>
     </Section>
