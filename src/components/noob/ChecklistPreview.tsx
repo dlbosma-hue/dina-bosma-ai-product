@@ -4,7 +4,7 @@ export function ChecklistPreview({ label, alt }: { label: string; alt: string })
       <div className="h-4 w-2/3 bg-grapefruit" />
       {Array.from({ length: 7 }).map((_, i) => (
         <div key={i} className="flex items-center gap-2">
-          <span className="h-4 w-4 border-2 border-navy" />
+          <span className="h-4 w-4 border border-navy" />
           <span className="h-2.5 flex-1 bg-mid-sky" />
         </div>
       ))}

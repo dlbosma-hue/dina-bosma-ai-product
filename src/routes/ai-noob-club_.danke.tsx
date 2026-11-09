@@ -15,7 +15,7 @@ function ThanksPage() {
   return (
     <main className="noob-theme min-h-screen">
       <NoobHeader />
-      <section className="border-b-2 border-navy bg-cream">
+      <section className="border-b border-navy bg-cream">
         <div className="mx-auto max-w-3xl px-5 py-16 md:px-8">
           <h1 className="text-4xl md:text-6xl">{c.thanks}</h1>
           {pdf ? <a href={pdf} download className={`${btnPrimary} mt-8`}>{c.download}</a> : <p className="mt-6 text-base">{c.downloadLater}</p>}
