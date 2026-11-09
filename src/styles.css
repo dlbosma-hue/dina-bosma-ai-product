@@ -574,10 +574,9 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   width: 26px;
   height: 26px;
   border-radius: 999px;
-  background: var(--sky-200);
+  background: var(--blue);
   margin-bottom: 12px;
 }
-.humint-theme .humint-service-card:nth-child(even) .humint-service-dot { background: var(--sand); }
 .humint-theme .humint-service-card h3 { overflow-wrap: anywhere; hyphens: auto; }
 .humint-theme .humint-service-card p { margin-top: 12px; font-size: 13px; color: var(--muted-foreground); }
 .humint-theme .humint-collaboration { padding: 36px 24px; background: var(--sky-50); }

@@ -5,24 +5,12 @@ export function Belief() {
   const { t } = useLanguage();
   return (
     <Section id="belief" eyebrow={t.belief.eyebrow}>
-      <div className="flex flex-col items-center py-2 md:py-4">
-        <blockquote className="text-center font-serif tracking-tight text-foreground">
-          <p className="text-[42px] leading-[1.05] md:text-[66px]">
-            {t.belief.line1}
-            <span className="mt-2 block">
-              <span className="relative inline-block">
-                {t.belief.word}
-                <span
-                  aria-hidden="true"
-                  className="absolute -bottom-1 left-0 h-[3px] w-full bg-accent"
-                />
-              </span>
-            </span>
-            <span className="mt-4 block">{t.belief.line3}</span>
-          </p>
-        </blockquote>
-      </div>
-      <p className="mx-auto mt-6 md:mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+      <ul className="humint-belief-points">
+        {t.credibility.map((point) => (
+          <li key={point}>{point}</li>
+        ))}
+      </ul>
+      <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
         {t.belief.body}
       </p>
       <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">

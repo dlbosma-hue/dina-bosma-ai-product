@@ -60,9 +60,6 @@ const en = {
   },
   belief: {
     eyebrow: "What I believe",
-    line1: "AI should make your people",
-    word: "faster,",
-    line3: "not fewer.",
     body: "I build AI systems that reduce the repetitive, low value work that slows teams down, so people can focus on judgment, relationships, and the work that moves the business.",
     body2: "Not automation for its own sake. Systems that make your team more capable than they were before.",
     body3: "Built responsibly: fair, transparent, and proportionate.",
@@ -428,9 +425,6 @@ const de: typeof en = {
   },
   belief: {
     eyebrow: "Meine Überzeugungen",
-    line1: "KI soll Ihr Team",
-    word: "schneller machen,",
-    line3: "nicht kleiner.",
     body: "Ich baue KI-Systeme, die die repetitive Arbeit mit geringem Wert reduzieren, die Teams ausbremst, damit Menschen sich auf Urteilsvermögen, Beziehungen und die Arbeit konzentrieren können, die das Geschäft voranbringt.",
     body2: "Keine Automatisierung um ihrer selbst willen. Systeme, die Ihr Team leistungsfähiger machen als zuvor.",
     body3: "Verantwortungsvoll gebaut: fair, transparent und angemessen.",
