@@ -33,7 +33,7 @@ const copy = {
     },
   },
 };
-const inputCls = "w-full rounded-md border-2 border-navy bg-cream px-4 py-3 text-base text-navy placeholder:text-navy";
+const inputCls = "w-full rounded-md border border-navy bg-cream px-4 py-3 text-base text-navy placeholder:text-navy";
 const radioCls = "mt-0.5 h-5 w-5 shrink-0 accent-grapefruit";
 
 type Props = {

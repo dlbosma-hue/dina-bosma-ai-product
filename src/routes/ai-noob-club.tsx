@@ -29,7 +29,7 @@ export const Route = createFileRoute("/ai-noob-club")({
 
 const extBtn = "retro-button";
 const sectionWrap = "mx-auto max-w-6xl px-5 py-12 md:px-8 md:py-16";
-const sectionClass = "scroll-mt-40 border-b-2 border-navy md:scroll-mt-44";
+const sectionClass = "scroll-mt-40 border-b border-navy md:scroll-mt-44";
 
 function NoobClub() {
   useNoobMeta(noobMeta.home);
@@ -76,7 +76,7 @@ function NoobClub() {
         <div className={sectionWrap}>
           <div className="grid items-center gap-10 md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)]">
             <div className="retro-card mx-auto w-full max-w-[17rem] bg-rose p-4">
-              <img src={dinaPortraitAsset.url} alt={t.meetYourHostAlt} className="w-full rounded-full border-2 border-navy" width={1882} height={1882} />
+              <img src={dinaPortraitAsset.url} alt={t.meetYourHostAlt} className="w-full rounded-full border border-navy" width={1882} height={1882} />
             </div>
             <div>
               <span aria-hidden className="block h-1 w-10 bg-grapefruit" />
@@ -112,7 +112,7 @@ function NoobClub() {
             {t.pathCards.map((card, i) => (
               <article key={card.title} className="retro-card flex flex-col bg-cream p-6">
                 <div className="flex items-center justify-between gap-3">
-                  <span aria-hidden className="flex h-14 w-14 items-center justify-center border-2 border-navy bg-grapefruit font-headline text-3xl leading-none text-navy">{i + 1}</span>
+                  <span aria-hidden className="flex h-14 w-14 items-center justify-center border border-navy bg-grapefruit font-headline text-3xl leading-none text-navy">{i + 1}</span>
                   {card.status === "free" && <span className="retro-pill">{t.statusFree}</span>}
                 </div>
                 <h3 className="mt-4 text-3xl">{card.title}</h3>
@@ -121,7 +121,7 @@ function NoobClub() {
                 <ul className="mt-2 space-y-1.5">
                   {card.learn.map((item) => <li key={item} className="flex gap-2 text-base text-navy"><span aria-hidden className="mt-2.5 h-2 w-2 shrink-0 bg-grapefruit" /><span>{item}</span></li>)}
                 </ul>
-                {card.info && <p className="mt-4 border-l-4 border-grapefruit bg-rose p-3 text-base font-semibold text-navy">{card.info}</p>}
+                {card.info && <p className="mt-4 border-l border-navy bg-rose p-3 text-base font-semibold text-navy">{card.info}</p>}
                 <div className="flex-1" />
                 <div className="mt-6 flex flex-col items-start gap-1">
                   <a href={card.href} className={`${i === 0 ? btnPrimary : "retro-button retro-button-secondary"} h-auto min-h-12 whitespace-normal py-3`}>{card.cta}</a>
@@ -200,7 +200,7 @@ function NoobClub() {
             <article className="retro-card flex flex-col bg-rose p-6 md:p-8">
               <span className="retro-pill mb-4">{t.saleLabel}</span>
               <div className="grid grid-cols-3 gap-3">
-                {productImages[lang].map((img, i) => <img key={img.url} src={img.url} alt={i === 0 ? t.productAlt : ""} loading="lazy" decoding="async" className="w-full border-2 border-navy" width={1080} height={1350} />)}
+                {productImages[lang].map((img, i) => <img key={img.url} src={img.url} alt={i === 0 ? t.productAlt : ""} loading="lazy" decoding="async" className="w-full border border-navy" width={1080} height={1350} />)}
               </div>
               <h3 className="mt-5 text-3xl">{t.productTitle}</h3>
               <p className="mt-3 font-headline text-3xl leading-[1.05] text-navy">{t.productPrice}</p>
@@ -231,7 +231,7 @@ function NoobClub() {
         </div>
       </section>
 
-      <section className="border-b-2 border-navy bg-cream">
+      <section className="border-b border-navy bg-cream">
         <div className="mx-auto max-w-4xl px-5 py-10 md:px-8">
           <div className="retro-card bg-sky p-6 md:flex md:items-center md:justify-between md:gap-6">
             <div><h2 className="text-2xl">{t.consultingTitle}</h2><p className="mt-2 text-base text-navy">{t.consultingBody}</p></div>

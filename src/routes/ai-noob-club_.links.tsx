@@ -17,7 +17,7 @@ export const Route = createFileRoute("/ai-noob-club_/links")({
   head: () => noobHead(noobMeta.bio),
 });
 
-const card = "group flex min-h-16 items-center gap-3 border-2 border-navy px-4 py-3 text-navy no-underline transition-colors duration-200 hover:bg-rose";
+const card = "group flex min-h-16 items-center gap-3 border border-navy px-4 py-3 text-navy no-underline transition-colors duration-200 hover:bg-rose";
 const soft = "bg-cream";
 const featured = "bg-grapefruit";
 
@@ -43,7 +43,7 @@ function BioLinksPage() {
   return (
     <main className="noob-theme min-h-screen bg-cream">
       <NoobHeader />
-      <section className="border-b-2 border-navy bg-rose">
+      <section className="border-b border-navy bg-rose">
         <div className="mx-auto max-w-md px-5 pb-6 pt-5 text-center md:max-w-xl">
           <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="mx-auto block h-auto w-full max-w-56 md:max-w-64" width={1920} height={640} fetchPriority="high" />
           <span className="retro-tape mt-4 bg-cream">{c.label}</span>
@@ -60,7 +60,7 @@ function BioLinksPage() {
             return (
               <li key={l.id}>
                 <a href={href} {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className={`${card} ${l.featured ? featured : soft}`}>
-                  <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center border-2 border-navy bg-cream font-headline text-lg leading-none text-navy">{i + 1}</span>
+                  <span aria-hidden className="flex h-9 w-9 shrink-0 items-center justify-center border border-navy bg-cream font-headline text-lg leading-none text-navy">{i + 1}</span>
                   <span className="min-w-0 flex-1">
                     <span className="block text-base font-semibold leading-snug text-navy">{l.title}</span>
                     <span className="mt-0.5 block text-base leading-snug text-navy">{l.hint}</span>
@@ -68,7 +68,7 @@ function BioLinksPage() {
                   {l.external ? <><ArrowUpRight aria-hidden className="h-5 w-5 shrink-0 text-navy" /><span className="sr-only">{c.externalHint}</span></> : <ArrowRight aria-hidden className="h-5 w-5 shrink-0 text-navy transition-transform duration-200 group-hover:translate-x-1" />}
                 </a>
                 {img ? (
-                  <a href={href} {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="mt-3 block overflow-hidden border-2 border-navy">
+                  <a href={href} {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="mt-3 block overflow-hidden border border-navy">
                     <img src={img} alt={l.imageAlt ?? ""} width={1080} height={1350} loading="lazy" className="block h-auto w-full" />
                     {l.external ? <span className="sr-only">{c.externalHint}</span> : null}
                   </a>

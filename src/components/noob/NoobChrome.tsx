@@ -16,12 +16,12 @@ export function NoobHeader() {
   const close = () => setMenuOpen(false);
 
   const langButton = (
-    <button type="button" onClick={() => setLang(lang === "en" ? "de" : "en")} aria-label={t.langAria} className="inline-flex h-11 min-w-11 items-center justify-center border-2 border-navy bg-cream px-2 text-xs font-semibold uppercase tracking-[0.08em] text-navy transition-colors duration-200 hover:bg-rose">
+    <button type="button" onClick={() => setLang(lang === "en" ? "de" : "en")} aria-label={t.langAria} className="inline-flex h-11 min-w-11 items-center justify-center border border-navy bg-cream px-2 text-xs font-semibold uppercase tracking-[0.08em] text-navy transition-colors duration-200 hover:bg-rose">
       {t.langLabel}
     </button>
   );
   const igLink = noobClub.links.instagram ? (
-    <a href={noobClub.links.instagram} target="_blank" rel="noopener noreferrer" aria-label={t.igAria} className="inline-flex h-11 w-11 items-center justify-center border-2 border-navy bg-cream text-navy transition-colors duration-200 hover:bg-rose">
+    <a href={noobClub.links.instagram} target="_blank" rel="noopener noreferrer" aria-label={t.igAria} className="inline-flex h-11 w-11 items-center justify-center border border-navy bg-cream text-navy transition-colors duration-200 hover:bg-rose">
       <Instagram aria-hidden className="h-5 w-5" />
     </a>
   ) : null;
@@ -36,7 +36,7 @@ export function NoobHeader() {
   );
 
   return (
-    <header className="sticky top-0 z-40 border-b-2 border-navy bg-cream">
+    <header className="sticky top-0 z-40 border-b border-navy bg-cream">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 md:px-8">
         <div className="flex min-w-0 flex-col items-start">
           <Link to="/ai-noob-club" hash="top" className="block max-w-full shrink-0">
@@ -50,13 +50,13 @@ export function NoobHeader() {
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
           {langButton}{igLink}
-          <button type="button" onClick={() => setMenuOpen((o) => !o)} aria-expanded={menuOpen} aria-controls="noob-menu" aria-label={menuOpen ? t.menuClose : t.menuOpen} className="inline-flex h-11 w-11 items-center justify-center border-2 border-navy bg-cream text-navy transition-colors duration-200 hover:bg-rose">
+          <button type="button" onClick={() => setMenuOpen((o) => !o)} aria-expanded={menuOpen} aria-controls="noob-menu" aria-label={menuOpen ? t.menuClose : t.menuOpen} className="inline-flex h-11 w-11 items-center justify-center border border-navy bg-cream text-navy transition-colors duration-200 hover:bg-rose">
             {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </div>
       {menuOpen && (
-        <nav id="noob-menu" className="border-t-2 border-navy bg-rose px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
+        <nav id="noob-menu" className="border-t border-navy bg-rose px-4 pb-5 pt-3 lg:hidden" aria-label={t.brand}>
           <div className="flex flex-col gap-1">
             {textLinks}
             <Link to="/ai-noob-club" hash="checkliste" onClick={close} className={`${btnPrimary} mt-3 w-full`}>{t.navChecklistCta}</Link>
@@ -72,7 +72,7 @@ export function NoobFooter() {
   const t = noobContent[lang];
   const fl = "inline-flex min-h-11 items-center text-link underline-offset-4 hover:underline";
   return (
-    <footer className="border-t-2 border-navy bg-rose">
+    <footer className="border-t border-navy bg-rose">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-navy md:px-8">
         <p>{t.footer}</p>
         <nav aria-label={lang === "de" ? "Rechtliches" : "Legal"} className="flex flex-wrap gap-x-5">

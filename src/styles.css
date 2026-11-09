@@ -224,7 +224,7 @@
 @utility retro-chip {
   display: inline-block;
   max-width: 100%;
-  border: 2px solid var(--noob-border, var(--navy));
+  border: 1px solid var(--noob-border, var(--navy));
   background: var(--cream);
   color: var(--navy);
   font-family: "Anton", sans-serif;
@@ -283,7 +283,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border: 2px solid var(--noob-border, var(--navy));
+  border: 1px solid var(--noob-border, var(--navy));
   border-radius: 6px;
   background: var(--accent-grapefruit);
   color: var(--navy);
@@ -311,7 +311,7 @@
 }
 
 @utility retro-card {
-  border: 2px solid var(--noob-border, var(--navy));
+  border: 1px solid var(--noob-border, var(--navy));
   border-radius: 0;
   background: var(--cream);
   color: var(--navy);
@@ -321,7 +321,7 @@
   display: inline-flex;
   width: fit-content;
   align-items: center;
-  border: 2px solid var(--accent-grapefruit);
+  border: 1px solid var(--noob-border, var(--navy));
   border-radius: 0;
   background: var(--cream);
   color: var(--navy);

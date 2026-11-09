@@ -18,7 +18,7 @@ function ChecklistPage() {
   return (
     <main className="noob-theme min-h-screen">
       <NoobHeader />
-      <section className="border-b-2 border-navy bg-rose">
+      <section className="border-b border-navy bg-rose">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-[1fr_16rem] md:px-8 md:py-16">
           <div>
             <h1 className="text-4xl md:text-6xl">{c.title}</h1>
