@@ -40,7 +40,6 @@ function Index() {
     <main className="humint-theme min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
-      <CredibilityStrip />
       <About />
       <Belief />
       <Services />

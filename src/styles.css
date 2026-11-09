@@ -715,14 +715,19 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme header > div > .shrink-0 > a:nth-child(2) { max-width: 110px; }
 .humint-theme .humint-project-button { border: 0; border-radius: 0; background: transparent; color: var(--ink); height: auto; justify-content: start; white-space: normal; }
 .humint-project-dialog { background: var(--white); border: 1px solid var(--sky-100); border-radius: 20px; }
+@media (min-width: 640px) {
+  .humint-theme .humint-services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (min-width: 768px) {
   .humint-theme header > div > .shrink-0 > a:first-child { display: inline-flex; }
   .humint-theme > section:not(#top) { padding: 56px 24px; }
   .humint-theme .humint-collaboration { padding: 56px 24px; }
   .humint-theme #top > div:last-child > p:first-of-type { font-size: 40px; }
-  .humint-theme .humint-services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .humint-theme .humint-audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .humint-theme .humint-timeline { max-width: 900px; }
+}
+@media (min-width: 1100px) {
+  .humint-theme .humint-services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 /* Keep the belief section tight under its statement on every width. */
 .humint-theme > section#belief { padding-bottom: 24px; }
