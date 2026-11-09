@@ -590,11 +590,36 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .humint-theme #testimonials blockquote { font-family: var(--font-heading); }
 .humint-theme #testimonials figcaption { font-size: 13px; }
 .humint-theme #testimonials figcaption span { font-size: 13px; font-weight: 700; }
-.humint-theme #belief blockquote, .humint-theme #belief blockquote p {
-  font-family: var(--font-body); font-weight: 600; font-size: 20px; line-height: 1.6; color: var(--foreground);
+/* The belief statement set in the AI Noob Club display lettering, dark blue text on light blue markers. */
+.humint-theme .humint-belief-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
 }
-.humint-theme #belief blockquote span { margin: 0; }
-.humint-theme #belief blockquote span[aria-hidden] { display: none; }
+.humint-theme .humint-belief-points li {
+  position: relative;
+  padding-left: 34px;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(26px, 4.4vw, 42px);
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+.humint-theme .humint-belief-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56em;
+  width: 18px;
+  height: 18px;
+  background: var(--sky-200);
+  border: 2px solid var(--ink);
+  transform: translateY(-50%) rotate(-4deg);
+}
+.humint-theme > section#belief { padding-bottom: 24px; }
 .humint-theme #about p:nth-child(3) { font-weight: 600; font-size: 20px; color: var(--foreground); }
 .humint-theme .humint-timeline { list-style: none; padding: 0; margin-top: 32px; }
 .humint-theme .humint-timeline-step {
