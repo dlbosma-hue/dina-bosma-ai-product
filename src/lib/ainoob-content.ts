@@ -40,12 +40,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     heroFounder: "Hi, I'm Dina.",
     aboutEyebrow: "About me",
     aboutParas: [
-      "Hi, I'm Dina. I'm originally from the Netherlands and now live in Berlin. I used to be a product manager, and I'm still a bit obsessed with good products and smarter ways of working. Today I show women with their own business how to use AI step by step, without losing their own voice.",
-      "It started at birthday parties and on the playground. Whenever I talked about AI, I noticed that most women don't know that much about it yet. And online I keep seeing the same ugly posters, because people just throw something into the chat. But AI can make life so much easier, with a kid, little time and your own business.",
-      "I know the time squeeze myself. I run my own business, and at home there's an extremely active 4-year-old who only has two speeds: full speed and asleep.",
-      "My workday? I check what's new in AI, mostly for content and business. The big corporate news is interesting, but mostly not for you. Then I switch on my AI helpers, which take tasks off my plate, and create content. I prepare meetups and workshops. Client acquisition definitely annoys me. And client data NEVER goes into AI.",
-      "My biggest change was a different way of looking at AI. I used to use it like a tool to write faster. Today I see it as a small team in the background. The team prepares. I decide. Since then I ask myself with every task: What can my team take off my plate?",
-      "I stay curious and learn something new every day. And you? What eats most of your time right now?",
+      "Hi, I'm Dina. I grew up in The Hague and live in Berlin. I'm an AI consultant, originally a stylist and later a product manager. Both jobs taught me to listen closely to what someone needs. That makes the difference with AI too: the clearer your instruction, the better the result.",
+      "AI Noob Club grew out of conversations with other women. Many only use AI for single requests in a chat and are not happy with the results: the texts sound interchangeable, the images look like everyone else's.",
+      "I run my business on my own and have a four-year-old child. My time is tight. I let AI handle routine work, while decisions, voice and judgment stay with me.",
+      "I show you step by step how to use AI and still sound like yourself.",
     ],
     forTitle: "This is for you if ...",
     forCards: [
@@ -175,12 +173,10 @@ export const noobContent: Record<NoobLang, NoobStrings> = {
     heroFounder: "Hallo, ich bin Dina.",
     aboutEyebrow: "Über mich",
     aboutParas: [
-      "Hallo, ich bin Dina. Ich komme ursprünglich aus den Niederlanden und lebe jetzt in Berlin. Ich war Produktmanagerin und bin immer noch ein bisschen verrückt nach guten Produkten und schlaueren Wegen zu arbeiten. Heute zeige ich Frauen mit eigenem Business, wie sie KI Schritt für Schritt nutzen, ohne die eigene Stimme zu verlieren.",
-      "Angefangen hat es auf Geburtstagen und auf dem Spielplatz. Wenn ich über KI geredet habe, habe ich gemerkt: Die meisten Frauen haben davon bisher nicht so viel Ahnung. Und im Netz sehe ich überall die gleichen hässlichen Poster, weil einfach irgendwas in den Chat gehauen wird. Dabei kann KI das Leben richtig erleichtern, mit Kind, wenig Zeit und eigenem Business.",
-      "Die Zeitnot kenne ich selbst. Ich führe mein eigenes Business, und zu Hause läuft ein extrem aktives 4-jähriges Kind herum, das nur zwei Gänge hat: Vollgas und schlafen.",
-      "Mein Arbeitstag? Ich schaue, was es Neues bei KI gibt, vor allem für Content und Business. Die großen Konzern-Nachrichten sind spannend, aber meistens nichts für dich. Dann schalte ich meine KI-Helfer ein, die mir Aufgaben abnehmen, und erstelle Content. Ich bereite Treffen und Workshops vor. Kundenakquise nervt definitiv. Und Kundendaten kommen bei mir NIE in die KI.",
-      "Meine größte Veränderung war ein anderer Blick auf KI. Früher habe ich sie wie ein Werkzeug benutzt, um schneller zu schreiben. Heute sehe ich sie als kleines Team im Hintergrund. Das Team bereitet vor. Ich entscheide. Seitdem frage ich bei jeder Aufgabe: Was kann mein Team für mich übernehmen?",
-      "Ich bleibe neugierig und lerne täglich dazu. Und du? Was frisst bei dir gerade am meisten Zeit?",
+      "Hallo, ich bin Dina. Ich bin in Den Haag aufgewachsen und lebe in Berlin. Ich bin KI-Beraterin, ursprünglich Stylistin und später Produktmanagerin. Beide Berufe haben mir beigebracht, genau zuzuhören, was jemand braucht. Das macht auch bei KI den Unterschied: Je klarer die Anweisung, desto besser das Ergebnis.",
+      "Der AI Noob Club ist aus Gesprächen mit anderen Frauen entstanden. Viele nutzen KI bisher nur für einzelne Anfragen im Chat und sind mit dem Ergebnis nicht zufrieden: Die Texte klingen austauschbar, die Bilder sehen aus wie bei allen anderen.",
+      "Ich führe mein Business allein und habe ein vierjähriges Kind. Meine Zeit ist knapp. Routinearbeit übernimmt bei mir die KI, Entscheidungen, Stimme und Haltung bleiben bei mir.",
+      "Ich zeige dir Schritt für Schritt, wie du KI nutzt und dabei nach dir klingst.",
     ],
     forTitle: "Das hier ist für dich, wenn ...",
     forCards: [
