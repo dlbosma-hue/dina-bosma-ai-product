@@ -9,7 +9,7 @@ function Page() {
   useNoobMeta(noobMeta.widerruf);
   const { lang } = useLanguage();
   return (
-    <main className="noob-theme min-h-screen">
+    <main className="noob-theme noob-legal min-h-screen">
       <NoobHeader />
       <section className="border-b border-navy bg-cream">
         <div className="mx-auto max-w-3xl px-5 py-16 md:px-8 md:py-24">

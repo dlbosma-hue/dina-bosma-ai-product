@@ -30,7 +30,7 @@ function CoursePage() {
       <NoobHeader />
       <section className={`${section} bg-rose`}>
         <div className={wrap}>
-          <span className="retro-tape bg-cream">{c.label}</span>
+          <span className="retro-tape">{c.label}</span>
           <h1 className="mt-6 text-5xl md:text-7xl">{c.title}</h1>
           <p className="mt-5 text-lg md:text-xl">{c.subline}</p>
           <a href="#warteliste" onClick={(e) => { e.preventDefault(); toWaitlist(); }} className="retro-button mt-7">{c.cta}</a>

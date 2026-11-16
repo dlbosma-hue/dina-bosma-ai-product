@@ -46,7 +46,7 @@ function BioLinksPage() {
       <section className="border-b border-navy bg-rose">
         <div className="mx-auto max-w-md px-5 pb-6 pt-5 text-center md:max-w-xl">
           <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="mx-auto block h-auto w-full max-w-56 md:max-w-64" width={1920} height={640} fetchPriority="high" />
-          <span className="retro-tape mt-4 bg-cream">{c.label}</span>
+          <span className="retro-tape mt-4">{c.label}</span>
           <h1 className="mt-4 text-3xl md:text-4xl">{c.title}</h1>
           <p className="mx-auto mt-3 text-base">{c.intro}</p>
         </div>
