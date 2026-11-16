@@ -31,3 +31,5 @@
 - [x] 2026-10-23: Added the 99 Prompts graphic under the prompts card on the Instagram link-in-bio page, DE and EN, linking to the Etsy listing; verified on phone and desktop without publishing.
 
 - [x] Replace Club About me paragraphs (DE/EN, 6 each, word for word)
+
+- [ ] Import uploaded Club site and all media under /ai-noob-club; preserve HUMINT, store forms privately, verify DE/EN and do not publish.

@@ -1,0 +1,103 @@
+{
+  "source": "code-archive",
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "site/",
+      "outcome": "Replace Club routes only",
+      "status": "pending",
+      "next_action": "Replace Club routes only"
+    },
+    {
+      "capability": "schema",
+      "source": "current project",
+      "outcome": "Use existing waitlist_submissions; add insert-only contact_requests",
+      "status": "pending",
+      "next_action": "Use existing waitlist_submissions; add insert-only contact_requests"
+    },
+    {
+      "capability": "records",
+      "source": "current project",
+      "outcome": "Preserve all existing records",
+      "status": "pending",
+      "next_action": "Preserve all existing records"
+    },
+    {
+      "capability": "auth identities",
+      "source": "source call sites",
+      "outcome": "No app accounts or sign-in in source",
+      "status": "pending",
+      "next_action": "No app accounts or sign-in in source"
+    },
+    {
+      "capability": "authorization",
+      "source": "source forms",
+      "outcome": "Insert only, no visitor reads",
+      "status": "pending",
+      "next_action": "Insert only, no visitor reads"
+    },
+    {
+      "capability": "uploaded file bytes",
+      "source": "media/",
+      "outcome": "Upload all media with new asset pointers",
+      "status": "pending",
+      "next_action": "Upload all media with new asset pointers"
+    },
+    {
+      "capability": "external providers",
+      "source": "source config",
+      "outcome": "Preserve Calendly, Etsy, Meetup, Instagram and HUMINT links",
+      "status": "pending",
+      "next_action": "Preserve Calendly, Etsy, Meetup, Instagram and HUMINT links"
+    },
+    {
+      "capability": "public endpoints",
+      "source": "current project",
+      "outcome": "Preserve old endpoints; add isolated Club submission handler",
+      "status": "pending",
+      "next_action": "Preserve old endpoints; add isolated Club submission handler"
+    },
+    {
+      "capability": "callbacks",
+      "source": "source call sites",
+      "outcome": "No callbacks detected",
+      "status": "pending",
+      "next_action": "No callbacks detected"
+    },
+    {
+      "capability": "webhooks",
+      "source": "source call sites",
+      "outcome": "No webhooks detected",
+      "status": "pending",
+      "next_action": "No webhooks detected"
+    },
+    {
+      "capability": "schedules",
+      "source": "source call sites",
+      "outcome": "No schedules detected",
+      "status": "pending",
+      "next_action": "No schedules detected"
+    },
+    {
+      "capability": "secrets",
+      "source": "source call sites",
+      "outcome": "No additional secrets needed",
+      "status": "pending",
+      "next_action": "No additional secrets needed"
+    },
+    {
+      "capability": "cutover",
+      "source": "user request",
+      "outcome": "Do not publish",
+      "status": "pending",
+      "next_action": "Do not publish"
+    },
+    {
+      "capability": "verification",
+      "source": "source and target",
+      "outcome": "Check pages, media, languages, inserts and denied reads",
+      "status": "pending",
+      "next_action": "Check pages, media, languages, inserts and denied reads"
+    }
+  ]
+}

@@ -14,6 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
+      contact_requests: {
+        Row: {
+          consent: boolean
+          consent_at: string
+          consent_text: string
+          created_at: string
+          email: string
+          id: string
+          ip_hash: string
+          lang: string
+          message: string
+          name: string
+          topic: string
+        }
+        Insert: {
+          consent: boolean
+          consent_at?: string
+          consent_text: string
+          created_at?: string
+          email: string
+          id?: string
+          ip_hash: string
+          lang?: string
+          message: string
+          name: string
+          topic: string
+        }
+        Update: {
+          consent?: boolean
+          consent_at?: string
+          consent_text?: string
+          created_at?: string
+          email?: string
+          id?: string
+          ip_hash?: string
+          lang?: string
+          message?: string
+          name?: string
+          topic?: string
+        }
+        Relationships: []
+      }
       waitlist_submissions: {
         Row: {
           business: string
@@ -31,6 +73,7 @@ export type Database = {
           owner_notified: boolean
           pain: string
           runde: string | null
+          signup_list: string | null
           source: string
         }
         Insert: {
@@ -49,6 +92,7 @@ export type Database = {
           owner_notified?: boolean
           pain?: string
           runde?: string | null
+          signup_list?: string | null
           source: string
         }
         Update: {
@@ -67,6 +111,7 @@ export type Database = {
           owner_notified?: boolean
           pain?: string
           runde?: string | null
+          signup_list?: string | null
           source?: string
         }
         Relationships: []
@@ -79,6 +124,10 @@ export type Database = {
       store_club_submission: {
         Args: { p_data: Json; p_ip_hash: string }
         Returns: string
+      }
+      store_imported_club_form: {
+        Args: { p_data: Json; p_ip_hash: string }
+        Returns: undefined
       }
     }
     Enums: {

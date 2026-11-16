@@ -1,5 +1,5 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/ai-noob-club-anmeldung")({
-  beforeLoad: () => { throw redirect({ to: "/ai-noob-club", hash: "community", statusCode: 301 }); },
+  beforeLoad: ({ location }) => { throw redirect({ href: "/ai-noob-club/community" + location.searchStr + "#platz", statusCode: 301 }); },
 });

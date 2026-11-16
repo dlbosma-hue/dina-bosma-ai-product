@@ -19,7 +19,9 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/ai-noob-club", changefreq: "weekly", priority: "0.9" },
           { path: "/ki-workflow-check", changefreq: "monthly", priority: "0.6" },
           { path: "/ai-noob-club/content-assistentin", changefreq: "monthly", priority: "0.8" },
-          { path: "/ai-noob-club/checkliste", changefreq: "monthly", priority: "0.7" },
+          { path: "/ai-noob-club/gratis", changefreq: "monthly", priority: "0.7" },
+          { path: "/ai-noob-club/community", changefreq: "monthly", priority: "0.8" },
+          { path: "/ai-noob-club/kontakt", changefreq: "yearly", priority: "0.5" },
           { path: "/datenschutz", changefreq: "yearly", priority: "0.3" },
         ];
 

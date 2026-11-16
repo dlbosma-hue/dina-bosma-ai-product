@@ -14,6 +14,11 @@
 @import "@fontsource/figtree/latin-600.css";
 @import "@fontsource/figtree/latin-700.css";
 
+@import "@fontsource/bricolage-grotesque/latin-800.css";
+@import "@fontsource/bricolage-grotesque/latin-ext-800.css";
+@import "@fontsource/caveat/latin-600.css";
+@import "@fontsource/inter/latin-500.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -753,3 +758,124 @@ html:has(.humint-theme) { scroll-behavior: auto; }
     animation-iteration-count: 1 !important;
   }
 }
+
+@theme inline {
+  --color-rosa: var(--rosa);
+  --color-terra: var(--terra);
+  --color-midsky: var(--midsky);
+  --color-ink: var(--ink);
+  --font-display: var(--club-display);
+  --font-hand: var(--club-hand);
+}
+
+.noob-theme.new-club {
+--radius: 1rem;
+  --cream: oklch(0.9647 0.0198 77.32);
+  --rosa: oklch(0.8895 0.0429 19.77);
+  --terra: oklch(0.683 0.1197 36.78);
+  --sky: oklch(0.8895 0.0453 235.96);
+  --midsky: oklch(0.7857 0.0763 241.15);
+  --navy: oklch(0.2988 0.1201 260.07); /* dark blue #012868: headlines, labels, outlines */
+  --ink: oklch(0.4640 0.0991 243.63); /* ocean blue #1B5E8C: body text */
+
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --card: var(--cream);
+  --card-foreground: var(--ink);
+  --popover: var(--cream);
+  --popover-foreground: var(--ink);
+  --primary: var(--terra);
+  --primary-foreground: var(--navy);
+  --secondary: var(--rosa);
+  --secondary-foreground: var(--navy);
+  --muted: var(--rosa);
+  --muted-foreground: var(--ink);
+  --accent: var(--sky);
+  --accent-foreground: var(--navy);
+  --destructive: var(--terra);
+  --destructive-foreground: var(--navy);
+  --border: var(--rosa);
+  --input: var(--navy);
+  --ring: var(--terra);
+  --ease-brand: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --club-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --club-hand: "Caveat", cursive;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --ease-brand: cubic-bezier(0.2, 0.7, 0.2, 1);
+  background: var(--cream); color: var(--ink); font-family: var(--font-sans); font-size: 17px; line-height: 1.6; padding-top: 0;
+}
+
+.noob-theme.new-club main { padding-top: 0; }
+.noob-theme.new-club :is(h1,h2,h3,h4,h5,h6,.font-display) { font-family: var(--club-display); font-weight: 800; font-style: normal; font-synthesis: none; letter-spacing: 0; line-height: 1.05; overflow-wrap: anywhere; hyphens: auto; color: var(--navy); }
+.noob-theme.new-club :is(h1,h2,h3,h4,.font-display) em { font-style: normal; }
+.noob-theme.new-club :is(p,li,label,span,a,button,input,select,textarea) { color: inherit; }
+.noob-theme.new-club .text-ink { color: var(--ink); }
+.noob-theme.new-club .text-navy { color: var(--navy); }
+.noob-theme.new-club .text-terra { color: var(--terra); }
+.noob-theme.new-club .uppercase { font-family: var(--font-sans); }
+.noob-theme.new-club .text-base { font-size: 1rem; }
+.noob-theme.new-club .text-lg { font-size: 1.125rem; }
+.noob-theme.new-club .font-hand { font-family: var(--club-hand); }
+.noob-theme.new-club p { max-width: none; }
+.noob-theme.new-club a { text-underline-offset: 4px; }
+.noob-theme.new-club :focus-visible { outline: 2px solid var(--terra); outline-offset: 3px; }
+.noob-theme.new-club ::selection { background: var(--rosa); color: var(--navy); }
+.noob-theme.new-club .club-kw { font-style: normal; color: var(--terra); }
+.noob-theme.new-club .club-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--navy);
+}
+.noob-theme.new-club .club-rule-accent {
+  display: block; width: 40px; height: 3px; background: var(--terra); border-radius: 2px;
+}
+.noob-theme.new-club .club-btn-primary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
+  background: var(--terra); color: var(--navy); font-weight: 600; font-size: 1rem;
+  border: 2px solid var(--terra); text-align: center;
+  transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand), transform 120ms var(--ease-brand);
+  &:hover { background: var(--rosa); border-color: var(--terra); }
+  &:disabled { opacity: 0.6; cursor: not-allowed; }
+}
+.noob-theme.new-club .club-btn-secondary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
+  background: transparent; color: var(--navy); font-weight: 600; font-size: 1rem;
+  border: 2px solid var(--navy); text-align: center;
+  transition: background-color 120ms var(--ease-brand);
+  &:hover { background: var(--sky); }
+}
+.noob-theme.new-club .club-card-brand {
+  background: var(--cream); border: 2px solid var(--rosa); border-radius: 24px; padding: 24px; color: var(--ink);
+}
+.noob-theme.new-club .club-tag {
+  display: inline-flex; align-items: center; border-radius: 9999px; padding: 0.25rem 0.8rem;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  background: var(--rosa); color: var(--navy);
+}
+.noob-theme.new-club .club-field {
+  width: 100%; min-height: 52px; border-radius: 16px; border: 2px solid var(--navy);
+  background: var(--cream); color: var(--ink); padding: 0 1rem; font-size: 1rem;
+  &::placeholder { color: var(--ink); opacity: 0.55; }
+}
+.noob-theme.new-club .club-link-brand {
+  color: var(--navy); text-decoration: underline; text-decoration-color: var(--terra);
+  text-underline-offset: 4px; text-decoration-thickness: 2px;
+  transition: color 120ms var(--ease-brand);
+  &:hover { color: var(--terra); }
+}
+
+
+@keyframes club-ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.noob-theme.new-club .club-ticker-track { animation: club-ticker 60s linear infinite; width: max-content; }
+@keyframes club-fade-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.noob-theme.new-club .club-overlay-in { animation: club-fade-in 200ms var(--ease-brand); }
+.noob-theme.new-club button { height: auto; white-space: normal; }
+.noob-theme.new-club button[aria-pressed] { min-height: 44px; }
+.noob-theme.new-club header button { box-shadow: none; }
+@media (prefers-reduced-motion: reduce) { .noob-theme.new-club *, .noob-theme.new-club *::before, .noob-theme.new-club *::after { animation: none !important; transition: none !important; } }
