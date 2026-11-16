@@ -57,15 +57,15 @@ function NoobClub() {
         </div>
       </section>
 
-      <section id="top" className={`${sectionClass} bg-grapefruit`}>
+      <section id="top" className={`${sectionClass} bg-rose`}>
         <div className={sectionWrap}>
-          <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="retro-card mx-auto mb-10 block h-auto w-full max-w-3xl bg-cream p-4" width={1920} height={640} fetchPriority="high" />
+          <img src={lang === "en" ? logoEnAsset.url : logoDeAsset.url} alt={`${t.brand}: ${t.headerSubtitle}`} className="mx-auto mb-10 block h-auto w-full max-w-3xl" width={1920} height={640} fetchPriority="high" />
           <div className="max-w-3xl">
+            <span className="retro-tape bg-cream">{t.heroLabel}</span>
             <h1 className="mt-6 text-4xl md:text-6xl">{t.heroTitle} <span>{t.heroContinuation}</span></h1>
-            <span className="retro-tape noob-hero-script">{t.heroLabel}</span>
             <p className="mt-5 text-lg text-navy">{t.heroSubline}</p>
             <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap">
-              <a href="#checkliste" className={`${btnPrimary} retro-button-secondary`}>{t.heroPrimary}</a>
+              <a href="#checkliste" className={btnPrimary}>{t.heroPrimary}</a>
               <a href="#community" className="retro-button retro-button-secondary">{t.heroSecondary}</a>
             </div>
           </div>
@@ -220,7 +220,7 @@ function NoobClub() {
 
       <section id="werte" className={`${sectionClass} bg-sky`}>
         <div className={sectionWrap}>
-          <span className="retro-tape">{t.valuesEyebrow}</span>
+          <span className="retro-tape bg-rose">{t.valuesEyebrow}</span>
           <h2 className="mt-6 text-4xl md:text-5xl">{t.valuesTitle}</h2>
           <ul className="mt-8 grid gap-6 md:grid-cols-2">
             {t.values.map((v, i) => {

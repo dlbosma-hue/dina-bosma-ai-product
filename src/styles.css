@@ -2,8 +2,6 @@
 @source "../src";
 @import "tw-animate-css";
 @import "@fontsource/poppins/700.css";
-@import "@fontsource/poppins/latin-900.css";
-@import "@fontsource/caveat-brush/latin-400.css";
 @import "@fontsource/inter/400.css";
 @import "@fontsource/instrument-serif/400.css";
 @import "@fontsource/anton/latin-400.css";
@@ -229,7 +227,7 @@
   border: 1px solid var(--noob-border, var(--navy));
   background: var(--cream);
   color: var(--navy);
-  font-family: var(--noob-font-headline, var(--font-headline));
+  font-family: "Anton", sans-serif;
   font-weight: 400;
   line-height: 1.05;
   padding: 4px 20px 10px;
@@ -253,7 +251,7 @@
   background-color: var(--sky);
   background-image: repeating-linear-gradient(0deg, transparent 0 35px, color-mix(in srgb, var(--mid-sky) 33%, transparent) 35px 36px), repeating-linear-gradient(90deg, transparent 0 35px, color-mix(in srgb, var(--mid-sky) 33%, transparent) 35px 36px);
   color: var(--navy);
-  font-family: var(--noob-font-script, var(--font-tape));
+  font-family: "Architects Daughter", cursive;
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -271,7 +269,7 @@
   display: inline-block;
   max-width: 100%;
   color: var(--navy);
-  font-family: var(--noob-font-script, var(--font-note));
+  font-family: "Patrick Hand", cursive;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.2;
@@ -339,11 +337,7 @@ html:has(.noob-theme) {
   scroll-padding-top: 8rem;
 }
 
-/* Stil B (Poppins Black, Caveat Brush), Stand 16.11.2026. Alter Stil: Anton, Architects Daughter, Patrick Hand. */
 .noob-theme {
-  --noob-font-headline: "Poppins", sans-serif;
-  --noob-font-script: "Caveat Brush", cursive;
-  --noob-hero-headline: #FFFFFF;
   --radius: 0.5rem;
   --rose: #F8DCDA;
   --noob-border: #012868;
@@ -397,13 +391,10 @@ html:has(.noob-theme) {
 .noob-theme h5,
 .noob-theme h6 {
   color: var(--navy);
-  font-family: var(--noob-font-headline);
-  font-weight: 900;
-  text-transform: none;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.05;
 }
 
 .noob-theme p {
@@ -457,94 +448,10 @@ html:has(.noob-theme) {
 }
 
 .noob-theme .noob-h3-sans {
-  font-family: var(--noob-font-headline);
-  font-weight: 900;
-  text-transform: none;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-}
-
-.noob-theme .font-headline {
-  font-family: var(--noob-font-headline);
-  font-weight: 900;
-}
-
-.noob-theme h1,
-.noob-theme h2 {
-  font-family: var(--noob-font-headline);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -0.04em;
-  line-height: 0.92;
-}
-
-.noob-theme h1 { font-size: clamp(2.25rem, 8.5vw, 5.5rem); }
-.noob-theme h2 { font-size: clamp(1.75rem, 6vw, 3.5rem); }
-.noob-theme.noob-legal h1,
-.noob-theme.noob-legal h2 { text-transform: none; }
-
-.noob-theme .retro-chip,
-.noob-theme .retro-chip-accent {
-  border: 0;
-  background: none;
-  padding: 0;
-  transform: none;
-  font-family: var(--noob-font-headline);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -0.04em;
-  line-height: 0.92;
-  color: var(--navy);
-}
-
-.noob-theme .retro-tape {
-  padding: 0;
-  border: 0;
-  background: none;
-  clip-path: none;
-  font-family: var(--noob-font-script);
+  font-family: "Anton", sans-serif;
   font-weight: 400;
-  color: var(--link);
-  text-transform: none;
   letter-spacing: 0;
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
-  line-height: 1;
-  transform: rotate(-3deg);
-  transform-origin: left center;
-  overflow-wrap: break-word;
 }
-
-.noob-theme .retro-note {
-  font-family: var(--noob-font-script);
-  color: var(--link);
-  font-size: 1.5rem;
-  transform: rotate(-2deg);
-  transform-origin: left center;
-}
-
-.noob-theme .retro-button,
-.noob-theme .retro-pill {
-  border: 2px solid var(--noob-border);
-  border-radius: 999px;
-}
-
-.noob-theme .retro-card {
-  border: 2px solid var(--noob-border);
-  border-radius: 24px;
-  box-shadow: none;
-}
-
-.noob-theme :is(p, li, a, label, .retro-note) {
-  overflow-wrap: anywhere;
-}
-
-.noob-theme #top h1 { color: var(--noob-hero-headline); }
-.noob-theme #top .noob-hero-script {
-  display: block;
-  margin-top: -0.25em;
-  transform: rotate(-4deg);
-}
-
 
 .noob-badge {
   clip-path: circle(49% at 50% 50%);
