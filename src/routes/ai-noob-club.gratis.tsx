@@ -21,7 +21,7 @@ function Gratis() {
   return (
     <>
       <Section>
-        <SectionHead as="h1" club-eyebrow={g.club-eyebrow} title={g.h1} />
+        <SectionHead as="h1" eyebrow={g.eyebrow} title={g.h1} />
         <p className="mt-6 max-w-xl text-lg text-ink">{g.text}</p>
         <div id="ki-start-check" className="club-card-brand mt-12 flex scroll-mt-28 flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <PhotoFrame slot="startCheckCover" tilt={-2} className="w-32 shrink-0 sm:w-40" />

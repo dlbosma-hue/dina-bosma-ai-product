@@ -21,7 +21,7 @@ function Waitlist() {
         <div className="grid items-start gap-12 md:grid-cols-[1.1fr_1fr]">
           <div>
             <span className="club-rule-accent mb-5" aria-hidden />
-            <p className="club-eyebrow mb-5">{c.club-eyebrow}</p>
+            <p className="club-eyebrow mb-5">{c.eyebrow}</p>
             <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl"><Rich text={c.h1} /></h1>
             <p className="mt-6 max-w-lg text-lg text-ink">{c.text}</p>
             <div className="mt-10 hidden w-full max-w-xs md:block">

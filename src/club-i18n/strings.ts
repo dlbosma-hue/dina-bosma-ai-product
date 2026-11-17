@@ -56,7 +56,7 @@ const de = {
     contact: { title: "Kontakt: Workshop anfragen beim AI Noob Club", description: "Workshops für Gruppen und kleine Teams. Schreib Dina kurz, was du vorhast." },
   },
   home: {
-    club-eyebrow: "Für Frauen mit eigenem Business",
+    eyebrow: "Für Frauen mit eigenem Business",
     h1: "KI Schritt für Schritt, mit deiner eigenen *Stimme*.",
     sub: "Ich baue digitale KI-Produkte für mein eigenes Business und zeige dir dabei jeden Schritt. Ohne Fachchinesisch und ohne dass du wie ein Roboter klingst.",
     cta: "Gratis Starterpaket holen →",
@@ -152,7 +152,7 @@ const de = {
     formNote: "Eine E-Mail mit allen Infos. Kein Spam.",
   },
   gratis: {
-    club-eyebrow: "Gratis. Alles deins.",
+    eyebrow: "Gratis. Alles deins.",
     h1: "Drei Wege, *heute* anzufangen.",
     text: "Alles hier ist kostenlos. Such dir aus, womit du anfangen willst.",
     checkTitle: "KI-Start-Check",
@@ -170,7 +170,7 @@ const de = {
     guideReady: "Du bist drin. Hier ist dein Guide.",
   },
   ca: {
-    club-eyebrow: "Meine Content-Assistentin",
+    eyebrow: "Meine Content-Assistentin",
     h1: "Früh dabei sein und *weniger* zahlen.",
     text: "Es gibt 10 Beta-Plätze. Danach kommt der Frühzugang. Trag dich ein, dann erfährst du es als Erste.",
     formCaps: "Auf die Warteliste",
@@ -195,7 +195,7 @@ const de = {
     ],
   },
   contact: {
-    club-eyebrow: "Kontakt",
+    eyebrow: "Kontakt",
     h1: "Schreib *mir*.",
     text: "Für Workshops, Gruppen und kleine Teams. Erzähl mir kurz, was du vorhast, dann planen wir zusammen.",
     name: "Name",
@@ -284,7 +284,7 @@ const en: Dict = {
     contact: { title: "Contact: book a workshop with AI Noob Club", description: "Workshops for groups and small teams. Tell Dina briefly what you have in mind." },
   },
   home: {
-    club-eyebrow: "For women who run their own business",
+    eyebrow: "For women who run their own business",
     h1: "AI step by step, in your own *voice*.",
     sub: "I build digital AI products for my own business and show you every step along the way. No jargon, and you won't end up sounding like a robot.",
     cta: "Get the free starter kit →",
@@ -380,7 +380,7 @@ const en: Dict = {
     formNote: "One email with all the details. No spam.",
   },
   gratis: {
-    club-eyebrow: "Free. All yours.",
+    eyebrow: "Free. All yours.",
     h1: "Three ways to start *today*.",
     text: "Everything here is free. Pick where you want to begin.",
     checkTitle: "AI start check",
@@ -398,7 +398,7 @@ const en: Dict = {
     guideReady: "You're in. Here is your guide.",
   },
   ca: {
-    club-eyebrow: "My content assistant",
+    eyebrow: "My content assistant",
     h1: "Get in early and pay *less*.",
     text: "There are 10 beta spots. After that comes early access. Join the list and you'll be the first to know.",
     formCaps: "Join the waitlist",
@@ -423,7 +423,7 @@ const en: Dict = {
     ],
   },
   contact: {
-    club-eyebrow: "Contact",
+    eyebrow: "Contact",
     h1: "Write to *me*.",
     text: "For workshops, groups and small teams. Tell me briefly what you have in mind, and we'll plan it together.",
     name: "Name",

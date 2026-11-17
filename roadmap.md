@@ -32,4 +32,4 @@
 
 - [x] Replace Club About me paragraphs (DE/EN, 6 each, word for word)
 
-- [ ] Import uploaded Club site and all media under /ai-noob-club; preserve HUMINT, store forms privately, verify DE/EN and do not publish.
+- [x] Import uploaded Club site and all media under /ai-noob-club; preserve HUMINT, store forms privately, verify DE/EN and do not publish.

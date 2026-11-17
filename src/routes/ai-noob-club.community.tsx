@@ -50,7 +50,7 @@ function Community() {
       <Ticker items={c.ticker} />
 
       <Section>
-        <SectionHead club-eyebrow={c.whoEyebrow} title={c.whoH2} />
+        <SectionHead eyebrow={c.whoEyebrow} title={c.whoH2} />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {c.who.map((w) => (
             <div key={w} className="club-card-brand text-lg text-ink">{w}</div>
@@ -61,7 +61,7 @@ function Community() {
       </Section>
 
       <Section tone="rosa">
-        <SectionHead club-eyebrow={c.whatEyebrow} title={c.whatH2} />
+        <SectionHead eyebrow={c.whatEyebrow} title={c.whatH2} />
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {c.what.map((w, i) => {
             const Icon = whatIcons[i] ?? Users;
@@ -86,7 +86,7 @@ function Community() {
       </Section>
 
       <Section>
-        <SectionHead club-eyebrow={c.whyEyebrow} title={c.whyH2} />
+        <SectionHead eyebrow={c.whyEyebrow} title={c.whyH2} />
         <p className="mt-6 max-w-2xl text-lg text-ink">{c.whyText}</p>
         <div className="club-card-brand mt-14 flex flex-col items-center gap-8 sm:flex-row">
           <RoundPortrait size={128} />
@@ -122,7 +122,7 @@ function Community() {
 
       <Section id="platz">
         <div className="grid items-start gap-12 md:grid-cols-[1fr_1.1fr]">
-          <SectionHead club-eyebrow={c.doorEyebrow} title={c.doorH2} />
+          <SectionHead eyebrow={c.doorEyebrow} title={c.doorH2} />
           <div className="rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
             <SignupForm list="community" note={c.formNote} />
           </div>

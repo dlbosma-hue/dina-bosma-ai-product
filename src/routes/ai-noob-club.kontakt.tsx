@@ -16,7 +16,7 @@ function Contact() {
     <Section>
       <div className="grid gap-12 md:grid-cols-[1fr_1.3fr]">
         <div>
-          <SectionHead as="h1" club-eyebrow={c.club-eyebrow} title={c.h1} />
+          <SectionHead as="h1" eyebrow={c.eyebrow} title={c.h1} />
           <p className="mt-6 max-w-md text-lg text-ink">{c.text}</p>
         </div>
         <div className="rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">

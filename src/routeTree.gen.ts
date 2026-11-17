@@ -16,13 +16,18 @@ import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as KiWorkflowCheckRouteImport } from './routes/ki-workflow-check'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as AiNoobClubIndexRouteImport } from './routes/ai-noob-club.index'
+import { Route as AiNoobClubCommunityRouteImport } from './routes/ai-noob-club.community'
+import { Route as AiNoobClubContentAssistentinRouteImport } from './routes/ai-noob-club.content-assistentin'
+import { Route as AiNoobClubGratisRouteImport } from './routes/ai-noob-club.gratis'
+import { Route as AiNoobClubKontaktRouteImport } from './routes/ai-noob-club.kontakt'
 import { Route as AiNoobClubChecklisteRouteImport } from './routes/ai-noob-club_.checkliste'
-import { Route as AiNoobClubContentAssistentinRouteImport } from './routes/ai-noob-club_.content-assistentin'
 import { Route as AiNoobClubDankeRouteImport } from './routes/ai-noob-club_.danke'
 import { Route as AiNoobClubDatenschutzRouteImport } from './routes/ai-noob-club_.datenschutz'
 import { Route as AiNoobClubLinksRouteImport } from './routes/ai-noob-club_.links'
 import { Route as AiNoobClubStarterSetRouteImport } from './routes/ai-noob-club_.starter-set'
 import { Route as AiNoobClubWiderrufRouteImport } from './routes/ai-noob-club_.widerruf'
+import { Route as ApiPublicClubFormRouteImport } from './routes/api/public/club-form'
 import { Route as ApiPublicSignupRouteImport } from './routes/api/public/signup'
 import { Route as ApiPublicWaitlistRouteImport } from './routes/api/public/waitlist'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
@@ -62,17 +67,37 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AiNoobClubIndexRoute = AiNoobClubIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AiNoobClubRoute,
+} as any)
+const AiNoobClubCommunityRoute = AiNoobClubCommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => AiNoobClubRoute,
+} as any)
+const AiNoobClubContentAssistentinRoute =
+  AiNoobClubContentAssistentinRouteImport.update({
+    id: '/content-assistentin',
+    path: '/content-assistentin',
+    getParentRoute: () => AiNoobClubRoute,
+  } as any)
+const AiNoobClubGratisRoute = AiNoobClubGratisRouteImport.update({
+  id: '/gratis',
+  path: '/gratis',
+  getParentRoute: () => AiNoobClubRoute,
+} as any)
+const AiNoobClubKontaktRoute = AiNoobClubKontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => AiNoobClubRoute,
+} as any)
 const AiNoobClubChecklisteRoute = AiNoobClubChecklisteRouteImport.update({
   id: '/ai-noob-club_/checkliste',
   path: '/ai-noob-club/checkliste',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AiNoobClubContentAssistentinRoute =
-  AiNoobClubContentAssistentinRouteImport.update({
-    id: '/ai-noob-club_/content-assistentin',
-    path: '/ai-noob-club/content-assistentin',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const AiNoobClubDankeRoute = AiNoobClubDankeRouteImport.update({
   id: '/ai-noob-club_/danke',
   path: '/ai-noob-club/danke',
@@ -98,6 +123,11 @@ const AiNoobClubWiderrufRoute = AiNoobClubWiderrufRouteImport.update({
   path: '/ai-noob-club/widerruf',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicClubFormRoute = ApiPublicClubFormRouteImport.update({
+  id: '/api/public/club-form',
+  path: '/api/public/club-form',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicSignupRoute = ApiPublicSignupRouteImport.update({
   id: '/api/public/signup',
   path: '/api/public/signup',
@@ -117,38 +147,47 @@ const LovableEmailTransactionalPreviewRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/ai-noob-club': typeof AiNoobClubRoute
+  '/ai-noob-club': typeof AiNoobClubRouteWithChildren
   '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/ai-noob-club/checkliste': typeof AiNoobClubChecklisteRoute
+  '/ai-noob-club/community': typeof AiNoobClubCommunityRoute
   '/ai-noob-club/content-assistentin': typeof AiNoobClubContentAssistentinRoute
+  '/ai-noob-club/gratis': typeof AiNoobClubGratisRoute
+  '/ai-noob-club/kontakt': typeof AiNoobClubKontaktRoute
+  '/ai-noob-club/checkliste': typeof AiNoobClubChecklisteRoute
   '/ai-noob-club/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club/datenschutz': typeof AiNoobClubDatenschutzRoute
   '/ai-noob-club/links': typeof AiNoobClubLinksRoute
   '/ai-noob-club/starter-set': typeof AiNoobClubStarterSetRoute
   '/ai-noob-club/widerruf': typeof AiNoobClubWiderrufRoute
+  '/ai-noob-club/': typeof AiNoobClubIndexRoute
+  '/api/public/club-form': typeof ApiPublicClubFormRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/ai-noob-club': typeof AiNoobClubRoute
   '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/ai-noob-club/checkliste': typeof AiNoobClubChecklisteRoute
+  '/ai-noob-club/community': typeof AiNoobClubCommunityRoute
   '/ai-noob-club/content-assistentin': typeof AiNoobClubContentAssistentinRoute
+  '/ai-noob-club/gratis': typeof AiNoobClubGratisRoute
+  '/ai-noob-club/kontakt': typeof AiNoobClubKontaktRoute
+  '/ai-noob-club/checkliste': typeof AiNoobClubChecklisteRoute
   '/ai-noob-club/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club/datenschutz': typeof AiNoobClubDatenschutzRoute
   '/ai-noob-club/links': typeof AiNoobClubLinksRoute
   '/ai-noob-club/starter-set': typeof AiNoobClubStarterSetRoute
   '/ai-noob-club/widerruf': typeof AiNoobClubWiderrufRoute
+  '/ai-noob-club': typeof AiNoobClubIndexRoute
+  '/api/public/club-form': typeof ApiPublicClubFormRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -156,19 +195,24 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/ai-noob-club': typeof AiNoobClubRoute
+  '/ai-noob-club': typeof AiNoobClubRouteWithChildren
   '/ai-noob-club-anmeldung': typeof AiNoobClubAnmeldungRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ki-workflow-check': typeof KiWorkflowCheckRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/ai-noob-club/community': typeof AiNoobClubCommunityRoute
+  '/ai-noob-club/content-assistentin': typeof AiNoobClubContentAssistentinRoute
+  '/ai-noob-club/gratis': typeof AiNoobClubGratisRoute
+  '/ai-noob-club/kontakt': typeof AiNoobClubKontaktRoute
   '/ai-noob-club_/checkliste': typeof AiNoobClubChecklisteRoute
-  '/ai-noob-club_/content-assistentin': typeof AiNoobClubContentAssistentinRoute
   '/ai-noob-club_/danke': typeof AiNoobClubDankeRoute
   '/ai-noob-club_/datenschutz': typeof AiNoobClubDatenschutzRoute
   '/ai-noob-club_/links': typeof AiNoobClubLinksRoute
   '/ai-noob-club_/starter-set': typeof AiNoobClubStarterSetRoute
   '/ai-noob-club_/widerruf': typeof AiNoobClubWiderrufRoute
+  '/ai-noob-club/': typeof AiNoobClubIndexRoute
+  '/api/public/club-form': typeof ApiPublicClubFormRoute
   '/api/public/signup': typeof ApiPublicSignupRoute
   '/api/public/waitlist': typeof ApiPublicWaitlistRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -183,32 +227,41 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
-    | '/ai-noob-club/checkliste'
+    | '/ai-noob-club/community'
     | '/ai-noob-club/content-assistentin'
+    | '/ai-noob-club/gratis'
+    | '/ai-noob-club/kontakt'
+    | '/ai-noob-club/checkliste'
     | '/ai-noob-club/danke'
     | '/ai-noob-club/datenschutz'
     | '/ai-noob-club/links'
     | '/ai-noob-club/starter-set'
     | '/ai-noob-club/widerruf'
+    | '/ai-noob-club/'
+    | '/api/public/club-form'
     | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/ai-noob-club'
     | '/ai-noob-club-anmeldung'
     | '/datenschutz'
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
-    | '/ai-noob-club/checkliste'
+    | '/ai-noob-club/community'
     | '/ai-noob-club/content-assistentin'
+    | '/ai-noob-club/gratis'
+    | '/ai-noob-club/kontakt'
+    | '/ai-noob-club/checkliste'
     | '/ai-noob-club/danke'
     | '/ai-noob-club/datenschutz'
     | '/ai-noob-club/links'
     | '/ai-noob-club/starter-set'
     | '/ai-noob-club/widerruf'
+    | '/ai-noob-club'
+    | '/api/public/club-form'
     | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
@@ -221,13 +274,18 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/ki-workflow-check'
     | '/sitemap.xml'
+    | '/ai-noob-club/community'
+    | '/ai-noob-club/content-assistentin'
+    | '/ai-noob-club/gratis'
+    | '/ai-noob-club/kontakt'
     | '/ai-noob-club_/checkliste'
-    | '/ai-noob-club_/content-assistentin'
     | '/ai-noob-club_/danke'
     | '/ai-noob-club_/datenschutz'
     | '/ai-noob-club_/links'
     | '/ai-noob-club_/starter-set'
     | '/ai-noob-club_/widerruf'
+    | '/ai-noob-club/'
+    | '/api/public/club-form'
     | '/api/public/signup'
     | '/api/public/waitlist'
     | '/lovable/email/transactional/preview'
@@ -235,19 +293,19 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AiNoobClubRoute: typeof AiNoobClubRoute
+  AiNoobClubRoute: typeof AiNoobClubRouteWithChildren
   AiNoobClubAnmeldungRoute: typeof AiNoobClubAnmeldungRoute
   DatenschutzRoute: typeof DatenschutzRoute
   ImpressumRoute: typeof ImpressumRoute
   KiWorkflowCheckRoute: typeof KiWorkflowCheckRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AiNoobClubChecklisteRoute: typeof AiNoobClubChecklisteRoute
-  AiNoobClubContentAssistentinRoute: typeof AiNoobClubContentAssistentinRoute
   AiNoobClubDankeRoute: typeof AiNoobClubDankeRoute
   AiNoobClubDatenschutzRoute: typeof AiNoobClubDatenschutzRoute
   AiNoobClubLinksRoute: typeof AiNoobClubLinksRoute
   AiNoobClubStarterSetRoute: typeof AiNoobClubStarterSetRoute
   AiNoobClubWiderrufRoute: typeof AiNoobClubWiderrufRoute
+  ApiPublicClubFormRoute: typeof ApiPublicClubFormRoute
   ApiPublicSignupRoute: typeof ApiPublicSignupRoute
   ApiPublicWaitlistRoute: typeof ApiPublicWaitlistRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
@@ -304,18 +362,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-noob-club/': {
+      id: '/ai-noob-club/'
+      path: '/'
+      fullPath: '/ai-noob-club/'
+      preLoaderRoute: typeof AiNoobClubIndexRouteImport
+      parentRoute: typeof AiNoobClubRoute
+    }
+    '/ai-noob-club/community': {
+      id: '/ai-noob-club/community'
+      path: '/community'
+      fullPath: '/ai-noob-club/community'
+      preLoaderRoute: typeof AiNoobClubCommunityRouteImport
+      parentRoute: typeof AiNoobClubRoute
+    }
+    '/ai-noob-club/content-assistentin': {
+      id: '/ai-noob-club/content-assistentin'
+      path: '/content-assistentin'
+      fullPath: '/ai-noob-club/content-assistentin'
+      preLoaderRoute: typeof AiNoobClubContentAssistentinRouteImport
+      parentRoute: typeof AiNoobClubRoute
+    }
+    '/ai-noob-club/gratis': {
+      id: '/ai-noob-club/gratis'
+      path: '/gratis'
+      fullPath: '/ai-noob-club/gratis'
+      preLoaderRoute: typeof AiNoobClubGratisRouteImport
+      parentRoute: typeof AiNoobClubRoute
+    }
+    '/ai-noob-club/kontakt': {
+      id: '/ai-noob-club/kontakt'
+      path: '/kontakt'
+      fullPath: '/ai-noob-club/kontakt'
+      preLoaderRoute: typeof AiNoobClubKontaktRouteImport
+      parentRoute: typeof AiNoobClubRoute
+    }
     '/ai-noob-club_/checkliste': {
       id: '/ai-noob-club_/checkliste'
       path: '/ai-noob-club/checkliste'
       fullPath: '/ai-noob-club/checkliste'
       preLoaderRoute: typeof AiNoobClubChecklisteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ai-noob-club_/content-assistentin': {
-      id: '/ai-noob-club_/content-assistentin'
-      path: '/ai-noob-club/content-assistentin'
-      fullPath: '/ai-noob-club/content-assistentin'
-      preLoaderRoute: typeof AiNoobClubContentAssistentinRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ai-noob-club_/danke': {
@@ -353,6 +439,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AiNoobClubWiderrufRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/club-form': {
+      id: '/api/public/club-form'
+      path: '/api/public/club-form'
+      fullPath: '/api/public/club-form'
+      preLoaderRoute: typeof ApiPublicClubFormRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/signup': {
       id: '/api/public/signup'
       path: '/api/public/signup'
@@ -377,21 +470,41 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface AiNoobClubRouteChildren {
+  AiNoobClubCommunityRoute: typeof AiNoobClubCommunityRoute
+  AiNoobClubContentAssistentinRoute: typeof AiNoobClubContentAssistentinRoute
+  AiNoobClubGratisRoute: typeof AiNoobClubGratisRoute
+  AiNoobClubKontaktRoute: typeof AiNoobClubKontaktRoute
+  AiNoobClubIndexRoute: typeof AiNoobClubIndexRoute
+}
+
+const AiNoobClubRouteChildren: AiNoobClubRouteChildren = {
+  AiNoobClubCommunityRoute: AiNoobClubCommunityRoute,
+  AiNoobClubContentAssistentinRoute: AiNoobClubContentAssistentinRoute,
+  AiNoobClubGratisRoute: AiNoobClubGratisRoute,
+  AiNoobClubKontaktRoute: AiNoobClubKontaktRoute,
+  AiNoobClubIndexRoute: AiNoobClubIndexRoute,
+}
+
+const AiNoobClubRouteWithChildren = AiNoobClubRoute._addFileChildren(
+  AiNoobClubRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AiNoobClubRoute: AiNoobClubRoute,
+  AiNoobClubRoute: AiNoobClubRouteWithChildren,
   AiNoobClubAnmeldungRoute: AiNoobClubAnmeldungRoute,
   DatenschutzRoute: DatenschutzRoute,
   ImpressumRoute: ImpressumRoute,
   KiWorkflowCheckRoute: KiWorkflowCheckRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AiNoobClubChecklisteRoute: AiNoobClubChecklisteRoute,
-  AiNoobClubContentAssistentinRoute: AiNoobClubContentAssistentinRoute,
   AiNoobClubDankeRoute: AiNoobClubDankeRoute,
   AiNoobClubDatenschutzRoute: AiNoobClubDatenschutzRoute,
   AiNoobClubLinksRoute: AiNoobClubLinksRoute,
   AiNoobClubStarterSetRoute: AiNoobClubStarterSetRoute,
   AiNoobClubWiderrufRoute: AiNoobClubWiderrufRoute,
+  ApiPublicClubFormRoute: ApiPublicClubFormRoute,
   ApiPublicSignupRoute: ApiPublicSignupRoute,
   ApiPublicWaitlistRoute: ApiPublicWaitlistRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,

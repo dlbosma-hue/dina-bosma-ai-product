@@ -17,12 +17,12 @@ export function Section({ tone = "cream", id, children, className = "", tightBot
   );
 }
 
-export function SectionHead({ club-eyebrow, title, center, as = "h2" }: { club-eyebrow?: string; title: string; center?: boolean; as?: "h1" | "h2" }) {
+export function SectionHead({ eyebrow, title, center, as = "h2" }: { eyebrow?: string; title: string; center?: boolean; as?: "h1" | "h2" }) {
   const H = as;
   return (
     <div className={center ? "flex flex-col items-center text-center" : ""}>
       <span className="club-rule-accent mb-5" aria-hidden />
-      {club-eyebrow && <p className="club-eyebrow mb-4">{club-eyebrow}</p>}
+      {eyebrow && <p className="club-eyebrow mb-4">{eyebrow}</p>}
       <H className={`text-navy ${as === "h1" ? "text-4xl sm:text-5xl md:text-6xl" : "text-3xl sm:text-4xl"}`}>
         <Rich text={title} />
       </H>

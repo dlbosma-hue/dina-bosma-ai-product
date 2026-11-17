@@ -26,7 +26,7 @@ function Home() {
     <>
       <Section>
         <div className="mx-auto max-w-3xl text-center">
-          <p className="club-eyebrow mb-6">{h.club-eyebrow}</p>
+          <p className="club-eyebrow mb-6">{h.eyebrow}</p>
           <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl">
             <Rich text={h.h1} />
           </h1>
@@ -79,7 +79,7 @@ function Home() {
       </Section>
 
       <Section>
-        <SectionHead club-eyebrow={h.freeEyebrow} title={h.freeH2} />
+        <SectionHead eyebrow={h.freeEyebrow} title={h.freeH2} />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {h.free.map((c, i) => (
             <article key={c.title} className="club-card-brand flex flex-col">
@@ -97,7 +97,7 @@ function Home() {
       </Section>
 
       <Section tone="rosa">
-        <SectionHead club-eyebrow={h.prodEyebrow} title={h.prodH2} />
+        <SectionHead eyebrow={h.prodEyebrow} title={h.prodH2} />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <article className="club-card-brand flex flex-col">
             <PhotoFrame slot="promptPackCover" tilt={-1.5} aspect="aspect-[4/3]" className="mb-6" />
@@ -116,7 +116,7 @@ function Home() {
 
       <Section className="border-t-2 border-rosa" tightBottom>
         <div className="mx-auto max-w-2xl text-center">
-          <SectionHead club-eyebrow={h.meetEyebrow} title={h.meetH2} center />
+          <SectionHead eyebrow={h.meetEyebrow} title={h.meetH2} center />
           <p className="mt-6 text-lg text-ink">{h.meetText}</p>
           <Ext href={links.meetup} className="club-btn-primary mt-8">{h.meetCta}</Ext>
           <p className="mt-6 text-ink">{h.workshopQ}</p>
@@ -130,7 +130,7 @@ function Home() {
       </Section>
 
       <Section tightBottom>
-        <SectionHead club-eyebrow={h.valuesEyebrow} title={h.valuesH2} center />
+        <SectionHead eyebrow={h.valuesEyebrow} title={h.valuesH2} center />
         <div className="mt-14"><ValueCards /></div>
         <p className="mt-10 flex items-center justify-center gap-2 text-center font-medium text-navy">
           <ShieldCheck className="h-5 w-5 text-navy" strokeWidth={1.5} aria-hidden />
