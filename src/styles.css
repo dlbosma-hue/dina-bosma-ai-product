@@ -855,6 +855,15 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club .club-card-brand {
   background: var(--cream); border: 2px solid var(--rosa); border-radius: 24px; padding: 24px; color: var(--ink);
 }
+/* Ruhigere Karten nur fuer die Link-in-Bio-Seite, angelehnt an links.humint.site */
+.noob-theme.new-club .club-bio-card {
+  display: block; width: 100%; text-align: left;
+  background: var(--cream); border: 1px solid color-mix(in oklch, var(--navy) 18%, transparent);
+  border-radius: 24px; padding: 20px 24px; color: var(--ink);
+  transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand);
+  &:hover { background: var(--rosa); border-color: color-mix(in oklch, var(--navy) 30%, transparent); }
+  &:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+}
 .noob-theme.new-club .club-tag {
   display: inline-flex; align-items: center; border-radius: 9999px; padding: 0.25rem 0.8rem;
   font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;

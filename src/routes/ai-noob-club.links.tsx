@@ -59,7 +59,7 @@ function LinksPage() {
   const { lang } = useLang();
   const c = copy[lang];
   useEffect(() => { document.title = lang === "de" ? "AI Noob Club: Alle Links" : "AI Noob Club: All links"; }, [lang]);
-  const card = "club-card-brand block w-full text-left transition-transform hover:-translate-y-0.5";
+  const card = "club-bio-card";
   const Body = ({ k, ext }: { k: keyof typeof c.items; ext?: boolean }) => (
     <>
       <span className="block text-xl text-navy">{c.items[k][0]}</span>
