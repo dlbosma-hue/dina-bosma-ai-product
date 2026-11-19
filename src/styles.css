@@ -771,7 +771,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club {
 --radius: 1rem;
   --cream: oklch(0.9647 0.0198 77.32);
-  --rosa: oklch(0.8895 0.0429 19.77);
+  --rosa: oklch(0.932 0.029 19.77); /* lighter pink, Stand 19.11.2026; vorher oklch(0.8895 0.0429 19.77) */
   --terra: oklch(0.683 0.1197 36.78);
   --sky: oklch(0.8895 0.0453 235.96);
   --midsky: oklch(0.7857 0.0763 241.15);
