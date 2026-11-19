@@ -8,7 +8,7 @@ export function ClubCallout() {
   const { lang, t } = useLanguage();
   return (
     <section id="club-callout" className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-24">
-      <div className="rounded-[24px] border-2 border-link !bg-rose !p-7 shadow-none md:!p-12">
+      <div className="rounded-[24px] border-2 border-link !bg-club-callout-pink !p-7 shadow-none md:!p-12">
         <img
           src={lang === "en" ? logoEnAsset.url : logoDeAsset.url}
           alt={lang === "en" ? "AI Noob Club: You're the boss. AI is new to the team." : "AI Noob Club: Du bist die Chefin. KI ist neu im Team."}
