@@ -6,6 +6,14 @@ export const signupSchema = z.object({
   consent: z.literal(true, { message: "consent" }),
 });
 
+export const communitySignupSchema = signupSchema.extend({
+  firstName: z.string().trim().max(80, "name").default(""),
+});
+
+export function signupSchemaFor(list: string) {
+  return list === "community" ? communitySignupSchema : signupSchema;
+}
+
 export const contactSchema = z.object({
   name: z.string().trim().min(1, "fullName").max(100, "fullName"),
   email: z.string().trim().email("email").max(255, "email"),

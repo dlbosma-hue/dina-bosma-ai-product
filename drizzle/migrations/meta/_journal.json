@@ -29,6 +29,13 @@
       "when": 1794865372806,
       "tag": "0003_club_import_forms",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1795172858588,
+      "tag": "0004_optional_community_first_name",
+      "breakpoints": true
     }
   ]
 }

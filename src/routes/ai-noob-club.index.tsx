@@ -109,7 +109,7 @@ function Home() {
             <PhotoFrame slot="contentAssistentinCover" tilt={1.5} aspect="aspect-[4/3]" className="mb-6" />
             <h3 className="text-2xl text-navy">{p1.title}</h3>
             <p className="mt-3 flex-1 text-ink">{p1.text}</p>
-            <Link to="/ai-noob-club/content-assistentin" className="club-btn-primary mt-6 self-start">{p1.cta}</Link>
+            <Link to="/ai-noob-club/community" className="club-btn-primary mt-6 self-start">{p1.cta}</Link>
           </article>
         </div>
       </Section>

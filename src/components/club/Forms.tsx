@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 
 import { links } from "@/config/links";
 import { useLang } from "@/club-i18n/lang";
-import { contactSchema, signupSchema } from "@/lib/imported-club-forms";
+import { contactSchema, signupSchemaFor } from "@/lib/imported-club-forms";
 import { Ext } from "./Ext";
 
 type Errs = { firstName?: string | undefined; email?: string | undefined; consent?: string | undefined; name?: string | undefined; message?: string | undefined };
@@ -84,6 +84,8 @@ export function SignupForm({
 }) {
   const { t, lang } = useLang();
   const f = t.form;
+  const community = list === "community";
+  const c = t.community;
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -95,8 +97,8 @@ export function SignupForm({
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    if (hp) return setStatus("done");
-    const parsed = signupSchema.safeParse({ firstName, email, consent });
+    if (hp) return setStatus("error");
+    const parsed = signupSchemaFor(list).safeParse({ firstName, email, consent });
     if (!parsed.success) {
       const next: Errs = {};
       for (const i of parsed.error.issues) next[String(i.path[0]) as keyof Errs] ??= msg(i.message);
@@ -109,14 +111,15 @@ export function SignupForm({
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ kind: "signup", ...parsed.data, list, lang }),
       });
-      setStatus(response.ok ? "done" : "error");
+      const result = await response.json() as { ok?: boolean };
+      setStatus(response.ok && result.ok === true ? "done" : "error");
     } catch { setStatus("error"); }
   }
 
   if (status === "done")
     return (
       <div className="flex flex-col gap-4">
-        <Success text={successText ?? f.success} />
+        <Success text={successText ?? (community ? c.success : f.success)} />
         {successAction}
       </div>
     );
@@ -124,18 +127,18 @@ export function SignupForm({
   return (
     <form onSubmit={onSubmit} noValidate className="relative flex flex-col gap-5">
       <Honeypot value={hp} onChange={setHp} label={f.honeypot} />
-      <Field id={`${id}-name`} label={f.firstName} error={errs.firstName}>
-        <input id={`${id}-name`} className="club-field" autoComplete="given-name" value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={80} aria-invalid={!!errs.firstName} />
+      <Field id={`${id}-name`} label={community ? c.firstName : f.firstName} error={errs.firstName}>
+        <input id={`${id}-name`} className="club-field" autoComplete="given-name" required={!community} value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={80} aria-invalid={!!errs.firstName} />
       </Field>
       <Field id={`${id}-email`} label={f.email} error={errs.email}>
-        <input id={`${id}-email`} type="email" className="club-field" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={255} aria-invalid={!!errs.email} />
+        <input id={`${id}-email`} type="email" required className="club-field" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={255} aria-invalid={!!errs.email} />
       </Field>
-      <Consent id={`${id}-consent`} checked={consent} onChange={setConsent} error={errs.consent} prefix={f.consentA} />
+      <Consent id={`${id}-consent`} checked={consent} onChange={setConsent} error={errs.consent} prefix={community ? c.consentA : f.consentA} />
       <Button variant="ghost" type="submit" className="club-btn-primary w-full uppercase tracking-[0.12em]" disabled={status === "sending"}>
-        {status === "sending" ? f.sending : f.submit}
+        {status === "sending" ? f.sending : community ? c.cta : f.submit}
       </Button>
       {status === "error" && <p role="alert" className="text-sm font-medium text-terra">{f.error}</p>}
-      <p className="text-center text-sm text-ink">{note}</p>
+      {note && <p className="text-center text-sm text-ink">{note}</p>}
     </form>
   );
 }

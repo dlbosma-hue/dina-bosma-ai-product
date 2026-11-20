@@ -7,12 +7,14 @@ const rounds: Record<string, string> = {
   'edit-guide': 'Gratis Edit-Guide',
 }
 
-function Email({ name, email, source, runde }: { name?: string; email?: string; source?: string; runde?: string }) {
-  const list = source === 'checkliste' ? 'Gratis-Starterpaket' : rounds[runde ?? ''] ?? 'Gründerinnen-Community'
+function Email({ name, email, source, runde, signupList }: { name?: string; email?: string; source?: string; runde?: string; signupList?: string }) {
+  const combined = signupList === 'community'
+  const list = combined ? 'Community & Beta: Content-Assistentin' : source === 'checkliste' ? 'Gratis-Starterpaket' : rounds[runde ?? ''] ?? 'Gründerinnen-Community'
   return <Html lang="de"><Head /><Preview>Neue Club-Registrierung</Preview><Body style={main}>
     <Container style={container}><Heading>Neue Club-Registrierung</Heading>
       <Text>{list}</Text>
-      <Text>Name: {name || 'Nicht angegeben'}<br />E-Mail: {email}<br />Runde: {runde || 'Starterpaket'}</Text>
+      <Text>Name: {name || 'Nicht angegeben'}<br />E-Mail: {email}{!combined && <><br />Runde: {runde || 'Starterpaket'}</>}</Text>
+      {combined && <Text>Anmeldung eingegangen. Bitte Kapazität und Aufnahme persönlich prüfen. Die Produkt-Warteliste wird nicht automatisch ergänzt.</Text>}
     </Container></Body></Html>
 }
 export const template = {

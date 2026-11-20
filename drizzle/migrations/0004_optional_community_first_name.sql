@@ -1,0 +1,2 @@
+ALTER TABLE public.waitlist_submissions DROP CONSTRAINT waitlist_submissions_name_check;
+ALTER TABLE public.waitlist_submissions ADD CONSTRAINT waitlist_submissions_name_check CHECK (char_length(name) <= 100 AND (signup_list = 'community' OR runde = 'edit-guide' OR char_length(name) >= 1));

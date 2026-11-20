@@ -14,7 +14,8 @@ const copy = {
     ext: "Öffnet eine neue Seite",
     items: {
       startcheck: ["Kostenloses 1:1: KI-Start-Check", "In 20 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag."],
-      course: ["Kurs: Meine Content-Assistentin", "Alles zum Kurs und Platz sichern."],
+      course: ["Community & Beta: Content-Assistentin", "Input geben, später die Beta testen. Eine Anmeldung."],
+      product: ["Produkt-Warteliste: Content-Assistentin", "Auf den fertigen Kurs warten, ohne mitzuentwickeln."],
       starter: ["Gratis Starterpaket", "KI-Basics und Wochenplan, gratis per E-Mail."],
       guide: ["Gratis: Edit-Guide Reels schneiden mit Claude", "Kostenloser PDF-Guide."],
       prompts: ["99 Prompts für authentische KI-Fotos", "PDF zum Sofort-Download auf Etsy."],
@@ -29,7 +30,8 @@ const copy = {
     ext: "Opens a new page",
     items: {
       startcheck: ["Free 1:1: AI Start Check", "In 20 minutes, we find three simple AI ideas for your working day."],
-      course: ["Course: My Content Assistant", "Everything about the course and how to join."],
+      course: ["Community & Beta: Content-Assistentin", "Share your input, test the beta later. One signup."],
+      product: ["Product waitlist: Content-Assistentin", "Wait for the finished course without taking part in development."],
       starter: ["Free starter pack", "AI basics and a weekly plan, free by email."],
       guide: ["Free: Edit Guide for cutting Reels with Claude", "Free PDF guide."],
       prompts: ["99 prompts for authentic AI photos", "Instant PDF download on Etsy."],
@@ -74,7 +76,8 @@ function LinksPage() {
         <p className="mt-4 text-center text-ink">{c.intro}</p>
         <ul className="mt-8 flex flex-col gap-4">
           <li><Ext href={links.calendlyStartCheck} className={card}><Body k="startcheck" ext /></Ext></li>
-          <li><a href={`/ai-noob-club/content-assistentin${utm("bio_kurs")}`} className={card}><Body k="course" /></a></li>
+          <li><a href={`/ai-noob-club/community${utm("bio_community")}#platz`} className={card}><Body k="course" /></a></li>
+          <li><a href={`/ai-noob-club/content-assistentin${utm("bio_kurs")}`} className={card}><Body k="product" /></a></li>
           <li><a href={`/ai-noob-club/gratis${utm("bio_starterpaket")}#starterpaket`} className={card}><Body k="starter" /></a></li>
           <li><a href={`/ai-noob-club/gratis${utm("bio_editguide")}#edit-guide`} className={card}><Body k="guide" /></a></li>
           <li><Ext href={links.etsy} className={card}><Body k="prompts" ext /></Ext></li>
