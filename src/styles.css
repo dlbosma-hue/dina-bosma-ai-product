@@ -923,8 +923,8 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 }
 .noob-theme.new-club .club-humint-block .club-btn-primary {
   font-family: "Figtree", sans-serif;
-  background: var(--cream); border-color: var(--noob-border); color: var(--navy);
-  &:hover { background: var(--sky); border-color: var(--noob-border); color: var(--navy); }
+  background: var(--sky); border-color: var(--noob-border); color: var(--navy);
+  &:hover { background: var(--midsky); border-color: var(--noob-border); color: var(--navy); }
 }
 .noob-theme.new-club .club-humint-link { font-family: "Instrument Serif", Georgia, serif; }
 @media (max-width: 639px) { .noob-theme.new-club header .club-btn-primary.hidden { display: none; } }
