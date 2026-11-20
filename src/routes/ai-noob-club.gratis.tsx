@@ -49,39 +49,32 @@ function Gratis() {
       </Section>
 
       <Section tone="rosa" id="starterpaket">
-        <div className="grid items-start gap-12 md:grid-cols-[1fr_1.1fr]">
-          <div>
-            <h2 className="text-3xl text-navy sm:text-4xl">{g.starterTitle}</h2>
-            <p className="mt-4 text-lg text-ink">{g.starterText}</p>
-            <div className="mt-8 w-full max-w-xs">
+        <div className="grid grid-cols-2 items-start gap-5 sm:gap-12">
+          <div className="min-w-0">
+            <div className="mx-auto mb-8 w-full max-w-xs">
               <PhotoFrame slot="startpaketCover" tilt={-2} aspect="aspect-[4/3]" />
             </div>
+            <h2 className="text-3xl text-navy sm:text-4xl">{g.starterTitle}</h2>
+            <p className="mt-4 text-lg text-ink">{g.starterText}</p>
           </div>
-          <div id="guide-signup" className="scroll-mt-28 rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
+          <div id="edit-guide" className="min-w-0 scroll-mt-28">
+            <div className="mx-auto mb-8 w-full max-w-xs">
+              <PhotoFrame slot="editGuideCover" tilt={2} aspect="aspect-[4/3]" />
+            </div>
+            <h2 className="text-3xl text-navy sm:text-4xl">{g.guideTitle}</h2>
+            <p className="mt-4 text-lg text-ink">{g.guideText}</p>
+            <Button asChild className="club-btn-primary club-btn-guide-signup mt-6">
+              <a href="#guide-signup" onClick={() => setResource("edit-guide")}>{t.form.guideSubmit}</a>
+            </Button>
+          </div>
+        </div>
+          <div id="guide-signup" className="mx-auto mt-12 max-w-xl scroll-mt-28 rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
             <SignupForm list={resource} onGuideChange={setResource}
               note={resource === "starterpaket" ? g.starterNote : g.guideNote}
               successText={resource === "starterpaket" ? g.starterSuccess : pdf ? g.guideReady : g.guideSuccess}
               successAction={resource === "edit-guide" && pdf ? <a href={pdf} download className="club-btn-primary self-start">{g.guideDownload}</a> : undefined}
             />
           </div>
-        </div>
-      </Section>
-
-      <Section id="edit-guide">
-        <div className="grid items-start gap-12 md:grid-cols-[1fr_1.1fr]">
-          <div>
-            <h2 className="text-3xl text-navy sm:text-4xl">{g.guideTitle}</h2>
-            <p className="mt-4 text-lg text-ink">{g.guideText}</p>
-            <div className="mt-8 w-full max-w-xs">
-              <PhotoFrame slot="editGuideCover" tilt={2} aspect="aspect-[4/3]" />
-            </div>
-          </div>
-          <div>
-            <Button asChild className="club-btn-primary club-btn-guide-signup">
-              <a href="#guide-signup" onClick={() => setResource("edit-guide")}>{t.form.guideSubmit}</a>
-            </Button>
-          </div>
-        </div>
       </Section>
       <FinalCta />
     </>
