@@ -141,8 +141,8 @@ function Home() {
 
       <FinalCta photoSlot="meetupPhoto" />
 
-      <Section className="border-t-2 border-rosa club-humint-block">
-        <div className="mx-auto max-w-3xl text-center">
+      <Section className="club-humint-block">
+        <div className="mx-auto max-w-3xl rounded-[24px] border border-navy px-6 py-12 text-center md:px-12 md:py-16">
           <SectionHead title={h.humintH2} center />
           <p className="mt-6 text-lg text-ink">{h.humintText}</p>
           <Ext href={links.humint} className="club-btn-primary mt-8">{h.humintCta}</Ext>

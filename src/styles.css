@@ -833,6 +833,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   letter-spacing: 0; white-space: nowrap; line-height: 1.05; color: var(--navy);
   & em { font-style: normal; color: var(--accent-grapefruit); }
 }
+#club-callout .club-lettering { color: var(--link); }
 .noob-theme.new-club .club-eyebrow {
   font-family: var(--font-sans);
   font-weight: 600;
@@ -920,7 +921,11 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   font-weight: 400; font-style: normal; font-synthesis: none;
   letter-spacing: 0; line-height: 1.15; text-transform: none;
 }
-.noob-theme.new-club .club-humint-block .club-btn-primary { font-family: "Figtree", sans-serif; }
+.noob-theme.new-club .club-humint-block .club-btn-primary {
+  font-family: "Figtree", sans-serif;
+  background: var(--cream); border-color: var(--noob-border); color: var(--navy);
+  &:hover { background: var(--sky); border-color: var(--noob-border); color: var(--navy); }
+}
 .noob-theme.new-club .club-humint-link { font-family: "Instrument Serif", Georgia, serif; }
 @media (max-width: 639px) { .noob-theme.new-club header .club-btn-primary.hidden { display: none; } }
 @media (prefers-reduced-motion: reduce) { .noob-theme.new-club *, .noob-theme.new-club *::before, .noob-theme.new-club *::after { animation: none !important; transition: none !important; } }

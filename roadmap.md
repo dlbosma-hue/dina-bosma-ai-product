@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Set the AI Noob Club block at the bottom of the HUMINT homepage and the HUMINT block on the Club pages fully in dark blue #012868: callout logo, headline, text and button text; Club block gets a thin dark blue border card and a cream button with a dark blue outline. DE/EN verified at 390px/1280px with computed color reads and captures. Not published.
+
 - [x] Remove the "Schick's mir!" button under the Edit-Guide card on the free guides page; the shared form below keeps its submit label and the product dropdown still selects the guide, including via the direct guide link. Checked DE/EN at 390px/1280px. Not published.
 
 - [x] Set the HUMINT block at the bottom of the Club pages in HUMINT's own fonts (Instrument Serif heading, Figtree text and button) plus the footer HUMINT link; Club headings, colors, layout and HUMINT pages unchanged. Checked DE/EN at 390px/1280px with computed font reads and close-up captures. Not published.
