@@ -19,7 +19,7 @@ function Contact() {
           <SectionHead as="h1" eyebrow={c.eyebrow} title={c.h1} />
           <p className="mt-6 max-w-md text-lg text-ink">{c.text}</p>
         </div>
-        <div className="rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
+        <div className="rounded-[24px] border border-navy bg-cream p-6 sm:p-8">
           <ContactForm />
         </div>
       </div>

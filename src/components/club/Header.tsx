@@ -53,7 +53,7 @@ function Dropdown({ label, items }: { label: string; items: Item[] }) {
       </Button>
       {open && (
         <div className="club-overlay-in absolute left-0 top-full z-50 pt-2">
-          <ul className="min-w-60 rounded-[24px] border-2 border-navy bg-cream p-2">
+          <ul className="min-w-60 rounded-[24px] border border-navy bg-cream p-2">
             {items.map((it) => (
               <li key={it.label}>
                 <ItemLink
@@ -149,7 +149,7 @@ export function Header() {
           </Link>
           <Button variant="ghost"
             type="button"
-            className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-navy text-navy xl:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-navy text-navy xl:hidden"
             aria-label={mobile ? t.nav.close : t.nav.menu}
             aria-expanded={mobile}
             onClick={() => setMobile((m) => !m)}

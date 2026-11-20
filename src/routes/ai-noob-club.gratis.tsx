@@ -64,7 +64,7 @@ function Gratis() {
             <p className="mt-4 text-lg text-ink">{g.guideText}</p>
           </div>
         </div>
-          <div id="guide-signup" className="mx-auto mt-12 max-w-xl scroll-mt-28 rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
+          <div id="guide-signup" className="mx-auto mt-12 max-w-xl scroll-mt-28 rounded-[24px] border border-navy bg-cream p-6 sm:p-8">
             <SignupForm list={resource} onGuideChange={setResource}
               note={resource === "starterpaket" ? g.starterNote : g.guideNote}
               successText={resource === "starterpaket" ? g.starterSuccess : pdf ? g.guideReady : g.guideSuccess}

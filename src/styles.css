@@ -568,7 +568,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   width: 11px;
   height: 11px;
   background: color-mix(in oklab, var(--blue) 25%, var(--white));
-  border: 2px solid var(--ink);
+  border: 1px solid var(--ink);
   transform: translateY(-50%) rotate(-4deg);
 }
 .humint-theme #about p:nth-child(3) { font-weight: 600; font-size: 20px; color: var(--foreground); }
@@ -642,13 +642,13 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   white-space: normal;
 }
 .humint-theme .humint-primary-button { border-bottom: 0; }
-.humint-theme .humint-secondary-button { border: 1.5px solid var(--ink); background: var(--white); color: var(--ink); }
+.humint-theme .humint-secondary-button { border: 1px solid var(--ink); background: var(--white); color: var(--ink); }
 .humint-theme .humint-secondary-button .underline { text-decoration: none; }
 .humint-theme .humint-language-button { padding: 8px 12px; font-size: 12px; background: var(--white); color: var(--ink); border: 1px solid var(--sky-100); }
 .humint-theme #top > .bg-foreground\/55 { background: color-mix(in srgb, var(--ink) 55%, transparent); }
 .humint-theme #top h1 { color: oklch(0.968 0.014 88); }
 .humint-theme #top > div:last-child > p:first-of-type { font-family: var(--font-heading); font-size: 30px; line-height: 1.2; color: oklch(0.968 0.014 88); }
-.humint-theme #top a:not(.humint-primary-button) { font-weight: 500; border-bottom: 1.5px solid var(--blue); }
+.humint-theme #top a:not(.humint-primary-button) { font-weight: 500; border-bottom: 1px solid var(--blue); }
 .humint-theme #top .uppercase { color: var(--white); }
 .humint-theme #top p { color: var(--white); }
 .humint-theme #top > div:last-child { max-width: 1120px; }
@@ -792,7 +792,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
   background: var(--terra); color: var(--navy); font-weight: 600; font-size: 1rem;
-  border: 2px solid var(--navy); text-align: center;
+  border: 1px solid var(--navy); text-align: center;
   transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand), transform 120ms var(--ease-brand);
   &:hover { background: var(--rosa); border-color: var(--navy); }
   &:disabled { opacity: 0.6; cursor: not-allowed; }
@@ -801,7 +801,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
   background: transparent; color: var(--navy); font-weight: 600; font-size: 1rem;
-  border: 2px solid var(--navy); text-align: center;
+  border: 1px solid var(--navy); text-align: center;
   transition: background-color 120ms var(--ease-brand);
   &:hover { background: var(--sky); }
 }
@@ -821,7 +821,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   .noob-theme.new-club .club-btn-product-waitlist { width: 100%; }
 }
 .noob-theme.new-club .club-card-brand {
-  background: var(--cream); border: 2px solid var(--navy); border-radius: 24px; padding: 24px; color: var(--ink);
+  background: var(--cream); border: 1px solid var(--navy); border-radius: 24px; padding: 24px; color: var(--ink);
 }
 /* Ruhigere Karten nur fuer die Link-in-Bio-Seite, angelehnt an links.humint.site */
 .noob-theme.new-club .club-bio-panel {
@@ -842,7 +842,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   background: var(--rosa); color: var(--navy);
 }
 .noob-theme.new-club .club-field {
-  width: 100%; min-height: 52px; border-radius: 16px; border: 2px solid var(--navy);
+  width: 100%; min-height: 52px; border-radius: 16px; border: 1px solid var(--navy);
   background: var(--cream); color: var(--ink); padding: 0 1rem; font-size: 1rem;
   &::placeholder { color: var(--ink); opacity: 0.55; }
 }

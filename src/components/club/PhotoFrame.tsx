@@ -68,7 +68,7 @@ export function PhotoFrame({ slot, tilt = 2, className = "" }: Props) {
               size="icon"
               aria-label={t.photo.playVideo}
               title={t.photo.playVideo}
-              className="pointer-events-auto h-14 w-14 rounded-full border-2 border-navy bg-terra text-navy hover:bg-rosa focus-visible:outline-2 focus-visible:outline-navy [&_svg]:size-7"
+              className="pointer-events-auto h-14 w-14 rounded-full border border-navy bg-terra text-navy hover:bg-rosa focus-visible:outline-2 focus-visible:outline-navy [&_svg]:size-7"
               onClick={() => { void videoRef.current?.play().catch(() => setPlaying(false)); }}
             >
               <Play aria-hidden />

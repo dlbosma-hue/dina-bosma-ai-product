@@ -60,7 +60,7 @@ function Community() {
             <SectionHead title={c.formH2} />
             <p className="mt-6 text-lg text-ink">{c.formIntro}</p>
           </div>
-          <div className="rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
+          <div className="rounded-[24px] border border-navy bg-cream p-6 sm:p-8">
             <SignupForm list="community" note="" />
           </div>
         </div>
