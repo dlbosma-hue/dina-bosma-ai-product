@@ -8,11 +8,11 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-grapefruit text-navy hover:bg-rose",
+        default: "bg-rose text-navy hover:bg-grapefruit",
         destructive: "bg-rose text-navy hover:bg-grapefruit",
-        outline: "bg-cream text-navy hover:bg-rose",
-        secondary: "bg-sky text-navy hover:bg-rose",
-        ghost: "border-transparent bg-cream text-navy hover:border-navy hover:bg-rose",
+        outline: "bg-cream text-navy hover:bg-grapefruit",
+        secondary: "bg-sky text-navy hover:bg-grapefruit",
+        ghost: "border-transparent bg-cream text-navy hover:border-navy hover:bg-grapefruit",
         link: "min-h-0 border-0 bg-transparent p-0 text-link underline-offset-4 hover:bg-transparent hover:underline",
       },
       size: {
