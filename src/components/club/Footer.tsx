@@ -16,7 +16,7 @@ export function Footer() {
         <ul className="flex flex-col gap-3 text-navy">
           <li>
             <Ext href={links.instagram} className="club-link-brand inline-flex items-center gap-2">
-              <Instagram className="h-4 w-4 text-terra" aria-hidden /> {f.instagram}
+              <Instagram className="h-4 w-4 text-navy" aria-hidden /> {f.instagram}
             </Ext>
           </li>
           <li><Ext href={links.meetup} className="club-link-brand">{f.meetup}</Ext></li>

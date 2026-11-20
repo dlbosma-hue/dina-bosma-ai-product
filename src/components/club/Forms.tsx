@@ -17,7 +17,7 @@ function Field({ id, label, error, children }: { id: string; label: string; erro
       </label>
       {children}
       {error && (
-        <p id={`${id}-err`} className="text-sm font-medium text-terra">
+        <p id={`${id}-err`} className="text-sm font-medium text-navy">
           {error}
         </p>
       )}
@@ -57,7 +57,7 @@ function Consent({ id, checked, onChange, error, prefix }: { id: string; checked
           {t.form.consentB}
         </label>
       </div>
-      {error && <p className="text-sm font-medium text-terra">{error}</p>}
+      {error && <p className="text-sm font-medium text-navy">{error}</p>}
     </div>
   );
 }
@@ -65,7 +65,7 @@ function Consent({ id, checked, onChange, error, prefix }: { id: string; checked
 function Success({ text }: { text: string }) {
   return (
     <div role="status" className="flex items-start gap-3 rounded-[16px] bg-sky p-5 text-navy">
-      <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-terra" aria-hidden />
+      <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-navy" aria-hidden />
       <p className="font-medium text-navy">{text}</p>
     </div>
   );
@@ -153,7 +153,7 @@ export function SignupForm({
       <Button variant="ghost" type="submit" className={`club-btn-primary w-full uppercase tracking-[0.12em]${list === "content-assistentin" ? " club-btn-product-waitlist" : guide ? " club-btn-guide-signup" : ""}`} disabled={status === "sending"}>
         {status === "sending" ? f.sending : guide ? f.guideSubmit : submitText ?? (community ? c.cta : f.submit)}
       </Button>
-      {status === "error" && <p role="alert" className="text-sm font-medium text-terra">{f.error}</p>}
+      {status === "error" && <p role="alert" className="text-sm font-medium text-navy">{f.error}</p>}
       {note && <p className="text-center text-sm text-ink">{note}</p>}
     </form>
   );
@@ -218,7 +218,7 @@ export function ContactForm() {
       <Button variant="ghost" type="submit" className="club-btn-primary w-full uppercase tracking-[0.12em] sm:w-auto sm:self-start" disabled={status === "sending"}>
         {status === "sending" ? f.sending : c.submit}
       </Button>
-      {status === "error" && <p role="alert" className="text-sm font-medium text-terra">{f.error}</p>}
+      {status === "error" && <p role="alert" className="text-sm font-medium text-navy">{f.error}</p>}
     </form>
   );
 }

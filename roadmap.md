@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Apply Dina's Club-only typography cleanup and navy lettering/borders/icons; preserve fills, content, layout, HUMINT and the Club HUMINT block. Verified 24 DE/EN phone/desktop views, guide selector/validation, 16 tests and unchanged protected HUMINT styles. Letter spacing stays zero under the platform authoring constraint. Not published.
+
 - [x] Set the AI Noob Club block at the bottom of the HUMINT homepage and the HUMINT block on the Club pages fully in dark blue #012868: callout logo, headline, text and button text; Club block gets a thin dark blue border card and a cream button with a dark blue outline. DE/EN verified at 390px/1280px with computed color reads and captures. Not published.
 
 - [x] Remove the "Schick's mir!" button under the Edit-Guide card on the free guides page; the shared form below keeps its submit label and the product dropdown still selects the guide, including via the direct guide link. Checked DE/EN at 390px/1280px. Not published.

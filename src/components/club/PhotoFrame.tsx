@@ -68,7 +68,7 @@ export function PhotoFrame({ slot, tilt = 2, className = "" }: Props) {
               size="icon"
               aria-label={t.photo.playVideo}
               title={t.photo.playVideo}
-              className="pointer-events-auto h-14 w-14 rounded-full border-2 border-navy bg-terra text-navy hover:bg-rosa focus-visible:ring-2 focus-visible:ring-terra [&_svg]:size-7"
+              className="pointer-events-auto h-14 w-14 rounded-full border-2 border-navy bg-terra text-navy hover:bg-rosa focus-visible:outline-2 focus-visible:outline-navy [&_svg]:size-7"
               onClick={() => { void videoRef.current?.play().catch(() => setPlaying(false)); }}
             >
               <Play aria-hidden />
@@ -77,7 +77,7 @@ export function PhotoFrame({ slot, tilt = 2, className = "" }: Props) {
         )}
         {slot !== "editGuideCover" && !ok && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-5 text-center text-navy">
-            <ImageIcon className="h-7 w-7 text-terra" strokeWidth={1.5} aria-hidden />
+            <ImageIcon className="h-7 w-7 text-navy" strokeWidth={1.5} aria-hidden />
             <p className="max-w-[24ch] text-sm leading-snug text-navy">{caption}</p>
             <p className="club-eyebrow text-[0.65rem]">{t.photo.placeholderNote}</p>
           </div>
@@ -93,7 +93,7 @@ export function RoundPortrait({ slot = "heroPortrait", size = 120 }: { slot?: Ph
   const { src, ref, ok, setOk } = usePhoto(slot);
   return (
     <div
-      className="relative shrink-0 overflow-hidden rounded-full bg-rosa ring-8 ring-rosa"
+      className="relative shrink-0 overflow-hidden rounded-full bg-rosa outline-8 outline-navy"
       style={{ width: size, height: size }}
     >
       <img
@@ -106,7 +106,7 @@ export function RoundPortrait({ slot = "heroPortrait", size = 120 }: { slot?: Ph
       />
       {!ok && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <ImageIcon className="h-6 w-6 text-terra" strokeWidth={1.5} aria-hidden />
+          <ImageIcon className="h-6 w-6 text-navy" strokeWidth={1.5} aria-hidden />
         </div>
       )}
     </div>

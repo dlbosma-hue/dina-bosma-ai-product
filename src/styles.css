@@ -4,9 +4,6 @@
 @import "@fontsource/poppins/700.css";
 @import "@fontsource/inter/400.css";
 @import "@fontsource/instrument-serif/400.css";
-@import "@fontsource/anton/latin-400.css";
-@import "@fontsource/architects-daughter/latin-400.css";
-@import "@fontsource/patrick-hand/latin-400.css";
 @import "@fontsource/inter/latin-400.css";
 @import "@fontsource/inter/latin-600.css";
 @import "@fontsource/figtree/latin-400.css";
@@ -29,9 +26,6 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-  --font-headline: "Anton", sans-serif;
-  --font-tape: "Architects Daughter", cursive;
-  --font-note: "Patrick Hand", cursive;
   --font-body: "Inter", system-ui, sans-serif;
   --color-navy: var(--navy);
   --color-grapefruit: var(--accent-grapefruit);
@@ -227,61 +221,6 @@
   }
 }
 
-@utility retro-chip {
-  display: inline-block;
-  max-width: 100%;
-  border: 1px solid var(--noob-border, var(--navy));
-  background: var(--cream);
-  color: var(--navy);
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  line-height: 1.05;
-  padding: 4px 20px 10px;
-  transform: rotate(-1.25deg);
-
-  @media (min-width: 768px) {
-    padding: 6px 36px 14px;
-  }
-}
-
-@utility retro-chip-accent {
-  background: var(--accent-grapefruit);
-  transform: rotate(1.25deg);
-}
-
-@utility retro-tape {
-  display: inline-block;
-  max-width: 100%;
-  padding: 0.65rem 1.5rem;
-  clip-path: polygon(0 8%, 3% 0, 6% 7%, 10% 1%, 14% 6%, 18% 0, 22% 6%, 26% 1%, 30% 7%, 34% 0, 38% 6%, 42% 1%, 46% 7%, 50% 0, 54% 6%, 58% 1%, 62% 7%, 66% 0, 70% 6%, 74% 1%, 78% 7%, 82% 0, 86% 6%, 90% 1%, 94% 7%, 97% 0, 100% 8%, 98% 25%, 100% 43%, 98% 61%, 100% 79%, 97% 100%, 93% 94%, 89% 100%, 85% 94%, 81% 100%, 77% 94%, 73% 100%, 69% 94%, 65% 100%, 61% 94%, 57% 100%, 53% 94%, 49% 100%, 45% 94%, 41% 100%, 37% 94%, 33% 100%, 29% 94%, 25% 100%, 21% 94%, 17% 100%, 13% 94%, 9% 100%, 5% 94%, 0 100%, 2% 79%, 0 61%, 2% 43%, 0 25%);
-  background-color: var(--sky);
-  background-image: repeating-linear-gradient(0deg, transparent 0 35px, color-mix(in srgb, var(--mid-sky) 33%, transparent) 35px 36px), repeating-linear-gradient(90deg, transparent 0 35px, color-mix(in srgb, var(--mid-sky) 33%, transparent) 35px 36px);
-  color: var(--navy);
-  font-family: "Architects Daughter", cursive;
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.25;
-  text-transform: uppercase;
-  transform: rotate(-1deg);
-
-  @media (min-width: 768px) {
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-@utility retro-note {
-  display: inline-block;
-  max-width: 100%;
-  color: var(--navy);
-  font-family: "Patrick Hand", cursive;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.2;
-  transform: rotate(-2deg);
-}
-
 @utility retro-button {
   display: inline-flex;
   min-height: 44px;
@@ -390,6 +329,10 @@ html:has(.noob-theme) {
   border-color: var(--noob-border);
 }
 
+.noob-theme .border-navy:not(.club-humint-block *) {
+  border-color: var(--navy);
+}
+
 .noob-theme h1,
 .noob-theme h2,
 .noob-theme h3,
@@ -397,8 +340,11 @@ html:has(.noob-theme) {
 .noob-theme h5,
 .noob-theme h6 {
   color: var(--navy);
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-synthesis: none;
+  text-transform: none;
   letter-spacing: 0;
   line-height: 1.05;
 }
@@ -453,11 +399,6 @@ html:has(.noob-theme) {
   font-family: "Inter", system-ui, sans-serif;
 }
 
-.noob-theme .noob-h3-sans {
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-}
 
 .noob-badge {
   clip-path: circle(49% at 50% 50%);
@@ -799,9 +740,9 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   --accent-foreground: var(--navy);
   --destructive: var(--terra);
   --destructive-foreground: var(--navy);
-  --border: var(--rosa);
+  --border: var(--navy);
   --input: var(--navy);
-  --ring: var(--terra);
+  --ring: var(--navy);
   --ease-brand: cubic-bezier(0.2, 0.7, 0.2, 1);
 
   --club-display: "Bricolage Grotesque", system-ui, sans-serif;
@@ -817,16 +758,19 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club :is(p,li,label,span,a,button,input,select,textarea) { color: inherit; }
 .noob-theme.new-club .text-ink { color: var(--ink); }
 .noob-theme.new-club .text-navy { color: var(--navy); }
-.noob-theme.new-club .text-terra { color: var(--terra); }
+.noob-theme.new-club .text-terra { color: var(--navy); }
 .noob-theme.new-club .uppercase { font-family: var(--font-sans); }
 .noob-theme.new-club .text-base { font-size: 1rem; }
 .noob-theme.new-club .text-lg { font-size: 1.125rem; }
-.noob-theme.new-club .font-hand { font-family: var(--club-hand); }
+.noob-theme.new-club .font-hand { font-family: var(--club-hand); font-weight: 600; }
 .noob-theme.new-club p { max-width: none; }
 .noob-theme.new-club a { text-underline-offset: 4px; }
-.noob-theme.new-club :focus-visible { outline: 2px solid var(--terra); outline-offset: 3px; }
+.noob-theme.new-club :focus-visible:not(.club-humint-block *) { outline: 2px solid var(--navy); outline-offset: 3px; }
+.noob-theme.new-club .club-humint-block :focus-visible { outline: 2px solid var(--terra); outline-offset: 3px; }
 .noob-theme.new-club ::selection { background: var(--rosa); color: var(--navy); }
 .noob-theme.new-club .club-kw { font-style: normal; color: var(--terra); }
+.noob-theme.new-club .club-kw:not(.club-humint-block *) { color: var(--navy); }
+.noob-theme .club-lettering em { color: var(--navy); }
 .club-lettering {
   font-family: "Bricolage Grotesque", system-ui, sans-serif;
   font-weight: 800; font-style: normal; font-synthesis: none;
@@ -849,9 +793,9 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
   background: var(--terra); color: var(--navy); font-weight: 600; font-size: 1rem;
-  border: 2px solid var(--terra); text-align: center;
+  border: 2px solid var(--navy); text-align: center;
   transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand), transform 120ms var(--ease-brand);
-  &:hover { background: var(--rosa); border-color: var(--terra); }
+  &:hover { background: var(--rosa); border-color: var(--navy); }
   &:disabled { opacity: 0.6; cursor: not-allowed; }
 }
 .noob-theme.new-club .club-btn-secondary {
@@ -878,15 +822,15 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   .noob-theme.new-club .club-btn-product-waitlist { width: 100%; }
 }
 .noob-theme.new-club .club-card-brand {
-  background: var(--cream); border: 2px solid var(--rosa); border-radius: 24px; padding: 24px; color: var(--ink);
+  background: var(--cream); border: 2px solid var(--navy); border-radius: 24px; padding: 24px; color: var(--ink);
 }
 /* Ruhigere Karten nur fuer die Link-in-Bio-Seite, angelehnt an links.humint.site */
 .noob-theme.new-club .club-bio-card {
   display: block; width: 100%; text-align: left;
-  background: var(--cream); border: 1px solid color-mix(in oklch, var(--navy) 18%, transparent);
+  background: var(--cream); border: 1px solid var(--navy);
   border-radius: 24px; padding: 20px 24px; color: var(--ink);
   transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand);
-  &:hover { background: var(--rosa); border-color: color-mix(in oklch, var(--navy) 30%, transparent); }
+  &:hover { background: var(--rosa); border-color: var(--navy); }
   &:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
 }
 .noob-theme.new-club .club-tag {
@@ -900,10 +844,10 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   &::placeholder { color: var(--ink); opacity: 0.55; }
 }
 .noob-theme.new-club .club-link-brand {
-  color: var(--navy); text-decoration: underline; text-decoration-color: var(--terra);
+  color: var(--navy); text-decoration: underline; text-decoration-color: var(--navy);
   text-underline-offset: 4px; text-decoration-thickness: 2px;
   transition: color 120ms var(--ease-brand);
-  &:hover { color: var(--terra); }
+  &:hover { color: var(--navy); }
 }
 
 
@@ -913,7 +857,10 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club .club-overlay-in { animation: club-fade-in 200ms var(--ease-brand); }
 .noob-theme.new-club button { height: auto; white-space: normal; }
 .noob-theme.new-club button[aria-pressed] { min-height: 44px; }
-.noob-theme.new-club header button { box-shadow: none; }
+/* Club marks and surfaces remain flat; preserve the independent HUMINT block. */
+.noob-theme :is(*, *::before, *::after):not(.club-humint-block, .club-humint-block *) { box-shadow: none; text-shadow: none; }
+.noob-theme.new-club .club-rule-accent:not(.club-humint-block *) { background: var(--navy); }
+.noob-theme.new-club :is(a,button,label,summary,svg,.club-lettering,.club-field):not(.club-humint-block *) { color: var(--navy); }
 /* Der HUMINT-Hinweis am Ende der Club-Seiten tragt HUMINTs eigene Schriften: Instrument Serif fur Uberschriften, Figtree fur Fliefltext. Stand 20.11.2026. */
 .noob-theme.new-club .club-humint-block { font-family: "Figtree", sans-serif; }
 .noob-theme.new-club .club-humint-block :is(h1,h2,h3,h4,h5,h6) {

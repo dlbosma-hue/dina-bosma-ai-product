@@ -46,14 +46,14 @@ function Dropdown({ label, items }: { label: string; items: Item[] }) {
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
         onMouseEnter={() => setOpen(true)}
-        className="flex items-center gap-1 rounded-full px-3 py-2 text-[0.95rem] font-medium text-navy transition-colors duration-[120ms] hover:text-terra"
+        className="flex items-center gap-1 rounded-full px-3 py-2 text-[0.95rem] font-medium text-navy transition-colors duration-[120ms] hover:text-navy"
       >
         {label}
         <ChevronDown className="h-4 w-4 text-navy" strokeWidth={2} aria-hidden />
       </Button>
       {open && (
         <div className="club-overlay-in absolute left-0 top-full z-50 pt-2">
-          <ul className="min-w-60 rounded-[24px] border-2 border-rosa bg-cream p-2">
+          <ul className="min-w-60 rounded-[24px] border-2 border-navy bg-cream p-2">
             {items.map((it) => (
               <li key={it.label}>
                 <ItemLink
@@ -81,7 +81,7 @@ function LangToggle() {
             type="button"
             onClick={() => setLang(l)}
             aria-pressed={lang === l}
-            className={`rounded px-1.5 py-1 uppercase transition-colors duration-[120ms] ${lang === l ? "text-terra underline underline-offset-4" : "text-navy hover:text-terra"}`}
+            className={`rounded px-1.5 py-1 uppercase transition-colors duration-[120ms] ${lang === l ? "text-navy underline underline-offset-4" : "text-navy hover:text-navy"}`}
           >
             {l}
           </Button>
@@ -118,11 +118,11 @@ export function Header() {
       ],
     },
   ];
-  const plain = "rounded-full px-3 py-2 text-[0.95rem] font-medium text-navy transition-colors duration-[120ms] hover:text-terra";
+  const plain = "rounded-full px-3 py-2 text-[0.95rem] font-medium text-navy transition-colors duration-[120ms] hover:text-navy";
   const close = () => setMobile(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-rosa bg-cream">
+    <header className="sticky top-0 z-40 border-b border-navy bg-cream">
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:rounded-full focus:bg-terra focus:px-4 focus:py-2 focus:text-navy">
         {t.skip}
       </a>
@@ -159,7 +159,7 @@ export function Header() {
         </div>
       </div>
       {mobile && (
-        <div className="club-overlay-in max-h-[calc(100vh-4.5rem)] overflow-y-auto border-t border-rosa bg-cream xl:hidden">
+        <div className="club-overlay-in max-h-[calc(100vh-4.5rem)] overflow-y-auto border-t border-navy bg-cream xl:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-6 sm:px-8" aria-label="Mobile Navigation">
             <Link to="/ai-noob-club" hash="dina" onClick={close} className="py-2 font-display text-xl text-navy">
               {t.nav.about}
@@ -167,10 +167,10 @@ export function Header() {
             {groups.map((g) => (
               <div key={g.label} className="py-2">
                 <p className="club-eyebrow mb-2">{g.label}</p>
-                <ul className="flex flex-col gap-1 border-l-2 border-rosa pl-4">
+                <ul className="flex flex-col gap-1 border-l-2 border-navy pl-4">
                   {g.items.map((it) => (
                     <li key={it.label}>
-                      <ItemLink item={it} onClick={close} className="block py-1.5 text-navy hover:text-terra" />
+                      <ItemLink item={it} onClick={close} className="block py-1.5 text-navy hover:text-navy" />
                     </li>
                   ))}
                 </ul>

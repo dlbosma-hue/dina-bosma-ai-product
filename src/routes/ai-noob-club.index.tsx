@@ -114,7 +114,7 @@ function Home() {
         </div>
       </Section>
 
-      <Section className="border-t-2 border-rosa" tightBottom>
+      <Section className="border-t-2 border-navy" tightBottom>
         <div className="mx-auto max-w-2xl text-center">
           <SectionHead eyebrow={h.meetEyebrow} title={h.meetH2} center />
           <p className="mt-6 text-lg text-ink">{h.meetText}</p>

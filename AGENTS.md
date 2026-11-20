@@ -6,6 +6,7 @@
 - Keep imported Club components in src/components/club and language state in src/club-i18n, isolated from HUMINT components and language state to prevent cross-brand changes.
 - Reuse the context-free ClubLettering in Club chrome and the HUMINT Club callout so the approved lettering stays identical without sharing language providers or page themes.
 - Keep Club typography scoped to .noob-theme and serve its display font locally, so HUMINT styling remains unchanged.
+- Exclude `.club-humint-block` from Club-wide visual overrides and scope wordmark overrides to `.noob-theme`, so shared lettering and the HUMINT cross-brand block retain independent styling.
 - Validate imported Club forms in the shared browser-safe schema and dedicated public handler; store signups in waitlist_submissions with signup_list and contacts in contact_requests using service-role-only insertion, so visitors cannot read records and duplicates and durable limits stay enforced.
 - Use list-specific validation for the combined Community signup and leave the product waitlist separate; preserve existing storage labels and records so the new journey does not silently reclassify subscribers. Community receipts acknowledge submission only; membership capacity and acceptance are manually checked.
 - Keep the product preview copy in the Club translation dictionary and reuse the signup form with optional localized action and receipt labels, so the product waitlist stays independent without changing other signup journeys.
