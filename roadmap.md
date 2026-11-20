@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Broaden bilingual Content-Assistentin messaging across the course, Community, promotional cards and link-in-bio; preserve design and signup journeys. DE/EN checked at 390px and 1280px with CTA navigation, form validation, consent and FAQ interaction; 12 tests pass. No real submissions, email delivery checks or publishing.
+
 - [x] Correct localized Starterpaket submits, enlarge only product waitlist CTAs, and reuse approved Club lettering at the bottom of HUMINT. Checked 64 route/language/viewport states, form validation, consent, product CTA navigation and simulated submission failure; 22 tests pass. No real signup or email delivery tested, no publishing.
 
 - [x] Rewrite the Content-Assistentin product preview with exact DE/EN copy, one independent waitlist, planned content and FAQs. DE/EN checked at 390px and 1280px; signup storage and owner sends confirmed, labeled test rows removed, 18 tests pass. Static English mockup still says Content Assistant; launch announcements are not automated. Not published.

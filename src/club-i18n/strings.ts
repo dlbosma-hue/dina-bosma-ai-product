@@ -52,7 +52,7 @@ const de = {
     about: { title: "Über mich: Dina vom AI Noob Club", description: "Stylistin, Produktmanagerin, Gründerin. Warum Dina den AI Noob Club gestartet hat und woran sie glaubt." },
     gratis: { title: "Gratis: Starterpaket, Edit-Guide und KI-Start-Check", description: "Drei kostenlose Wege, mit KI anzufangen: Starterpaket per E-Mail, Edit-Guide als PDF und ein 1:1 KI-Start-Check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Gestalte die Content-Assistentin mit. Eine Anmeldung für Input, spätere Beta und ersten Zugang zum vollständigen Produkt. Maximal 20 Mitglieder." },
-    ca: { title: "Content-Assistentin: Selbstlernkurs in Entwicklung | AI Noob Club", description: "Vorschau auf den Selbstlernkurs in Entwicklung für KI-Texte in deinem eigenen Ton. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
+    ca: { title: "Content-Assistentin: Selbstlernkurs in Entwicklung | AI Noob Club", description: "Vorschau auf den Selbstlernkurs in Entwicklung: mit KI schneller Content erstellen, mit eigener Stimme und eigenem visuellen Stil. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
     contact: { title: "Kontakt: Workshop anfragen beim AI Noob Club", description: "Workshops für Gruppen und kleine Teams. Schreib Dina kurz, was du vorhast." },
   },
   home: {
@@ -83,7 +83,7 @@ const de = {
     prodH2: "Wenn du *tiefer* einsteigen willst.",
     prod: [
       { title: "99 Prompts für authentische KI-Fotos", text: "40 Seiten PDF, Sofort-Download, auf Englisch. Fotos, die echt wirken, ohne Fotoshooting.", cta: "Zum Prompt-Pack →" },
-      { title: "Meine Content-Assistentin", text: "Gestalte den Kurs mit, teste später die Beta und erhalte als Erstes Zugang zum vollständigen Produkt.", cta: "Zur Community & Beta →" },
+      { title: "Content-Assistentin", text: "Ein Selbstlernkurs in Entwicklung für schnellere Content-Erstellung mit deiner eigenen Stimme und deinem visuellen Stil. Gestalte den Kurs mit, teste später die Beta und erhalte als Erstes Zugang zum vollständigen Produkt.", cta: "Zur Community & Beta →" },
     ],
     valuesEyebrow: "Wofür ich stehe",
     valuesH2: "Was mir wichtig ist",
@@ -113,8 +113,8 @@ const de = {
     pill: "Community & Beta · Maximal 20 Plätze",
     h1: "Gestalte die Content-Assistentin mit",
     sub: [
-      "Die Content-Assistentin entsteht gerade: ein Selbstlernkurs für Menschen mit kleinem Business, die KI für ihre Texte nutzen möchten, ohne ihren eigenen Ton zu verlieren.",
-      "In einer kleinen Community gibst du Input, testest später die Beta und erhältst als Erstes Zugang zum vollständigen Produkt.",
+      "Die Content-Assistentin entsteht gerade: ein Selbstlernkurs für Menschen mit kleinem Business, die mit KI schneller Content erstellen möchten, ohne ihre eigene Stimme oder ihren visuellen Stil zu verlieren.",
+      "In der Community hilfst du mit, diesen Ansatz zu entwickeln: Was brauchst du, damit dein Content nach dir klingt, nach dir aussieht und sich mit weniger Aufwand erstellen lässt?",
     ],
     cta: "Bei der Community mitmachen",
     howH2: "Eine Anmeldung. Von der ersten Idee bis zum fertigen Produkt.",
@@ -155,16 +155,16 @@ const de = {
   ca: {
     "eyebrow": "Selbstlernkurs · In Entwicklung",
     "productName": "Content-Assistentin",
-    "h1": "KI für deine Texte. Mit deinem eigenen Ton.",
-    "text": "Du hast KI schon ausprobiert, aber die Texte klangen nicht nach dir? Dafür entsteht dieser Selbstlernkurs: Du lernst, mit eigenen Textbeispielen und wiederverwendbaren Anweisungen in einem KI-Chat zu arbeiten.",
+    "h1": "Dein Ton. Dein Look. Weniger Zeit für Content.",
+    "text": "Erstelle mit KI schneller Content, der nach dir klingt und nach dir aussieht. Die Content-Assistentin hilft dir, deine eigene Stimme und deinen visuellen Stil als Grundlage zu nutzen, statt Content zu erstellen, der klingt und aussieht wie bei allen anderen. Damit mehr Zeit für dein Business und das Leben daneben bleibt.",
     "status": "Der Kurs ist noch in Entwicklung und aktuell nicht buchbar.",
     "cta": "Auf die Warteliste",
     "plannedCta": "Geplante Inhalte ansehen",
     "caption": "Vorschau auf den aktuellen Entwurf. Inhalte und Gestaltung können sich noch ändern.",
-    "whatH2": "Was wird die Content-Assistentin?",
+    "whatH2": "Wiedererkennbar bleiben. Einfacher Content erstellen.",
     "whatBody": [
-      "Ein Selbstlernkurs, in dem du dir eine wiederverwendbare Grundlage für die Arbeit mit KI erstellst: eigene Textbeispiele, klare Anweisungen und Vorlagen, die du an deine Aufgaben anpasst.",
-      "Du arbeitest in einem bestehenden KI-Chat. Der Kurs ist keine eigenständige Software und kein Tool, das alles automatisch für dich übernimmt. Du entscheidest, was du übernimmst, überarbeitest und veröffentlichst."
+      "Im geplanten Selbstlernkurs hältst du Schritt für Schritt fest, was deinen Content ausmacht: wie du schreibst, welche Farben und Schriften zu dir passen und welche visuellen Details deinen Stil prägen.",
+      "Daraus entwickelst du wiederverwendbare Anweisungen, Vorlagen und einen Ablauf für deine Content-Erstellung. So musst du nicht jedes Mal bei null anfangen. KI unterstützt dich. Du entscheidest, was zu dir passt und was du veröffentlichst."
     ],
     "plannedH2": "Das ist für den Kurs geplant",
     "planned": [
@@ -173,16 +173,16 @@ const de = {
       "Checklisten für die praktische Umsetzung",
       "Ein verständliches Glossar",
       "Eine Vorlage für deine regelmäßige Content-Routine",
-      "Ergänzend: eine Look-Karte für Farben, Schriften und visuelle Details"
+      "Eine Look-Karte, die deine Farben, Schriften und visuellen Details für einen wiedererkennbaren Stil festhält"
     ],
     "plannedNote": "Die genaue Modulanzahl, Reihenfolge und Bearbeitungszeit stehen noch nicht endgültig fest.",
     "audienceH2": "Für wen der Kurs gedacht ist",
     "audience": [
-      "Du hast ein kleines Business und schreibst deine Texte selbst.",
-      "Du möchtest KI gezielter als Unterstützung einsetzen.",
-      "Du bist bereit, eigene Textbeispiele einzubringen und Ergebnisse zu überarbeiten."
+      "Du hast ein kleines Business und erstellst deinen Content selbst.",
+      "Du möchtest KI gezielter nutzen und einen wiederholbaren Ablauf entwickeln, ohne deine eigene Stimme oder deinen Look zu verlieren.",
+      "Du bist bereit, eigene Textbeispiele einzubringen, deinen visuellen Stil festzuhalten und Ergebnisse zu überarbeiten."
     ],
-    "limitation": "Kein vollautomatisches Schreibtool und keine Schulung für große Teams.",
+    "limitation": "Keine eigenständige Software und keine Schulung für große Teams. Der Kurs erstellt nicht automatisch fertige Markenbilder und veröffentlicht keinen Content für dich.",
     "requirementsH2": "Das brauchst du später",
     "requirements": "Einen Zugang zu einem KI-Chat und einige eigene Textbeispiele. Welche Tools und Funktionen für die fertigen Übungen benötigt werden, steht vor dem Kursstart auf dieser Seite.",
     "formH": "Erfahre, wann der Kurs startet",
@@ -275,7 +275,7 @@ const en: Dict = {
     startCheck: "AI start check",
     products: "Products",
     promptPack: "Prompt pack",
-    contentAssistentin: "Content assistant",
+    contentAssistentin: "Content-Assistentin",
     work: "Work with me",
     meetup: "Meetups in Berlin and online",
     workshop: "Book a workshop",
@@ -300,7 +300,7 @@ const en: Dict = {
     aboutDetail: "Dina on the sofa with her cat and a laptop",
     communityHero: "Many hands in different skin tones stacked together in the middle",
     promptPackCover: "Prompt pack cover",
-    contentAssistentinCover: "Content assistant cover",
+    contentAssistentinCover: "Content-Assistentin cover",
     startpaketCover: "Starter kit cover",
     startCheckCover: "Dina working at her laptop with a coffee mug",
     editGuideCover: "Edit guide cover",
@@ -314,7 +314,7 @@ const en: Dict = {
     about: { title: "About me: Dina from AI Noob Club", description: "Stylist, product manager, founder. Why Dina started AI Noob Club and what she believes in." },
     gratis: { title: "Free: starter kit, edit guide and AI start check", description: "Three free ways to start with AI: starter kit by email, edit guide as PDF and a 1:1 AI start check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Help shape the Content-Assistentin. One signup to share input, test the beta and get first access to the complete product. Up to 20 members." },
-    ca: { title: "Content-Assistentin: Course in development | AI Noob Club", description: "Preview the self-paced course in development for AI writing in your own voice. Planned content and an independent product waitlist. Not available to purchase yet." },
+    ca: { title: "Content-Assistentin: Course in development | AI Noob Club", description: "Preview the self-paced course in development: create content faster with AI while keeping your own voice and visual identity. Planned content and an independent product waitlist. Not available to purchase yet." },
     contact: { title: "Contact: book a workshop with AI Noob Club", description: "Workshops for groups and small teams. Tell Dina briefly what you have in mind." },
   },
   home: {
@@ -345,7 +345,7 @@ const en: Dict = {
     prodH2: "When you want to go *deeper*.",
     prod: [
       { title: "99 prompts for authentic AI photos", text: "40 page PDF, instant download, in English. Photos that look real, no photo shoot needed.", cta: "See the prompt pack →" },
-      { title: "My content assistant", text: "Help shape the course, test the beta when it is ready and get first access to the complete product.", cta: "Join Community & Beta →" },
+      { title: "Content-Assistentin", text: "A self-paced course in development for faster content creation with your own voice and visual identity. Help shape the course, test the beta when it is ready and get first access to the complete product.", cta: "Join Community & Beta →" },
     ],
     valuesEyebrow: "What I stand for",
     valuesH2: "What matters to me",
@@ -375,8 +375,8 @@ const en: Dict = {
     pill: "Community & Beta · Up to 20 members",
     h1: "Help shape the Content-Assistentin",
     sub: [
-      "The Content-Assistentin is in development: a self-paced course for small business owners who want to use AI for their writing without losing their own voice.",
-      "Join a small community to share your input, test the beta when it is ready and get first access to the complete product.",
+      "The Content-Assistentin is in development: a self-paced course for small business owners who want to create content faster with AI without losing their own voice or visual identity.",
+      "In the community, you help shape that approach: what do you need to make content that sounds like you, looks like you and takes less effort to create?",
     ],
     cta: "Join the community",
     howH2: "One signup. From early ideas to the finished product.",
@@ -417,16 +417,16 @@ const en: Dict = {
   ca: {
     "eyebrow": "Self-paced course · In development",
     "productName": "Content-Assistentin",
-    "h1": "AI for your writing. In your own voice.",
-    "text": "Have you tried AI, only to find that the writing did not sound like you? That is what this self-paced course is being developed for: learning to work with your own writing samples and reusable instructions in an AI chat.",
+    "h1": "Your voice. Your look. Less time creating content.",
+    "text": "Create content faster with AI while keeping it unmistakably yours. The Content-Assistentin helps you use your own voice and visual style as a foundation, instead of creating content that looks and sounds like everyone else’s. So you have more time for your business and life beyond it.",
     "status": "The course is still in development and is not available to purchase yet.",
     "cta": "Join the waitlist",
     "plannedCta": "Explore planned content",
     "caption": "Preview of the current draft. Content and design may change.",
-    "whatH2": "What will the Content-Assistentin be?",
+    "whatH2": "Stay recognisable. Make content creation simpler.",
     "whatBody": [
-      "A self-paced course in which you build a reusable foundation for working with AI: your own writing samples, clear instructions and templates you adapt to your tasks.",
-      "You work in an existing AI chat. The course is not standalone software or a tool that does everything automatically. You decide what to use, edit and publish."
+      "In the planned self-paced course, you define what makes your content yours: how you write, which colours and fonts fit your identity, and which visual details shape your style.",
+      "You turn these into reusable instructions, templates and a content workflow, so you do not have to start from scratch every time. AI supports the process. You decide what fits and what to publish."
     ],
     "plannedH2": "What is planned for the course",
     "planned": [
@@ -435,16 +435,16 @@ const en: Dict = {
       "Practical implementation checklists",
       "A plain-language glossary",
       "A template for your ongoing content routine",
-      "An additional visual style card for colours, fonts and visual details"
+      "A Look-Karte (visual style card) that records your colours, fonts and visual details for a recognisable style"
     ],
     "plannedNote": "The exact number of modules, their order and the time needed are still being developed.",
     "audienceH2": "Who the course is for",
     "audience": [
-      "You run a small business and write your own content.",
-      "You want to use AI more intentionally as a writing aid.",
-      "You are willing to bring your own writing samples and edit the results."
+      "You run a small business and create your own content.",
+      "You want to use AI more intentionally and develop a repeatable workflow without losing your voice or visual style.",
+      "You are willing to bring your own writing samples, define your visual style and edit the results."
     ],
-    "limitation": "Not a fully automated writing tool or a training programme for large teams.",
+    "limitation": "Not standalone software or a training programme for large teams. The course does not automatically create complete branded visuals or publish content for you.",
     "requirementsH2": "What you will need",
     "requirements": "Access to an AI chat and some examples of your own writing. The tools and features needed for the finished exercises will be listed on this page before launch.",
     "formH": "Find out when the course launches",
