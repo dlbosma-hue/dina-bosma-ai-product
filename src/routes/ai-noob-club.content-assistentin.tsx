@@ -32,7 +32,6 @@ function Waitlist() {
           </div>
           <div className="mx-auto w-full max-w-md">
             <PhotoFrame slot="contentAssistentinCover" tilt={-2} />
-            <p className="mt-6 text-sm text-ink">{c.caption}</p>
           </div>
         </div>
       </Section>

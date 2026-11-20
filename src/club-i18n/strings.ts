@@ -163,7 +163,6 @@ const de = {
     "status": "Noch nicht fertig und aktuell nicht buchbar.",
     "cta": "Auf die Warteliste",
     "plannedCta": "Geplante Inhalte ansehen",
-    "caption": "Entwurf aus der Entwicklung. Noch nicht die fertige Version.",
     "whatH2": "Wiedererkennbar bleiben. Einfacher Content erstellen.",
     "whatBody": [
       "Im geplanten Selbstlernkurs hältst du Schritt für Schritt fest, was deinen Content ausmacht: wie du schreibst, welche Farben und Schriften zu dir passen und welche visuellen Details deinen Stil prägen.",
@@ -433,7 +432,6 @@ const en: Dict = {
     "status": "Still being built and not yet available to purchase.",
     "cta": "Join the waitlist",
     "plannedCta": "Explore planned content",
-    "caption": "Work-in-progress preview. Not the finished version.",
     "whatH2": "Stay recognisable. Make content creation simpler.",
     "whatBody": [
       "In the planned self-paced course, you define what makes your content yours: how you write, which colours and fonts fit your identity, and which visual details shape your style.",
