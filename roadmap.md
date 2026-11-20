@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Combine Starterpaket and Edit-Guide into one bilingual signup form with a resource dropdown; preserve contact fields, consent and selected-resource submission/download behavior. Eight DE/EN mobile/desktop flows passed with mocked submissions, plus 14 existing validation/download tests. No real signups or email delivery tested; not published.
+
 - [x] Extend Club Bricolage Grotesque 800 coverage to FAQ headings and quotes, with upright emphasis and sentence-case rendering. Passed 24 DE/EN checks across six pages at 390px/1280px; HUMINT Instrument Serif/Figtree and Anton belief statement unchanged. Unused legacy rules retained; letter spacing remains zero under project instructions. Not published.
 
 - [x] Make Content-Assistentin development status visible in DE/EN hero, planned-content overview, Community explanation and mockup captions. Verified 390px/1280px layouts, disclaimer placement, CTA anchors, form validation and consent; 12 tests pass. No submissions or publishing; signup journeys preserved.

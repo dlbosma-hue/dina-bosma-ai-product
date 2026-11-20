@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { CalendarCheck } from "lucide-react";
 import { downloads, links } from "@/config/links";
 import { headFor, useLang, usePageMeta } from "@/club-i18n/lang";
@@ -7,6 +8,7 @@ import { SignupForm } from "@/components/club/Forms";
 import { PhotoFrame } from "@/components/club/PhotoFrame";
 import { Section, SectionHead } from "@/components/club/Section";
 import { FinalCta } from "@/components/club/Blocks";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/ai-noob-club/gratis")({
   head: () => headFor("gratis", "/ai-noob-club/gratis"),
@@ -18,6 +20,16 @@ function Gratis() {
   usePageMeta("gratis");
   const g = t.gratis;
   const pdf = downloads.editGuidePdf[lang];
+  const [resource, setResource] = useState<"starterpaket" | "edit-guide">("starterpaket");
+  useEffect(() => {
+    const selectFromHash = () => {
+      if (window.location.hash === "#edit-guide") setResource("edit-guide");
+      else if (window.location.hash === "#starterpaket") setResource("starterpaket");
+    };
+    selectFromHash();
+    window.addEventListener("hashchange", selectFromHash);
+    return () => window.removeEventListener("hashchange", selectFromHash);
+  }, []);
   return (
     <>
       <Section>
@@ -45,8 +57,12 @@ function Gratis() {
               <PhotoFrame slot="startpaketCover" tilt={-2} aspect="aspect-[4/3]" />
             </div>
           </div>
-          <div className="rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
-            <SignupForm list="starterpaket" note={g.starterNote} successText={g.starterSuccess} />
+          <div id="guide-signup" className="scroll-mt-28 rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
+            <SignupForm list={resource} onGuideChange={setResource}
+              note={resource === "starterpaket" ? g.starterNote : g.guideNote}
+              successText={resource === "starterpaket" ? g.starterSuccess : pdf ? g.guideReady : g.guideSuccess}
+              successAction={resource === "edit-guide" && pdf ? <a href={pdf} download className="club-btn-primary self-start">{g.guideDownload}</a> : undefined}
+            />
           </div>
         </div>
       </Section>
@@ -60,19 +76,10 @@ function Gratis() {
               <PhotoFrame slot="editGuideCover" tilt={2} aspect="aspect-[4/3]" />
             </div>
           </div>
-          <div className="rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
-            <SignupForm
-              list="edit-guide"
-              note={g.guideNote}
-              successText={pdf ? g.guideReady : g.guideSuccess}
-              successAction={
-                pdf ? (
-                  <a href={pdf} download className="club-btn-primary self-start">
-                    {g.guideDownload}
-                  </a>
-                ) : undefined
-              }
-            />
+          <div>
+            <Button asChild className="club-btn-primary club-btn-guide-signup">
+              <a href="#guide-signup" onClick={() => setResource("edit-guide")}>{t.form.guideSubmit}</a>
+            </Button>
           </div>
         </div>
       </Section>

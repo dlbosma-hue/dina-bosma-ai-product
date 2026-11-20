@@ -77,12 +77,14 @@ export function SignupForm({
   successText,
   successAction,
   submitText,
+  onGuideChange,
 }: {
   list: "community" | "content-assistentin" | "starterpaket" | "edit-guide";
   note: string;
   successAction?: ReactNode | undefined;
   successText?: string | undefined;
   submitText?: string | undefined;
+  onGuideChange?: ((list: "starterpaket" | "edit-guide") => void) | undefined;
 }) {
   const { t, lang } = useLang();
   const f = t.form;
@@ -130,6 +132,17 @@ export function SignupForm({
   return (
     <form onSubmit={onSubmit} noValidate className="relative flex flex-col gap-5">
       <Honeypot value={hp} onChange={setHp} label={f.honeypot} />
+      {guide && onGuideChange && (
+        <Field id={`${id}-product`} label={f.guideProduct}>
+          <select id={`${id}-product`} className="club-field" value={list} disabled={status === "sending"} onChange={(e) => {
+            const value = e.target.value;
+            if (value === "starterpaket" || value === "edit-guide") onGuideChange(value);
+          }}>
+            <option value="starterpaket">{f.starterProduct}</option>
+            <option value="edit-guide">{f.editProduct}</option>
+          </select>
+        </Field>
+      )}
       <Field id={`${id}-name`} label={community ? c.firstName : f.firstName} error={errs.firstName}>
         <input id={`${id}-name`} className="club-field" autoComplete="given-name" required={!community} value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={80} aria-invalid={!!errs.firstName} />
       </Field>
