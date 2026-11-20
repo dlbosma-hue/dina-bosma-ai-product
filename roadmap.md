@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Correct localized Starterpaket submits, enlarge only product waitlist CTAs, and reuse approved Club lettering at the bottom of HUMINT. Checked 64 route/language/viewport states, form validation, consent, product CTA navigation and simulated submission failure; 22 tests pass. No real signup or email delivery tested, no publishing.
+
 - [x] Rewrite the Content-Assistentin product preview with exact DE/EN copy, one independent waitlist, planned content and FAQs. DE/EN checked at 390px and 1280px; signup storage and owner sends confirmed, labeled test rows removed, 18 tests pass. Static English mockup still says Content Assistant; launch announcements are not automated. Not published.
 
 - [x] Combine Community and Beta into one bilingual page and signup, preserve product waitlist and existing records, test links and submissions, and do not publish. DE/EN tested at 390px and 1280px; two signup tests stored, owner email sends confirmed, test records removed. Membership acceptance and the 20-member limit remain manual.

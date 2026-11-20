@@ -26,7 +26,7 @@ function Waitlist() {
             <p className="mt-6 max-w-lg text-lg text-ink">{c.text}</p>
             <p className="mt-5 font-semibold text-navy">{c.status}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button asChild className="club-btn-primary"><a href="#warteliste">{c.cta}</a></Button>
+              <Button asChild className="club-btn-primary club-btn-product-waitlist"><a href="#warteliste">{c.cta}</a></Button>
               <Button asChild variant="outline" className="club-btn-secondary"><a href="#geplante-inhalte">{c.plannedCta}</a></Button>
             </div>
           </div>
@@ -83,7 +83,7 @@ function Waitlist() {
       <Section tone="rosa">
         <SectionHead title={c.finalH2} />
         <p className="mt-6 text-lg text-ink">{c.finalBody}</p>
-        <Button asChild className="club-btn-primary mt-8"><a href="#warteliste">{c.finalCta}</a></Button>
+        <Button asChild className="club-btn-primary club-btn-product-waitlist mt-8"><a href="#warteliste">{c.finalCta}</a></Button>
       </Section>
       <Section>
         <p className="text-ink">{c.communityText}</p>

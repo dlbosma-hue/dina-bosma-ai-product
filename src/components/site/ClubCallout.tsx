@@ -1,22 +1,16 @@
 import { Link } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n";
-import logoDeAsset from "@/assets/ai-noob-club-logo-de-v8.png.asset.json";
-import logoEnAsset from "@/assets/ai-noob-club-logo-en-v8.png.asset.json";
+import { ClubLettering } from "@/components/club/ClubLettering";
 import { Button } from "@/components/ui/button";
 
 export function ClubCallout() {
-  const { lang, t } = useLanguage();
+  const { t } = useLanguage();
   return (
     <section id="club-callout" className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-24">
       <div className="rounded-[24px] border-2 border-link !bg-club-callout-pink !p-7 shadow-none md:!p-12">
-        <img
-          src={lang === "en" ? logoEnAsset.url : logoDeAsset.url}
-          alt={lang === "en" ? "AI Noob Club: You're the boss. AI is new to the team." : "AI Noob Club: Du bist die Chefin. KI ist neu im Team."}
-          loading="lazy"
-          className="mb-6 block h-auto w-full max-w-xs md:max-w-sm"
-          width={1920}
-          height={640}
-        />
+        <Link to="/ai-noob-club" aria-label="AI Noob Club" className="mb-6 block w-fit max-w-full text-2xl no-underline md:text-4xl">
+          <ClubLettering />
+        </Link>
         <h2 className="max-w-3xl !font-serif text-[32px] leading-[1.06] !text-navy md:text-[52px]">
           {t.clubCallout.headline}
         </h2>

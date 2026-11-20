@@ -4,6 +4,7 @@
 
 - Define AI Noob Club palette roles as semantic tokens in the global stylesheet and use them in both Club routes, so brand colors remain consistent and themeable.- Build AI Noob Club page head tags with the shared Club meta helper and swap them to the active language in the browser, because DE and EN share one URL.
 - Keep imported Club components in src/components/club and language state in src/club-i18n, isolated from HUMINT components and language state to prevent cross-brand changes.
+- Reuse the context-free ClubLettering in Club chrome and the HUMINT Club callout so the approved lettering stays identical without sharing language providers or page themes.
 - Keep Club typography scoped to .noob-theme and serve its display font locally, so HUMINT styling remains unchanged.
 - Validate imported Club forms in the shared browser-safe schema and dedicated public handler; store signups in waitlist_submissions with signup_list and contacts in contact_requests using service-role-only insertion, so visitors cannot read records and duplicates and durable limits stay enforced.
 - Use list-specific validation for the combined Community signup and leave the product waitlist separate; preserve existing storage labels and records so the new journey does not silently reclassify subscribers. Community receipts acknowledge submission only; membership capacity and acceptance are manually checked.

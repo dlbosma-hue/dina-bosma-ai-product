@@ -824,6 +824,12 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club :focus-visible { outline: 2px solid var(--terra); outline-offset: 3px; }
 .noob-theme.new-club ::selection { background: var(--rosa); color: var(--navy); }
 .noob-theme.new-club .club-kw { font-style: normal; color: var(--terra); }
+.club-lettering {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 800; font-style: normal; font-synthesis: none;
+  letter-spacing: 0; white-space: nowrap; line-height: 1.05; color: var(--navy);
+  & em { font-style: normal; color: var(--accent-grapefruit); }
+}
 .noob-theme.new-club .club-eyebrow {
   font-family: var(--font-sans);
   font-weight: 600;
@@ -851,6 +857,16 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   border: 2px solid var(--navy); text-align: center;
   transition: background-color 120ms var(--ease-brand);
   &:hover { background: var(--sky); }
+}
+.noob-theme.new-club .club-btn-product-waitlist {
+  background: var(--accent-grapefruit); color: var(--navy);
+  min-height: 56px; height: auto; padding: 12px 32px; border-radius: 9999px;
+  max-width: 100%; min-width: 0; font-size: 1rem;
+  white-space: normal; overflow-wrap: anywhere;
+}
+.noob-theme.new-club .club-btn-starter-signup { background: var(--accent-grapefruit); }
+@media (max-width: 639px) {
+  .noob-theme.new-club .club-btn-product-waitlist { width: 100%; }
 }
 .noob-theme.new-club .club-card-brand {
   background: var(--cream); border: 2px solid var(--rosa); border-radius: 24px; padding: 24px; color: var(--ink);

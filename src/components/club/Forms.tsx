@@ -136,8 +136,8 @@ export function SignupForm({
         <input id={`${id}-email`} type="email" required className="club-field" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={255} aria-invalid={!!errs.email} />
       </Field>
       <Consent id={`${id}-consent`} checked={consent} onChange={setConsent} error={errs.consent} prefix={community ? c.consentA : f.consentA} />
-      <Button variant="ghost" type="submit" className="club-btn-primary w-full uppercase tracking-[0.12em]" disabled={status === "sending"}>
-        {status === "sending" ? f.sending : submitText ?? (community ? c.cta : f.submit)}
+      <Button variant="ghost" type="submit" className={`club-btn-primary w-full uppercase tracking-[0.12em]${list === "content-assistentin" ? " club-btn-product-waitlist" : list === "starterpaket" ? " club-btn-starter-signup" : ""}`} disabled={status === "sending"}>
+        {status === "sending" ? f.sending : list === "starterpaket" ? f.starterSubmit : submitText ?? (community ? c.cta : f.submit)}
       </Button>
       {status === "error" && <p role="alert" className="text-sm font-medium text-terra">{f.error}</p>}
       {note && <p className="text-center text-sm text-ink">{note}</p>}

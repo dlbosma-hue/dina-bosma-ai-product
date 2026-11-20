@@ -68,7 +68,7 @@ function Community() {
 
       <Section tone="rosa">
         <p className="text-lg text-ink">{c.productText}</p>
-        <Button asChild variant="link" className="club-link-brand mt-4 min-h-11">
+        <Button asChild className="club-btn-primary club-btn-product-waitlist mt-4">
           <Link to="/ai-noob-club/content-assistentin">{c.productLink}</Link>
         </Button>
       </Section>
