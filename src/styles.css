@@ -608,11 +608,14 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 }
 .humint-theme .humint-belief-points li {
   position: relative;
-  padding-left: 34px;
-  font-family: "Anton", sans-serif;
+  padding-left: 22px;
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-synthesis: none;
   text-transform: uppercase;
-  font-size: clamp(26px, 4.4vw, 42px);
-  line-height: 1.12;
+  font-size: 13pt;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   color: var(--ink);
 }
@@ -620,9 +623,9 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   content: "";
   position: absolute;
   left: 0;
-  top: 0.56em;
-  width: 18px;
-  height: 18px;
+  top: 0.62em;
+  width: 11px;
+  height: 11px;
   background: color-mix(in oklab, var(--blue) 25%, var(--white));
   border: 2px solid var(--ink);
   transform: translateY(-50%) rotate(-4deg);
