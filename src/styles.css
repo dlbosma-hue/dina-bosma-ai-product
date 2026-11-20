@@ -758,7 +758,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club :is(p,li,label,span,a,button,input,select,textarea) { color: inherit; }
 .noob-theme.new-club .text-ink { color: var(--ink); }
 .noob-theme.new-club .text-navy { color: var(--navy); }
-.noob-theme.new-club .text-terra { color: var(--navy); }
+.noob-theme.new-club .text-terra { color: var(--accent-grapefruit); }
 .noob-theme.new-club .uppercase { font-family: var(--font-sans); }
 .noob-theme.new-club .text-base { font-size: 1rem; }
 .noob-theme.new-club .text-lg { font-size: 1.125rem; }
@@ -768,9 +768,8 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club :focus-visible:not(.club-humint-block *) { outline: 2px solid var(--navy); outline-offset: 3px; }
 .noob-theme.new-club .club-humint-block :focus-visible { outline: 2px solid var(--terra); outline-offset: 3px; }
 .noob-theme.new-club ::selection { background: var(--rosa); color: var(--navy); }
-.noob-theme.new-club .club-kw { font-style: normal; color: var(--terra); }
-.noob-theme.new-club .club-kw:not(.club-humint-block *) { color: var(--navy); }
-.noob-theme .club-lettering em { color: var(--navy); }
+.noob-theme.new-club .club-kw { font-style: normal; color: var(--accent-grapefruit); }
+.noob-theme .club-lettering em { color: var(--accent-grapefruit); }
 .club-lettering {
   font-family: "Bricolage Grotesque", system-ui, sans-serif;
   font-weight: 800; font-style: normal; font-synthesis: none;
@@ -863,7 +862,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club button[aria-pressed] { min-height: 44px; }
 /* Club marks and surfaces remain flat; preserve the independent HUMINT block. */
 .noob-theme :is(*, *::before, *::after):not(.club-humint-block, .club-humint-block *) { box-shadow: none; text-shadow: none; }
-.noob-theme.new-club .club-rule-accent:not(.club-humint-block *) { background: var(--navy); }
+.noob-theme.new-club .club-rule-accent:not(.club-humint-block *) { background: var(--accent-grapefruit); }
 .noob-theme.new-club :is(a,button,label,summary,svg,.club-lettering,.club-field):not(.club-humint-block *) { color: var(--navy); }
 /* Der HUMINT-Hinweis am Ende der Club-Seiten tragt HUMINTs eigene Schriften: Instrument Serif fur Uberschriften, Figtree fur Fliefltext. Stand 20.11.2026. */
 .noob-theme.new-club .club-humint-block { font-family: "Figtree", sans-serif; }
