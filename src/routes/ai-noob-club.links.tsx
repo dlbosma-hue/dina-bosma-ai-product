@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { links } from "@/config/links";
+import { clubShareMeta } from "@/config/club-share";
 import { photos } from "@/config/photos";
 import { useLang } from "@/club-i18n/lang";
 import { Section } from "@/components/club/Section";
@@ -52,6 +53,7 @@ export const Route = createFileRoute("/ai-noob-club/links")({
       { property: "og:description", content: copy.de.intro },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...clubShareMeta,
       { name: "robots", content: "noindex" },
     ],
   }),

@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { dict, type Dict, type Lang } from "./strings";
+import { clubShareMeta } from "@/config/club-share";
 
 const KEY = "ainoob-lang";
 type Ctx = { lang: Lang; t: Dict; setLang: (l: Lang) => void };
@@ -62,6 +63,7 @@ export function headFor(key: MetaKey, path: string) {
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://humint.site${path}` },
       { name: "twitter:card", content: "summary_large_image" },
+      ...clubShareMeta,
     ],
     links: [{ rel: "canonical", href: `https://humint.site${path}` }],
   };

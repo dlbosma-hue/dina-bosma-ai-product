@@ -16,3 +16,4 @@
 - Repair Club paths containing encoded fragments centrally in root beforeLoad with the browser-safe Club redirect helper, preserving the raw query string and sharing the same permanent redirect on server and client.
 - Mount imported Club content as children of the /ai-noob-club layout with its own header, footer and scoped .noob-theme.new-club styles, so HUMINT remains unchanged.
 - Map newly uploaded Club media through src/config/photos.ts, frames.ts and links.ts asset pointers, so language-specific artwork and PDFs remain centralized without binary files in Git.
+- Share Club-only image metadata through src/config/club-share.ts in leaf heads, so the main and bio pages use the same branded preview without changing HUMINT metadata.
