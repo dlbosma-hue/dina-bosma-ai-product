@@ -8,7 +8,6 @@ import { SignupForm } from "@/components/club/Forms";
 import { PhotoFrame } from "@/components/club/PhotoFrame";
 import { Section, SectionHead } from "@/components/club/Section";
 import { FinalCta } from "@/components/club/Blocks";
-import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/ai-noob-club/gratis")({
   head: () => headFor("gratis", "/ai-noob-club/gratis"),
@@ -63,9 +62,6 @@ function Gratis() {
             </div>
             <h2 className="text-3xl text-navy sm:text-4xl">{g.guideTitle}</h2>
             <p className="mt-4 text-lg text-ink">{g.guideText}</p>
-            <Button asChild className="club-btn-primary club-btn-guide-signup mt-6">
-              <a href="#guide-signup" onClick={() => setResource("edit-guide")}>{t.form.guideSubmit}</a>
-            </Button>
           </div>
         </div>
           <div id="guide-signup" className="mx-auto mt-12 max-w-xl scroll-mt-28 rounded-[24px] border-2 border-navy bg-cream p-6 sm:p-8">
