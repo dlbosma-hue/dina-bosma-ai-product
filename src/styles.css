@@ -824,6 +824,11 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 @media (max-width: 639px) {
   .noob-theme.new-club .club-btn-product-waitlist { width: 100%; }
 }
+/* Formular auf hellem Rosa: der Button-Pill wird hellblau, sonst verschwindet er im Rosa der Feldflaeche. Stand 20.11.2026. */
+.noob-theme.new-club .bg-rosa:has(> form) .club-btn-primary {
+  background: var(--sky);
+  &:hover { background: var(--midsky); }
+}
 .noob-theme.new-club .club-card-brand {
   background: var(--cream); border: 1px solid var(--navy); border-radius: 24px; padding: 24px; color: var(--ink);
 }
