@@ -114,14 +114,14 @@ function Home() {
         </div>
       </Section>
 
-      <Section className="border-t-2 border-navy" tightBottom>
+      <Section className="border-t border-navy" tightBottom>
         <div className="mx-auto max-w-2xl text-center">
           <SectionHead eyebrow={h.meetEyebrow} title={h.meetH2} center />
           <p className="mt-6 text-lg text-ink">{h.meetText}</p>
           <Ext href={links.meetup} className="club-btn-primary mt-8">{h.meetCta}</Ext>
           <p className="mt-6 text-ink">{h.workshopQ}</p>
           <p className="mt-1">
-            <Link to="/ai-noob-club/kontakt" className="club-link-brand">{h.workshopLink}</Link>
+            <Link to="/ai-noob-club/kontakt" className="club-link-brand club-link-accent">{h.workshopLink}</Link>
           </p>
           <div className="mx-auto mt-4 w-full max-w-sm">
             <PhotoFrame slot="workshopPhoto" tilt={-2} />
