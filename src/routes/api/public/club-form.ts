@@ -22,17 +22,17 @@ export const Route = createFileRoute("/api/public/club-form")({
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { error } = await supabaseAdmin.rpc("store_imported_club_form", { p_data: { ...data, consent_text }, p_ip_hash: hash });
     if (error) return Response.json({ ok: false }, { status: error.message.includes("rate_limit") ? 429 : 502 });
-    if (data.kind === "signup" && data.list === "community") {
-      const { data: submission } = await supabaseAdmin.from("waitlist_submissions").select("id").eq("signup_list", "community").ilike("email", data.email).maybeSingle();
+    if (data.kind === "signup" && (data.list === "community" || data.list === "content-assistentin")) {
+      const { data: submission } = await supabaseAdmin.from("waitlist_submissions").select("id").eq("signup_list", data.list).ilike("email", data.email).maybeSingle();
       if (submission) {
         try {
           const { sendTemplateEmail } = await import("@/lib/email-templates/send-email");
           const result = await sendTemplateEmail("club-signup-notification", "ai.noobclub@humint.site", {
             templateData: { name: data.firstName, email: data.email, signupList: data.list, lang: data.lang },
-            idempotencyKey: `combined-community-owner-${submission.id}`,
+            idempotencyKey: data.list === "community" ? `combined-community-owner-${submission.id}` : `product-waitlist-owner-${submission.id}`,
           });
           if (result.sent) await supabaseAdmin.from("waitlist_submissions").update({ owner_notified: true }).eq("id", submission.id);
-        } catch { console.error("Community owner notification failed; signup remains stored"); }
+        } catch { console.error("Club owner notification failed; signup remains stored"); }
       }
     }
     return Response.json({ ok: true });

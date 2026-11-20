@@ -76,11 +76,13 @@ export function SignupForm({
   note,
   successText,
   successAction,
+  submitText,
 }: {
   list: "community" | "content-assistentin" | "starterpaket" | "edit-guide";
   note: string;
   successAction?: ReactNode | undefined;
   successText?: string | undefined;
+  submitText?: string | undefined;
 }) {
   const { t, lang } = useLang();
   const f = t.form;
@@ -135,7 +137,7 @@ export function SignupForm({
       </Field>
       <Consent id={`${id}-consent`} checked={consent} onChange={setConsent} error={errs.consent} prefix={community ? c.consentA : f.consentA} />
       <Button variant="ghost" type="submit" className="club-btn-primary w-full uppercase tracking-[0.12em]" disabled={status === "sending"}>
-        {status === "sending" ? f.sending : community ? c.cta : f.submit}
+        {status === "sending" ? f.sending : submitText ?? (community ? c.cta : f.submit)}
       </Button>
       {status === "error" && <p role="alert" className="text-sm font-medium text-terra">{f.error}</p>}
       {note && <p className="text-center text-sm text-ink">{note}</p>}

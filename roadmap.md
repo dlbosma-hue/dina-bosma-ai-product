@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Rewrite the Content-Assistentin product preview with exact DE/EN copy, one independent waitlist, planned content and FAQs. DE/EN checked at 390px and 1280px; signup storage and owner sends confirmed, labeled test rows removed, 18 tests pass. Static English mockup still says Content Assistant; launch announcements are not automated. Not published.
+
 - [x] Combine Community and Beta into one bilingual page and signup, preserve product waitlist and existing records, test links and submissions, and do not publish. DE/EN tested at 390px and 1280px; two signup tests stored, owner email sends confirmed, test records removed. Membership acceptance and the 20-member limit remain manual.
 
 - [x] Apply the approved HUMINT-only calm redesign; preserve copy, heading sizes, links and Club styling; verify DE/EN at 390px and 1280px without publishing. Existing mono heading labels use Figtree per the no-mono requirement; the unchanged tagline keeps its original font. 29 tests pass; project dialog, anchors, language toggle and PDF checked.

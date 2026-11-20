@@ -52,7 +52,7 @@ const de = {
     about: { title: "Über mich: Dina vom AI Noob Club", description: "Stylistin, Produktmanagerin, Gründerin. Warum Dina den AI Noob Club gestartet hat und woran sie glaubt." },
     gratis: { title: "Gratis: Starterpaket, Edit-Guide und KI-Start-Check", description: "Drei kostenlose Wege, mit KI anzufangen: Starterpaket per E-Mail, Edit-Guide als PDF und ein 1:1 KI-Start-Check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Gestalte die Content-Assistentin mit. Eine Anmeldung für Input, spätere Beta und ersten Zugang zum vollständigen Produkt. Maximal 20 Mitglieder." },
-    ca: { title: "Content-Assistentin: Produkt-Warteliste | AI Noob Club", description: "Warte auf den fertigen Selbstlernkurs für Texte mit KI in deinem eigenen Ton. Die Produkt-Warteliste ist unabhängig von Community & Beta." },
+    ca: { title: "Content-Assistentin: Selbstlernkurs in Entwicklung | AI Noob Club", description: "Vorschau auf den Selbstlernkurs in Entwicklung für KI-Texte in deinem eigenen Ton. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
     contact: { title: "Kontakt: Workshop anfragen beim AI Noob Club", description: "Workshops für Gruppen und kleine Teams. Schreib Dina kurz, was du vorhast." },
   },
   home: {
@@ -153,20 +153,70 @@ const de = {
     guideReady: "Du bist drin. Hier ist dein Guide.",
   },
   ca: {
-    eyebrow: "Meine Content-Assistentin",
-    h1: "Auf den fertigen Kurs *warten*.",
-    text: "Du möchtest auf die fertige Content-Assistentin warten, ohne die Entwicklung zu begleiten? Trag dich in die Produkt-Warteliste ein.",
-    formCaps: "Auf die Warteliste",
-    formH: "Sei die *Erste*, die Bescheid bekommt.",
-    formNote: "Eine E-Mail, wenn es losgeht. Kein Spam.",
-    ticker: ["Content-Assistentin", "Produkt-Warteliste"],
-    heyEyebrow: "Hey, ich bin Dina",
-    heyText: [
-      "Ich war Stylistin, dann Produktmanagerin und habe KI-Tools für ein ganzes Team gebaut.",
-      "Heute baue ich für mein eigenes Business und probiere jedes Tool selbst aus, bevor ich es dir zeige.",
-      "Hier gehört jede Frau dazu, mit oder ohne Kinder.",
+    "eyebrow": "Selbstlernkurs · In Entwicklung",
+    "productName": "Content-Assistentin",
+    "h1": "KI für deine Texte. Mit deinem eigenen Ton.",
+    "text": "Du hast KI schon ausprobiert, aber die Texte klangen nicht nach dir? Dafür entsteht dieser Selbstlernkurs: Du lernst, mit eigenen Textbeispielen und wiederverwendbaren Anweisungen in einem KI-Chat zu arbeiten.",
+    "status": "Der Kurs ist noch in Entwicklung und aktuell nicht buchbar.",
+    "cta": "Auf die Warteliste",
+    "plannedCta": "Geplante Inhalte ansehen",
+    "caption": "Vorschau auf den aktuellen Entwurf. Inhalte und Gestaltung können sich noch ändern.",
+    "whatH2": "Was wird die Content-Assistentin?",
+    "whatBody": [
+      "Ein Selbstlernkurs, in dem du dir eine wiederverwendbare Grundlage für die Arbeit mit KI erstellst: eigene Textbeispiele, klare Anweisungen und Vorlagen, die du an deine Aufgaben anpasst.",
+      "Du arbeitest in einem bestehenden KI-Chat. Der Kurs ist keine eigenständige Software und kein Tool, das alles automatisch für dich übernimmt. Du entscheidest, was du übernimmst, überarbeitest und veröffentlichst."
     ],
-    insta: "Folg mir auf Instagram →",
+    "plannedH2": "Das ist für den Kurs geplant",
+    "planned": [
+      "Kurze Module zum Selbstlernen",
+      "Wiederverwendbare Anweisungen für deinen KI-Chat",
+      "Checklisten für die praktische Umsetzung",
+      "Ein verständliches Glossar",
+      "Eine Vorlage für deine regelmäßige Content-Routine",
+      "Ergänzend: eine Look-Karte für Farben, Schriften und visuelle Details"
+    ],
+    "plannedNote": "Die genaue Modulanzahl, Reihenfolge und Bearbeitungszeit stehen noch nicht endgültig fest.",
+    "audienceH2": "Für wen der Kurs gedacht ist",
+    "audience": [
+      "Du hast ein kleines Business und schreibst deine Texte selbst.",
+      "Du möchtest KI gezielter als Unterstützung einsetzen.",
+      "Du bist bereit, eigene Textbeispiele einzubringen und Ergebnisse zu überarbeiten."
+    ],
+    "limitation": "Kein vollautomatisches Schreibtool und keine Schulung für große Teams.",
+    "requirementsH2": "Das brauchst du später",
+    "requirements": "Einen Zugang zu einem KI-Chat und einige eigene Textbeispiele. Welche Tools und Funktionen für die fertigen Übungen benötigt werden, steht vor dem Kursstart auf dieser Seite.",
+    "formH": "Erfahre, wann der Kurs startet",
+    "formBody": [
+      "Trag dich ein, wenn du den fertigen Kurs kennenlernen möchtest. Ich informiere dich per E-Mail, sobald er verfügbar ist.",
+      "Du musst dafür weder der Community beitreten noch die Beta testen. Mit deiner Anmeldung kaufst du noch nichts."
+    ],
+    "emailLabel": "E-Mail",
+    "submit": "Auf die Warteliste",
+    "success": "Danke! Deine Anmeldung zur Produkt-Warteliste ist eingegangen.",
+    "faqH2": "Häufige Fragen",
+    "faq": [
+      {
+        "question": "Ist der Kurs schon verfügbar?",
+        "answer": "Noch nicht. Der Kurs wird gerade entwickelt. Über die Warteliste erfährst du, sobald er verfügbar ist."
+      },
+      {
+        "question": "Was wird der Kurs kosten?",
+        "answer": "Der endgültige Preis steht noch nicht fest. Du erfährst ihn, bevor du dich für einen Kauf entscheidest."
+      },
+      {
+        "question": "Muss ich bei der Community oder Beta mitmachen?",
+        "answer": "Nein. Diese Warteliste ist für den fertigen Kurs. Community und Beta sind ein separates Angebot für Menschen, die bei der Entwicklung mitmachen möchten."
+      },
+      {
+        "question": "Wie lange dauert der Kurs?",
+        "answer": "Die genaue Bearbeitungszeit wird während der Entwicklung geprüft. Geplant sind kurze Module, die du in deinem eigenen Tempo bearbeiten kannst."
+      }
+    ],
+    "finalH2": "Interesse am fertigen Kurs?",
+    "finalBody": "Lass dir Bescheid geben, sobald die Content-Assistentin startet.",
+    "finalCta": "Auf die Warteliste",
+    "communityText": "Du möchtest bei der Entwicklung mitdenken und später die Beta testen?",
+    "communityLink": "Zur Community"
   },
   about: {
     h1: "Hey, ich bin *Dina*.",
@@ -263,7 +313,7 @@ const en: Dict = {
     about: { title: "About me: Dina from AI Noob Club", description: "Stylist, product manager, founder. Why Dina started AI Noob Club and what she believes in." },
     gratis: { title: "Free: starter kit, edit guide and AI start check", description: "Three free ways to start with AI: starter kit by email, edit guide as PDF and a 1:1 AI start check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Help shape the Content-Assistentin. One signup to share input, test the beta and get first access to the complete product. Up to 20 members." },
-    ca: { title: "Content-Assistentin: Product waitlist | AI Noob Club", description: "Wait for the finished self-paced course for AI writing in your own voice. The product waitlist is separate from Community & Beta." },
+    ca: { title: "Content-Assistentin: Course in development | AI Noob Club", description: "Preview the self-paced course in development for AI writing in your own voice. Planned content and an independent product waitlist. Not available to purchase yet." },
     contact: { title: "Contact: book a workshop with AI Noob Club", description: "Workshops for groups and small teams. Tell Dina briefly what you have in mind." },
   },
   home: {
@@ -364,20 +414,70 @@ const en: Dict = {
     guideReady: "You're in. Here is your guide.",
   },
   ca: {
-    eyebrow: "My content assistant",
-    h1: "Wait for the *finished* course.",
-    text: "Would you like to wait for the finished Content-Assistentin without taking part in development? Join the product waitlist.",
-    formCaps: "Join the waitlist",
-    formH: "Be the *first* to hear about it.",
-    formNote: "One email when it starts. No spam.",
-    ticker: ["Content-Assistentin", "Product waitlist"],
-    heyEyebrow: "Hey, I'm Dina",
-    heyText: [
-      "I was a stylist, then a product manager, and I built AI tools for a whole team.",
-      "Today I build for my own business and test every tool myself before I show it to you.",
-      "Every woman belongs here, with or without kids.",
+    "eyebrow": "Self-paced course · In development",
+    "productName": "Content-Assistentin",
+    "h1": "AI for your writing. In your own voice.",
+    "text": "Have you tried AI, only to find that the writing did not sound like you? That is what this self-paced course is being developed for: learning to work with your own writing samples and reusable instructions in an AI chat.",
+    "status": "The course is still in development and is not available to purchase yet.",
+    "cta": "Join the waitlist",
+    "plannedCta": "Explore planned content",
+    "caption": "Preview of the current draft. Content and design may change.",
+    "whatH2": "What will the Content-Assistentin be?",
+    "whatBody": [
+      "A self-paced course in which you build a reusable foundation for working with AI: your own writing samples, clear instructions and templates you adapt to your tasks.",
+      "You work in an existing AI chat. The course is not standalone software or a tool that does everything automatically. You decide what to use, edit and publish."
     ],
-    insta: "Follow me on Instagram →",
+    "plannedH2": "What is planned for the course",
+    "planned": [
+      "Short, self-paced modules",
+      "Reusable instructions for your AI chat",
+      "Practical implementation checklists",
+      "A plain-language glossary",
+      "A template for your ongoing content routine",
+      "An additional visual style card for colours, fonts and visual details"
+    ],
+    "plannedNote": "The exact number of modules, their order and the time needed are still being developed.",
+    "audienceH2": "Who the course is for",
+    "audience": [
+      "You run a small business and write your own content.",
+      "You want to use AI more intentionally as a writing aid.",
+      "You are willing to bring your own writing samples and edit the results."
+    ],
+    "limitation": "Not a fully automated writing tool or a training programme for large teams.",
+    "requirementsH2": "What you will need",
+    "requirements": "Access to an AI chat and some examples of your own writing. The tools and features needed for the finished exercises will be listed on this page before launch.",
+    "formH": "Find out when the course launches",
+    "formBody": [
+      "Sign up if you would like to explore the finished course. I will email you when it becomes available.",
+      "You do not need to join the community or test the beta. Signing up does not commit you to a purchase."
+    ],
+    "emailLabel": "Email",
+    "submit": "Join the waitlist",
+    "success": "Thank you! Your product waitlist signup has been received.",
+    "faqH2": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "Is the course available yet?",
+        "answer": "Not yet. The course is being developed. Join the waitlist to hear when it becomes available."
+      },
+      {
+        "question": "How much will the course cost?",
+        "answer": "The final price has not been confirmed. You will know the price before deciding whether to buy."
+      },
+      {
+        "question": "Do I have to join the community or beta?",
+        "answer": "No. This waitlist is for the finished course. The community and beta are a separate option for people who want to help with development."
+      },
+      {
+        "question": "How long will the course take?",
+        "answer": "The time needed is still being assessed during development. The plan is to offer short modules you can work through at your own pace."
+      }
+    ],
+    "finalH2": "Interested in the finished course?",
+    "finalBody": "Get notified when the Content-Assistentin launches.",
+    "finalCta": "Join the waitlist",
+    "communityText": "Would you like to help shape development and test the beta?",
+    "communityLink": "Explore the community"
   },
   about: {
     h1: "Hey, I'm *Dina*.",
