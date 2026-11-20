@@ -20,10 +20,10 @@ function Waitlist() {
         <div className="grid items-center gap-12 md:grid-cols-[1.1fr_1fr]">
           <div>
             <span className="club-rule-accent mb-5" aria-hidden />
-            <p className="club-eyebrow mb-5">{c.eyebrow}</p>
             <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl">{c.productName}</h1>
+            <p className="club-eyebrow mt-5">{c.eyebrow}</p>
             <h2 className="mt-5 text-2xl text-navy sm:text-3xl">{c.h1}</h2>
-            <p className="mt-6 max-w-lg text-lg text-ink">{c.text}</p>
+            <div className="mt-6 max-w-lg space-y-5 text-lg text-ink">{c.text.map(p => <p key={p}>{p}</p>)}</div>
             <p className="mt-5 font-semibold text-navy">{c.status}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild className="club-btn-primary club-btn-product-waitlist"><a href="#warteliste">{c.cta}</a></Button>
@@ -44,6 +44,7 @@ function Waitlist() {
       </Section>
       <Section id="geplante-inhalte" tone="sky">
         <SectionHead title={c.plannedH2} />
+        <p className="mt-6 max-w-3xl text-lg text-ink">{c.plannedIntro}</p>
         <ul className="mt-8 grid list-disc gap-x-12 gap-y-4 pl-6 text-lg text-ink sm:grid-cols-2">
           {c.planned.map(item => <li key={item}>{item}</li>)}
         </ul>

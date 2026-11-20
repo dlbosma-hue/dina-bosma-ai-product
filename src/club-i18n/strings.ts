@@ -125,7 +125,7 @@ const de = {
       { title: "4. Einen günstigeren Preis erhalten", text: "Ich setze dich persönlich auf die Warteliste für einen günstigeren Preis. Du musst dich dafür nicht noch einmal anmelden. Die genauen Konditionen erfährst du vor dem Kauf." },
     ],
     participationH2: "Mitmachen heißt: mitdenken und ausprobieren",
-    participationText: "Diese Community ist für Menschen, die die Entwicklung aktiv begleiten möchten. Du bringst deine Perspektive ein und gibst ehrliches Feedback – zuerst zu den Ideen, später zur Beta.",
+    participationText: "Der Kurs ist noch nicht fertig. Und genau hier kommt die Community ins Spiel. Du teilst deine Fragen, Wünsche und Herausforderungen und testest später die Beta. Dein Feedback hilft dabei, die Inhalte zu priorisieren, Übungen verständlicher zu machen und Vorlagen weiterzuentwickeln.",
     formH2: "Mach bei der Community mit",
     formIntro: "Es gibt maximal 20 Plätze. Deine Anmeldung gilt für die Community und die spätere Beta-Testphase. Eine zweite Anmeldung ist nicht nötig.",
     firstName: "Vorname (optional)",
@@ -153,20 +153,24 @@ const de = {
     guideReady: "Du bist drin. Hier ist dein Guide.",
   },
   ca: {
-    "eyebrow": "Selbstlernkurs · In Entwicklung",
+    "eyebrow": "In Entwicklung · Mit Community-Feedback",
     "productName": "Content-Assistentin",
     "h1": "Dein Ton. Dein Look. Weniger Zeit für Content.",
-    "text": "Erstelle mit KI schneller Content, der nach dir klingt und nach dir aussieht. Die Content-Assistentin hilft dir, deine eigene Stimme und deinen visuellen Stil als Grundlage zu nutzen, statt Content zu erstellen, der klingt und aussieht wie bei allen anderen. Damit mehr Zeit für dein Business und das Leben daneben bleibt.",
-    "status": "Der Kurs ist noch in Entwicklung und aktuell nicht buchbar.",
+    "text": [
+      "Hier entsteht ein Selbstlernkurs, der dir helfen soll, mit KI schneller Content zu erstellen, mit deiner eigenen Stimme und deinem visuellen Stil, statt wie alle anderen zu klingen und auszusehen. Für mehr Zeit für dein Business und das Leben daneben.",
+      "Der Kurs wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
+    ],
+    "status": "Noch nicht fertig und aktuell nicht buchbar.",
     "cta": "Auf die Warteliste",
     "plannedCta": "Geplante Inhalte ansehen",
-    "caption": "Vorschau auf den aktuellen Entwurf. Inhalte und Gestaltung können sich noch ändern.",
+    "caption": "Entwurf aus der Entwicklung. Noch nicht die fertige Version.",
     "whatH2": "Wiedererkennbar bleiben. Einfacher Content erstellen.",
     "whatBody": [
       "Im geplanten Selbstlernkurs hältst du Schritt für Schritt fest, was deinen Content ausmacht: wie du schreibst, welche Farben und Schriften zu dir passen und welche visuellen Details deinen Stil prägen.",
       "Daraus entwickelst du wiederverwendbare Anweisungen, Vorlagen und einen Ablauf für deine Content-Erstellung. So musst du nicht jedes Mal bei null anfangen. KI unterstützt dich. Du entscheidest, was zu dir passt und was du veröffentlichst."
     ],
-    "plannedH2": "Das ist für den Kurs geplant",
+    "plannedH2": "Das ist bisher geplant",
+    "plannedIntro": "Diese Übersicht zeigt den aktuellen Plan, nicht den fertigen Kurs. Inhalte, Aufbau und Materialien werden mit dem Feedback aus der Community weiterentwickelt und können sich noch ändern.",
     "planned": [
       "Kurze Module zum Selbstlernen",
       "Wiederverwendbare Anweisungen für deinen KI-Chat",
@@ -387,7 +391,7 @@ const en: Dict = {
       { title: "4. Get a lower price", text: "I will personally add you to the waitlist for a lower price. You do not need to sign up again. You will receive the exact terms before purchasing." },
     ],
     participationH2: "Taking part means sharing and testing",
-    participationText: "This community is for people who want to take an active part in development. You share your perspective and give honest feedback — first on the ideas, then on the beta.",
+    participationText: "The course is not finished. And that is where the community comes in. You share your questions, needs and challenges, then test the beta when it is ready. Your feedback helps prioritise content, make exercises clearer and improve the templates.",
     formH2: "Join the community",
     formIntro: "There are up to 20 community places. Your signup covers both the community and the later beta-testing phase. No second signup is needed.",
     firstName: "First name (optional)",
@@ -415,20 +419,24 @@ const en: Dict = {
     guideReady: "You're in. Here is your guide.",
   },
   ca: {
-    "eyebrow": "Self-paced course · In development",
+    "eyebrow": "In development · Shaped by community feedback",
     "productName": "Content-Assistentin",
     "h1": "Your voice. Your look. Less time creating content.",
-    "text": "Create content faster with AI while keeping it unmistakably yours. The Content-Assistentin helps you use your own voice and visual style as a foundation, instead of creating content that looks and sounds like everyone else’s. So you have more time for your business and life beyond it.",
-    "status": "The course is still in development and is not available to purchase yet.",
+    "text": [
+      "A self-paced course is taking shape to help you create content faster with AI, while keeping your own voice and visual style, rather than looking and sounding like everyone else. For more time for your business and life beyond it.",
+      "The course is currently being built. Community feedback helps shape and improve its content, exercises and templates."
+    ],
+    "status": "Still being built and not yet available to purchase.",
     "cta": "Join the waitlist",
     "plannedCta": "Explore planned content",
-    "caption": "Preview of the current draft. Content and design may change.",
+    "caption": "Work-in-progress preview. Not the finished version.",
     "whatH2": "Stay recognisable. Make content creation simpler.",
     "whatBody": [
       "In the planned self-paced course, you define what makes your content yours: how you write, which colours and fonts fit your identity, and which visual details shape your style.",
       "You turn these into reusable instructions, templates and a content workflow, so you do not have to start from scratch every time. AI supports the process. You decide what fits and what to publish."
     ],
-    "plannedH2": "What is planned for the course",
+    "plannedH2": "What is planned so far",
+    "plannedIntro": "This overview shows the current plan, not a finished course. The content, structure and materials are being developed with community feedback and may change.",
     "planned": [
       "Short, self-paced modules",
       "Reusable instructions for your AI chat",
