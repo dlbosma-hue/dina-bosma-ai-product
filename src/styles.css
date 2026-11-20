@@ -848,7 +848,7 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 }
 .noob-theme.new-club .club-link-brand {
   color: var(--navy); text-decoration: underline; text-decoration-color: var(--navy);
-  text-underline-offset: 4px; text-decoration-thickness: 2px;
+  text-underline-offset: 4px; text-decoration-thickness: 1px;
   transition: color 120ms var(--ease-brand);
   &:hover { color: var(--navy); }
 }
