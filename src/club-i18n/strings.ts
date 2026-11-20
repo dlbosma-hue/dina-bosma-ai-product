@@ -64,14 +64,12 @@ const de = {
     checkCta: "Gratis KI-Start-Check buchen →",
     checkNote: "20 Minuten 1:1 mit mir. Wir finden drei einfache KI-Ideen für deinen Alltag.",
     ticker: ["KI für Frauen mit eigenem Business", "Schritt für Schritt", "Deine Stimme bleibt deine"],
-    proofEyebrow: "Das gibt es wirklich",
     proof: [
       { n: 99, label: "Prompts für authentische KI-Fotos" },
       { n: 40, label: "Seiten im Prompt-Pack" },
       { n: 20, label: "Minuten für deinen KI-Start-Check, gratis" },
       { n: 20, label: "Maximal 20 Plätze für Community & Beta" },
     ],
-    proofNote: "Keine gekauften Zahlen. Ich zeige dir lieber, was ich gebaut habe.",
     freeEyebrow: "Gratis. Alles deins.",
     freeH2: "Drei Wege, *heute* anzufangen.",
     free: [
@@ -333,14 +331,12 @@ const en: Dict = {
     checkCta: "Book your free AI start check →",
     checkNote: "20 minutes 1:1 with me. We find three simple AI ideas for your day.",
     ticker: ["AI for women in business", "Step by step", "Your voice stays yours"],
-    proofEyebrow: "These are real",
     proof: [
       { n: 99, label: "prompts for authentic AI photos" },
       { n: 40, label: "pages in the prompt pack" },
       { n: 20, label: "minutes for your free AI start check" },
       { n: 20, label: "up to 20 members in Community & Beta" },
     ],
-    proofNote: "No bought numbers. I'd rather show you what I've built.",
     freeEyebrow: "Free. All yours.",
     freeH2: "Three ways to start *today*.",
     free: [

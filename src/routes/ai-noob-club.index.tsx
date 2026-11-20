@@ -64,7 +64,6 @@ function Home() {
       </Section>
 
       <Section tone="sky">
-        <p className="club-eyebrow mb-10 text-center">{h.proofEyebrow}</p>
         <ul className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {h.proof.map((p) => (
             <li key={p.label} className="text-center">
@@ -75,7 +74,6 @@ function Home() {
             </li>
           ))}
         </ul>
-        <p className="mt-12 text-center text-ink">{h.proofNote}</p>
       </Section>
 
       <Section>
