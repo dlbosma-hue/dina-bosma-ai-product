@@ -910,5 +910,14 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club button { height: auto; white-space: normal; }
 .noob-theme.new-club button[aria-pressed] { min-height: 44px; }
 .noob-theme.new-club header button { box-shadow: none; }
+/* Der HUMINT-Hinweis am Ende der Club-Seiten tragt HUMINTs eigene Schriften: Instrument Serif fur Uberschriften, Figtree fur Fliefltext. Stand 20.11.2026. */
+.noob-theme.new-club .club-humint-block { font-family: "Figtree", sans-serif; }
+.noob-theme.new-club .club-humint-block :is(h1,h2,h3,h4,h5,h6) {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400; font-style: normal; font-synthesis: none;
+  letter-spacing: 0; line-height: 1.15; text-transform: none;
+}
+.noob-theme.new-club .club-humint-block .club-btn-primary { font-family: "Figtree", sans-serif; }
+.noob-theme.new-club .club-humint-link { font-family: "Instrument Serif", Georgia, serif; }
 @media (max-width: 639px) { .noob-theme.new-club header .club-btn-primary.hidden { display: none; } }
 @media (prefers-reduced-motion: reduce) { .noob-theme.new-club *, .noob-theme.new-club *::before, .noob-theme.new-club *::after { animation: none !important; transition: none !important; } }

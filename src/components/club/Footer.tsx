@@ -20,7 +20,7 @@ export function Footer() {
             </Ext>
           </li>
           <li><Ext href={links.meetup} className="club-link-brand">{f.meetup}</Ext></li>
-          <li><Ext href={links.humint} className="club-link-brand">{f.humint}</Ext></li>
+          <li><Ext href={links.humint} className="club-link-brand club-humint-link">{f.humint}</Ext></li>
           <li><Ext href={links.impressum} className="club-link-brand">{f.impressum}</Ext></li>
           <li><Ext href={links.datenschutz} className="club-link-brand">{f.datenschutz}</Ext></li>
         </ul>

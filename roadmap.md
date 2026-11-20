@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Set the HUMINT block at the bottom of the Club pages in HUMINT's own fonts (Instrument Serif heading, Figtree text and button) plus the footer HUMINT link; Club headings, colors, layout and HUMINT pages unchanged. Checked DE/EN at 390px/1280px with computed font reads and close-up captures. Not published.
+
 - [x] Combine Starterpaket and Edit-Guide into one bilingual signup form with a resource dropdown; preserve contact fields, consent and selected-resource submission/download behavior. Eight DE/EN mobile/desktop flows passed with mocked submissions, plus 14 existing validation/download tests. No real signups or email delivery tested; not published.
 
 - [x] Extend Club Bricolage Grotesque 800 coverage to FAQ headings and quotes, with upright emphasis and sentence-case rendering. Passed 24 DE/EN checks across six pages at 390px/1280px; HUMINT Instrument Serif/Figtree and Anton belief statement unchanged. Unused legacy rules retained; letter spacing remains zero under project instructions. Not published.
