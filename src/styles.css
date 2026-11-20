@@ -791,41 +791,60 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club .club-btn-primary {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
-  background: var(--rosa); color: var(--navy); font-weight: 600; font-size: 1rem;
+  background: var(--pill); color: var(--navy); font-weight: 600; font-size: 1rem;
   border: 1px solid var(--navy); text-align: center;
   transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand), transform 120ms var(--ease-brand);
-  &:hover { background: var(--accent-grapefruit); border-color: var(--navy); }
+  &:hover { background: var(--pill-hover); border-color: var(--navy); }
   &:disabled { opacity: 0.6; cursor: not-allowed; }
 }
 .noob-theme.new-club .club-btn-secondary {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-height: 48px; padding: 0 1.6rem; border-radius: 9999px;
-  background: transparent; color: var(--navy); font-weight: 600; font-size: 1rem;
+  background: var(--pill-alt); color: var(--navy); font-weight: 600; font-size: 1rem;
   border: 1px solid var(--navy); text-align: center;
   transition: background-color 120ms var(--ease-brand);
-  &:hover { background: var(--sky); }
+  &:hover { background: var(--pill-alt-hover); }
 }
 .noob-theme.new-club .club-btn-product-waitlist {
-  background: var(--rosa); color: var(--navy);
+  background: var(--pill); color: var(--navy);
   min-height: 56px; height: auto; padding: 12px 32px; border-radius: 9999px;
   max-width: 100%; min-width: 0; font-size: 1rem;
   white-space: normal; overflow-wrap: anywhere;
   transition: background-color 120ms var(--ease-brand);
-  &:hover { background: var(--accent-grapefruit); }
+  &:hover { background: var(--pill-hover); }
 }
 .noob-theme.new-club .club-btn-guide-signup {
-  background: var(--rosa); color: var(--navy);
+  background: var(--pill); color: var(--navy);
   min-height: 56px; height: auto; padding: 12px 32px; border-radius: 9999px;
   max-width: 100%; min-width: 0; font-size: 1rem;
   white-space: normal; overflow-wrap: anywhere;
   transition: background-color 120ms var(--ease-brand);
-  &:hover { background: var(--accent-grapefruit); }
+  &:hover { background: var(--pill-hover); }
 }
 @media (max-width: 639px) {
   .noob-theme.new-club .club-btn-product-waitlist { width: 100%; }
 }
-/* Formular auf hellem Rosa: der Button-Pill wird hellblau, sonst verschwindet er im Rosa der Feldflaeche. Stand 20.11.2026. */
-.noob-theme.new-club .bg-rosa:has(> form) .club-btn-primary {
+/* Pill-Kontrast im Club: Die jeweils naechste flaechige Ebene bestimmt die Pill-Farbe, damit ein Pill nie dieselbe Farbe wie sein eigener Grund hat. Stand 20.11.2026. */
+.noob-theme.new-club {
+  --pill: var(--rosa); --pill-hover: var(--accent-grapefruit);
+  --pill-alt: var(--sky); --pill-alt-hover: var(--midsky);
+}
+.noob-theme.new-club .bg-rosa:not(.retro-button) {
+  --pill: var(--sky); --pill-hover: var(--midsky);
+  --pill-alt: var(--cream); --pill-alt-hover: var(--sky);
+}
+.noob-theme.new-club :is(.bg-cream, .club-card-brand):not(.retro-button) {
+  --pill: var(--rosa); --pill-hover: var(--accent-grapefruit);
+  --pill-alt: var(--sky); --pill-alt-hover: var(--midsky);
+}
+.noob-theme.new-club :is(.bg-sky, .bg-midsky):not(.retro-button) {
+  --pill: var(--rosa); --pill-hover: var(--accent-grapefruit);
+  --pill-alt: var(--cream); --pill-alt-hover: var(--sky);
+}
+.noob-theme.new-club section.club-humint-block { --pill: var(--sky); --pill-hover: var(--midsky); }
+/* Kopfzeile: keine beigen Pills auf beigem Grund, die Menue-Schaltflaeche wird hellblau. */
+.noob-theme.new-club header nav .retro-button { background: transparent; }
+.noob-theme.new-club header .club-header-icon {
   background: var(--sky);
   &:hover { background: var(--midsky); }
 }

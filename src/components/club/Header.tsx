@@ -149,7 +149,7 @@ export function Header() {
           </Link>
           <Button variant="ghost"
             type="button"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-navy text-navy xl:hidden"
+            className="club-header-icon flex h-11 w-11 items-center justify-center rounded-full border border-navy text-navy xl:hidden"
             aria-label={mobile ? t.nav.close : t.nav.menu}
             aria-expanded={mobile}
             onClick={() => setMobile((m) => !m)}
