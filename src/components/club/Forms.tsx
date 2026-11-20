@@ -149,7 +149,7 @@ export function SignupForm({
       <Field id={`${id}-email`} label={f.email} error={errs.email}>
         <input id={`${id}-email`} type="email" required className="club-field" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={255} aria-invalid={!!errs.email} />
       </Field>
-      <Consent id={`${id}-consent`} checked={consent} onChange={setConsent} error={errs.consent} prefix={community ? c.consentA : f.consentA} />
+      <Consent id={`${id}-consent`} checked={consent} onChange={setConsent} error={errs.consent} prefix={community ? c.consentA : guide ? f.guideConsentA : f.consentA} />
       <Button variant="ghost" type="submit" className={`club-btn-primary w-full uppercase tracking-[0.12em]${list === "content-assistentin" ? " club-btn-product-waitlist" : guide ? " club-btn-guide-signup" : ""}`} disabled={status === "sending"}>
         {status === "sending" ? f.sending : guide ? f.guideSubmit : submitText ?? (community ? c.cta : f.submit)}
       </Button>
