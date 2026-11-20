@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Extend Club Bricolage Grotesque 800 coverage to FAQ headings and quotes, with upright emphasis and sentence-case rendering. Passed 24 DE/EN checks across six pages at 390px/1280px; HUMINT Instrument Serif/Figtree and Anton belief statement unchanged. Unused legacy rules retained; letter spacing remains zero under project instructions. Not published.
+
 - [x] Make Content-Assistentin development status visible in DE/EN hero, planned-content overview, Community explanation and mockup captions. Verified 390px/1280px layouts, disclaimer placement, CTA anchors, form validation and consent; 12 tests pass. No submissions or publishing; signup journeys preserved.
 
 - [x] Broaden bilingual Content-Assistentin messaging across the course, Community, promotional cards and link-in-bio; preserve design and signup journeys. DE/EN checked at 390px and 1280px with CTA navigation, form validation, consent and FAQ interaction; 12 tests pass. No real submissions, email delivery checks or publishing.

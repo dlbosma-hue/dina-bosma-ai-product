@@ -809,8 +809,8 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 }
 
 .noob-theme.new-club main { padding-top: 0; }
-.noob-theme.new-club :is(h1,h2,h3,h4,h5,h6,.font-display) { font-family: var(--club-display); font-weight: 800; font-style: normal; font-synthesis: none; letter-spacing: 0; line-height: 1.05; overflow-wrap: anywhere; hyphens: auto; color: var(--navy); }
-.noob-theme.new-club :is(h1,h2,h3,h4,.font-display) em { font-style: normal; }
+.noob-theme.new-club :is(h1,h2,h3,h4,h5,h6,.font-display,blockquote,summary) { font-family: var(--club-display); font-weight: 800; font-style: normal; font-synthesis: none; letter-spacing: 0; line-height: 1.05; text-transform: none; overflow-wrap: anywhere; hyphens: auto; color: var(--navy); }
+.noob-theme.new-club :is(h1,h2,h3,h4,h5,h6,.font-display,blockquote,summary) :is(em,i) { font-family: inherit; font-weight: inherit; font-style: normal; }
 .noob-theme.new-club :is(p,li,label,span,a,button,input,select,textarea) { color: inherit; }
 .noob-theme.new-club .text-ink { color: var(--ink); }
 .noob-theme.new-club .text-navy { color: var(--navy); }
