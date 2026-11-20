@@ -406,7 +406,7 @@ html:has(.noob-theme) {
 
 /* HUMINT's independent, calm visual system. Brand headings retain their original styling. */
 .humint-theme {
-  --club-callout-pink: oklch(0.932 0.029 19.77); /* matches the lighter Club pink, Stand 19.11.2026 */
+  --club-callout-pink: oklch(0.957 0.020 19.77); /* lighter rose only for HUMINT's Club callout, Stand 20.11.2026 */
   --ink: oklch(0.30 0.12 260);
   --blue: oklch(0.42 0.15 260);
   --sky-50: oklch(0.96 0.015 250);
