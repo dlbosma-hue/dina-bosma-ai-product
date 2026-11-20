@@ -12,7 +12,7 @@ const toneClass: Record<Tone, string> = {
 export function Section({ tone = "cream", id, children, className = "", tightBottom = false }: { tone?: Tone; id?: string; children: ReactNode; className?: string; tightBottom?: boolean }) {
   return (
     <section id={id} className={`${toneClass[tone]} text-ink scroll-mt-24 ${className}`}>
-      <div className={`mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28 ${tightBottom ? "pb-10 md:pb-14" : ""}`}>{children}</div>
+      <div className={`mx-auto max-w-6xl px-5 py-16 sm:px-8 md:py-16 ${tightBottom ? "pb-10 md:pb-10" : ""}`}>{children}</div>
     </section>
   );
 }
