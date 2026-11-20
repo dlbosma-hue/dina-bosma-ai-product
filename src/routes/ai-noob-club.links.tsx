@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { links } from "@/config/links";
+import { photos } from "@/config/photos";
 import { useLang } from "@/club-i18n/lang";
 import { Section } from "@/components/club/Section";
 import { Ext } from "@/components/club/Ext";
@@ -60,21 +61,33 @@ export const Route = createFileRoute("/ai-noob-club/links")({
 function LinksPage() {
   const { lang } = useLang();
   const c = copy[lang];
-  useEffect(() => { document.title = lang === "de" ? "AI Noob Club: Alle Links" : "AI Noob Club: All links"; }, [lang]);
+  useEffect(() => {
+    const title = lang === "de" ? "AI Noob Club: Alle Links" : "AI Noob Club: All links";
+    document.title = title;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", c.intro);
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute("content", c.intro);
+  }, [lang, c.intro]);
   const card = "club-bio-card";
   const Body = ({ k, ext }: { k: keyof typeof c.items; ext?: boolean }) => (
     <>
-      <span className="block text-xl text-navy">{c.items[k][0]}</span>
-      <span className="mt-1 block text-ink">{c.items[k][1]}</span>
+      {k === "prompts" && <img src={photos.promptPackCover[lang]} alt={c.items.prompts[0]} width={640} height={480} loading="lazy" className="mb-3 max-h-48 w-full rounded-xl object-contain" />}
+      <span className="flex items-center gap-3">
+        <span className="min-w-0 flex-1">
+          <span className="block text-base font-semibold leading-snug text-navy">{c.items[k][0]}</span>
+          <span className="mt-1 block text-sm leading-snug text-ink">{c.items[k][1]}</span>
+        </span>
+        <span aria-hidden className="shrink-0 text-navy">↗</span>
+      </span>
       {ext && <span className="sr-only"> ({c.ext})</span>}
     </>
   );
   return (
     <Section>
-      <div className="mx-auto max-w-xl">
+      <div className="club-bio-panel mx-auto max-w-xl">
         <h1 className="text-center text-3xl text-navy sm:text-4xl">{c.title}</h1>
         <p className="mt-4 text-center text-ink">{c.intro}</p>
-        <ul className="mt-8 flex flex-col gap-4">
+        <ul className="mt-6 flex flex-col gap-3">
           <li><Ext href={links.calendlyStartCheck} className={card}><Body k="startcheck" ext /></Ext></li>
           <li><a href={`/ai-noob-club/community${utm("bio_community")}#platz`} className={card}><Body k="course" /></a></li>
           <li><a href={`/ai-noob-club/content-assistentin${utm("bio_kurs")}`} className={card}><Body k="product" /></a></li>

@@ -825,10 +825,14 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   background: var(--cream); border: 2px solid var(--navy); border-radius: 24px; padding: 24px; color: var(--ink);
 }
 /* Ruhigere Karten nur fuer die Link-in-Bio-Seite, angelehnt an links.humint.site */
+.noob-theme.new-club .club-bio-panel {
+  --club-bio-surface: #FFFBF7;
+  background: var(--rosa); border-radius: 28px; padding: 28px 20px;
+}
 .noob-theme.new-club .club-bio-card {
-  display: block; width: 100%; text-align: left;
-  background: var(--cream); border: 1px solid var(--navy);
-  border-radius: 24px; padding: 20px 24px; color: var(--ink);
+  display: block; width: 100%; min-height: 56px; text-align: left;
+  background: var(--club-bio-surface); border: 1px solid var(--navy);
+  border-radius: 20px; padding: 14px 20px; color: var(--ink);
   transition: background-color 120ms var(--ease-brand), border-color 120ms var(--ease-brand);
   &:hover { background: var(--rosa); border-color: var(--navy); }
   &:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }

@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Verify all nine Club link-in-bio destinations and guide selections; adapt only its fields and surrounding panel to links.humint.site, preserving Club navy and separate signup journeys. DE/EN at 390/1334px, internal clicks, selected guides and localized product images passed; 14 tests passed. Calendly, Meetup and Instagram respond; Etsy redirects to the correct listing but blocks automated checks with 403. Not published.
+
 - [x] Apply Dina's Club-only typography cleanup and navy lettering/borders/icons; preserve fills, content, layout, HUMINT and the Club HUMINT block. Verified 24 DE/EN phone/desktop views, guide selector/validation, 16 tests and unchanged protected HUMINT styles. Letter spacing stays zero under the platform authoring constraint. Not published.
 
 - [x] Set the AI Noob Club block at the bottom of the HUMINT homepage and the HUMINT block on the Club pages fully in dark blue #012868: callout logo, headline, text and button text; Club block gets a thin dark blue border card and a cream button with a dark blue outline. DE/EN verified at 390px/1280px with computed color reads and captures. Not published.
