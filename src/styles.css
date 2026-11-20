@@ -864,7 +864,12 @@ html:has(.humint-theme) { scroll-behavior: auto; }
   max-width: 100%; min-width: 0; font-size: 1rem;
   white-space: normal; overflow-wrap: anywhere;
 }
-.noob-theme.new-club .club-btn-starter-signup { background: var(--accent-grapefruit); }
+.noob-theme.new-club .club-btn-guide-signup {
+  background: var(--accent-grapefruit); color: var(--navy);
+  min-height: 56px; height: auto; padding: 12px 32px; border-radius: 9999px;
+  max-width: 100%; min-width: 0; font-size: 1rem;
+  white-space: normal; overflow-wrap: anywhere;
+}
 @media (max-width: 639px) {
   .noob-theme.new-club .club-btn-product-waitlist { width: 100%; }
 }
