@@ -153,7 +153,7 @@ const de = {
   ca: {
     "eyebrow": "In Entwicklung · Mit Community-Feedback",
     "productName": "Content-Assistentin",
-    "h1": "Dein Ton. Dein Look. Weniger Zeit für Content.",
+    "h1": "Dein Ton. Dein Look. Weniger Zeit für deine Content-Erstellung.",
     "text": [
       "Hier entsteht ein Selbstlernkurs, der dir helfen soll, mit KI schneller Content zu erstellen, mit deiner eigenen Stimme und deinem visuellen Stil, statt wie alle anderen zu klingen und auszusehen. Für mehr Zeit für dein Business und das Leben daneben.",
       "Der Kurs wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
