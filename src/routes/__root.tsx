@@ -43,6 +43,7 @@ export const Route = createRootRoute({
       { title: "HUMINT, Human intelligence. AI powered." },
       { name: "description", content: "AI consulting by Dina Bosma Buczynska. Strategy, build and the human side. Based in Berlin." },
       { name: "author", content: "Dina Bosma Buczynska" },
+      { name: "google-site-verification", content: "4eXqpUfh0FMzo0nuATN-76XKtVbLdRg3KKrFLtTfRkQ" },
       { property: "og:title", content: "HUMINT, Human intelligence. AI powered." },
       { property: "og:description", content: "AI consulting by Dina Bosma Buczynska. Strategy, build and the human side. Based in Berlin." },
       { property: "og:type", content: "website" },
