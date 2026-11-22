@@ -48,7 +48,7 @@ const de = {
     playVideo: "Video abspielen",
   },
   meta: {
-    home: { title: "AI Noob Club: KI Schritt für Schritt für Frauen mit eigenem Business", description: "Dina zeigt dir Schritt für Schritt, wie du KI in deinem Business nutzt und dabei nach dir klingst. Gratis Starterpaket, Prompt-Pack und Community." },
+    home: { title: "AI Noob Club: KI für Unternehmerinnen Schritt für Schritt", description: "Dina zeigt dir Schritt für Schritt, wie du KI in deinem Business nutzt und nach dir klingst. Instagram Content mit KI erstellen, Starterpaket und Community." },
     about: { title: "Über mich: Dina vom AI Noob Club", description: "Stylistin, Produktmanagerin, Gründerin. Warum Dina den AI Noob Club gestartet hat und woran sie glaubt." },
     gratis: { title: "Gratis: Starterpaket, Edit-Guide und KI-Start-Check", description: "Drei kostenlose Wege, mit KI anzufangen: Starterpaket per E-Mail, Edit-Guide als PDF und ein 1:1 KI-Start-Check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Gestalte die Content-Assistentin mit. Eine Anmeldung für Input, spätere Beta und ersten Zugang zum vollständigen Produkt. Maximal 20 Mitglieder." },
@@ -75,7 +75,7 @@ const de = {
     free: [
       { title: "KI-Start-Check", text: "Kostenloses 1:1. In 20 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag.", cta: "Termin buchen →" },
       { title: "Starterpaket", text: "KI-Basics und Wochenplan, gratis per E-Mail.", cta: "Starterpaket holen →" },
-      { title: "Edit-Guide: Reels schneiden mit Claude", text: "Kostenloser PDF-Guide, direkt zum Download.", cta: "Guide holen →" },
+      { title: "Edit-Guide: Reels schneiden mit Claude", text: "Kostenloser PDF-Guide, direkt zum Download. So erstellst du Instagram Content mit KI.", cta: "Guide holen →" },
     ],
     prodEyebrow: "Bereit für mehr?",
     prodH2: "Wenn du *tiefer* einsteigen willst.",
@@ -315,7 +315,7 @@ const en: Dict = {
     playVideo: "Play video",
   },
   meta: {
-    home: { title: "AI Noob Club: AI step by step for women in business", description: "Dina shows you step by step how to use AI in your business and still sound like you. Free starter kit, prompt pack and community." },
+    home: { title: "AI Noob Club: AI for women entrepreneurs, step by step", description: "Dina shows you step by step how to use AI in your business and still sound like you. Create Instagram content with AI, free starter kit and community." },
     about: { title: "About me: Dina from AI Noob Club", description: "Stylist, product manager, founder. Why Dina started AI Noob Club and what she believes in." },
     gratis: { title: "Free: starter kit, edit guide and AI start check", description: "Three free ways to start with AI: starter kit by email, edit guide as PDF and a 1:1 AI start check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Help shape the Content-Assistentin. One signup to share input, test the beta and get first access to the complete product. Up to 20 members." },
@@ -342,7 +342,7 @@ const en: Dict = {
     free: [
       { title: "AI start check", text: "A free 1:1. In 20 minutes we find three simple AI ideas for your workday.", cta: "Book a call →" },
       { title: "Starter kit", text: "AI basics and a weekly plan, free by email.", cta: "Get the starter kit →" },
-      { title: "Edit guide: cutting Reels with Claude", text: "Free PDF guide, ready to download.", cta: "Get the guide →" },
+      { title: "Edit guide: cutting Reels with Claude", text: "Free PDF guide, ready to download. Create Instagram content with AI.", cta: "Get the guide →" },
     ],
     prodEyebrow: "Ready for more?",
     prodH2: "When you want to go *deeper*.",
