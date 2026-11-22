@@ -57,6 +57,8 @@ function Home() {
               {t.about.story.map((p) => (
                 <p key={p.slice(0, 20)}>{p}</p>
               ))}
+              <p>{t.about.quote}</p>
+              <p>{t.about.quoteBy}</p>
               <SignOff />
             </div>
           </div>
