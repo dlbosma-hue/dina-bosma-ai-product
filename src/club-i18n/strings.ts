@@ -52,7 +52,7 @@ const de = {
     about: { title: "Über mich: Dina vom AI Noob Club", description: "Stylistin, Produktmanagerin, Gründerin. Warum Dina den AI Noob Club gestartet hat und woran sie glaubt." },
     gratis: { title: "Gratis: Starterpaket, Edit-Guide und KI-Start-Check", description: "Drei kostenlose Wege, mit KI anzufangen: Starterpaket per E-Mail, Edit-Guide als PDF und ein 1:1 KI-Start-Check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Gestalte die Content-Assistentin mit. Eine Anmeldung für Input, spätere Beta und ersten Zugang zum vollständigen Produkt. Maximal 20 Mitglieder." },
-    ca: { title: "Content-Assistentin: Selbstlernkurs in Entwicklung | AI Noob Club", description: "Vorschau auf den Selbstlernkurs in Entwicklung: mit KI schneller Content erstellen, mit eigener Stimme und eigenem visuellen Stil. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
+    ca: { title: "Content-Assistentin: System in Entwicklung | AI Noob Club", description: "Vorschau auf die Content-Assistentin in Entwicklung: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust, mit eigener Stimme und eigenem visuellen Stil. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
     contact: { title: "Kontakt: Workshop anfragen beim AI Noob Club", description: "Workshops für Gruppen und kleine Teams. Schreib Dina kurz, was du vorhast." },
   },
   home: {
@@ -81,7 +81,7 @@ const de = {
     prodH2: "Wenn du *tiefer* einsteigen willst.",
     prod: [
       { title: "99 Prompts für authentische KI-Fotos", text: "40 Seiten PDF, Sofort-Download, auf Englisch. Fotos, die echt wirken, ohne Fotoshooting.", cta: "Zum Prompt-Pack →" },
-      { title: "Content-Assistentin", text: "Ein Selbstlernkurs in Entwicklung für schnellere Content-Erstellung mit deiner eigenen Stimme und deinem visuellen Stil. Gestalte den Kurs mit, teste später die Beta und erhalte als Erstes Zugang zum vollständigen Produkt.", cta: "Zur Community & Beta →" },
+      { title: "Content-Assistentin", text: "Ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content in deiner Stimme und deinem Stil. Noch in der Beta: Du kannst testen, mitgestalten und früher dabei sein.", cta: "Zur Community & Beta →" },
     ],
     valuesEyebrow: "Wofür ich stehe",
     valuesH2: "Was mir wichtig ist",
@@ -111,25 +111,25 @@ const de = {
     pill: "Community & Beta · Maximal 20 Plätze",
     h1: "Gestalte die Content-Assistentin mit",
     sub: [
-      "Die Content-Assistentin entsteht gerade: ein Selbstlernkurs für Menschen mit kleinem Business, die mit KI schneller Content erstellen möchten, ohne ihre eigene Stimme oder ihren visuellen Stil zu verlieren.",
+      "Die Content-Assistentin entsteht gerade: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust, damit dein Content in deiner eigenen Stimme und deinem visuellen Stil entsteht.",
       "In der Community hilfst du mit, diesen Ansatz zu entwickeln: Was brauchst du, damit dein Content nach dir klingt, nach dir aussieht und sich mit weniger Aufwand erstellen lässt?",
     ],
     cta: "Bei der Community mitmachen",
     howH2: "Eine Anmeldung. Von der ersten Idee bis zum fertigen Produkt.",
     steps: [
-      { title: "1. Input geben", text: "Du teilst deine Fragen, Herausforderungen und Wünsche. Dein Feedback hilft dabei, die Inhalte und den Aufbau des Kurses zu entwickeln." },
+      { title: "1. Input geben", text: "Du teilst deine Fragen, Herausforderungen und Wünsche. Dein Feedback hilft dabei, die Inhalte und den Aufbau des Systems zu entwickeln." },
       { title: "2. Die Beta testen", text: "Sobald die Beta bereit ist, probierst du die Inhalte und Übungen aus. Du gibst Rückmeldung dazu, was verständlich ist und was noch verbessert werden sollte." },
       { title: "3. Als Erstes Zugang erhalten", text: "Als Communitymitglied erhältst du als Erstes Zugang zum vollständigen Produkt, sobald es bereit ist." },
       { title: "4. Einen günstigeren Preis erhalten", text: "Ich setze dich persönlich auf die Warteliste für einen günstigeren Preis. Du musst dich dafür nicht noch einmal anmelden. Die genauen Konditionen erfährst du vor dem Kauf." },
     ],
     participationH2: "Mitmachen heißt: mitdenken und ausprobieren",
-    participationText: "Der Kurs ist noch nicht fertig. Und genau hier kommt die Community ins Spiel. Du teilst deine Fragen, Wünsche und Herausforderungen und testest später die Beta. Dein Feedback hilft dabei, die Inhalte zu priorisieren, Übungen verständlicher zu machen und Vorlagen weiterzuentwickeln.",
+    participationText: "Das System ist noch nicht fertig. Und genau hier kommt die Community ins Spiel. Du teilst deine Fragen, Wünsche und Herausforderungen und testest später die Beta. Dein Feedback hilft dabei, die Inhalte zu priorisieren, Übungen verständlicher zu machen und Vorlagen weiterzuentwickeln.",
     formH2: "Mach bei der Community mit",
     formIntro: "Es gibt maximal 20 Plätze. Deine Anmeldung gilt für die Community und die spätere Beta-Testphase. Eine zweite Anmeldung ist nicht nötig.",
     firstName: "Vorname (optional)",
     consentA: "Ich möchte per E-Mail Informationen zur Community und zur späteren Beta-Testphase erhalten. Abmeldung jederzeit möglich. Mehr in der ",
     success: "Danke! Deine Anmeldung ist eingegangen. Ich melde mich per E-Mail mit den nächsten Informationen.",
-    productText: "Du möchtest nicht mitentwickeln, sondern auf den fertigen Kurs warten?",
+    productText: "Du möchtest nicht mitentwickeln, sondern auf das fertige System warten?",
     productLink: "Zur Produkt-Warteliste",
   },
   gratis: {
@@ -155,21 +155,21 @@ const de = {
     "productName": "Content-Assistentin",
     "h1": "Dein Ton. Dein Look. Weniger Zeit für deine Content-Erstellung.",
     "text": [
-      "Hier entsteht ein Selbstlernkurs, der dir helfen soll, mit KI schneller Content zu erstellen, mit deiner eigenen Stimme und deinem visuellen Stil, statt wie alle anderen zu klingen und auszusehen. Für mehr Zeit für dein Business und das Leben daneben.",
-      "Der Kurs wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
+      "Hier entsteht ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content in deiner eigenen Stimme und deinem visuellen Stil, statt wie alle anderen zu klingen und auszusehen.",
+      "Das System wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
     ],
     "status": "Noch nicht fertig und aktuell nicht buchbar.",
     "cta": "Auf die Warteliste",
     "plannedCta": "Geplante Inhalte ansehen",
     "whatH2": "Wiedererkennbar bleiben. Einfacher Content erstellen.",
     "whatBody": [
-      "Im geplanten Selbstlernkurs hältst du Schritt für Schritt fest, was deinen Content ausmacht: wie du schreibst, welche Farben und Schriften zu dir passen und welche visuellen Details deinen Stil prägen.",
+      "Schritt für Schritt hältst du fest, was deinen Content ausmacht: wie du schreibst, welche Farben und Schriften zu dir passen und welche visuellen Details deinen Stil prägen.",
       "Daraus entwickelst du wiederverwendbare Anweisungen, Vorlagen und einen Ablauf für deine Content-Erstellung. So musst du nicht jedes Mal bei null anfangen. KI unterstützt dich. Du entscheidest, was zu dir passt und was du veröffentlichst."
     ],
     "plannedH2": "Das ist bisher geplant",
-    "plannedIntro": "Diese Übersicht zeigt den aktuellen Plan, nicht den fertigen Kurs. Inhalte, Aufbau und Materialien werden mit dem Feedback aus der Community weiterentwickelt und können sich noch ändern.",
+    "plannedIntro": "Diese Übersicht zeigt den aktuellen Plan, nicht das fertige System. Inhalte, Aufbau und Materialien werden mit dem Feedback aus der Community weiterentwickelt und können sich noch ändern.",
     "planned": [
-      "Kurze Module zum Selbstlernen",
+      "Kurze Module in deinem eigenen Tempo",
       "Wiederverwendbare Anweisungen für deinen KI-Chat",
       "Checklisten für die praktische Umsetzung",
       "Ein verständliches Glossar",
@@ -177,18 +177,18 @@ const de = {
       "Eine Look-Karte, die deine Farben, Schriften und visuellen Details für einen wiedererkennbaren Stil festhält"
     ],
     "plannedNote": "Die genaue Modulanzahl, Reihenfolge und Bearbeitungszeit stehen noch nicht endgültig fest.",
-    "audienceH2": "Für wen der Kurs gedacht ist",
+    "audienceH2": "Für wen das System gedacht ist",
     "audience": [
       "Du hast ein kleines Business und erstellst deinen Content selbst.",
       "Du möchtest KI gezielter nutzen und einen wiederholbaren Ablauf entwickeln, ohne deine eigene Stimme oder deinen Look zu verlieren.",
       "Du bist bereit, eigene Textbeispiele einzubringen, deinen visuellen Stil festzuhalten und Ergebnisse zu überarbeiten."
     ],
-    "limitation": "Keine eigenständige Software und keine Schulung für große Teams. Der Kurs erstellt nicht automatisch fertige Markenbilder und veröffentlicht keinen Content für dich.",
+    "limitation": "Keine eigenständige Software und keine Schulung für große Teams. Das System erstellt nicht automatisch fertige Markenbilder und veröffentlicht keinen Content für dich.",
     "requirementsH2": "Das brauchst du später",
-    "requirements": "Einen Zugang zu einem KI-Chat und einige eigene Textbeispiele. Welche Tools und Funktionen für die fertigen Übungen benötigt werden, steht vor dem Kursstart auf dieser Seite.",
-    "formH": "Erfahre, wann der Kurs startet",
+    "requirements": "Einen Zugang zu einem KI-Chat und einige eigene Textbeispiele. Welche Tools und Funktionen für die fertigen Übungen benötigt werden, steht vor dem Start auf dieser Seite.",
+    "formH": "Erfahre, wann das System startet",
     "formBody": [
-      "Trag dich ein, wenn du den fertigen Kurs kennenlernen möchtest. Ich informiere dich per E-Mail, sobald er verfügbar ist.",
+      "Trag dich ein, wenn du das fertige System kennenlernen möchtest. Ich informiere dich per E-Mail, sobald es verfügbar ist.",
       "Du musst dafür weder der Community beitreten noch die Beta testen. Mit deiner Anmeldung kaufst du noch nichts."
     ],
     "emailLabel": "E-Mail",
@@ -197,23 +197,23 @@ const de = {
     "faqH2": "Häufige Fragen",
     "faq": [
       {
-        "question": "Ist der Kurs schon verfügbar?",
-        "answer": "Noch nicht. Der Kurs wird gerade entwickelt. Über die Warteliste erfährst du, sobald er verfügbar ist."
+        "question": "Ist das System schon verfügbar?",
+        "answer": "Noch nicht. Das System wird gerade entwickelt. Über die Warteliste erfährst du, sobald es verfügbar ist."
       },
       {
-        "question": "Was wird der Kurs kosten?",
+        "question": "Was wird das System kosten?",
         "answer": "Der endgültige Preis steht noch nicht fest. Du erfährst ihn, bevor du dich für einen Kauf entscheidest."
       },
       {
         "question": "Muss ich bei der Community oder Beta mitmachen?",
-        "answer": "Nein. Diese Warteliste ist für den fertigen Kurs. Community und Beta sind ein separates Angebot für Menschen, die bei der Entwicklung mitmachen möchten."
+        "answer": "Nein. Diese Warteliste ist für das fertige System. Community und Beta sind ein separates Angebot für Menschen, die bei der Entwicklung mitmachen möchten."
       },
       {
-        "question": "Wie lange dauert der Kurs?",
+        "question": "Wie lange dauert der Aufbau?",
         "answer": "Die genaue Bearbeitungszeit wird während der Entwicklung geprüft. Geplant sind kurze Module, die du in deinem eigenen Tempo bearbeiten kannst."
       }
     ],
-    "finalH2": "Interesse am fertigen Kurs?",
+    "finalH2": "Interesse am fertigen System?",
     "finalBody": "Lass dir Bescheid geben, sobald die Content-Assistentin startet.",
     "finalCta": "Auf die Warteliste",
     "communityText": "Du möchtest bei der Entwicklung mitdenken und später die Beta testen?",
@@ -319,7 +319,7 @@ const en: Dict = {
     about: { title: "About me: Dina from AI Noob Club", description: "Stylist, product manager, founder. Why Dina started AI Noob Club and what she believes in." },
     gratis: { title: "Free: starter kit, edit guide and AI start check", description: "Three free ways to start with AI: starter kit by email, edit guide as PDF and a 1:1 AI start check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Help shape the Content-Assistentin. One signup to share input, test the beta and get first access to the complete product. Up to 20 members." },
-    ca: { title: "Content-Assistentin: Course in development | AI Noob Club", description: "Preview the self-paced course in development: create content faster with AI while keeping your own voice and visual identity. Planned content and an independent product waitlist. Not available to purchase yet." },
+    ca: { title: "Content-Assistentin: System in development | AI Noob Club", description: "Preview the Content-Assistentin in development: a system you build step by step for your own business, in your own voice and visual style. Planned content and an independent product waitlist. Not available to purchase yet." },
     contact: { title: "Contact: book a workshop with AI Noob Club", description: "Workshops for groups and small teams. Tell Dina briefly what you have in mind." },
   },
   home: {
@@ -348,7 +348,7 @@ const en: Dict = {
     prodH2: "When you want to go *deeper*.",
     prod: [
       { title: "99 prompts for authentic AI photos", text: "40 page PDF, instant download, in English. Photos that look real, no photo shoot needed.", cta: "See the prompt pack →" },
-      { title: "Content-Assistentin", text: "A self-paced course in development for faster content creation with your own voice and visual identity. Help shape the course, test the beta when it is ready and get first access to the complete product.", cta: "Join Community & Beta →" },
+      { title: "Content-Assistentin", text: "A system you build step by step for your own business, so your content is created in your own voice and style. Still in beta: you can test it, help shape it and get in early.", cta: "Join Community & Beta →" },
     ],
     valuesEyebrow: "What I stand for",
     valuesH2: "What matters to me",
@@ -378,25 +378,25 @@ const en: Dict = {
     pill: "Community & Beta · Up to 20 members",
     h1: "Help shape the Content-Assistentin",
     sub: [
-      "The Content-Assistentin is in development: a self-paced course for small business owners who want to create content faster with AI without losing their own voice or visual identity.",
+      "The Content-Assistentin is in development: a system you build step by step for your own business, so your content is created in your own voice and visual style.",
       "In the community, you help shape that approach: what do you need to make content that sounds like you, looks like you and takes less effort to create?",
     ],
     cta: "Join the community",
     howH2: "One signup. From early ideas to the finished product.",
     steps: [
-      { title: "1. Share your input", text: "Share your questions, challenges and ideas. Your feedback helps shape the course content and structure." },
+      { title: "1. Share your input", text: "Share your questions, challenges and ideas. Your feedback helps shape the content and structure of the system." },
       { title: "2. Test the beta", text: "When the beta is ready, you try the content and exercises. You share what is clear and what still needs improvement." },
       { title: "3. Get first access", text: "As a community member, you get first access to the complete product when it is ready." },
       { title: "4. Get a lower price", text: "I will personally add you to the waitlist for a lower price. You do not need to sign up again. You will receive the exact terms before purchasing." },
     ],
     participationH2: "Taking part means sharing and testing",
-    participationText: "The course is not finished. And that is where the community comes in. You share your questions, needs and challenges, then test the beta when it is ready. Your feedback helps prioritise content, make exercises clearer and improve the templates.",
+    participationText: "The system is not finished. And that is where the community comes in. You share your questions, needs and challenges, then test the beta when it is ready. Your feedback helps prioritise content, make exercises clearer and improve the templates.",
     formH2: "Join the community",
     formIntro: "There are up to 20 community places. Your signup covers both the community and the later beta-testing phase. No second signup is needed.",
     firstName: "First name (optional)",
     consentA: "I'd like to receive emails about the community and the later beta-testing phase. I can unsubscribe at any time. More in the ",
     success: "Thank you! Your signup has been received. I will email you with the next details.",
-    productText: "Would you rather wait for the finished course without taking part in development?",
+    productText: "Would you rather wait for the finished system without taking part in development?",
     productLink: "Go to the product waitlist",
   },
   gratis: {
@@ -422,21 +422,21 @@ const en: Dict = {
     "productName": "Content-Assistentin",
     "h1": "Your voice. Your look. Less time creating content.",
     "text": [
-      "A self-paced course is taking shape to help you create content faster with AI, while keeping your own voice and visual style, rather than looking and sounding like everyone else. For more time for your business and life beyond it.",
-      "The course is currently being built. Community feedback helps shape and improve its content, exercises and templates."
+      "A system is taking shape that you build step by step for your own business, so your content is created in your own voice and visual style, rather than looking and sounding like everyone else.",
+      "The system is currently being built. Community feedback helps shape and improve its content, exercises and templates."
     ],
     "status": "Still being built and not yet available to purchase.",
     "cta": "Join the waitlist",
     "plannedCta": "Explore planned content",
     "whatH2": "Stay recognisable. Make content creation simpler.",
     "whatBody": [
-      "In the planned self-paced course, you define what makes your content yours: how you write, which colours and fonts fit your identity, and which visual details shape your style.",
+      "Step by step, you define what makes your content yours: how you write, which colours and fonts fit your identity, and which visual details shape your style.",
       "You turn these into reusable instructions, templates and a content workflow, so you do not have to start from scratch every time. AI supports the process. You decide what fits and what to publish."
     ],
     "plannedH2": "What is planned so far",
-    "plannedIntro": "This overview shows the current plan, not a finished course. The content, structure and materials are being developed with community feedback and may change.",
+    "plannedIntro": "This overview shows the current plan, not a finished system. The content, structure and materials are being developed with community feedback and may change.",
     "planned": [
-      "Short, self-paced modules",
+      "Short modules at your own pace",
       "Reusable instructions for your AI chat",
       "Practical implementation checklists",
       "A plain-language glossary",
@@ -444,18 +444,18 @@ const en: Dict = {
       "A Look-Karte (visual style card) that records your colours, fonts and visual details for a recognisable style"
     ],
     "plannedNote": "The exact number of modules, their order and the time needed are still being developed.",
-    "audienceH2": "Who the course is for",
+    "audienceH2": "Who the system is for",
     "audience": [
       "You run a small business and create your own content.",
       "You want to use AI more intentionally and develop a repeatable workflow without losing your voice or visual style.",
       "You are willing to bring your own writing samples, define your visual style and edit the results."
     ],
-    "limitation": "Not standalone software or a training programme for large teams. The course does not automatically create complete branded visuals or publish content for you.",
+    "limitation": "Not standalone software or a training programme for large teams. The system does not automatically create complete branded visuals or publish content for you.",
     "requirementsH2": "What you will need",
     "requirements": "Access to an AI chat and some examples of your own writing. The tools and features needed for the finished exercises will be listed on this page before launch.",
-    "formH": "Find out when the course launches",
+    "formH": "Find out when the system launches",
     "formBody": [
-      "Sign up if you would like to explore the finished course. I will email you when it becomes available.",
+      "Sign up if you would like to explore the finished system. I will email you when it becomes available.",
       "You do not need to join the community or test the beta. Signing up does not commit you to a purchase."
     ],
     "emailLabel": "Email",
@@ -464,23 +464,23 @@ const en: Dict = {
     "faqH2": "Frequently asked questions",
     "faq": [
       {
-        "question": "Is the course available yet?",
-        "answer": "Not yet. The course is being developed. Join the waitlist to hear when it becomes available."
+        "question": "Is the system available yet?",
+        "answer": "Not yet. The system is being developed. Join the waitlist to hear when it becomes available."
       },
       {
-        "question": "How much will the course cost?",
+        "question": "How much will the system cost?",
         "answer": "The final price has not been confirmed. You will know the price before deciding whether to buy."
       },
       {
         "question": "Do I have to join the community or beta?",
-        "answer": "No. This waitlist is for the finished course. The community and beta are a separate option for people who want to help with development."
+        "answer": "No. This waitlist is for the finished system. The community and beta are a separate option for people who want to help with development."
       },
       {
-        "question": "How long will the course take?",
+        "question": "How long will it take to build?",
         "answer": "The time needed is still being assessed during development. The plan is to offer short modules you can work through at your own pace."
       }
     ],
-    "finalH2": "Interested in the finished course?",
+    "finalH2": "Interested in the finished system?",
     "finalBody": "Get notified when the Content-Assistentin launches.",
     "finalCta": "Join the waitlist",
     "communityText": "Would you like to help shape development and test the beta?",

@@ -16,8 +16,8 @@ const copy = {
     ext: "Öffnet eine neue Seite",
     items: {
       startcheck: ["Kostenloses 1:1: KI-Start-Check", "In 20 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag."],
-      course: ["Community & Beta: Content-Assistentin", "Den Kurs für eigenen Ton, Look und einfachere Content-Abläufe mitgestalten. Später die Beta testen. Eine Anmeldung."],
-      product: ["Produkt-Warteliste: Content-Assistentin", "Auf den Selbstlernkurs für schnellere Content-Erstellung mit eigener Stimme und eigenem Look warten, ohne mitzuentwickeln."],
+      course: ["Community & Beta: Content-Assistentin", "Das System für eigenen Ton und Look mitgestalten. Später die Beta testen. Eine Anmeldung."],
+      product: ["Produkt-Warteliste: Content-Assistentin", "Auf das fertige System mit eigener Stimme und eigenem Look warten, ohne mitzuentwickeln."],
       starter: ["Gratis Starterpaket", "KI-Basics und Wochenplan, gratis per E-Mail."],
       guide: ["Gratis: Edit-Guide Reels schneiden mit Claude", "Kostenloser PDF-Guide."],
       prompts: ["99 Prompts für authentische KI-Fotos", "PDF zum Sofort-Download auf Etsy."],
@@ -32,8 +32,8 @@ const copy = {
     ext: "Opens a new page",
     items: {
       startcheck: ["Free 1:1: AI Start Check", "In 20 minutes, we find three simple AI ideas for your working day."],
-      course: ["Community & Beta: Content-Assistentin", "Help shape the course around voice, visual style and simpler content workflows. Test the beta later. One signup."],
-      product: ["Product waitlist: Content-Assistentin", "Wait for the self-paced course for faster content creation with your own voice and look, without taking part in development."],
+      course: ["Community & Beta: Content-Assistentin", "Help shape the system around your voice and visual style. Test the beta later. One signup."],
+      product: ["Product waitlist: Content-Assistentin", "Wait for the finished system with your own voice and look, without taking part in development."],
       starter: ["Free starter pack", "AI basics and a weekly plan, free by email."],
       guide: ["Free: Edit Guide for cutting Reels with Claude", "Free PDF guide."],
       prompts: ["99 prompts for authentic AI photos", "Instant PDF download on Etsy."],
