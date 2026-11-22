@@ -58,7 +58,6 @@ const de = {
   home: {
     eyebrow: "Für Frauen mit eigenem Business",
     h1: "KI Schritt für Schritt, mit deiner eigenen *Stimme*.",
-    sub: "Ich baue digitale KI-Produkte für mein eigenes Business und zeige dir dabei jeden Schritt. Ohne Fachchinesisch und ohne dass du wie ein Roboter klingst.",
     cta: "Gratis Starterpaket holen →",
     ctaNote: "KI-Basics und Wochenplan, gratis per E-Mail.",
     checkCta: "Gratis KI-Start-Check buchen →",
@@ -325,7 +324,6 @@ const en: Dict = {
   home: {
     eyebrow: "For women who run their own business",
     h1: "AI step by step, in your own *voice*.",
-    sub: "I build digital AI products for my own business and show you every step along the way. No jargon, and you won't end up sounding like a robot.",
     cta: "Get the free starter kit →",
     ctaNote: "AI basics and a weekly plan, free by email.",
     checkCta: "Book your free AI start check →",

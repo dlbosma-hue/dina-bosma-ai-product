@@ -30,7 +30,6 @@ function Home() {
           <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl">
             <Rich text={h.h1} />
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-ink">{h.sub}</p>
           <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:justify-center">
             <div className="flex flex-col items-center gap-3">
               <Ext href={links.calendlyStartCheck} className="club-btn-primary">{h.checkCta}</Ext>
