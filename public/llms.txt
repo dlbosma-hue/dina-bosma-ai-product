@@ -7,7 +7,7 @@
 - [Home](/): Overview of services, approach, case studies, and contact.
 
 - [AI Noob Club](/ai-noob-club): AI basics for women who run their own business, free resources, products, community, meetups and workshops.
-- [Content-Assistentin](/ai-noob-club/content-assistentin): A system in development that you build step by step for your own business, keeping your voice, visual identity and originality through reusable instructions, templates and a repeatable workflow. Independent product waitlist, not standalone software.
+- [Content-Assistentin](/ai-noob-club/content-assistentin): A system in development that you build for your own business, keeping your voice, visual identity and originality through reusable instructions, templates and a repeatable workflow. Independent product waitlist, not standalone software.
 - [Free resources](/ai-noob-club/gratis): Starterpaket, Edit-Guide and KI-Start-Check.
 - [Community](/ai-noob-club/community): Founders community signup.
 - [Club contact](/ai-noob-club/kontakt): Workshop and collaboration requests.

@@ -52,21 +52,22 @@ const de = {
     playVideo: "Video abspielen",
   },
   meta: {
-    home: { title: "AI Noob Club: KI für Unternehmerinnen Schritt für Schritt", description: "Dina zeigt dir Schritt für Schritt, wie du KI in deinem Business nutzt und nach dir klingst. Instagram Content mit KI erstellen, Starterpaket und Community." },
+    home: { title: "AI Noob Club: KI für Unternehmerinnen", description: "Ich zeige dir, wie du KI nutzt und trotzdem nach dir klingst. Instagram Content mit KI erstellen, Starterpaket und Community." },
     about: { title: "Über mich: Dina vom AI Noob Club", description: "Stylistin, Produktmanagerin, Gründerin. Warum Dina den AI Noob Club gestartet hat und woran sie glaubt." },
     gratis: { title: "Gratis: Starterpaket, Edit-Guide und KI-Start-Check", description: "Drei kostenlose Wege, mit KI anzufangen: Starterpaket per E-Mail, Edit-Guide als PDF und ein 1:1 KI-Start-Check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: `Content-Assistentin mitgestalten: ${totalPlaces} Community-Plätze insgesamt. Die ersten ${freeBetaPlaces} Personen testen die Beta kostenlos. Weitere Mitglieder erhalten später einen günstigeren Preis.` },
-    ca: { title: "Content-Assistentin: System in Entwicklung | AI Noob Club", description: "Vorschau auf die Content-Assistentin in Entwicklung: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust, mit eigener Stimme und eigenem visuellen Stil. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
+    ca: { title: "Content-Assistentin: System in Entwicklung | AI Noob Club", description: "Vorschau auf die Content-Assistentin in Entwicklung: ein System, das du für dein eigenes Business aufbaust, mit eigener Stimme und eigenem visuellen Stil. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
     contact: { title: "Kontakt: Workshop anfragen beim AI Noob Club", description: "Workshops für Gruppen und kleine Teams. Schreib Dina kurz, was du vorhast." },
   },
   home: {
     eyebrow: "Für Frauen mit eigenem Business",
-    h1: "KI für dein eigenes Business, Schritt für Schritt. So klingt *deine Stimme*.",
+    h1: "Ich zeige dir, wie du KI nutzt und trotzdem *nach dir* klingst",
+    sub: "KI für Unternehmerinnen. Zum Beispiel, wenn du Instagram Content mit KI erstellen willst.",
     cta: "Gratis Starterpaket holen",
     ctaNote: "KI-Basics und Wochenplan, gratis per E-Mail.",
     checkCta: "Gratis KI-Start-Check buchen",
     checkNote: "20 Minuten 1:1 mit mir. Wir finden drei einfache KI-Ideen für deinen Alltag.",
-    ticker: ["KI für Frauen mit eigenem Business", "Schritt für Schritt", "Deine Stimme bleibt deine"],
+    ticker: ["KI für Frauen mit eigenem Business", "Deine Stimme bleibt deine"],
     proof: [
       { n: 99, label: "Prompts für authentische KI-Fotos" },
       { n: 40, label: "Seiten im Prompt-Pack" },
@@ -84,7 +85,7 @@ const de = {
     prodH2: "Wenn du *tiefer* einsteigen willst.",
     prod: [
       { title: "99 Prompts für authentische KI-Fotos", text: "40 Seiten PDF, Sofort-Download, auf Englisch. Fotos, die echt wirken, ohne Fotoshooting.", cta: "Zum Prompt-Pack" },
-      { title: "Content-Assistentin", text: "Ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content: deine Stimme, dein Stil. Noch in der Beta: Du kannst testen, mitgestalten und früher dabei sein.", cta: "Zur Community & Beta" },
+      { title: "Content-Assistentin", text: "Ein System, das du für dein eigenes Business aufbaust. So entsteht dein Content: deine Stimme, dein Stil. Noch in der Beta: Du kannst testen, mitgestalten und früher dabei sein.", cta: "Zur Community & Beta" },
     ],
     valuesEyebrow: "Wofür ich stehe",
     valuesH2: "Was mir wichtig ist",
@@ -114,7 +115,7 @@ const de = {
     pill: `${totalPlaces} Community-Plätze · davon ${freeBetaPlaces} kostenlose Beta-Plätze`,
     h1: "Gestalte die Content-Assistentin mit",
     sub: [
-      "Die Content-Assistentin entsteht gerade: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. Deine eigene Stimme und dein visueller Stil bleiben dabei erhalten.",
+      "Die Content-Assistentin entsteht gerade: ein System, das du für dein eigenes Business aufbaust. Deine eigene Stimme und dein visueller Stil bleiben dabei erhalten.",
       "In der Community hilfst du mit, diesen Ansatz zu entwickeln: Was brauchst du, damit dein Content nach dir klingt, nach dir aussieht und sich mit weniger Aufwand erstellen lässt?",
     ],
     cta: "Bei der Community mitmachen",
@@ -158,7 +159,7 @@ const de = {
     "productName": "Content-Assistentin",
     "h1": "Dein Ton. Dein Look. Weniger Zeit für deine Content-Erstellung.",
     "text": [
-      "Hier entsteht ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content: deine eigene Stimme, dein visueller Stil. Nicht wie alle anderen.",
+      "Hier entsteht ein System, das du für dein eigenes Business aufbaust. So entsteht dein Content: deine eigene Stimme, dein visueller Stil. Nicht wie alle anderen.",
       "Das System wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
     ],
     "status": "Noch nicht fertig und aktuell nicht buchbar.",
@@ -225,10 +226,9 @@ const de = {
   about: {
     h1: "Hey, ich bin *Dina*.",
     story: [
-      "Hallo, ich bin Dina. Ich bin in Den Haag aufgewachsen und lebe in Berlin. Ich bin KI-Beraterin, ursprünglich Stylistin und später Produktmanagerin. Beide Berufe haben mir beigebracht, genau zuzuhören, was jemand braucht. Das macht auch bei KI den Unterschied: Je klarer die Anweisung, desto besser das Ergebnis.",
-      "Der AI Noob Club ist aus Gesprächen mit anderen Frauen entstanden. Viele nutzen KI bisher nur für einzelne Anfragen im Chat und sind mit dem Ergebnis nicht zufrieden: Die Texte klingen austauschbar, die Bilder sehen aus wie bei allen anderen.",
+      "Aufgewachsen bin ich in Den Haag, heute lebe ich in Berlin. Ich bin KI-Beraterin, ursprünglich Stylistin und später Produktmanagerin. Beide Berufe haben mir beigebracht, genau zuzuhören, was jemand braucht. Das macht auch bei KI den Unterschied: Je klarer die Anweisung, desto besser das Ergebnis.",
+      "Auf Geburtstagen und auf dem Spielplatz habe ich gemerkt: Viele Frauen wissen noch wenig darüber, wie sie KI für sich nutzen können. So ist die Idee zum AI Noob Club entstanden. Oft bleibt es bei einzelnen Anfragen im Chat, und das Ergebnis passt nicht: Die Texte klingen austauschbar, die Bilder sehen aus wie bei allen anderen.",
       "Ich führe mein Business allein und habe ein vierjähriges Kind. Meine Zeit ist knapp. Routinearbeit übernimmt bei mir die KI, Entscheidungen, Stimme und Haltung bleiben bei mir.",
-      "Ich zeige dir Schritt für Schritt, wie du KI nutzt und dabei nach dir klingst.",
     ],
   },
   contact: {
@@ -318,21 +318,22 @@ const en: Dict = {
     playVideo: "Play video",
   },
   meta: {
-    home: { title: "AI Noob Club: AI for women entrepreneurs, step by step", description: "Dina shows you step by step how to use AI in your business and still sound like you. Create Instagram content with AI, free starter pack and community." },
+    home: { title: "AI Noob Club: AI for women entrepreneurs", description: "I'll show you how to use AI and still sound like you. Create Instagram content with AI, free starter pack and community." },
     about: { title: "About me: Dina from AI Noob Club", description: "Stylist, product manager, founder. Why Dina started AI Noob Club and what she believes in." },
     gratis: { title: "Free: starter pack, edit guide and AI start check", description: "Three free ways to start with AI: starter pack by email, edit guide as PDF and a 1:1 AI start check." },
     community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: `Help shape Content-Assistentin: ${totalPlaces} Community places in total. The first ${freeBetaPlaces} people test the beta for free. Other members get a lower price later.` },
-    ca: { title: "Content-Assistentin: System in development | AI Noob Club", description: "Preview the Content-Assistentin in development: a system you build step by step for your own business, in your own voice and visual style. Planned content and an independent product waitlist. Not available to purchase yet." },
+    ca: { title: "Content-Assistentin: System in development | AI Noob Club", description: "Preview the Content-Assistentin in development: a system you build for your own business, in your own voice and visual style. Planned content and an independent product waitlist. Not available to purchase yet." },
     contact: { title: "Contact: book a workshop with AI Noob Club", description: "Workshops for groups and small teams. Tell Dina briefly what you have in mind." },
   },
   home: {
     eyebrow: "For women who run their own business",
-    h1: "AI for your own business, step by step and in your own *voice*.",
+    h1: "I'll show you how to use AI and still sound *like you*",
+    sub: "AI for women entrepreneurs. For example, when you want to create Instagram content with AI.",
     cta: "Get the free starter pack",
     ctaNote: "AI basics and a weekly plan, free by email.",
     checkCta: "Book your free AI start check",
     checkNote: "20 minutes 1:1 with me. We find three simple AI ideas for your day.",
-    ticker: ["AI for women in business", "Step by step", "Your voice stays yours"],
+    ticker: ["AI for women in business", "Your voice stays yours"],
     proof: [
       { n: 99, label: "prompts for authentic AI photos" },
       { n: 40, label: "pages in the prompt pack" },
@@ -350,7 +351,7 @@ const en: Dict = {
     prodH2: "When you want to go *deeper*.",
     prod: [
       { title: "99 prompts for authentic AI photos", text: "40 page PDF, instant download, in English. Photos that look real, no photo shoot needed.", cta: "See the prompt pack" },
-      { title: "Content-Assistentin", text: "A system you build step by step for your own business, so your content is created in your own voice and style. Still in beta: you can test it, help shape it and get in early.", cta: "Join Community & Beta" },
+      { title: "Content-Assistentin", text: "A system you build for your own business, so your content is created in your own voice and style. Still in beta: you can test it, help shape it and get in early.", cta: "Join Community & Beta" },
     ],
     valuesEyebrow: "What I stand for",
     valuesH2: "What matters to me",
@@ -380,7 +381,7 @@ const en: Dict = {
     pill: `${totalPlaces} Community places · including ${freeBetaPlaces} free beta places`,
     h1: "Help shape the Content-Assistentin",
     sub: [
-      "The Content-Assistentin is in development: a system you build step by step for your own business, so your content is created in your own voice and visual style.",
+      "The Content-Assistentin is in development: a system you build for your own business, so your content is created in your own voice and visual style.",
       "In the community, you help shape that approach: what do you need to make content that sounds like you, looks like you and takes less effort to create?",
     ],
     cta: "Join the community",
@@ -424,7 +425,7 @@ const en: Dict = {
     "productName": "Content-Assistentin",
     "h1": "Your voice. Your look. Less time creating content.",
     "text": [
-      "A system is taking shape that you build step by step for your own business, so your content is created in your own voice and visual style, rather than looking and sounding like everyone else.",
+      "A system is taking shape that you build for your own business, so your content is created in your own voice and visual style, rather than looking and sounding like everyone else.",
       "The system is currently being built. Community feedback helps shape and improve its content, exercises and templates."
     ],
     "status": "Still being built and not yet available to purchase.",
@@ -491,10 +492,9 @@ const en: Dict = {
   about: {
     h1: "Hey, I'm *Dina*.",
     story: [
-      "Hi, I'm Dina. I grew up in The Hague and live in Berlin. I'm an AI consultant, originally a stylist and later a product manager. Both jobs taught me to listen closely to what someone needs. That is what makes the difference with AI too: the clearer the instruction, the better the result.",
-      "The AI Noob Club grew out of conversations with other women. Many have only used AI for single requests in a chat so far, and they are not happy with the result: the texts sound interchangeable, the images look like everyone else's.",
-      "I run my business on my own and have a four-year-old child. My time is tight. AI takes over the routine work for me. Decisions, voice and attitude stay with me.",
-      "I show you step by step how to use AI and still sound like yourself.",
+      "I grew up in The Hague and now live in Berlin. I'm an AI consultant, originally a stylist and later a product manager. Both jobs taught me to listen closely to what someone needs. That makes the difference with AI too: the clearer the instruction, the better the result.",
+      "At birthday parties and on the playground, I noticed that many women still know little about how they can use AI for themselves. That's where the idea for the AI Noob Club came from. Often it stops at single requests in a chat, and the result doesn't fit: the texts sound interchangeable, and the images look like everyone else's.",
+      "I run my business on my own and have a four-year-old child. My time is tight. AI takes over my routine work. Decisions, voice and attitude stay with me.",
     ],
   },
   contact: {
