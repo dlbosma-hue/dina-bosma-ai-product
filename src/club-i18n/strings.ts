@@ -57,7 +57,7 @@ const de = {
   },
   home: {
     eyebrow: "Für Frauen mit eigenem Business",
-    h1: "KI für dein eigenes Business, Schritt für Schritt und mit deiner *Stimme*.",
+    h1: "KI für dein eigenes Business, Schritt für Schritt. So klingt *deine Stimme*.",
     cta: "Gratis Starterpaket holen",
     ctaNote: "KI-Basics und Wochenplan, gratis per E-Mail.",
     checkCta: "Gratis KI-Start-Check buchen",
@@ -80,7 +80,7 @@ const de = {
     prodH2: "Wenn du *tiefer* einsteigen willst.",
     prod: [
       { title: "99 Prompts für authentische KI-Fotos", text: "40 Seiten PDF, Sofort-Download, auf Englisch. Fotos, die echt wirken, ohne Fotoshooting.", cta: "Zum Prompt-Pack" },
-      { title: "Content-Assistentin", text: "Ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content in deiner Stimme und deinem Stil. Noch in der Beta: Du kannst testen, mitgestalten und früher dabei sein.", cta: "Zur Community & Beta" },
+      { title: "Content-Assistentin", text: "Ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content: deine Stimme, dein Stil. Noch in der Beta: Du kannst testen, mitgestalten und früher dabei sein.", cta: "Zur Community & Beta" },
     ],
     valuesEyebrow: "Wofür ich stehe",
     valuesH2: "Was mir wichtig ist",
@@ -110,7 +110,7 @@ const de = {
     pill: "Community & Beta · Maximal 20 Plätze",
     h1: "Gestalte die Content-Assistentin mit",
     sub: [
-      "Die Content-Assistentin entsteht gerade: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust, damit dein Content in deiner eigenen Stimme und deinem visuellen Stil entsteht.",
+      "Die Content-Assistentin entsteht gerade: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. Deine eigene Stimme und dein visueller Stil bleiben dabei erhalten.",
       "In der Community hilfst du mit, diesen Ansatz zu entwickeln: Was brauchst du, damit dein Content nach dir klingt, nach dir aussieht und sich mit weniger Aufwand erstellen lässt?",
     ],
     cta: "Bei der Community mitmachen",
@@ -154,7 +154,7 @@ const de = {
     "productName": "Content-Assistentin",
     "h1": "Dein Ton. Dein Look. Weniger Zeit für deine Content-Erstellung.",
     "text": [
-      "Hier entsteht ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content in deiner eigenen Stimme und deinem visuellen Stil, statt wie alle anderen zu klingen und auszusehen.",
+      "Hier entsteht ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. So entsteht dein Content: deine eigene Stimme, dein visueller Stil. Nicht wie alle anderen.",
       "Das System wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
     ],
     "status": "Noch nicht fertig und aktuell nicht buchbar.",
