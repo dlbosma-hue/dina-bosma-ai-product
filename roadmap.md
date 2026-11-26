@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Clarify Community terms in DE/EN across Club home, Community, product callout, link-in-bio and Community metadata: 20 total places including 10 free beta places for the first 10 people; other members can try Content-Assistentin later at a lower price. Product name/menu preserved, manual acceptance and separate waitlist unchanged. Checked all four pages at 390px/1280px without submissions or publishing.
+
 - [x] Finish Google Search Console setup for the published HUMINT origin: verification tag published and confirmed live, ownership verified, exact root property listed with owner access, existing sitemap submitted and downloaded by Google with nine URLs, zero errors and zero warnings. Existing sitemap preserved without lastmod values.
 
 - [x] Verify all nine Club link-in-bio destinations and guide selections; adapt only its fields and surrounding panel to links.humint.site, preserving Club navy and separate signup journeys. DE/EN at 390/1334px, internal clicks, selected guides and localized product images passed; 14 tests passed. Calendly, Meetup and Instagram respond; Etsy redirects to the correct listing but blocks automated checks with 403. Not published.

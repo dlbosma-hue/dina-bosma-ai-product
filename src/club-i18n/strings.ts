@@ -1,3 +1,7 @@
+import { noobClub } from "@/config/noobClub";
+
+const { totalPlaces, freeBetaPlaces } = noobClub.communityOffer;
+
 // All site copy. Wrap one keyword per headline in *asterisks* to set it in italic terracotta.
 // Writing rules: no em or en dashes, no hype words, no invented numbers or quotes.
 
@@ -51,7 +55,7 @@ const de = {
     home: { title: "AI Noob Club: KI für Unternehmerinnen Schritt für Schritt", description: "Dina zeigt dir Schritt für Schritt, wie du KI in deinem Business nutzt und nach dir klingst. Instagram Content mit KI erstellen, Starterpaket und Community." },
     about: { title: "Über mich: Dina vom AI Noob Club", description: "Stylistin, Produktmanagerin, Gründerin. Warum Dina den AI Noob Club gestartet hat und woran sie glaubt." },
     gratis: { title: "Gratis: Starterpaket, Edit-Guide und KI-Start-Check", description: "Drei kostenlose Wege, mit KI anzufangen: Starterpaket per E-Mail, Edit-Guide als PDF und ein 1:1 KI-Start-Check." },
-    community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Gestalte die Content-Assistentin mit. Eine Anmeldung für Input, spätere Beta und ersten Zugang zum vollständigen Produkt. Maximal 20 Mitglieder." },
+    community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: `Content-Assistentin mitgestalten: ${totalPlaces} Community-Plätze insgesamt. Die ersten ${freeBetaPlaces} Personen testen die Beta kostenlos. Weitere Mitglieder erhalten später einen günstigeren Preis.` },
     ca: { title: "Content-Assistentin: System in Entwicklung | AI Noob Club", description: "Vorschau auf die Content-Assistentin in Entwicklung: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust, mit eigener Stimme und eigenem visuellen Stil. Geplante Inhalte und unabhängige Produkt-Warteliste. Aktuell nicht buchbar." },
     contact: { title: "Kontakt: Workshop anfragen beim AI Noob Club", description: "Workshops für Gruppen und kleine Teams. Schreib Dina kurz, was du vorhast." },
   },
@@ -67,7 +71,7 @@ const de = {
       { n: 99, label: "Prompts für authentische KI-Fotos" },
       { n: 40, label: "Seiten im Prompt-Pack" },
       { n: 20, label: "Minuten für deinen KI-Start-Check, gratis" },
-      { n: 20, label: "Maximal 20 Plätze für Community & Beta" },
+      { n: 20, label: `${totalPlaces} Community-Plätze, davon ${freeBetaPlaces} kostenlose Beta-Plätze` },
     ],
     freeEyebrow: "Gratis. Alles deins.",
     freeH2: "Drei Wege, *heute* anzufangen.",
@@ -103,11 +107,11 @@ const de = {
   dataLine: "Ich gebe nie Kundendaten in ein KI-Tool.",
   finalCta: {
     h2: "Lerne mit anderen Unternehmerinnen in der *Community*.",
-    text: "Eine Anmeldung für Community und spätere Beta-Testphase. Maximal 20 Plätze.",
+    text: `${totalPlaces} Community-Plätze insgesamt. Die ersten ${freeBetaPlaces} Personen testen die Content-Assistentin zuerst und kostenlos. Weitere Mitglieder können das Produkt später günstiger ausprobieren.`,
     cta: "Bei der Community mitmachen",
   },
   community: {
-    pill: "Community & Beta · Maximal 20 Plätze",
+    pill: `${totalPlaces} Community-Plätze · davon ${freeBetaPlaces} kostenlose Beta-Plätze`,
     h1: "Gestalte die Content-Assistentin mit",
     sub: [
       "Die Content-Assistentin entsteht gerade: ein System, das du Schritt für Schritt für dein eigenes Business aufbaust. Deine eigene Stimme und dein visueller Stil bleiben dabei erhalten.",
@@ -117,14 +121,14 @@ const de = {
     howH2: "Eine Anmeldung. Von der ersten Idee bis zum fertigen Produkt.",
     steps: [
       { title: "1. Input geben", text: "Du teilst deine Fragen, Herausforderungen und Wünsche. Dein Feedback hilft dabei, die Inhalte und den Aufbau des Systems zu entwickeln." },
-      { title: "2. Die Beta testen", text: "Sobald die Beta bereit ist, probierst du die Inhalte und Übungen aus. Du gibst Rückmeldung dazu, was verständlich ist und was noch verbessert werden sollte." },
-      { title: "3. Als Erstes Zugang erhalten", text: "Als Communitymitglied erhältst du als Erstes Zugang zum vollständigen Produkt, sobald es bereit ist." },
+      { title: "2. Die Beta testen", text: `Nur die ersten ${freeBetaPlaces} Personen erhalten einen komplett kostenlosen Beta-Platz für die Content-Assistentin. Du testest das Produkt zuerst, sobald die Beta bereit ist, und gibst Feedback.` },
+      { title: "3. Das Produkt ausprobieren", text: "Auch ohne kostenlosen Beta-Platz kannst du der Community beitreten. Du kannst die Content-Assistentin später zu einem günstigeren Preis ausprobieren." },
       { title: "4. Einen günstigeren Preis erhalten", text: "Ich setze dich persönlich auf die Warteliste für einen günstigeren Preis. Du musst dich dafür nicht noch einmal anmelden. Die genauen Konditionen erfährst du vor dem Kauf." },
     ],
     participationH2: "Mitmachen heißt: mitdenken und ausprobieren",
-    participationText: "Das System ist noch nicht fertig. Und genau hier kommt die Community ins Spiel. Du teilst deine Fragen, Wünsche und Herausforderungen und testest später die Beta. Dein Feedback hilft dabei, die Inhalte zu priorisieren, Übungen verständlicher zu machen und Vorlagen weiterzuentwickeln.",
+    participationText: `Die Content-Assistentin ist noch nicht fertig. In der Community teilst du deine Fragen, Wünsche und Herausforderungen. Die ersten ${freeBetaPlaces} Personen testen die Beta kostenlos. Weitere Mitglieder können das Produkt später günstiger ausprobieren. Dein Feedback hilft bei der Entwicklung.`,
     formH2: "Mach bei der Community mit",
-    formIntro: "Es gibt maximal 20 Plätze. Deine Anmeldung gilt für die Community und die spätere Beta-Testphase. Eine zweite Anmeldung ist nicht nötig.",
+    formIntro: `Es gibt insgesamt ${totalPlaces} Community-Plätze. Davon sind ${freeBetaPlaces} kostenlose Beta-Plätze für die ersten ${freeBetaPlaces} Personen. Weitere Mitglieder können die Content-Assistentin später zu einem günstigeren Preis ausprobieren. Ich prüfe die Plätze persönlich und melde mich per E-Mail. Deine Anmeldung bestätigt noch keinen Platz.`,
     firstName: "Vorname (optional)",
     consentA: "Ich möchte per E-Mail Informationen zur Community und zur späteren Beta-Testphase erhalten. Abmeldung jederzeit möglich. Mehr in der ",
     success: "Danke! Deine Anmeldung ist eingegangen. Ich melde mich per E-Mail mit den nächsten Informationen.",
@@ -215,7 +219,7 @@ const de = {
     "finalH2": "Interesse am fertigen System?",
     "finalBody": "Lass dir Bescheid geben, sobald die Content-Assistentin startet.",
     "finalCta": "Auf die Warteliste",
-    "communityText": "Du möchtest bei der Entwicklung mitdenken und später die Beta testen?",
+    "communityText": `Gestalte die Content-Assistentin mit: ${totalPlaces} Community-Plätze, davon ${freeBetaPlaces} kostenlose Beta-Plätze für die ersten ${freeBetaPlaces} Personen. Weitere Mitglieder können das Produkt später günstiger ausprobieren.`,
     "communityLink": "Zur Community"
   },
   about: {
@@ -317,7 +321,7 @@ const en: Dict = {
     home: { title: "AI Noob Club: AI for women entrepreneurs, step by step", description: "Dina shows you step by step how to use AI in your business and still sound like you. Create Instagram content with AI, free starter pack and community." },
     about: { title: "About me: Dina from AI Noob Club", description: "Stylist, product manager, founder. Why Dina started AI Noob Club and what she believes in." },
     gratis: { title: "Free: starter pack, edit guide and AI start check", description: "Three free ways to start with AI: starter pack by email, edit guide as PDF and a 1:1 AI start check." },
-    community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: "Help shape the Content-Assistentin. One signup to share input, test the beta and get first access to the complete product. Up to 20 members." },
+    community: { title: "Community & Beta: Content-Assistentin | AI Noob Club", description: `Help shape Content-Assistentin: ${totalPlaces} Community places in total. The first ${freeBetaPlaces} people test the beta for free. Other members get a lower price later.` },
     ca: { title: "Content-Assistentin: System in development | AI Noob Club", description: "Preview the Content-Assistentin in development: a system you build step by step for your own business, in your own voice and visual style. Planned content and an independent product waitlist. Not available to purchase yet." },
     contact: { title: "Contact: book a workshop with AI Noob Club", description: "Workshops for groups and small teams. Tell Dina briefly what you have in mind." },
   },
@@ -333,7 +337,7 @@ const en: Dict = {
       { n: 99, label: "prompts for authentic AI photos" },
       { n: 40, label: "pages in the prompt pack" },
       { n: 20, label: "minutes for your free AI start check" },
-      { n: 20, label: "up to 20 members in Community & Beta" },
+      { n: 20, label: `${totalPlaces} Community places, including ${freeBetaPlaces} free beta places` },
     ],
     freeEyebrow: "Free. All yours.",
     freeH2: "Three ways to start *today*.",
@@ -369,11 +373,11 @@ const en: Dict = {
   dataLine: "I never put client data into an AI tool.",
   finalCta: {
     h2: "Learn alongside other women entrepreneurs in the *community*.",
-    text: "One signup for the community and the later beta-testing phase. Up to 20 members.",
+    text: `${totalPlaces} Community places in total. The first ${freeBetaPlaces} people test Content-Assistentin first and for free. Other members can try the product later at a lower price.`,
     cta: "Join the community",
   },
   community: {
-    pill: "Community & Beta · Up to 20 members",
+    pill: `${totalPlaces} Community places · including ${freeBetaPlaces} free beta places`,
     h1: "Help shape the Content-Assistentin",
     sub: [
       "The Content-Assistentin is in development: a system you build step by step for your own business, so your content is created in your own voice and visual style.",
@@ -383,14 +387,14 @@ const en: Dict = {
     howH2: "One signup. From early ideas to the finished product.",
     steps: [
       { title: "1. Share your input", text: "Share your questions, challenges and ideas. Your feedback helps shape the content and structure of the system." },
-      { title: "2. Test the beta", text: "When the beta is ready, you try the content and exercises. You share what is clear and what still needs improvement." },
-      { title: "3. Get first access", text: "As a community member, you get first access to the complete product when it is ready." },
+      { title: "2. Test the beta", text: `Only the first ${freeBetaPlaces} people receive a completely free beta place for Content-Assistentin. You test the product first when the beta is ready and share your feedback.` },
+      { title: "3. Try the product", text: "You can still join the Community without a free beta place. You can try Content-Assistentin later at a lower price." },
       { title: "4. Get a lower price", text: "I will personally add you to the waitlist for a lower price. You do not need to sign up again. You will receive the exact terms before purchasing." },
     ],
     participationH2: "Taking part means sharing and testing",
-    participationText: "The system is not finished. And that is where the community comes in. You share your questions, needs and challenges, then test the beta when it is ready. Your feedback helps prioritise content, make exercises clearer and improve the templates.",
+    participationText: `Content-Assistentin is not finished yet. In the Community, you share your questions, needs and challenges. The first ${freeBetaPlaces} people test the beta for free. Other members can try the product later at a lower price. Your feedback helps shape development.`,
     formH2: "Join the community",
-    formIntro: "There are up to 20 community places. Your signup covers both the community and the later beta-testing phase. No second signup is needed.",
+    formIntro: `There are ${totalPlaces} Community places in total. These include ${freeBetaPlaces} free beta places for the first ${freeBetaPlaces} people. Other members can try Content-Assistentin later at a lower price. I check places personally and email you. Signing up does not confirm a place yet.`,
     firstName: "First name (optional)",
     consentA: "I'd like to receive emails about the community and the later beta-testing phase. I can unsubscribe at any time. More in the ",
     success: "Thank you! Your signup has been received. I will email you with the next details.",
@@ -481,7 +485,7 @@ const en: Dict = {
     "finalH2": "Interested in the finished system?",
     "finalBody": "Get notified when the Content-Assistentin launches.",
     "finalCta": "Join the waitlist",
-    "communityText": "Would you like to help shape development and test the beta?",
+    "communityText": `Help shape Content-Assistentin: ${totalPlaces} Community places, including ${freeBetaPlaces} free beta places for the first ${freeBetaPlaces} people. Other members can try the product later at a lower price.`,
     "communityLink": "Explore the community"
   },
   about: {

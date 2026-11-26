@@ -3,6 +3,12 @@ import editGuideEnglish from "../assets/edit-guide-english.pdf.asset.json";
 
 // AI Noob Club settings. Change values here, not in components.
 export const noobClub = {
+  communityOffer: {
+    totalPlaces: 20,
+    freeBetaPlaces: 10,
+    freeBetaAllocation: "first-signups",
+    laterCommunityAccess: "lower-price",
+  },
   promptsPriceEur: 9.99,
   showWiderruf: false,
   links: {

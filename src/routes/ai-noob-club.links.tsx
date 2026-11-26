@@ -1,11 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { noobClub } from "@/config/noobClub";
 import { links } from "@/config/links";
 import { clubShareMeta } from "@/config/club-share";
 import { photos } from "@/config/photos";
 import { useLang } from "@/club-i18n/lang";
 import { Section } from "@/components/club/Section";
 import { Ext } from "@/components/club/Ext";
+
+const { totalPlaces, freeBetaPlaces } = noobClub.communityOffer;
 
 const utm = (c: string) => `?utm_source=ig&utm_medium=social&utm_content=${c}`;
 
@@ -16,7 +19,7 @@ const copy = {
     ext: "Öffnet eine neue Seite",
     items: {
       startcheck: ["Kostenloses 1:1: KI-Start-Check", "In 20 Minuten finden wir drei einfache KI-Ideen für deinen Arbeitsalltag."],
-      course: ["Community & Beta: Content-Assistentin", "Das System für eigenen Ton und Look mitgestalten. Später die Beta testen. Eine Anmeldung."],
+      course: ["Community & Beta: Content-Assistentin", `${totalPlaces} Community-Plätze. Die ersten ${freeBetaPlaces} Personen testen kostenlos und zuerst. Weitere Mitglieder können die Content-Assistentin später günstiger ausprobieren.`],
       product: ["Produkt-Warteliste: Content-Assistentin", "Auf das fertige System mit eigener Stimme und eigenem Look warten, ohne mitzuentwickeln."],
       starter: ["Gratis Starterpaket", "KI-Basics und Wochenplan, gratis per E-Mail."],
       guide: ["Gratis: Edit-Guide Reels schneiden mit Claude", "Kostenloser PDF-Guide."],
@@ -32,7 +35,7 @@ const copy = {
     ext: "Opens a new page",
     items: {
       startcheck: ["Free 1:1: AI Start Check", "In 20 minutes, we find three simple AI ideas for your working day."],
-      course: ["Community & Beta: Content-Assistentin", "Help shape the system around your voice and visual style. Test the beta later. One signup."],
+      course: ["Community & Beta: Content-Assistentin", `${totalPlaces} Community places. The first ${freeBetaPlaces} people test first and for free. Other members can try Content-Assistentin later at a lower price.`],
       product: ["Product waitlist: Content-Assistentin", "Wait for the finished system with your own voice and look, without taking part in development."],
       starter: ["Free starter pack", "AI basics and a weekly plan, free by email."],
       guide: ["Free: Edit Guide for cutting Reels with Claude", "Free PDF guide."],
