@@ -20,9 +20,6 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col justify-center px-6 py-20 md:px-10 md:py-24">
-        <div className="mb-8 text-[11px] uppercase tracking-[0.28em] text-background/70">
-          {t.hero.eyebrow}
-        </div>
         <h1 className="font-serif text-6xl leading-[0.98] tracking-tight text-background md:text-8xl lg:text-[8.5rem]">
           HUMINT
         </h1>
@@ -44,7 +41,6 @@ export function Hero() {
             className="inline-flex items-center gap-3 border-b-2 border-background pb-1.5 text-base font-bold tracking-wide text-background transition-opacity hover:opacity-70"
           >
             {t.hero.ctaPrimary}
-            <span aria-hidden>→</span>
           </a>
           </Button>
           <a
@@ -54,7 +50,6 @@ export function Hero() {
             className="inline-flex items-center gap-3 border-b-2 border-background pb-1.5 text-base font-bold tracking-wide text-background transition-opacity hover:opacity-70"
           >
             {t.hero.gumroad}
-            <span aria-hidden>→</span>
           </a>
         </div>
       </div>

@@ -66,7 +66,7 @@ const en = {
   },
   services: {
     eyebrow: "What I do",
-    title: "Services.",
+    title: "What I can help your team with",
     items: [
       {
         title: "Workflow audit.",
@@ -113,7 +113,7 @@ const en = {
   },
   testimonials: {
     eyebrow: "What colleagues say",
-    title: "In their words.",
+    title: "What colleagues say about working with me",
     quotes: [
       {
         quote:
@@ -137,12 +137,12 @@ const en = {
   },
   cases: {
     eyebrow: "Selected work",
-    title: "Case studies.",
+    title: "Projects I led from strategy to launch",
     complianceLabel: "Compliance & buyer readiness.",
     complianceBody:
       "Delivered with full compliance documentation: GDPR data protection impact assessment, EU AI Act compliance pack ready for stakeholder review, and a standalone ROI model. Everything a buyer needs before saying yes.",
     roiNote:
-      "Based on a 15–20% member save rate in a modelled scenario.",
+      "Based on a 15 to 20% member save rate in a modelled scenario.",
     deckLabel: "Pitch deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckDownload: "Download deck ↓",
@@ -183,14 +183,14 @@ const en = {
   },
   projects: {
     eyebrow: "Also",
-    title: "Selected builds.",
+    title: "Tools I built myself",
     labels: {
       what: "What.",
       how: "How it was built.",
       outcomes: "Outcomes.",
       learned: "What I learned.",
-      github: "GitHub ↗",
-      medium: "Read post ↗",
+      github: "GitHub",
+      medium: "Read post",
     },
     items: [
       {
@@ -254,7 +254,7 @@ const en = {
   },
   how: {
     eyebrow: "How I work",
-    title: "A clear engagement.",
+    title: "How a project with me runs",
     steps: [
       {
         title: "Find the coordination tax.",
@@ -431,7 +431,7 @@ const de: typeof en = {
   },
   services: {
     eyebrow: "Was ich mache",
-    title: "Leistungen.",
+    title: "Wobei ich Ihr Team unterstütze",
     items: [
       {
         title: "Workflow-Analyse.",
@@ -478,7 +478,7 @@ const de: typeof en = {
   },
   testimonials: {
     eyebrow: "Was Kolleginnen und Kollegen sagen",
-    title: "Stimmen aus der Zusammenarbeit.",
+    title: "Was Kolleginnen und Kollegen über die Zusammenarbeit mit mir sagen",
     quotes: [
       {
         quote:
@@ -502,12 +502,12 @@ const de: typeof en = {
   },
   cases: {
     eyebrow: "Projekte & Ergebnisse",
-    title: "Ausgewählte Fallstudien.",
+    title: "Projekte, die ich von der Strategie bis zum Launch geführt habe",
     complianceLabel: "Compliance und Kaufbereitschaft.",
     complianceBody:
       "Geliefert mit vollständiger Compliance-Dokumentation: DSGVO-Datenschutz-Folgenabschätzung, EU-AI-Act-Compliance-Paket bereit für die Prüfung durch Stakeholder und ein eigenständiges ROI-Modell. Alles, was ein Käufer braucht, bevor er zusagt.",
     roiNote:
-      "Basierend auf einer Mitglieder-Save-Rate von 15–20% in einem modellierten Szenario.",
+      "Basierend auf einer Mitglieder-Save-Rate von 15 bis 20 % in einem modellierten Szenario.",
     deckLabel: "Pitch-Deck.",
     deckName: "Spottr. Smart Member Retention.",
     deckDownload: "Deck herunterladen ↓",
@@ -548,14 +548,14 @@ const de: typeof en = {
   },
   projects: {
     eyebrow: "Außerdem",
-    title: "Ausgewählte Builds.",
+    title: "Tools, die ich selbst gebaut habe",
     labels: {
       what: "Was.",
       how: "Wie es gebaut wurde.",
       outcomes: "Ergebnisse.",
       learned: "Was ich gelernt habe.",
-      github: "GitHub ↗",
-      medium: "Beitrag lesen ↗",
+      github: "GitHub",
+      medium: "Beitrag lesen",
     },
     items: [
       {
@@ -619,7 +619,7 @@ const de: typeof en = {
   },
   how: {
     eyebrow: "Wie ich arbeite",
-    title: "Ein klarer Ablauf.",
+    title: "So läuft ein Projekt mit mir ab",
     steps: [
       {
         title: "Die Koordinationskosten finden.",

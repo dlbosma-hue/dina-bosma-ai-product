@@ -79,7 +79,6 @@ function LinksPage() {
           <span className="block text-base font-semibold leading-snug text-navy">{c.items[k][0]}</span>
           <span className="mt-1 block text-sm leading-snug text-ink">{c.items[k][1]}</span>
         </span>
-        <span aria-hidden className="shrink-0 text-navy">↗</span>
       </span>
       {ext && <span className="sr-only"> ({c.ext})</span>}
     </>

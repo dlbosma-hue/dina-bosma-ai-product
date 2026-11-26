@@ -908,3 +908,9 @@ html:has(.humint-theme) { scroll-behavior: auto; }
 .noob-theme.new-club .club-humint-link { font-family: "Instrument Serif", Georgia, serif; }
 @media (max-width: 639px) { .noob-theme.new-club header .club-btn-primary.hidden { display: none; } }
 @media (prefers-reduced-motion: reduce) { .noob-theme.new-club *, .noob-theme.new-club *::before, .noob-theme.new-club *::after { animation: none !important; transition: none !important; } }
+
+/* Buttons: leicht abgerundete Ecken statt Pill-Form (Entscheidung Dina, 26.11.2026). Orange #FF9A76 bleibt bewusst. */
+.noob-theme.new-club :is(.club-btn-primary, .club-btn-secondary, .club-btn-product-waitlist, .club-btn-guide-signup, .retro-button),
+.humint-theme :is(.humint-primary-button, .humint-secondary-button, .humint-language-button) {
+  border-radius: 10px;
+}

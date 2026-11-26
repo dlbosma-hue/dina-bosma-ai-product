@@ -19,10 +19,10 @@ function Community() {
       <Section>
         <div className="grid items-center gap-14 md:grid-cols-[1.1fr_1fr]">
           <div>
-            <p className="club-eyebrow">{c.pill}</p>
-            <h1 className="mt-6 text-4xl text-navy sm:text-5xl lg:text-6xl">{c.h1}</h1>
+            <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl">{c.h1}</h1>
             <div className="mt-6 flex max-w-lg flex-col gap-5 text-lg text-ink">
               {c.sub.map(p => <p key={p}>{p}</p>)}
+              <p className="font-semibold text-navy">{c.pill}</p>
             </div>
             <Button asChild className="club-btn-primary mt-8">
               <a href="#platz">{c.cta}</a>

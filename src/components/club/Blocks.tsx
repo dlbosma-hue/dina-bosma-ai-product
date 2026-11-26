@@ -36,7 +36,6 @@ export function FinalCta({ photoSlot }: { photoSlot?: PhotoSlot } = {}) {
             <PhotoFrame slot={photoSlot} tilt={-2} />
           </div>
         )}
-        <span className="club-rule-accent mb-6" aria-hidden />
         <h2 className="text-4xl text-navy sm:text-5xl md:text-6xl">
           <Rich text={t.finalCta.h2} />
         </h2>

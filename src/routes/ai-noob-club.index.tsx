@@ -26,7 +26,6 @@ function Home() {
     <>
       <Section>
         <div className="mx-auto max-w-3xl text-center">
-          <p className="club-eyebrow mb-6">{h.eyebrow}</p>
           <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl">
             <Rich text={h.h1} />
           </h1>
@@ -36,7 +35,7 @@ function Home() {
               <p className="max-w-[30ch] text-sm text-ink">{h.checkNote}</p>
             </div>
             <div className="flex flex-col items-center gap-3">
-              <Link to="/ai-noob-club/gratis" hash="starterpaket" className="club-btn-secondary">{h.cta}</Link>
+              <Link to="/ai-noob-club/gratis" hash="starterpaket" className="text-lg font-semibold text-navy underline decoration-1 underline-offset-4 hover:decoration-2">{h.cta}</Link>
               <p className="max-w-[30ch] text-sm text-ink">{h.ctaNote}</p>
             </div>
           </div>
@@ -111,7 +110,7 @@ function Home() {
         </div>
       </Section>
 
-      <Section className="border-t border-navy" tightBottom>
+      <Section tightBottom>
         <div className="mx-auto max-w-2xl text-center">
           <SectionHead eyebrow={h.meetEyebrow} title={h.meetH2} center />
           <p className="mt-6 text-lg text-ink">{h.meetText}</p>

@@ -21,8 +21,6 @@ export function SectionHead({ eyebrow, title, center, as = "h2" }: { eyebrow?: s
   const H = as;
   return (
     <div className={center ? "flex flex-col items-center text-center" : ""}>
-      <span className="club-rule-accent mb-5" aria-hidden />
-      {eyebrow && <p className="club-eyebrow mb-4">{eyebrow}</p>}
       <H className={`text-navy ${as === "h1" ? "text-4xl sm:text-5xl md:text-6xl" : "text-3xl sm:text-4xl"}`}>
         <Rich text={title} />
       </H>

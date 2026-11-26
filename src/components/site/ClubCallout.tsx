@@ -17,7 +17,7 @@ export function ClubCallout() {
         <p className="mt-4 max-w-xl text-base leading-relaxed text-link md:text-lg">
           {t.clubCallout.text}
         </p>
-        <Button asChild variant="outline" className="group mt-7 h-auto min-h-11 rounded-full border border-link bg-cream px-6 py-3 text-base font-semibold text-link whitespace-normal focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+        <Button asChild variant="outline" className="group mt-7 h-auto min-h-11 rounded-[10px] border border-link bg-cream px-6 py-3 text-base font-semibold text-link whitespace-normal focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
           <Link to="/ai-noob-club">
             <span>{t.clubCallout.link}</span>
             <span

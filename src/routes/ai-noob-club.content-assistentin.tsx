@@ -19,9 +19,7 @@ function Waitlist() {
       <Section tone="rosa">
         <div className="grid items-center gap-12 md:grid-cols-[1.1fr_1fr]">
           <div>
-            <span className="club-rule-accent mb-5" aria-hidden />
             <h1 className="text-4xl text-navy sm:text-5xl lg:text-6xl">{c.productName}</h1>
-            <p className="club-eyebrow mt-5">{c.eyebrow}</p>
             <h2 className="mt-5 text-2xl text-navy sm:text-3xl">{c.h1}</h2>
             <div className="mt-6 max-w-lg space-y-5 text-lg text-ink">{c.text.map(p => <p key={p}>{p}</p>)}</div>
             <p className="mt-5 font-semibold text-navy">{c.status}</p>

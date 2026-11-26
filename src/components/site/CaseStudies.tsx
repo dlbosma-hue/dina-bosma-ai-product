@@ -12,7 +12,7 @@ export function CaseStudies() {
         {cases.map((c) => (
           <article
             key={c.title}
-            className="flex flex-col border-t border-foreground/80 pt-6 md:pt-8"
+            className="flex flex-col"
           >
             <div className="mb-3 text-[13px] uppercase tracking-[0.24em] text-muted-foreground">
               {c.client}

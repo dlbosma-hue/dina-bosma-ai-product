@@ -45,7 +45,7 @@ export function Writing() {
               </p>
             </div>
             <div className="inline-flex items-center gap-1.5 text-sm text-foreground underline-offset-4 group-hover:underline">
-              Read on Medium <span aria-hidden>↗</span>
+              Read on Medium
             </div>
           </a>
         ))}
@@ -57,7 +57,7 @@ export function Writing() {
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-none border border-border px-5 py-2.5 text-sm transition-colors hover:border-foreground"
         >
-          More on Medium <span aria-hidden>→</span>
+          More on Medium
         </a>
       </div>
     </Section>
