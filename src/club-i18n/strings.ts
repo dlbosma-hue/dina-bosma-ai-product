@@ -157,7 +157,7 @@ const de = {
   ca: {
     "eyebrow": "In Entwicklung · Mit Community-Feedback",
     "productName": "Content-Assistentin",
-    "h1": "Dein Ton. Dein Look. Weniger Zeit für deine Content-Erstellung.",
+    "h1": "Dein Ton. Dein Look. Dein Content in weniger Zeit.",
     "text": [
       "Hier entsteht ein System, das du für dein eigenes Business aufbaust. So entsteht dein Content: deine eigene Stimme, dein visueller Stil. Nicht wie alle anderen.",
       "Das System wird gerade aufgebaut. Das Feedback aus der Community hilft dabei, Inhalte, Übungen und Vorlagen zu entwickeln und zu verbessern."
@@ -423,7 +423,7 @@ const en: Dict = {
   ca: {
     "eyebrow": "In development · Shaped by community feedback",
     "productName": "Content-Assistentin",
-    "h1": "Your voice. Your look. Less time creating content.",
+    "h1": "Your voice. Your look. Your content in less time.",
     "text": [
       "A system is taking shape that you build for your own business, so your content is created in your own voice and visual style, rather than looking and sounding like everyone else.",
       "The system is currently being built. Community feedback helps shape and improve its content, exercises and templates."
